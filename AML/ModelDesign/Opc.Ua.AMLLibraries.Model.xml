@@ -1,0 +1,2069 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix2="http://opcfoundation.org/UA/AML/" xmlns:Prefix0="http://opcfoundation.org/UA/" xmlns:Prefix4="http://opcfoundation.org/UA/AMLLibs/" TargetNamespace="http://opcfoundation.org/UA/AML/" TargetVersion="" TargetPublicationDate="2021-05-26T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/AML/" XmlNamespace="http://opcfoundation.org/UA/AML/" XmlPrefix="Prefix3" FilePath="" Version="1.00" PublicationDate="22.02.2016">http://opcfoundation.org/UA/AML/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/AMLLibs/" XmlNamespace="http://opcfoundation.org/UA/AMLLibs/" XmlPrefix="Prefix5" FilePath="" PublicationDate="26.05.2021">http://opcfoundation.org/UA/AMLLibs/</Namespace>
+  </Namespaces>
+  <ObjectType SymbolicName="Prefix0:AutomationMLBaseInterface" BaseType="Prefix2:CAEXObjectType">
+    <Description />
+    <Children>
+      <Property SymbolicName="Prefix0:ID" DataType="Prefix0:BaseDataType">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix0:Version" DataType="Prefix0:BaseDataType">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:Order</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:PortConnector</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:InterlockingConnector</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:PPRConnector</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:ExternalDataConnector</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:Communication</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:AttachmentInterface</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:AutomationMLBaseRole" BaseType="Prefix2:CAEXObjectType">
+    <Description />
+    <Children>
+      <Property SymbolicName="Prefix0:ID" DataType="Prefix0:BaseDataType">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix0:Version" DataType="Prefix0:BaseDataType">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:Group</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:Facet</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:Port</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:Resource</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:Product</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:Process</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:Structure</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:PropertySet</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:Frame</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:BatchManufacturingEquipment" BaseType="Prefix2:CAEXObjectType">
+    <Description />
+    <Children>
+      <Property SymbolicName="Prefix0:ID" DataType="Prefix0:BaseDataType">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix0:Version" DataType="Prefix0:BaseDataType">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:ContManufacturingEquipment" BaseType="Prefix2:CAEXObjectType">
+    <Description />
+    <Children>
+      <Property SymbolicName="Prefix0:ID" DataType="Prefix0:BaseDataType">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix0:Version" DataType="Prefix0:BaseDataType">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:DiscManufacturingEquipment" BaseType="Prefix0:Resource">
+    <Description />
+    <References>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:Transport</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:Storage</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:Fixture</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:Gate</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:Robot</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:Tool</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:Carrier</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:Machine</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:StaticObject</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:ControlEquipment" BaseType="Prefix0:Resource">
+    <Description />
+    <References>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:Communication</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:ControlHardware</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:Sensor</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:Actuator</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:Controller</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:PLCFacet" BaseType="Prefix0:Facet">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:HMIFacet" BaseType="Prefix0:Facet">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Enterprise" BaseType="Prefix0:ResourceStructure">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Site" BaseType="Prefix0:ResourceStructure">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Area" BaseType="Prefix0:ResourceStructure">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:ProductionLine" BaseType="Prefix0:ResourceStructure">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:WorkCell" BaseType="Prefix0:ResourceStructure">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:ProcessCell" BaseType="Prefix0:ResourceStructure">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Unit" BaseType="Prefix0:ResourceStructure">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:ProductionUnit" BaseType="Prefix0:ResourceStructure">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:StorageZone" BaseType="Prefix0:ResourceStructure">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:StorageUnit" BaseType="Prefix0:ResourceStructure">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Turntable" BaseType="Prefix0:Transport">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Conveyor" BaseType="Prefix0:Transport">
+    <Description />
+    <References>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:BeltConveyor</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:RollConveyor</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:ChainConveyor</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:PalletConveyor</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:OverheadConveyor</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:LiftingTable" BaseType="Prefix0:Transport">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:AGV" BaseType="Prefix0:Transport">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Transposer" BaseType="Prefix0:Transport">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:CarrierHandlingSystem" BaseType="Prefix0:Transport">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:BodyStore" BaseType="Prefix0:Storage">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Lift" BaseType="Prefix0:Transport">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Rollerbed" BaseType="Prefix0:Transport">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:StationaryTool" BaseType="Prefix0:Tool">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:MovableTool" BaseType="Prefix0:Tool">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:ControlCabinet" BaseType="Prefix0:ControlEquipment">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:IODevice" BaseType="Prefix0:ControlEquipment">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:HMI" BaseType="Prefix0:ControlEquipment">
+    <Description />
+    <References>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:WarningEquipment</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:ActuatingDrive" BaseType="Prefix0:Actuator">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:MotionController" BaseType="Prefix0:ControlEquipment">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Panel" BaseType="Prefix0:ControlHardware">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:MeasuringEquipment" BaseType="Prefix0:Resource">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Clamp" BaseType="Prefix0:Fixture">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:ProcessController" BaseType="Prefix0:Controller">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Loader" BaseType="Prefix0:Storage">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Unloader" BaseType="Prefix0:Storage">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Port" BaseType="Prefix0:AutomationMLBaseRole">
+    <Description />
+    <Children>
+      <Object SymbolicName="Prefix0:ConnectionPoint" TypeDefinition="Prefix0:PortConnector">
+        <Description />
+      </Object>
+      <Variable SymbolicName="Prefix0:Direction" DataType="Prefix0:String">
+        <Description />
+        <Children>
+          <Property SymbolicName="Prefix0:ID" DataType="Prefix0:BaseDataType">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix0:Version" DataType="Prefix0:BaseDataType">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix0:Cardinality" DataType="Prefix0:String">
+        <Description />
+        <Children>
+          <Property SymbolicName="Prefix0:ID" DataType="Prefix0:BaseDataType">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix0:Version" DataType="Prefix0:BaseDataType">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Variable SymbolicName="Prefix0:MinOccur" DataType="Prefix0:UInt32">
+            <Description />
+            <Children>
+              <Property SymbolicName="Prefix0:ID" DataType="Prefix0:BaseDataType">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix0:Version" DataType="Prefix0:BaseDataType">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>UInt32</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix0:MaxOccur" DataType="Prefix0:UInt32">
+            <Description />
+            <Children>
+              <Property SymbolicName="Prefix0:ID" DataType="Prefix0:BaseDataType">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix0:Version" DataType="Prefix0:BaseDataType">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>UInt32</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Variable>
+        </Children>
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix0:Category" DataType="Prefix0:String">
+        <Description />
+        <Children>
+          <Property SymbolicName="Prefix0:ID" DataType="Prefix0:BaseDataType">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix0:Version" DataType="Prefix0:BaseDataType">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Variable>
+      <Property SymbolicName="Prefix0:ID">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix0:Version">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:PortConnector" BaseType="Prefix0:AutomationMLBaseInterface">
+    <Description />
+    <Children>
+      <Property SymbolicName="Prefix0:ID">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix0:Version">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Order" BaseType="Prefix0:AutomationMLBaseInterface">
+    <Description />
+    <Children>
+      <Variable SymbolicName="Prefix0:Direction" DataType="Prefix0:String">
+        <Description />
+        <Children>
+          <Property SymbolicName="Prefix0:ID" DataType="Prefix0:BaseDataType">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix0:Version" DataType="Prefix0:BaseDataType">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Variable>
+      <Property SymbolicName="Prefix0:ID">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix0:Version">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:ExternalDataConnector" BaseType="Prefix0:AutomationMLBaseInterface">
+    <Description />
+    <Children>
+      <Variable SymbolicName="Prefix0:refURI" DataType="Prefix0:String">
+        <Description />
+        <Children>
+          <Property SymbolicName="Prefix0:ID" DataType="Prefix0:BaseDataType">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix0:Version" DataType="Prefix0:BaseDataType">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Variable>
+      <Property SymbolicName="Prefix0:ID">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix0:Version">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:COLLADAInterface</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:PLCopenXMLInterface</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:InterlockingVariableInterface" BaseType="Prefix0:VariableInterface">
+    <Description />
+    <Children>
+      <Variable SymbolicName="Prefix0:SafeConditionEquals" DataType="Prefix0:Boolean">
+        <Description />
+        <Children>
+          <Property SymbolicName="Prefix0:ID" DataType="Prefix0:BaseDataType">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix0:Version" DataType="Prefix0:BaseDataType">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix0:DefaultValue" DataType="Prefix0:BaseDataType">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>true</Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>Boolean</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Group" BaseType="Prefix0:AutomationMLBaseRole">
+    <Description />
+    <Children>
+      <Variable SymbolicName="Prefix0:AssociatedFacet" DataType="Prefix0:String">
+        <Description />
+        <Children>
+          <Property SymbolicName="Prefix0:ID" DataType="Prefix0:BaseDataType">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix0:Version" DataType="Prefix0:BaseDataType">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Variable>
+      <Property SymbolicName="Prefix0:ID">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix0:Version">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:SignalGroup</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:ComponentGroup</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:InterlockingConnector" BaseType="Prefix0:AutomationMLBaseInterface">
+    <Description />
+    <Children>
+      <Property SymbolicName="Prefix0:ID">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix0:Version">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:PPRConnector" BaseType="Prefix0:AutomationMLBaseInterface">
+    <Description />
+    <Children>
+      <Property SymbolicName="Prefix0:ID">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix0:Version">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Communication" BaseType="Prefix0:AutomationMLBaseInterface">
+    <Description />
+    <Children>
+      <Property SymbolicName="Prefix0:ID">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix0:Version">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:SignalInterface</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:AttachmentInterface" BaseType="Prefix0:AutomationMLBaseInterface">
+    <Description />
+    <Children>
+      <Property SymbolicName="Prefix0:ID">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix0:Version">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:COLLADAInterface" BaseType="Prefix0:ExternalDataConnector">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:PLCopenXMLInterface" BaseType="Prefix0:ExternalDataConnector">
+    <Description />
+    <References>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:LogicInterface</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:VariableInterface</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:SignalInterface" BaseType="Prefix0:Communication">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:LogicInterface" BaseType="Prefix0:PLCopenXMLInterface">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:VariableInterface" BaseType="Prefix0:PLCopenXMLInterface">
+    <Description />
+    <References>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:InterlockingVariableInterface</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Facet" BaseType="Prefix0:AutomationMLBaseRole">
+    <Description />
+    <Children>
+      <Property SymbolicName="Prefix0:ID">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix0:Version">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Resource" BaseType="Prefix0:AutomationMLBaseRole">
+    <Description />
+    <Children>
+      <Property SymbolicName="Prefix0:ID">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix0:Version">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Product" BaseType="Prefix0:AutomationMLBaseRole">
+    <Description />
+    <Children>
+      <Property SymbolicName="Prefix0:ID">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix0:Version">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Process" BaseType="Prefix0:AutomationMLBaseRole">
+    <Description />
+    <Children>
+      <Property SymbolicName="Prefix0:ID">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix0:Version">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Structure" BaseType="Prefix0:AutomationMLBaseRole">
+    <Description />
+    <Children>
+      <Property SymbolicName="Prefix0:ID">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix0:Version">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:ProductStructure</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:ProcessStructure</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:ResourceStructure</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:PropertySet" BaseType="Prefix0:AutomationMLBaseRole">
+    <Description />
+    <Children>
+      <Property SymbolicName="Prefix0:ID">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix0:Version">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Frame" BaseType="Prefix0:AutomationMLBaseRole">
+    <Description />
+    <Children>
+      <Property SymbolicName="Prefix0:ID">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix0:Version">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:SignalGroup" BaseType="Prefix0:Group">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:ComponentGroup" BaseType="Prefix0:Group">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:ProductStructure" BaseType="Prefix0:Structure">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:ProcessStructure" BaseType="Prefix0:Structure">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:ResourceStructure" BaseType="Prefix0:Structure">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Transport" BaseType="Prefix0:DiscManufacturingEquipment">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Storage" BaseType="Prefix0:DiscManufacturingEquipment">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Fixture" BaseType="Prefix0:DiscManufacturingEquipment">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Gate" BaseType="Prefix0:DiscManufacturingEquipment">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Robot" BaseType="Prefix0:DiscManufacturingEquipment">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Tool" BaseType="Prefix0:DiscManufacturingEquipment">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Carrier" BaseType="Prefix0:DiscManufacturingEquipment">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Machine" BaseType="Prefix0:DiscManufacturingEquipment">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:StaticObject" BaseType="Prefix0:DiscManufacturingEquipment">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Communication" BaseType="Prefix0:ControlEquipment">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:ControlHardware" BaseType="Prefix0:ControlEquipment">
+    <Description />
+    <References>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:PC</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:IPC</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:EmbeddedDevice</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:Handheld</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Sensor" BaseType="Prefix0:ControlEquipment">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Actuator" BaseType="Prefix0:ControlEquipment">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Controller" BaseType="Prefix0:ControlEquipment">
+    <Description />
+    <References>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:PLC</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:NC</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:RC</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAMLInternalLink</ReferenceType>
+        <TargetId>Prefix4:PAC</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:PC" BaseType="Prefix0:ControlHardware">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:IPC" BaseType="Prefix0:ControlHardware">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:EmbeddedDevice" BaseType="Prefix0:ControlHardware">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:Handheld" BaseType="Prefix0:ControlHardware">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:PLC" BaseType="Prefix0:Controller">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:NC" BaseType="Prefix0:Controller">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:RC" BaseType="Prefix0:Controller">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:PAC" BaseType="Prefix0:Controller">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:BeltConveyor" BaseType="Prefix0:Conveyor">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:RollConveyor" BaseType="Prefix0:Conveyor">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:ChainConveyor" BaseType="Prefix0:Conveyor">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:PalletConveyor" BaseType="Prefix0:Conveyor">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:OverheadConveyor" BaseType="Prefix0:Conveyor">
+    <Description />
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix0:WarningEquipment" BaseType="Prefix0:HMI">
+    <Description />
+    <ClassName />
+  </ObjectType>
+</ModelDesign>
