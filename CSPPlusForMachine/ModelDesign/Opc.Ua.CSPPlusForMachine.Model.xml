@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix2="http://opcfoundation.org/UA/DI/" xmlns:Prefix0="http://opcfoundation.org/UA/" xmlns:Prefix4="http://opcfoundation.org/UA/CSPPlusForMachine/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-05-29T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09.03.2021">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/CSPPlusForMachine/" XmlNamespace="http://opcfoundation.org/UA/CSPPlusForMachine/" XmlPrefix="Prefix5" FilePath="" Version="1.00" PublicationDate="28.11.2017">http://opcfoundation.org/UA/CSPPlusForMachine/</Namespace>
+  </Namespaces>
+  <ObjectType SymbolicName="Prefix4:CsppMachineType" BaseType="Prefix2:DeviceType" IsAbstract="true">
+    <Children>
+      <Object SymbolicName="Prefix2:ParameterSet" ModellingRule="Mandatory">
+        <Children>
+          <Variable SymbolicName="Prefix4:VariableName" TypeDefinition="Prefix0:DataItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix0:BaseDataType">
+            <BrowseName>&lt;VariableName&gt;</BrowseName>
+          </Variable>
+          <Variable SymbolicName="Prefix4:ConfigurationName" TypeDefinition="Prefix0:DataItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix0:BaseDataType">
+            <BrowseName>&lt;ConfigurationName&gt;</BrowseName>
+          </Variable>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix4:CommIfSection" TypeDefinition="Prefix2:FunctionalGroupType" ModellingRule="MandatoryPlaceholder">
+        <BrowseName>&lt;CommIfSection&gt;</BrowseName>
+        <Children>
+          <Object SymbolicName="Prefix4:CommIfVariablePart" TypeDefinition="Prefix2:FunctionalGroupType" ModellingRule="OptionalPlaceholder">
+            <BrowseName>&lt;CommIfVariablePart&gt;</BrowseName>
+          </Object>
+          <Object SymbolicName="Prefix4:CommIfConfigurationPart" TypeDefinition="Prefix2:FunctionalGroupType" ModellingRule="OptionalPlaceholder">
+            <BrowseName>&lt;CommIfConfigurationPart&gt;</BrowseName>
+          </Object>
+        </Children>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <VariableType SymbolicName="Prefix0:CsppAnalogItemType" BaseType="Prefix0:AnalogItemType" ValueRank="ScalarOrArray">
+    <Children>
+      <Property SymbolicName="Prefix4:Duration" ModellingRule="Mandatory" />
+    </Children>
+    <ClassName />
+  </VariableType>
+</ModelDesign>
