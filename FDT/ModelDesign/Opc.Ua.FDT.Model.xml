@@ -1,0 +1,2265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix2="http://opcfoundation.org/UA/DI/" xmlns:Prefix0="http://opcfoundation.org/UA/" xmlns:Prefix4="http://opcfoundation.org/UA/schemas/FDT/1.0/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-05-29T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09.03.2021">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/schemas/FDT/1.0/" XmlNamespace="http://opcfoundation.org/UA/schemas/FDT/1.0/" XmlPrefix="Prefix5" FilePath="" Version="0.0" PublicationDate="29.05.2021">http://opcfoundation.org/UA/schemas/FDT/1.0/</Namespace>
+  </Namespaces>
+  <DataType SymbolicName="Prefix4:AlarmType" BaseType="Prefix0:Enumeration">
+    <Description>Identifier for the alarm type to show the association between high- and low alarm and high-high- and low-low-alarm. (Provides mapping for Fdt.Dtm.DataAccess.AlarmType.)</Description>
+    <Children>
+      <Property SymbolicName="Prefix0:EnumValues" ModellingRule="Mandatory" DataType="Prefix0:EnumValueType" ValueRank="Array" ArrayDimensions="4">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>0</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>HighHighAlarm</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>High High Alarm.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>1</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>HighAlarm</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>High Alarm.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>2</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>LowLowAlarm</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Low Low Alarm.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>3</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>LowAlarm</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>LowAlarm.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="HighHighAlarm" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>High High Alarm.</Description>
+      </Field>
+      <Field Name="HighAlarm" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>High Alarm.</Description>
+      </Field>
+      <Field Name="LowLowAlarm" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description>Low Low Alarm.</Description>
+      </Field>
+      <Field Name="LowAlarm" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description>LowAlarm.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix4:ApplicationIdEnumeration" BaseType="Prefix0:Enumeration">
+    <Description>Identifies type of an application or function. (Provides mapping for Fdt.ApplicationId)</Description>
+    <Children>
+      <Property SymbolicName="Prefix0:EnumValues" ModellingRule="Mandatory" DataType="Prefix0:EnumValueType" ValueRank="Array" ArrayDimensions="15">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>0</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>AdjustSetValue</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>ApplicationID is AdjustSetValue</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>1</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>AssetManagement</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>ApplicationID is AssetManagement</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>2</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>AuditTrail</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>ApplicationID is AuditTrail</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>3</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Configuration</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>ApplicationID is Configuration</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>4</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Diagnosis</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>ApplicationID is Diagnosis</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>5</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Force</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>ApplicationID is Force</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>6</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Observe</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>ApplicationID is Observe</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>7</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>OfflineCompare</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>ApplicationID is OfflineCompare</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>8</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>OfflineParameterize</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>ApplicationID is OfflineParameterize</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>9</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>OnlineCompare</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>ApplicationID is OnlineCompare</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>10</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>OnlineParameterize</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>ApplicationID is OnlineParameterize</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>11</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Identify</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>ApplicationID is Identify</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>12</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Calibration</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>ApplicationID is Calibration</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>13</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>MainOperation</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>ApplicationID is MainOperation</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>14</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>NetworkManagement</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>ApplicationID is NetworkManagement</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="AdjustSetValue" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>ApplicationID is AdjustSetValue</Description>
+      </Field>
+      <Field Name="AssetManagement" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>ApplicationID is AssetManagement</Description>
+      </Field>
+      <Field Name="AuditTrail" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description>ApplicationID is AuditTrail</Description>
+      </Field>
+      <Field Name="Configuration" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description>ApplicationID is Configuration</Description>
+      </Field>
+      <Field Name="Diagnosis" Identifier="4" BitMask="" ArrayDimensions="">
+        <Description>ApplicationID is Diagnosis</Description>
+      </Field>
+      <Field Name="Force" Identifier="5" BitMask="" ArrayDimensions="">
+        <Description>ApplicationID is Force</Description>
+      </Field>
+      <Field Name="Observe" Identifier="6" BitMask="" ArrayDimensions="">
+        <Description>ApplicationID is Observe</Description>
+      </Field>
+      <Field Name="OfflineCompare" Identifier="7" BitMask="" ArrayDimensions="">
+        <Description>ApplicationID is OfflineCompare</Description>
+      </Field>
+      <Field Name="OfflineParameterize" Identifier="8" BitMask="" ArrayDimensions="">
+        <Description>ApplicationID is OfflineParameterize</Description>
+      </Field>
+      <Field Name="OnlineCompare" Identifier="9" BitMask="" ArrayDimensions="">
+        <Description>ApplicationID is OnlineCompare</Description>
+      </Field>
+      <Field Name="OnlineParameterize" Identifier="10" BitMask="" ArrayDimensions="">
+        <Description>ApplicationID is OnlineParameterize</Description>
+      </Field>
+      <Field Name="Identify" Identifier="11" BitMask="" ArrayDimensions="">
+        <Description>ApplicationID is Identify</Description>
+      </Field>
+      <Field Name="Calibration" Identifier="12" BitMask="" ArrayDimensions="">
+        <Description>ApplicationID is Calibration</Description>
+      </Field>
+      <Field Name="MainOperation" Identifier="13" BitMask="" ArrayDimensions="">
+        <Description>ApplicationID is MainOperation</Description>
+      </Field>
+      <Field Name="NetworkManagement" Identifier="14" BitMask="" ArrayDimensions="">
+        <Description>ApplicationID is NetworkManagement</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix4:ClassificationDomainId" BaseType="Prefix0:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix0:EnumValues" ModellingRule="Mandatory" DataType="Prefix0:EnumValueType" ValueRank="Array" ArrayDimensions="6">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>0</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>PowerDistribution</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification domain is PowerDistribution.  </uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>1</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>MotionControl</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification domain is MotionControl.  </uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>2</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Measurement</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification domain is Measurement.  </uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>3</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>OperatorInterface</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is OperatorInterface.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>4</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>ModulesAndControllers</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification domain is ModulesAndControllers.  </uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>5</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Communication</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification domain is Communication</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="PowerDistribution" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>Classification domain is PowerDistribution.  </Description>
+      </Field>
+      <Field Name="MotionControl" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>Classification domain is MotionControl.  </Description>
+      </Field>
+      <Field Name="Measurement" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description>Classification domain is Measurement.  </Description>
+      </Field>
+      <Field Name="OperatorInterface" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description>Classification is OperatorInterface.</Description>
+      </Field>
+      <Field Name="ModulesAndControllers" Identifier="4" BitMask="" ArrayDimensions="">
+        <Description>Classification domain is ModulesAndControllers.  </Description>
+      </Field>
+      <Field Name="Communication" Identifier="5" BitMask="" ArrayDimensions="">
+        <Description>Classification domain is Communication</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix4:ClassificationId" BaseType="Prefix0:Enumeration">
+    <Description>Classification according to device primary function. 
+(Provides mapping to Fdt.Dtm.DeviceClassification.ClassificationId)</Description>
+    <Children>
+      <Property SymbolicName="Prefix0:EnumValues" ModellingRule="Mandatory" DataType="Prefix0:EnumValueType" ValueRank="Array" ArrayDimensions="63">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>0</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Flow</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Flow.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>1</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Level</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Level.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>2</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Pressure</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Pressure.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>3</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Temperature</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Temperature.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>4</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Valve</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Valve.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>5</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Positioner</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Positioner.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>6</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Actuator</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Actuator.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>7</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Nc_rc</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Numeric Control / Robotic Control.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>8</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Encoder</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Encoder.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>9</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>SpeedDrive</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is SpeedDrive.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>10</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Hmi</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Hmi.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>11</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>AnalogInput</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is AnalogInput.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>12</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>AnalogOutput</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is AnalogOutput.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>13</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>DigitalInput</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is DigitalInput.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>14</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>DigitalOutput</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is DigitalOutput.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>15</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>ElectrochemicalAnalyser</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is ElectrochemicalAnalyser.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>16</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>DtmSpecific</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is DtmSpecific.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>17</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Universal</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Universal.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>18</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Analyser</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Analyser.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>19</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>RemoteIO</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is RemoteIO.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>20</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>AnalogCombinedIO</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is AnalogCombinedIO.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>21</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>DigitalCombinedIO</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is DigitalCombinedIO.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>22</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Recorder</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Recorder.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>23</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Controller</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Controller.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>24</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Angle</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Angle.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>25</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>LimitSwitch</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is LimitSwitch.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>26</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Converter</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Converter.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>27</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Motor</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Motor. </uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>28</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Switchboard</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Switchboard.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>29</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>CircuitBreaker</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is CircuitBreaker.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>30</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>PowerMonitoring</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is PowerMonitoring.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>31</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>DistributionPanel</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is DistributionPanel.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>32</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Contactor</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Contactor.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>33</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>ProtectionStarter</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is ProtectionStarter.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>34</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>SoftStarter</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is SoftStarter.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>35</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Drive</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Drive.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>36</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>AxisControl</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is AxisControl.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>37</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>MotorControlCenter</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is MotorControlCenter.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>38</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>ControlValve</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is ControlValve.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>39</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Electrical</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Electrical.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>40</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Density</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Density.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>41</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Quality</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Quality.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>42</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>SpeedOrRotaryFrequency</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is SpeedOrRotaryFrequency.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>43</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Radiation</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Radiation.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>44</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>WeightMass</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is WeightMass.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>45</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>DistanceOrPositionPresence</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is DistanceOrPositionPresence.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>46</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>PushButton</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is PushButton.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>47</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Joystick</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Joystick.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>48</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Keypad</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Keypad.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>49</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>PilotLight</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is PilotLight.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>50</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>StackLight</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is StackLight.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>51</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Display</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Display.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>52</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>CombinedButtonsAndLights</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is CombinedButtonsAndLights.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>53</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>OperatorStation</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is OperatorStation.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>54</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>GeneralInput</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is GeneralInput.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>55</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>GeneralOutput</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is GeneralOutput.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>56</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>CombinedInputOutput</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is CombinedInputOutput.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>57</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Relay</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Relay.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>58</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Timer</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Timer.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>59</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Scanner</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Scanner.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>60</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>ProgrammableController</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is ProgrammableController.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>61</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>CommunicationAdapter</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is CommunicationAdapter.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>62</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Gateway</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Classification is Gateway.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Flow" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>Classification is Flow.</Description>
+      </Field>
+      <Field Name="Level" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>Classification is Level.</Description>
+      </Field>
+      <Field Name="Pressure" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description>Classification is Pressure.</Description>
+      </Field>
+      <Field Name="Temperature" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description>Classification is Temperature.</Description>
+      </Field>
+      <Field Name="Valve" Identifier="4" BitMask="" ArrayDimensions="">
+        <Description>Classification is Valve.</Description>
+      </Field>
+      <Field Name="Positioner" Identifier="5" BitMask="" ArrayDimensions="">
+        <Description>Classification is Positioner.</Description>
+      </Field>
+      <Field Name="Actuator" Identifier="6" BitMask="" ArrayDimensions="">
+        <Description>Classification is Actuator.</Description>
+      </Field>
+      <Field Name="Nc_rc" Identifier="7" BitMask="" ArrayDimensions="">
+        <Description>Classification is Numeric Control / Robotic Control.</Description>
+      </Field>
+      <Field Name="Encoder" Identifier="8" BitMask="" ArrayDimensions="">
+        <Description>Classification is Encoder.</Description>
+      </Field>
+      <Field Name="SpeedDrive" Identifier="9" BitMask="" ArrayDimensions="">
+        <Description>Classification is SpeedDrive.</Description>
+      </Field>
+      <Field Name="Hmi" Identifier="10" BitMask="" ArrayDimensions="">
+        <Description>Classification is Hmi.</Description>
+      </Field>
+      <Field Name="AnalogInput" Identifier="11" BitMask="" ArrayDimensions="">
+        <Description>Classification is AnalogInput.</Description>
+      </Field>
+      <Field Name="AnalogOutput" Identifier="12" BitMask="" ArrayDimensions="">
+        <Description>Classification is AnalogOutput.</Description>
+      </Field>
+      <Field Name="DigitalInput" Identifier="13" BitMask="" ArrayDimensions="">
+        <Description>Classification is DigitalInput.</Description>
+      </Field>
+      <Field Name="DigitalOutput" Identifier="14" BitMask="" ArrayDimensions="">
+        <Description>Classification is DigitalOutput.</Description>
+      </Field>
+      <Field Name="ElectrochemicalAnalyser" Identifier="15" BitMask="" ArrayDimensions="">
+        <Description>Classification is ElectrochemicalAnalyser.</Description>
+      </Field>
+      <Field Name="DtmSpecific" Identifier="16" BitMask="" ArrayDimensions="">
+        <Description>Classification is DtmSpecific.</Description>
+      </Field>
+      <Field Name="Universal" Identifier="17" BitMask="" ArrayDimensions="">
+        <Description>Classification is Universal.</Description>
+      </Field>
+      <Field Name="Analyser" Identifier="18" BitMask="" ArrayDimensions="">
+        <Description>Classification is Analyser.</Description>
+      </Field>
+      <Field Name="RemoteIO" Identifier="19" BitMask="" ArrayDimensions="">
+        <Description>Classification is RemoteIO.</Description>
+      </Field>
+      <Field Name="AnalogCombinedIO" Identifier="20" BitMask="" ArrayDimensions="">
+        <Description>Classification is AnalogCombinedIO.</Description>
+      </Field>
+      <Field Name="DigitalCombinedIO" Identifier="21" BitMask="" ArrayDimensions="">
+        <Description>Classification is DigitalCombinedIO.</Description>
+      </Field>
+      <Field Name="Recorder" Identifier="22" BitMask="" ArrayDimensions="">
+        <Description>Classification is Recorder.</Description>
+      </Field>
+      <Field Name="Controller" Identifier="23" BitMask="" ArrayDimensions="">
+        <Description>Classification is Controller.</Description>
+      </Field>
+      <Field Name="Angle" Identifier="24" BitMask="" ArrayDimensions="">
+        <Description>Classification is Angle.</Description>
+      </Field>
+      <Field Name="LimitSwitch" Identifier="25" BitMask="" ArrayDimensions="">
+        <Description>Classification is LimitSwitch.</Description>
+      </Field>
+      <Field Name="Converter" Identifier="26" BitMask="" ArrayDimensions="">
+        <Description>Classification is Converter.</Description>
+      </Field>
+      <Field Name="Motor" Identifier="27" BitMask="" ArrayDimensions="">
+        <Description>Classification is Motor. </Description>
+      </Field>
+      <Field Name="Switchboard" Identifier="28" BitMask="" ArrayDimensions="">
+        <Description>Classification is Switchboard.</Description>
+      </Field>
+      <Field Name="CircuitBreaker" Identifier="29" BitMask="" ArrayDimensions="">
+        <Description>Classification is CircuitBreaker.</Description>
+      </Field>
+      <Field Name="PowerMonitoring" Identifier="30" BitMask="" ArrayDimensions="">
+        <Description>Classification is PowerMonitoring.</Description>
+      </Field>
+      <Field Name="DistributionPanel" Identifier="31" BitMask="" ArrayDimensions="">
+        <Description>Classification is DistributionPanel.</Description>
+      </Field>
+      <Field Name="Contactor" Identifier="32" BitMask="" ArrayDimensions="">
+        <Description>Classification is Contactor.</Description>
+      </Field>
+      <Field Name="ProtectionStarter" Identifier="33" BitMask="" ArrayDimensions="">
+        <Description>Classification is ProtectionStarter.</Description>
+      </Field>
+      <Field Name="SoftStarter" Identifier="34" BitMask="" ArrayDimensions="">
+        <Description>Classification is SoftStarter.</Description>
+      </Field>
+      <Field Name="Drive" Identifier="35" BitMask="" ArrayDimensions="">
+        <Description>Classification is Drive.</Description>
+      </Field>
+      <Field Name="AxisControl" Identifier="36" BitMask="" ArrayDimensions="">
+        <Description>Classification is AxisControl.</Description>
+      </Field>
+      <Field Name="MotorControlCenter" Identifier="37" BitMask="" ArrayDimensions="">
+        <Description>Classification is MotorControlCenter.</Description>
+      </Field>
+      <Field Name="ControlValve" Identifier="38" BitMask="" ArrayDimensions="">
+        <Description>Classification is ControlValve.</Description>
+      </Field>
+      <Field Name="Electrical" Identifier="39" BitMask="" ArrayDimensions="">
+        <Description>Classification is Electrical.</Description>
+      </Field>
+      <Field Name="Density" Identifier="40" BitMask="" ArrayDimensions="">
+        <Description>Classification is Density.</Description>
+      </Field>
+      <Field Name="Quality" Identifier="41" BitMask="" ArrayDimensions="">
+        <Description>Classification is Quality.</Description>
+      </Field>
+      <Field Name="SpeedOrRotaryFrequency" Identifier="42" BitMask="" ArrayDimensions="">
+        <Description>Classification is SpeedOrRotaryFrequency.</Description>
+      </Field>
+      <Field Name="Radiation" Identifier="43" BitMask="" ArrayDimensions="">
+        <Description>Classification is Radiation.</Description>
+      </Field>
+      <Field Name="WeightMass" Identifier="44" BitMask="" ArrayDimensions="">
+        <Description>Classification is WeightMass.</Description>
+      </Field>
+      <Field Name="DistanceOrPositionPresence" Identifier="45" BitMask="" ArrayDimensions="">
+        <Description>Classification is DistanceOrPositionPresence.</Description>
+      </Field>
+      <Field Name="PushButton" Identifier="46" BitMask="" ArrayDimensions="">
+        <Description>Classification is PushButton.</Description>
+      </Field>
+      <Field Name="Joystick" Identifier="47" BitMask="" ArrayDimensions="">
+        <Description>Classification is Joystick.</Description>
+      </Field>
+      <Field Name="Keypad" Identifier="48" BitMask="" ArrayDimensions="">
+        <Description>Classification is Keypad.</Description>
+      </Field>
+      <Field Name="PilotLight" Identifier="49" BitMask="" ArrayDimensions="">
+        <Description>Classification is PilotLight.</Description>
+      </Field>
+      <Field Name="StackLight" Identifier="50" BitMask="" ArrayDimensions="">
+        <Description>Classification is StackLight.</Description>
+      </Field>
+      <Field Name="Display" Identifier="51" BitMask="" ArrayDimensions="">
+        <Description>Classification is Display.</Description>
+      </Field>
+      <Field Name="CombinedButtonsAndLights" Identifier="52" BitMask="" ArrayDimensions="">
+        <Description>Classification is CombinedButtonsAndLights.</Description>
+      </Field>
+      <Field Name="OperatorStation" Identifier="53" BitMask="" ArrayDimensions="">
+        <Description>Classification is OperatorStation.</Description>
+      </Field>
+      <Field Name="GeneralInput" Identifier="54" BitMask="" ArrayDimensions="">
+        <Description>Classification is GeneralInput.</Description>
+      </Field>
+      <Field Name="GeneralOutput" Identifier="55" BitMask="" ArrayDimensions="">
+        <Description>Classification is GeneralOutput.</Description>
+      </Field>
+      <Field Name="CombinedInputOutput" Identifier="56" BitMask="" ArrayDimensions="">
+        <Description>Classification is CombinedInputOutput.</Description>
+      </Field>
+      <Field Name="Relay" Identifier="57" BitMask="" ArrayDimensions="">
+        <Description>Classification is Relay.</Description>
+      </Field>
+      <Field Name="Timer" Identifier="58" BitMask="" ArrayDimensions="">
+        <Description>Classification is Timer.</Description>
+      </Field>
+      <Field Name="Scanner" Identifier="59" BitMask="" ArrayDimensions="">
+        <Description>Classification is Scanner.</Description>
+      </Field>
+      <Field Name="ProgrammableController" Identifier="60" BitMask="" ArrayDimensions="">
+        <Description>Classification is ProgrammableController.</Description>
+      </Field>
+      <Field Name="CommunicationAdapter" Identifier="61" BitMask="" ArrayDimensions="">
+        <Description>Classification is CommunicationAdapter.</Description>
+      </Field>
+      <Field Name="Gateway" Identifier="62" BitMask="" ArrayDimensions="">
+        <Description>Classification is Gateway.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix4:DocumentClassification" BaseType="Prefix0:Enumeration">
+    <Description>Classification of a document. (Provides mapping for Fdt.Dtm.DocumentClassification)</Description>
+    <Children>
+      <Property SymbolicName="Prefix0:EnumValues" ModellingRule="Mandatory" DataType="Prefix0:EnumValueType" ValueRank="Array" ArrayDimensions="5">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>0</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Help</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Document contains help information.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>1</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>TechnicalDocumentation</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Document contains technical information.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>2</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>OrderingInformation</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Document contains order information.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>3</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>Miscellaneous</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Document contains general information.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>4</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>TenderSpecification</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Document contains tender specification.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Help" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>Document contains help information.</Description>
+      </Field>
+      <Field Name="TechnicalDocumentation" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>Document contains technical information.</Description>
+      </Field>
+      <Field Name="OrderingInformation" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description>Document contains order information.</Description>
+      </Field>
+      <Field Name="Miscellaneous" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description>Document contains general information.</Description>
+      </Field>
+      <Field Name="TenderSpecification" Identifier="4" BitMask="" ArrayDimensions="">
+        <Description>Document contains tender specification.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix4:DtmCategory" BaseType="Prefix0:Enumeration">
+    <Description>Specifies the category of a DTM. The different DTM categories reflect the physical entities which are represented by a DTM. (Provides mapping to Fdt.Dtm.DtmCategory)</Description>
+    <Children>
+      <Property SymbolicName="Prefix0:EnumValues" ModellingRule="Mandatory" DataType="Prefix0:EnumValueType" ValueRank="Array" ArrayDimensions="6">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>0</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>DeviceDTM</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>A Device DTM contains the application software for a 'normal' field device, e.g. a pressure transmitter or, a valve or a drive.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>1</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>CommunicationDTM</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>A Communication DTM is a special category of DTM containing the application software for specific communication hardware.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>2</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>GatewayDTM</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>A Gateway DTM is a special category of DTM representing a device that connects different fieldbus segments.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>3</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>CompositeDeviceDTM</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>A Composite DTM is a special category of DTM which is similar to a gateway DTM. A Composite DTM is the parent of a Module DTM and is intended to represent a header station of a modular device.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>4</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>ModuleDTM</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>A Module DTM is a special kind of DTM which is similar to a device DTM. A Module DTM is a child of a Composite DTM and is intended to represent a single module of a modular device.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>5</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>BlockTypeManager</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>A Block Type Manager (BTM) is a special category of DTM containing the application software for accessible objects inside a device such as function blocks and resource blocks. It is a child of a Device DTM.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="DeviceDTM" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>A Device DTM contains the application software for a 'normal' field device, e.g. a pressure transmitter or, a valve or a drive.</Description>
+      </Field>
+      <Field Name="CommunicationDTM" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>A Communication DTM is a special category of DTM containing the application software for specific communication hardware.</Description>
+      </Field>
+      <Field Name="GatewayDTM" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description>A Gateway DTM is a special category of DTM representing a device that connects different fieldbus segments.</Description>
+      </Field>
+      <Field Name="CompositeDeviceDTM" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description>A Composite DTM is a special category of DTM which is similar to a gateway DTM. A Composite DTM is the parent of a Module DTM and is intended to represent a header station of a modular device.</Description>
+      </Field>
+      <Field Name="ModuleDTM" Identifier="4" BitMask="" ArrayDimensions="">
+        <Description>A Module DTM is a special kind of DTM which is similar to a device DTM. A Module DTM is a child of a Composite DTM and is intended to represent a single module of a modular device.</Description>
+      </Field>
+      <Field Name="BlockTypeManager" Identifier="5" BitMask="" ArrayDimensions="">
+        <Description>A Block Type Manager (BTM) is a special category of DTM containing the application software for accessible objects inside a device such as function blocks and resource blocks. It is a child of a Device DTM.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix4:RangeType" BaseType="Prefix0:Enumeration">
+    <Description>Type of a range device data. (Provides mapping to Fdt.Dtm.DataAccess.RangeType)</Description>
+    <Children>
+      <Property SymbolicName="Prefix0:EnumValues" ModellingRule="Mandatory" DataType="Prefix0:EnumValueType" ValueRank="Array" ArrayDimensions="2">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>0</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>LowerRange</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Device data represents a lower range.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>1</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>UpperRange</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Device data represents a upper range.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="LowerRange" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>Device data represents a lower range.</Description>
+      </Field>
+      <Field Name="UpperRange" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>Device data represents a upper range.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix4:SubstitutionType" BaseType="Prefix0:Enumeration">
+    <Description>Type of substitution data. (Provides mapping to Fdt.Dtm.DataAccess.SubstitutionType)</Description>
+    <Children>
+      <Property SymbolicName="Prefix0:EnumValues" ModellingRule="Mandatory" DataType="Prefix0:EnumValueType" ValueRank="Array" ArrayDimensions="4">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>0</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>LastValue</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>The last known value shall be used.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>1</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>LastValidValue</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>The last valid value shall be used.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>2</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>UpperRange</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>The upper range shall be used.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>3</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>LowerRange</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>The lower range shall be used.</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="LastValue" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>The last known value shall be used.</Description>
+      </Field>
+      <Field Name="LastValidValue" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>The last valid value shall be used.</Description>
+      </Field>
+      <Field Name="UpperRange" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description>The upper range shall be used.</Description>
+      </Field>
+      <Field Name="LowerRange" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description>The lower range shall be used.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix4:SupportedTransfer" BaseType="Prefix0:Enumeration">
+    <Description>This enumeration provides values to describe the types of transfers provided for a device. (Provides mapping to Fdt.Dtm.SupportedTransfer)</Description>
+    <Children>
+      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="4">
+        <DefaultValue>
+          <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:LocalizedText>
+                    <uax:Text>None</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>OnlyDownload</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>OnlyUpload</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>BothUploadAndDownload</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="None" Identifier="0" BitMask="" ArrayDimensions="" />
+      <Field Name="OnlyDownload" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="OnlyUpload" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="BothUploadAndDownload" Identifier="3" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix4:FdtDeviceClassificationType" BaseType="Prefix0:Structure">
+    <ClassName />
+    <Fields>
+      <Field Name="ClassificationDomain" BitMask="" DataType="Prefix4:ClassificationDomainId" ArrayDimensions="" />
+      <Field Name="Classification" BitMask="" DataType="Prefix4:ClassificationId" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <VariableType SymbolicName="Prefix4:FdtParameter" BaseType="Prefix0:DataItemType" DataType="Prefix0:BaseDataType" ValueRank="ScalarOrArray">
+    <Children>
+      <Property SymbolicName="Prefix4:AlarmType" ModellingRule="Optional" DataType="Prefix4:AlarmType" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix4:ApplicationId" ModellingRule="Optional" DataType="Prefix4:ApplicationIdEnumeration" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix4:DataRef" ModellingRule="Optional" DataType="Prefix0:BaseDataType" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix4:DisplayFormat" ModellingRule="Optional" DataType="Prefix0:String" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix4:EngineeringUnits" ModellingRule="Optional" DataType="Prefix0:EUInformation" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix4:EnumStrings" ModellingRule="Optional" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="1" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix4:EURange" ModellingRule="Optional" DataType="Prefix0:Range" ValueRank="Array" ArrayDimensions="1" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix4:RangeType" ModellingRule="Optional" DataType="Prefix4:RangeType" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix4:SemanticInfo" TypeDefinition="Prefix4:SemanticInfoType" ModellingRule="Optional" DataType="Prefix0:BaseDataType" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix4:SubstitutionType" ModellingRule="Optional" DataType="Prefix4:SubstitutionType" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix4:SemanticInfoType" DataType="Prefix0:BaseDataType" ValueRank="ScalarOrArray">
+    <Description>This class provides semantic information for an information object (e.g. data, document). </Description>
+    <Children>
+      <Property SymbolicName="Prefix4:ApplicationDomain" ModellingRule="Mandatory" DataType="Prefix0:String" AccessLevel="ReadWrite">
+        <Description>The application domain, that applies to provided SemanticId. </Description>
+      </Property>
+      <Property SymbolicName="Prefix4:SemanticId" ModellingRule="Mandatory" DataType="Prefix0:String" AccessLevel="ReadWrite">
+        <Description>Semantic identifier for a data element.</Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix4:DataRefType" DataType="Prefix0:BaseDataType" ValueRank="ScalarOrArray">
+    <Description>Reference to an item in DataInfo identified by its Id and optionally also information about the type (semantic) of the reference.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix4:DataId" ModellingRule="Mandatory" DataType="Prefix0:String" AccessLevel="ReadWrite">
+        <Description>Id of item referenced in DataInfo.</Description>
+      </Variable>
+    </Children>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix4:FdtDocument" DataType="Prefix0:ByteString" ValueRank="ScalarOrArray">
+    <Description>This type describes the information associated with a document provided by a DTM.</Description>
+    <Children>
+      <Property SymbolicName="Prefix4:Classification" ModellingRule="Mandatory" DataType="Prefix4:DocumentClassification" AccessLevel="ReadWrite">
+        <DefaultValue>
+          <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Int32>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix4:Help" ModellingRule="Optional" DataType="Prefix0:String" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix4:Language" ModellingRule="Optional" DataType="Prefix0:String" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix4:MediaType" ModellingRule="Mandatory" DataType="Prefix0:String" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix4:PathOrUrl" ModellingRule="Mandatory" DataType="Prefix0:String" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix4:SemanticInfo" ModellingRule="Mandatory" DataType="Prefix0:String" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+    <DefaultValue>
+      <uax:ByteString xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"></uax:ByteString>
+    </DefaultValue>
+  </VariableType>
+  <ObjectType SymbolicName="Prefix4:FdtDataType" BaseType="Prefix2:ConfigurableObjectType">
+    <Description>Generic FDT data type base class</Description>
+    <Children>
+      <Method SymbolicName="Prefix4:Clone" ModellingRule="Mandatory">
+        <Description>Creates a new object that is a deep-copy of the current instance. All objects are duplicated - the top-level objects are duplicated as well as all the lower levels. The cloned object can be modified without affecting the original object.</Description>
+      </Method>
+      <Method SymbolicName="Prefix4:Verify" ModellingRule="Mandatory">
+        <Description>Verifies that all properties are valid (e.g. mandatory properties have a value).</Description>
+      </Method>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:FdtList" BaseType="Prefix4:FdtDataType">
+    <Description>Generic list of FdtDatatype&lt;T&gt;s, which can be cloned.</Description>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:RegularExpression" BaseType="Prefix4:FdtDataType">
+    <Description>Regular expression that defines which physical device types are supported by a DTM Device Type.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix4:Text" ModellingRule="Mandatory" DataType="Prefix0:String" AccessLevel="ReadWrite">
+        <Description>Regular expression text.</Description>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:FdtProtocolType" BaseType="Prefix2:ProtocolType" IsAbstract="true">
+    <Description>This type is used to specify which protocols an FdtDeviceType requires or supports.</Description>
+    <Children>
+      <Property SymbolicName="Prefix4:BusCategory" ModellingRule="Mandatory" DataType="Prefix0:String" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:HartFskConnectionPoint" BaseType="Prefix2:ConnectionPointType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ModbusSLConnectionPoint" BaseType="Prefix2:ConnectionPointType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ModbusTCPConnectionPoint" BaseType="Prefix2:ConnectionPointType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ProfibusDpv1ConnectionPoint" BaseType="Prefix2:ConnectionPointType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:FdtDeviceType" BaseType="Prefix2:DeviceType" IsAbstract="true">
+    <Children>
+      <Property SymbolicName="Prefix2:DeviceHealth" ModellingRule="Mandatory" DataType="Prefix2:DeviceHealthEnumeration">
+        <Description>Status of a device as defined by NAMUR Recommendation NE107.</Description>
+      </Property>
+      <Property SymbolicName="Prefix4:DeviceTag" ModellingRule="Mandatory" DataType="Prefix0:String" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix4:DeviceTypeId" ModellingRule="Optional" DataType="Prefix0:String" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix4:ManufacturerId" ModellingRule="Optional" DataType="Prefix0:String" AccessLevel="ReadWrite" />
+      <Object SymbolicName="Prefix2:MethodSet" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix2:ParameterSet" ModellingRule="Mandatory" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+</ModelDesign>
