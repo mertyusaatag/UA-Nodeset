@@ -1,0 +1,696 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix2="http://opcfoundation.org/UA/DI/" xmlns:Prefix0="http://opcfoundation.org/UA/" xmlns:Prefix4="http://fdi-cooperation.com/OPCUA/FDI7/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-05-29T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09.03.2021">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://fdi-cooperation.com/OPCUA/FDI7/" XmlNamespace="http://fdi-cooperation.com/OPCUA/FDI7/" XmlPrefix="Prefix5" FilePath="" PublicationDate="14.07.2017">http://fdi-cooperation.com/OPCUA/FDI7/</Namespace>
+  </Namespaces>
+  <ObjectType SymbolicName="Prefix4:Foundation_H1" BaseType="Prefix2:ProtocolType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:Foundation_HSE" BaseType="Prefix2:ProtocolType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:Profibus_DP" BaseType="Prefix2:ProtocolType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:Profibus_PA" BaseType="Prefix2:ProtocolType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:Profinet_IO" BaseType="Prefix2:ProtocolType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:HART" BaseType="Prefix2:ProtocolType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ISA100_Wireless" BaseType="Prefix2:ProtocolType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:GenericProtocol" BaseType="Prefix2:ProtocolType">
+    <Children>
+      <Property SymbolicName="Prefix4:ProtocolIdentifier" ModellingRule="Mandatory" DataType="Prefix0:String" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ConnectionPoint_Foundation_H1" BaseType="Prefix2:ConnectionPointType">
+    <Children>
+      <Property SymbolicName="Prefix4:Address" ModellingRule="Mandatory" DataType="Prefix0:Byte" />
+      <Property SymbolicName="Prefix4:OrdinalNumber" ModellingRule="Optional" DataType="Prefix0:Int32" />
+      <Property SymbolicName="Prefix4:SIFConnection" ModellingRule="Optional" DataType="Prefix0:Boolean" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ConnectionPoint_Foundation_HSE" BaseType="Prefix2:ConnectionPointType">
+    <Children>
+      <Property SymbolicName="Prefix4:Address" ModellingRule="Mandatory" DataType="Prefix0:Byte" ValueRank="Array" ArrayDimensions="16" />
+      <Property SymbolicName="Prefix4:OrdinalNumber" ModellingRule="Optional" DataType="Prefix0:Int32" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ConnectionPoint_Profibus_DP" BaseType="Prefix2:ConnectionPointType">
+    <Children>
+      <Property SymbolicName="Prefix4:Address" ModellingRule="Mandatory" DataType="Prefix0:Byte" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ConnectionPoint_Profinet_IO" BaseType="Prefix2:ConnectionPointType">
+    <Children>
+      <Property SymbolicName="Prefix4:MAC" ModellingRule="Mandatory" DataType="Prefix0:Byte" ValueRank="Array" ArrayDimensions="16" />
+      <Property SymbolicName="Prefix4:IPv4" ModellingRule="Mandatory" DataType="Prefix0:Byte" ValueRank="Array" ArrayDimensions="4" />
+      <Property SymbolicName="Prefix4:DNSNAME" ModellingRule="Mandatory" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix4:VALID" ModellingRule="Mandatory" DataType="Prefix0:Boolean" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ConnectionPoint_HART_TP5" BaseType="Prefix2:ConnectionPointType">
+    <Children>
+      <Property SymbolicName="Prefix4:DevAddr" ModellingRule="Mandatory" DataType="Prefix0:Byte" ValueRank="Array" ArrayDimensions="5" />
+      <Property SymbolicName="Prefix4:DevMfg" ModellingRule="Optional" DataType="Prefix0:UInt16" />
+      <Property SymbolicName="Prefix4:DevType" ModellingRule="Optional" DataType="Prefix0:UInt16" />
+      <Property SymbolicName="Prefix4:DevRev" ModellingRule="Optional" DataType="Prefix0:UInt16" />
+      <Property SymbolicName="Prefix4:DevTag" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix4:DevPollAddr" ModellingRule="Optional" DataType="Prefix0:Byte" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ConnectionPoint_HART_TP6" BaseType="Prefix2:ConnectionPointType">
+    <Children>
+      <Property SymbolicName="Prefix4:DevAddr" ModellingRule="Mandatory" DataType="Prefix0:Byte" ValueRank="Array" ArrayDimensions="5" />
+      <Property SymbolicName="Prefix4:DevMfg" ModellingRule="Optional" DataType="Prefix0:UInt16" />
+      <Property SymbolicName="Prefix4:DevType" ModellingRule="Optional" DataType="Prefix0:UInt16" />
+      <Property SymbolicName="Prefix4:DevRev" ModellingRule="Optional" DataType="Prefix0:UInt16" />
+      <Property SymbolicName="Prefix4:DevTag" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix4:DevPollAddr" ModellingRule="Optional" DataType="Prefix0:Byte" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ConnectionPoint_HART_TP7" BaseType="Prefix2:ConnectionPointType">
+    <Children>
+      <Property SymbolicName="Prefix4:DevAddr" ModellingRule="Mandatory" DataType="Prefix0:Byte" ValueRank="Array" ArrayDimensions="5" />
+      <Property SymbolicName="Prefix4:DevMfg" ModellingRule="Optional" DataType="Prefix0:UInt16" />
+      <Property SymbolicName="Prefix4:DevType" ModellingRule="Optional" DataType="Prefix0:UInt16" />
+      <Property SymbolicName="Prefix4:DevRev" ModellingRule="Optional" DataType="Prefix0:UInt16" />
+      <Property SymbolicName="Prefix4:DevTag" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix4:DevPollAddr" ModellingRule="Optional" DataType="Prefix0:Byte" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ConnectionPoint_ISA100_Wireless" BaseType="Prefix2:ConnectionPointType">
+    <Children>
+      <Property SymbolicName="Prefix4:IPAddress" ModellingRule="Mandatory" DataType="Prefix0:ByteString" />
+      <Property SymbolicName="Prefix4:DevMfg" ModellingRule="Optional" DataType="Prefix0:UInt32" />
+      <Property SymbolicName="Prefix4:DevType" ModellingRule="Optional" DataType="Prefix0:UInt16" />
+      <Property SymbolicName="Prefix4:DevRev" ModellingRule="Optional" DataType="Prefix0:UInt16" />
+      <Property SymbolicName="Prefix4:DevTag" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix4:DevPollAddr" ModellingRule="Optional" DataType="Prefix0:Byte" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:GenericConnectionPoint" BaseType="Prefix2:ConnectionPointType">
+    <Children>
+      <Property SymbolicName="Prefix4:Address" ModellingRule="Mandatory" DataType="Prefix0:ByteString" />
+      <Property SymbolicName="Prefix4:ProtocolIdentifier" ModellingRule="Mandatory" DataType="Prefix0:String" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:CommunicationServerType" BaseType="Prefix2:DeviceType">
+    <Children>
+      <Object SymbolicName="Prefix2:ParameterSet" />
+      <Object SymbolicName="Prefix2:MethodSet" ModellingRule="Mandatory">
+        <Children>
+          <Method SymbolicName="Prefix4:Initialize" ModellingRule="Mandatory">
+            <OutputArguments>
+              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
+            </OutputArguments>
+          </Method>
+          <Method SymbolicName="Prefix4:Reset" ModellingRule="Mandatory">
+            <OutputArguments>
+              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
+            </OutputArguments>
+          </Method>
+          <Method SymbolicName="Prefix4:AddComponent" ModellingRule="Optional">
+            <InputArguments>
+              <Argument Name="ModuleTypeName" DataType="Prefix0:String" />
+              <Argument Name="InstanceName" DataType="Prefix0:String" />
+              <Argument Name="InstanceLabel" DataType="Prefix0:String" />
+            </InputArguments>
+            <OutputArguments>
+              <Argument Name="InstanceNodeId" DataType="Prefix0:NodeId" />
+              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
+            </OutputArguments>
+          </Method>
+          <Method SymbolicName="Prefix4:RemoveComponent" ModellingRule="Optional">
+            <InputArguments>
+              <Argument Name="ModuleNodeId" DataType="Prefix0:NodeId" />
+            </InputArguments>
+            <OutputArguments>
+              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
+            </OutputArguments>
+          </Method>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix4:SubDevices" TypeDefinition="Prefix0:FolderType" ModellingRule="Mandatory" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ServerCommunicationDeviceType" BaseType="Prefix2:DeviceType" IsAbstract="true">
+    <Children>
+      <Object SymbolicName="Prefix2:MethodSet">
+        <Children>
+          <Method SymbolicName="Prefix4:Scan" ModellingRule="Optional">
+            <OutputArguments>
+              <Argument Name="TopologyScanResult" DataType="Prefix0:XmlElement" />
+              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
+            </OutputArguments>
+          </Method>
+          <Method SymbolicName="Prefix4:ResetScan" ModellingRule="Optional">
+            <OutputArguments>
+              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
+            </OutputArguments>
+          </Method>
+          <Method SymbolicName="Prefix4:AddComponent" ModellingRule="Optional">
+            <InputArguments>
+              <Argument Name="ModuleTypeName" DataType="Prefix0:String" />
+              <Argument Name="InstanceName" DataType="Prefix0:String" />
+              <Argument Name="InstanceLabel" DataType="Prefix0:String" />
+            </InputArguments>
+            <OutputArguments>
+              <Argument Name="InstanceNodeId" DataType="Prefix0:NodeId" />
+              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
+            </OutputArguments>
+          </Method>
+          <Method SymbolicName="Prefix4:RemoveComponent" ModellingRule="Optional">
+            <InputArguments>
+              <Argument Name="ModuleNodeId" DataType="Prefix0:NodeId" />
+            </InputArguments>
+            <OutputArguments>
+              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
+            </OutputArguments>
+          </Method>
+        </Children>
+      </Object>
+      <Property SymbolicName="Prefix4:ListOfCommunicationProfiles" ModellingRule="Mandatory" DataType="Prefix0:String" ValueRank="Array" ArrayDimensions="0" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ServerCommunicationFFH1DeviceType" BaseType="Prefix4:ServerCommunicationDeviceType">
+    <Children>
+      <Object SymbolicName="Prefix2:MethodSet" ModellingRule="Optional">
+        <Description>Flat list of Methods</Description>
+        <Children>
+          <Method SymbolicName="Prefix4:SetAddress" ModellingRule="Optional">
+            <InputArguments>
+              <Argument Name="OPERATION" DataType="Prefix0:String" />
+              <Argument Name="LinkId" DataType="Prefix0:UInt16" />
+              <Argument Name="OldAddress" DataType="Prefix0:Byte" />
+              <Argument Name="NewAddress" DataType="Prefix0:Byte" />
+              <Argument Name="NewPDTag" DataType="Prefix0:String" />
+              <Argument Name="ServiceId" DataType="Prefix0:UInt32" />
+            </InputArguments>
+            <OutputArguments>
+              <Argument Name="DelayForNextCall" DataType="Prefix0:UInt32" />
+              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
+            </OutputArguments>
+          </Method>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix4:ServiceProvider" TypeDefinition="Prefix4:ServerCommunicationFFH1ServiceType" ModellingRule="Mandatory" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ServerCommunicationFFH1ServiceType" BaseType="Prefix4:ServerCommunicationServiceType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ServerCommunicationFFHSEDeviceType" BaseType="Prefix4:ServerCommunicationDeviceType">
+    <Children>
+      <Object SymbolicName="Prefix2:MethodSet" ModellingRule="Optional">
+        <Description>Flat list of Methods</Description>
+        <Children>
+          <Method SymbolicName="Prefix4:SetAddress" ModellingRule="Optional">
+            <InputArguments>
+              <Argument Name="OPERATION" DataType="Prefix0:String" />
+              <Argument Name="NewPDTag" DataType="Prefix0:String" />
+              <Argument Name="ServiceId" DataType="Prefix0:UInt32" />
+            </InputArguments>
+            <OutputArguments>
+              <Argument Name="DelayForNextCall" DataType="Prefix0:UInt32" />
+              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
+            </OutputArguments>
+          </Method>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix4:ServiceProvider" TypeDefinition="Prefix4:ServerCommunicationFFHSEServiceType" ModellingRule="Mandatory" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ServerCommunicationFFHSEServiceType" BaseType="Prefix4:ServerCommunicationServiceType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ServerCommunicationPROFIBUSDeviceType" BaseType="Prefix4:ServerCommunicationDeviceType">
+    <Children>
+      <Object SymbolicName="Prefix2:MethodSet" ModellingRule="Optional">
+        <Description>Flat list of Methods</Description>
+        <Children>
+          <Method SymbolicName="Prefix4:SetAddress" ModellingRule="Optional">
+            <InputArguments>
+              <Argument Name="OldAddress" DataType="Prefix0:Byte" />
+              <Argument Name="NewAddress" DataType="Prefix0:Byte" />
+            </InputArguments>
+            <OutputArguments>
+              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
+            </OutputArguments>
+          </Method>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix4:ServiceProvider" TypeDefinition="Prefix4:ServerCommunicationPROFIBUSServiceType" ModellingRule="Mandatory" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ServerCommunicationPROFIBUSServiceType" BaseType="Prefix4:ServerCommunicationServiceType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ServerCommunicationPROFINETDeviceType" BaseType="Prefix4:ServerCommunicationDeviceType">
+    <Children>
+      <Object SymbolicName="Prefix2:MethodSet" ModellingRule="Optional">
+        <Description>Flat list of Methods</Description>
+        <Children>
+          <Method SymbolicName="Prefix4:SetAddress" ModellingRule="Optional">
+            <InputArguments>
+              <Argument Name="MAC" DataType="Prefix0:Byte" ValueRank="Array" />
+              <Argument Name="IP" DataType="Prefix0:Byte" ValueRank="Array" />
+              <Argument Name="DNSNAME" DataType="Prefix0:String" />
+              <Argument Name="SubnetMask" DataType="Prefix0:Byte" ValueRank="Array" />
+              <Argument Name="Gateway" DataType="Prefix0:Byte" ValueRank="Array" />
+            </InputArguments>
+            <OutputArguments>
+              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
+            </OutputArguments>
+          </Method>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix4:ServiceProvider" TypeDefinition="Prefix4:ServerCommunicationPROFINETServiceType" ModellingRule="Mandatory" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ServerCommunicationPROFINETServiceType" BaseType="Prefix4:ServerCommunicationServiceType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ServerCommunicationHARType" BaseType="Prefix4:ServerCommunicationDeviceType">
+    <Children>
+      <Object SymbolicName="Prefix2:MethodSet" ModellingRule="Optional">
+        <Description>Flat list of Methods</Description>
+        <Children>
+          <Method SymbolicName="Prefix4:SetAddress" ModellingRule="Optional">
+            <InputArguments>
+              <Argument Name="OldPollAddress" DataType="Prefix0:Byte" />
+              <Argument Name="NewPollAddress" DataType="Prefix0:Byte" />
+            </InputArguments>
+            <OutputArguments>
+              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
+            </OutputArguments>
+          </Method>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix4:ServiceProvider" TypeDefinition="Prefix4:ServerCommunicationHARTServiceType" ModellingRule="Mandatory" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ServerCommunicationHARTServiceType" BaseType="Prefix4:ServerCommunicationServiceType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ServerCommunicationISA100_WirelessDeviceType" BaseType="Prefix4:ServerCommunicationDeviceType">
+    <Children>
+      <Object SymbolicName="Prefix4:ServiceProvider" TypeDefinition="Prefix4:ServerCommunicationISA100_WirelessServiceType" ModellingRule="Mandatory" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ServerCommunicationISA100_WirelessServiceType" BaseType="Prefix4:ServerCommunicationServiceType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ServerCommunicationGENERICDeviceType" BaseType="Prefix4:ServerCommunicationDeviceType">
+    <Children>
+      <Object SymbolicName="Prefix2:MethodSet" ModellingRule="Optional">
+        <Description>Flat list of Methods</Description>
+        <Children>
+          <Method SymbolicName="Prefix4:SetAddress" ModellingRule="Optional">
+            <InputArguments>
+              <Argument Name="OldAddress" DataType="Prefix0:ByteString" />
+              <Argument Name="NewAddress" DataType="Prefix0:ByteString" />
+            </InputArguments>
+            <OutputArguments>
+              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
+            </OutputArguments>
+          </Method>
+        </Children>
+      </Object>
+      <Property SymbolicName="Prefix4:ProtocolIdentifier" ModellingRule="Mandatory" DataType="Prefix0:String" />
+      <Object SymbolicName="Prefix4:ServiceProvider" TypeDefinition="Prefix4:ServerCommunicationGENERICServiceType" ModellingRule="Mandatory" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:ServerCommunicationGENERICServiceType" BaseType="Prefix4:ServerCommunicationServiceType">
+    <ClassName />
+  </ObjectType>
+  <DataType SymbolicName="Prefix4:EddDataTypeEnum" BaseType="Prefix0:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix0:EnumValues" ModellingRule="Mandatory" DataType="Prefix0:EnumValueType" ValueRank="Array" ArrayDimensions="0">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>1</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>BOOLEAN</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>2</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>DOUBLE</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>3</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>FLOAT</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>4</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>INTEGER</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>5</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>UNSIGNED_INTEGER</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>6</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>DATE</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>7</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>DATE_AND_TIME</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>8</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>DURATION</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>9</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>TIME</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>10</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>TIME_VALUE</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>11</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>BIT_ENUMERATED</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>12</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>ENUMERATED</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>13</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>ASCII</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>14</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>BITSTRING</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>15</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>EUC</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>16</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>OCTET</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>17</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>PACKED_ASCII</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>18</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>PASSWORD</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>19</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>VISIBLE</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="BOOLEAN" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="DOUBLE" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="FLOAT" Identifier="3" BitMask="" ArrayDimensions="" />
+      <Field Name="INTEGER" Identifier="4" BitMask="" ArrayDimensions="" />
+      <Field Name="UNSIGNED_INTEGER" Identifier="5" BitMask="" ArrayDimensions="" />
+      <Field Name="DATE" Identifier="6" BitMask="" ArrayDimensions="" />
+      <Field Name="DATE_AND_TIME" Identifier="7" BitMask="" ArrayDimensions="" />
+      <Field Name="DURATION" Identifier="8" BitMask="" ArrayDimensions="" />
+      <Field Name="TIME" Identifier="9" BitMask="" ArrayDimensions="" />
+      <Field Name="TIME_VALUE" Identifier="10" BitMask="" ArrayDimensions="" />
+      <Field Name="BIT_ENUMERATED" Identifier="11" BitMask="" ArrayDimensions="" />
+      <Field Name="ENUMERATED" Identifier="12" BitMask="" ArrayDimensions="" />
+      <Field Name="ASCII" Identifier="13" BitMask="" ArrayDimensions="" />
+      <Field Name="BITSTRING" Identifier="14" BitMask="" ArrayDimensions="" />
+      <Field Name="EUC" Identifier="15" BitMask="" ArrayDimensions="" />
+      <Field Name="OCTET" Identifier="16" BitMask="" ArrayDimensions="" />
+      <Field Name="PACKED_ASCII" Identifier="17" BitMask="" ArrayDimensions="" />
+      <Field Name="PASSWORD" Identifier="18" BitMask="" ArrayDimensions="" />
+      <Field Name="VISIBLE" Identifier="19" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix4:EddDataTypeInfo" BaseType="Prefix0:Structure">
+    <ClassName />
+    <Fields>
+      <Field Name="EddDataType" BitMask="" DataType="Prefix4:EddDataTypeEnum" ArrayDimensions="" />
+      <Field Name="Size" BitMask="" DataType="Prefix0:UInt32" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <ObjectType SymbolicName="Prefix4:ServerCommunicationServiceType" BaseType="Prefix2:DeviceType" IsAbstract="true">
+    <Children>
+      <Object SymbolicName="Prefix2:MethodSet" ModellingRule="Mandatory">
+        <Children>
+          <Method SymbolicName="Prefix4:Disconnect" ModellingRule="Mandatory">
+            <InputArguments>
+              <Argument Name="CommunicationRelationId" DataType="Prefix0:ByteString" />
+            </InputArguments>
+            <OutputArguments>
+              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
+            </OutputArguments>
+          </Method>
+        </Children>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+</ModelDesign>
