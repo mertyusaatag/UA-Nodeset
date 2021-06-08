@@ -1,0 +1,7 @@
+"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.3.2.23344";;;;"2021-06-08T12:43:32.3310679Z";;
+"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2021 Mariusz Postol";;;;"2021-06-08T12:43:32.3310679Z";;
+"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.PackML.NodeSet2.xml";;;;"2021-06-08T12:44:23.5921737Z";;
+"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import";;;;"2021-06-08T12:44:23.5961721Z";;
+"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/PackML/ namespace.";;;;"2021-06-08T12:44:32.2119829Z";;
+"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 19 nodes and no errors/warnings reported";;;;"2021-06-08T12:44:32.3877636Z";;
+"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file Opc.Ua.PackML.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2021-06-08T12:44:32.5008013Z";;
