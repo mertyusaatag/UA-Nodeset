@@ -1,0 +1,819 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix2="http://opcfoundation.org/UA/PackML/" xmlns:Prefix0="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/PackML/" TargetVersion="" TargetPublicationDate="2021-06-08T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/PackML/" XmlNamespace="http://opcfoundation.org/UA/PackML/" XmlPrefix="Prefix3" FilePath="" Version="1.01" PublicationDate="08.10.2020">http://opcfoundation.org/UA/PackML/</Namespace>
+  </Namespaces>
+  <DataType SymbolicName="Prefix2:ProductionMaintenanceModeEnum" BaseType="Prefix0:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix0:EnumValues" ModellingRule="Mandatory" DataType="Prefix0:EnumValueType" ValueRank="Array" ArrayDimensions="4">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Invalid</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>This is an invalid mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Produce</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Machine is in production mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Maintenance</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Machine is in maintenance mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Manual</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Machine is in manual mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Invalid" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>This is an invalid mode</Description>
+      </Field>
+      <Field Name="Produce" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>Machine is in production mode</Description>
+      </Field>
+      <Field Name="Maintenance" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description>Machine is in maintenance mode</Description>
+      </Field>
+      <Field Name="Manual" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description>Machine is in manual mode</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix2:PackMLAlarmDataType" BaseType="Prefix0:Structure">
+    <ClassName />
+    <Fields>
+      <Field Name="ID" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="">
+        <Description>A unique number assigned to each type of alarm, stop or warning.</Description>
+      </Field>
+      <Field Name="Value" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="">
+        <Description>An alarm, stop or warning message number associated to the ID to allow for user specific detail or to break down the Alarm.ID to greater detail</Description>
+      </Field>
+      <Field Name="Message" BitMask="" DataType="Prefix0:String" ArrayDimensions="">
+        <Description>The actual text of the alarm, stop or warning for those machines capable of providing string information</Description>
+      </Field>
+      <Field Name="Category" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="">
+        <Description>A user defined value which indicates what type of alarm, stop or warning has occurred. E.g. electrical, mechanical, process limit, …</Description>
+      </Field>
+      <Field Name="DateTime" BitMask="" DataType="Prefix0:UtcTime" ArrayDimensions="">
+        <Description>The date and time that the alarm, stop or warning occurred, in ISO 8601 format (year, month, day, hour, minute, second, msec), as an array of 32 bit integers. Any unused date time elements should be set to zero</Description>
+      </Field>
+      <Field Name="AckDateTime" BitMask="" DataType="Prefix0:UtcTime" ArrayDimensions="">
+        <Description>The date and time that the alarm, stop or warning has been acknowledged, in ISO 8601 format (year, month, day, hour, minute, second, msec), as an array of 32 bit integers. Any unused date time elements should be set to zero</Description>
+      </Field>
+      <Field Name="Trigger" BitMask="" DataType="Prefix0:Boolean" ArrayDimensions="">
+        <Description>This variable is true when the alarm is active</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix2:PackMLCountDataType" BaseType="Prefix0:Structure">
+    <ClassName />
+    <Fields>
+      <Field Name="ID" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="">
+        <Description>A user defined value that represents the consumed (processed or defective) material. Typically this is an SKU number or a user material master number.</Description>
+      </Field>
+      <Field Name="Name" BitMask="" DataType="Prefix0:String" ArrayDimensions="">
+        <Description>A string description of the material.</Description>
+      </Field>
+      <Field Name="Unit" BitMask="" DataType="Prefix0:EUInformation" ArrayDimensions="">
+        <Description>OPC UA engineering unit information for the count.</Description>
+      </Field>
+      <Field Name="Count" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="">
+        <Description>The amount of consumed (processed or defective) material on the current production job.</Description>
+      </Field>
+      <Field Name="AccCount" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="">
+        <Description>The cumulative count value of the material produced (or consumed). This counter gives the user a non-resetting counter that may be used for OEE calculations</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix2:PackMLDescriptorDataType" BaseType="Prefix0:Structure">
+    <ClassName />
+    <Fields>
+      <Field Name="ID" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="">
+        <Description>A unique number assigned to the parameter</Description>
+      </Field>
+      <Field Name="Name" BitMask="" DataType="Prefix0:String" ArrayDimensions="">
+        <Description>The name of the parameter</Description>
+      </Field>
+      <Field Name="Unit" BitMask="" DataType="Prefix0:EUInformation" ArrayDimensions="">
+        <Description>OPC UA engineering unit information</Description>
+      </Field>
+      <Field Name="Value" BitMask="" DataType="Prefix0:Float" ArrayDimensions="">
+        <Description>This is the numeric value of the parameter</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix2:PackMLIngredientsDataType" BaseType="Prefix0:Structure">
+    <ClassName />
+    <Fields>
+      <Field Name="IngredientID" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="">
+        <Description>A unique number assigned to the ingredient.</Description>
+      </Field>
+      <Field Name="Parameter" BitMask="" DataType="Prefix2:PackMLDescriptorDataType" ValueRank="Array" ArrayDimensions="0">
+        <Description>The array of Parameters that correspond to the ingredient</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix2:PackMLProductDataType" BaseType="Prefix0:Structure">
+    <ClassName />
+    <Fields>
+      <Field Name="ProductID" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="">
+        <Description>A unique number assigned to the product.</Description>
+      </Field>
+      <Field Name="ProcessVariables" BitMask="" DataType="Prefix2:PackMLDescriptorDataType" ValueRank="Array" ArrayDimensions="0">
+        <Description>The array of Process variables associated with this product</Description>
+      </Field>
+      <Field Name="Ingredients" BitMask="" DataType="Prefix2:PackMLIngredientsDataType" ValueRank="Array" ArrayDimensions="0">
+        <Description>The array of ingredients associated with this product.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix2:PackMLRemoteInterfaceDataType" BaseType="Prefix0:Structure">
+    <ClassName />
+    <Fields>
+      <Field Name="Number" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="">
+        <Description>This is the unique number for the downstream/upstream unit machine using a common tag structure as the unit machine.</Description>
+      </Field>
+      <Field Name="ControlCmdNumber" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="">
+        <Description>A user defined command number associated with coded value from a remote unit. This number is a coded value sent from one node on the network to another.</Description>
+      </Field>
+      <Field Name="CmdValue" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="">
+        <Description>This is the command value associated with the ControlCmdNumber above.</Description>
+      </Field>
+      <Field Name="Parameter" BitMask="" DataType="Prefix2:PackMLDescriptorDataType" ValueRank="Array" ArrayDimensions="0">
+        <Description>The parameter tags associated to commanded remote interface are typically used for command parameters that are given to the unit machine from remote machines.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <ReferenceType SymbolicName="Prefix2:HasAlarm" BaseType="Prefix0:HasComponent">
+    <ClassName />
+    <InverseName>AlarmFor</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix2:HasAlarmHistory" BaseType="Prefix0:HasComponent">
+    <ClassName />
+    <InverseName>AlarmHistoryFor</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix2:HasInterlock" BaseType="Prefix0:HasComponent">
+    <ClassName />
+    <InverseName>InterlockFor</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix2:HasStopReason" BaseType="Prefix0:HasComponent">
+    <ClassName />
+    <InverseName>StopReasonFor</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix2:HasWarning" BaseType="Prefix0:HasComponent">
+    <ClassName />
+    <InverseName>WarningFor</InverseName>
+  </ReferenceType>
+  <ObjectType SymbolicName="Prefix2:PackMLAdminObjectType">
+    <Children>
+      <Variable SymbolicName="Prefix2:AccTimeSinceReset" ModellingRule="Optional" DataType="Prefix0:Int32" />
+      <Variable SymbolicName="Prefix2:AlarmExtent" ModellingRule="Optional" DataType="Prefix0:Int32" />
+      <Variable SymbolicName="Prefix2:AlarmHistoryExtent" ModellingRule="Optional" DataType="Prefix0:Int32" />
+      <Variable SymbolicName="Prefix2:MachDesignSpeed" ModellingRule="Optional" DataType="Prefix0:Float" />
+      <Variable SymbolicName="Prefix2:ModeCumulativeTime" ModellingRule="Optional" DataType="Prefix0:Int32" ValueRank="Array" ArrayDimensions="0" />
+      <Variable SymbolicName="Prefix2:ModeCurrentTime" ModellingRule="Optional" DataType="Prefix0:Int32" ValueRank="Array" ArrayDimensions="0" />
+      <Variable SymbolicName="Prefix2:Parameter" ModellingRule="Optional" DataType="Prefix2:PackMLDescriptorDataType" ValueRank="Array" ArrayDimensions="0" />
+      <Variable SymbolicName="Prefix2:ProdConsumedCount" ModellingRule="Optional" DataType="Prefix2:PackMLCountDataType" ValueRank="Array" ArrayDimensions="0" />
+      <Variable SymbolicName="Prefix2:ProdDefectiveCount" ModellingRule="Optional" DataType="Prefix2:PackMLCountDataType" ValueRank="Array" ArrayDimensions="0" />
+      <Variable SymbolicName="Prefix2:ProdProcessedCount" ModellingRule="Optional" DataType="Prefix2:PackMLCountDataType" ValueRank="Array" ArrayDimensions="0" />
+      <Variable SymbolicName="Prefix2:StateCumulativeTime" ModellingRule="Optional" DataType="Prefix0:Int32" ValueRank="OneOrMoreDimensions" ArrayDimensions="0,0" />
+      <Variable SymbolicName="Prefix2:StateCurrentTime" ModellingRule="Optional" DataType="Prefix0:Int32" ValueRank="OneOrMoreDimensions" ArrayDimensions="0,0" />
+      <Variable SymbolicName="Prefix2:StopReasonExtent" ModellingRule="Optional" DataType="Prefix0:Int32" />
+      <Variable SymbolicName="Prefix2:WarningExtent" ModellingRule="Optional" DataType="Prefix0:Int32" />
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix2:HasAlarm</ReferenceType>
+        <TargetId>Prefix2:Alarm</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasAlarmHistory</ReferenceType>
+        <TargetId>Prefix2:AlarmHistory</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasStopReason</ReferenceType>
+        <TargetId>Prefix2:StopReason</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix2:HasWarning</ReferenceType>
+        <TargetId>Prefix2:Warning</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix2:PackMLBaseObjectType">
+    <Children>
+      <Object SymbolicName="Prefix2:Admin" TypeDefinition="Prefix2:PackMLAdminObjectType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix2:BaseStateMachine" TypeDefinition="Prefix2:PackMLBaseStateMachineType" ModellingRule="Mandatory" />
+      <Property SymbolicName="Prefix2:PackMLVersion" ModellingRule="Optional" DataType="Prefix0:String">
+        <DefaultValue>
+          <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">TR88.00.02-2015</uax:String>
+        </DefaultValue>
+      </Property>
+      <Method SymbolicName="Prefix2:RemoteCommand" ModellingRule="Optional">
+        <InputArguments>
+          <Argument Name="RemoteInterface" DataType="Prefix2:PackMLRemoteInterfaceDataType" ValueRank="Array">
+            <Description>This structure is an array of remote interface information which include Number, ControlCmdNumber, CmdValue and Parameter.</Description>
+          </Argument>
+        </InputArguments>
+      </Method>
+      <Method SymbolicName="Prefix2:SetInterlock" ModellingRule="Optional">
+        <InputArguments>
+          <Argument Name="InterlockId" DataType="Prefix0:Int32">
+            <Description>The NodeId of the interlock to set or reset.</Description>
+          </Argument>
+          <Argument Name="State" DataType="Prefix0:Boolean">
+            <Description>The state that the targeted interlock should be set to.  True is set to interlocked, false is not interlocked.</Description>
+          </Argument>
+        </InputArguments>
+      </Method>
+      <Method SymbolicName="Prefix2:SetMachSpeed" ModellingRule="Mandatory">
+        <InputArguments>
+          <Argument Name="RequestedMachineSpeed" DataType="Prefix0:Float">
+            <Description>The target machine speed</Description>
+          </Argument>
+        </InputArguments>
+      </Method>
+      <Method SymbolicName="Prefix2:SetParameter" ModellingRule="Mandatory">
+        <InputArguments>
+          <Argument Name="Parameter" DataType="Prefix2:PackMLDescriptorDataType" ValueRank="Array">
+            <Description>The array of parameter that can be used by the method</Description>
+          </Argument>
+        </InputArguments>
+      </Method>
+      <Method SymbolicName="Prefix2:SetProduct" ModellingRule="Mandatory">
+        <InputArguments>
+          <Argument Name="Product" DataType="Prefix2:PackMLProductDataType" ValueRank="Array">
+            <Description>This structure is an array of product definition, which includes the ProductId, ProcessVariables array and Ingredient array.</Description>
+          </Argument>
+        </InputArguments>
+      </Method>
+      <Method SymbolicName="Prefix2:SetUnitMode" ModellingRule="Mandatory">
+        <InputArguments>
+          <Argument Name="RequestedMode" DataType="Prefix0:Int32">
+            <Description>The requested mode from the list of available modes in the enumeration from ModeSelection </Description>
+          </Argument>
+        </InputArguments>
+      </Method>
+      <Object SymbolicName="Prefix2:Status" TypeDefinition="Prefix2:PackMLStatusObjectType" ModellingRule="Mandatory" />
+      <Property SymbolicName="Prefix2:TagID" ModellingRule="Optional" DataType="Prefix0:String" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix2:PackMLStatusObjectType">
+    <Children>
+      <Variable SymbolicName="Prefix2:CurMachSpeed" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
+      <Variable SymbolicName="Prefix2:EquipmentBlocked" ModellingRule="Mandatory" DataType="Prefix0:Boolean" />
+      <Variable SymbolicName="Prefix2:EquipmentStarved" ModellingRule="Mandatory" DataType="Prefix0:Boolean" />
+      <Variable SymbolicName="Prefix2:MachSpeed" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
+      <Variable SymbolicName="Prefix2:MaterialInterlocked" ModellingRule="Optional" DataType="Prefix0:Boolean" />
+      <Variable SymbolicName="Prefix2:Parameter" ModellingRule="Optional" DataType="Prefix2:PackMLDescriptorDataType" ValueRank="Array" ArrayDimensions="0" />
+      <Variable SymbolicName="Prefix2:Product" ModellingRule="Optional" DataType="Prefix2:PackMLProductDataType" ValueRank="Array" ArrayDimensions="0" />
+      <Variable SymbolicName="Prefix2:RemoteParameter" ModellingRule="Optional" DataType="Prefix2:PackMLRemoteInterfaceDataType" ValueRank="Array" ArrayDimensions="0" />
+      <Variable SymbolicName="Prefix2:StateChangeInProcess" ModellingRule="Optional" DataType="Prefix0:Boolean" />
+      <Variable SymbolicName="Prefix2:StateRequested" ModellingRule="Optional" DataType="Prefix0:Int32" />
+      <Variable SymbolicName="Prefix2:UnitModeChangeInProcess" ModellingRule="Optional" DataType="Prefix0:Boolean" />
+      <Variable SymbolicName="Prefix2:UnitModeCurrent" ModellingRule="Mandatory" DataType="Prefix0:Enumeration" />
+      <Variable SymbolicName="Prefix2:UnitModeRequested" ModellingRule="Optional" DataType="Prefix0:Boolean" />
+      <Property SymbolicName="Prefix2:UnitSupportedModes" ModellingRule="Mandatory" DataType="Prefix0:NodeId" />
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix2:HasInterlock</ReferenceType>
+        <TargetId>Prefix2:MaterialInterlock</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix2:PackMLBaseStateMachineType" BaseType="Prefix0:FiniteStateMachineType">
+    <Children>
+      <Method SymbolicName="Prefix2:Abort" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix2:Aborted" TypeDefinition="Prefix0:StateType" />
+      <Object SymbolicName="Prefix2:AbortedToCleared" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLBaseStateMachineType_AbortedToCleared</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLBaseStateMachineType_AbortedToCleared</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix0:HasCause</ReferenceType>
+            <TargetId>Prefix2:PackMLBaseStateMachineType_Clear</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix2:Aborting" TypeDefinition="Prefix0:StateType" />
+      <Object SymbolicName="Prefix2:AbortingToAborted" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLBaseStateMachineType_AbortingToAborted</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLBaseStateMachineType_AbortingToAborted</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Method SymbolicName="Prefix2:Clear" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix2:Cleared" TypeDefinition="Prefix0:StateType" ModellingRule="Optional">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix0:HasSubStateMachine</ReferenceType>
+            <TargetId>Prefix2:PackMLBaseStateMachineType_MachineState</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix2:ClearedToAborting" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLBaseStateMachineType_ClearedToAborting</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLBaseStateMachineType_ClearedToAborting</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix0:HasCause</ReferenceType>
+            <TargetId>Prefix2:PackMLBaseStateMachineType_Abort</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix2:MachineState" TypeDefinition="Prefix2:PackMLMachineStateMachineType" ModellingRule="Mandatory" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix2:PackMLExecuteStateMachineType" BaseType="Prefix0:FiniteStateMachineType">
+    <Children>
+      <Object SymbolicName="Prefix2:Complete" TypeDefinition="Prefix0:StateType">
+        <Description>The machine has finished the COMPLETING state and is now waiting for a Reset command before transitioning to the RESETTING state</Description>
+      </Object>
+      <Object SymbolicName="Prefix2:CompleteToResetting" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_CompleteToResetting</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_CompleteToResetting</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix0:HasCause</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_Reset</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix2:Completing" TypeDefinition="Prefix0:StateType">
+        <Description>Normal operation has run to completion (i.e., processing of material at the infeed will stop).</Description>
+      </Object>
+      <Object SymbolicName="Prefix2:CompletingToComplete" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_CompletingToComplete</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_CompletingToComplete</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix2:Execute" TypeDefinition="Prefix0:StateType">
+        <Description>Once the machine is processing materials it is deemed to be executing or in the EXECUTE state.</Description>
+      </Object>
+      <Object SymbolicName="Prefix2:ExecuteToCompleting" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_ExecuteToCompleting</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_ExecuteToCompleting</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix0:HasCause</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_ToComplete</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix2:ExecuteToHolding" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_ExecuteToHolding</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_ExecuteToHolding</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix0:HasCause</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_Hold</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix2:ExecuteToSuspending" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_ExecuteToSuspending</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_ExecuteToSuspending</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix0:HasCause</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_Suspend</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix2:Held" TypeDefinition="Prefix0:StateType">
+        <Description>The HELD state holds the machine's operation while material blockages are cleared, or to stop throughput while a downstream problem is resolved, or enable the safe correction of an equipment fault before the production may be resumed.</Description>
+      </Object>
+      <Object SymbolicName="Prefix2:HeldToUnholding" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_HeldToUnholding</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_HeldToUnholding</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix0:HasCause</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_Unhold</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Method SymbolicName="Prefix2:Hold" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix2:Holding" TypeDefinition="Prefix0:StateType">
+        <Description>Issuing the Unhold command will retrieve the saved set-points and return the status conditions to prepare the machine to re-enter the normal EXECUTE state</Description>
+      </Object>
+      <Object SymbolicName="Prefix2:HoldingToHeld" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_HoldingToHeld</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_HoldingToHeld</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix2:Idle" TypeDefinition="Prefix0:StateType">
+        <Description>This is a state which indicates that RESETTING is complete. This state maintains the machine conditions which were achieved during the RESETTING state, and performs operations required when the machine is in IDLE.</Description>
+      </Object>
+      <Object SymbolicName="Prefix2:IdleToStarting" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_IdleToStarting</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_IdleToStarting</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix0:HasCause</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_Start</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Method SymbolicName="Prefix2:Reset" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix2:Resetting" TypeDefinition="Prefix0:StateType">
+        <Description>will typically cause a machine to sound a horn and place the machine in a state where components are energized awaiting a START command</Description>
+      </Object>
+      <Object SymbolicName="Prefix2:ResettingToIdle" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_ResettingToIdle</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_ResettingToIdle</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Method SymbolicName="Prefix2:Start" ModellingRule="Optional">
+        <InputArguments>
+          <Argument Name="Parameter" DataType="Prefix2:PackMLDescriptorDataType" ValueRank="Array">
+            <Description>The array of parameter that can be used by the method</Description>
+          </Argument>
+        </InputArguments>
+      </Method>
+      <Object SymbolicName="Prefix2:Starting" TypeDefinition="Prefix0:StateType">
+        <Description>This state provides the steps needed to start the machine and is a result of a starting type command (local or remote). Following this command, the machine will begin to Execute</Description>
+      </Object>
+      <Object SymbolicName="Prefix2:StartingToExecute" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_StartingToExecute</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_StartingToExecute</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix2:StartingToHolding" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_StartingToHolding</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_StartingToHolding</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix0:HasCause</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_Hold</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Method SymbolicName="Prefix2:Suspend" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix2:Suspended" TypeDefinition="Prefix0:StateType">
+        <Description>The machine may be running at a relevant set point speed, but there is no product being produced while the machine is waiting for external process conditions to return to normal.</Description>
+      </Object>
+      <Object SymbolicName="Prefix2:SuspendedToHolding" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_SuspendedToHolding</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_SuspendedToHolding</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix0:HasCause</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_Hold</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix2:SuspendedToUnsuspending" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_SuspendedToUnsuspending</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_SuspendedToUnsuspending</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix0:HasCause</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_Unsuspend</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix2:Suspending" TypeDefinition="Prefix0:StateType">
+        <Description>This state is a result of a change in monitored conditions due to process conditions or factors. The trigger event will cause a temporary suspension of the EXECUTE state. SUSPENDING is typically the result of starvation of upstream material in-feeds (i.e., container feed, beverage feed, crown feed, lubricant feed, etc.) that is outside the dynamic speed control range or a downstream out-feed blockage that prevents the machine from EXECUTING continued steady production</Description>
+      </Object>
+      <Object SymbolicName="Prefix2:SuspendingToHolding" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_SuspendingToHolding</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_SuspendingToHolding</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix0:HasCause</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_Hold</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix2:SuspendingToSuspended" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_SuspendingToSuspended</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_SuspendingToSuspended</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Method SymbolicName="Prefix2:ToComplete" ModellingRule="Optional" />
+      <Method SymbolicName="Prefix2:Unhold" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix2:Unholding" TypeDefinition="Prefix0:StateType">
+        <Description>The UNHOLDING state is a response to an operator command to resume the EXECUTE state. Issuing the Unhold command will retrieve the saved set-points and return the status conditions to prepare the machine to re-enter the normal EXECUTE state</Description>
+      </Object>
+      <Object SymbolicName="Prefix2:UnholdingToExecute" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_UnholdingToExecute</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_UnholdingToExecute</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix2:UnholdingToHolding" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_UnholdingToHolding</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_UnholdingToHolding</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix0:HasCause</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_Hold</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Method SymbolicName="Prefix2:Unsuspend" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix2:Unsuspending" TypeDefinition="Prefix0:StateType">
+        <Description>This state is a result of a machine generated request from SUSPENDED state to go back to the EXECUTE state. The actions of this state may include ramping up speeds, turning on vacuums, and the re-engagement of clutches.</Description>
+      </Object>
+      <Object SymbolicName="Prefix2:UnsuspendingToExecute" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_UnsuspendingToExecute</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_UnsuspendingToExecute</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix2:UnsuspendingToHolding" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_UnsuspendingToHolding</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_UnsuspendingToHolding</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix0:HasCause</ReferenceType>
+            <TargetId>Prefix2:PackMLExecuteStateMachineType_Hold</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix2:PackMLMachineStateMachineType" BaseType="Prefix0:FiniteStateMachineType">
+    <Children>
+      <Object SymbolicName="Prefix2:Clearing" TypeDefinition="Prefix0:StateType">
+        <Description>Initiated by a state command to clear faults that may have occurred when ABORTING, and are present in the ABORTED state.</Description>
+      </Object>
+      <Object SymbolicName="Prefix2:ClearingToStopped" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLMachineStateMachineType_ClearingToStopped</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLMachineStateMachineType_ClearingToStopped</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix2:ExecuteState" TypeDefinition="Prefix2:PackMLExecuteStateMachineType" ModellingRule="Mandatory">
+        <Description>StateMachine that provides additional sube</Description>
+      </Object>
+      <Method SymbolicName="Prefix2:Reset" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix2:Running" TypeDefinition="Prefix0:StateType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:HasSubStateMachine</ReferenceType>
+            <TargetId>Prefix2:PackMLMachineStateMachineType_Running</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix2:RunningToStopping" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLMachineStateMachineType_RunningToStopping</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLMachineStateMachineType_Running</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix0:HasCause</ReferenceType>
+            <TargetId>Prefix2:PackMLMachineStateMachineType_Stop</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Method SymbolicName="Prefix2:Stop" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix2:Stopped" TypeDefinition="Prefix0:StateType">
+        <Description>The machine is powered and stationary after completing the STOPPING state. All communications with other systems are functioning (if applicable).</Description>
+      </Object>
+      <Object SymbolicName="Prefix2:StoppedToRunning" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLMachineStateMachineType_StoppedToRunning</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix0:HasCause</ReferenceType>
+            <TargetId>Prefix2:PackMLMachineStateMachineType_Reset</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLMachineStateMachineType_Running</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix2:Stopping" TypeDefinition="Prefix0:StateType">
+        <Description>This state executes the logic which brings the machine to a controlled stop as reflected by the STOPPED state.</Description>
+      </Object>
+      <Object SymbolicName="Prefix2:StoppingToStopped" TypeDefinition="Prefix0:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:ToState</ReferenceType>
+            <TargetId>Prefix2:PackMLMachineStateMachineType_StoppingToStopped</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix0:FromState</ReferenceType>
+            <TargetId>Prefix2:PackMLMachineStateMachineType_StoppingToStopped</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <Object SymbolicName="Prefix2:PackMLObjects" TypeDefinition="Prefix0:FolderType" />
+</ModelDesign>

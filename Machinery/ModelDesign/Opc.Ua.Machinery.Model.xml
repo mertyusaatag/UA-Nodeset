@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix2="http://opcfoundation.org/UA/DI/" xmlns:Prefix0="http://opcfoundation.org/UA/" xmlns:Prefix4="http://opcfoundation.org/UA/Machinery/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-06-08T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09.03.2021">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/Machinery/" XmlNamespace="http://opcfoundation.org/UA/Machinery/" XmlPrefix="Prefix5" FilePath="" Version="1.01.0" PublicationDate="25.02.2021">http://opcfoundation.org/UA/Machinery/</Namespace>
+  </Namespaces>
+  <ObjectType SymbolicName="Prefix4:IMachineTagNameplateType" BaseType="Prefix2:ITagNameplateType" IsAbstract="true">
+    <Description Key="en">Interface containing information of the identification of a machine set by the customer</Description>
+    <Children>
+      <Property SymbolicName="Prefix4:Location" ModellingRule="Optional" DataType="Prefix0:String" AccessLevel="ReadWrite">
+        <Description Key="en">To be used by end users to store the location of the machine in a scheme specific to the end user Servers shall support at least 60 Unicode characters for the clients writing this value, this means clients can expect to be able to write strings with a length of 60 Unicode characters into that field.</Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:MachineIdentificationType" BaseType="Prefix4:MachineryItemIdentificationType">
+    <Description Key="en">Contains information about the identification and nameplate of a machine</Description>
+    <Children>
+      <Property SymbolicName="Prefix0:DefaultInstanceBrowseName" DataType="Prefix0:QualifiedName">
+        <Description Key="en">The default BrowseName for instances of the type.</Description>
+        <DefaultValue>
+          <uax:QualifiedName xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:NamespaceIndex>2</uax:NamespaceIndex>
+        <uax:Name>Identification</uax:Name>
+      </uax:QualifiedName>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix4:Location" ModellingRule="Optional" DataType="Prefix0:String" AccessLevel="ReadWrite">
+        <Description Key="en">To be used by end users to store the location of the machine in a scheme specific to the end user. Servers shall support at least 60 Unicode characters for the clients writing this value, this means clients can expect to be able to write strings with a length of 60 Unicode characters into that field.</Description>
+      </Property>
+      <Property SymbolicName="Prefix2:ProductInstanceUri" ModellingRule="Mandatory">
+        <Description Key="en">A globally unique resource identifier provided by the manufacturer of the machine</Description>
+      </Property>
+    </Children>
+    <References>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix0:HasInterface</ReferenceType>
+        <TargetId>Prefix4:MachineIdentificationType</TargetId>
+      </Reference>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix0:HasInterface</ReferenceType>
+        <TargetId>Prefix4:MachineIdentificationType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:IMachineryItemVendorNameplateType" BaseType="Prefix2:IVendorNameplateType" IsAbstract="true">
+    <Description Key="en">Interface containing identification and nameplate information for a MachineryItem provided by the vendor</Description>
+    <Children>
+      <Property SymbolicName="Prefix4:InitialOperationDate" ModellingRule="Optional" DataType="Prefix0:DateTime">
+        <Description Key="en">The date, when the MachineryItem was switched on the first time after it has left the manufacturer plant.</Description>
+      </Property>
+      <Property SymbolicName="Prefix2:Manufacturer" ModellingRule="Mandatory">
+        <Description Key="en">A human-readable, localized name of the manufacturer of the MachineryItem.</Description>
+      </Property>
+      <Property SymbolicName="Prefix4:MonthOfConstruction" ModellingRule="Optional" DataType="Prefix0:Byte">
+        <Description Key="en">The month in which the manufacturing process of the MachineryItem has been completed. It shall be a number between 1 and 12, representing the month from January to December.</Description>
+      </Property>
+      <Property SymbolicName="Prefix2:SerialNumber" ModellingRule="Mandatory">
+        <Description Key="en">A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem.</Description>
+      </Property>
+      <Property SymbolicName="Prefix4:YearOfConstruction" ModellingRule="Optional" DataType="Prefix0:UInt16">
+        <Description Key="en">The year (Gregorian calendar) in which the manufacturing process of the MachineryItem has been completed. It shall be a four-digit number and never change during the life-cycle of a MachineryItem.</Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:MachineryItemIdentificationType" BaseType="Prefix2:FunctionalGroupType" IsAbstract="true">
+    <Description Key="en">Contains information about the identification and nameplate of a MachineryItem</Description>
+    <Children>
+      <Property SymbolicName="Prefix2:AssetId" ModellingRule="Optional" DataType="Prefix0:String" AccessLevel="ReadWrite">
+        <Description Key="en">To be used by end users to store a unique identification in the context of their overall application. Servers shall support at least 40 Unicode characters for the clients writing this value, this means clients can expect to be able to write strings with a length of 40 Unicode characters into that field.</Description>
+        <DefaultValue>
+          <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+      </uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix2:ComponentName" ModellingRule="Optional" DataType="Prefix0:LocalizedText" AccessLevel="ReadWrite">
+        <Description Key="en">To be used by end users to store a human-readable localized text for the MachineryItem. The minimum number of locales supported for this property shall be two. Servers shall support at least 40 Unicode characters for the clients writing the text part of each locale, this means clients can expect to be able to write texts with a length of 40 Unicode characters into that field.</Description>
+        <DefaultValue>
+          <uax:LocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix2:DeviceClass" ModellingRule="Optional" DataType="Prefix0:String">
+        <Description Key="en">Indicates in which domain or for what purpose the MachineryItem is used.</Description>
+      </Property>
+      <Property SymbolicName="Prefix2:HardwareRevision" ModellingRule="Optional" DataType="Prefix0:String">
+        <Description Key="en">A string representation of the revision level of the hardware of a MachineryItem. Hardware is physical equipment, as opposed to programs, procedures, rules and associated documentation. Many machines will not provide such information due to the modular and configurable nature of the machine.</Description>
+      </Property>
+      <Property SymbolicName="Prefix4:InitialOperationDate" ModellingRule="Optional" DataType="Prefix0:DateTime">
+        <Description Key="en">The date, when the MachineryItem was switched on the first time after it has left the manufacturer plant.</Description>
+      </Property>
+      <Property SymbolicName="Prefix2:Manufacturer" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText">
+        <Description Key="en">A human-readable, localized name of the manufacturer of the MachineryItem.</Description>
+      </Property>
+      <Property SymbolicName="Prefix2:ManufacturerUri" ModellingRule="Optional" DataType="Prefix0:String">
+        <Description Key="en">A globally unique identifier of the manufacturer of the MachineryItem.</Description>
+      </Property>
+      <Property SymbolicName="Prefix2:Model" ModellingRule="Optional" DataType="Prefix0:LocalizedText">
+        <Description Key="en">A human-readable, localized name of the model of the MachineryItem.</Description>
+      </Property>
+      <Property SymbolicName="Prefix4:MonthOfConstruction" ModellingRule="Optional" DataType="Prefix0:Byte">
+        <Description Key="en">The month in which the manufacturing process of the MachineryItem has been completed. It shall be a number between 1 and 12, representing the month from January to December.</Description>
+      </Property>
+      <Property SymbolicName="Prefix2:ProductCode" ModellingRule="Optional" DataType="Prefix0:String">
+        <Description Key="en">A machine-readable string of the model of the MachineryItem, that might include options like the hardware configuration of the model. This information might be provided by the ERP system of the vendor. For example, it can be used as order information.</Description>
+      </Property>
+      <Property SymbolicName="Prefix2:ProductInstanceUri" ModellingRule="Optional" DataType="Prefix0:String">
+        <Description Key="en">A globally unique resource identifier provided by the manufacturer of the MachineryItem.</Description>
+      </Property>
+      <Property SymbolicName="Prefix2:SerialNumber" ModellingRule="Mandatory" DataType="Prefix0:String">
+        <Description Key="en">A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem.</Description>
+      </Property>
+      <Property SymbolicName="Prefix2:SoftwareRevision" ModellingRule="Optional" DataType="Prefix0:String">
+        <Description Key="en">A string representation of the revision level of a MachineryItem. In most cases, MachineryItems consist of several software components. In that case, information about the software components might be provided as additional information in the address space, including individual revision information. In that case, this property is either not provided or provides an overall software revision level. The value might change during the life-cycle of a MachineryItem.</Description>
+      </Property>
+      <Property SymbolicName="Prefix4:YearOfConstruction" ModellingRule="Optional" DataType="Prefix0:UInt16">
+        <Description Key="en">The year (Gregorian calendar) in which the manufacturing process of the MachineryItem has been completed. It shall be a four-digit number and never change during the life-cycle of a MachineryItem.</Description>
+      </Property>
+    </Children>
+    <References>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix0:HasInterface</ReferenceType>
+        <TargetId>Prefix4:MachineryItemIdentificationType</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix0:HasInterface</ReferenceType>
+        <TargetId>Prefix2:ITagNameplateType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:IMachineVendorNameplateType" BaseType="Prefix4:IMachineryItemVendorNameplateType" IsAbstract="true">
+    <Description Key="en">Interface containing identification and nameplate information for a machine provided by the machine vendor</Description>
+    <Children>
+      <Property SymbolicName="Prefix2:ProductInstanceUri" ModellingRule="Mandatory">
+        <Description Key="en">A globally unique resource identifier provided by the manufacturer of the machine</Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:MachineryComponentIdentificationType" BaseType="Prefix4:MachineryItemIdentificationType">
+    <Description Key="en">Contains information about the identification and nameplate of a component</Description>
+    <Children>
+      <Property SymbolicName="Prefix0:DefaultInstanceBrowseName" DataType="Prefix0:QualifiedName" AccessLevel="ReadWrite">
+        <Description Key="en">The default BrowseName for instances of the type.</Description>
+        <DefaultValue>
+          <uax:QualifiedName xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:NamespaceIndex>2</uax:NamespaceIndex>
+        <uax:Name>Identification</uax:Name>
+      </uax:QualifiedName>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix2:DeviceRevision" ModellingRule="Optional" DataType="Prefix0:String" AccessLevel="ReadWrite">
+        <Description Key="en">A string representation of the overall revision level of the component. Often, it is increased when either the SoftwareRevision and / or the HardwareRevision of the component is increased. As an example, it can be used in ERP systems together with the ProductCode.</Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix4:MachineComponentsType">
+    <Description Key="en">Contains all identifiable components of a machine</Description>
+    <Children>
+      <Object SymbolicName="Prefix4:Component" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;Component&gt;</BrowseName>
+        <Description Key="en">Represents the identifiable components of a machine.</Description>
+        <Children>
+          <Object SymbolicName="Prefix2:Identification" TypeDefinition="Prefix4:MachineryItemIdentificationType" ModellingRule="Mandatory">
+            <Description Key="en">Contains information about the identification and nameplate of a MachineryItem</Description>
+          </Object>
+        </Children>
+      </Object>
+      <Property SymbolicName="Prefix0:DefaultInstanceBrowseName" DataType="Prefix0:QualifiedName" AccessLevel="ReadWrite">
+        <Description Key="en">The default BrowseName for instances of the type.</Description>
+        <DefaultValue>
+          <uax:QualifiedName xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>Components</uax:Name>
+      </uax:QualifiedName>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <Object SymbolicName="Prefix4:Machines" TypeDefinition="Prefix0:FolderType" SupportsEvents="true">
+    <Description Key="en">This object is the entry point to machines managed in the server. All machines are directly referenced by this object.</Description>
+  </Object>
+</ModelDesign>
