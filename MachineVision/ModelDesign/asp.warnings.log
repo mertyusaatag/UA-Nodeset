@@ -1,0 +1,9 @@
+"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.3.2.23344";;;;"2021-05-20T10:59:07.5793394Z";;
+"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2021 Mariusz Postol";;;;"2021-05-20T10:59:07.5803406Z";;
+"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.MachineVision.NodeSet2.xml";;;;"2021-05-20T11:00:14.8972836Z";;
+"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import";;;;"2021-05-20T11:00:14.9202854Z";;
+"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/MachineVision namespace.";;;;"2021-05-20T11:00:55.8529506Z";;
+"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: NodeClass, Identifier: P3-0503020000 Description: Unexpected value of the InverseName. If ReferenceType 1:FromTransition is not symmetric and not abstract the InverseName shall be specified.";;;;"2021-05-20T11:00:55.9049495Z";;
+"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: NodeClass, Identifier: P3-0503020000 Description: Unexpected value of the InverseName. If ReferenceType 1:ToTransition is not symmetric and not abstract the InverseName shall be specified.";;;;"2021-05-20T11:00:55.9069478Z";;
+"UANodeSetValidation";Warning;226242104;;"Finishing Validator.ValidateExportModel - the model contains 60 nodes and 2 errors reported.";;;;"2021-05-20T11:00:56.5579721Z";;
+"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file Opc.Ua.MachineVision.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2021-05-20T11:00:56.7329796Z";;

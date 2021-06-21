@@ -1,0 +1,7 @@
+"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.3.2.23344";;;;"2021-05-29T10:33:12.6427811Z";;
+"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2021 Mariusz Postol";;;;"2021-05-29T10:33:12.6437803Z";;
+"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.Di.NodeSet2.xml";;;;"2021-05-29T10:34:22.0592762Z";;
+"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.CSPPlusForMachine.NodeSet2.xml";;;;"2021-05-29T10:34:36.6635400Z";;
+"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/CSPPlusForMachine/ namespace.";;;;"2021-05-29T10:34:37.3893582Z";;
+"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 2 nodes and no errors/warnings reported";;;;"2021-05-29T10:34:37.4294278Z";;
+"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file Opc.Ua.CSPPlusForMachine.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2021-05-29T10:34:37.5592152Z";;

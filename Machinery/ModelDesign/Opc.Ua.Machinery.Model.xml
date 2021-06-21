@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="OPCUAModelDesign.xslt"?>
+<ModelDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-06-08T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/Machinery/" XmlNamespace="http://opcfoundation.org/UA/Machinery/" XmlPrefix="Prefix5" FilePath="">http://opcfoundation.org/UA/Machinery/</Namespace>
+  </Namespaces>
+  <ObjectType xmlns:q1="http://opcfoundation.org/UA/Machinery/" SymbolicName="q1:IMachineTagNameplateType" xmlns:q2="http://opcfoundation.org/UA/DI/" BaseType="q2:ITagNameplateType" IsAbstract="true">
+    <Description Key="en">Interface containing information of the identification of a machine set by the customer</Description>
+    <Children>
+      <Property SymbolicName="q1:Location" ModellingRule="Optional" xmlns:q3="http://opcfoundation.org/UA/" DataType="q3:String" AccessLevel="ReadWrite">
+        <Description Key="en">To be used by end users to store the location of the machine in a scheme specific to the end user Servers shall support at least 60 Unicode characters for the clients writing this value, this means clients can expect to be able to write strings with a length of 60 Unicode characters into that field.</Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q4="http://opcfoundation.org/UA/Machinery/" SymbolicName="q4:MachineIdentificationType" BaseType="q4:MachineryItemIdentificationType">
+    <Description Key="en">Contains information about the identification and nameplate of a machine</Description>
+    <Children>
+      <Property xmlns:q5="http://opcfoundation.org/UA/" SymbolicName="q5:DefaultInstanceBrowseName" DataType="q5:QualifiedName">
+        <Description Key="en">The default BrowseName for instances of the type.</Description>
+        <DefaultValue>
+          <QualifiedName xmlns="">
+        2
+        Identification
+      </QualifiedName>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="q4:Location" ModellingRule="Optional" xmlns:q6="http://opcfoundation.org/UA/" DataType="q6:String" AccessLevel="ReadWrite">
+        <Description Key="en">To be used by end users to store the location of the machine in a scheme specific to the end user. Servers shall support at least 60 Unicode characters for the clients writing this value, this means clients can expect to be able to write strings with a length of 60 Unicode characters into that field.</Description>
+      </Property>
+      <Property xmlns:q7="http://opcfoundation.org/UA/DI/" SymbolicName="q7:ProductInstanceUri" ModellingRule="Mandatory">
+        <Description Key="en">A globally unique resource identifier provided by the manufacturer of the machine</Description>
+      </Property>
+    </Children>
+    <References>
+      <Reference IsInverse="true">
+        <ReferenceType xmlns:q8="http://opcfoundation.org/UA/">q8:HasInterface</ReferenceType>
+        <TargetId>q4:MachineIdentificationType</TargetId>
+      </Reference>
+      <Reference IsInverse="true">
+        <ReferenceType xmlns:q9="http://opcfoundation.org/UA/">q9:HasInterface</ReferenceType>
+        <TargetId>q4:MachineIdentificationType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q10="http://opcfoundation.org/UA/Machinery/" SymbolicName="q10:IMachineryItemVendorNameplateType" xmlns:q11="http://opcfoundation.org/UA/DI/" BaseType="q11:IVendorNameplateType" IsAbstract="true">
+    <Description Key="en">Interface containing identification and nameplate information for a MachineryItem provided by the vendor</Description>
+    <Children>
+      <Property SymbolicName="q10:InitialOperationDate" ModellingRule="Optional" xmlns:q12="http://opcfoundation.org/UA/" DataType="q12:DateTime">
+        <Description Key="en">The date, when the MachineryItem was switched on the first time after it has left the manufacturer plant.</Description>
+      </Property>
+      <Property SymbolicName="q11:Manufacturer" ModellingRule="Mandatory">
+        <Description Key="en">A human-readable, localized name of the manufacturer of the MachineryItem.</Description>
+      </Property>
+      <Property SymbolicName="q10:MonthOfConstruction" ModellingRule="Optional" xmlns:q13="http://opcfoundation.org/UA/" DataType="q13:Byte">
+        <Description Key="en">The month in which the manufacturing process of the MachineryItem has been completed. It shall be a number between 1 and 12, representing the month from January to December.</Description>
+      </Property>
+      <Property SymbolicName="q11:SerialNumber" ModellingRule="Mandatory">
+        <Description Key="en">A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem.</Description>
+      </Property>
+      <Property SymbolicName="q10:YearOfConstruction" ModellingRule="Optional" xmlns:q14="http://opcfoundation.org/UA/" DataType="q14:UInt16">
+        <Description Key="en">The year (Gregorian calendar) in which the manufacturing process of the MachineryItem has been completed. It shall be a four-digit number and never change during the life-cycle of a MachineryItem.</Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q15="http://opcfoundation.org/UA/Machinery/" SymbolicName="q15:MachineryItemIdentificationType" xmlns:q16="http://opcfoundation.org/UA/DI/" BaseType="q16:FunctionalGroupType" IsAbstract="true">
+    <Description Key="en">Contains information about the identification and nameplate of a MachineryItem</Description>
+    <Children>
+      <Property SymbolicName="q16:AssetId" ModellingRule="Optional" xmlns:q17="http://opcfoundation.org/UA/" DataType="q17:String" AccessLevel="ReadWrite">
+        <Description Key="en">To be used by end users to store a unique identification in the context of their overall application. Servers shall support at least 40 Unicode characters for the clients writing this value, this means clients can expect to be able to write strings with a length of 40 Unicode characters into that field.</Description>
+        <DefaultValue>
+          <String xmlns="">
+      </String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="q16:ComponentName" ModellingRule="Optional" xmlns:q18="http://opcfoundation.org/UA/" DataType="q18:LocalizedText" AccessLevel="ReadWrite">
+        <Description Key="en">To be used by end users to store a human-readable localized text for the MachineryItem. The minimum number of locales supported for this property shall be two. Servers shall support at least 40 Unicode characters for the clients writing the text part of each locale, this means clients can expect to be able to write texts with a length of 40 Unicode characters into that field.</Description>
+      </Property>
+      <Property SymbolicName="q16:DeviceClass" ModellingRule="Optional" xmlns:q19="http://opcfoundation.org/UA/" DataType="q19:String">
+        <Description Key="en">Indicates in which domain or for what purpose the MachineryItem is used.</Description>
+      </Property>
+      <Property SymbolicName="q16:HardwareRevision" ModellingRule="Optional" xmlns:q20="http://opcfoundation.org/UA/" DataType="q20:String">
+        <Description Key="en">A string representation of the revision level of the hardware of a MachineryItem. Hardware is physical equipment, as opposed to programs, procedures, rules and associated documentation. Many machines will not provide such information due to the modular and configurable nature of the machine.</Description>
+      </Property>
+      <Property SymbolicName="q15:InitialOperationDate" ModellingRule="Optional" xmlns:q21="http://opcfoundation.org/UA/" DataType="q21:DateTime">
+        <Description Key="en">The date, when the MachineryItem was switched on the first time after it has left the manufacturer plant.</Description>
+      </Property>
+      <Property SymbolicName="q16:Manufacturer" ModellingRule="Mandatory" xmlns:q22="http://opcfoundation.org/UA/" DataType="q22:LocalizedText">
+        <Description Key="en">A human-readable, localized name of the manufacturer of the MachineryItem.</Description>
+      </Property>
+      <Property SymbolicName="q16:ManufacturerUri" ModellingRule="Optional" xmlns:q23="http://opcfoundation.org/UA/" DataType="q23:String">
+        <Description Key="en">A globally unique identifier of the manufacturer of the MachineryItem.</Description>
+      </Property>
+      <Property SymbolicName="q16:Model" ModellingRule="Optional" xmlns:q24="http://opcfoundation.org/UA/" DataType="q24:LocalizedText">
+        <Description Key="en">A human-readable, localized name of the model of the MachineryItem.</Description>
+      </Property>
+      <Property SymbolicName="q15:MonthOfConstruction" ModellingRule="Optional" xmlns:q25="http://opcfoundation.org/UA/" DataType="q25:Byte">
+        <Description Key="en">The month in which the manufacturing process of the MachineryItem has been completed. It shall be a number between 1 and 12, representing the month from January to December.</Description>
+      </Property>
+      <Property SymbolicName="q16:ProductCode" ModellingRule="Optional" xmlns:q26="http://opcfoundation.org/UA/" DataType="q26:String">
+        <Description Key="en">A machine-readable string of the model of the MachineryItem, that might include options like the hardware configuration of the model. This information might be provided by the ERP system of the vendor. For example, it can be used as order information.</Description>
+      </Property>
+      <Property SymbolicName="q16:ProductInstanceUri" ModellingRule="Optional" xmlns:q27="http://opcfoundation.org/UA/" DataType="q27:String">
+        <Description Key="en">A globally unique resource identifier provided by the manufacturer of the MachineryItem.</Description>
+      </Property>
+      <Property SymbolicName="q16:SerialNumber" ModellingRule="Mandatory" xmlns:q28="http://opcfoundation.org/UA/" DataType="q28:String">
+        <Description Key="en">A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem.</Description>
+      </Property>
+      <Property SymbolicName="q16:SoftwareRevision" ModellingRule="Optional" xmlns:q29="http://opcfoundation.org/UA/" DataType="q29:String">
+        <Description Key="en">A string representation of the revision level of a MachineryItem. In most cases, MachineryItems consist of several software components. In that case, information about the software components might be provided as additional information in the address space, including individual revision information. In that case, this property is either not provided or provides an overall software revision level. The value might change during the life-cycle of a MachineryItem.</Description>
+      </Property>
+      <Property SymbolicName="q15:YearOfConstruction" ModellingRule="Optional" xmlns:q30="http://opcfoundation.org/UA/" DataType="q30:UInt16">
+        <Description Key="en">The year (Gregorian calendar) in which the manufacturing process of the MachineryItem has been completed. It shall be a four-digit number and never change during the life-cycle of a MachineryItem.</Description>
+      </Property>
+    </Children>
+    <References>
+      <Reference IsInverse="true">
+        <ReferenceType xmlns:q31="http://opcfoundation.org/UA/">q31:HasInterface</ReferenceType>
+        <TargetId>q15:MachineryItemIdentificationType</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType xmlns:q32="http://opcfoundation.org/UA/">q32:HasInterface</ReferenceType>
+        <TargetId>q16:ITagNameplateType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q33="http://opcfoundation.org/UA/Machinery/" SymbolicName="q33:IMachineVendorNameplateType" BaseType="q33:IMachineryItemVendorNameplateType" IsAbstract="true">
+    <Description Key="en">Interface containing identification and nameplate information for a machine provided by the machine vendor</Description>
+    <Children>
+      <Property xmlns:q34="http://opcfoundation.org/UA/DI/" SymbolicName="q34:ProductInstanceUri" ModellingRule="Mandatory">
+        <Description Key="en">A globally unique resource identifier provided by the manufacturer of the machine</Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q35="http://opcfoundation.org/UA/Machinery/" SymbolicName="q35:MachineryComponentIdentificationType" BaseType="q35:MachineryItemIdentificationType">
+    <Description Key="en">Contains information about the identification and nameplate of a component</Description>
+    <Children>
+      <Property xmlns:q36="http://opcfoundation.org/UA/" SymbolicName="q36:DefaultInstanceBrowseName" DataType="q36:QualifiedName" AccessLevel="ReadWrite">
+        <Description Key="en">The default BrowseName for instances of the type.</Description>
+        <DefaultValue>
+          <QualifiedName xmlns="">
+        2
+        Identification
+      </QualifiedName>
+        </DefaultValue>
+      </Property>
+      <Property xmlns:q37="http://opcfoundation.org/UA/DI/" SymbolicName="q37:DeviceRevision" ModellingRule="Optional" xmlns:q38="http://opcfoundation.org/UA/" DataType="q38:String" AccessLevel="ReadWrite">
+        <Description Key="en">A string representation of the overall revision level of the component. Often, it is increased when either the SoftwareRevision and / or the HardwareRevision of the component is increased. As an example, it can be used in ERP systems together with the ProductCode.</Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType xmlns:q39="http://opcfoundation.org/UA/Machinery/" SymbolicName="q39:MachineComponentsType">
+    <Description Key="en">Contains all identifiable components of a machine</Description>
+    <Children>
+      <Object SymbolicName="q39:Component" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;Component&gt;</BrowseName>
+        <Description Key="en">Represents the identifiable components of a machine.</Description>
+        <Children>
+          <Object xmlns:q40="http://opcfoundation.org/UA/DI/" SymbolicName="q40:Identification" TypeDefinition="q39:MachineryItemIdentificationType" ModellingRule="Mandatory">
+            <Description Key="en">Contains information about the identification and nameplate of a MachineryItem</Description>
+          </Object>
+        </Children>
+      </Object>
+      <Property xmlns:q41="http://opcfoundation.org/UA/" SymbolicName="q41:DefaultInstanceBrowseName" DataType="q41:QualifiedName" AccessLevel="ReadWrite">
+        <Description Key="en">The default BrowseName for instances of the type.</Description>
+        <DefaultValue>
+          <QualifiedName xmlns="">
+        1
+        Components
+      </QualifiedName>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <Object xmlns:q42="http://opcfoundation.org/UA/Machinery/" SymbolicName="q42:Machines" xmlns:q43="http://opcfoundation.org/UA/" TypeDefinition="q43:FolderType" SupportsEvents="true">
+    <Description Key="en">This object is the entry point to machines managed in the server. All machines are directly referenced by this object.</Description>
+  </Object>
+</ModelDesign>

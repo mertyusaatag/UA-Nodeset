@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="OPCUAModelDesign.xslt"?>
+<ModelDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-05-29T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/CSPPlusForMachine/" XmlNamespace="http://opcfoundation.org/UA/CSPPlusForMachine/" XmlPrefix="Prefix5" FilePath="">http://opcfoundation.org/UA/CSPPlusForMachine/</Namespace>
+  </Namespaces>
+  <ObjectType xmlns:q1="http://opcfoundation.org/UA/CSPPlusForMachine/" SymbolicName="q1:CsppMachineType" xmlns:q2="http://opcfoundation.org/UA/DI/" BaseType="q2:DeviceType" IsAbstract="true">
+    <Children>
+      <Object SymbolicName="q2:ParameterSet" ModellingRule="Mandatory">
+        <Children>
+          <Variable SymbolicName="q1:VariableName" xmlns:q3="http://opcfoundation.org/UA/" TypeDefinition="q3:DataItemType" ModellingRule="OptionalPlaceholder" DataType="q3:BaseDataType">
+            <BrowseName>&lt;VariableName&gt;</BrowseName>
+          </Variable>
+          <Variable SymbolicName="q1:ConfigurationName" xmlns:q4="http://opcfoundation.org/UA/" TypeDefinition="q4:DataItemType" ModellingRule="OptionalPlaceholder" DataType="q4:BaseDataType">
+            <BrowseName>&lt;ConfigurationName&gt;</BrowseName>
+          </Variable>
+        </Children>
+      </Object>
+      <Object SymbolicName="q1:CommIfSection" TypeDefinition="q2:FunctionalGroupType" ModellingRule="MandatoryPlaceholder">
+        <BrowseName>&lt;CommIfSection&gt;</BrowseName>
+        <Children>
+          <Object SymbolicName="q1:CommIfVariablePart" TypeDefinition="q2:FunctionalGroupType" ModellingRule="OptionalPlaceholder">
+            <BrowseName>&lt;CommIfVariablePart&gt;</BrowseName>
+          </Object>
+          <Object SymbolicName="q1:CommIfConfigurationPart" TypeDefinition="q2:FunctionalGroupType" ModellingRule="OptionalPlaceholder">
+            <BrowseName>&lt;CommIfConfigurationPart&gt;</BrowseName>
+          </Object>
+        </Children>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <VariableType xmlns:q5="http://opcfoundation.org/UA/" SymbolicName="q5:CsppAnalogItemType" BaseType="q5:AnalogItemType" ValueRank="ScalarOrArray">
+    <Children>
+      <Property xmlns:q6="http://opcfoundation.org/UA/CSPPlusForMachine/" SymbolicName="q6:Duration" ModellingRule="Mandatory" />
+    </Children>
+    <ClassName />
+  </VariableType>
+</ModelDesign>
