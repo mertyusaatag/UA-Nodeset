@@ -3,8 +3,8 @@
 ## Table of Contents <!-- omit in toc -->
 
 - [Executive Summary](#executive-summary)
-- [Content](#content)
-- [Contributing](#contributing)
+- [Repository Content](#repository-content)
+- [Partnership program](#partnership-program)
 - [See Also](#see-also)
 
 ## Executive Summary
@@ -16,13 +16,7 @@ The main goal is to
 - work on [OPC UA Information Models Compliance Testing][ASMDComplianceTesting]
 - recover files required by the [OPCFoundation/UA-ModelCompiler][ModelCompiler] from the files provided by the origin.
 
-I am a researcher and University associate who is passionate about applying knowledge and experience in building a Machine to Machine (M2M) meaningful interoperability based on OPC UA. Let's build it with you and for you. To join our effort and create an organizational context I have launched an open-access **Object-Oriented Internet Partnership Program**. Hence, maintenance of this repository and further development of the OPC UA Information Model Domain-Specific Language will be carried out under a broader concept described in the following article
-
-[Object-Oriented Internet Partnership Program][Sponsorship]
-
-**Consider joining**. Visit the section [How to be involved][SponsorshipToBeInvolved] to get more. I hope that thanks to this partnership program we will establish long-term mutually beneficial cooperation. Your participation is needed to make sure that the work will continue as expected. As a rule of thumb, the work priority is derived from community feedback.
-
-## Content
+## Repository Content
 
 This repository contains
 
@@ -56,14 +50,22 @@ The `v1.04` branch is to be synchronized with the origin. This branch contains r
 
 The `main` branch (default) contains a merge of the `v1.04` and outcomes of the research conducted using independent branches.
 
-## Contributing
+## Partnership program
 
-I strongly encourage community participation and contribution to this project. First, please fork the repository and commit your changes there.
-Once happy with your changes you can generate a 'pull request'.
+I am a researcher and University associate who is passionate about applying knowledge and experience in building a Machine to Machine (M2M) meaningful interoperability based on OPC UA. Let's build it with you and for you. To join our effort and create an organizational context I have launched an open-access **Object-Oriented Internet Partnership Program**. Hence, maintenance of this repository and further development of the OPC UA Information Model Domain-Specific Language will be carried out under a broader concept described in the following article
+
+[Object-Oriented Internet Partnership Program][Sponsorship]
+
+**Consider joining**. Visit the section [How to be involved][SponsorshipToBeInvolved] to get more. I hope that thanks to this partnership program we will establish long-term mutually beneficial cooperation. Your participation is needed to make sure that the work will continue as expected. As a rule of thumb, the work priority is derived from community feedback.
+
+I strongly encourage community participation and contribution to this project. First, please fork the repository and commit your changes there. Once happy with your changes you can generate a 'pull request'.
 
 When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.
+
+[Sponsorship]: https://github.commsvr.com/AboutPartnershipProgram.md.html
+[SponsorshipToBeInvolved]: https://github.commsvr.com/AboutPartnershipProgram.md.html#how-to-be-involved
 
 ## See Also
 
