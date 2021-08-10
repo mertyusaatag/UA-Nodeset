@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
-<ModelDesign xmlns:Prefix2="http://opcfoundation.org/UA/DI/" xmlns:Prefix0="http://opcfoundation.org/UA/" xmlns:Prefix4="http://opcfoundation.org/UA/AutoID/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-05-26T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/AutoID/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-08-10T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09.03.2021">http://opcfoundation.org/UA/DI/</Namespace>
     <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/AutoID/" XmlNamespace="http://opcfoundation.org/UA/AutoID/" XmlPrefix="Prefix5" FilePath="" Version="1.01" PublicationDate="18.06.2020">http://opcfoundation.org/UA/AutoID/</Namespace>
   </Namespaces>
-  <DataType SymbolicName="Prefix4:AutoIdOperationStatusEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:AutoIdOperationStatusEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumValues" ModellingRule="Mandatory" DataType="Prefix0:EnumValueType" ValueRank="Array" ArrayDimensions="22">
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="22">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:ExtensionObject>
@@ -437,9 +437,9 @@
       </Field>
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:DeviceStatusEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:DeviceStatusEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="4">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -466,9 +466,9 @@
       <Field Name="Busy" Identifier="3" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:LocationTypeEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:LocationTypeEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="4">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -495,9 +495,9 @@
       <Field Name="NAME" Identifier="3" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:RfidLockOperationEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:RfidLockOperationEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="4">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -524,9 +524,9 @@
       <Field Name="PermanentUnlock" Identifier="3" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:RfidLockRegionEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:RfidLockRegionEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="5">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="5">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -557,9 +557,9 @@
       <Field Name="User" Identifier="4" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:RfidPasswordTypeEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:RfidPasswordTypeEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="4">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -586,755 +586,1539 @@
       <Field Name="Write" Identifier="3" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:CodeTypeDataType" BaseType="Prefix0:String">
+  <DataType SymbolicName="Prefix5:CodeTypeDataType" BaseType="Prefix1:String">
     <ClassName />
     <Fields />
   </DataType>
-  <DataType SymbolicName="Prefix4:LocationName" BaseType="Prefix0:String">
+  <DataType SymbolicName="Prefix5:LocationName" BaseType="Prefix1:String">
     <ClassName />
     <Fields />
   </DataType>
-  <DataType SymbolicName="Prefix4:NmeaCoordinateString" BaseType="Prefix0:String">
+  <DataType SymbolicName="Prefix5:NmeaCoordinateString" BaseType="Prefix1:String">
     <ClassName />
     <Fields />
   </DataType>
-  <DataType SymbolicName="Prefix4:AccessResult" BaseType="Prefix0:Structure">
+  <DataType SymbolicName="Prefix5:AccessResult" BaseType="Prefix1:Structure">
     <Description>Result values of an AutoID Identifier access.</Description>
     <ClassName />
     <Fields>
-      <Field Name="CodeType" BitMask="" DataType="Prefix4:CodeTypeDataType" ArrayDimensions="">
+      <Field Name="CodeType" BitMask="" DataType="Prefix5:CodeTypeDataType" ArrayDimensions="">
         <Description>Defines the format of Identifier as string.</Description>
       </Field>
-      <Field Name="Identifier" BitMask="" DataType="Prefix4:ScanData" ArrayDimensions="">
+      <Field Name="Identifier" BitMask="" DataType="Prefix5:ScanData" ArrayDimensions="">
         <Description>The AutoID Identifier (e.g. a code or a transponder) which was accessed by a command.</Description>
       </Field>
-      <Field Name="Timestamp" BitMask="" DataType="Prefix0:UtcTime" ArrayDimensions="">
+      <Field Name="Timestamp" BitMask="" DataType="Prefix1:UtcTime" ArrayDimensions="">
         <Description>The point of time the AutoID Identifier was accessed by the command.</Description>
       </Field>
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:RfidAccessResult" BaseType="Prefix4:AccessResult">
+  <DataType SymbolicName="Prefix5:RfidAccessResult" BaseType="Prefix5:AccessResult">
     <Description>Additional result values of an Rfid Transponder access.</Description>
     <ClassName />
     <Fields>
-      <Field Name="CodeTypeRWData" BitMask="" DataType="Prefix4:CodeTypeDataType" ArrayDimensions="">
+      <Field Name="CodeTypeRWData" BitMask="" DataType="Prefix5:CodeTypeDataType" ArrayDimensions="">
         <Description>Defines the format of RWData as string.</Description>
       </Field>
-      <Field Name="RWData" BitMask="" DataType="Prefix4:ScanData" ArrayDimensions="">
+      <Field Name="RWData" BitMask="" DataType="Prefix5:ScanData" ArrayDimensions="">
         <Description>The user data which was written to / was read from the Rfid Transponder by the command.</Description>
       </Field>
-      <Field Name="Antenna" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="">
+      <Field Name="Antenna" BitMask="" DataType="Prefix1:Int32" ArrayDimensions="">
         <Description>The antenna by which the transponder was accessed by the command.</Description>
       </Field>
-      <Field Name="CurrentPowerLevel" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="">
+      <Field Name="CurrentPowerLevel" BitMask="" DataType="Prefix1:Int32" ArrayDimensions="">
         <Description>The power level with which the transponder was accessed by the command.</Description>
       </Field>
-      <Field Name="PC" BitMask="" DataType="Prefix0:UInt16" ArrayDimensions="">
+      <Field Name="PC" BitMask="" DataType="Prefix1:UInt16" ArrayDimensions="">
         <Description>The Protocol Control Word of the transponder accessed by the command.</Description>
       </Field>
-      <Field Name="Polarization" BitMask="" DataType="Prefix0:String" ArrayDimensions="">
+      <Field Name="Polarization" BitMask="" DataType="Prefix1:String" ArrayDimensions="">
         <Description>The polarization with which the last transponder was accessed by the command.</Description>
       </Field>
-      <Field Name="Strength" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="">
+      <Field Name="Strength" BitMask="" DataType="Prefix1:Int32" ArrayDimensions="">
         <Description>The Rssi value with which the transponder was accessed by the command.</Description>
       </Field>
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:AntennaNameIdPair" BaseType="Prefix0:Structure">
+  <DataType SymbolicName="Prefix5:AntennaNameIdPair" BaseType="Prefix1:Structure">
     <ClassName />
     <Fields>
-      <Field Name="AntennaId" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="" />
-      <Field Name="AntennaName" BitMask="" DataType="Prefix0:String" ArrayDimensions="" />
+      <Field Name="AntennaId" BitMask="" DataType="Prefix1:Int32" ArrayDimensions="" />
+      <Field Name="AntennaName" BitMask="" DataType="Prefix1:String" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:DhcpGeoConfCoordinate" BaseType="Prefix0:Structure">
+  <DataType SymbolicName="Prefix5:DhcpGeoConfCoordinate" BaseType="Prefix1:Structure">
     <ClassName />
     <Fields>
-      <Field Name="LaRes" BitMask="" DataType="Prefix0:Byte" ArrayDimensions="" />
-      <Field Name="LatitudeInteger" BitMask="" DataType="Prefix0:Int16" ArrayDimensions="" />
-      <Field Name="LatitudeFraction" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="" />
-      <Field Name="LoRes" BitMask="" DataType="Prefix0:Byte" ArrayDimensions="" />
-      <Field Name="LongitudeInteger" BitMask="" DataType="Prefix0:Int16" ArrayDimensions="" />
-      <Field Name="LongitudeFraction" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="" />
-      <Field Name="AT" BitMask="" DataType="Prefix0:Byte" ArrayDimensions="" />
-      <Field Name="AltRes" BitMask="" DataType="Prefix0:Byte" ArrayDimensions="" />
-      <Field Name="AltitudeInteger" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="" />
-      <Field Name="AltitudeFraction" BitMask="" DataType="Prefix0:Int16" ArrayDimensions="" />
-      <Field Name="Datum" BitMask="" DataType="Prefix0:Byte" ArrayDimensions="" />
+      <Field Name="LaRes" BitMask="" DataType="Prefix1:Byte" ArrayDimensions="" />
+      <Field Name="LatitudeInteger" BitMask="" DataType="Prefix1:Int16" ArrayDimensions="" />
+      <Field Name="LatitudeFraction" BitMask="" DataType="Prefix1:Int32" ArrayDimensions="" />
+      <Field Name="LoRes" BitMask="" DataType="Prefix1:Byte" ArrayDimensions="" />
+      <Field Name="LongitudeInteger" BitMask="" DataType="Prefix1:Int16" ArrayDimensions="" />
+      <Field Name="LongitudeFraction" BitMask="" DataType="Prefix1:Int32" ArrayDimensions="" />
+      <Field Name="AT" BitMask="" DataType="Prefix1:Byte" ArrayDimensions="" />
+      <Field Name="AltRes" BitMask="" DataType="Prefix1:Byte" ArrayDimensions="" />
+      <Field Name="AltitudeInteger" BitMask="" DataType="Prefix1:Int32" ArrayDimensions="" />
+      <Field Name="AltitudeFraction" BitMask="" DataType="Prefix1:Int16" ArrayDimensions="" />
+      <Field Name="Datum" BitMask="" DataType="Prefix1:Byte" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:LocalCoordinate" BaseType="Prefix0:Structure">
+  <DataType SymbolicName="Prefix5:LocalCoordinate" BaseType="Prefix1:Structure">
     <ClassName />
     <Fields>
-      <Field Name="X" BitMask="" DataType="Prefix0:Double" ArrayDimensions="" />
-      <Field Name="Y" BitMask="" DataType="Prefix0:Double" ArrayDimensions="" />
-      <Field Name="Z" BitMask="" DataType="Prefix0:Double" ArrayDimensions="" />
-      <Field Name="Timestamp" BitMask="" DataType="Prefix0:UtcTime" ArrayDimensions="">
+      <Field Name="X" BitMask="" DataType="Prefix1:Double" ArrayDimensions="" />
+      <Field Name="Y" BitMask="" DataType="Prefix1:Double" ArrayDimensions="" />
+      <Field Name="Z" BitMask="" DataType="Prefix1:Double" ArrayDimensions="" />
+      <Field Name="Timestamp" BitMask="" DataType="Prefix1:UtcTime" ArrayDimensions="">
         <Description>Optional</Description>
       </Field>
-      <Field Name="DilutionOfPrecision" BitMask="" DataType="Prefix0:Double" ArrayDimensions="">
+      <Field Name="DilutionOfPrecision" BitMask="" DataType="Prefix1:Double" ArrayDimensions="">
         <Description>Optional</Description>
       </Field>
-      <Field Name="UsefulPrecision" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="">
+      <Field Name="UsefulPrecision" BitMask="" DataType="Prefix1:Int32" ArrayDimensions="">
         <Description>Optional</Description>
       </Field>
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:Position" BaseType="Prefix0:Structure">
+  <DataType SymbolicName="Prefix5:Position" BaseType="Prefix1:Structure">
     <ClassName />
     <Fields>
-      <Field Name="PositionX" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="" />
-      <Field Name="PositionY" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="" />
-      <Field Name="SizeX" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="" />
-      <Field Name="SizeY" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="" />
-      <Field Name="Rotation" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="" />
+      <Field Name="PositionX" BitMask="" DataType="Prefix1:Int32" ArrayDimensions="" />
+      <Field Name="PositionY" BitMask="" DataType="Prefix1:Int32" ArrayDimensions="" />
+      <Field Name="SizeX" BitMask="" DataType="Prefix1:Int32" ArrayDimensions="" />
+      <Field Name="SizeY" BitMask="" DataType="Prefix1:Int32" ArrayDimensions="" />
+      <Field Name="Rotation" BitMask="" DataType="Prefix1:Int32" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:RfidSighting" BaseType="Prefix0:Structure">
+  <DataType SymbolicName="Prefix5:RfidSighting" BaseType="Prefix1:Structure">
     <ClassName />
     <Fields>
-      <Field Name="Antenna" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="">
+      <Field Name="Antenna" BitMask="" DataType="Prefix1:Int32" ArrayDimensions="">
         <Description>Returns the number of the antenna which detects the RFID tag first.</Description>
       </Field>
-      <Field Name="Strength" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="">
+      <Field Name="Strength" BitMask="" DataType="Prefix1:Int32" ArrayDimensions="">
         <Description>Returns the signal strength (RSSI) of the transponder. Higher values indicate a better strength.</Description>
       </Field>
-      <Field Name="Timestamp" BitMask="" DataType="Prefix0:UtcTime" ArrayDimensions="">
+      <Field Name="Timestamp" BitMask="" DataType="Prefix1:UtcTime" ArrayDimensions="">
         <Description>Timestamp in UtcTime</Description>
       </Field>
-      <Field Name="CurrentPowerLevel" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="">
+      <Field Name="CurrentPowerLevel" BitMask="" DataType="Prefix1:Int32" ArrayDimensions="">
         <Description>Returns the current power level (unit according to parameter settings).</Description>
       </Field>
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:Rotation" BaseType="Prefix0:Structure">
+  <DataType SymbolicName="Prefix5:Rotation" BaseType="Prefix1:Structure">
     <ClassName />
     <Fields>
-      <Field Name="Yaw" BitMask="" DataType="Prefix0:Double" ArrayDimensions="" />
-      <Field Name="Pitch" BitMask="" DataType="Prefix0:Double" ArrayDimensions="" />
-      <Field Name="Roll" BitMask="" DataType="Prefix0:Double" ArrayDimensions="" />
+      <Field Name="Yaw" BitMask="" DataType="Prefix1:Double" ArrayDimensions="" />
+      <Field Name="Pitch" BitMask="" DataType="Prefix1:Double" ArrayDimensions="" />
+      <Field Name="Roll" BitMask="" DataType="Prefix1:Double" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:ScanDataEpc" BaseType="Prefix0:Structure">
+  <DataType SymbolicName="Prefix5:ScanDataEpc" BaseType="Prefix1:Structure">
     <ClassName />
     <Fields>
-      <Field Name="PC" BitMask="" DataType="Prefix0:UInt16" ArrayDimensions="" />
-      <Field Name="UId" BitMask="" DataType="Prefix0:ByteString" ArrayDimensions="" />
-      <Field Name="XPC_W1" BitMask="" DataType="Prefix0:UInt16" ArrayDimensions="" />
-      <Field Name="XPC_W2" BitMask="" DataType="Prefix0:UInt16" ArrayDimensions="" />
+      <Field Name="PC" BitMask="" DataType="Prefix1:UInt16" ArrayDimensions="" />
+      <Field Name="UId" BitMask="" DataType="Prefix1:ByteString" ArrayDimensions="" />
+      <Field Name="XPC_W1" BitMask="" DataType="Prefix1:UInt16" ArrayDimensions="" />
+      <Field Name="XPC_W2" BitMask="" DataType="Prefix1:UInt16" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:ScanResult" BaseType="Prefix0:Structure" IsAbstract="true">
+  <DataType SymbolicName="Prefix5:ScanResult" BaseType="Prefix1:Structure" IsAbstract="true">
     <ClassName />
     <Fields>
-      <Field Name="CodeType" BitMask="" DataType="Prefix4:CodeTypeDataType" ArrayDimensions="">
+      <Field Name="CodeType" BitMask="" DataType="Prefix5:CodeTypeDataType" ArrayDimensions="">
         <Description>Defines the format of the ScanData as string.</Description>
       </Field>
-      <Field Name="ScanData" BitMask="" DataType="Prefix4:ScanData" ArrayDimensions="">
+      <Field Name="ScanData" BitMask="" DataType="Prefix5:ScanData" ArrayDimensions="">
         <Description>Holds the information about the detected objects e.g. the detected transponders.</Description>
       </Field>
-      <Field Name="Timestamp" BitMask="" DataType="Prefix0:UtcTime" ArrayDimensions="">
+      <Field Name="Timestamp" BitMask="" DataType="Prefix1:UtcTime" ArrayDimensions="">
         <Description>Timestamp of the ScanResult creation.</Description>
       </Field>
-      <Field Name="Location" BitMask="" DataType="Prefix4:Location" ArrayDimensions="">
+      <Field Name="Location" BitMask="" DataType="Prefix5:Location" ArrayDimensions="">
         <Description>Returns the location of the object detection.</Description>
       </Field>
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:OcrScanResult" BaseType="Prefix4:ScanResult">
+  <DataType SymbolicName="Prefix5:OcrScanResult" BaseType="Prefix5:ScanResult">
     <ClassName />
     <Fields>
-      <Field Name="ImageId" BitMask="" DataType="Prefix0:NodeId" ArrayDimensions="">
+      <Field Name="ImageId" BitMask="" DataType="Prefix1:NodeId" ArrayDimensions="">
         <Description>NodeId of the original scan image file object used for this scan result.</Description>
       </Field>
-      <Field Name="Quality" BitMask="" DataType="Prefix0:Byte" ArrayDimensions="">
+      <Field Name="Quality" BitMask="" DataType="Prefix1:Byte" ArrayDimensions="">
         <Description>Returns the probability of correct decoding.</Description>
       </Field>
-      <Field Name="Position" BitMask="" DataType="Prefix4:Position" ArrayDimensions="">
+      <Field Name="Position" BitMask="" DataType="Prefix5:Position" ArrayDimensions="">
         <Description>Returns the position of the text within the image.</Description>
       </Field>
-      <Field Name="Font" BitMask="" DataType="Prefix0:String" ArrayDimensions="">
+      <Field Name="Font" BitMask="" DataType="Prefix1:String" ArrayDimensions="">
         <Description>Returns the font name used for decoding.</Description>
       </Field>
-      <Field Name="DecodingTime" BitMask="" DataType="Prefix0:UtcTime" ArrayDimensions="">
+      <Field Name="DecodingTime" BitMask="" DataType="Prefix1:UtcTime" ArrayDimensions="">
         <Description>Returns the required decoding time.</Description>
       </Field>
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:OpticalScanResult" BaseType="Prefix4:ScanResult">
+  <DataType SymbolicName="Prefix5:OpticalScanResult" BaseType="Prefix5:ScanResult">
     <ClassName />
     <Fields>
-      <Field Name="Grade" BitMask="" DataType="Prefix0:Float" ArrayDimensions="">
+      <Field Name="Grade" BitMask="" DataType="Prefix1:Float" ArrayDimensions="">
         <Description>Returns the quality of the 1D/2D code.</Description>
       </Field>
-      <Field Name="Position" BitMask="" DataType="Prefix4:Position" ArrayDimensions="">
+      <Field Name="Position" BitMask="" DataType="Prefix5:Position" ArrayDimensions="">
         <Description>Returns the position of the text within the image.</Description>
       </Field>
-      <Field Name="Symbology" BitMask="" DataType="Prefix0:String" ArrayDimensions="" />
-      <Field Name="ImageId" BitMask="" DataType="Prefix0:NodeId" ArrayDimensions="" />
+      <Field Name="Symbology" BitMask="" DataType="Prefix1:String" ArrayDimensions="" />
+      <Field Name="ImageId" BitMask="" DataType="Prefix1:NodeId" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:OpticalVerifierScanResult" BaseType="Prefix4:OpticalScanResult">
+  <DataType SymbolicName="Prefix5:OpticalVerifierScanResult" BaseType="Prefix5:OpticalScanResult">
     <ClassName />
     <Fields>
-      <Field Name="IsoGrade" BitMask="" DataType="Prefix0:String" ArrayDimensions="" />
-      <Field Name="RMin" BitMask="" DataType="Prefix0:Int16" ArrayDimensions="" />
-      <Field Name="SymbolContrast" BitMask="" DataType="Prefix0:Int16" ArrayDimensions="" />
-      <Field Name="ECMin" BitMask="" DataType="Prefix0:Int16" ArrayDimensions="" />
-      <Field Name="Modulation" BitMask="" DataType="Prefix0:Int16" ArrayDimensions="" />
-      <Field Name="Defects" BitMask="" DataType="Prefix0:Int16" ArrayDimensions="" />
-      <Field Name="Decodability" BitMask="" DataType="Prefix0:Int16" ArrayDimensions="" />
-      <Field Name="Decode" BitMask="" DataType="Prefix0:Int16" ArrayDimensions="" />
-      <Field Name="PrintGain" BitMask="" DataType="Prefix0:Int16" ArrayDimensions="" />
+      <Field Name="IsoGrade" BitMask="" DataType="Prefix1:String" ArrayDimensions="" />
+      <Field Name="RMin" BitMask="" DataType="Prefix1:Int16" ArrayDimensions="" />
+      <Field Name="SymbolContrast" BitMask="" DataType="Prefix1:Int16" ArrayDimensions="" />
+      <Field Name="ECMin" BitMask="" DataType="Prefix1:Int16" ArrayDimensions="" />
+      <Field Name="Modulation" BitMask="" DataType="Prefix1:Int16" ArrayDimensions="" />
+      <Field Name="Defects" BitMask="" DataType="Prefix1:Int16" ArrayDimensions="" />
+      <Field Name="Decodability" BitMask="" DataType="Prefix1:Int16" ArrayDimensions="" />
+      <Field Name="Decode" BitMask="" DataType="Prefix1:Int16" ArrayDimensions="" />
+      <Field Name="PrintGain" BitMask="" DataType="Prefix1:Int16" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:RfidScanResult" BaseType="Prefix4:ScanResult">
+  <DataType SymbolicName="Prefix5:RfidScanResult" BaseType="Prefix5:ScanResult">
     <ClassName />
     <Fields>
-      <Field Name="Sighting" BitMask="" DataType="Prefix4:RfidSighting" ValueRank="Array" ArrayDimensions="0">
+      <Field Name="Sighting" BitMask="" DataType="Prefix5:RfidSighting" ValueRank="Array" ArrayDimensions="0">
         <Description>Returns additional information on the RFID-related properties of the scan event.</Description>
       </Field>
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:RtlsLocationResult" BaseType="Prefix4:ScanResult">
+  <DataType SymbolicName="Prefix5:RtlsLocationResult" BaseType="Prefix5:ScanResult">
     <ClassName />
     <Fields>
-      <Field Name="Speed" BitMask="" DataType="Prefix0:Double" ArrayDimensions="" />
-      <Field Name="Heading" BitMask="" DataType="Prefix0:Double" ArrayDimensions="" />
-      <Field Name="Rotation" BitMask="" DataType="Prefix4:Rotation" ArrayDimensions="" />
-      <Field Name="ReceiveTime" BitMask="" DataType="Prefix0:UtcTime" ArrayDimensions="" />
+      <Field Name="Speed" BitMask="" DataType="Prefix1:Double" ArrayDimensions="" />
+      <Field Name="Heading" BitMask="" DataType="Prefix1:Double" ArrayDimensions="" />
+      <Field Name="Rotation" BitMask="" DataType="Prefix5:Rotation" ArrayDimensions="" />
+      <Field Name="ReceiveTime" BitMask="" DataType="Prefix1:UtcTime" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:ScanSettings" BaseType="Prefix0:Structure">
+  <DataType SymbolicName="Prefix5:ScanSettings" BaseType="Prefix1:Structure">
     <ClassName />
     <Fields>
-      <Field Name="Duration" BitMask="" DataType="Prefix0:Duration" ArrayDimensions="" />
-      <Field Name="Cycles" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="" />
-      <Field Name="DataAvailable" BitMask="" DataType="Prefix0:Boolean" ArrayDimensions="" />
-      <Field Name="LocationType" BitMask="" DataType="Prefix4:LocationTypeEnumeration" ArrayDimensions="" />
+      <Field Name="Duration" BitMask="" DataType="Prefix1:Duration" ArrayDimensions="" />
+      <Field Name="Cycles" BitMask="" DataType="Prefix1:Int32" ArrayDimensions="" />
+      <Field Name="DataAvailable" BitMask="" DataType="Prefix1:Boolean" ArrayDimensions="" />
+      <Field Name="LocationType" BitMask="" DataType="Prefix5:LocationTypeEnumeration" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:Location" BaseType="Prefix0:Union">
+  <DataType SymbolicName="Prefix5:Location" BaseType="Prefix1:Union">
     <ClassName />
     <Fields>
-      <Field Name="NMEA" BitMask="" DataType="Prefix4:NmeaCoordinateString" ArrayDimensions="" />
-      <Field Name="Local" BitMask="" DataType="Prefix4:LocalCoordinate" ArrayDimensions="" />
-      <Field Name="WGS84" BitMask="" DataType="Prefix4:WGS84Coordinate" ArrayDimensions="" />
-      <Field Name="Name" BitMask="" DataType="Prefix4:LocationName" ArrayDimensions="" />
+      <Field Name="NMEA" BitMask="" DataType="Prefix5:NmeaCoordinateString" ArrayDimensions="" />
+      <Field Name="Local" BitMask="" DataType="Prefix5:LocalCoordinate" ArrayDimensions="" />
+      <Field Name="WGS84" BitMask="" DataType="Prefix5:WGS84Coordinate" ArrayDimensions="" />
+      <Field Name="Name" BitMask="" DataType="Prefix5:LocationName" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:ScanData" BaseType="Prefix0:Union">
+  <DataType SymbolicName="Prefix5:ScanData" BaseType="Prefix1:Union">
     <ClassName />
     <Fields>
-      <Field Name="ByteString" BitMask="" DataType="Prefix0:ByteString" ArrayDimensions="" />
-      <Field Name="String" BitMask="" DataType="Prefix0:String" ArrayDimensions="" />
-      <Field Name="Epc" BitMask="" DataType="Prefix4:ScanDataEpc" ArrayDimensions="" />
+      <Field Name="ByteString" BitMask="" DataType="Prefix1:ByteString" ArrayDimensions="" />
+      <Field Name="String" BitMask="" DataType="Prefix1:String" ArrayDimensions="" />
+      <Field Name="Epc" BitMask="" DataType="Prefix5:ScanDataEpc" ArrayDimensions="" />
       <Field Name="Custom" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:WGS84Coordinate" BaseType="Prefix0:Structure">
+  <DataType SymbolicName="Prefix5:WGS84Coordinate" BaseType="Prefix1:Structure">
     <ClassName />
     <Fields>
-      <Field Name="N/S Hemisphere" BitMask="" DataType="Prefix0:String" ArrayDimensions="" />
-      <Field Name="Latitude" BitMask="" DataType="Prefix0:Double" ArrayDimensions="" />
-      <Field Name="E/W Hemisphere" BitMask="" DataType="Prefix0:String" ArrayDimensions="" />
-      <Field Name="Longitude" BitMask="" DataType="Prefix0:Double" ArrayDimensions="" />
-      <Field Name="Altitude" BitMask="" DataType="Prefix0:Double" ArrayDimensions="" />
-      <Field Name="Timestamp" BitMask="" DataType="Prefix0:UtcTime" ArrayDimensions="" />
-      <Field Name="DilutionOfPrecision" BitMask="" DataType="Prefix0:Double" ArrayDimensions="" />
-      <Field Name="UsefulPrecisionLatLon" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="" />
-      <Field Name="UsefulPrecisionAlt" BitMask="" DataType="Prefix0:Int32" ArrayDimensions="" />
+      <Field Name="N/S Hemisphere" BitMask="" DataType="Prefix1:String" ArrayDimensions="" />
+      <Field Name="Latitude" BitMask="" DataType="Prefix1:Double" ArrayDimensions="" />
+      <Field Name="E/W Hemisphere" BitMask="" DataType="Prefix1:String" ArrayDimensions="" />
+      <Field Name="Longitude" BitMask="" DataType="Prefix1:Double" ArrayDimensions="" />
+      <Field Name="Altitude" BitMask="" DataType="Prefix1:Double" ArrayDimensions="" />
+      <Field Name="Timestamp" BitMask="" DataType="Prefix1:UtcTime" ArrayDimensions="" />
+      <Field Name="DilutionOfPrecision" BitMask="" DataType="Prefix1:Double" ArrayDimensions="" />
+      <Field Name="UsefulPrecisionLatLon" BitMask="" DataType="Prefix1:Int32" ArrayDimensions="" />
+      <Field Name="UsefulPrecisionAlt" BitMask="" DataType="Prefix1:Int32" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <VariableType SymbolicName="Prefix4:LocationVariableType" DataType="Prefix4:Location">
+  <VariableType SymbolicName="Prefix5:LocationVariableType" DataType="Prefix5:Location">
     <Children>
-      <Property SymbolicName="Prefix4:GeographicalUnit" ModellingRule="Optional" DataType="Prefix0:EUInformation" AccessLevel="ReadWrite" />
-      <Property SymbolicName="Prefix4:LengthUnit" ModellingRule="Optional" DataType="Prefix0:EUInformation" AccessLevel="ReadWrite" />
-      <Property SymbolicName="Prefix4:RotationalUnit" ModellingRule="Optional" DataType="Prefix0:EUInformation" AccessLevel="ReadWrite" />
-      <Property SymbolicName="Prefix4:SpeedUnit" ModellingRule="Optional" DataType="Prefix0:EUInformation" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:GeographicalUnit" ModellingRule="Optional" DataType="Prefix1:EUInformation" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:LengthUnit" ModellingRule="Optional" DataType="Prefix1:EUInformation" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:RotationalUnit" ModellingRule="Optional" DataType="Prefix1:EUInformation" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:SpeedUnit" ModellingRule="Optional" DataType="Prefix1:EUInformation" AccessLevel="ReadWrite" />
     </Children>
     <ClassName />
   </VariableType>
-  <ObjectType SymbolicName="Prefix4:AutoIdDiagnosticsEventType" BaseType="Prefix0:BaseEventType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix5:AutoIdDiagnosticsEventType" BaseType="Prefix1:BaseEventType" IsAbstract="true">
     <Description>AutoID diagnostic data</Description>
     <Children>
-      <Property SymbolicName="Prefix4:DeviceName" ModellingRule="Mandatory" DataType="Prefix0:String">
+      <Property SymbolicName="Prefix5:DeviceName" ModellingRule="Mandatory" DataType="Prefix1:String">
         <Description>Name of the device of the diagnostic data.</Description>
       </Property>
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:AutoIdAccessEventType" BaseType="Prefix4:AutoIdDiagnosticsEventType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix5:AutoIdAccessEventType" BaseType="Prefix5:AutoIdDiagnosticsEventType" IsAbstract="true">
     <Description>Data of the access on one or more AutoID Identifier.</Description>
     <Children>
-      <Property SymbolicName="Prefix4:AccessResult" ModellingRule="Mandatory" DataType="Prefix4:AccessResult" ValueRank="Array" ArrayDimensions="0">
+      <Property SymbolicName="Prefix5:AccessResult" ModellingRule="Mandatory" DataType="Prefix5:AccessResult" ValueRank="Array" ArrayDimensions="0">
         <Description>Result values of the access.</Description>
       </Property>
-      <Property SymbolicName="Prefix4:Client" ModellingRule="Optional" DataType="Prefix0:String">
+      <Property SymbolicName="Prefix5:Client" ModellingRule="Optional" DataType="Prefix1:String">
         <Description>Client which was the originator of the command.</Description>
       </Property>
-      <Property SymbolicName="Prefix4:Command" ModellingRule="Optional" DataType="Prefix0:String">
+      <Property SymbolicName="Prefix5:Command" ModellingRule="Optional" DataType="Prefix1:String">
         <Description>Access command</Description>
       </Property>
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:AutoIdDeviceType" BaseType="Prefix2:DeviceType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix5:AutoIdDeviceType" BaseType="Prefix3:DeviceType" IsAbstract="true">
     <Children>
-      <Property SymbolicName="Prefix4:AutoIdModelVersion" ModellingRule="Mandatory" DataType="Prefix0:String" AccessLevel="ReadWrite">
+      <Property SymbolicName="Prefix5:AutoIdModelVersion" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
         <DefaultValue>
           <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.01</uax:String>
         </DefaultValue>
       </Property>
-      <Property SymbolicName="Prefix4:DeviceInfo" ModellingRule="Optional" DataType="Prefix0:String" AccessLevel="ReadWrite">
+      <Property SymbolicName="Prefix5:DeviceInfo" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
         <Description>Device status information.</Description>
       </Property>
-      <Variable SymbolicName="Prefix4:DeviceLocation" TypeDefinition="Prefix4:LocationVariableType" ModellingRule="Optional" DataType="Prefix4:Location" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix5:DeviceLocation" TypeDefinition="Prefix5:LocationVariableType" ModellingRule="Optional" DataType="Prefix5:Location" AccessLevel="ReadWrite">
         <Description>Union of GPS, UTM, Local.</Description>
       </Variable>
-      <Property SymbolicName="Prefix4:DeviceLocationName" ModellingRule="Optional" DataType="Prefix0:String" AccessLevel="ReadWrite">
+      <Property SymbolicName="Prefix5:DeviceLocationName" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
         <Description>Symbolic name of the device location.</Description>
       </Property>
-      <Property SymbolicName="Prefix4:DeviceName" ModellingRule="Mandatory" DataType="Prefix0:String" AccessLevel="ReadWrite">
+      <Property SymbolicName="Prefix5:DeviceName" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
         <Description>Default could be also host name, IP address or MAC. This should be a field that can be configured for a device.</Description>
       </Property>
-      <Variable SymbolicName="Prefix4:DeviceStatus" ModellingRule="Mandatory" DataType="Prefix4:DeviceStatusEnumeration" />
-      <Object SymbolicName="Prefix4:Diagnostics" TypeDefinition="Prefix2:FunctionalGroupType" ModellingRule="Optional">
+      <Variable SymbolicName="Prefix5:DeviceStatus" ModellingRule="Mandatory" DataType="Prefix5:DeviceStatusEnumeration" />
+      <Object SymbolicName="Prefix5:Diagnostics" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional">
         <Description>Diagnostic data from AutoID Devices.</Description>
         <Children>
-          <Object SymbolicName="Prefix4:LastAccess" TypeDefinition="Prefix2:FunctionalGroupType" ModellingRule="Optional">
+          <Object SymbolicName="Prefix5:LastAccess" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional">
             <Description>Values of the last AutoID Identifier access.</Description>
             <Children>
-              <Variable SymbolicName="Prefix4:Client" ModellingRule="Optional" DataType="Prefix0:String" AccessLevel="ReadWrite">
+              <Variable SymbolicName="Prefix5:Client" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
                 <Description>Client which was the originator of the command.</Description>
               </Variable>
-              <Variable SymbolicName="Prefix4:Command" ModellingRule="Optional" DataType="Prefix0:String" AccessLevel="ReadWrite">
+              <Variable SymbolicName="Prefix5:Command" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
                 <Description>Access command</Description>
               </Variable>
-              <Variable SymbolicName="Prefix4:Identifier" ModellingRule="Optional" DataType="Prefix0:BaseDataType" AccessLevel="ReadWrite">
+              <Variable SymbolicName="Prefix5:Identifier" ModellingRule="Optional" DataType="Prefix1:BaseDataType" AccessLevel="ReadWrite">
                 <Description>The AutoID Identifier (e.g. a code or a transponder) which was accessed by a command.</Description>
               </Variable>
-              <Variable SymbolicName="Prefix4:Timestamp" ModellingRule="Optional" DataType="Prefix0:UtcTime" AccessLevel="ReadWrite">
+              <Variable SymbolicName="Prefix5:Timestamp" ModellingRule="Optional" DataType="Prefix1:UtcTime" AccessLevel="ReadWrite">
                 <Description>The point of time the AutoID Identifier was accessed by the command.</Description>
               </Variable>
             </Children>
           </Object>
-          <Object SymbolicName="Prefix4:Logbook" TypeDefinition="Prefix2:FunctionalGroupType" ModellingRule="Optional">
+          <Object SymbolicName="Prefix5:Logbook" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional">
             <Description>Values of the logbook.</Description>
             <Children>
-              <Variable SymbolicName="Prefix4:LastLogEntry" ModellingRule="Optional" DataType="Prefix0:String" AccessLevel="ReadWrite">
+              <Variable SymbolicName="Prefix5:LastLogEntry" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
                 <Description>Column headings of the Loogbook.</Description>
               </Variable>
-              <Variable SymbolicName="Prefix4:LogColumns" ModellingRule="Optional" DataType="Prefix0:String" AccessLevel="ReadWrite">
+              <Variable SymbolicName="Prefix5:LogColumns" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
                 <Description>Last Entry of the Loogbook.</Description>
               </Variable>
             </Children>
           </Object>
-          <Variable SymbolicName="Prefix4:Presence" ModellingRule="Optional" DataType="Prefix0:UInt16" AccessLevel="ReadWrite">
+          <Variable SymbolicName="Prefix5:Presence" ModellingRule="Optional" DataType="Prefix1:UInt16" AccessLevel="ReadWrite">
             <Description>Current presence of AutoID Identifier (e.g. a code or a transponder).</Description>
           </Variable>
         </Children>
       </Object>
-      <Method SymbolicName="Prefix4:GetDeviceLocation" ModellingRule="Optional">
-        <InputArguments>
-          <Argument Name="LocationType">
-            <Description />
-          </Argument>
-        </InputArguments>
-        <OutputArguments>
-          <Argument Name="Location">
-            <Description>Union of GPS, UTM or Local</Description>
-          </Argument>
-        </OutputArguments>
+      <Method SymbolicName="Prefix5:GetDeviceLocation" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>LocationType</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Location</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3008</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>Union of GPS, UTM or Local</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
-      <Object SymbolicName="Prefix4:IOData" TypeDefinition="Prefix2:FunctionalGroupType" ModellingRule="Optional" />
-      <Variable SymbolicName="Prefix4:LastScanData" ModellingRule="Optional" DataType="Prefix0:BaseDataType" AccessLevel="ReadWrite">
+      <Object SymbolicName="Prefix5:IOData" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+      <Variable SymbolicName="Prefix5:LastScanData" ModellingRule="Optional" DataType="Prefix1:BaseDataType" AccessLevel="ReadWrite">
         <Description>The last scanned AutoID Identifier.</Description>
       </Variable>
-      <Variable SymbolicName="Prefix4:LastScanTimestamp" ModellingRule="Optional" DataType="Prefix0:UtcTime" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix5:LastScanTimestamp" ModellingRule="Optional" DataType="Prefix1:UtcTime" AccessLevel="ReadWrite">
         <Description>Point of time the last AutoID Identifier was scanned.</Description>
       </Variable>
-      <Object SymbolicName="Prefix4:RuntimeParameters" TypeDefinition="Prefix2:FunctionalGroupType" ModellingRule="Optional">
+      <Object SymbolicName="Prefix5:RuntimeParameters" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional">
         <Children>
-          <Variable SymbolicName="Prefix4:CodeTypes" TypeDefinition="Prefix0:MultiStateDiscreteType" ModellingRule="Optional" DataType="Prefix0:UInt32" ValueRank="Array" ArrayDimensions="0" AccessLevel="ReadWrite">
+          <Variable SymbolicName="Prefix5:CodeTypes" TypeDefinition="Prefix1:MultiStateDiscreteType" ModellingRule="Optional" DataType="Prefix1:UInt32" ValueRank="Array" ArrayDimensions="0" AccessLevel="ReadWrite">
             <Description>Supported CodeTypes and selected CodeType for the ScanData.</Description>
           </Variable>
-          <Object SymbolicName="Prefix4:ScanSettings" TypeDefinition="Prefix2:FunctionalGroupType" ModellingRule="Optional">
+          <Object SymbolicName="Prefix5:ScanSettings" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional">
             <Description>Scan settings used together with ScanActive Variable.</Description>
             <Children>
-              <Variable SymbolicName="Prefix4:CodeType" ModellingRule="Optional" DataType="Prefix4:CodeTypeDataType" AccessLevel="ReadWrite">
+              <Variable SymbolicName="Prefix5:CodeType" ModellingRule="Optional" DataType="Prefix5:CodeTypeDataType" AccessLevel="ReadWrite">
                 <Description>The format of LastScanData Variable as string.</Description>
               </Variable>
-              <Variable SymbolicName="Prefix4:Cycles" ModellingRule="Optional" DataType="Prefix0:Int32" AccessLevel="ReadWrite">
+              <Variable SymbolicName="Prefix5:Cycles" ModellingRule="Optional" DataType="Prefix1:Int32" AccessLevel="ReadWrite">
                 <Description>Duration of the scan operation in number of scan cycles.</Description>
               </Variable>
-              <Variable SymbolicName="Prefix4:DataAvailable" ModellingRule="Optional" DataType="Prefix0:Boolean" AccessLevel="ReadWrite">
+              <Variable SymbolicName="Prefix5:DataAvailable" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
                 <Description>Finish scan operation as soon as scan data is available.</Description>
               </Variable>
-              <Variable SymbolicName="Prefix4:Duration" ModellingRule="Optional" DataType="Prefix0:Duration" AccessLevel="ReadWrite">
+              <Variable SymbolicName="Prefix5:Duration" ModellingRule="Optional" DataType="Prefix1:Duration" AccessLevel="ReadWrite">
                 <Description>Duration of the scan operation in milliseconds.</Description>
               </Variable>
             </Children>
           </Object>
         </Children>
       </Object>
-      <Method SymbolicName="Prefix4:Scan" ModellingRule="Optional">
-        <InputArguments>
-          <Argument Name="Settings">
-            <Description />
-          </Argument>
-        </InputArguments>
-        <OutputArguments>
-          <Argument Name="Results" ValueRank="Array">
-            <Description />
-          </Argument>
-          <Argument Name="Status">
-            <Description />
-          </Argument>
-        </OutputArguments>
+      <Method SymbolicName="Prefix5:Scan" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Settings</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3010</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Results</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3001</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Status</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3013</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
-      <Variable SymbolicName="Prefix4:ScanActive" ModellingRule="Optional" DataType="Prefix0:Boolean" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix5:ScanActive" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
         <Description>Triggers the scan process.</Description>
       </Variable>
-      <Method SymbolicName="Prefix4:ScanStart" ModellingRule="Optional">
-        <InputArguments>
-          <Argument Name="Settings">
-            <Description />
-          </Argument>
-        </InputArguments>
-        <OutputArguments>
-          <Argument Name="Status">
-            <Description />
-          </Argument>
-        </OutputArguments>
+      <Method SymbolicName="Prefix5:ScanStart" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Settings</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3010</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Status</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3013</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
-      <Method SymbolicName="Prefix4:ScanStop" ModellingRule="Optional" />
+      <Method SymbolicName="Prefix5:ScanStop" ModellingRule="Optional" />
     </Children>
     <References>
       <Reference IsInverse="true">
-        <ReferenceType>Prefix0:GeneratesEvent</ReferenceType>
-        <TargetId>Prefix4:AutoIdDeviceType</TargetId>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix5:AutoIdDeviceType</TargetId>
       </Reference>
       <Reference IsInverse="true">
-        <ReferenceType>Prefix0:GeneratesEvent</ReferenceType>
-        <TargetId>Prefix4:AutoIdDeviceType</TargetId>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix5:AutoIdDeviceType</TargetId>
       </Reference>
       <Reference IsInverse="true">
-        <ReferenceType>Prefix0:GeneratesEvent</ReferenceType>
-        <TargetId>Prefix4:AutoIdDeviceType</TargetId>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix5:AutoIdDeviceType</TargetId>
       </Reference>
       <Reference IsInverse="true">
-        <ReferenceType>Prefix0:GeneratesEvent</ReferenceType>
-        <TargetId>Prefix4:AutoIdDeviceType</TargetId>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix5:AutoIdDeviceType</TargetId>
       </Reference>
     </References>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:RfidAccessEventType" BaseType="Prefix4:AutoIdAccessEventType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix5:RfidAccessEventType" BaseType="Prefix5:AutoIdAccessEventType" IsAbstract="true">
     <Description>Data of the access on one or more Rfid Transponder.</Description>
     <Children>
-      <Property SymbolicName="Prefix4:AccessResult" DataType="Prefix4:RfidAccessResult" ValueRank="Array" />
+      <Property SymbolicName="Prefix5:AccessResult" DataType="Prefix5:RfidAccessResult" ValueRank="Array" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:RfidReaderDeviceType" BaseType="Prefix4:AutoIdDeviceType">
+  <ObjectType SymbolicName="Prefix5:RfidReaderDeviceType" BaseType="Prefix5:AutoIdDeviceType">
     <Children>
-      <Property SymbolicName="Prefix4:AntennaNames" ModellingRule="Optional" DataType="Prefix4:AntennaNameIdPair" ValueRank="Array" AccessLevel="ReadWrite" />
-      <Method SymbolicName="Prefix4:KillTag" ModellingRule="Optional">
-        <InputArguments>
-          <Argument Name="Identifier">
-            <Description />
-          </Argument>
-          <Argument Name="CodeType">
-            <Description />
-          </Argument>
-          <Argument Name="KillPassword" DataType="Prefix0:ByteString">
-            <Description />
-          </Argument>
-        </InputArguments>
-        <OutputArguments>
-          <Argument Name="Status">
-            <Description />
-          </Argument>
-        </OutputArguments>
+      <Property SymbolicName="Prefix5:AntennaNames" ModellingRule="Optional" DataType="Prefix5:AntennaNameIdPair" ValueRank="Array" AccessLevel="ReadWrite" />
+      <Method SymbolicName="Prefix5:KillTag" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="3">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Identifier</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3020</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>CodeType</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3031</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>KillPassword</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Status</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3013</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
-      <Variable SymbolicName="Prefix4:LastScanAntenna" ModellingRule="Optional" DataType="Prefix0:Int32" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix5:LastScanAntenna" ModellingRule="Optional" DataType="Prefix1:Int32" AccessLevel="ReadWrite">
         <Description>ID of the antenna with which the last AutoID Identifier was scanned.</Description>
       </Variable>
-      <Variable SymbolicName="Prefix4:LastScanRSSI" ModellingRule="Optional" DataType="Prefix0:Int32" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix5:LastScanRSSI" ModellingRule="Optional" DataType="Prefix1:Int32" AccessLevel="ReadWrite">
         <Description>RSSI Value with which the last AutoID Identifier was scanned.</Description>
       </Variable>
-      <Method SymbolicName="Prefix4:LockTag" ModellingRule="Optional">
-        <InputArguments>
-          <Argument Name="Identifier">
-            <Description />
-          </Argument>
-          <Argument Name="CodeType">
-            <Description />
-          </Argument>
-          <Argument Name="Password" DataType="Prefix0:ByteString">
-            <Description />
-          </Argument>
-          <Argument Name="Region">
-            <Description />
-          </Argument>
-          <Argument Name="Lock">
-            <Description />
-          </Argument>
-          <Argument Name="Offset" DataType="Prefix0:UInt32">
-            <Description />
-          </Argument>
-          <Argument Name="Length" DataType="Prefix0:UInt32">
-            <Description />
-          </Argument>
-        </InputArguments>
-        <OutputArguments>
-          <Argument Name="Status">
-            <Description />
-          </Argument>
-        </OutputArguments>
+      <Method SymbolicName="Prefix5:LockTag" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="7">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Identifier</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3020</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>CodeType</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3031</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Password</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Region</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3015</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Lock</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3016</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Offset</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=7</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Length</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=7</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Status</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3013</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
-      <Method SymbolicName="Prefix4:ReadTag" ModellingRule="Optional">
-        <InputArguments>
-          <Argument Name="Identifier">
-            <Description />
-          </Argument>
-          <Argument Name="CodeType">
-            <Description />
-          </Argument>
-          <Argument Name="Region" DataType="Prefix0:UInt16">
-            <Description />
-          </Argument>
-          <Argument Name="Offset" DataType="Prefix0:UInt32">
-            <Description />
-          </Argument>
-          <Argument Name="Length" DataType="Prefix0:UInt32">
-            <Description />
-          </Argument>
-          <Argument Name="Password" DataType="Prefix0:ByteString">
-            <Description />
-          </Argument>
-        </InputArguments>
-        <OutputArguments>
-          <Argument Name="ResultData" DataType="Prefix0:ByteString">
-            <Description />
-          </Argument>
-          <Argument Name="Status">
-            <Description />
-          </Argument>
-        </OutputArguments>
+      <Method SymbolicName="Prefix5:ReadTag" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="6">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Identifier</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3020</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>CodeType</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3031</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Region</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=5</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Offset</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=7</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Length</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=7</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Password</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ResultData</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Status</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3013</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
-      <Method SymbolicName="Prefix4:SetTagPassword" ModellingRule="Optional">
-        <InputArguments>
-          <Argument Name="Identifier">
-            <Description />
-          </Argument>
-          <Argument Name="CodeType">
-            <Description />
-          </Argument>
-          <Argument Name="PasswordType">
-            <Description />
-          </Argument>
-          <Argument Name="AccessPassword" DataType="Prefix0:ByteString">
-            <Description />
-          </Argument>
-          <Argument Name="NewPassword" DataType="Prefix0:ByteString">
-            <Description />
-          </Argument>
-        </InputArguments>
-        <OutputArguments>
-          <Argument Name="Status">
-            <Description />
-          </Argument>
-        </OutputArguments>
+      <Method SymbolicName="Prefix5:SetTagPassword" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="5">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Identifier</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3020</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>CodeType</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3031</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>PasswordType</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3014</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>AccessPassword</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>NewPassword</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Status</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3013</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
-      <Method SymbolicName="Prefix4:WriteTag" ModellingRule="Optional">
-        <InputArguments>
-          <Argument Name="Identifier">
-            <Description />
-          </Argument>
-          <Argument Name="CodeType">
-            <Description />
-          </Argument>
-          <Argument Name="Region" DataType="Prefix0:UInt16">
-            <Description />
-          </Argument>
-          <Argument Name="Offset" DataType="Prefix0:UInt32">
-            <Description />
-          </Argument>
-          <Argument Name="Data" DataType="Prefix0:ByteString">
-            <Description />
-          </Argument>
-          <Argument Name="Password" DataType="Prefix0:ByteString">
-            <Description />
-          </Argument>
-        </InputArguments>
-        <OutputArguments>
-          <Argument Name="Status">
-            <Description />
-          </Argument>
-        </OutputArguments>
+      <Method SymbolicName="Prefix5:WriteTag" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="6">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Identifier</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3020</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>CodeType</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3031</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Region</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=5</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Offset</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=7</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Data</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Password</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Status</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3013</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
-      <Method SymbolicName="Prefix4:WriteTagID" ModellingRule="Optional">
-        <InputArguments>
-          <Argument Name="Identifier">
-            <Description />
-          </Argument>
-          <Argument Name="CodeType">
-            <Description />
-          </Argument>
-          <Argument Name="NewUId" DataType="Prefix0:ByteString">
-            <Description />
-          </Argument>
-          <Argument Name="AFI" DataType="Prefix0:Byte">
-            <Description />
-          </Argument>
-          <Argument Name="Toggle" DataType="Prefix0:Boolean">
-            <Description />
-          </Argument>
-          <Argument Name="Password" DataType="Prefix0:ByteString">
-            <Description />
-          </Argument>
-        </InputArguments>
-        <OutputArguments>
-          <Argument Name="Status">
-            <Description />
-          </Argument>
-        </OutputArguments>
+      <Method SymbolicName="Prefix5:WriteTagID" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="6">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Identifier</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3020</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>CodeType</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3031</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>NewUId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>AFI</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=3</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Toggle</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=1</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Password</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Status</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3013</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
     </Children>
     <References>
       <Reference IsInverse="true">
-        <ReferenceType>Prefix0:GeneratesEvent</ReferenceType>
-        <TargetId>Prefix4:RfidReaderDeviceType</TargetId>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix5:RfidReaderDeviceType</TargetId>
       </Reference>
       <Reference IsInverse="true">
-        <ReferenceType>Prefix0:GeneratesEvent</ReferenceType>
-        <TargetId>Prefix4:RfidReaderDeviceType</TargetId>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix5:RfidReaderDeviceType</TargetId>
       </Reference>
     </References>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:AutoIdLogEntryEventType" BaseType="Prefix4:AutoIdDiagnosticsEventType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix5:AutoIdLogEntryEventType" BaseType="Prefix5:AutoIdDiagnosticsEventType" IsAbstract="true">
     <Description>One entry written to the log of the device.</Description>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:AutoIdPresenceEventType" BaseType="Prefix4:AutoIdDiagnosticsEventType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix5:AutoIdPresenceEventType" BaseType="Prefix5:AutoIdDiagnosticsEventType" IsAbstract="true">
     <Description>Current presence of AutoID Identifier.</Description>
     <Children>
-      <Property SymbolicName="Prefix4:Presence" ModellingRule="Mandatory" DataType="Prefix0:UInt16">
+      <Property SymbolicName="Prefix5:Presence" ModellingRule="Mandatory" DataType="Prefix1:UInt16">
         <Description>Current presence of AutoID Identifier.</Description>
       </Property>
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:AutoIdScanEventType" BaseType="Prefix0:BaseEventType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix5:AutoIdScanEventType" BaseType="Prefix1:BaseEventType" IsAbstract="true">
     <Children>
-      <Property SymbolicName="Prefix4:DeviceName" ModellingRule="Mandatory" DataType="Prefix0:String" />
-      <Property SymbolicName="Prefix4:ScanResult" ModellingRule="Mandatory" DataType="Prefix4:ScanResult" ValueRank="Array" />
+      <Property SymbolicName="Prefix5:DeviceName" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix5:ScanResult" ModellingRule="Mandatory" DataType="Prefix5:ScanResult" ValueRank="Array" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:OcrScanEventType" BaseType="Prefix4:AutoIdScanEventType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix5:OcrScanEventType" BaseType="Prefix5:AutoIdScanEventType" IsAbstract="true">
     <Children>
-      <Property SymbolicName="Prefix4:ScanResult" DataType="Prefix4:OcrScanResult" ValueRank="Array" />
+      <Property SymbolicName="Prefix5:ScanResult" DataType="Prefix5:OcrScanResult" ValueRank="Array" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:OcrReaderDeviceType" BaseType="Prefix4:AutoIdDeviceType">
+  <ObjectType SymbolicName="Prefix5:OcrReaderDeviceType" BaseType="Prefix5:AutoIdDeviceType">
     <Children>
-      <Object SymbolicName="Prefix4:Images" TypeDefinition="Prefix0:FolderType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:Images" TypeDefinition="Prefix1:FolderType" ModellingRule="Optional" />
     </Children>
     <References>
       <Reference IsInverse="true">
-        <ReferenceType>Prefix0:GeneratesEvent</ReferenceType>
-        <TargetId>Prefix4:OcrReaderDeviceType</TargetId>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix5:OcrReaderDeviceType</TargetId>
       </Reference>
     </References>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:OpticalScanEventType" BaseType="Prefix4:AutoIdScanEventType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix5:OpticalScanEventType" BaseType="Prefix5:AutoIdScanEventType" IsAbstract="true">
     <Children>
-      <Property SymbolicName="Prefix4:ScanResult" DataType="Prefix4:OpticalScanResult" ValueRank="Array" />
+      <Property SymbolicName="Prefix5:ScanResult" DataType="Prefix5:OpticalScanResult" ValueRank="Array" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:OpticalReaderDeviceType" BaseType="Prefix4:AutoIdDeviceType">
+  <ObjectType SymbolicName="Prefix5:OpticalReaderDeviceType" BaseType="Prefix5:AutoIdDeviceType">
     <Children>
-      <Object SymbolicName="Prefix4:Images" TypeDefinition="Prefix0:FolderType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:Images" TypeDefinition="Prefix1:FolderType" ModellingRule="Optional" />
     </Children>
     <References>
       <Reference IsInverse="true">
-        <ReferenceType>Prefix0:GeneratesEvent</ReferenceType>
-        <TargetId>Prefix4:OpticalReaderDeviceType</TargetId>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix5:OpticalReaderDeviceType</TargetId>
       </Reference>
     </References>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:OpticalVerifierScanEventType" BaseType="Prefix4:OpticalScanEventType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix5:OpticalVerifierScanEventType" BaseType="Prefix5:OpticalScanEventType" IsAbstract="true">
     <Children>
-      <Property SymbolicName="Prefix4:ScanResult" ModellingRule="Mandatory" DataType="Prefix4:OpticalVerifierScanResult" ValueRank="Array" />
+      <Property SymbolicName="Prefix5:ScanResult" ModellingRule="Mandatory" DataType="Prefix5:OpticalVerifierScanResult" ValueRank="Array" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:OpticalVerifierDeviceType" BaseType="Prefix4:OpticalReaderDeviceType">
+  <ObjectType SymbolicName="Prefix5:OpticalVerifierDeviceType" BaseType="Prefix5:OpticalReaderDeviceType">
     <References>
       <Reference IsInverse="true">
-        <ReferenceType>Prefix0:GeneratesEvent</ReferenceType>
-        <TargetId>Prefix4:OpticalVerifierDeviceType</TargetId>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix5:OpticalVerifierDeviceType</TargetId>
       </Reference>
     </References>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:RfidScanEventType" BaseType="Prefix4:AutoIdScanEventType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix5:RfidScanEventType" BaseType="Prefix5:AutoIdScanEventType" IsAbstract="true">
     <Children>
-      <Property SymbolicName="Prefix4:ScanResult" DataType="Prefix4:RfidScanResult" ValueRank="Array" />
+      <Property SymbolicName="Prefix5:ScanResult" DataType="Prefix5:RfidScanResult" ValueRank="Array" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:RtlsLocationEventType" BaseType="Prefix4:AutoIdScanEventType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix5:RtlsLocationEventType" BaseType="Prefix5:AutoIdScanEventType" IsAbstract="true">
     <Children>
-      <Property SymbolicName="Prefix4:ScanResult" DataType="Prefix4:RtlsLocationResult" ValueRank="Array" />
+      <Property SymbolicName="Prefix5:ScanResult" DataType="Prefix5:RtlsLocationResult" ValueRank="Array" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:RtlsDeviceType" BaseType="Prefix4:AutoIdDeviceType">
+  <ObjectType SymbolicName="Prefix5:RtlsDeviceType" BaseType="Prefix5:AutoIdDeviceType">
     <Children>
-      <Property SymbolicName="Prefix4:GeographicalUnit" ModellingRule="Mandatory" DataType="Prefix0:EUInformation" AccessLevel="ReadWrite" />
-      <Method SymbolicName="Prefix4:GetLocation" ModellingRule="Optional">
-        <InputArguments>
-          <Argument Name="Identifier">
-            <Description />
-          </Argument>
-          <Argument Name="LocationType">
-            <Description />
-          </Argument>
-          <Argument Name="CodeType">
-            <Description />
-          </Argument>
-        </InputArguments>
-        <OutputArguments>
-          <Argument Name="Result">
-            <Description />
-          </Argument>
-        </OutputArguments>
+      <Property SymbolicName="Prefix5:GeographicalUnit" ModellingRule="Mandatory" DataType="Prefix1:EUInformation" AccessLevel="ReadWrite" />
+      <Method SymbolicName="Prefix5:GetLocation" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="3">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Identifier</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3020</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>LocationType</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>CodeType</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3031</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Result</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3028</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
-      <Method SymbolicName="Prefix4:GetSupportedLocationTypes" ModellingRule="Optional">
-        <OutputArguments>
-          <Argument Name="SupportedLocationTypes" ValueRank="Array">
-            <Description />
-          </Argument>
-        </OutputArguments>
+      <Method SymbolicName="Prefix5:GetSupportedLocationTypes" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>SupportedLocationTypes</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
-      <Method SymbolicName="Prefix4:GetUnits" ModellingRule="Optional" />
-      <Property SymbolicName="Prefix4:LengthUnit" ModellingRule="Mandatory" DataType="Prefix0:EUInformation" AccessLevel="ReadWrite" />
-      <Property SymbolicName="Prefix4:RotationalUnit" ModellingRule="Mandatory" DataType="Prefix0:EUInformation" AccessLevel="ReadWrite" />
-      <Property SymbolicName="Prefix4:SpeedUnit" ModellingRule="Mandatory" DataType="Prefix0:EUInformation" AccessLevel="ReadWrite" />
+      <Method SymbolicName="Prefix5:GetUnits" ModellingRule="Optional" />
+      <Property SymbolicName="Prefix5:LengthUnit" ModellingRule="Mandatory" DataType="Prefix1:EUInformation" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:RotationalUnit" ModellingRule="Mandatory" DataType="Prefix1:EUInformation" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:SpeedUnit" ModellingRule="Mandatory" DataType="Prefix1:EUInformation" AccessLevel="ReadWrite" />
     </Children>
     <References>
       <Reference IsInverse="true">
-        <ReferenceType>Prefix0:GeneratesEvent</ReferenceType>
-        <TargetId>Prefix4:RtlsDeviceType</TargetId>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix5:RtlsDeviceType</TargetId>
       </Reference>
     </References>
     <ClassName />
