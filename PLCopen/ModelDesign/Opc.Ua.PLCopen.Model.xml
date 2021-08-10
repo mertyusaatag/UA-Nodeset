@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
-<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://plcopen.org/OpcUa/IEC61131-3/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-08-09T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://plcopen.org/OpcUa/IEC61131-3/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-08-10T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09.03.2021">http://opcfoundation.org/UA/DI/</Namespace>
@@ -38,6 +38,57 @@
     <ClassName />
     <InverseName>Executes</InverseName>
   </ReferenceType>
+  <ObjectType SymbolicName="Prefix5:CtrlConfigurationType" BaseType="Prefix3:TopologyElementType">
+    <Children>
+      <Object SymbolicName="Prefix5:Resources" TypeDefinition="Prefix3:ConfigurableObjectType" ModellingRule="Mandatory">
+        <Children>
+          <Object SymbolicName="Prefix3:S_Resource_Name_" TypeDefinition="Prefix5:CtrlResourceType" ModellingRule="OptionalPlaceholder">
+            <BrowseName>&lt;ResourceName&gt;</BrowseName>
+            <Description>Folder maintaining the set of (sub-types of) BaseObjectTypes that can be instantiated in the ConfigurableComponent</Description>
+          </Object>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix5:GlobalVars" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:AccessVars" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:ConfigVars" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:Configuration" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:Status" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix3:MethodSet">
+        <Children>
+          <Method SymbolicName="Prefix5:Start" ModellingRule="Optional">
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <Description>the definition of the input argument of method 1:MethodSet.2:Start</Description>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <Description>the definition of the output arguments of method 1:MethodSet.2:Start</Description>
+              </Property>
+            </Children>
+          </Method>
+          <Method SymbolicName="Prefix5:Stop" ModellingRule="Optional">
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <Description>the definition of the input argument of method 1:MethodSet.2:Stop</Description>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <Description>the definition of the output arguments of method 1:MethodSet.2:Stop</Description>
+              </Property>
+            </Children>
+          </Method>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix3:ParameterSet">
+        <Children>
+          <Variable SymbolicName="Prefix3:S_ParameterIdentifier_" ModellingRule="MandatoryPlaceholder" DataType="Prefix1:BaseDataType">
+            <BrowseName>&lt;ParameterIdentifier&gt;</BrowseName>
+            <Description>A parameter which belongs to the topology element.</Description>
+          </Variable>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix3:Identification" TypeDefinition="Prefix3:FunctionalGroupType" />
+    </Children>
+    <ClassName />
+  </ObjectType>
   <ObjectType SymbolicName="Prefix5:CtrlResourceType" BaseType="Prefix3:DeviceType">
     <Children>
       <Object SymbolicName="Prefix5:MethodSet">
