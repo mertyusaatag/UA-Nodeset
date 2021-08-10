@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOC>
 
-  <HelpTOCNode Id="4bd4e448-c382-45e1-ad5c-7d3c8506c083" Title="OPC UA Models">
-    <HelpTOCNode Title="OPC UA" Url="html/OPCUA.htm" />
-    <HelpTOCNode Title="DI" Url="html/DI.htm" />
-    <HelpTOCNode Title="FDT" Url="html/FDT.htm" />
-    <HelpTOCNode Title="Machinery " Url="html/Machinery.htm" />
-    <HelpTOCNode Title="MachineVision" Url="html/MachineVision.htm" />
-    <HelpTOCNode Title="MTConnect" Url="html/MTConnect.htm" />
-    <HelpTOCNode Title="PackML" Url="html/PackML.htm" />
+  <HelpTOCNode Id="f6fd4c55-fb7a-4707-9f12-54bcc7cac297" Title="OPC UA Models">
+    <HelpTOCNode Title="OPC UA Model" Url="html/OPCUA.htm" />
+    <HelpTOCNode Title="DI Model" Url="html/DI.htm" />
+    <HelpTOCNode Title="FDT Model" Url="html/FDT.htm" />
+    <HelpTOCNode Title="Machinery Model" Url="html/Machinery.htm" />
+    <HelpTOCNode Title="MachineVision Model" Url="html/MachineVision.htm" />
+    <HelpTOCNode Title="MTConnect Model" Url="html/MTConnect.htm" />
+    <HelpTOCNode Title="PackML Model" Url="html/PackML.htm" />
+    <HelpTOCNode Title="PLCopen Model" Url="html/PLCopen.htm" />
   </HelpTOCNode>
 </HelpTOC>

@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://plcopen.org/OpcUa/IEC61131-3/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-08-10T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09.03.2021">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://plcopen.org/OpcUa/IEC61131-3/" XmlNamespace="http://plcopen.org/OpcUa/IEC61131-3/" XmlPrefix="Prefix5" FilePath="" Version="1.02" PublicationDate="25.11.2020">http://plcopen.org/OpcUa/IEC61131-3/</Namespace>
+  </Namespaces>
+  <ObjectType SymbolicName="Prefix5:CtrlTaskType">
+    <Children>
+      <Property SymbolicName="Prefix5:Priority" ModellingRule="Mandatory" DataType="Prefix1:UInt32" />
+      <Property SymbolicName="Prefix5:Interval" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix5:Single" ModellingRule="Optional" DataType="Prefix1:String" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ReferenceType SymbolicName="Prefix5:HasInputVar" BaseType="Prefix1:HasComponent">
+    <ClassName />
+    <InverseName>InputVarOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix5:HasOutputVar" BaseType="Prefix1:HasComponent">
+    <ClassName />
+    <InverseName>OutputVarOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix5:HasInOutVar" BaseType="Prefix1:HasComponent">
+    <ClassName />
+    <InverseName>InOutVarOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix5:HasLocalVar" BaseType="Prefix1:HasComponent">
+    <ClassName />
+    <InverseName>LocalVarOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix5:HasExternalVar" BaseType="Prefix1:Organizes">
+    <ClassName />
+    <InverseName>ExternalVarOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix5:With" BaseType="Prefix1:NonHierarchicalReferences">
+    <ClassName />
+    <InverseName>Executes</InverseName>
+  </ReferenceType>
+  <ObjectType SymbolicName="Prefix5:CtrlConfigurationType" BaseType="Prefix3:TopologyElementType">
+    <Children>
+      <Object SymbolicName="Prefix5:Resources" TypeDefinition="Prefix3:ConfigurableObjectType" ModellingRule="Mandatory">
+        <Children>
+          <Object SymbolicName="Prefix3:S_Resource_Name_" TypeDefinition="Prefix5:CtrlResourceType" ModellingRule="OptionalPlaceholder">
+            <BrowseName>&lt;ResourceName&gt;</BrowseName>
+            <Description>Folder maintaining the set of (sub-types of) BaseObjectTypes that can be instantiated in the ConfigurableComponent</Description>
+          </Object>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix5:GlobalVars" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:AccessVars" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:ConfigVars" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:Configuration" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:Status" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix3:MethodSet">
+        <Children>
+          <Method SymbolicName="Prefix5:Start" ModellingRule="Optional">
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <Description>the definition of the input argument of method 1:MethodSet.2:Start</Description>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <Description>the definition of the output arguments of method 1:MethodSet.2:Start</Description>
+              </Property>
+            </Children>
+          </Method>
+          <Method SymbolicName="Prefix5:Stop" ModellingRule="Optional">
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <Description>the definition of the input argument of method 1:MethodSet.2:Stop</Description>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <Description>the definition of the output arguments of method 1:MethodSet.2:Stop</Description>
+              </Property>
+            </Children>
+          </Method>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix3:ParameterSet">
+        <Children>
+          <Variable SymbolicName="Prefix3:S_ParameterIdentifier_" ModellingRule="MandatoryPlaceholder" DataType="Prefix1:BaseDataType">
+            <BrowseName>&lt;ParameterIdentifier&gt;</BrowseName>
+            <Description>A parameter which belongs to the topology element.</Description>
+          </Variable>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix3:Identification" TypeDefinition="Prefix3:FunctionalGroupType" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:CtrlResourceType" BaseType="Prefix3:DeviceType">
+    <Children>
+      <Object SymbolicName="Prefix5:MethodSet">
+        <Children>
+          <Method SymbolicName="Prefix5:Start" ModellingRule="Optional" />
+          <Method SymbolicName="Prefix5:Stop" ModellingRule="Optional" />
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix5:Tasks" TypeDefinition="Prefix3:ConfigurableObjectType" ModellingRule="Mandatory">
+        <Children>
+          <Object SymbolicName="Prefix3:S_TaskName_" TypeDefinition="Prefix5:CtrlTaskType" ModellingRule="OptionalPlaceholder">
+            <BrowseName>&lt;TaskName&gt;</BrowseName>
+            <Description>Folder maintaining the set of (sub-types of) BaseObjectTypes that can be instantiated in the ConfigurableComponent</Description>
+          </Object>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix5:Programs" TypeDefinition="Prefix3:ConfigurableObjectType" ModellingRule="Mandatory">
+        <Children>
+          <Object SymbolicName="Prefix3:S_ProgramName_" TypeDefinition="Prefix5:CtrlProgramType" ModellingRule="OptionalPlaceholder">
+            <BrowseName>&lt;ProgramName&gt;</BrowseName>
+            <Description>Folder maintaining the set of (sub-types of) BaseObjectTypes that can be instantiated in the ConfigurableComponent</Description>
+          </Object>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix5:GlobalVars" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:Configuration" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:Status" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:CtrlProgramType" BaseType="Prefix5:CtrlProgramOrganizationUnitType" IsAbstract="true">
+    <Children>
+      <Variable SymbolicName="Prefix5:Program" ModellingRule="Optional" DataType="Prefix1:Structure" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:CtrlProgramOrganizationUnitType" BaseType="Prefix3:BlockType" IsAbstract="true">
+    <Children>
+      <Variable SymbolicName="Prefix5:Body" ModellingRule="Optional" DataType="Prefix1:XmlElement" />
+      <Object SymbolicName="Prefix5:S_SFCName_" TypeDefinition="Prefix5:SFCType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;SFCName&gt;</BrowseName>
+        <Children>
+          <Property SymbolicName="Prefix5:Priority" ModellingRule="Mandatory" DataType="Prefix1:UInt32" />
+        </Children>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix5:With</ReferenceType>
+        <TargetId>Prefix5:S_TaskName_</TargetId>
+      </Reference>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix5:HasInOutVar</ReferenceType>
+        <TargetId>Prefix5:CtrlProgramOrganizationUnitType</TargetId>
+      </Reference>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix5:HasInputVar</ReferenceType>
+        <TargetId>Prefix5:CtrlProgramOrganizationUnitType</TargetId>
+      </Reference>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix5:HasOutputVar</ReferenceType>
+        <TargetId>Prefix5:CtrlProgramOrganizationUnitType</TargetId>
+      </Reference>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix5:HasLocalVar</ReferenceType>
+        <TargetId>Prefix5:CtrlProgramOrganizationUnitType</TargetId>
+      </Reference>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix5:HasExternalVar</ReferenceType>
+        <TargetId>Prefix5:CtrlProgramOrganizationUnitType</TargetId>
+      </Reference>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix5:HasLocalVar</ReferenceType>
+        <TargetId>Prefix5:CtrlProgramOrganizationUnitType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:CtrlFunctionBlockType" BaseType="Prefix5:CtrlProgramOrganizationUnitType" IsAbstract="true">
+    <Children>
+      <Variable SymbolicName="Prefix5:FunctionBlock" ModellingRule="Optional" DataType="Prefix1:BaseDataType" />
+    </Children>
+    <References>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix5:HasInputVar</ReferenceType>
+        <TargetId>Prefix5:CtrlFunctionBlockType</TargetId>
+      </Reference>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix5:HasOutputVar</ReferenceType>
+        <TargetId>Prefix5:CtrlFunctionBlockType</TargetId>
+      </Reference>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix5:HasInOutVar</ReferenceType>
+        <TargetId>Prefix5:CtrlFunctionBlockType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:SFCType">
+    <ClassName />
+  </ObjectType>
+  <DataType SymbolicName="Prefix5:TIME" BaseType="Prefix1:Int64">
+    <Description>It describes that the type is used as interval of time in milliseconds. The representation contains information for days (d), hours (h), minutes (m), seconds (s) and milliseconds (ms). The range of valid values is vendor specific. The server has to check if the value has a valid range. Sample: T#+24d20h31m23s647ms.</Description>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix5:LTIME" BaseType="Prefix1:Int64">
+    <Description>It describes that the type is used as interval of time in nanoseconds. The valid range is LT#-106751d23h47m16s854ms775us808ns to LT#+106751d23h47m16s854ms775us807ns. The representation contains information for days (d), hours (h), minutes (m), seconds (s) milliseconds (ms), microseconds (us) and nanoseconds (ns).</Description>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix5:DATE" BaseType="Prefix1:DateTime">
+    <Description>It describes that the type is used as a date only.</Description>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix5:LDATE" BaseType="Prefix1:Int64">
+    <Description>It describes that the type is used as date only. The interval is nanoseconds since 1970-01-01.</Description>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix5:TOD" BaseType="Prefix1:UInt32">
+    <Description>TIME_OF_DAY stores number of milliseconds since the beginning of the day: TOD#00:00:00.000 to TOD#23:59:59.999.</Description>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix5:LTOD" BaseType="Prefix1:Int64">
+    <Description>LTIME_OF_DAY stores the number of nanoseconds since the beginning of the day: LTOD#00:00:00.000000000 to LTOD#23:59:59.999999999.</Description>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix5:DT" BaseType="Prefix1:DateTime">
+    <Description>Vendor specific type.</Description>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix5:LDT" BaseType="Prefix1:Int64">
+    <Description>It describes the number of nanoseconds elapsed since 1970-01-01-00:00:00.</Description>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix5:STRING" BaseType="Prefix1:String">
+    <Description>It describes that the type is used as a variable-length single-byte character string.</Description>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix5:CHAR" BaseType="Prefix1:Byte">
+    <Description>. It describes that the type is used as single-byte character.</Description>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix5:WCHAR" BaseType="Prefix1:UInt16">
+    <Description>It describes that the type is used as double-byte character.</Description>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix5:BYTE" BaseType="Prefix1:Byte">
+    <Description>It describes that the type is used as bit string of length 8.</Description>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix5:DWORD" BaseType="Prefix1:UInt32">
+    <Description>It describes that the type is used as bit string of length 32.</Description>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix5:LWORD" BaseType="Prefix1:UInt64">
+    <Description>It describes that the type is used as bit string of length 64.</Description>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix5:WORD" BaseType="Prefix1:UInt16">
+    <Description>It describes that the type is used as bit string of length 16.</Description>
+    <ClassName />
+    <Fields />
+  </DataType>
+</ModelDesign>
