@@ -29,7 +29,7 @@
     <PresentationStyle>VS2013</PresentationStyle>
     <BuildLogFile>Help.obj\help.log</BuildLogFile>
     <CleanIntermediates>True</CleanIntermediates>
-    <KeepLogFile>True</KeepLogFile>
+    <KeepLogFile>False</KeepLogFile>
     <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
     <IndentHtml>False</IndentHtml>
     <BuildAssemblerVerbosity>AllMessages</BuildAssemblerVerbosity>
@@ -136,6 +136,7 @@
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="Opc.Ua.PLCopen.Model.aml" />
     <None Include="Opc.Ua.MTConnect.Model.aml" />
     <None Include="Opc.Ua.MachineVision.Model.aml" />
     <None Include="Opc.Ua.Machinery.Model.aml" />
