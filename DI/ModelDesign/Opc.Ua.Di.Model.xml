@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
-<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-06-29T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<ModelDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-08-10T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09.03.2021">http://opcfoundation.org/UA/DI/</Namespace>
@@ -44,27 +44,125 @@
         <Description>Used to lock the topology element.</Description>
         <Children>
           <Method SymbolicName="Prefix3:InitLock">
-            <InputArguments>
-              <Argument Name="Context" DataType="Prefix1:String" />
-            </InputArguments>
-            <OutputArguments>
-              <Argument Name="InitLockStatus" DataType="Prefix1:Int32" />
-            </OutputArguments>
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>Context</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>InitLockStatus</Name>
+              <DataType>
+                <Identifier>i=6</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
           <Method SymbolicName="Prefix3:RenewLock">
-            <OutputArguments>
-              <Argument Name="RenewLockStatus" DataType="Prefix1:Int32" />
-            </OutputArguments>
+            <Children>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>RenewLockStatus</Name>
+              <DataType>
+                <Identifier>i=6</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
           <Method SymbolicName="Prefix3:ExitLock">
-            <OutputArguments>
-              <Argument Name="ExitLockStatus" DataType="Prefix1:Int32" />
-            </OutputArguments>
+            <Children>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ExitLockStatus</Name>
+              <DataType>
+                <Identifier>i=6</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
           <Method SymbolicName="Prefix3:BreakLock">
-            <OutputArguments>
-              <Argument Name="BreakLockStatus" DataType="Prefix1:Int32" />
-            </OutputArguments>
+            <Children>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>BreakLockStatus</Name>
+              <DataType>
+                <Identifier>i=6</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
         </Children>
       </Object>
@@ -100,27 +198,125 @@
       <Property SymbolicName="Prefix3:LockingUser" ModellingRule="Mandatory" DataType="Prefix1:String" />
       <Property SymbolicName="Prefix3:RemainingLockTime" ModellingRule="Mandatory" DataType="Prefix1:Duration" />
       <Method SymbolicName="Prefix3:InitLock" ModellingRule="Mandatory">
-        <InputArguments>
-          <Argument Name="Context" DataType="Prefix1:String" />
-        </InputArguments>
-        <OutputArguments>
-          <Argument Name="InitLockStatus" DataType="Prefix1:Int32" />
-        </OutputArguments>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>Context</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>InitLockStatus</Name>
+              <DataType>
+                <Identifier>i=6</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
       <Method SymbolicName="Prefix3:RenewLock" ModellingRule="Mandatory">
-        <OutputArguments>
-          <Argument Name="RenewLockStatus" DataType="Prefix1:Int32" />
-        </OutputArguments>
+        <Children>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>RenewLockStatus</Name>
+              <DataType>
+                <Identifier>i=6</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
       <Method SymbolicName="Prefix3:ExitLock" ModellingRule="Mandatory">
-        <OutputArguments>
-          <Argument Name="ExitLockStatus" DataType="Prefix1:Int32" />
-        </OutputArguments>
+        <Children>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ExitLockStatus</Name>
+              <DataType>
+                <Identifier>i=6</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
       <Method SymbolicName="Prefix3:BreakLock" ModellingRule="Mandatory">
-        <OutputArguments>
-          <Argument Name="BreakLockStatus" DataType="Prefix1:Int32" />
-        </OutputArguments>
+        <Children>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>BreakLockStatus</Name>
+              <DataType>
+                <Identifier>i=6</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
     </Children>
     <ClassName />
@@ -429,27 +625,125 @@
         <Description>Used to lock the Network.</Description>
         <Children>
           <Method SymbolicName="Prefix3:InitLock">
-            <InputArguments>
-              <Argument Name="Context" DataType="Prefix1:String" />
-            </InputArguments>
-            <OutputArguments>
-              <Argument Name="InitLockStatus" DataType="Prefix1:Int32" />
-            </OutputArguments>
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>Context</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>InitLockStatus</Name>
+              <DataType>
+                <Identifier>i=6</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
           <Method SymbolicName="Prefix3:RenewLock">
-            <OutputArguments>
-              <Argument Name="RenewLockStatus" DataType="Prefix1:Int32" />
-            </OutputArguments>
+            <Children>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>RenewLockStatus</Name>
+              <DataType>
+                <Identifier>i=6</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
           <Method SymbolicName="Prefix3:ExitLock">
-            <OutputArguments>
-              <Argument Name="ExitLockStatus" DataType="Prefix1:Int32" />
-            </OutputArguments>
+            <Children>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ExitLockStatus</Name>
+              <DataType>
+                <Identifier>i=6</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
           <Method SymbolicName="Prefix3:BreakLock">
-            <OutputArguments>
-              <Argument Name="BreakLockStatus" DataType="Prefix1:Int32" />
-            </OutputArguments>
+            <Children>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>BreakLockStatus</Name>
+              <DataType>
+                <Identifier>i=6</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
         </Children>
       </Object>
@@ -492,27 +786,175 @@
   <ObjectType SymbolicName="Prefix3:TransferServicesType" Category="DI Offline">
     <Children>
       <Method SymbolicName="Prefix3:TransferToDevice" ModellingRule="Mandatory">
-        <OutputArguments>
-          <Argument Name="TransferID" DataType="Prefix1:Int32" />
-          <Argument Name="InitTransferStatus" DataType="Prefix1:Int32" />
-        </OutputArguments>
+        <Children>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>TransferID</Name>
+              <DataType>
+                <Identifier>i=6</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>InitTransferStatus</Name>
+              <DataType>
+                <Identifier>i=6</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
       <Method SymbolicName="Prefix3:TransferFromDevice" ModellingRule="Mandatory">
-        <OutputArguments>
-          <Argument Name="TransferID" DataType="Prefix1:Int32" />
-          <Argument Name="InitTransferStatus" DataType="Prefix1:Int32" />
-        </OutputArguments>
+        <Children>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>TransferID</Name>
+              <DataType>
+                <Identifier>i=6</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>InitTransferStatus</Name>
+              <DataType>
+                <Identifier>i=6</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
       <Method SymbolicName="Prefix3:FetchTransferResultData" ModellingRule="Mandatory">
-        <InputArguments>
-          <Argument Name="TransferID" DataType="Prefix1:Int32" />
-          <Argument Name="SequenceNumber" DataType="Prefix1:Int32" />
-          <Argument Name="MaxParameterResultsToReturn" DataType="Prefix1:Int32" />
-          <Argument Name="OmitGoodResults" DataType="Prefix1:Boolean" />
-        </InputArguments>
-        <OutputArguments>
-          <Argument Name="FetchResultData" DataType="Prefix1:Structure" />
-        </OutputArguments>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="4">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>TransferID</Name>
+              <DataType>
+                <Identifier>i=6</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>SequenceNumber</Name>
+              <DataType>
+                <Identifier>i=6</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>MaxParameterResultsToReturn</Name>
+              <DataType>
+                <Identifier>i=6</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>OmitGoodResults</Name>
+              <DataType>
+                <Identifier>i=1</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>FetchResultData</Name>
+              <DataType>
+                <Identifier>i=22</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
     </Children>
     <ClassName />
@@ -527,31 +969,187 @@
       <Object SymbolicName="Prefix3:Parameters" TypeDefinition="Prefix1:TemporaryFileTransferType" ModellingRule="Optional">
         <Children>
           <Method SymbolicName="Prefix1:GenerateFileForRead">
-            <InputArguments>
-              <Argument Name="GenerateOptions" />
-            </InputArguments>
-            <OutputArguments>
-              <Argument Name="FileNodeId" DataType="Prefix1:NodeId" />
-              <Argument Name="FileHandle" DataType="Prefix1:UInt32" />
-              <Argument Name="CompletionStateMachine" DataType="Prefix1:NodeId" />
-            </OutputArguments>
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>GenerateOptions</Name>
+              <DataType>
+                <Identifier>i=24</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="3">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>FileNodeId</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>FileHandle</Name>
+              <DataType>
+                <Identifier>i=7</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>CompletionStateMachine</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
           <Method SymbolicName="Prefix1:GenerateFileForWrite">
-            <InputArguments>
-              <Argument Name="GenerateOptions" />
-            </InputArguments>
-            <OutputArguments>
-              <Argument Name="FileNodeId" DataType="Prefix1:NodeId" />
-              <Argument Name="FileHandle" DataType="Prefix1:UInt32" />
-            </OutputArguments>
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>GenerateOptions</Name>
+              <DataType>
+                <Identifier>i=24</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>FileNodeId</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>FileHandle</Name>
+              <DataType>
+                <Identifier>i=7</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
           <Method SymbolicName="Prefix1:CloseAndCommit">
-            <InputArguments>
-              <Argument Name="FileHandle" DataType="Prefix1:UInt32" />
-            </InputArguments>
-            <OutputArguments>
-              <Argument Name="CompletionStateMachine" DataType="Prefix1:NodeId" />
-            </OutputArguments>
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>FileHandle</Name>
+              <DataType>
+                <Identifier>i=7</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>CompletionStateMachine</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
         </Children>
       </Object>
@@ -672,17 +1270,103 @@
       <Variable SymbolicName="Prefix3:PercentComplete" ModellingRule="Optional" DataType="Prefix1:Byte" />
       <Variable SymbolicName="Prefix3:InstallationDelay" ModellingRule="Optional" DataType="Prefix1:Duration" />
       <Method SymbolicName="Prefix3:InstallSoftwarePackage" ModellingRule="Optional">
-        <InputArguments>
-          <Argument Name="ManufacturerUri" DataType="Prefix1:String" />
-          <Argument Name="SoftwareRevision" DataType="Prefix1:String" />
-          <Argument Name="PatchIdentifiers" DataType="Prefix1:String" ValueRank="Array" />
-          <Argument Name="Hash" DataType="Prefix1:ByteString" />
-        </InputArguments>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="4">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ManufacturerUri</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>SoftwareRevision</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>PatchIdentifiers</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>1</ValueRank>
+              <ArrayDimensions>
+                <UInt32>0</UInt32>
+              </ArrayDimensions>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>Hash</Name>
+              <DataType>
+                <Identifier>i=15</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
       <Method SymbolicName="Prefix3:InstallFiles" ModellingRule="Optional">
-        <InputArguments>
-          <Argument Name="NodeIds" DataType="Prefix1:NodeId" ValueRank="Array" />
-        </InputArguments>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>NodeIds</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>1</ValueRank>
+              <ArrayDimensions>
+                <UInt32>0</UInt32>
+              </ArrayDimensions>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
       <Method SymbolicName="Prefix3:Resume" ModellingRule="Mandatory" />
       <Object SymbolicName="Prefix3:Idle" TypeDefinition="Prefix1:InitialStateType" />
@@ -841,31 +1525,187 @@
       <Object SymbolicName="Prefix3:FileTransfer" TypeDefinition="Prefix1:TemporaryFileTransferType" ModellingRule="Mandatory">
         <Children>
           <Method SymbolicName="Prefix1:GenerateFileForRead">
-            <InputArguments>
-              <Argument Name="GenerateOptions" />
-            </InputArguments>
-            <OutputArguments>
-              <Argument Name="FileNodeId" DataType="Prefix1:NodeId" />
-              <Argument Name="FileHandle" DataType="Prefix1:UInt32" />
-              <Argument Name="CompletionStateMachine" DataType="Prefix1:NodeId" />
-            </OutputArguments>
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>GenerateOptions</Name>
+              <DataType>
+                <Identifier>i=24</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="3">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>FileNodeId</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>FileHandle</Name>
+              <DataType>
+                <Identifier>i=7</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>CompletionStateMachine</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
           <Method SymbolicName="Prefix1:GenerateFileForWrite">
-            <InputArguments>
-              <Argument Name="GenerateOptions" />
-            </InputArguments>
-            <OutputArguments>
-              <Argument Name="FileNodeId" DataType="Prefix1:NodeId" />
-              <Argument Name="FileHandle" DataType="Prefix1:UInt32" />
-            </OutputArguments>
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>GenerateOptions</Name>
+              <DataType>
+                <Identifier>i=24</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>FileNodeId</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>FileHandle</Name>
+              <DataType>
+                <Identifier>i=7</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
           <Method SymbolicName="Prefix1:CloseAndCommit">
-            <InputArguments>
-              <Argument Name="FileHandle" DataType="Prefix1:UInt32" />
-            </InputArguments>
-            <OutputArguments>
-              <Argument Name="CompletionStateMachine" DataType="Prefix1:NodeId" />
-            </OutputArguments>
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>FileHandle</Name>
+              <DataType>
+                <Identifier>i=7</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>CompletionStateMachine</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
         </Children>
       </Object>
@@ -898,14 +1738,82 @@
       <Object SymbolicName="Prefix3:PendingVersion" TypeDefinition="Prefix3:SoftwareVersionType" ModellingRule="Mandatory" />
       <Object SymbolicName="Prefix3:FallbackVersion" TypeDefinition="Prefix3:SoftwareVersionType" ModellingRule="Optional" />
       <Method SymbolicName="Prefix3:GetUpdateBehavior" ModellingRule="Mandatory">
-        <InputArguments>
-          <Argument Name="ManufacturerUri" DataType="Prefix1:String" />
-          <Argument Name="SoftwareRevision" DataType="Prefix1:String" />
-          <Argument Name="PatchIdentifiers" DataType="Prefix1:String" ValueRank="Array" />
-        </InputArguments>
-        <OutputArguments>
-          <Argument Name="UpdateBehavior" DataType="Prefix3:UpdateBehavior" />
-        </OutputArguments>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="3">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ManufacturerUri</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>SoftwareRevision</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>PatchIdentifiers</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>1</ValueRank>
+              <ArrayDimensions>
+                <UInt32>0</UInt32>
+              </ArrayDimensions>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>UpdateBehavior</Name>
+              <DataType>
+                <Identifier>ns=1;i=333</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
     </Children>
     <ClassName />
@@ -914,21 +1822,115 @@
     <Children>
       <Object SymbolicName="Prefix1:FileSystem" TypeDefinition="Prefix1:FileDirectoryType" ModellingRule="Mandatory" />
       <Method SymbolicName="Prefix3:GetUpdateBehavior" ModellingRule="Mandatory">
-        <InputArguments>
-          <Argument Name="NodeIds" DataType="Prefix1:NodeId" ValueRank="Array" />
-        </InputArguments>
-        <OutputArguments>
-          <Argument Name="UpdateBehavior" DataType="Prefix3:UpdateBehavior" />
-        </OutputArguments>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>NodeIds</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>1</ValueRank>
+              <ArrayDimensions>
+                <UInt32>0</UInt32>
+              </ArrayDimensions>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>UpdateBehavior</Name>
+              <DataType>
+                <Identifier>ns=1;i=333</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
       <Method SymbolicName="Prefix3:ValidateFiles" ModellingRule="Optional">
-        <InputArguments>
-          <Argument Name="NodeIds" DataType="Prefix1:NodeId" ValueRank="Array" />
-        </InputArguments>
-        <OutputArguments>
-          <Argument Name="ErrorCode" DataType="Prefix1:Int32" />
-          <Argument Name="ErrorMessage" DataType="Prefix1:LocalizedText" />
-        </OutputArguments>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>NodeIds</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>1</ValueRank>
+              <ArrayDimensions>
+                <UInt32>0</UInt32>
+              </ArrayDimensions>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ErrorCode</Name>
+              <DataType>
+                <Identifier>i=6</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ErrorMessage</Name>
+              <DataType>
+                <Identifier>i=21</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
     </Children>
     <ClassName />
