@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
-<ModelDesign xmlns:Prefix2="http://opcfoundation.org/UA/CNC" xmlns:Prefix0="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/CNC" TargetVersion="" TargetPublicationDate="2021-05-28T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<ModelDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix3="http://opcfoundation.org/UA/CNC" TargetNamespace="http://opcfoundation.org/UA/CNC" TargetVersion="" TargetPublicationDate="2021-08-10T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/CNC" XmlNamespace="http://opcfoundation.org/UA/CNC" XmlPrefix="Prefix3" FilePath="" Version="1.0.0" PublicationDate="19.06.2017">http://opcfoundation.org/UA/CNC</Namespace>
   </Namespaces>
-  <DataType SymbolicName="Prefix2:CncAxisStatus" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix3:CncAxisStatus" BaseType="Prefix1:Enumeration">
     <Description Key="en">Status of a CNC axis.</Description>
     <Children>
-      <Property SymbolicName="Prefix0:EnumValues" ModellingRule="Mandatory" DataType="Prefix0:EnumValueType" ValueRank="Array" ArrayDimensions="3">
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:ExtensionObject>
@@ -79,11 +79,11 @@
       </Field>
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix2:CncChannelProgStatus" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix3:CncChannelProgStatus" BaseType="Prefix1:Enumeration">
     <BrowseName>CncChannelProgramStatus</BrowseName>
     <Description Key="en">Status of program execution within a channel.</Description>
     <Children>
-      <Property SymbolicName="Prefix0:EnumValues" ModellingRule="Mandatory" DataType="Prefix0:EnumValueType" ValueRank="Array" ArrayDimensions="5">
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="5">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:ExtensionObject>
@@ -194,10 +194,10 @@
       </Field>
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix2:CncChannelStatus" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix3:CncChannelStatus" BaseType="Prefix1:Enumeration">
     <Description Key="en">Status of a CNC channel.</Description>
     <Children>
-      <Property SymbolicName="Prefix0:EnumValues" ModellingRule="Mandatory" DataType="Prefix0:EnumValueType" ValueRank="Array" ArrayDimensions="3">
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:ExtensionObject>
@@ -268,10 +268,10 @@
       </Field>
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix2:CncOperationMode" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix3:CncOperationMode" BaseType="Prefix1:Enumeration">
     <Description Key="en">Modes of operation.</Description>
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="3">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -294,10 +294,10 @@
       <Field Name="Automatic" Identifier="2" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix2:CncSpindleStatus" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix3:CncSpindleStatus" BaseType="Prefix1:Enumeration">
     <Description Key="en">Status of a CNC spindle.</Description>
     <Children>
-      <Property SymbolicName="Prefix0:EnumValues" ModellingRule="Mandatory" DataType="Prefix0:EnumValueType" ValueRank="Array" ArrayDimensions="5">
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="5">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:ExtensionObject>
@@ -408,10 +408,10 @@
       </Field>
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix2:CncSpindleTurnDirection" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix3:CncSpindleTurnDirection" BaseType="Prefix1:Enumeration">
     <Description Key="en">Turn direction of a CNC spindle.</Description>
     <Children>
-      <Property SymbolicName="Prefix0:EnumValues" ModellingRule="Mandatory" DataType="Prefix0:EnumValueType" ValueRank="Array" ArrayDimensions="3">
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:ExtensionObject>
@@ -482,39 +482,39 @@
       </Field>
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix2:CncPositionDataType" BaseType="Prefix0:Structure">
+  <DataType SymbolicName="Prefix3:CncPositionDataType" BaseType="Prefix1:Structure">
     <Description Key="en">Structure of position elements.</Description>
     <ClassName />
     <Fields>
-      <Field Name="ActPos" BitMask="" DataType="Prefix0:Double" ArrayDimensions="">
+      <Field Name="ActPos" BitMask="" DataType="Prefix1:Double" ArrayDimensions="">
         <Description>Position current value.</Description>
       </Field>
-      <Field Name="CmdPos" BitMask="" DataType="Prefix0:Double" ArrayDimensions="">
+      <Field Name="CmdPos" BitMask="" DataType="Prefix1:Double" ArrayDimensions="">
         <Description>Position setpoint value.</Description>
       </Field>
-      <Field Name="RemDist" BitMask="" DataType="Prefix0:Double" ArrayDimensions="">
+      <Field Name="RemDist" BitMask="" DataType="Prefix1:Double" ArrayDimensions="">
         <Description>Remaining distance.</Description>
       </Field>
     </Fields>
   </DataType>
-  <VariableType SymbolicName="Prefix2:CncPositionVariableType" DataType="Prefix2:CncPositionDataType">
+  <VariableType SymbolicName="Prefix3:CncPositionVariableType" DataType="Prefix3:CncPositionDataType">
     <Description Key="en">Group of position values.</Description>
     <Children>
-      <Variable SymbolicName="Prefix2:ActPos" ModellingRule="Mandatory" DataType="Prefix0:Double">
+      <Variable SymbolicName="Prefix3:ActPos" ModellingRule="Mandatory" DataType="Prefix1:Double">
         <Description Key="en">Position current value.</Description>
         <DefaultValue>
           <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:CmdPos" ModellingRule="Mandatory" DataType="Prefix0:Double">
+      <Variable SymbolicName="Prefix3:CmdPos" ModellingRule="Mandatory" DataType="Prefix1:Double">
         <Description Key="en">Position setpoint value.</Description>
         <DefaultValue>
           <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
         </DefaultValue>
       </Variable>
-      <Property SymbolicName="Prefix2:EngineeringUnits" ModellingRule="Mandatory" DataType="Prefix0:EUInformation" AccessLevel="ReadWrite" />
-      <Property SymbolicName="Prefix2:EURange" ModellingRule="Mandatory" DataType="Prefix0:Range" AccessLevel="ReadWrite" />
-      <Variable SymbolicName="Prefix2:RemDist" ModellingRule="Mandatory" DataType="Prefix0:Double">
+      <Property SymbolicName="Prefix3:EngineeringUnits" ModellingRule="Mandatory" DataType="Prefix1:EUInformation" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix3:EURange" ModellingRule="Mandatory" DataType="Prefix1:Range" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix3:RemDist" ModellingRule="Mandatory" DataType="Prefix1:Double">
         <Description Key="en">Remaining distance to go.</Description>
         <DefaultValue>
           <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
@@ -537,179 +537,179 @@
       </uax:ExtensionObject>
     </DefaultValue>
   </VariableType>
-  <ObjectType SymbolicName="Prefix2:CncMessageType" BaseType="Prefix0:BaseEventType">
+  <ObjectType SymbolicName="Prefix3:CncMessageType" BaseType="Prefix1:BaseEventType">
     <Description Key="en">Event transmitting simple information messages.</Description>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix2:CncChannelType" BaseType="Prefix2:CncComponentType">
+  <ObjectType SymbolicName="Prefix3:CncChannelType" BaseType="Prefix3:CncComponentType">
     <Description Key="en">CNC channel component.</Description>
     <Children>
-      <Object SymbolicName="Prefix2:S_CncAxis_" TypeDefinition="Prefix2:CncAxisType" ModellingRule="OptionalPlaceholder">
+      <Object SymbolicName="Prefix3:S_CncAxis_" TypeDefinition="Prefix3:CncAxisType" ModellingRule="OptionalPlaceholder">
         <BrowseName>&lt;CncAxis&gt;</BrowseName>
         <Description Key="en">Optional place holder for CNC axis objects.</Description>
       </Object>
-      <Object SymbolicName="Prefix2:S_CncSpindle_" TypeDefinition="Prefix2:CncSpindleType" ModellingRule="OptionalPlaceholder">
+      <Object SymbolicName="Prefix3:S_CncSpindle_" TypeDefinition="Prefix3:CncSpindleType" ModellingRule="OptionalPlaceholder">
         <BrowseName>&lt;CncSpindle&gt;</BrowseName>
         <Description Key="en">Optional place holder for CNC spindle objects.</Description>
       </Object>
-      <Variable SymbolicName="Prefix2:ActFeedrate" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Double" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActFeedrate" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite">
         <Description Key="en">Feedrate actual value.</Description>
         <DefaultValue>
           <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActGFunctions" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:UInt32" ValueRank="Array" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActGFunctions" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:UInt32" ValueRank="Array" AccessLevel="ReadWrite">
         <Description Key="en">Array of active G functions; there can be several G functions active at a time (modal and non-modal G functions).</Description>
         <DefaultValue>
           <uax:ListOfUInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActJogIncrement" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Double" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActJogIncrement" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite">
         <Description Key="en">Active JOG increment.</Description>
         <DefaultValue>
           <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActMainProgramFile" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:String" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActMainProgramFile" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
         <Description Key="en">Path of active CNC main program.</Description>
         <DefaultValue>
           <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
       </uax:String>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActMainProgramFileOffset" TypeDefinition="Prefix0:DataItemType" ModellingRule="Optional" DataType="Prefix0:UInt32" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActMainProgramFileOffset" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
         <Description Key="en">File offset of active CNC main program file.</Description>
         <DefaultValue>
           <uax:UInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt32>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActMainProgramLine" TypeDefinition="Prefix0:DataItemType" ModellingRule="Optional" DataType="Prefix0:String" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActMainProgramLine" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
         <Description Key="en">Line number of active CNC main program.</Description>
         <DefaultValue>
           <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
       </uax:String>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActMainProgramName" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:String" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActMainProgramName" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
         <Description Key="en">Name of active CNC main program.</Description>
         <DefaultValue>
           <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
       </uax:String>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActMFunctions" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:UInt32" ValueRank="Array" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActMFunctions" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:UInt32" ValueRank="Array" AccessLevel="ReadWrite">
         <Description Key="en">Array of active M functions: there can be several M functions active at a time (modal and non-modal M functions).</Description>
         <DefaultValue>
           <uax:ListOfUInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActModalOffsetFunction" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:UInt32" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActModalOffsetFunction" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
         <Description Key="en">Active zero offset function.</Description>
         <DefaultValue>
           <uax:UInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt32>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActOperationMode" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix2:CncOperationMode" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActOperationMode" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix3:CncOperationMode" AccessLevel="ReadWrite">
         <Description Key="en">Channel's active mode of operation.</Description>
         <DefaultValue>
           <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Int32>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActOverride" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Double" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActOverride" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite">
         <Description Key="en">Axis override actual value.</Description>
         <DefaultValue>
           <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActProgramBlock" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:String" ValueRank="Array" ArrayDimensions="3" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActProgramBlock" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:String" ValueRank="Array" ArrayDimensions="3" AccessLevel="ReadWrite">
         <Description Key="en">Block of lines containing the previous, actual and subsequent lines of a CNC part program.</Description>
         <DefaultValue>
           <uax:ListOfString xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActProgramFile" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:String" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActProgramFile" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
         <Description Key="en">Path of active CNC program file (main or subprogram).</Description>
         <DefaultValue>
           <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
       </uax:String>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActProgramFileOffset" TypeDefinition="Prefix0:DataItemType" ModellingRule="Optional" DataType="Prefix0:UInt32" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActProgramFileOffset" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
         <Description Key="en">File offset of active CNC program file (main or subprogram).</Description>
         <DefaultValue>
           <uax:UInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt32>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActProgramLine" TypeDefinition="Prefix0:DataItemType" ModellingRule="Optional" DataType="Prefix0:String" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActProgramLine" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
         <Description Key="en">Line number of active CNC program (main or subprogram).</Description>
         <DefaultValue>
           <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
       </uax:String>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActProgramName" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:String" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActProgramName" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
         <Description Key="en">Name of active CNC program (main or subprogram).</Description>
         <DefaultValue>
           <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
       </uax:String>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActProgStatus" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix2:CncChannelProgramStatus" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActProgStatus" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix3:CncChannelProgramStatus" AccessLevel="ReadWrite">
         <BrowseName>ActProgramStatus</BrowseName>
         <Description Key="en">Active channel program status</Description>
         <DefaultValue>
           <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1</uax:Int32>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActStatus" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix2:CncChannelStatus" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActStatus" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix3:CncChannelStatus" AccessLevel="ReadWrite">
         <Description Key="en">Active status of channel.</Description>
         <DefaultValue>
           <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2</uax:Int32>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:BlockMode" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:Boolean" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:BlockMode" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
         <Description Key="en">Block mode status (true in case of block mode is active, else false).</Description>
         <DefaultValue>
           <uax:Boolean xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">false</uax:Boolean>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:CmdFeedrate" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Double" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:CmdFeedrate" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite">
         <Description Key="en">Feedrate setpoint value.</Description>
         <DefaultValue>
           <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:CmdOperationMode" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix2:CncOperationMode" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:CmdOperationMode" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix3:CncOperationMode" AccessLevel="ReadWrite">
         <Description Key="en">Channel’s mode of operation setpoint value.</Description>
         <DefaultValue>
           <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Int32>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:CmdOverride" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Double" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:CmdOverride" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite">
         <Description Key="en">Override setpoint value.</Description>
         <DefaultValue>
           <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:DryRunFeed" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Double" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:DryRunFeed" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite">
         <Description Key="en">Test feedrate.</Description>
         <DefaultValue>
           <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:FeedHold" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:Boolean" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:FeedHold" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
         <Description Key="en">Feed status (true in case of feed hold active, else false).</Description>
         <DefaultValue>
           <uax:Boolean xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">false</uax:Boolean>
         </DefaultValue>
       </Variable>
-      <Property SymbolicName="Prefix2:Id" ModellingRule="Mandatory" DataType="Prefix0:UInt32" AccessLevel="ReadWrite">
+      <Property SymbolicName="Prefix3:Id" ModellingRule="Mandatory" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
         <Description Key="en">Unique numeric channel identifier.</Description>
         <DefaultValue>
           <uax:UInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt32>
         </DefaultValue>
       </Property>
-      <Variable SymbolicName="Prefix2:PosTcpBcsA" TypeDefinition="Prefix2:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix2:CncPositionDataType" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:PosTcpBcsA" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian base coordinate system.</Description>
         <DefaultValue>
           <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
@@ -726,7 +726,7 @@
       </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:PosTcpBcsB" TypeDefinition="Prefix2:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix2:CncPositionDataType" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:PosTcpBcsB" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian base coordinate system.</Description>
         <DefaultValue>
           <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
@@ -743,7 +743,7 @@
       </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:PosTcpBcsC" TypeDefinition="Prefix2:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix2:CncPositionDataType" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:PosTcpBcsC" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian base coordinate system.</Description>
         <DefaultValue>
           <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
@@ -760,7 +760,7 @@
       </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:PosTcpBcsX" TypeDefinition="Prefix2:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix2:CncPositionDataType" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:PosTcpBcsX" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian base coordinate system.</Description>
         <DefaultValue>
           <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
@@ -777,7 +777,7 @@
       </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:PosTcpBcsY" TypeDefinition="Prefix2:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix2:CncPositionDataType" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:PosTcpBcsY" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian base coordinate system.</Description>
         <DefaultValue>
           <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
@@ -794,7 +794,7 @@
       </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:PosTcpBcsZ" TypeDefinition="Prefix2:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix2:CncPositionDataType" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:PosTcpBcsZ" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian base coordinate system.</Description>
         <DefaultValue>
           <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
@@ -811,7 +811,7 @@
       </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:PosTcpWcsA" TypeDefinition="Prefix2:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix2:CncPositionDataType" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:PosTcpWcsA" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian workpiece coordinate system.</Description>
         <DefaultValue>
           <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
@@ -828,7 +828,7 @@
       </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:PosTcpWcsB" TypeDefinition="Prefix2:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix2:CncPositionDataType" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:PosTcpWcsB" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian workpiece coordinate system.</Description>
         <DefaultValue>
           <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
@@ -845,7 +845,7 @@
       </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:PosTcpWcsC" TypeDefinition="Prefix2:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix2:CncPositionDataType" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:PosTcpWcsC" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian workpiece coordinate system.</Description>
         <DefaultValue>
           <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
@@ -862,7 +862,7 @@
       </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:PosTcpWcsX" TypeDefinition="Prefix2:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix2:CncPositionDataType" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:PosTcpWcsX" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian workpiece coordinate system.</Description>
         <DefaultValue>
           <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
@@ -879,7 +879,7 @@
       </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:PosTcpWcsY" TypeDefinition="Prefix2:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix2:CncPositionDataType" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:PosTcpWcsY" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian workpiece coordinate system.</Description>
         <DefaultValue>
           <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
@@ -896,7 +896,7 @@
       </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:PosTcpWcsZ" TypeDefinition="Prefix2:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix2:CncPositionDataType" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:PosTcpWcsZ" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian workpiece coordinate system.</Description>
         <DefaultValue>
           <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
@@ -913,7 +913,7 @@
       </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ToolId" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:UInt32" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ToolId" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
         <Description Key="en">ID of active tool; returns zero if no tool is present.</Description>
         <DefaultValue>
           <uax:UInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt32>
@@ -922,51 +922,51 @@
     </Children>
     <References>
       <Reference IsInverse="true">
-        <ReferenceType>Prefix0:GeneratesEvent</ReferenceType>
-        <TargetId>Prefix2:CncChannelType</TargetId>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix3:CncChannelType</TargetId>
       </Reference>
       <Reference>
-        <ReferenceType>Prefix0:GeneratesEvent</ReferenceType>
-        <TargetId>Prefix0:GeneralModelChangeEventType</TargetId>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
       </Reference>
     </References>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix2:CncInterfaceType">
+  <ObjectType SymbolicName="Prefix3:CncInterfaceType">
     <Description Key="en">Entry point to CNC data interface.</Description>
     <Children>
-      <Object SymbolicName="Prefix2:CncAxisList" TypeDefinition="Prefix2:CncAxisListType" ModellingRule="Mandatory">
+      <Object SymbolicName="Prefix3:CncAxisList" TypeDefinition="Prefix3:CncAxisListType" ModellingRule="Mandatory">
         <Description Key="en">List of CNC axis objects.</Description>
       </Object>
-      <Object SymbolicName="Prefix2:CncChannelList" TypeDefinition="Prefix2:CncChannelListType" ModellingRule="Mandatory">
+      <Object SymbolicName="Prefix3:CncChannelList" TypeDefinition="Prefix3:CncChannelListType" ModellingRule="Mandatory">
         <Description Key="en">List of CNC channel objects.</Description>
       </Object>
-      <Object SymbolicName="Prefix2:CncSpindleList" TypeDefinition="Prefix2:CncSpindleListType" ModellingRule="Mandatory">
+      <Object SymbolicName="Prefix3:CncSpindleList" TypeDefinition="Prefix3:CncSpindleListType" ModellingRule="Mandatory">
         <Description Key="en">List of CNC spindle objects.</Description>
       </Object>
-      <Property SymbolicName="Prefix2:CncTypeName" ModellingRule="Optional" DataType="Prefix0:String" AccessLevel="ReadWrite" />
-      <Property SymbolicName="Prefix2:Fix" ModellingRule="Optional" DataType="Prefix0:String" AccessLevel="ReadWrite">
+      <Property SymbolicName="Prefix3:CncTypeName" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix3:Fix" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
         <Description Key="en">Version of CNC interface considering changes in implementation (Bug Fix).</Description>
         <DefaultValue>
           <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
       </uax:String>
         </DefaultValue>
       </Property>
-      <Property SymbolicName="Prefix2:VendorName" ModellingRule="Mandatory" DataType="Prefix0:String" AccessLevel="ReadWrite">
+      <Property SymbolicName="Prefix3:VendorName" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
         <Description Key="en">Name of CNC system vendor. Format and content may be chosen by vendor.</Description>
         <DefaultValue>
           <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
       </uax:String>
         </DefaultValue>
       </Property>
-      <Property SymbolicName="Prefix2:VendorRevision" ModellingRule="Mandatory" DataType="Prefix0:String" AccessLevel="ReadWrite">
+      <Property SymbolicName="Prefix3:VendorRevision" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
         <Description Key="en">Vendor revision of CNC interface. Format and content may be chosen by vendor.</Description>
         <DefaultValue>
           <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
       </uax:String>
         </DefaultValue>
       </Property>
-      <Property SymbolicName="Prefix2:Version" ModellingRule="Mandatory" DataType="Prefix0:String" AccessLevel="ReadWrite">
+      <Property SymbolicName="Prefix3:Version" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
         <Description Key="en">Version of CNC interface - corresponds to version of OPC UA companion standard.</Description>
         <DefaultValue>
           <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
@@ -976,33 +976,33 @@
     </Children>
     <References>
       <Reference IsInverse="true">
-        <ReferenceType>Prefix0:GeneratesEvent</ReferenceType>
-        <TargetId>Prefix2:CncInterfaceType</TargetId>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix3:CncInterfaceType</TargetId>
       </Reference>
       <Reference IsInverse="true">
-        <ReferenceType>Prefix0:GeneratesEvent</ReferenceType>
-        <TargetId>Prefix2:CncInterfaceType</TargetId>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix3:CncInterfaceType</TargetId>
       </Reference>
     </References>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix2:CncAlarmType" BaseType="Prefix0:DiscreteAlarmType">
+  <ObjectType SymbolicName="Prefix3:CncAlarmType" BaseType="Prefix1:DiscreteAlarmType">
     <Description Key="en">Event transmitting Alarms within a CNC system.</Description>
     <Children>
-      <Property SymbolicName="Prefix2:AlarmIdentifier" ModellingRule="Mandatory" DataType="Prefix0:String" AccessLevel="ReadWrite">
+      <Property SymbolicName="Prefix3:AlarmIdentifier" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
         <Description Key="en">Unique alarm number.</Description>
         <DefaultValue>
           <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
       </uax:String>
         </DefaultValue>
       </Property>
-      <Property SymbolicName="Prefix2:AuxParameters" ModellingRule="Optional" DataType="Prefix0:String" ValueRank="Array" AccessLevel="ReadWrite">
+      <Property SymbolicName="Prefix3:AuxParameters" ModellingRule="Optional" DataType="Prefix1:String" ValueRank="Array" AccessLevel="ReadWrite">
         <Description Key="en">Array of auxiliary parameter for additional alarm description.</Description>
         <DefaultValue>
           <uax:ListOfString xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
         </DefaultValue>
       </Property>
-      <Property SymbolicName="Prefix2:HelpSource" ModellingRule="Optional" DataType="Prefix0:String" AccessLevel="ReadWrite">
+      <Property SymbolicName="Prefix3:HelpSource" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
         <Description Key="en">Additional information to message giving information on how to solve problem that caused the alarm.</Description>
         <DefaultValue>
           <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
@@ -1012,44 +1012,44 @@
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix2:CncAxisListType">
+  <ObjectType SymbolicName="Prefix3:CncAxisListType">
     <Description Key="en">List of CNC axis objects.</Description>
     <Children>
-      <Object SymbolicName="Prefix2:S_CncAxis_" TypeDefinition="Prefix2:CncAxisType" ModellingRule="OptionalPlaceholder">
+      <Object SymbolicName="Prefix3:S_CncAxis_" TypeDefinition="Prefix3:CncAxisType" ModellingRule="OptionalPlaceholder">
         <BrowseName>&lt;CncAxis&gt;</BrowseName>
         <Description Key="en">CNC axis object.</Description>
       </Object>
     </Children>
     <References>
       <Reference>
-        <ReferenceType>Prefix0:GeneratesEvent</ReferenceType>
-        <TargetId>Prefix0:GeneralModelChangeEventType</TargetId>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
       </Reference>
     </References>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix2:CncAxisType" BaseType="Prefix2:CncDriveType">
+  <ObjectType SymbolicName="Prefix3:CncAxisType" BaseType="Prefix3:CncDriveType">
     <Description Key="en">CNC axis component.</Description>
     <Children>
-      <Variable SymbolicName="Prefix2:ActStatus" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix2:CncAxisStatus" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActStatus" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix3:CncAxisStatus" AccessLevel="ReadWrite">
         <Description Key="en">Actual axis state.</Description>
         <DefaultValue>
           <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Int32>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:IsReferenced" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:Boolean" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:IsReferenced" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
         <Description Key="en">Axis reference state (true in case of successfully refereneced axis, else false).</Description>
         <DefaultValue>
           <uax:Boolean xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">false</uax:Boolean>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:IsRotational" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:Boolean" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:IsRotational" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
         <Description Key="en">Axis type (true in case of rotational axis, in case of linear type or other false).</Description>
         <DefaultValue>
           <uax:Boolean xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">false</uax:Boolean>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:PosDirect" TypeDefinition="Prefix2:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix2:CncPositionDataType" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:PosDirect" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Position actual value referring to axis' direct measurement system.</Description>
         <DefaultValue>
           <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
@@ -1066,7 +1066,7 @@
       </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:PosIndirect" TypeDefinition="Prefix2:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix2:CncPositionDataType" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:PosIndirect" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Position actual value referring to axis' indirect measurement system.</Description>
         <DefaultValue>
           <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
@@ -1083,7 +1083,7 @@
       </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ZeroOffset" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Double" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ZeroOffset" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite">
         <Description Key="en">Active axis zero offset.</Description>
         <DefaultValue>
           <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
@@ -1092,14 +1092,14 @@
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix2:CncChannelListType">
+  <ObjectType SymbolicName="Prefix3:CncChannelListType">
     <Description Key="en">List of CNC channel objects.</Description>
     <Children>
-      <Object SymbolicName="Prefix2:S_CncChannel_" TypeDefinition="Prefix2:CncChannelType" ModellingRule="OptionalPlaceholder">
+      <Object SymbolicName="Prefix3:S_CncChannel_" TypeDefinition="Prefix3:CncChannelType" ModellingRule="OptionalPlaceholder">
         <BrowseName>&lt;CncChannel&gt;</BrowseName>
         <Description Key="en">CNC channel object.</Description>
         <Children>
-          <Variable SymbolicName="Prefix2:ActProgramStatus" TypeDefinition="Prefix0:DataItemType" AccessLevel="ReadWrite">
+          <Variable SymbolicName="Prefix3:ActProgramStatus" TypeDefinition="Prefix1:DataItemType" AccessLevel="ReadWrite">
             <DefaultValue>
               <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1</uax:Int32>
             </DefaultValue>
@@ -1107,62 +1107,62 @@
         </Children>
         <References>
           <Reference IsInverse="true">
-            <ReferenceType>Prefix0:GeneratesEvent</ReferenceType>
-            <TargetId>Prefix2:CncChannelListType_S_CncChannel_</TargetId>
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix3:CncChannelListType_S_CncChannel_</TargetId>
           </Reference>
           <Reference>
-            <ReferenceType>Prefix0:GeneratesEvent</ReferenceType>
-            <TargetId>Prefix0:GeneralModelChangeEventType</TargetId>
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
           </Reference>
         </References>
       </Object>
     </Children>
     <References>
       <Reference>
-        <ReferenceType>Prefix0:GeneratesEvent</ReferenceType>
-        <TargetId>Prefix0:GeneralModelChangeEventType</TargetId>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
       </Reference>
     </References>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix2:CncComponentType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix3:CncComponentType" IsAbstract="true">
     <Description Key="en">Base component for soft- or hardware elements of a CNC system.</Description>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix2:CncSpindleType" BaseType="Prefix2:CncDriveType">
+  <ObjectType SymbolicName="Prefix3:CncSpindleType" BaseType="Prefix3:CncDriveType">
     <Description Key="en">CNC spindle component.</Description>
     <Children>
-      <Variable SymbolicName="Prefix2:ActGear" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:UInt32" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActGear" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
         <Description Key="en">Gear stage actual value.</Description>
         <DefaultValue>
           <uax:UInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt32>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActOverride" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Double" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActOverride" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite">
         <Description Key="en">Override actual value.</Description>
         <DefaultValue>
           <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActSpeed" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Double" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActSpeed" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite">
         <Description Key="en">Speed actual value.</Description>
         <DefaultValue>
           <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActStatus" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix2:CncSpindleStatus" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActStatus" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix3:CncSpindleStatus" AccessLevel="ReadWrite">
         <Description Key="en">Actual spindle state.</Description>
         <DefaultValue>
           <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Int32>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActTurnDirection" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix2:CncSpindleTurnDirection" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActTurnDirection" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix3:CncSpindleTurnDirection" AccessLevel="ReadWrite">
         <Description Key="en">Turn direction actual value.</Description>
         <DefaultValue>
           <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Int32>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:AnglePos" TypeDefinition="Prefix2:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix2:CncPositionDataType" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:AnglePos" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Spindle angular position values in case of interpolated (position controlled) spindle movement. Returns zeros in case of regular spindle operation (velocity controlled).</Description>
         <DefaultValue>
           <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
@@ -1179,19 +1179,19 @@
       </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:CmdGear" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:UInt32" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:CmdGear" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
         <Description Key="en">Gear stage setpoint value.</Description>
         <DefaultValue>
           <uax:UInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt32>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:CmdOverride" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Double" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:CmdOverride" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite">
         <Description Key="en">Override setpoint value.</Description>
         <DefaultValue>
           <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:CmdSpeed" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Double" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:CmdSpeed" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite">
         <Description Key="en">Speed setpoint value.</Description>
         <DefaultValue>
           <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
@@ -1200,10 +1200,10 @@
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix2:CncDriveType" BaseType="Prefix2:CncComponentType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix3:CncDriveType" BaseType="Prefix3:CncComponentType" IsAbstract="true">
     <Description Key="en">Base component for CNC specific drive componentes (e.g. axis or spindle).</Description>
     <Children>
-      <Variable SymbolicName="Prefix2:ActChannel" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:NodeId" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActChannel" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:NodeId" AccessLevel="ReadWrite">
         <Description Key="en">NodeId of the channel object (CncChannelType) that administrates this drive to expose drive’s channel affiliation.</Description>
         <DefaultValue>
           <uax:NodeId xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
@@ -1211,37 +1211,37 @@
       </uax:NodeId>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActLoad" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Double" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActLoad" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite">
         <Description Key="en">Drive load actual value.</Description>
         <DefaultValue>
           <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActPower" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Double" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActPower" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite">
         <Description Key="en">Drive power actual value.</Description>
         <DefaultValue>
           <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:ActTorque" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Double" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:ActTorque" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite">
         <Description Key="en">Drive torque actual value.</Description>
         <DefaultValue>
           <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:CmdTorque" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Double" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:CmdTorque" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite">
         <Description Key="en">Drive torque setpoint value.</Description>
         <DefaultValue>
           <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:IsInactive" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:Boolean" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:IsInactive" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
         <Description Key="en">Drive inactive state (true in case of inactive drive, else false).</Description>
         <DefaultValue>
           <uax:Boolean xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">false</uax:Boolean>
         </DefaultValue>
       </Variable>
-      <Variable SymbolicName="Prefix2:IsVirtual" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:Boolean" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix3:IsVirtual" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
         <Description Key="en">Virtual axis (no hardware present; true in case of virtual axis, else fals).</Description>
         <DefaultValue>
           <uax:Boolean xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">false</uax:Boolean>
@@ -1250,137 +1250,137 @@
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix2:CncSpindleListType">
+  <ObjectType SymbolicName="Prefix3:CncSpindleListType">
     <Description Key="en">List of CNC spindle objects.</Description>
     <Children>
-      <Object SymbolicName="Prefix2:S_CncSpindle_" TypeDefinition="Prefix2:CncSpindleType" ModellingRule="OptionalPlaceholder">
+      <Object SymbolicName="Prefix3:S_CncSpindle_" TypeDefinition="Prefix3:CncSpindleType" ModellingRule="OptionalPlaceholder">
         <BrowseName>&lt;CncSpindle&gt;</BrowseName>
         <Description Key="en">CNC spindle object.</Description>
         <Children>
-          <Variable SymbolicName="Prefix2:ActFeedrate" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Double">
+          <Variable SymbolicName="Prefix3:ActFeedrate" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double">
             <Description Key="en">Feedrate actual value.</Description>
             <DefaultValue>
               <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
             </DefaultValue>
           </Variable>
-          <Variable SymbolicName="Prefix2:ActGFunctions" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:UInt32" ValueRank="Array">
+          <Variable SymbolicName="Prefix3:ActGFunctions" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:UInt32" ValueRank="Array">
             <Description Key="en">Active G function.</Description>
             <DefaultValue>
               <uax:ListOfUInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
             </DefaultValue>
           </Variable>
-          <Variable SymbolicName="Prefix2:ActJogIncrement" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Double">
+          <Variable SymbolicName="Prefix3:ActJogIncrement" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double">
             <Description Key="en">Active JOG increment.</Description>
             <DefaultValue>
               <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
             </DefaultValue>
           </Variable>
-          <Variable SymbolicName="Prefix2:ActMainProgramFile" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:String" AccessLevel="ReadWrite">
+          <Variable SymbolicName="Prefix3:ActMainProgramFile" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
             <Description Key="en">Path of active CNC main program.</Description>
             <DefaultValue>
               <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
       </uax:String>
             </DefaultValue>
           </Variable>
-          <Variable SymbolicName="Prefix2:ActMainProgramFileOffset" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:UInt32">
+          <Variable SymbolicName="Prefix3:ActMainProgramFileOffset" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:UInt32">
             <Description Key="en">File offset of active CNC main program file.</Description>
             <DefaultValue>
               <uax:UInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt32>
             </DefaultValue>
           </Variable>
-          <Variable SymbolicName="Prefix2:ActMainProgramLine" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:String">
+          <Variable SymbolicName="Prefix3:ActMainProgramLine" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:String">
             <Description Key="en">Line number of active CNC main program.</Description>
             <DefaultValue>
               <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
       </uax:String>
             </DefaultValue>
           </Variable>
-          <Variable SymbolicName="Prefix2:ActMainProgramName" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:String">
+          <Variable SymbolicName="Prefix3:ActMainProgramName" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:String">
             <Description Key="en">Name of active CNC main program.</Description>
             <DefaultValue>
               <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
       </uax:String>
             </DefaultValue>
           </Variable>
-          <Variable SymbolicName="Prefix2:ActMFunctions" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:UInt32" ValueRank="Array">
+          <Variable SymbolicName="Prefix3:ActMFunctions" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:UInt32" ValueRank="Array">
             <Description Key="en">Active M function.</Description>
             <DefaultValue>
               <uax:ListOfUInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
             </DefaultValue>
           </Variable>
-          <Variable SymbolicName="Prefix2:ActModalOffsetFunction" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:UInt32">
+          <Variable SymbolicName="Prefix3:ActModalOffsetFunction" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:UInt32">
             <Description Key="en">active zero offset function</Description>
             <DefaultValue>
               <uax:UInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt32>
             </DefaultValue>
           </Variable>
-          <Variable SymbolicName="Prefix2:ActOperationMode" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix2:CncOperationMode" AccessLevel="ReadWrite" />
-          <Variable SymbolicName="Prefix2:ActProgramBlock" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:String" ValueRank="Array" ArrayDimensions="3">
+          <Variable SymbolicName="Prefix3:ActOperationMode" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix3:CncOperationMode" AccessLevel="ReadWrite" />
+          <Variable SymbolicName="Prefix3:ActProgramBlock" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:String" ValueRank="Array" ArrayDimensions="3">
             <Description Key="en">previous, actual and subsequent CNC program lines</Description>
             <DefaultValue>
               <uax:ListOfString xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
             </DefaultValue>
           </Variable>
-          <Variable SymbolicName="Prefix2:ActProgramFile" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:String">
+          <Variable SymbolicName="Prefix3:ActProgramFile" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:String">
             <Description Key="en">Path of active CNC program file (main or subprogram).</Description>
             <DefaultValue>
               <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
       </uax:String>
             </DefaultValue>
           </Variable>
-          <Variable SymbolicName="Prefix2:ActProgramFileOffset" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:UInt32">
+          <Variable SymbolicName="Prefix3:ActProgramFileOffset" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:UInt32">
             <Description Key="en">File offset of active CNC program file (main or subprogram).</Description>
             <DefaultValue>
               <uax:UInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt32>
             </DefaultValue>
           </Variable>
-          <Variable SymbolicName="Prefix2:ActProgramLine" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:String">
+          <Variable SymbolicName="Prefix3:ActProgramLine" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:String">
             <Description Key="en">Line number of active CNC program (main or subprogram).</Description>
             <DefaultValue>
               <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
       </uax:String>
             </DefaultValue>
           </Variable>
-          <Variable SymbolicName="Prefix2:ActProgramName" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:String">
+          <Variable SymbolicName="Prefix3:ActProgramName" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:String">
             <Description Key="en">Name of active CNC program (main or subprogram).</Description>
             <DefaultValue>
               <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
       </uax:String>
             </DefaultValue>
           </Variable>
-          <Variable SymbolicName="Prefix2:ActProgramStatus" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix2:CncChannelProgramStatus" AccessLevel="ReadWrite">
+          <Variable SymbolicName="Prefix3:ActProgramStatus" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix3:CncChannelProgramStatus" AccessLevel="ReadWrite">
             <DisplayName Key="en">ActProgStatus</DisplayName>
             <Description Key="en">Active channel program status</Description>
             <DefaultValue>
               <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1</uax:Int32>
             </DefaultValue>
           </Variable>
-          <Variable SymbolicName="Prefix2:BlockMode" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:Boolean">
+          <Variable SymbolicName="Prefix3:BlockMode" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
             <Description Key="en">block mode active</Description>
             <DefaultValue>
               <uax:Boolean xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">false</uax:Boolean>
             </DefaultValue>
           </Variable>
-          <Variable SymbolicName="Prefix2:CmdFeedrate" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Double">
+          <Variable SymbolicName="Prefix3:CmdFeedrate" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double">
             <Description Key="en">feedrate setpoint value</Description>
             <DefaultValue>
               <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
             </DefaultValue>
           </Variable>
-          <Variable SymbolicName="Prefix2:CmdOperationMode" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix2:CncOperationMode" AccessLevel="ReadWrite" />
-          <Variable SymbolicName="Prefix2:DryRunFeed" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Double">
+          <Variable SymbolicName="Prefix3:CmdOperationMode" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix3:CncOperationMode" AccessLevel="ReadWrite" />
+          <Variable SymbolicName="Prefix3:DryRunFeed" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double">
             <Description Key="en">test feedrate</Description>
             <DefaultValue>
               <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
             </DefaultValue>
           </Variable>
-          <Variable SymbolicName="Prefix2:FeedHold" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:Boolean">
+          <Variable SymbolicName="Prefix3:FeedHold" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
             <Description Key="en">feed hold active</Description>
             <DefaultValue>
               <uax:Boolean xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">false</uax:Boolean>
             </DefaultValue>
           </Variable>
-          <Variable SymbolicName="Prefix2:ToolId" TypeDefinition="Prefix0:DataItemType" ModellingRule="Mandatory" DataType="Prefix0:UInt32">
+          <Variable SymbolicName="Prefix3:ToolId" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:UInt32">
             <Description Key="en">active tool ID</Description>
             <DefaultValue>
               <uax:UInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt32>
@@ -1391,21 +1391,21 @@
     </Children>
     <References>
       <Reference>
-        <ReferenceType>Prefix0:GeneratesEvent</ReferenceType>
-        <TargetId>Prefix0:GeneralModelChangeEventType</TargetId>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
       </Reference>
     </References>
     <ClassName />
   </ObjectType>
-  <Object SymbolicName="Prefix2:test" TypeDefinition="Prefix2:CncInterfaceType">
+  <Object SymbolicName="Prefix3:test" TypeDefinition="Prefix3:CncInterfaceType">
     <References>
       <Reference IsInverse="true">
-        <ReferenceType>Prefix0:GeneratesEvent</ReferenceType>
-        <TargetId>Prefix2:test</TargetId>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix3:test</TargetId>
       </Reference>
       <Reference IsInverse="true">
-        <ReferenceType>Prefix0:GeneratesEvent</ReferenceType>
-        <TargetId>Prefix2:test</TargetId>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix3:test</TargetId>
       </Reference>
     </References>
   </Object>

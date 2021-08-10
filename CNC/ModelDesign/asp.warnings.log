@@ -1,7 +1,7 @@
-"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.3.2.23344";;;;"2021-05-28T20:29:22.7129853Z";;
-"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2021 Mariusz Postol";;;;"2021-05-28T20:29:22.7139857Z";;
-"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.CNC.NodeSet.xml";;;;"2021-05-28T20:30:29.0393550Z";;
-"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import";;;;"2021-05-28T20:30:29.0633554Z";;
-"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/CNC namespace.";;;;"2021-05-28T20:31:18.7609790Z";;
-"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 20 nodes and no errors/warnings reported";;;;"2021-05-28T20:31:18.9580021Z";;
-"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file Opc.Ua.CNC.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2021-05-28T20:31:19.1300082Z";;
+"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.4.6.30717";;;;"2021-08-10T21:39:07.3292901Z";;
+"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2021 Mariusz Postol";;;;"2021-08-10T21:39:07.3292901Z";;
+"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.CNC.NodeSet.xml";;;;"2021-08-10T21:39:41.2314923Z";;
+"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import";;;;"2021-08-10T21:39:41.2524911Z";;
+"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/CNC namespace.";;;;"2021-08-10T21:40:06.2399799Z";;
+"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 20 nodes and no errors/warnings reported";;;;"2021-08-10T21:40:06.3917534Z";;
+"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file Opc.Ua.CNC.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2021-08-10T21:40:06.5238677Z";;
