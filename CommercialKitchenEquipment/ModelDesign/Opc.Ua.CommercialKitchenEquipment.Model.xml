@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
-<ModelDesign xmlns:Prefix2="http://opcfoundation.org/UA/DI/" xmlns:Prefix0="http://opcfoundation.org/UA/" xmlns:Prefix4="http://opcfoundation.org/UA/CommercialKitchenEquipment/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-05-29T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/CommercialKitchenEquipment/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-08-10T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09.03.2021">http://opcfoundation.org/UA/DI/</Namespace>
     <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/CommercialKitchenEquipment/" XmlNamespace="http://opcfoundation.org/UA/CommercialKitchenEquipment/" XmlPrefix="Prefix5" FilePath="" Version="1.0" PublicationDate="12.07.2019">http://opcfoundation.org/UA/CommercialKitchenEquipment/</Namespace>
   </Namespaces>
-  <DataType SymbolicName="Prefix4:BeverageSMLEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:BeverageSMLEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="4">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -35,9 +35,9 @@
       <Field Name="ExtraLarge" Identifier="3" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:ChamberModeEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:ChamberModeEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="19">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="19">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -124,9 +124,9 @@
       <Field Name="Steaming" Identifier="18" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:CoffeeMachineModeEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:CoffeeMachineModeEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="4">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -153,9 +153,9 @@
       <Field Name="Cleaning" Identifier="3" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:CombiSteamerModeEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:CombiSteamerModeEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="11">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="11">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -210,9 +210,9 @@
       <Field Name="Error" Identifier="10" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:CookingKettleModeEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:CookingKettleModeEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="9">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="9">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -259,9 +259,9 @@
       <Field Name="Error" Identifier="8" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:CurrentStateEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:CurrentStateEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="4">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -288,9 +288,9 @@
       <Field Name="PotDetection" Identifier="3" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:EnergySourceEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:EnergySourceEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="3">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -313,9 +313,9 @@
       <Field Name="Steam" Identifier="2" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:FryerModeEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:FryerModeEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="7">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="7">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -354,9 +354,9 @@
       <Field Name="Error" Identifier="6" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:FryingPanModeEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:FryingPanModeEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="10">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="10">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -407,9 +407,9 @@
       <Field Name="Error" Identifier="9" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:GrillingZoneStateEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:GrillingZoneStateEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="4">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -436,9 +436,9 @@
       <Field Name="Grilling" Identifier="3" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:HygieneModeEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:HygieneModeEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="6">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="6">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -473,9 +473,9 @@
       <Field Name="HygieneA0_TD" Identifier="5" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:MultiFunctionPanModeEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:MultiFunctionPanModeEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="16">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="16">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -550,9 +550,9 @@
       <Field Name="Error" Identifier="15" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:OperatingModeEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:OperatingModeEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="9">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="9">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -599,9 +599,9 @@
       <Field Name="Error" Identifier="8" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:OperationModeEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:OperationModeEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="16">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="16">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -676,9 +676,9 @@
       <Field Name="Error" Identifier="15" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:PastaCookerModeEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:PastaCookerModeEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="8">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="8">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -721,9 +721,9 @@
       <Field Name="Error" Identifier="7" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:PlatenPositionStateEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:PlatenPositionStateEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="4">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -750,9 +750,9 @@
       <Field Name="Open" Identifier="3" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:PressureCookingKettleModeEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:PressureCookingKettleModeEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="9">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="9">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -799,9 +799,9 @@
       <Field Name="Error" Identifier="8" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:ProgramModeEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:ProgramModeEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="10">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="10">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -852,9 +852,9 @@
       <Field Name="HeatRecovery" Identifier="9" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:SignalModeEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:SignalModeEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="3">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -877,9 +877,9 @@
       <Field Name="SignalAck" Identifier="2" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:SpecialCookingModeEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:SpecialCookingModeEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="10">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="10">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -930,9 +930,9 @@
       <Field Name="DeltaTSteaming" Identifier="9" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:SpecialFunctionModeEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:SpecialFunctionModeEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="4">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -959,9 +959,9 @@
       <Field Name="DrainOnOff" Identifier="3" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:StatusEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:StatusEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="19">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="19">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -1048,9 +1048,9 @@
       <Field Name="SAFE_MODE_FULL_BIN" Identifier="18" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:TrayModeEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:TrayModeEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="6">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="6">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -1085,9 +1085,9 @@
       <Field Name="Regenerating" Identifier="5" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:TrayTypeEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:TrayTypeEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="10">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="10">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <uax:LocalizedText>
@@ -1138,500 +1138,500 @@
       <Field Name="RegenCabinet" Identifier="9" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <ObjectType SymbolicName="Prefix4:BatchInformationType">
+  <ObjectType SymbolicName="Prefix5:BatchInformationType">
     <Children>
-      <Property SymbolicName="Prefix4:BatchId" ModellingRule="Mandatory" DataType="Prefix0:String" AccessLevel="ReadWrite" />
-      <Property SymbolicName="Prefix4:LocalTime" ModellingRule="Optional" DataType="Prefix0:TimeZoneDataType" AccessLevel="ReadWrite" />
-      <Property SymbolicName="Prefix4:OrderId" ModellingRule="Mandatory" DataType="Prefix0:String" AccessLevel="ReadWrite" />
-      <Property SymbolicName="Prefix4:SystemTime" ModellingRule="Mandatory" DataType="Prefix0:UtcTime" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:BatchId" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:LocalTime" ModellingRule="Optional" DataType="Prefix1:TimeZoneDataType" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:OrderId" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:SystemTime" ModellingRule="Mandatory" DataType="Prefix1:UtcTime" AccessLevel="ReadWrite" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:KitchenDeviceHAConfigType" BaseType="Prefix0:HistoricalDataConfigurationType">
+  <ObjectType SymbolicName="Prefix5:KitchenDeviceHAConfigType" BaseType="Prefix1:HistoricalDataConfigurationType">
     <Children>
-      <Property SymbolicName="Prefix4:HistoryDuration" ModellingRule="Mandatory" DataType="Prefix0:Duration" AccessLevel="ReadWrite" />
-      <Property SymbolicName="Prefix4:SamplingInterval" ModellingRule="Mandatory" DataType="Prefix0:Duration" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:HistoryDuration" ModellingRule="Mandatory" DataType="Prefix1:Duration" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:SamplingInterval" ModellingRule="Mandatory" DataType="Prefix1:Duration" AccessLevel="ReadWrite" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:KitchenDeviceParameterType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix5:KitchenDeviceParameterType" IsAbstract="true">
     <Children>
-      <Variable SymbolicName="Prefix4:ProgramId" ModellingRule="Optional" DataType="Prefix0:Int32" AccessLevel="ReadWrite" />
-      <Variable SymbolicName="Prefix4:ProgramName" ModellingRule="Optional" DataType="Prefix0:LocalizedText" AccessLevel="ReadWrite" />
-      <Variable SymbolicName="Prefix4:ProgramUId" ModellingRule="Optional" DataType="Prefix0:Guid" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:ProgramId" ModellingRule="Optional" DataType="Prefix1:Int32" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:ProgramName" ModellingRule="Optional" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:ProgramUId" ModellingRule="Optional" DataType="Prefix1:Guid" AccessLevel="ReadWrite" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ChamberType" BaseType="Prefix4:KitchenDeviceParameterType">
+  <ObjectType SymbolicName="Prefix5:ChamberType" BaseType="Prefix5:KitchenDeviceParameterType">
     <Children>
-      <Variable SymbolicName="Prefix4:ActualBoilerTemperature__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix0:Float">
+      <Variable SymbolicName="Prefix5:ActualBoilerTemperature__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix1:Float">
         <BrowseName>ActualBoilerTemperature_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:ActualBottomTemperature__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix0:Float">
+      <Variable SymbolicName="Prefix5:ActualBottomTemperature__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix1:Float">
         <BrowseName>ActualBottomTemperature_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:ActualChamberTemperature__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix0:Float">
+      <Variable SymbolicName="Prefix5:ActualChamberTemperature__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix1:Float">
         <BrowseName>ActualChamberTemperature_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:ActualCoreTemperature__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix0:Float">
+      <Variable SymbolicName="Prefix5:ActualCoreTemperature__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix1:Float">
         <BrowseName>ActualCoreTemperature_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:ActualFanSpeed__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix0:Int32">
+      <Variable SymbolicName="Prefix5:ActualFanSpeed__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix1:Int32">
         <BrowseName>ActualFanSpeed_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:ActualHumidity__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix0:Float">
+      <Variable SymbolicName="Prefix5:ActualHumidity__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix1:Float">
         <BrowseName>ActualHumidity_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:ActualTopTemperature__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix0:Float">
+      <Variable SymbolicName="Prefix5:ActualTopTemperature__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix1:Float">
         <BrowseName>ActualTopTemperature_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:IsDoorOpen" ModellingRule="Optional" DataType="Prefix0:Boolean" />
-      <Variable SymbolicName="Prefix4:IsProgramEnd" ModellingRule="Optional" DataType="Prefix0:Boolean" />
-      <Variable SymbolicName="Prefix4:IsReadyToStart" ModellingRule="Optional" DataType="Prefix0:Boolean" />
-      <Variable SymbolicName="Prefix4:OperationMode" ModellingRule="Mandatory" DataType="Prefix4:ChamberModeEnumeration" />
-      <Variable SymbolicName="Prefix4:SetBoilerTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:SetBottomTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:SetChamberTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:SetCoreTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:SetFanSpeed" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:SetHumidity" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:SetProcessTimeProgram" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:SetTopTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:TimeRemaining" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Int32" />
+      <Variable SymbolicName="Prefix5:IsDoorOpen" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix5:IsProgramEnd" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix5:IsReadyToStart" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix5:OperationMode" ModellingRule="Mandatory" DataType="Prefix5:ChamberModeEnumeration" />
+      <Variable SymbolicName="Prefix5:SetBoilerTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:SetBottomTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:SetChamberTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:SetCoreTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:SetFanSpeed" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:SetHumidity" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:SetProcessTimeProgram" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:SetTopTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:TimeRemaining" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Int32" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:CoffeeMachineParameterType" BaseType="Prefix4:KitchenDeviceParameterType">
+  <ObjectType SymbolicName="Prefix5:CoffeeMachineParameterType" BaseType="Prefix5:KitchenDeviceParameterType">
     <Children>
-      <Variable SymbolicName="Prefix4:BoilerPressureSteam" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:BoilerPressureWater" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:BoilerTempSteam" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:BoilerTempWater" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:CurrentState" ModellingRule="Mandatory" DataType="Prefix4:CoffeeMachineModeEnumeration" AccessLevel="ReadWrite" />
-      <Variable SymbolicName="Prefix4:GrinderRuntime__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="MandatoryPlaceholder" DataType="Prefix0:UInt64">
+      <Variable SymbolicName="Prefix5:BoilerPressureSteam" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:BoilerPressureWater" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:BoilerTempSteam" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:BoilerTempWater" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:CurrentState" ModellingRule="Mandatory" DataType="Prefix5:CoffeeMachineModeEnumeration" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:GrinderRuntime__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="MandatoryPlaceholder" DataType="Prefix1:UInt64">
         <BrowseName>GrinderRuntime_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:SystemClean" ModellingRule="Mandatory" DataType="Prefix0:DateTime" />
-      <Variable SymbolicName="Prefix4:TotalBrew__No__" ModellingRule="MandatoryPlaceholder" DataType="Prefix0:UInt64">
+      <Variable SymbolicName="Prefix5:SystemClean" ModellingRule="Mandatory" DataType="Prefix1:DateTime" />
+      <Variable SymbolicName="Prefix5:TotalBrew__No__" ModellingRule="MandatoryPlaceholder" DataType="Prefix1:UInt64">
         <BrowseName>TotalBrew_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:TotalMix" ModellingRule="Mandatory" DataType="Prefix0:UInt64" />
+      <Variable SymbolicName="Prefix5:TotalMix" ModellingRule="Mandatory" DataType="Prefix1:UInt64" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:CoffeeMachineRecipeParameterType" BaseType="Prefix4:KitchenDeviceParameterType">
+  <ObjectType SymbolicName="Prefix5:CoffeeMachineRecipeParameterType" BaseType="Prefix5:KitchenDeviceParameterType">
     <Children>
-      <Variable SymbolicName="Prefix4:BeverageSize" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" AccessLevel="ReadWrite" />
-      <Variable SymbolicName="Prefix4:BeverageSML" ModellingRule="Mandatory" DataType="Prefix4:BeverageSMLEnumeration" AccessLevel="ReadWrite" />
-      <Variable SymbolicName="Prefix4:CoffeeType" TypeDefinition="Prefix0:MultiStateDiscreteType" ModellingRule="Mandatory" DataType="Prefix0:UInt32" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix5:BeverageSize" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:BeverageSML" ModellingRule="Mandatory" DataType="Prefix5:BeverageSMLEnumeration" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:CoffeeType" TypeDefinition="Prefix1:MultiStateDiscreteType" ModellingRule="Mandatory" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
         <Children>
-          <Property SymbolicName="Prefix0:EnumStrings" ValueRank="Array" />
+          <Property SymbolicName="Prefix1:EnumStrings" ValueRank="Array" />
         </Children>
       </Variable>
-      <Variable SymbolicName="Prefix4:Container" TypeDefinition="Prefix0:MultiStateDiscreteType" ModellingRule="Mandatory" DataType="Prefix0:UInt32">
+      <Variable SymbolicName="Prefix5:Container" TypeDefinition="Prefix1:MultiStateDiscreteType" ModellingRule="Mandatory" DataType="Prefix1:UInt32">
         <Children>
-          <Property SymbolicName="Prefix0:EnumStrings" ValueRank="Array" />
+          <Property SymbolicName="Prefix1:EnumStrings" ValueRank="Array" />
         </Children>
       </Variable>
-      <Variable SymbolicName="Prefix4:FoamAmount" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" AccessLevel="ReadWrite" />
-      <Variable SymbolicName="Prefix4:GroundsAmount" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" AccessLevel="ReadWrite" />
-      <Variable SymbolicName="Prefix4:GroundsWater" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" AccessLevel="ReadWrite" />
-      <Variable SymbolicName="Prefix4:MilkAmount" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" AccessLevel="ReadWrite" />
-      <Variable SymbolicName="Prefix4:PowderAmount" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" AccessLevel="ReadWrite" />
-      <Variable SymbolicName="Prefix4:RcpType" TypeDefinition="Prefix0:MultiStateDiscreteType" ModellingRule="Mandatory" DataType="Prefix0:UInt32" AccessLevel="ReadWrite">
+      <Variable SymbolicName="Prefix5:FoamAmount" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:GroundsAmount" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:GroundsWater" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:MilkAmount" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:PowderAmount" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:RcpType" TypeDefinition="Prefix1:MultiStateDiscreteType" ModellingRule="Mandatory" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
         <Children>
-          <Property SymbolicName="Prefix0:EnumStrings" ValueRank="Array" />
+          <Property SymbolicName="Prefix1:EnumStrings" ValueRank="Array" />
         </Children>
       </Variable>
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:CombiSteamerParameterType" BaseType="Prefix4:KitchenDeviceParameterType">
+  <ObjectType SymbolicName="Prefix5:CombiSteamerParameterType" BaseType="Prefix5:KitchenDeviceParameterType">
     <Children>
-      <Variable SymbolicName="Prefix4:ActualExternalCoreTemperature__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix0:Float">
+      <Variable SymbolicName="Prefix5:ActualExternalCoreTemperature__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix1:Float">
         <BrowseName>ActualExternalCoreTemperature_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:ActualHumidity" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:ActualInternalCoreTemperature__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix0:Float">
+      <Variable SymbolicName="Prefix5:ActualHumidity" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:ActualInternalCoreTemperature__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix1:Float">
         <BrowseName>ActualInternalCoreTemperature_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:ActualTemperatureChamber__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="MandatoryPlaceholder" DataType="Prefix0:Float">
+      <Variable SymbolicName="Prefix5:ActualTemperatureChamber__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="MandatoryPlaceholder" DataType="Prefix1:Float">
         <BrowseName>ActualTemperatureChamber_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:CombiSteamerMode" ModellingRule="Mandatory" DataType="Prefix4:CombiSteamerModeEnumeration" />
-      <Variable SymbolicName="Prefix4:IsDoorOpen" ModellingRule="Mandatory" DataType="Prefix0:Boolean" />
-      <Variable SymbolicName="Prefix4:IsEnergySavingActive" ModellingRule="Optional" DataType="Prefix0:Boolean" />
-      <Variable SymbolicName="Prefix4:IsLoaActive" ModellingRule="Optional" DataType="Prefix0:Boolean" />
-      <Variable SymbolicName="Prefix4:IsSteamExhaustSystemActive" ModellingRule="Optional" DataType="Prefix0:Boolean" AccessLevel="ReadWrite" />
-      <Variable SymbolicName="Prefix4:SetExternalCoreTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:SetHumidity" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:SetInternalCoreTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:SetProcessTimeProgram" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:SetProcessTimeStep" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:SetTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:SpecialCookingMode" ModellingRule="Optional" DataType="Prefix4:SpecialCookingModeEnumeration" />
-      <Variable SymbolicName="Prefix4:TimeRemainingProgram" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:TimeRemainingStep" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Int32" />
+      <Variable SymbolicName="Prefix5:CombiSteamerMode" ModellingRule="Mandatory" DataType="Prefix5:CombiSteamerModeEnumeration" />
+      <Variable SymbolicName="Prefix5:IsDoorOpen" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix5:IsEnergySavingActive" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix5:IsLoaActive" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix5:IsSteamExhaustSystemActive" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:SetExternalCoreTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:SetHumidity" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:SetInternalCoreTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:SetProcessTimeProgram" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:SetProcessTimeStep" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:SetTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:SpecialCookingMode" ModellingRule="Optional" DataType="Prefix5:SpecialCookingModeEnumeration" />
+      <Variable SymbolicName="Prefix5:TimeRemainingProgram" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:TimeRemainingStep" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Int32" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:CookingKettleParameterType" BaseType="Prefix4:KitchenDeviceParameterType">
+  <ObjectType SymbolicName="Prefix5:CookingKettleParameterType" BaseType="Prefix5:KitchenDeviceParameterType">
     <Children>
-      <Variable SymbolicName="Prefix4:ActualCoreTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:ActualTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:CookingLevel" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:ProgramMode" ModellingRule="Mandatory" DataType="Prefix4:CookingKettleModeEnumeration" />
-      <Variable SymbolicName="Prefix4:SetCoreTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:SetProcessTime" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:SetTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:SignalMode" ModellingRule="Mandatory" DataType="Prefix4:SignalModeEnumeration" />
-      <Variable SymbolicName="Prefix4:TimeRemaining" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
+      <Variable SymbolicName="Prefix5:ActualCoreTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:ActualTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:CookingLevel" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:ProgramMode" ModellingRule="Mandatory" DataType="Prefix5:CookingKettleModeEnumeration" />
+      <Variable SymbolicName="Prefix5:SetCoreTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:SetProcessTime" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:SetTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:SignalMode" ModellingRule="Mandatory" DataType="Prefix5:SignalModeEnumeration" />
+      <Variable SymbolicName="Prefix5:TimeRemaining" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:CookingZoneParameterType" BaseType="Prefix4:KitchenDeviceParameterType">
+  <ObjectType SymbolicName="Prefix5:CookingZoneParameterType" BaseType="Prefix5:KitchenDeviceParameterType">
     <Children>
-      <Variable SymbolicName="Prefix4:ActualPower" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:ActualProcessTime" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:ActualTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:CookingZoneName" ModellingRule="Optional" DataType="Prefix0:String" />
-      <Variable SymbolicName="Prefix4:CurrentState" ModellingRule="Optional" DataType="Prefix4:CurrentStateEnumeration" />
-      <Variable SymbolicName="Prefix4:IsPanDetected" ModellingRule="Optional" DataType="Prefix0:Boolean" />
-      <Variable SymbolicName="Prefix4:NominalPower" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:SetPowerValue" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:SetTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Float" />
+      <Variable SymbolicName="Prefix5:ActualPower" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:ActualProcessTime" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:ActualTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:CookingZoneName" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Variable SymbolicName="Prefix5:CurrentState" ModellingRule="Optional" DataType="Prefix5:CurrentStateEnumeration" />
+      <Variable SymbolicName="Prefix5:IsPanDetected" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix5:NominalPower" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:SetPowerValue" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:SetTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Float" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:DishWashingMachineProgramParameterType" BaseType="Prefix4:KitchenDeviceParameterType">
+  <ObjectType SymbolicName="Prefix5:DishWashingMachineProgramParameterType" BaseType="Prefix5:KitchenDeviceParameterType">
     <Children>
-      <Variable SymbolicName="Prefix4:ActualFinalRinseTemperature__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="MandatoryPlaceholder" DataType="Prefix0:UInt16">
+      <Variable SymbolicName="Prefix5:ActualFinalRinseTemperature__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="MandatoryPlaceholder" DataType="Prefix1:UInt16">
         <BrowseName>ActualFinalRinseTemperature_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:ActualFinalRinseTemperatureNo" ModellingRule="Mandatory" DataType="Prefix0:UInt16" />
-      <Variable SymbolicName="Prefix4:ActualHygieneValue" ModellingRule="Optional" DataType="Prefix0:UInt16" />
-      <Variable SymbolicName="Prefix4:ActualMainTankTemperature__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="MandatoryPlaceholder" DataType="Prefix0:UInt16">
+      <Variable SymbolicName="Prefix5:ActualFinalRinseTemperatureNo" ModellingRule="Mandatory" DataType="Prefix1:UInt16" />
+      <Variable SymbolicName="Prefix5:ActualHygieneValue" ModellingRule="Optional" DataType="Prefix1:UInt16" />
+      <Variable SymbolicName="Prefix5:ActualMainTankTemperature__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="MandatoryPlaceholder" DataType="Prefix1:UInt16">
         <BrowseName>ActualMainTankTemperature_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:ActualMainTankTemperatureNo" ModellingRule="Mandatory" DataType="Prefix0:UInt16" />
-      <Variable SymbolicName="Prefix4:ActualPreTankTemperature__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="MandatoryPlaceholder" DataType="Prefix0:UInt16">
+      <Variable SymbolicName="Prefix5:ActualMainTankTemperatureNo" ModellingRule="Mandatory" DataType="Prefix1:UInt16" />
+      <Variable SymbolicName="Prefix5:ActualPreTankTemperature__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="MandatoryPlaceholder" DataType="Prefix1:UInt16">
         <BrowseName>ActualPreTankTemperature_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:ActualPreTankTemperatureNo" ModellingRule="Mandatory" DataType="Prefix0:UInt16" />
-      <Variable SymbolicName="Prefix4:ActualPumpedFinalRinseTemperature__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="MandatoryPlaceholder" DataType="Prefix0:UInt16">
+      <Variable SymbolicName="Prefix5:ActualPreTankTemperatureNo" ModellingRule="Mandatory" DataType="Prefix1:UInt16" />
+      <Variable SymbolicName="Prefix5:ActualPumpedFinalRinseTemperature__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="MandatoryPlaceholder" DataType="Prefix1:UInt16">
         <BrowseName>ActualPumpedFinalRinseTemperature_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:ActualPumpedFinalRinseTemperatureNo" ModellingRule="Mandatory" DataType="Prefix0:UInt16" />
-      <Variable SymbolicName="Prefix4:FinalRinseTemperatureSetpoint__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="MandatoryPlaceholder" DataType="Prefix0:UInt16">
+      <Variable SymbolicName="Prefix5:ActualPumpedFinalRinseTemperatureNo" ModellingRule="Mandatory" DataType="Prefix1:UInt16" />
+      <Variable SymbolicName="Prefix5:FinalRinseTemperatureSetpoint__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="MandatoryPlaceholder" DataType="Prefix1:UInt16">
         <BrowseName>FinalRinseTemperatureSetpoint_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:FinalRinseTemperatureSetpointNo" ModellingRule="Mandatory" DataType="Prefix0:UInt16" />
-      <Variable SymbolicName="Prefix4:HygieneMode" ModellingRule="Optional" DataType="Prefix4:HygieneModeEnumeration" />
-      <Variable SymbolicName="Prefix4:HygieneSetpoint" ModellingRule="Optional" DataType="Prefix0:UInt16" />
-      <Variable SymbolicName="Prefix4:MainTankTemperatureSetpoint__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="MandatoryPlaceholder" DataType="Prefix0:UInt16">
+      <Variable SymbolicName="Prefix5:FinalRinseTemperatureSetpointNo" ModellingRule="Mandatory" DataType="Prefix1:UInt16" />
+      <Variable SymbolicName="Prefix5:HygieneMode" ModellingRule="Optional" DataType="Prefix5:HygieneModeEnumeration" />
+      <Variable SymbolicName="Prefix5:HygieneSetpoint" ModellingRule="Optional" DataType="Prefix1:UInt16" />
+      <Variable SymbolicName="Prefix5:MainTankTemperatureSetpoint__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="MandatoryPlaceholder" DataType="Prefix1:UInt16">
         <BrowseName>MainTankTemperatureSetpoint_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:MainTankTemperatureSetpointNo" ModellingRule="Mandatory" DataType="Prefix0:UInt16" />
-      <Variable SymbolicName="Prefix4:OperationMode" ModellingRule="Mandatory" DataType="Prefix4:OperationModeEnumeration" />
-      <Variable SymbolicName="Prefix4:PreTankTemperatureSetpoint__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="MandatoryPlaceholder" DataType="Prefix0:UInt16">
+      <Variable SymbolicName="Prefix5:MainTankTemperatureSetpointNo" ModellingRule="Mandatory" DataType="Prefix1:UInt16" />
+      <Variable SymbolicName="Prefix5:OperationMode" ModellingRule="Mandatory" DataType="Prefix5:OperationModeEnumeration" />
+      <Variable SymbolicName="Prefix5:PreTankTemperatureSetpoint__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="MandatoryPlaceholder" DataType="Prefix1:UInt16">
         <BrowseName>PreTankTemperatureSetpoint_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:PreTankTemperatureSetpointNo" ModellingRule="Mandatory" DataType="Prefix0:UInt16" />
-      <Property SymbolicName="Prefix4:ProductGroup" ModellingRule="Optional" DataType="Prefix0:String" />
-      <Property SymbolicName="Prefix4:ProductType" ModellingRule="Optional" DataType="Prefix0:UInt32" />
-      <Variable SymbolicName="Prefix4:ProgramMode" ModellingRule="Optional" DataType="Prefix4:ProgramModeEnumeration" />
-      <Variable SymbolicName="Prefix4:PumpedFinalRinseTemperatureSetpoint__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="MandatoryPlaceholder" DataType="Prefix0:UInt16">
+      <Variable SymbolicName="Prefix5:PreTankTemperatureSetpointNo" ModellingRule="Mandatory" DataType="Prefix1:UInt16" />
+      <Property SymbolicName="Prefix5:ProductGroup" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix5:ProductType" ModellingRule="Optional" DataType="Prefix1:UInt32" />
+      <Variable SymbolicName="Prefix5:ProgramMode" ModellingRule="Optional" DataType="Prefix5:ProgramModeEnumeration" />
+      <Variable SymbolicName="Prefix5:PumpedFinalRinseTemperatureSetpoint__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="MandatoryPlaceholder" DataType="Prefix1:UInt16">
         <BrowseName>PumpedFinalRinseTemperatureSetpoint_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:PumpedFinalRinseTemperatureSetpointNo" ModellingRule="Mandatory" DataType="Prefix0:UInt16" />
+      <Variable SymbolicName="Prefix5:PumpedFinalRinseTemperatureSetpointNo" ModellingRule="Mandatory" DataType="Prefix1:UInt16" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:FryerParameterType" BaseType="Prefix4:KitchenDeviceParameterType">
+  <ObjectType SymbolicName="Prefix5:FryerParameterType" BaseType="Prefix5:KitchenDeviceParameterType">
     <Children>
-      <Variable SymbolicName="Prefix4:ActualTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:IsLiftUp" ModellingRule="Optional" DataType="Prefix0:Boolean" />
-      <Variable SymbolicName="Prefix4:ProgramMode" ModellingRule="Mandatory" DataType="Prefix4:FryerModeEnumeration" />
-      <Variable SymbolicName="Prefix4:SetProcessTime" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:SetTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:SignalMode" ModellingRule="Mandatory" DataType="Prefix4:SignalModeEnumeration" />
-      <Variable SymbolicName="Prefix4:TimeRemaining" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
+      <Variable SymbolicName="Prefix5:ActualTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:IsLiftUp" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix5:ProgramMode" ModellingRule="Mandatory" DataType="Prefix5:FryerModeEnumeration" />
+      <Variable SymbolicName="Prefix5:SetProcessTime" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:SetTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:SignalMode" ModellingRule="Mandatory" DataType="Prefix5:SignalModeEnumeration" />
+      <Variable SymbolicName="Prefix5:TimeRemaining" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:FryingAndGrillingParameterType" BaseType="Prefix4:KitchenDeviceParameterType">
+  <ObjectType SymbolicName="Prefix5:FryingAndGrillingParameterType" BaseType="Prefix5:KitchenDeviceParameterType">
     <Children>
-      <Variable SymbolicName="Prefix4:ActualGrillTemperature__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix0:Float">
+      <Variable SymbolicName="Prefix5:ActualGrillTemperature__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix1:Float">
         <BrowseName>ActualGrillTemperature_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:ActualPlatenTemperature__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix0:Float">
+      <Variable SymbolicName="Prefix5:ActualPlatenTemperature__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix1:Float">
         <BrowseName>ActualPlatenTemperature_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:CurrentState" ModellingRule="Optional" DataType="Prefix4:GrillingZoneStateEnumeration" />
-      <Variable SymbolicName="Prefix4:GrillingZoneName" ModellingRule="Optional" DataType="Prefix0:String" />
-      <Variable SymbolicName="Prefix4:IsWithPlaten" ModellingRule="Mandatory" DataType="Prefix0:Boolean" />
-      <Variable SymbolicName="Prefix4:PlatenPositionState" ModellingRule="Optional" DataType="Prefix4:PlatenPositionStateEnumeration" />
-      <Variable SymbolicName="Prefix4:RemainingProcessTime" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:SetGrillTemperature__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix0:Float">
+      <Variable SymbolicName="Prefix5:CurrentState" ModellingRule="Optional" DataType="Prefix5:GrillingZoneStateEnumeration" />
+      <Variable SymbolicName="Prefix5:GrillingZoneName" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Variable SymbolicName="Prefix5:IsWithPlaten" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix5:PlatenPositionState" ModellingRule="Optional" DataType="Prefix5:PlatenPositionStateEnumeration" />
+      <Variable SymbolicName="Prefix5:RemainingProcessTime" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:SetGrillTemperature__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix1:Float">
         <BrowseName>SetGrillTemperature_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:SetPlatenTemperature__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix0:Float">
+      <Variable SymbolicName="Prefix5:SetPlatenTemperature__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix1:Float">
         <BrowseName>SetPlatenTemperature_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:SetProcessTime" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Int32" />
+      <Variable SymbolicName="Prefix5:SetProcessTime" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Int32" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:FryingPanParameterType" BaseType="Prefix4:KitchenDeviceParameterType">
+  <ObjectType SymbolicName="Prefix5:FryingPanParameterType" BaseType="Prefix5:KitchenDeviceParameterType">
     <Children>
-      <Variable SymbolicName="Prefix4:ActualCoreTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:ActualPressurePan" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:ActualTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:CookingLevel" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:IsLidLocked" ModellingRule="Optional" DataType="Prefix0:Boolean" />
-      <Variable SymbolicName="Prefix4:ProgramMode" ModellingRule="Mandatory" DataType="Prefix4:FryingPanModeEnumeration" />
-      <Variable SymbolicName="Prefix4:SetCoreTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:SetProcessTime" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:SetTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:SignalMode" ModellingRule="Mandatory" DataType="Prefix4:SignalModeEnumeration" />
-      <Variable SymbolicName="Prefix4:TimeRemaining" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
+      <Variable SymbolicName="Prefix5:ActualCoreTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:ActualPressurePan" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:ActualTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:CookingLevel" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:IsLidLocked" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix5:ProgramMode" ModellingRule="Mandatory" DataType="Prefix5:FryingPanModeEnumeration" />
+      <Variable SymbolicName="Prefix5:SetCoreTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:SetProcessTime" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:SetTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:SignalMode" ModellingRule="Mandatory" DataType="Prefix5:SignalModeEnumeration" />
+      <Variable SymbolicName="Prefix5:TimeRemaining" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:IceMachineParameterType" BaseType="Prefix4:KitchenDeviceParameterType">
+  <ObjectType SymbolicName="Prefix5:IceMachineParameterType" BaseType="Prefix5:KitchenDeviceParameterType">
     <Children>
-      <Variable SymbolicName="Prefix4:LastFreezeTime" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:LastHarvestTime" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:Status" ModellingRule="Optional" DataType="Prefix4:StatusEnumeration" />
-      <Variable SymbolicName="Prefix4:Temperature__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix0:Float">
+      <Variable SymbolicName="Prefix5:LastFreezeTime" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:LastHarvestTime" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:Status" ModellingRule="Optional" DataType="Prefix5:StatusEnumeration" />
+      <Variable SymbolicName="Prefix5:Temperature__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix1:Float">
         <BrowseName>Temperature_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:WaterFillTime" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Int32" />
+      <Variable SymbolicName="Prefix5:WaterFillTime" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Int32" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:MicrowaveCombiOvenParameterType" BaseType="Prefix4:KitchenDeviceParameterType">
+  <ObjectType SymbolicName="Prefix5:MicrowaveCombiOvenParameterType" BaseType="Prefix5:KitchenDeviceParameterType">
     <Children>
-      <Variable SymbolicName="Prefix4:ActualTemperatureChamber" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:CookingStep" ModellingRule="Optional" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:FanSpeed" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:IsDoorOpen" ModellingRule="Mandatory" DataType="Prefix0:Boolean" AccessLevel="ReadWrite" />
-      <Variable SymbolicName="Prefix4:MicrowaveEnergy" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:OperatingMode" ModellingRule="Mandatory" DataType="Prefix4:OperatingModeEnumeration" />
-      <Variable SymbolicName="Prefix4:RemainingProcessTime" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:RemainingProcessTimeStep" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:SetProcessTime" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:SetTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
+      <Variable SymbolicName="Prefix5:ActualTemperatureChamber" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:CookingStep" ModellingRule="Optional" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:FanSpeed" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:IsDoorOpen" ModellingRule="Mandatory" DataType="Prefix1:Boolean" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:MicrowaveEnergy" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:OperatingMode" ModellingRule="Mandatory" DataType="Prefix5:OperatingModeEnumeration" />
+      <Variable SymbolicName="Prefix5:RemainingProcessTime" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:RemainingProcessTimeStep" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:SetProcessTime" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:SetTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:MultiFunctionPanParameterType" BaseType="Prefix4:KitchenDeviceParameterType">
+  <ObjectType SymbolicName="Prefix5:MultiFunctionPanParameterType" BaseType="Prefix5:KitchenDeviceParameterType">
     <Children>
-      <Variable SymbolicName="Prefix4:ActualCoreTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:ActualPressureAbsolute" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:ActualTemperatureBottom" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:ActualTemperatureCup" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:ActualZoneTemperature__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix0:Float">
+      <Variable SymbolicName="Prefix5:ActualCoreTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:ActualPressureAbsolute" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:ActualTemperatureBottom" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:ActualTemperatureCup" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:ActualZoneTemperature__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix1:Float">
         <BrowseName>ActualZoneTemperature_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:CookingLevel" ModellingRule="Optional" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:IsLidLocked" ModellingRule="Optional" DataType="Prefix0:Boolean" />
-      <Variable SymbolicName="Prefix4:IsLidOpen" ModellingRule="Optional" DataType="Prefix0:Boolean" />
-      <Variable SymbolicName="Prefix4:IsWithCleaning" ModellingRule="Optional" DataType="Prefix0:Boolean" />
-      <Variable SymbolicName="Prefix4:IsWithLift" ModellingRule="Optional" DataType="Prefix0:Boolean" />
-      <Variable SymbolicName="Prefix4:IsWithPressure" ModellingRule="Optional" DataType="Prefix0:Boolean" />
-      <Variable SymbolicName="Prefix4:IsWithTilting" ModellingRule="Optional" DataType="Prefix0:Boolean" />
-      <Variable SymbolicName="Prefix4:MultiFunctionPanMode" ModellingRule="Mandatory" DataType="Prefix4:MultiFunctionPanModeEnumeration" />
-      <Variable SymbolicName="Prefix4:SetCoreTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:SetProcessTimeProgram" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:SetProcessTimeStep" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:SetTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:SetZoneTemperature__No__" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix0:Float">
+      <Variable SymbolicName="Prefix5:CookingLevel" ModellingRule="Optional" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:IsLidLocked" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix5:IsLidOpen" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix5:IsWithCleaning" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix5:IsWithLift" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix5:IsWithPressure" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix5:IsWithTilting" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix5:MultiFunctionPanMode" ModellingRule="Mandatory" DataType="Prefix5:MultiFunctionPanModeEnumeration" />
+      <Variable SymbolicName="Prefix5:SetCoreTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:SetProcessTimeProgram" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:SetProcessTimeStep" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:SetTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:SetZoneTemperature__No__" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="OptionalPlaceholder" DataType="Prefix1:Float">
         <BrowseName>SetZoneTemperature_&lt;No.&gt;</BrowseName>
       </Variable>
-      <Variable SymbolicName="Prefix4:SpecialFunctionMode" ModellingRule="Optional" DataType="Prefix4:SpecialFunctionModeEnumeration" />
-      <Variable SymbolicName="Prefix4:TimeRemainingProgram" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:TimeRemainingStep" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Optional" DataType="Prefix0:Int32" />
+      <Variable SymbolicName="Prefix5:SpecialFunctionMode" ModellingRule="Optional" DataType="Prefix5:SpecialFunctionModeEnumeration" />
+      <Variable SymbolicName="Prefix5:TimeRemainingProgram" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:TimeRemainingStep" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Int32" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:PastaCookerParameterType" BaseType="Prefix4:KitchenDeviceParameterType">
+  <ObjectType SymbolicName="Prefix5:PastaCookerParameterType" BaseType="Prefix5:KitchenDeviceParameterType">
     <Children>
-      <Variable SymbolicName="Prefix4:ActualTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:CookingLevel" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:ProgramMode" ModellingRule="Mandatory" DataType="Prefix4:PastaCookerModeEnumeration" />
-      <Variable SymbolicName="Prefix4:SetProcessTime" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:SetTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:SignalMode" ModellingRule="Mandatory" DataType="Prefix4:SignalModeEnumeration" />
-      <Variable SymbolicName="Prefix4:TimeRemaining" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
+      <Variable SymbolicName="Prefix5:ActualTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:CookingLevel" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:ProgramMode" ModellingRule="Mandatory" DataType="Prefix5:PastaCookerModeEnumeration" />
+      <Variable SymbolicName="Prefix5:SetProcessTime" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:SetTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:SignalMode" ModellingRule="Mandatory" DataType="Prefix5:SignalModeEnumeration" />
+      <Variable SymbolicName="Prefix5:TimeRemaining" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:PressureCookingKettleParameterType" BaseType="Prefix4:KitchenDeviceParameterType">
+  <ObjectType SymbolicName="Prefix5:PressureCookingKettleParameterType" BaseType="Prefix5:KitchenDeviceParameterType">
     <Children>
-      <Variable SymbolicName="Prefix4:ActualCoreTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:ActualPressureAbsolute" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:ActualPressureKettle" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:ActualTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:CookingLevel" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:IsLidLocked" ModellingRule="Mandatory" DataType="Prefix0:Boolean" />
-      <Variable SymbolicName="Prefix4:IsOpenExpressActive" ModellingRule="Optional" DataType="Prefix0:Boolean" />
-      <Variable SymbolicName="Prefix4:IsSteamActive" ModellingRule="Mandatory" DataType="Prefix0:Boolean" />
-      <Variable SymbolicName="Prefix4:ProgramMode" ModellingRule="Mandatory" DataType="Prefix4:PressureCookingKettleModeEnumeration" />
-      <Variable SymbolicName="Prefix4:SetCoreTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:SetProcessTime" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:SetTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Variable SymbolicName="Prefix4:SignalMode" ModellingRule="Mandatory" DataType="Prefix4:SignalModeEnumeration" />
-      <Variable SymbolicName="Prefix4:TimeRemaining" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
+      <Variable SymbolicName="Prefix5:ActualCoreTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:ActualPressureAbsolute" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:ActualPressureKettle" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:ActualTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:CookingLevel" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:IsLidLocked" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix5:IsOpenExpressActive" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix5:IsSteamActive" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix5:ProgramMode" ModellingRule="Mandatory" DataType="Prefix5:PressureCookingKettleModeEnumeration" />
+      <Variable SymbolicName="Prefix5:SetCoreTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:SetProcessTime" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:SetTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix5:SignalMode" ModellingRule="Mandatory" DataType="Prefix5:SignalModeEnumeration" />
+      <Variable SymbolicName="Prefix5:TimeRemaining" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:TrayType" BaseType="Prefix4:KitchenDeviceParameterType">
+  <ObjectType SymbolicName="Prefix5:TrayType" BaseType="Prefix5:KitchenDeviceParameterType">
     <Children>
-      <Variable SymbolicName="Prefix4:ActiveSince" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:ActualTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" />
-      <Property SymbolicName="Prefix4:Name" ModellingRule="Mandatory" DataType="Prefix0:String" AccessLevel="ReadWrite" />
-      <Variable SymbolicName="Prefix4:OperatingCounter" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
-      <Variable SymbolicName="Prefix4:ProgramMode" ModellingRule="Mandatory" DataType="Prefix4:TrayModeEnumeration" AccessLevel="ReadWrite" />
-      <Variable SymbolicName="Prefix4:SetTemperature" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Float" AccessLevel="ReadWrite" />
-      <Variable SymbolicName="Prefix4:Type" ModellingRule="Mandatory" DataType="Prefix4:TrayTypeEnumeration" />
+      <Variable SymbolicName="Prefix5:ActiveSince" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:ActualTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Property SymbolicName="Prefix5:Name" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:OperatingCounter" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
+      <Variable SymbolicName="Prefix5:ProgramMode" ModellingRule="Mandatory" DataType="Prefix5:TrayModeEnumeration" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:SetTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:Type" ModellingRule="Mandatory" DataType="Prefix5:TrayTypeEnumeration" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:CommercialKitchenDeviceType" BaseType="Prefix2:DeviceType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix5:CommercialKitchenDeviceType" BaseType="Prefix3:DeviceType" IsAbstract="true">
     <Children>
-      <Object SymbolicName="Prefix4:BatchInformation" TypeDefinition="Prefix4:BatchInformationType" ModellingRule="Optional" />
-      <Property SymbolicName="Prefix2:DeviceClass" ModellingRule="Mandatory">
+      <Object SymbolicName="Prefix5:BatchInformation" TypeDefinition="Prefix5:BatchInformationType" ModellingRule="Optional" />
+      <Property SymbolicName="Prefix3:DeviceClass" ModellingRule="Mandatory">
         <Description>Indicates in which domain or for what purpose a device is used.</Description>
       </Property>
-      <Property SymbolicName="Prefix4:DeviceLocationName" ModellingRule="Optional" DataType="Prefix0:String" />
-      <Object SymbolicName="Prefix4:ErrorConditions" ModellingRule="Mandatory" />
-      <Object SymbolicName="Prefix4:HACCPValues" TypeDefinition="Prefix2:FunctionalGroupType" ModellingRule="Optional" />
-      <Object SymbolicName="Prefix4:InformationConditions" ModellingRule="Mandatory" />
+      <Property SymbolicName="Prefix5:DeviceLocationName" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Object SymbolicName="Prefix5:ErrorConditions" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix5:HACCPValues" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:InformationConditions" ModellingRule="Mandatory" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:CoffeeMachineDeviceType" BaseType="Prefix4:CommercialKitchenDeviceType">
+  <ObjectType SymbolicName="Prefix5:CoffeeMachineDeviceType" BaseType="Prefix5:CommercialKitchenDeviceType">
     <Children>
-      <Object SymbolicName="Prefix4:RecipeName" TypeDefinition="Prefix4:CoffeeMachineRecipeParameterType" ModellingRule="MandatoryPlaceholder">
+      <Object SymbolicName="Prefix5:RecipeName" TypeDefinition="Prefix5:CoffeeMachineRecipeParameterType" ModellingRule="MandatoryPlaceholder">
         <BrowseName>&lt;RecipeName&gt;</BrowseName>
       </Object>
-      <Object SymbolicName="Prefix4:Parameters" TypeDefinition="Prefix4:CoffeeMachineParameterType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix5:Parameters" TypeDefinition="Prefix5:CoffeeMachineParameterType" ModellingRule="Mandatory" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:CombiSteamerDeviceType" BaseType="Prefix4:CommercialKitchenDeviceType">
+  <ObjectType SymbolicName="Prefix5:CombiSteamerDeviceType" BaseType="Prefix5:CommercialKitchenDeviceType">
     <Children>
-      <Object SymbolicName="Prefix4:CombiSteamer" TypeDefinition="Prefix4:CombiSteamerParameterType" ModellingRule="Mandatory" />
-      <Property SymbolicName="Prefix4:EnergySource" ModellingRule="Mandatory" DataType="Prefix4:EnergySourceEnumeration" />
-      <Property SymbolicName="Prefix4:IsWithAutomaticCleaning" ModellingRule="Mandatory" DataType="Prefix0:Boolean" />
-      <Property SymbolicName="Prefix4:IsWithExternalCoreTempSensor" ModellingRule="Mandatory" DataType="Prefix0:Boolean" />
-      <Property SymbolicName="Prefix4:IsWithInternalCoreTempSensor" ModellingRule="Mandatory" DataType="Prefix0:Boolean" />
-      <Property SymbolicName="Prefix4:IsWithSousvideTempSensor" ModellingRule="Mandatory" DataType="Prefix0:Boolean" />
+      <Object SymbolicName="Prefix5:CombiSteamer" TypeDefinition="Prefix5:CombiSteamerParameterType" ModellingRule="Mandatory" />
+      <Property SymbolicName="Prefix5:EnergySource" ModellingRule="Mandatory" DataType="Prefix5:EnergySourceEnumeration" />
+      <Property SymbolicName="Prefix5:IsWithAutomaticCleaning" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
+      <Property SymbolicName="Prefix5:IsWithExternalCoreTempSensor" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
+      <Property SymbolicName="Prefix5:IsWithInternalCoreTempSensor" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
+      <Property SymbolicName="Prefix5:IsWithSousvideTempSensor" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:CookingKettleDeviceType" BaseType="Prefix4:CommercialKitchenDeviceType">
+  <ObjectType SymbolicName="Prefix5:CookingKettleDeviceType" BaseType="Prefix5:CommercialKitchenDeviceType">
     <Children>
-      <Object SymbolicName="Prefix4:CookingKettle" TypeDefinition="Prefix4:CookingKettleParameterType" ModellingRule="Mandatory" />
-      <Property SymbolicName="Prefix4:EnergySource" ModellingRule="Mandatory" DataType="Prefix4:EnergySourceEnumeration" />
-      <Property SymbolicName="Prefix4:IsWithAgitator" ModellingRule="Mandatory" DataType="Prefix0:Boolean" />
-      <Property SymbolicName="Prefix4:IsWithCooling" ModellingRule="Mandatory" DataType="Prefix0:Boolean" />
+      <Object SymbolicName="Prefix5:CookingKettle" TypeDefinition="Prefix5:CookingKettleParameterType" ModellingRule="Mandatory" />
+      <Property SymbolicName="Prefix5:EnergySource" ModellingRule="Mandatory" DataType="Prefix5:EnergySourceEnumeration" />
+      <Property SymbolicName="Prefix5:IsWithAgitator" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
+      <Property SymbolicName="Prefix5:IsWithCooling" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:CookingZoneDeviceType" BaseType="Prefix4:CommercialKitchenDeviceType">
+  <ObjectType SymbolicName="Prefix5:CookingZoneDeviceType" BaseType="Prefix5:CommercialKitchenDeviceType">
     <Children>
-      <Object SymbolicName="Prefix4:CookingZone__No__" TypeDefinition="Prefix4:CookingZoneParameterType" ModellingRule="MandatoryPlaceholder">
+      <Object SymbolicName="Prefix5:CookingZone__No__" TypeDefinition="Prefix5:CookingZoneParameterType" ModellingRule="MandatoryPlaceholder">
         <BrowseName>CookingZone_&lt;No.&gt;</BrowseName>
       </Object>
-      <Property SymbolicName="Prefix4:EnergySource" ModellingRule="Mandatory" DataType="Prefix4:EnergySourceEnumeration" />
-      <Property SymbolicName="Prefix4:IsWithPanDetection" ModellingRule="Mandatory" DataType="Prefix0:Boolean" />
-      <Variable SymbolicName="Prefix4:NominalVoltage" TypeDefinition="Prefix0:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
-      <Property SymbolicName="Prefix4:NumberOfPhases" ModellingRule="Mandatory" DataType="Prefix0:Int32" />
+      <Property SymbolicName="Prefix5:EnergySource" ModellingRule="Mandatory" DataType="Prefix5:EnergySourceEnumeration" />
+      <Property SymbolicName="Prefix5:IsWithPanDetection" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix5:NominalVoltage" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
+      <Property SymbolicName="Prefix5:NumberOfPhases" ModellingRule="Mandatory" DataType="Prefix1:Int32" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:DishWashingMachineDeviceType" BaseType="Prefix4:CommercialKitchenDeviceType">
+  <ObjectType SymbolicName="Prefix5:DishWashingMachineDeviceType" BaseType="Prefix5:CommercialKitchenDeviceType">
     <Children>
-      <Object SymbolicName="Prefix4:Parameters" TypeDefinition="Prefix4:DishWashingMachineProgramParameterType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix5:Parameters" TypeDefinition="Prefix5:DishWashingMachineProgramParameterType" ModellingRule="Mandatory" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:FryerDeviceType" BaseType="Prefix4:CommercialKitchenDeviceType">
+  <ObjectType SymbolicName="Prefix5:FryerDeviceType" BaseType="Prefix5:CommercialKitchenDeviceType">
     <Children>
-      <Property SymbolicName="Prefix4:EnergySource" ModellingRule="Mandatory" DataType="Prefix4:EnergySourceEnumeration" />
-      <Object SymbolicName="Prefix4:FryerCup__No__" TypeDefinition="Prefix4:FryerParameterType" ModellingRule="MandatoryPlaceholder">
+      <Property SymbolicName="Prefix5:EnergySource" ModellingRule="Mandatory" DataType="Prefix5:EnergySourceEnumeration" />
+      <Object SymbolicName="Prefix5:FryerCup__No__" TypeDefinition="Prefix5:FryerParameterType" ModellingRule="MandatoryPlaceholder">
         <BrowseName>FryerCup_&lt;No.&gt;</BrowseName>
       </Object>
-      <Property SymbolicName="Prefix4:IsWithLift" ModellingRule="Mandatory" DataType="Prefix0:Boolean" />
+      <Property SymbolicName="Prefix5:IsWithLift" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:FryingAndGrillingDeviceType" BaseType="Prefix4:CommercialKitchenDeviceType">
+  <ObjectType SymbolicName="Prefix5:FryingAndGrillingDeviceType" BaseType="Prefix5:CommercialKitchenDeviceType">
     <Children>
-      <Property SymbolicName="Prefix4:EnergySource" ModellingRule="Mandatory" DataType="Prefix4:EnergySourceEnumeration" />
-      <Object SymbolicName="Prefix4:GrillingZone__No__" TypeDefinition="Prefix4:FryingAndGrillingParameterType" ModellingRule="MandatoryPlaceholder">
+      <Property SymbolicName="Prefix5:EnergySource" ModellingRule="Mandatory" DataType="Prefix5:EnergySourceEnumeration" />
+      <Object SymbolicName="Prefix5:GrillingZone__No__" TypeDefinition="Prefix5:FryingAndGrillingParameterType" ModellingRule="MandatoryPlaceholder">
         <BrowseName>GrillingZone_&lt;No.&gt;</BrowseName>
       </Object>
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:FryingPanDeviceType" BaseType="Prefix4:CommercialKitchenDeviceType">
+  <ObjectType SymbolicName="Prefix5:FryingPanDeviceType" BaseType="Prefix5:CommercialKitchenDeviceType">
     <Children>
-      <Property SymbolicName="Prefix4:EnergySource" ModellingRule="Mandatory" DataType="Prefix4:EnergySourceEnumeration" />
-      <Object SymbolicName="Prefix4:FryingPan" TypeDefinition="Prefix4:FryingPanParameterType" ModellingRule="Mandatory" />
-      <Property SymbolicName="Prefix4:IsWithPressure" ModellingRule="Mandatory" DataType="Prefix0:Boolean" />
+      <Property SymbolicName="Prefix5:EnergySource" ModellingRule="Mandatory" DataType="Prefix5:EnergySourceEnumeration" />
+      <Object SymbolicName="Prefix5:FryingPan" TypeDefinition="Prefix5:FryingPanParameterType" ModellingRule="Mandatory" />
+      <Property SymbolicName="Prefix5:IsWithPressure" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:IceMachineDeviceType" BaseType="Prefix4:CommercialKitchenDeviceType">
+  <ObjectType SymbolicName="Prefix5:IceMachineDeviceType" BaseType="Prefix5:CommercialKitchenDeviceType">
     <Children>
-      <Object SymbolicName="Prefix4:IceMachine" TypeDefinition="Prefix4:IceMachineParameterType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix5:IceMachine" TypeDefinition="Prefix5:IceMachineParameterType" ModellingRule="Mandatory" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:MicrowaveCombiOvenDeviceType" BaseType="Prefix4:CommercialKitchenDeviceType">
+  <ObjectType SymbolicName="Prefix5:MicrowaveCombiOvenDeviceType" BaseType="Prefix5:CommercialKitchenDeviceType">
     <Children>
-      <Object SymbolicName="Prefix4:MicrowaveCombiOven" TypeDefinition="Prefix4:MicrowaveCombiOvenParameterType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix5:MicrowaveCombiOven" TypeDefinition="Prefix5:MicrowaveCombiOvenParameterType" ModellingRule="Mandatory" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:MultiFunctionPanDeviceType" BaseType="Prefix4:CommercialKitchenDeviceType">
+  <ObjectType SymbolicName="Prefix5:MultiFunctionPanDeviceType" BaseType="Prefix5:CommercialKitchenDeviceType">
     <Children>
-      <Property SymbolicName="Prefix4:EnergySource" ModellingRule="Mandatory" DataType="Prefix4:EnergySourceEnumeration" />
-      <Object SymbolicName="Prefix4:MultiFunctionPan__No__" TypeDefinition="Prefix4:MultiFunctionPanParameterType" ModellingRule="MandatoryPlaceholder">
+      <Property SymbolicName="Prefix5:EnergySource" ModellingRule="Mandatory" DataType="Prefix5:EnergySourceEnumeration" />
+      <Object SymbolicName="Prefix5:MultiFunctionPan__No__" TypeDefinition="Prefix5:MultiFunctionPanParameterType" ModellingRule="MandatoryPlaceholder">
         <BrowseName>MultiFunctionPan_&lt;No.&gt;</BrowseName>
       </Object>
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:OvenDeviceType" BaseType="Prefix4:CommercialKitchenDeviceType">
+  <ObjectType SymbolicName="Prefix5:OvenDeviceType" BaseType="Prefix5:CommercialKitchenDeviceType">
     <Children>
-      <Object SymbolicName="Prefix4:Chamber__No__" TypeDefinition="Prefix4:ChamberType" ModellingRule="MandatoryPlaceholder">
+      <Object SymbolicName="Prefix5:Chamber__No__" TypeDefinition="Prefix5:ChamberType" ModellingRule="MandatoryPlaceholder">
         <BrowseName>Chamber_&lt;No.&gt;</BrowseName>
       </Object>
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:PastaCookerDeviceType" BaseType="Prefix4:CommercialKitchenDeviceType">
+  <ObjectType SymbolicName="Prefix5:PastaCookerDeviceType" BaseType="Prefix5:CommercialKitchenDeviceType">
     <Children>
-      <Property SymbolicName="Prefix4:EnergySource" ModellingRule="Mandatory" DataType="Prefix4:EnergySourceEnumeration" />
-      <Property SymbolicName="Prefix4:IsWithLift" ModellingRule="Mandatory" DataType="Prefix0:Boolean" />
-      <Object SymbolicName="Prefix4:PastaCooker" TypeDefinition="Prefix4:PastaCookerParameterType" ModellingRule="Mandatory" />
+      <Property SymbolicName="Prefix5:EnergySource" ModellingRule="Mandatory" DataType="Prefix5:EnergySourceEnumeration" />
+      <Property SymbolicName="Prefix5:IsWithLift" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
+      <Object SymbolicName="Prefix5:PastaCooker" TypeDefinition="Prefix5:PastaCookerParameterType" ModellingRule="Mandatory" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:PressureCookingKettleDeviceType" BaseType="Prefix4:CommercialKitchenDeviceType">
+  <ObjectType SymbolicName="Prefix5:PressureCookingKettleDeviceType" BaseType="Prefix5:CommercialKitchenDeviceType">
     <Children>
-      <Property SymbolicName="Prefix4:EnergySource" ModellingRule="Mandatory" DataType="Prefix4:EnergySourceEnumeration" />
-      <Object SymbolicName="Prefix4:PressureCookingKettle" TypeDefinition="Prefix4:PressureCookingKettleParameterType" ModellingRule="Mandatory" />
+      <Property SymbolicName="Prefix5:EnergySource" ModellingRule="Mandatory" DataType="Prefix5:EnergySourceEnumeration" />
+      <Object SymbolicName="Prefix5:PressureCookingKettle" TypeDefinition="Prefix5:PressureCookingKettleParameterType" ModellingRule="Mandatory" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ServeryCounterDeviceType" BaseType="Prefix4:CommercialKitchenDeviceType">
+  <ObjectType SymbolicName="Prefix5:ServeryCounterDeviceType" BaseType="Prefix5:CommercialKitchenDeviceType">
     <Children>
-      <Object SymbolicName="Prefix4:Tray__No__" TypeDefinition="Prefix4:TrayType" ModellingRule="MandatoryPlaceholder">
+      <Object SymbolicName="Prefix5:Tray__No__" TypeDefinition="Prefix5:TrayType" ModellingRule="MandatoryPlaceholder">
         <BrowseName>Tray_&lt;No.&gt;</BrowseName>
       </Object>
     </Children>

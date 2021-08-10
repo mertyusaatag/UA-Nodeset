@@ -1,8 +1,8 @@
-"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.3.2.23344";;;;"2021-05-29T10:15:05.2684234Z";;
-"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2021 Mariusz Postol";;;;"2021-05-29T10:15:05.2694124Z";;
-"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.Di.NodeSet2.xml";;;;"2021-05-29T10:16:09.9454736Z";;
-"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.CommercialKitchenEquipment.NodeSet2.xml";;;;"2021-05-29T10:16:24.5833956Z";;
-"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import";;;;"2021-05-29T10:16:24.5963972Z";;
-"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/CommercialKitchenEquipment/ namespace.";;;;"2021-05-29T10:17:04.1610685Z";;
-"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 59 nodes and no errors/warnings reported";;;;"2021-05-29T10:17:04.5970945Z";;
-"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file Opc.Ua.CommercialKitchenEquipment.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2021-05-29T10:17:04.7441176Z";;
+"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.4.6.30717";;;;"2021-08-10T21:33:19.7655774Z";;
+"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2021 Mariusz Postol";;;;"2021-08-10T21:33:19.7665804Z";;
+"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.Di.NodeSet2.xml";;;;"2021-08-10T21:33:49.9784447Z";;
+"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.CommercialKitchenEquipment.NodeSet2.xml";;;;"2021-08-10T21:33:56.6329711Z";;
+"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import";;;;"2021-08-10T21:33:56.6646663Z";;
+"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/CommercialKitchenEquipment/ namespace.";;;;"2021-08-10T21:34:14.8281437Z";;
+"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 59 nodes and no errors/warnings reported";;;;"2021-08-10T21:34:15.1511085Z";;
+"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file Opc.Ua.CommercialKitchenEquipment.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2021-08-10T21:34:15.2898490Z";;
