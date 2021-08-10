@@ -1,7 +1,7 @@
-"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.4.5.24666";;;;"2021-08-10T11:58:45.0199982Z";;
-"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2021 Mariusz Postol";;;;"2021-08-10T11:58:45.0209980Z";;
-"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.Di.NodeSet2.xml";;;;"2021-08-10T11:59:49.0516597Z";;
-"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.PLCopen.NodeSet2_V1.02.xml";;;;"2021-08-10T12:00:04.1375855Z";;
-"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://plcopen.org/OpcUa/IEC61131-3/ namespace.";;;;"2021-08-10T12:00:06.1051092Z";;
-"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 28 nodes and no errors/warnings reported";;;;"2021-08-10T12:00:06.2061109Z";;
-"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file Opc.Ua.PLCopen.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2021-08-10T12:00:06.3631082Z";;
+"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.4.6.30717";;;;"2021-08-10T15:09:28.3801299Z";;
+"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2021 Mariusz Postol";;;;"2021-08-10T15:09:28.3811262Z";;
+"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.Di.NodeSet2.xml";;;;"2021-08-10T15:10:00.2701443Z";;
+"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.PLCopen.NodeSet2_V1.02.xml";;;;"2021-08-10T15:10:06.9514094Z";;
+"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://plcopen.org/OpcUa/IEC61131-3/ namespace.";;;;"2021-08-10T15:10:07.8600008Z";;
+"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 28 nodes and no errors/warnings reported";;;;"2021-08-10T15:10:07.9565806Z";;
+"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file Opc.Ua.PLCopen.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2021-08-10T15:10:08.1105531Z";;

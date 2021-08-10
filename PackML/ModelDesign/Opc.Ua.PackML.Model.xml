@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
-<ModelDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix3="http://opcfoundation.org/UA/PackML/" TargetNamespace="http://opcfoundation.org/UA/PackML/" TargetVersion="" TargetPublicationDate="2021-07-02T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<ModelDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix3="http://opcfoundation.org/UA/PackML/" TargetNamespace="http://opcfoundation.org/UA/PackML/" TargetVersion="" TargetPublicationDate="2021-08-10T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/PackML/" XmlNamespace="http://opcfoundation.org/UA/PackML/" XmlPrefix="Prefix3" FilePath="" Version="1.01" PublicationDate="08.10.2020">http://opcfoundation.org/UA/PackML/</Namespace>
@@ -266,49 +266,196 @@
         </DefaultValue>
       </Property>
       <Method SymbolicName="Prefix3:RemoteCommand" ModellingRule="Optional">
-        <InputArguments>
-          <Argument Name="RemoteInterface" DataType="Prefix3:PackMLRemoteInterfaceDataType" ValueRank="Array">
-            <Description>This structure is an array of remote interface information which include Number, ControlCmdNumber, CmdValue and Parameter.</Description>
-          </Argument>
-        </InputArguments>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RemoteInterface</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=19</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>1</uax:ValueRank>
+              <uax:ArrayDimensions>
+                <uax:UInt32>0</uax:UInt32>
+              </uax:ArrayDimensions>
+              <uax:Description>
+                <uax:Text>This structure is an array of remote interface information which include Number, ControlCmdNumber, CmdValue and Parameter.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
       <Method SymbolicName="Prefix3:SetInterlock" ModellingRule="Optional">
-        <InputArguments>
-          <Argument Name="InterlockId" DataType="Prefix1:Int32">
-            <Description>The NodeId of the interlock to set or reset.</Description>
-          </Argument>
-          <Argument Name="State" DataType="Prefix1:Boolean">
-            <Description>The state that the targeted interlock should be set to.  True is set to interlocked, false is not interlocked.</Description>
-          </Argument>
-        </InputArguments>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>InterlockId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=6</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The NodeId of the interlock to set or reset.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>State</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=1</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The state that the targeted interlock should be set to.  True is set to interlocked, false is not interlocked.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
       <Method SymbolicName="Prefix3:SetMachSpeed" ModellingRule="Mandatory">
-        <InputArguments>
-          <Argument Name="RequestedMachineSpeed" DataType="Prefix1:Float">
-            <Description>The target machine speed</Description>
-          </Argument>
-        </InputArguments>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RequestedMachineSpeed</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=10</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The target machine speed</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
       <Method SymbolicName="Prefix3:SetParameter" ModellingRule="Mandatory">
-        <InputArguments>
-          <Argument Name="Parameter" DataType="Prefix3:PackMLDescriptorDataType" ValueRank="Array">
-            <Description>The array of parameter that can be used by the method</Description>
-          </Argument>
-        </InputArguments>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Parameter</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=16</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>1</uax:ValueRank>
+              <uax:ArrayDimensions>
+                <uax:UInt32>0</uax:UInt32>
+              </uax:ArrayDimensions>
+              <uax:Description>
+                <uax:Text>The array of parameter that can be used by the method</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
       <Method SymbolicName="Prefix3:SetProduct" ModellingRule="Mandatory">
-        <InputArguments>
-          <Argument Name="Product" DataType="Prefix3:PackMLProductDataType" ValueRank="Array">
-            <Description>This structure is an array of product definition, which includes the ProductId, ProcessVariables array and Ingredient array.</Description>
-          </Argument>
-        </InputArguments>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Product</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=18</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>1</uax:ValueRank>
+              <uax:ArrayDimensions>
+                <uax:UInt32>0</uax:UInt32>
+              </uax:ArrayDimensions>
+              <uax:Description>
+                <uax:Text>This structure is an array of product definition, which includes the ProductId, ProcessVariables array and Ingredient array.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
       <Method SymbolicName="Prefix3:SetUnitMode" ModellingRule="Mandatory">
-        <InputArguments>
-          <Argument Name="RequestedMode" DataType="Prefix1:Int32">
-            <Description>The requested mode from the list of available modes in the enumeration from ModeSelection </Description>
-          </Argument>
-        </InputArguments>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RequestedMode</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=6</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The requested mode from the list of available modes in the enumeration from ModeSelection </uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
       <Object SymbolicName="Prefix3:Status" TypeDefinition="Prefix3:PackMLStatusObjectType" ModellingRule="Mandatory" />
       <Property SymbolicName="Prefix3:TagID" ModellingRule="Optional" DataType="Prefix1:String" />
@@ -560,11 +707,34 @@
         </References>
       </Object>
       <Method SymbolicName="Prefix3:Start" ModellingRule="Optional">
-        <InputArguments>
-          <Argument Name="Parameter" DataType="Prefix3:PackMLDescriptorDataType" ValueRank="Array">
-            <Description>The array of parameter that can be used by the method</Description>
-          </Argument>
-        </InputArguments>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Parameter</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=16</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>1</uax:ValueRank>
+              <uax:ArrayDimensions>
+                <uax:UInt32>0</uax:UInt32>
+              </uax:ArrayDimensions>
+              <uax:Description>
+                <uax:Text>The array of parameter that can be used by the method</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
       </Method>
       <Object SymbolicName="Prefix3:Starting" TypeDefinition="Prefix1:StateType">
         <Description>This state provides the steps needed to start the machine and is a result of a starting type command (local or remote). Following this command, the machine will begin to Execute</Description>
