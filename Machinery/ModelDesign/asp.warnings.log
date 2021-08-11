@@ -1,8 +1,8 @@
-"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.3.2.23344";;;;"2021-06-08T11:14:42.0535996Z";;
-"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2021 Mariusz Postol";;;;"2021-06-08T11:14:42.0545979Z";;
-"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.Di.NodeSet2.xml";;;;"2021-06-08T11:15:32.5870231Z";;
-"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.Machinery.NodeSet2.xml";;;;"2021-06-08T11:15:44.3978162Z";;
-"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import";;;;"2021-06-08T11:15:44.3978162Z";;
-"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/Machinery/ namespace.";;;;"2021-06-08T11:15:45.9195915Z";;
-"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 8 nodes and no errors/warnings reported";;;;"2021-06-08T11:15:45.9653400Z";;
-"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file Opc.Ua.Machinery.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2021-06-08T11:15:46.0734194Z";;
+"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.4.6.30717";;;;"2021-08-10T15:26:25.1179644Z";;
+"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2021 Mariusz Postol";;;;"2021-08-10T15:26:25.1189672Z";;
+"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.Di.NodeSet2.xml";;;;"2021-08-10T15:26:55.1206438Z";;
+"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.Machinery.NodeSet2.xml";;;;"2021-08-10T15:27:01.7867538Z";;
+"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import";;;;"2021-08-10T15:27:01.7987824Z";;
+"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/Machinery/ namespace.";;;;"2021-08-10T15:27:02.8458046Z";;
+"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 8 nodes and no errors/warnings reported";;;;"2021-08-10T15:27:02.9218117Z";;
+"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file Opc.Ua.Machinery.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2021-08-10T15:27:03.0698436Z";;

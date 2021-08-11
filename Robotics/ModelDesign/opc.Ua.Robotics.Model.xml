@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
-<ModelDesign xmlns:Prefix2="http://opcfoundation.org/UA/DI/" xmlns:Prefix0="http://opcfoundation.org/UA/" xmlns:Prefix4="http://opcfoundation.org/UA/Robotics/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-05-20T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/Robotics/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-08-10T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09.03.2021">http://opcfoundation.org/UA/DI/</Namespace>
     <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/Robotics/" XmlNamespace="http://opcfoundation.org/UA/Robotics/" XmlPrefix="Prefix5" FilePath="" Version="1.0.0" PublicationDate="06.05.2019">http://opcfoundation.org/UA/Robotics/</Namespace>
   </Namespaces>
-  <ObjectType SymbolicName="Prefix4:MotionDeviceSystemType" BaseType="Prefix2:ComponentType">
+  <ObjectType SymbolicName="Prefix5:MotionDeviceSystemType" BaseType="Prefix3:ComponentType">
     <Description>Contains the set of controllers and motion devices in a closely-coupled motion device system.</Description>
     <Children>
-      <Object SymbolicName="Prefix4:MotionDevices" TypeDefinition="Prefix0:FolderType" ModellingRule="Mandatory">
+      <Object SymbolicName="Prefix5:MotionDevices" TypeDefinition="Prefix1:FolderType" ModellingRule="Mandatory">
         <Description>Contains any kinematic or motion device which is part of the motion device system.</Description>
         <Children>
-          <Object SymbolicName="Prefix4:MotionDeviceIdentifier" TypeDefinition="Prefix4:MotionDeviceType" ModellingRule="MandatoryPlaceholder">
+          <Object SymbolicName="Prefix5:MotionDeviceIdentifier" TypeDefinition="Prefix5:MotionDeviceType" ModellingRule="MandatoryPlaceholder">
             <BrowseName>&lt;MotionDeviceIdentifier&gt;</BrowseName>
           </Object>
         </Children>
       </Object>
-      <Object SymbolicName="Prefix4:Controllers" TypeDefinition="Prefix0:FolderType" ModellingRule="Mandatory">
+      <Object SymbolicName="Prefix5:Controllers" TypeDefinition="Prefix1:FolderType" ModellingRule="Mandatory">
         <Description>Contains the set of controllers in the motion device system.</Description>
         <Children>
-          <Object SymbolicName="Prefix4:ControllerIdentifier" TypeDefinition="Prefix4:ControllerType" ModellingRule="MandatoryPlaceholder">
+          <Object SymbolicName="Prefix5:ControllerIdentifier" TypeDefinition="Prefix5:ControllerType" ModellingRule="MandatoryPlaceholder">
             <BrowseName>&lt;ControllerIdentifier&gt;</BrowseName>
           </Object>
         </Children>
       </Object>
-      <Object SymbolicName="Prefix4:SafetyStates" TypeDefinition="Prefix0:FolderType" ModellingRule="Mandatory">
+      <Object SymbolicName="Prefix5:SafetyStates" TypeDefinition="Prefix1:FolderType" ModellingRule="Mandatory">
         <Description>Contains safety-related data from motion device system.</Description>
         <Children>
-          <Object SymbolicName="Prefix4:SafetyStateIdentifier" TypeDefinition="Prefix4:SafetyStateType" ModellingRule="MandatoryPlaceholder">
+          <Object SymbolicName="Prefix5:SafetyStateIdentifier" TypeDefinition="Prefix5:SafetyStateType" ModellingRule="MandatoryPlaceholder">
             <BrowseName>&lt;SafetyStateIdentifier&gt;</BrowseName>
           </Object>
         </Children>
@@ -36,57 +36,57 @@
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:MotionDeviceType" BaseType="Prefix2:ComponentType">
+  <ObjectType SymbolicName="Prefix5:MotionDeviceType" BaseType="Prefix3:ComponentType">
     <Description>Represents a specific motion device in the motion device system like a robot, a linear unit or a positioner. A MotionDevice should have at least one axis.</Description>
     <Children>
-      <Object SymbolicName="Prefix2:ParameterSet" ModellingRule="Mandatory">
+      <Object SymbolicName="Prefix3:ParameterSet" ModellingRule="Mandatory">
         <Children>
-          <Variable SymbolicName="Prefix4:OnPath" ModellingRule="Optional" DataType="Prefix0:Boolean">
+          <Variable SymbolicName="Prefix5:OnPath" ModellingRule="Optional" DataType="Prefix1:Boolean">
             <Description>OnPath is true if the motion device is on or near enough the planned program path such that program execution can continue. If the MotionDevice deviates too much from this path in case of errors or an emergency stop, this value becomes false. If OnPath is false, the motion device needs repositioning to continue program execution.</Description>
           </Variable>
-          <Variable SymbolicName="Prefix4:InControl" ModellingRule="Optional" DataType="Prefix0:Boolean">
+          <Variable SymbolicName="Prefix5:InControl" ModellingRule="Optional" DataType="Prefix1:Boolean">
             <Description>InControl provides the information if the actuators (in most cases a motor) of the motion device are powered up and in control: "true". The motion device might be in a standstill.</Description>
           </Variable>
-          <Variable SymbolicName="Prefix4:SpeedOverride" ModellingRule="Mandatory" DataType="Prefix0:Double">
+          <Variable SymbolicName="Prefix5:SpeedOverride" ModellingRule="Mandatory" DataType="Prefix1:Double">
             <Description>SpeedOverride provides the current speed setting in percent of programmed speed (0 - 100%).</Description>
           </Variable>
         </Children>
       </Object>
-      <Property SymbolicName="Prefix4:MotionDeviceCategory" ModellingRule="Mandatory" DataType="Prefix4:MotionDeviceCategoryEnumeration">
+      <Property SymbolicName="Prefix5:MotionDeviceCategory" ModellingRule="Mandatory" DataType="Prefix5:MotionDeviceCategoryEnumeration">
         <Description>The variable MotionDeviceCategory provides the kind of motion device defined by MotionDeviceCategoryEnumeration based on ISO 8373.</Description>
       </Property>
-      <Object SymbolicName="Prefix4:Axes" TypeDefinition="Prefix0:FolderType" ModellingRule="Mandatory">
+      <Object SymbolicName="Prefix5:Axes" TypeDefinition="Prefix1:FolderType" ModellingRule="Mandatory">
         <Description>Axes is a container for one or more instances of the AxisType.</Description>
         <Children>
-          <Object SymbolicName="Prefix4:AxisIdentifier" TypeDefinition="Prefix4:AxisType" ModellingRule="MandatoryPlaceholder">
+          <Object SymbolicName="Prefix5:AxisIdentifier" TypeDefinition="Prefix5:AxisType" ModellingRule="MandatoryPlaceholder">
             <BrowseName>&lt;AxisIdentifier&gt;</BrowseName>
           </Object>
         </Children>
       </Object>
-      <Object SymbolicName="Prefix4:PowerTrains" TypeDefinition="Prefix0:FolderType" ModellingRule="Mandatory">
+      <Object SymbolicName="Prefix5:PowerTrains" TypeDefinition="Prefix1:FolderType" ModellingRule="Mandatory">
         <Description>PowerTrains is a container for one or more instances of the PowerTrainType.</Description>
         <Children>
-          <Object SymbolicName="Prefix4:PowerTrainIdentifier" TypeDefinition="Prefix4:PowerTrainType" ModellingRule="MandatoryPlaceholder">
+          <Object SymbolicName="Prefix5:PowerTrainIdentifier" TypeDefinition="Prefix5:PowerTrainType" ModellingRule="MandatoryPlaceholder">
             <BrowseName>&lt;PowerTrainIdentifier&gt;</BrowseName>
           </Object>
         </Children>
       </Object>
-      <Object SymbolicName="Prefix4:FlangeLoad" TypeDefinition="Prefix4:LoadType" ModellingRule="Optional">
+      <Object SymbolicName="Prefix5:FlangeLoad" TypeDefinition="Prefix5:LoadType" ModellingRule="Optional">
         <Description>The FlangeLoad is the load on the flange or at the mounting point of the MotionDevice. This can be the maximum load of the MotionDevice.</Description>
       </Object>
-      <Object SymbolicName="Prefix4:AdditionalComponents" TypeDefinition="Prefix0:FolderType" ModellingRule="Optional">
+      <Object SymbolicName="Prefix5:AdditionalComponents" TypeDefinition="Prefix1:FolderType" ModellingRule="Optional">
         <Description>AdditionalComponents is a container for one or more instances of subtypes of ComponentType defined in OPC UA DI. The listed components are installed at the motion device, e.g. an IO-board.</Description>
         <Children>
-          <Object SymbolicName="Prefix4:AdditionalComponentIdentifier" TypeDefinition="Prefix2:ComponentType" ModellingRule="MandatoryPlaceholder">
+          <Object SymbolicName="Prefix5:AdditionalComponentIdentifier" TypeDefinition="Prefix3:ComponentType" ModellingRule="MandatoryPlaceholder">
             <BrowseName>&lt;AdditionalComponentIdentifier&gt;</BrowseName>
             <References>
               <Reference>
-                <ReferenceType>Prefix0:HasInterface</ReferenceType>
-                <TargetId>Prefix2:IVendorNameplateType</TargetId>
+                <ReferenceType>Prefix1:HasInterface</ReferenceType>
+                <TargetId>Prefix3:IVendorNameplateType</TargetId>
               </Reference>
               <Reference>
-                <ReferenceType>Prefix0:HasInterface</ReferenceType>
-                <TargetId>Prefix2:ITagNameplateType</TargetId>
+                <ReferenceType>Prefix1:HasInterface</ReferenceType>
+                <TargetId>Prefix3:ITagNameplateType</TargetId>
               </Reference>
             </References>
           </Object>
@@ -95,71 +95,71 @@
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ControllerType" BaseType="Prefix2:ComponentType">
+  <ObjectType SymbolicName="Prefix5:ControllerType" BaseType="Prefix3:ComponentType">
     <Description>The ControllerType describes the control unit of motion devices. One motion device system can have one or more instances of the ControllerType.</Description>
     <Children>
-      <Object SymbolicName="Prefix2:ParameterSet">
+      <Object SymbolicName="Prefix3:ParameterSet">
         <Children>
-          <Variable SymbolicName="Prefix4:TotalPowerOnTime" ModellingRule="Optional" DataType="Prefix0:DurationString">
+          <Variable SymbolicName="Prefix5:TotalPowerOnTime" ModellingRule="Optional" DataType="Prefix1:DurationString">
             <Description>The total accumulated time the controller was powered on.</Description>
           </Variable>
-          <Variable SymbolicName="Prefix4:StartUpTime" ModellingRule="Optional" DataType="Prefix0:DateTime">
+          <Variable SymbolicName="Prefix5:StartUpTime" ModellingRule="Optional" DataType="Prefix1:DateTime">
             <Description>The date and time of the last start-up of the controller.</Description>
           </Variable>
-          <Variable SymbolicName="Prefix4:UpsState" ModellingRule="Optional" DataType="Prefix0:String">
+          <Variable SymbolicName="Prefix5:UpsState" ModellingRule="Optional" DataType="Prefix1:String">
             <Description>The vendor specific status of an integrated UPS or accumulator system.</Description>
           </Variable>
-          <Variable SymbolicName="Prefix4:TotalEnergyConsumption" TypeDefinition="Prefix0:AnalogUnitType" ModellingRule="Optional" DataType="Prefix0:Double">
+          <Variable SymbolicName="Prefix5:TotalEnergyConsumption" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double">
             <Description>The total accumulated energy consumed by the motion devices related with this controller instance.</Description>
           </Variable>
-          <Variable SymbolicName="Prefix4:CabinetFanSpeed" TypeDefinition="Prefix0:AnalogUnitType" ModellingRule="Optional" DataType="Prefix0:Double">
+          <Variable SymbolicName="Prefix5:CabinetFanSpeed" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double">
             <Description>The speed of the cabinet fan.</Description>
           </Variable>
-          <Variable SymbolicName="Prefix4:CPUFanSpeed" TypeDefinition="Prefix0:AnalogUnitType" ModellingRule="Optional" DataType="Prefix0:Double">
+          <Variable SymbolicName="Prefix5:CPUFanSpeed" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double">
             <Description>The speed of the CPU fan.</Description>
           </Variable>
-          <Variable SymbolicName="Prefix4:InputVoltage" TypeDefinition="Prefix0:AnalogUnitType" ModellingRule="Optional" DataType="Prefix0:Double">
+          <Variable SymbolicName="Prefix5:InputVoltage" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double">
             <Description>The input voltage of the controller which can be a configured value. To distuinguish between an AC or DC supply the optional property Definition of the base type DataItemType shall be used.</Description>
           </Variable>
-          <Variable SymbolicName="Prefix4:Temperature" TypeDefinition="Prefix0:AnalogUnitType" ModellingRule="Optional" DataType="Prefix0:Double">
+          <Variable SymbolicName="Prefix5:Temperature" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double">
             <Description>The controller temperature given by a temperature sensor inside of the controller.</Description>
           </Variable>
         </Children>
       </Object>
-      <Object SymbolicName="Prefix4:CurrentUser" TypeDefinition="Prefix4:UserType" ModellingRule="Mandatory">
+      <Object SymbolicName="Prefix5:CurrentUser" TypeDefinition="Prefix5:UserType" ModellingRule="Mandatory">
         <Description>The given name of the device.</Description>
       </Object>
-      <Object SymbolicName="Prefix4:Components" TypeDefinition="Prefix0:FolderType" ModellingRule="Optional">
+      <Object SymbolicName="Prefix5:Components" TypeDefinition="Prefix1:FolderType" ModellingRule="Optional">
         <Description>Components is a container for one or more instances of subtypes of ComponentType defined in OPC UA DI. The listed components are installed in the motion device system, e.g. a processing-unit, a power-supply, an IO-board or a drive, and have an electrical interface to the controller.</Description>
         <Children>
-          <Object SymbolicName="Prefix4:ComponentIdentifier" TypeDefinition="Prefix2:ComponentType" ModellingRule="MandatoryPlaceholder">
+          <Object SymbolicName="Prefix5:ComponentIdentifier" TypeDefinition="Prefix3:ComponentType" ModellingRule="MandatoryPlaceholder">
             <BrowseName>&lt;ComponentIdentifier&gt;</BrowseName>
             <Description>The intention is to integrate inside this container devices which are defined in other companion specifications using DI.</Description>
             <References>
               <Reference>
-                <ReferenceType>Prefix0:HasInterface</ReferenceType>
-                <TargetId>Prefix2:IVendorNameplateType</TargetId>
+                <ReferenceType>Prefix1:HasInterface</ReferenceType>
+                <TargetId>Prefix3:IVendorNameplateType</TargetId>
               </Reference>
               <Reference>
-                <ReferenceType>Prefix0:HasInterface</ReferenceType>
-                <TargetId>Prefix2:ITagNameplateType</TargetId>
+                <ReferenceType>Prefix1:HasInterface</ReferenceType>
+                <TargetId>Prefix3:ITagNameplateType</TargetId>
               </Reference>
             </References>
           </Object>
         </Children>
       </Object>
-      <Object SymbolicName="Prefix4:Software" TypeDefinition="Prefix0:FolderType" ModellingRule="Mandatory">
+      <Object SymbolicName="Prefix5:Software" TypeDefinition="Prefix1:FolderType" ModellingRule="Mandatory">
         <Description>Software is a container for one or more instances of SoftwareType defined in OPC UA DI.</Description>
         <Children>
-          <Object SymbolicName="Prefix4:SoftwareIdentifier" TypeDefinition="Prefix2:SoftwareType" ModellingRule="MandatoryPlaceholder">
+          <Object SymbolicName="Prefix5:SoftwareIdentifier" TypeDefinition="Prefix3:SoftwareType" ModellingRule="MandatoryPlaceholder">
             <BrowseName>&lt;SoftwareIdentifier&gt;</BrowseName>
           </Object>
         </Children>
       </Object>
-      <Object SymbolicName="Prefix4:TaskControls" TypeDefinition="Prefix0:FolderType" ModellingRule="Mandatory">
+      <Object SymbolicName="Prefix5:TaskControls" TypeDefinition="Prefix1:FolderType" ModellingRule="Mandatory">
         <Description>TaskControls is a container for one or more instances of TaskControlType.</Description>
         <Children>
-          <Object SymbolicName="Prefix4:TaskControlIdentifier" TypeDefinition="Prefix4:TaskControlType" ModellingRule="MandatoryPlaceholder">
+          <Object SymbolicName="Prefix5:TaskControlIdentifier" TypeDefinition="Prefix5:TaskControlType" ModellingRule="MandatoryPlaceholder">
             <BrowseName>&lt;TaskControlIdentifier&gt;</BrowseName>
           </Object>
         </Children>
@@ -167,56 +167,56 @@
     </Children>
     <References>
       <Reference>
-        <ReferenceType>Prefix4:HasSafetyStates</ReferenceType>
-        <TargetId>Prefix4:SafetyStatesIdentifier</TargetId>
+        <ReferenceType>Prefix5:HasSafetyStates</ReferenceType>
+        <TargetId>Prefix5:SafetyStatesIdentifier</TargetId>
       </Reference>
       <Reference>
-        <ReferenceType>Prefix4:Controls</ReferenceType>
-        <TargetId>Prefix4:MotionDeviceIdentifier</TargetId>
+        <ReferenceType>Prefix5:Controls</ReferenceType>
+        <TargetId>Prefix5:MotionDeviceIdentifier</TargetId>
       </Reference>
     </References>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:UserType">
+  <ObjectType SymbolicName="Prefix5:UserType">
     <Description>The UserType ObjectType describes information of the registred user groups within the control system.</Description>
     <Children>
-      <Property SymbolicName="Prefix4:Level" ModellingRule="Mandatory" DataType="Prefix0:String">
+      <Property SymbolicName="Prefix5:Level" ModellingRule="Mandatory" DataType="Prefix1:String">
         <Description>The weight of the load mounted on one mounting point.</Description>
       </Property>
-      <Property SymbolicName="Prefix4:Name" ModellingRule="Optional" DataType="Prefix0:String">
+      <Property SymbolicName="Prefix5:Name" ModellingRule="Optional" DataType="Prefix1:String">
         <Description>The name for the current user within the control system.</Description>
       </Property>
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:SafetyStateType" BaseType="Prefix2:ComponentType">
+  <ObjectType SymbolicName="Prefix5:SafetyStateType" BaseType="Prefix3:ComponentType">
     <Description>SafetyStateType describes the safety states of the motion devices and controllers. One motion device system is associated with one or more instances of the SafetyStateType.</Description>
     <Children>
-      <Object SymbolicName="Prefix2:ParameterSet" ModellingRule="Mandatory">
+      <Object SymbolicName="Prefix3:ParameterSet" ModellingRule="Mandatory">
         <Children>
-          <Variable SymbolicName="Prefix4:OperationalMode" ModellingRule="Mandatory" DataType="Prefix4:OperationalModeEnumeration">
+          <Variable SymbolicName="Prefix5:OperationalMode" ModellingRule="Mandatory" DataType="Prefix5:OperationalModeEnumeration">
             <Description>The OperationalMode variable provides information about the current operational mode. Allowed values are described in OperationalModeEnumeration, see ISO 10218-1:2011 Ch.5.7 Operational Modes.</Description>
           </Variable>
-          <Variable SymbolicName="Prefix4:EmergencyStop" ModellingRule="Mandatory" DataType="Prefix0:Boolean">
+          <Variable SymbolicName="Prefix5:EmergencyStop" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
             <Description>The EmergencyStop variable is TRUE if one or more of the emergency stop functions in the robot system are active, FALSE otherwise. If the EmergencyStopFunctions object is provided, then the value of this variable is TRUE if one or more of the listed emergency stop functions are active.</Description>
           </Variable>
-          <Variable SymbolicName="Prefix4:ProtectiveStop" ModellingRule="Mandatory" DataType="Prefix0:Boolean">
+          <Variable SymbolicName="Prefix5:ProtectiveStop" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
             <Description>The ProtectiveStop variable is TRUE if one or more of the enabled protective stop functions in the system are active, FALSE otherwise. If the ProtectiveStopFunctions object is provided, then the value of this variable is TRUE if one or more of the listed protective stop functions are enabled and active.</Description>
           </Variable>
         </Children>
       </Object>
-      <Object SymbolicName="Prefix4:EmergencyStopFunctions" TypeDefinition="Prefix0:FolderType" ModellingRule="Optional">
+      <Object SymbolicName="Prefix5:EmergencyStopFunctions" TypeDefinition="Prefix1:FolderType" ModellingRule="Optional">
         <Description>EmergencyStopFunctions is a container for one or more instances of the EmergencyStopFunctionType.</Description>
         <Children>
-          <Object SymbolicName="Prefix4:EmergencyStopFunctionIdentifier" TypeDefinition="Prefix4:EmergencyStopFunctionType" ModellingRule="MandatoryPlaceholder">
+          <Object SymbolicName="Prefix5:EmergencyStopFunctionIdentifier" TypeDefinition="Prefix5:EmergencyStopFunctionType" ModellingRule="MandatoryPlaceholder">
             <BrowseName>&lt;EmergencyStopFunctionIdentifier&gt;</BrowseName>
           </Object>
         </Children>
       </Object>
-      <Object SymbolicName="Prefix4:ProtectiveStopFunctions" TypeDefinition="Prefix0:FolderType" ModellingRule="Optional">
+      <Object SymbolicName="Prefix5:ProtectiveStopFunctions" TypeDefinition="Prefix1:FolderType" ModellingRule="Optional">
         <Description>ProtectiveStopFunctions is a container for one or more instances of the ProtectiveStopFunctionType.</Description>
         <Children>
-          <Object SymbolicName="Prefix4:ProtectiveStopFunctionIdentifier" TypeDefinition="Prefix4:ProtectiveStopFunctionType" ModellingRule="MandatoryPlaceholder">
+          <Object SymbolicName="Prefix5:ProtectiveStopFunctionIdentifier" TypeDefinition="Prefix5:ProtectiveStopFunctionType" ModellingRule="MandatoryPlaceholder">
             <BrowseName>&lt;ProtectiveStopFunctionIdentifier&gt;</BrowseName>
           </Object>
         </Children>
@@ -224,101 +224,101 @@
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:AxisType" BaseType="Prefix2:ComponentType">
+  <ObjectType SymbolicName="Prefix5:AxisType" BaseType="Prefix3:ComponentType">
     <Description>The AxisType describes an axis of a motion device.</Description>
     <Children>
-      <Object SymbolicName="Prefix2:ParameterSet" ModellingRule="Mandatory">
+      <Object SymbolicName="Prefix3:ParameterSet" ModellingRule="Mandatory">
         <Children>
-          <Variable SymbolicName="Prefix4:ActualPosition" TypeDefinition="Prefix0:AnalogUnitType" ModellingRule="Mandatory" DataType="Prefix0:Double">
+          <Variable SymbolicName="Prefix5:ActualPosition" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Mandatory" DataType="Prefix1:Double">
             <Description>The axis position inclusive Unit and RangeOfMotion.</Description>
           </Variable>
-          <Variable SymbolicName="Prefix4:ActualSpeed" TypeDefinition="Prefix0:AnalogUnitType" ModellingRule="Optional" DataType="Prefix0:Double">
+          <Variable SymbolicName="Prefix5:ActualSpeed" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double">
             <Description>The axis speed on load side (after gear/spindle) inclusive Unit.</Description>
           </Variable>
-          <Variable SymbolicName="Prefix4:ActualAcceleration" TypeDefinition="Prefix0:AnalogUnitType" ModellingRule="Optional" DataType="Prefix0:Double">
+          <Variable SymbolicName="Prefix5:ActualAcceleration" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double">
             <Description>: The ActualAcceleration variable provides the axis acceleration. Applicable acceleration limits of the axis shall be provided by the EURange property of the AnalogUnitType.</Description>
           </Variable>
         </Children>
       </Object>
-      <Property SymbolicName="Prefix4:MotionProfile" ModellingRule="Mandatory" DataType="Prefix4:AxisMotionProfileEnumeration">
+      <Property SymbolicName="Prefix5:MotionProfile" ModellingRule="Mandatory" DataType="Prefix5:AxisMotionProfileEnumeration">
         <Description>The kind of axis motion as defined with the AxisMotionProfileEnumeration.</Description>
       </Property>
-      <Object SymbolicName="Prefix4:AdditionalLoad" TypeDefinition="Prefix4:LoadType" ModellingRule="Optional">
+      <Object SymbolicName="Prefix5:AdditionalLoad" TypeDefinition="Prefix5:LoadType" ModellingRule="Optional">
         <Description>The additional load which is mounted on this axis. E.g. for process-need a transformer for welding.</Description>
       </Object>
     </Children>
     <References>
       <Reference>
-        <ReferenceType>Prefix4:Requires</ReferenceType>
-        <TargetId>Prefix4:PowerTrainIdentifier</TargetId>
+        <ReferenceType>Prefix5:Requires</ReferenceType>
+        <TargetId>Prefix5:PowerTrainIdentifier</TargetId>
       </Reference>
     </References>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:PowerTrainType" BaseType="Prefix2:ComponentType">
+  <ObjectType SymbolicName="Prefix5:PowerTrainType" BaseType="Prefix3:ComponentType">
     <Description>The PowerTrainType represents instances of power trains of a motion device.</Description>
     <Children>
-      <Object SymbolicName="Prefix4:MotorIdentifier" TypeDefinition="Prefix4:MotorType" ModellingRule="MandatoryPlaceholder">
+      <Object SymbolicName="Prefix5:MotorIdentifier" TypeDefinition="Prefix5:MotorType" ModellingRule="MandatoryPlaceholder">
         <BrowseName>&lt;MotorIdentifier&gt;</BrowseName>
       </Object>
-      <Object SymbolicName="Prefix4:GearIdentifier" TypeDefinition="Prefix4:GearType" ModellingRule="OptionalPlaceholder">
+      <Object SymbolicName="Prefix5:GearIdentifier" TypeDefinition="Prefix5:GearType" ModellingRule="OptionalPlaceholder">
         <BrowseName>&lt;GearIdentifier&gt;</BrowseName>
       </Object>
     </Children>
     <References>
       <Reference>
-        <ReferenceType>Prefix4:Moves</ReferenceType>
-        <TargetId>Prefix4:AxisIdentifier</TargetId>
+        <ReferenceType>Prefix5:Moves</ReferenceType>
+        <TargetId>Prefix5:AxisIdentifier</TargetId>
       </Reference>
       <Reference>
-        <ReferenceType>Prefix4:HasSlave</ReferenceType>
-        <TargetId>Prefix4:PowerTrainIdentifier</TargetId>
+        <ReferenceType>Prefix5:HasSlave</ReferenceType>
+        <TargetId>Prefix5:PowerTrainIdentifier</TargetId>
       </Reference>
     </References>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:LoadType">
+  <ObjectType SymbolicName="Prefix5:LoadType">
     <Description>The LoadType is for describing loads mounted on the motion device typically by an integrator or a customer.</Description>
     <Children>
-      <Variable SymbolicName="Prefix4:Mass" TypeDefinition="Prefix0:AnalogUnitType" ModellingRule="Mandatory" DataType="Prefix0:Double">
+      <Variable SymbolicName="Prefix5:Mass" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Mandatory" DataType="Prefix1:Double">
         <Description>The weight of the load mounted on one mounting point.</Description>
       </Variable>
-      <Variable SymbolicName="Prefix4:CenterOfMass" TypeDefinition="Prefix0:_x0033_DFrameType" ModellingRule="Optional" DataType="Prefix0:_x0033_DFrame">
+      <Variable SymbolicName="Prefix5:CenterOfMass" TypeDefinition="Prefix1:_x0033_DFrameType" ModellingRule="Optional" DataType="Prefix1:_x0033_DFrame">
         <Description>The position and orientation of the center of the mass related to the mounting point using a FrameType. X, Y, Z define the position of the center of gravity relative to the mounting point coordinate system. A, B, C define the orientation of the principal axes of inertia relative to the mounting point coordinate system. Orientation A, B, C can be "0" for systems which do not need these  values.</Description>
       </Variable>
-      <Variable SymbolicName="Prefix4:Inertia" TypeDefinition="Prefix0:_x0033_DVectorType" ModellingRule="Optional" DataType="Prefix0:_x0033_DVector">
+      <Variable SymbolicName="Prefix5:Inertia" TypeDefinition="Prefix1:_x0033_DVectorType" ModellingRule="Optional" DataType="Prefix1:_x0033_DVector">
         <Description>The Inertia uses the VectorType to describe the three values of the principal moments of inertia with respect to the mounting point coordinate system. If inertia values are provided for rotary axis the CenterOfMass shall be completely filled as well.</Description>
       </Variable>
     </Children>
     <ClassName />
   </ObjectType>
-  <ReferenceType SymbolicName="Prefix4:Requires" BaseType="Prefix0:HierarchicalReferences">
+  <ReferenceType SymbolicName="Prefix5:Requires" BaseType="Prefix1:HierarchicalReferences">
     <Description>Reference: Describe the coupling between a power train and axes from the axis point of view. An axis has a Requires reference to all powertrains that need to move such that only this single axis moves.</Description>
     <ClassName />
     <InverseName>IsRequiredBy</InverseName>
   </ReferenceType>
-  <ReferenceType SymbolicName="Prefix4:Moves" BaseType="Prefix0:HierarchicalReferences">
+  <ReferenceType SymbolicName="Prefix5:Moves" BaseType="Prefix1:HierarchicalReferences">
     <Description>Reference: Describe the coupling between a power train and the axes from the power train point of view.</Description>
     <ClassName />
     <InverseName>IsMovedBy</InverseName>
   </ReferenceType>
-  <ReferenceType SymbolicName="Prefix4:HasSlave" BaseType="Prefix0:HierarchicalReferences">
+  <ReferenceType SymbolicName="Prefix5:HasSlave" BaseType="Prefix1:HierarchicalReferences">
     <Description>Reference: Provide the master-slave relationship of power trains which provide torque for a common axis. The InverseName is IsSlaveOf.</Description>
     <ClassName />
     <InverseName>IsSlaveOf</InverseName>
   </ReferenceType>
-  <ObjectType SymbolicName="Prefix4:MotorType" BaseType="Prefix2:ComponentType">
+  <ObjectType SymbolicName="Prefix5:MotorType" BaseType="Prefix3:ComponentType">
     <Description>The MotorType is for representing instances of electric motors.</Description>
     <Children>
-      <Object SymbolicName="Prefix2:ParameterSet" ModellingRule="Mandatory">
+      <Object SymbolicName="Prefix3:ParameterSet" ModellingRule="Mandatory">
         <Children>
-          <Variable SymbolicName="Prefix4:BrakeReleased" ModellingRule="Optional" DataType="Prefix0:Boolean">
+          <Variable SymbolicName="Prefix5:BrakeReleased" ModellingRule="Optional" DataType="Prefix1:Boolean">
             <Description>Indicates an optional variable used only for motors with brakes. If BrakeReleased is TRUE the motor is free to run. FALSE means that the motor shaft is locked by the brake.</Description>
           </Variable>
-          <Variable SymbolicName="Prefix4:MotorTemperature" TypeDefinition="Prefix0:AnalogUnitType" ModellingRule="Mandatory" DataType="Prefix0:Double">
+          <Variable SymbolicName="Prefix5:MotorTemperature" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Mandatory" DataType="Prefix1:Double">
             <Description>The motor temperature provides the temperature of the motor. If there is no temperature sensor the value is set to \"null\".</Description>
           </Variable>
-          <Variable SymbolicName="Prefix4:EffectiveLoadRate" ModellingRule="Optional" DataType="Prefix0:UInt16">
+          <Variable SymbolicName="Prefix5:EffectiveLoadRate" ModellingRule="Optional" DataType="Prefix1:UInt16">
             <Description>EffectiveLoadRate is expressed as a percentage of maximum continuous load. The Joule integral is typically used to calculate the current load. Duration should be defined and documented by the vendor.</Description>
           </Variable>
         </Children>
@@ -326,129 +326,129 @@
     </Children>
     <References>
       <Reference>
-        <ReferenceType>Prefix4:IsConnectedTo</ReferenceType>
-        <TargetId>Prefix4:GearIdentifier</TargetId>
+        <ReferenceType>Prefix5:IsConnectedTo</ReferenceType>
+        <TargetId>Prefix5:GearIdentifier</TargetId>
       </Reference>
       <Reference>
-        <ReferenceType>Prefix4:IsDrivenBy</ReferenceType>
-        <TargetId>Prefix4:DriveIdentifiier</TargetId>
+        <ReferenceType>Prefix5:IsDrivenBy</ReferenceType>
+        <TargetId>Prefix5:DriveIdentifiier</TargetId>
       </Reference>
     </References>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:GearType" BaseType="Prefix2:ComponentType">
+  <ObjectType SymbolicName="Prefix5:GearType" BaseType="Prefix3:ComponentType">
     <Description>The GearType describes a gear in a power train, e.g. a gear box or a spindle.</Description>
     <Children>
-      <Variable SymbolicName="Prefix4:GearRatio" TypeDefinition="Prefix0:RationalNumberType" ModellingRule="Mandatory" DataType="Prefix0:RationalNumber">
+      <Variable SymbolicName="Prefix5:GearRatio" TypeDefinition="Prefix1:RationalNumberType" ModellingRule="Mandatory" DataType="Prefix1:RationalNumber">
         <Description>The transmission ratio of the gear expressed as a fraction as input velocity (motor side) by output velocity (load side).</Description>
       </Variable>
-      <Variable SymbolicName="Prefix4:Pitch" ModellingRule="Optional" DataType="Prefix0:Double">
+      <Variable SymbolicName="Prefix5:Pitch" ModellingRule="Optional" DataType="Prefix1:Double">
         <Description>Pitch describes the distance covered in millimeters (mm) for linear motion per one revolution of the output side of the driving unit. Pitch is used in combination with GearRatio to describe the overall transmission from input to output of the gear.</Description>
       </Variable>
     </Children>
     <References>
       <Reference>
-        <ReferenceType>Prefix4:IsConnectedTo</ReferenceType>
-        <TargetId>Prefix4:MotorIdentifier</TargetId>
+        <ReferenceType>Prefix5:IsConnectedTo</ReferenceType>
+        <TargetId>Prefix5:MotorIdentifier</TargetId>
       </Reference>
     </References>
     <ClassName />
   </ObjectType>
-  <ReferenceType SymbolicName="Prefix4:IsConnectedTo" BaseType="Prefix0:NonHierarchicalReferences" Symmetric="true">
+  <ReferenceType SymbolicName="Prefix5:IsConnectedTo" BaseType="Prefix1:NonHierarchicalReferences" Symmetric="true">
     <Description>Reference: Describe dependencies between objects which are mounted or mechanically linked or connected to each other. The IsConnectedTo reference is symmetric and has no InverseName.</Description>
     <ClassName />
   </ReferenceType>
-  <ReferenceType SymbolicName="Prefix4:IsDrivenBy" BaseType="Prefix0:HierarchicalReferences">
+  <ReferenceType SymbolicName="Prefix5:IsDrivenBy" BaseType="Prefix1:HierarchicalReferences">
     <Description>Reference: Describe dependencies between objects which have a driving or powering character. The BrowseName IsDrivenBy and the InverseName Drives describe semantically the hierarchical dependency.</Description>
     <ClassName />
     <InverseName>Drives</InverseName>
   </ReferenceType>
-  <ObjectType SymbolicName="Prefix4:EmergencyStopFunctionType">
+  <ObjectType SymbolicName="Prefix5:EmergencyStopFunctionType">
     <Description>According to ISO 10218-1:2011 Ch.5.5.2 Emergency stop the robot shall have one or more emergency stop functions.</Description>
     <Children>
-      <Property SymbolicName="Prefix4:Name" ModellingRule="Mandatory" DataType="Prefix0:String">
+      <Property SymbolicName="Prefix5:Name" ModellingRule="Mandatory" DataType="Prefix1:String">
         <Description>The Name of the EmergencyStopFunctionType provides a manufacturer-specific emergency stop function identifier within the safety system.</Description>
       </Property>
-      <Variable SymbolicName="Prefix4:Active" ModellingRule="Mandatory" DataType="Prefix0:Boolean">
+      <Variable SymbolicName="Prefix5:Active" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
         <Description>The Active variable is TRUE if this particular emergency stop function is active, e.g. that the emergency stop button is pressed, FALSE otherwise.</Description>
       </Variable>
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ProtectiveStopFunctionType">
+  <ObjectType SymbolicName="Prefix5:ProtectiveStopFunctionType">
     <Description>According to ISO 10218-1:2011 Ch.5.5.3 the robot shall have one or more protective stop functions designed for the connection of external protective devices.</Description>
     <Children>
-      <Property SymbolicName="Prefix4:Name" ModellingRule="Mandatory" DataType="Prefix0:String">
+      <Property SymbolicName="Prefix5:Name" ModellingRule="Mandatory" DataType="Prefix1:String">
         <Description>The Name of the ProtectiveStopFunctionType provides a manufacturer-specific protective stop function identifier within the safety system.</Description>
       </Property>
-      <Variable SymbolicName="Prefix4:Enabled" ModellingRule="Mandatory" DataType="Prefix0:Boolean">
+      <Variable SymbolicName="Prefix5:Enabled" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
         <Description>–	The Enabled variable is TRUE if this protective stop function is currently supervising the system, FALSE otherwise. A protective stop function may or may not be enabled at all times, e.g. the protective stop function of the safety doors are typically enabled in automatic operational mode and disabled in manual mode. On the other hand for example, the protective stop function of the teach pendant enabling device is enabled in manual modes and disabled in automatic modes.</Description>
       </Variable>
-      <Variable SymbolicName="Prefix4:Active" ModellingRule="Mandatory" DataType="Prefix0:Boolean">
+      <Variable SymbolicName="Prefix5:Active" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
         <Description>–	The Active variable is TRUE if this particular protective stop function is active, i.e. that a stop is initiated, FALSE otherwise. If Enabled is FALSE then Active shall be FALSE.</Description>
       </Variable>
     </Children>
     <ClassName />
   </ObjectType>
-  <ReferenceType SymbolicName="Prefix4:HasSafetyStates" BaseType="Prefix0:HierarchicalReferences">
+  <ReferenceType SymbolicName="Prefix5:HasSafetyStates" BaseType="Prefix1:HierarchicalReferences">
     <Description>Reference: Describe dependencies between objects to show which (controller) object is responsible for the execution of the safety-functionality. The BrowseName HasSafetyStates and the InverseName SafetyStatesOf describe semantically the hierarchical dependency.</Description>
     <ClassName />
     <InverseName>SafetyStatesOf</InverseName>
   </ReferenceType>
-  <ReferenceType SymbolicName="Prefix4:Controls" BaseType="Prefix0:HierarchicalReferences">
+  <ReferenceType SymbolicName="Prefix5:Controls" BaseType="Prefix1:HierarchicalReferences">
     <Description>Reference: Describe dependencies between objects which have a controlling character.</Description>
     <ClassName />
     <InverseName>IsControlledBy</InverseName>
   </ReferenceType>
-  <ObjectType SymbolicName="Prefix4:TaskControlType" BaseType="Prefix2:ComponentType">
+  <ObjectType SymbolicName="Prefix5:TaskControlType" BaseType="Prefix3:ComponentType">
     <Description>Represents a specific task control active on the controller.</Description>
     <Children>
-      <Object SymbolicName="Prefix2:ParameterSet" ModellingRule="Mandatory">
+      <Object SymbolicName="Prefix3:ParameterSet" ModellingRule="Mandatory">
         <Children>
-          <Variable SymbolicName="Prefix4:TaskProgramName" ModellingRule="Mandatory" DataType="Prefix0:String">
+          <Variable SymbolicName="Prefix5:TaskProgramName" ModellingRule="Mandatory" DataType="Prefix1:String">
             <Description>A customer given identifier for the task program.</Description>
           </Variable>
-          <Variable SymbolicName="Prefix4:TaskProgramLoaded" ModellingRule="Mandatory" DataType="Prefix0:Boolean">
+          <Variable SymbolicName="Prefix5:TaskProgramLoaded" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
             <Description>The TaskProgramLoaded variable is TRUE if a task program is loaded in the task control, FALSE otherwise.</Description>
           </Variable>
-          <Variable SymbolicName="Prefix4:ExecutionMode" ModellingRule="Optional" DataType="Prefix4:ExecutionModeEnumeration">
+          <Variable SymbolicName="Prefix5:ExecutionMode" ModellingRule="Optional" DataType="Prefix5:ExecutionModeEnumeration">
             <Description>Execution mode of the task control (continuous or step-wise).</Description>
           </Variable>
         </Children>
       </Object>
-      <Property SymbolicName="Prefix2:ComponentName" ModellingRule="Mandatory">
+      <Property SymbolicName="Prefix3:ComponentName" ModellingRule="Mandatory">
         <Description>A user writeable name provided by the vendor, integrator or user of the device.</Description>
       </Property>
     </Children>
     <References>
       <Reference>
-        <ReferenceType>Prefix4:Controls</ReferenceType>
-        <TargetId>Prefix4:MotionDeviceIdentifier</TargetId>
+        <ReferenceType>Prefix5:Controls</ReferenceType>
+        <TargetId>Prefix5:MotionDeviceIdentifier</TargetId>
       </Reference>
     </References>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:AuxiliaryComponentType" BaseType="Prefix2:DeviceType">
+  <ObjectType SymbolicName="Prefix5:AuxiliaryComponentType" BaseType="Prefix3:DeviceType">
     <Description>Components mounted in a controller cabinet or a motion device e.g. an IO-board or a power supply.</Description>
     <Children>
-      <Property SymbolicName="Prefix2:ProductCode" ModellingRule="Mandatory">
+      <Property SymbolicName="Prefix3:ProductCode" ModellingRule="Mandatory">
         <Description>The ProductCode property provides a unique combination of numbers and letters used to identify the product. It may be the order information displayed on type shields or in ERP systems.</Description>
       </Property>
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:DriveType" BaseType="Prefix2:DeviceType">
+  <ObjectType SymbolicName="Prefix5:DriveType" BaseType="Prefix3:DeviceType">
     <Description>Drives (multi-slot or single-slot axis amplifier) mounted in a controller cabinet or a motion device.</Description>
     <Children>
-      <Property SymbolicName="Prefix2:ProductCode" ModellingRule="Mandatory">
+      <Property SymbolicName="Prefix3:ProductCode" ModellingRule="Mandatory">
         <Description>The ProductCode property provides a unique combination of numbers and letters used to identify the product. It may be the order information displayed on type shields or in ERP systems.</Description>
       </Property>
     </Children>
     <ClassName />
   </ObjectType>
-  <DataType SymbolicName="Prefix4:ExecutionModeEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:ExecutionModeEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="0">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <LocalizedText>
@@ -483,9 +483,9 @@
       </Field>
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:MotionDeviceCategoryEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:MotionDeviceCategoryEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="0">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <LocalizedText>
@@ -552,9 +552,9 @@
       </Field>
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:AxisMotionProfileEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:AxisMotionProfileEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="0">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <LocalizedText>
@@ -605,9 +605,9 @@
       </Field>
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:OperationalModeEnumeration" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:OperationalModeEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumStrings" ModellingRule="Mandatory" DataType="Prefix0:LocalizedText" ValueRank="Array" ArrayDimensions="0">
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <LocalizedText>

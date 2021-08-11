@@ -1,75 +1,75 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
-<ModelDesign xmlns:Prefix2="http://opcfoundation.org/UA/AML/" xmlns:Prefix0="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/AML/" TargetVersion="" TargetPublicationDate="2021-05-26T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<ModelDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix3="http://opcfoundation.org/UA/AML/" TargetNamespace="http://opcfoundation.org/UA/AML/" TargetVersion="" TargetPublicationDate="2021-08-10T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/AML/" XmlNamespace="http://opcfoundation.org/UA/AML/" XmlPrefix="Prefix3" FilePath="" Version="1.00" PublicationDate="22.02.2016">http://opcfoundation.org/UA/AML/</Namespace>
   </Namespaces>
-  <ObjectType SymbolicName="Prefix2:CAEXFileType" BaseType="Prefix2:CAEXBasicObjectType">
+  <ObjectType SymbolicName="Prefix3:CAEXFileType" BaseType="Prefix3:CAEXBasicObjectType">
     <Children>
-      <Object SymbolicName="Prefix2:InstanceHierarchies" TypeDefinition="Prefix0:FolderType" ModellingRule="Mandatory" />
-      <Object SymbolicName="Prefix2:InterfaceClassLibs" TypeDefinition="Prefix0:FolderType" ModellingRule="Mandatory" />
-      <Object SymbolicName="Prefix2:RoleClassLibs" TypeDefinition="Prefix0:FolderType" ModellingRule="Mandatory" />
-      <Object SymbolicName="Prefix2:SystemUnitClassLibs" TypeDefinition="Prefix0:FolderType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix3:InstanceHierarchies" TypeDefinition="Prefix1:FolderType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix3:InterfaceClassLibs" TypeDefinition="Prefix1:FolderType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix3:RoleClassLibs" TypeDefinition="Prefix1:FolderType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix3:SystemUnitClassLibs" TypeDefinition="Prefix1:FolderType" ModellingRule="Mandatory" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix2:CAEXBasicObjectType">
+  <ObjectType SymbolicName="Prefix3:CAEXBasicObjectType">
     <Children>
-      <Property SymbolicName="Prefix2:Version" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix3:Version" ModellingRule="Optional" DataType="Prefix1:String" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix2:CAEXObjectType" BaseType="Prefix2:CAEXBasicObjectType">
+  <ObjectType SymbolicName="Prefix3:CAEXObjectType" BaseType="Prefix3:CAEXBasicObjectType">
     <Children>
-      <Property SymbolicName="Prefix2:ID" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix3:ID" ModellingRule="Optional" DataType="Prefix1:String" />
     </Children>
     <ClassName />
   </ObjectType>
-  <VariableType SymbolicName="Prefix2:AMLOpcUaConnectionType" BaseType="Prefix2:AMLBaseVariableType" DataType="Prefix0:BaseDataType">
+  <VariableType SymbolicName="Prefix3:AMLOpcUaConnectionType" BaseType="Prefix3:AMLBaseVariableType" DataType="Prefix1:BaseDataType">
     <Children>
-      <Variable SymbolicName="Prefix2:VariableNodeId" ModellingRule="Mandatory" DataType="Prefix0:String">
+      <Variable SymbolicName="Prefix3:VariableNodeId" ModellingRule="Mandatory" DataType="Prefix1:String">
         <Description />
       </Variable>
-      <Variable SymbolicName="Prefix2:VariableName" ModellingRule="Optional" DataType="Prefix0:String">
+      <Variable SymbolicName="Prefix3:VariableName" ModellingRule="Optional" DataType="Prefix1:String">
         <Description />
       </Variable>
-      <Variable SymbolicName="Prefix2:ServerAddress" ModellingRule="Mandatory" DataType="Prefix0:String">
+      <Variable SymbolicName="Prefix3:ServerAddress" ModellingRule="Mandatory" DataType="Prefix1:String">
         <Description />
       </Variable>
-      <Variable SymbolicName="Prefix2:ServerAlias" ModellingRule="Optional" DataType="Prefix0:String">
+      <Variable SymbolicName="Prefix3:ServerAlias" ModellingRule="Optional" DataType="Prefix1:String">
         <Description />
       </Variable>
     </Children>
     <ClassName />
   </VariableType>
-  <ObjectType SymbolicName="Prefix2:AutomationMLBaseInterface" BaseType="Prefix2:CAEXObjectType">
+  <ObjectType SymbolicName="Prefix3:AutomationMLBaseInterface" BaseType="Prefix3:CAEXObjectType">
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix2:AutomationMLBaseRole" BaseType="Prefix2:CAEXObjectType">
+  <ObjectType SymbolicName="Prefix3:AutomationMLBaseRole" BaseType="Prefix3:CAEXObjectType">
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix2:AutomationMLBaseSystemUnit" BaseType="Prefix2:CAEXObjectType">
+  <ObjectType SymbolicName="Prefix3:AutomationMLBaseSystemUnit" BaseType="Prefix3:CAEXObjectType">
     <ClassName />
   </ObjectType>
-  <VariableType SymbolicName="Prefix2:AMLBaseVariableType" BaseType="Prefix0:BaseVariableType" DataType="Prefix0:BaseDataType">
+  <VariableType SymbolicName="Prefix3:AMLBaseVariableType" BaseType="Prefix1:BaseVariableType" DataType="Prefix1:BaseDataType">
     <Children>
-      <Property SymbolicName="Prefix2:ID" ModellingRule="Optional" DataType="Prefix0:String" />
-      <Property SymbolicName="Prefix2:Version" ModellingRule="Optional" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix3:ID" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix3:Version" ModellingRule="Optional" DataType="Prefix1:String" />
     </Children>
     <ClassName />
   </VariableType>
-  <ReferenceType SymbolicName="Prefix2:HasAMLRoleReference" BaseType="Prefix0:NonHierarchicalReferences">
+  <ReferenceType SymbolicName="Prefix3:HasAMLRoleReference" BaseType="Prefix1:NonHierarchicalReferences">
     <ClassName />
     <InverseName>IsSupportedRole</InverseName>
   </ReferenceType>
-  <ReferenceType SymbolicName="Prefix2:HasAMLInternalLink" BaseType="Prefix0:NonHierarchicalReferences" Symmetric="true">
+  <ReferenceType SymbolicName="Prefix3:HasAMLInternalLink" BaseType="Prefix1:NonHierarchicalReferences" Symmetric="true">
     <ClassName />
     <InverseName>HasAMLInternalLink</InverseName>
   </ReferenceType>
-  <Object SymbolicName="Prefix2:AutomationMLFiles" TypeDefinition="Prefix0:FolderType" />
-  <Object SymbolicName="Prefix2:AutomationMLInstanceHierarchies" TypeDefinition="Prefix0:FolderType" />
-  <Object SymbolicName="Prefix2:AutomationMLLibraries" TypeDefinition="Prefix0:FolderType">
+  <Object SymbolicName="Prefix3:AutomationMLFiles" TypeDefinition="Prefix1:FolderType" />
+  <Object SymbolicName="Prefix3:AutomationMLInstanceHierarchies" TypeDefinition="Prefix1:FolderType" />
+  <Object SymbolicName="Prefix3:AutomationMLLibraries" TypeDefinition="Prefix1:FolderType">
     <Description>The browse entry point when looking for AutomationML libraries in the server address space.</Description>
   </Object>
 </ModelDesign>

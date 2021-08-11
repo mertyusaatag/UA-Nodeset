@@ -1,360 +1,1150 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
-<ModelDesign xmlns:Prefix2="http://opcfoundation.org/UA/DI/" xmlns:Prefix0="http://opcfoundation.org/UA/" xmlns:Prefix4="http://fdi-cooperation.com/OPCUA/FDI7/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-05-29T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://fdi-cooperation.com/OPCUA/FDI7/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-08-10T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09.03.2021">http://opcfoundation.org/UA/DI/</Namespace>
     <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://fdi-cooperation.com/OPCUA/FDI7/" XmlNamespace="http://fdi-cooperation.com/OPCUA/FDI7/" XmlPrefix="Prefix5" FilePath="" PublicationDate="14.07.2017">http://fdi-cooperation.com/OPCUA/FDI7/</Namespace>
   </Namespaces>
-  <ObjectType SymbolicName="Prefix4:Foundation_H1" BaseType="Prefix2:ProtocolType">
+  <ObjectType SymbolicName="Prefix5:Foundation_H1" BaseType="Prefix3:ProtocolType">
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:Foundation_HSE" BaseType="Prefix2:ProtocolType">
+  <ObjectType SymbolicName="Prefix5:Foundation_HSE" BaseType="Prefix3:ProtocolType">
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:Profibus_DP" BaseType="Prefix2:ProtocolType">
+  <ObjectType SymbolicName="Prefix5:Profibus_DP" BaseType="Prefix3:ProtocolType">
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:Profibus_PA" BaseType="Prefix2:ProtocolType">
+  <ObjectType SymbolicName="Prefix5:Profibus_PA" BaseType="Prefix3:ProtocolType">
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:Profinet_IO" BaseType="Prefix2:ProtocolType">
+  <ObjectType SymbolicName="Prefix5:Profinet_IO" BaseType="Prefix3:ProtocolType">
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:HART" BaseType="Prefix2:ProtocolType">
+  <ObjectType SymbolicName="Prefix5:HART" BaseType="Prefix3:ProtocolType">
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ISA100_Wireless" BaseType="Prefix2:ProtocolType">
+  <ObjectType SymbolicName="Prefix5:ISA100_Wireless" BaseType="Prefix3:ProtocolType">
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:GenericProtocol" BaseType="Prefix2:ProtocolType">
+  <ObjectType SymbolicName="Prefix5:GenericProtocol" BaseType="Prefix3:ProtocolType">
     <Children>
-      <Property SymbolicName="Prefix4:ProtocolIdentifier" ModellingRule="Mandatory" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix5:ProtocolIdentifier" ModellingRule="Mandatory" DataType="Prefix1:String" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ConnectionPoint_Foundation_H1" BaseType="Prefix2:ConnectionPointType">
+  <ObjectType SymbolicName="Prefix5:ConnectionPoint_Foundation_H1" BaseType="Prefix3:ConnectionPointType">
     <Children>
-      <Property SymbolicName="Prefix4:Address" ModellingRule="Mandatory" DataType="Prefix0:Byte" />
-      <Property SymbolicName="Prefix4:OrdinalNumber" ModellingRule="Optional" DataType="Prefix0:Int32" />
-      <Property SymbolicName="Prefix4:SIFConnection" ModellingRule="Optional" DataType="Prefix0:Boolean" />
+      <Property SymbolicName="Prefix5:Address" ModellingRule="Mandatory" DataType="Prefix1:Byte" />
+      <Property SymbolicName="Prefix5:OrdinalNumber" ModellingRule="Optional" DataType="Prefix1:Int32" />
+      <Property SymbolicName="Prefix5:SIFConnection" ModellingRule="Optional" DataType="Prefix1:Boolean" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ConnectionPoint_Foundation_HSE" BaseType="Prefix2:ConnectionPointType">
+  <ObjectType SymbolicName="Prefix5:ConnectionPoint_Foundation_HSE" BaseType="Prefix3:ConnectionPointType">
     <Children>
-      <Property SymbolicName="Prefix4:Address" ModellingRule="Mandatory" DataType="Prefix0:Byte" ValueRank="Array" ArrayDimensions="16" />
-      <Property SymbolicName="Prefix4:OrdinalNumber" ModellingRule="Optional" DataType="Prefix0:Int32" />
+      <Property SymbolicName="Prefix5:Address" ModellingRule="Mandatory" DataType="Prefix1:Byte" ValueRank="Array" ArrayDimensions="16" />
+      <Property SymbolicName="Prefix5:OrdinalNumber" ModellingRule="Optional" DataType="Prefix1:Int32" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ConnectionPoint_Profibus_DP" BaseType="Prefix2:ConnectionPointType">
+  <ObjectType SymbolicName="Prefix5:ConnectionPoint_Profibus_DP" BaseType="Prefix3:ConnectionPointType">
     <Children>
-      <Property SymbolicName="Prefix4:Address" ModellingRule="Mandatory" DataType="Prefix0:Byte" />
+      <Property SymbolicName="Prefix5:Address" ModellingRule="Mandatory" DataType="Prefix1:Byte" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ConnectionPoint_Profinet_IO" BaseType="Prefix2:ConnectionPointType">
+  <ObjectType SymbolicName="Prefix5:ConnectionPoint_Profinet_IO" BaseType="Prefix3:ConnectionPointType">
     <Children>
-      <Property SymbolicName="Prefix4:MAC" ModellingRule="Mandatory" DataType="Prefix0:Byte" ValueRank="Array" ArrayDimensions="16" />
-      <Property SymbolicName="Prefix4:IPv4" ModellingRule="Mandatory" DataType="Prefix0:Byte" ValueRank="Array" ArrayDimensions="4" />
-      <Property SymbolicName="Prefix4:DNSNAME" ModellingRule="Mandatory" DataType="Prefix0:String" />
-      <Property SymbolicName="Prefix4:VALID" ModellingRule="Mandatory" DataType="Prefix0:Boolean" />
+      <Property SymbolicName="Prefix5:MAC" ModellingRule="Mandatory" DataType="Prefix1:Byte" ValueRank="Array" ArrayDimensions="16" />
+      <Property SymbolicName="Prefix5:IPv4" ModellingRule="Mandatory" DataType="Prefix1:Byte" ValueRank="Array" ArrayDimensions="4" />
+      <Property SymbolicName="Prefix5:DNSNAME" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix5:VALID" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ConnectionPoint_HART_TP5" BaseType="Prefix2:ConnectionPointType">
+  <ObjectType SymbolicName="Prefix5:ConnectionPoint_HART_TP5" BaseType="Prefix3:ConnectionPointType">
     <Children>
-      <Property SymbolicName="Prefix4:DevAddr" ModellingRule="Mandatory" DataType="Prefix0:Byte" ValueRank="Array" ArrayDimensions="5" />
-      <Property SymbolicName="Prefix4:DevMfg" ModellingRule="Optional" DataType="Prefix0:UInt16" />
-      <Property SymbolicName="Prefix4:DevType" ModellingRule="Optional" DataType="Prefix0:UInt16" />
-      <Property SymbolicName="Prefix4:DevRev" ModellingRule="Optional" DataType="Prefix0:UInt16" />
-      <Property SymbolicName="Prefix4:DevTag" ModellingRule="Optional" DataType="Prefix0:String" />
-      <Property SymbolicName="Prefix4:DevPollAddr" ModellingRule="Optional" DataType="Prefix0:Byte" />
+      <Property SymbolicName="Prefix5:DevAddr" ModellingRule="Mandatory" DataType="Prefix1:Byte" ValueRank="Array" ArrayDimensions="5" />
+      <Property SymbolicName="Prefix5:DevMfg" ModellingRule="Optional" DataType="Prefix1:UInt16" />
+      <Property SymbolicName="Prefix5:DevType" ModellingRule="Optional" DataType="Prefix1:UInt16" />
+      <Property SymbolicName="Prefix5:DevRev" ModellingRule="Optional" DataType="Prefix1:UInt16" />
+      <Property SymbolicName="Prefix5:DevTag" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix5:DevPollAddr" ModellingRule="Optional" DataType="Prefix1:Byte" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ConnectionPoint_HART_TP6" BaseType="Prefix2:ConnectionPointType">
+  <ObjectType SymbolicName="Prefix5:ConnectionPoint_HART_TP6" BaseType="Prefix3:ConnectionPointType">
     <Children>
-      <Property SymbolicName="Prefix4:DevAddr" ModellingRule="Mandatory" DataType="Prefix0:Byte" ValueRank="Array" ArrayDimensions="5" />
-      <Property SymbolicName="Prefix4:DevMfg" ModellingRule="Optional" DataType="Prefix0:UInt16" />
-      <Property SymbolicName="Prefix4:DevType" ModellingRule="Optional" DataType="Prefix0:UInt16" />
-      <Property SymbolicName="Prefix4:DevRev" ModellingRule="Optional" DataType="Prefix0:UInt16" />
-      <Property SymbolicName="Prefix4:DevTag" ModellingRule="Optional" DataType="Prefix0:String" />
-      <Property SymbolicName="Prefix4:DevPollAddr" ModellingRule="Optional" DataType="Prefix0:Byte" />
+      <Property SymbolicName="Prefix5:DevAddr" ModellingRule="Mandatory" DataType="Prefix1:Byte" ValueRank="Array" ArrayDimensions="5" />
+      <Property SymbolicName="Prefix5:DevMfg" ModellingRule="Optional" DataType="Prefix1:UInt16" />
+      <Property SymbolicName="Prefix5:DevType" ModellingRule="Optional" DataType="Prefix1:UInt16" />
+      <Property SymbolicName="Prefix5:DevRev" ModellingRule="Optional" DataType="Prefix1:UInt16" />
+      <Property SymbolicName="Prefix5:DevTag" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix5:DevPollAddr" ModellingRule="Optional" DataType="Prefix1:Byte" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ConnectionPoint_HART_TP7" BaseType="Prefix2:ConnectionPointType">
+  <ObjectType SymbolicName="Prefix5:ConnectionPoint_HART_TP7" BaseType="Prefix3:ConnectionPointType">
     <Children>
-      <Property SymbolicName="Prefix4:DevAddr" ModellingRule="Mandatory" DataType="Prefix0:Byte" ValueRank="Array" ArrayDimensions="5" />
-      <Property SymbolicName="Prefix4:DevMfg" ModellingRule="Optional" DataType="Prefix0:UInt16" />
-      <Property SymbolicName="Prefix4:DevType" ModellingRule="Optional" DataType="Prefix0:UInt16" />
-      <Property SymbolicName="Prefix4:DevRev" ModellingRule="Optional" DataType="Prefix0:UInt16" />
-      <Property SymbolicName="Prefix4:DevTag" ModellingRule="Optional" DataType="Prefix0:String" />
-      <Property SymbolicName="Prefix4:DevPollAddr" ModellingRule="Optional" DataType="Prefix0:Byte" />
+      <Property SymbolicName="Prefix5:DevAddr" ModellingRule="Mandatory" DataType="Prefix1:Byte" ValueRank="Array" ArrayDimensions="5" />
+      <Property SymbolicName="Prefix5:DevMfg" ModellingRule="Optional" DataType="Prefix1:UInt16" />
+      <Property SymbolicName="Prefix5:DevType" ModellingRule="Optional" DataType="Prefix1:UInt16" />
+      <Property SymbolicName="Prefix5:DevRev" ModellingRule="Optional" DataType="Prefix1:UInt16" />
+      <Property SymbolicName="Prefix5:DevTag" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix5:DevPollAddr" ModellingRule="Optional" DataType="Prefix1:Byte" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ConnectionPoint_ISA100_Wireless" BaseType="Prefix2:ConnectionPointType">
+  <ObjectType SymbolicName="Prefix5:ConnectionPoint_ISA100_Wireless" BaseType="Prefix3:ConnectionPointType">
     <Children>
-      <Property SymbolicName="Prefix4:IPAddress" ModellingRule="Mandatory" DataType="Prefix0:ByteString" />
-      <Property SymbolicName="Prefix4:DevMfg" ModellingRule="Optional" DataType="Prefix0:UInt32" />
-      <Property SymbolicName="Prefix4:DevType" ModellingRule="Optional" DataType="Prefix0:UInt16" />
-      <Property SymbolicName="Prefix4:DevRev" ModellingRule="Optional" DataType="Prefix0:UInt16" />
-      <Property SymbolicName="Prefix4:DevTag" ModellingRule="Optional" DataType="Prefix0:String" />
-      <Property SymbolicName="Prefix4:DevPollAddr" ModellingRule="Optional" DataType="Prefix0:Byte" />
+      <Property SymbolicName="Prefix5:IPAddress" ModellingRule="Mandatory" DataType="Prefix1:ByteString" />
+      <Property SymbolicName="Prefix5:DevMfg" ModellingRule="Optional" DataType="Prefix1:UInt32" />
+      <Property SymbolicName="Prefix5:DevType" ModellingRule="Optional" DataType="Prefix1:UInt16" />
+      <Property SymbolicName="Prefix5:DevRev" ModellingRule="Optional" DataType="Prefix1:UInt16" />
+      <Property SymbolicName="Prefix5:DevTag" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix5:DevPollAddr" ModellingRule="Optional" DataType="Prefix1:Byte" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:GenericConnectionPoint" BaseType="Prefix2:ConnectionPointType">
+  <ObjectType SymbolicName="Prefix5:GenericConnectionPoint" BaseType="Prefix3:ConnectionPointType">
     <Children>
-      <Property SymbolicName="Prefix4:Address" ModellingRule="Mandatory" DataType="Prefix0:ByteString" />
-      <Property SymbolicName="Prefix4:ProtocolIdentifier" ModellingRule="Mandatory" DataType="Prefix0:String" />
+      <Property SymbolicName="Prefix5:Address" ModellingRule="Mandatory" DataType="Prefix1:ByteString" />
+      <Property SymbolicName="Prefix5:ProtocolIdentifier" ModellingRule="Mandatory" DataType="Prefix1:String" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:CommunicationServerType" BaseType="Prefix2:DeviceType">
+  <ObjectType SymbolicName="Prefix5:CommunicationServerType" BaseType="Prefix3:DeviceType">
     <Children>
-      <Object SymbolicName="Prefix2:ParameterSet" />
-      <Object SymbolicName="Prefix2:MethodSet" ModellingRule="Mandatory">
+      <Object SymbolicName="Prefix3:ParameterSet" />
+      <Object SymbolicName="Prefix3:MethodSet" ModellingRule="Mandatory">
         <Children>
-          <Method SymbolicName="Prefix4:Initialize" ModellingRule="Mandatory">
-            <OutputArguments>
-              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
-            </OutputArguments>
+          <Method SymbolicName="Prefix5:Initialize" ModellingRule="Mandatory">
+            <Children>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ServiceError</Name>
+              <DataType>
+                <Identifier>i=27</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
-          <Method SymbolicName="Prefix4:Reset" ModellingRule="Mandatory">
-            <OutputArguments>
-              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
-            </OutputArguments>
+          <Method SymbolicName="Prefix5:Reset" ModellingRule="Mandatory">
+            <Children>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ServiceError</Name>
+              <DataType>
+                <Identifier>i=27</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
-          <Method SymbolicName="Prefix4:AddComponent" ModellingRule="Optional">
-            <InputArguments>
-              <Argument Name="ModuleTypeName" DataType="Prefix0:String" />
-              <Argument Name="InstanceName" DataType="Prefix0:String" />
-              <Argument Name="InstanceLabel" DataType="Prefix0:String" />
-            </InputArguments>
-            <OutputArguments>
-              <Argument Name="InstanceNodeId" DataType="Prefix0:NodeId" />
-              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
-            </OutputArguments>
+          <Method SymbolicName="Prefix5:AddComponent" ModellingRule="Optional">
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ModuleTypeName</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>InstanceName</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>InstanceLabel</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>InstanceNodeId</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ServiceError</Name>
+              <DataType>
+                <Identifier>i=27</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
-          <Method SymbolicName="Prefix4:RemoveComponent" ModellingRule="Optional">
-            <InputArguments>
-              <Argument Name="ModuleNodeId" DataType="Prefix0:NodeId" />
-            </InputArguments>
-            <OutputArguments>
-              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
-            </OutputArguments>
+          <Method SymbolicName="Prefix5:RemoveComponent" ModellingRule="Optional">
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ModuleNodeId</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ServiceError</Name>
+              <DataType>
+                <Identifier>i=27</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
         </Children>
       </Object>
-      <Object SymbolicName="Prefix4:SubDevices" TypeDefinition="Prefix0:FolderType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix5:SubDevices" TypeDefinition="Prefix1:FolderType" ModellingRule="Mandatory" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ServerCommunicationDeviceType" BaseType="Prefix2:DeviceType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix5:ServerCommunicationDeviceType" BaseType="Prefix3:DeviceType" IsAbstract="true">
     <Children>
-      <Object SymbolicName="Prefix2:MethodSet">
+      <Object SymbolicName="Prefix3:MethodSet">
         <Children>
-          <Method SymbolicName="Prefix4:Scan" ModellingRule="Optional">
-            <OutputArguments>
-              <Argument Name="TopologyScanResult" DataType="Prefix0:XmlElement" />
-              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
-            </OutputArguments>
+          <Method SymbolicName="Prefix5:Scan" ModellingRule="Optional">
+            <Children>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>TopologyScanResult</Name>
+              <DataType>
+                <Identifier>i=16</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ServiceError</Name>
+              <DataType>
+                <Identifier>i=27</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
-          <Method SymbolicName="Prefix4:ResetScan" ModellingRule="Optional">
-            <OutputArguments>
-              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
-            </OutputArguments>
+          <Method SymbolicName="Prefix5:ResetScan" ModellingRule="Optional">
+            <Children>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ServiceError</Name>
+              <DataType>
+                <Identifier>i=27</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
-          <Method SymbolicName="Prefix4:AddComponent" ModellingRule="Optional">
-            <InputArguments>
-              <Argument Name="ModuleTypeName" DataType="Prefix0:String" />
-              <Argument Name="InstanceName" DataType="Prefix0:String" />
-              <Argument Name="InstanceLabel" DataType="Prefix0:String" />
-            </InputArguments>
-            <OutputArguments>
-              <Argument Name="InstanceNodeId" DataType="Prefix0:NodeId" />
-              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
-            </OutputArguments>
+          <Method SymbolicName="Prefix5:AddComponent" ModellingRule="Optional">
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ModuleTypeName</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>InstanceName</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>InstanceLabel</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>InstanceNodeId</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ServiceError</Name>
+              <DataType>
+                <Identifier>i=27</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
-          <Method SymbolicName="Prefix4:RemoveComponent" ModellingRule="Optional">
-            <InputArguments>
-              <Argument Name="ModuleNodeId" DataType="Prefix0:NodeId" />
-            </InputArguments>
-            <OutputArguments>
-              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
-            </OutputArguments>
+          <Method SymbolicName="Prefix5:RemoveComponent" ModellingRule="Optional">
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ModuleNodeId</Name>
+              <DataType>
+                <Identifier>i=17</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ServiceError</Name>
+              <DataType>
+                <Identifier>i=27</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
         </Children>
       </Object>
-      <Property SymbolicName="Prefix4:ListOfCommunicationProfiles" ModellingRule="Mandatory" DataType="Prefix0:String" ValueRank="Array" ArrayDimensions="0" />
+      <Property SymbolicName="Prefix5:ListOfCommunicationProfiles" ModellingRule="Mandatory" DataType="Prefix1:String" ValueRank="Array" ArrayDimensions="0" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ServerCommunicationFFH1DeviceType" BaseType="Prefix4:ServerCommunicationDeviceType">
+  <ObjectType SymbolicName="Prefix5:ServerCommunicationFFH1DeviceType" BaseType="Prefix5:ServerCommunicationDeviceType">
     <Children>
-      <Object SymbolicName="Prefix2:MethodSet" ModellingRule="Optional">
+      <Object SymbolicName="Prefix3:MethodSet" ModellingRule="Optional">
         <Description>Flat list of Methods</Description>
         <Children>
-          <Method SymbolicName="Prefix4:SetAddress" ModellingRule="Optional">
-            <InputArguments>
-              <Argument Name="OPERATION" DataType="Prefix0:String" />
-              <Argument Name="LinkId" DataType="Prefix0:UInt16" />
-              <Argument Name="OldAddress" DataType="Prefix0:Byte" />
-              <Argument Name="NewAddress" DataType="Prefix0:Byte" />
-              <Argument Name="NewPDTag" DataType="Prefix0:String" />
-              <Argument Name="ServiceId" DataType="Prefix0:UInt32" />
-            </InputArguments>
-            <OutputArguments>
-              <Argument Name="DelayForNextCall" DataType="Prefix0:UInt32" />
-              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
-            </OutputArguments>
+          <Method SymbolicName="Prefix5:SetAddress" ModellingRule="Optional">
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>OPERATION</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>LinkId</Name>
+              <DataType>
+                <Identifier>i=5</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>OldAddress</Name>
+              <DataType>
+                <Identifier>i=3</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>NewAddress</Name>
+              <DataType>
+                <Identifier>i=3</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>NewPDTag</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ServiceId</Name>
+              <DataType>
+                <Identifier>i=7</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>DelayForNextCall</Name>
+              <DataType>
+                <Identifier>i=7</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ServiceError</Name>
+              <DataType>
+                <Identifier>i=27</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
         </Children>
       </Object>
-      <Object SymbolicName="Prefix4:ServiceProvider" TypeDefinition="Prefix4:ServerCommunicationFFH1ServiceType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix5:ServiceProvider" TypeDefinition="Prefix5:ServerCommunicationFFH1ServiceType" ModellingRule="Mandatory" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ServerCommunicationFFH1ServiceType" BaseType="Prefix4:ServerCommunicationServiceType">
+  <ObjectType SymbolicName="Prefix5:ServerCommunicationFFH1ServiceType" BaseType="Prefix5:ServerCommunicationServiceType">
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ServerCommunicationFFHSEDeviceType" BaseType="Prefix4:ServerCommunicationDeviceType">
+  <ObjectType SymbolicName="Prefix5:ServerCommunicationFFHSEDeviceType" BaseType="Prefix5:ServerCommunicationDeviceType">
     <Children>
-      <Object SymbolicName="Prefix2:MethodSet" ModellingRule="Optional">
+      <Object SymbolicName="Prefix3:MethodSet" ModellingRule="Optional">
         <Description>Flat list of Methods</Description>
         <Children>
-          <Method SymbolicName="Prefix4:SetAddress" ModellingRule="Optional">
-            <InputArguments>
-              <Argument Name="OPERATION" DataType="Prefix0:String" />
-              <Argument Name="NewPDTag" DataType="Prefix0:String" />
-              <Argument Name="ServiceId" DataType="Prefix0:UInt32" />
-            </InputArguments>
-            <OutputArguments>
-              <Argument Name="DelayForNextCall" DataType="Prefix0:UInt32" />
-              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
-            </OutputArguments>
+          <Method SymbolicName="Prefix5:SetAddress" ModellingRule="Optional">
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>OPERATION</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>NewPDTag</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ServiceId</Name>
+              <DataType>
+                <Identifier>i=7</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>DelayForNextCall</Name>
+              <DataType>
+                <Identifier>i=7</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ServiceError</Name>
+              <DataType>
+                <Identifier>i=27</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
         </Children>
       </Object>
-      <Object SymbolicName="Prefix4:ServiceProvider" TypeDefinition="Prefix4:ServerCommunicationFFHSEServiceType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix5:ServiceProvider" TypeDefinition="Prefix5:ServerCommunicationFFHSEServiceType" ModellingRule="Mandatory" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ServerCommunicationFFHSEServiceType" BaseType="Prefix4:ServerCommunicationServiceType">
+  <ObjectType SymbolicName="Prefix5:ServerCommunicationFFHSEServiceType" BaseType="Prefix5:ServerCommunicationServiceType">
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ServerCommunicationPROFIBUSDeviceType" BaseType="Prefix4:ServerCommunicationDeviceType">
+  <ObjectType SymbolicName="Prefix5:ServerCommunicationPROFIBUSDeviceType" BaseType="Prefix5:ServerCommunicationDeviceType">
     <Children>
-      <Object SymbolicName="Prefix2:MethodSet" ModellingRule="Optional">
+      <Object SymbolicName="Prefix3:MethodSet" ModellingRule="Optional">
         <Description>Flat list of Methods</Description>
         <Children>
-          <Method SymbolicName="Prefix4:SetAddress" ModellingRule="Optional">
-            <InputArguments>
-              <Argument Name="OldAddress" DataType="Prefix0:Byte" />
-              <Argument Name="NewAddress" DataType="Prefix0:Byte" />
-            </InputArguments>
-            <OutputArguments>
-              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
-            </OutputArguments>
+          <Method SymbolicName="Prefix5:SetAddress" ModellingRule="Optional">
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>OldAddress</Name>
+              <DataType>
+                <Identifier>i=3</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>NewAddress</Name>
+              <DataType>
+                <Identifier>i=3</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ServiceError</Name>
+              <DataType>
+                <Identifier>i=27</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
         </Children>
       </Object>
-      <Object SymbolicName="Prefix4:ServiceProvider" TypeDefinition="Prefix4:ServerCommunicationPROFIBUSServiceType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix5:ServiceProvider" TypeDefinition="Prefix5:ServerCommunicationPROFIBUSServiceType" ModellingRule="Mandatory" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ServerCommunicationPROFIBUSServiceType" BaseType="Prefix4:ServerCommunicationServiceType">
+  <ObjectType SymbolicName="Prefix5:ServerCommunicationPROFIBUSServiceType" BaseType="Prefix5:ServerCommunicationServiceType">
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ServerCommunicationPROFINETDeviceType" BaseType="Prefix4:ServerCommunicationDeviceType">
+  <ObjectType SymbolicName="Prefix5:ServerCommunicationPROFINETDeviceType" BaseType="Prefix5:ServerCommunicationDeviceType">
     <Children>
-      <Object SymbolicName="Prefix2:MethodSet" ModellingRule="Optional">
+      <Object SymbolicName="Prefix3:MethodSet" ModellingRule="Optional">
         <Description>Flat list of Methods</Description>
         <Children>
-          <Method SymbolicName="Prefix4:SetAddress" ModellingRule="Optional">
-            <InputArguments>
-              <Argument Name="MAC" DataType="Prefix0:Byte" ValueRank="Array" />
-              <Argument Name="IP" DataType="Prefix0:Byte" ValueRank="Array" />
-              <Argument Name="DNSNAME" DataType="Prefix0:String" />
-              <Argument Name="SubnetMask" DataType="Prefix0:Byte" ValueRank="Array" />
-              <Argument Name="Gateway" DataType="Prefix0:Byte" ValueRank="Array" />
-            </InputArguments>
-            <OutputArguments>
-              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
-            </OutputArguments>
+          <Method SymbolicName="Prefix5:SetAddress" ModellingRule="Optional">
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>MAC</Name>
+              <DataType>
+                <Identifier>i=3</Identifier>
+              </DataType>
+              <ValueRank>1</ValueRank>
+              <ArrayDimensions>
+                <UInt32>6</UInt32>
+              </ArrayDimensions>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>IP</Name>
+              <DataType>
+                <Identifier>i=3</Identifier>
+              </DataType>
+              <ValueRank>1</ValueRank>
+              <ArrayDimensions>
+                <UInt32>4</UInt32>
+              </ArrayDimensions>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>DNSNAME</Name>
+              <DataType>
+                <Identifier>i=12</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>SubnetMask</Name>
+              <DataType>
+                <Identifier>i=3</Identifier>
+              </DataType>
+              <ValueRank>1</ValueRank>
+              <ArrayDimensions>
+                <UInt32>4</UInt32>
+              </ArrayDimensions>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>Gateway</Name>
+              <DataType>
+                <Identifier>i=3</Identifier>
+              </DataType>
+              <ValueRank>1</ValueRank>
+              <ArrayDimensions>
+                <UInt32>4</UInt32>
+              </ArrayDimensions>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ServiceError</Name>
+              <DataType>
+                <Identifier>i=27</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
         </Children>
       </Object>
-      <Object SymbolicName="Prefix4:ServiceProvider" TypeDefinition="Prefix4:ServerCommunicationPROFINETServiceType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix5:ServiceProvider" TypeDefinition="Prefix5:ServerCommunicationPROFINETServiceType" ModellingRule="Mandatory" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ServerCommunicationPROFINETServiceType" BaseType="Prefix4:ServerCommunicationServiceType">
+  <ObjectType SymbolicName="Prefix5:ServerCommunicationPROFINETServiceType" BaseType="Prefix5:ServerCommunicationServiceType">
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ServerCommunicationHARType" BaseType="Prefix4:ServerCommunicationDeviceType">
+  <ObjectType SymbolicName="Prefix5:ServerCommunicationHARType" BaseType="Prefix5:ServerCommunicationDeviceType">
     <Children>
-      <Object SymbolicName="Prefix2:MethodSet" ModellingRule="Optional">
+      <Object SymbolicName="Prefix3:MethodSet" ModellingRule="Optional">
         <Description>Flat list of Methods</Description>
         <Children>
-          <Method SymbolicName="Prefix4:SetAddress" ModellingRule="Optional">
-            <InputArguments>
-              <Argument Name="OldPollAddress" DataType="Prefix0:Byte" />
-              <Argument Name="NewPollAddress" DataType="Prefix0:Byte" />
-            </InputArguments>
-            <OutputArguments>
-              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
-            </OutputArguments>
+          <Method SymbolicName="Prefix5:SetAddress" ModellingRule="Optional">
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>OldPollAddress</Name>
+              <DataType>
+                <Identifier>i=3</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>NewPollAddress</Name>
+              <DataType>
+                <Identifier>i=3</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ServiceError</Name>
+              <DataType>
+                <Identifier>i=27</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
         </Children>
       </Object>
-      <Object SymbolicName="Prefix4:ServiceProvider" TypeDefinition="Prefix4:ServerCommunicationHARTServiceType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix5:ServiceProvider" TypeDefinition="Prefix5:ServerCommunicationHARTServiceType" ModellingRule="Mandatory" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ServerCommunicationHARTServiceType" BaseType="Prefix4:ServerCommunicationServiceType">
+  <ObjectType SymbolicName="Prefix5:ServerCommunicationHARTServiceType" BaseType="Prefix5:ServerCommunicationServiceType">
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ServerCommunicationISA100_WirelessDeviceType" BaseType="Prefix4:ServerCommunicationDeviceType">
+  <ObjectType SymbolicName="Prefix5:ServerCommunicationISA100_WirelessDeviceType" BaseType="Prefix5:ServerCommunicationDeviceType">
     <Children>
-      <Object SymbolicName="Prefix4:ServiceProvider" TypeDefinition="Prefix4:ServerCommunicationISA100_WirelessServiceType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix5:ServiceProvider" TypeDefinition="Prefix5:ServerCommunicationISA100_WirelessServiceType" ModellingRule="Mandatory" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ServerCommunicationISA100_WirelessServiceType" BaseType="Prefix4:ServerCommunicationServiceType">
+  <ObjectType SymbolicName="Prefix5:ServerCommunicationISA100_WirelessServiceType" BaseType="Prefix5:ServerCommunicationServiceType">
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ServerCommunicationGENERICDeviceType" BaseType="Prefix4:ServerCommunicationDeviceType">
+  <ObjectType SymbolicName="Prefix5:ServerCommunicationGENERICDeviceType" BaseType="Prefix5:ServerCommunicationDeviceType">
     <Children>
-      <Object SymbolicName="Prefix2:MethodSet" ModellingRule="Optional">
+      <Object SymbolicName="Prefix3:MethodSet" ModellingRule="Optional">
         <Description>Flat list of Methods</Description>
         <Children>
-          <Method SymbolicName="Prefix4:SetAddress" ModellingRule="Optional">
-            <InputArguments>
-              <Argument Name="OldAddress" DataType="Prefix0:ByteString" />
-              <Argument Name="NewAddress" DataType="Prefix0:ByteString" />
-            </InputArguments>
-            <OutputArguments>
-              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
-            </OutputArguments>
+          <Method SymbolicName="Prefix5:SetAddress" ModellingRule="Optional">
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>OldAddress</Name>
+              <DataType>
+                <Identifier>i=15</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>NewAddress</Name>
+              <DataType>
+                <Identifier>i=15</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ServiceError</Name>
+              <DataType>
+                <Identifier>i=27</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
         </Children>
       </Object>
-      <Property SymbolicName="Prefix4:ProtocolIdentifier" ModellingRule="Mandatory" DataType="Prefix0:String" />
-      <Object SymbolicName="Prefix4:ServiceProvider" TypeDefinition="Prefix4:ServerCommunicationGENERICServiceType" ModellingRule="Mandatory" />
+      <Property SymbolicName="Prefix5:ProtocolIdentifier" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Object SymbolicName="Prefix5:ServiceProvider" TypeDefinition="Prefix5:ServerCommunicationGENERICServiceType" ModellingRule="Mandatory" />
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix4:ServerCommunicationGENERICServiceType" BaseType="Prefix4:ServerCommunicationServiceType">
+  <ObjectType SymbolicName="Prefix5:ServerCommunicationGENERICServiceType" BaseType="Prefix5:ServerCommunicationServiceType">
     <ClassName />
   </ObjectType>
-  <DataType SymbolicName="Prefix4:EddDataTypeEnum" BaseType="Prefix0:Enumeration">
+  <DataType SymbolicName="Prefix5:EddDataTypeEnum" BaseType="Prefix1:Enumeration">
     <Children>
-      <Property SymbolicName="Prefix0:EnumValues" ModellingRule="Mandatory" DataType="Prefix0:EnumValueType" ValueRank="Array" ArrayDimensions="0">
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <ExtensionObject>
@@ -669,24 +1459,62 @@
       <Field Name="VISIBLE" Identifier="19" BitMask="" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix4:EddDataTypeInfo" BaseType="Prefix0:Structure">
+  <DataType SymbolicName="Prefix5:EddDataTypeInfo" BaseType="Prefix1:Structure">
     <ClassName />
     <Fields>
-      <Field Name="EddDataType" BitMask="" DataType="Prefix4:EddDataTypeEnum" ArrayDimensions="" />
-      <Field Name="Size" BitMask="" DataType="Prefix0:UInt32" ArrayDimensions="" />
+      <Field Name="EddDataType" BitMask="" DataType="Prefix5:EddDataTypeEnum" ArrayDimensions="" />
+      <Field Name="Size" BitMask="" DataType="Prefix1:UInt32" ArrayDimensions="" />
     </Fields>
   </DataType>
-  <ObjectType SymbolicName="Prefix4:ServerCommunicationServiceType" BaseType="Prefix2:DeviceType" IsAbstract="true">
+  <ObjectType SymbolicName="Prefix5:ServerCommunicationServiceType" BaseType="Prefix3:DeviceType" IsAbstract="true">
     <Children>
-      <Object SymbolicName="Prefix2:MethodSet" ModellingRule="Mandatory">
+      <Object SymbolicName="Prefix3:MethodSet" ModellingRule="Mandatory">
         <Children>
-          <Method SymbolicName="Prefix4:Disconnect" ModellingRule="Mandatory">
-            <InputArguments>
-              <Argument Name="CommunicationRelationId" DataType="Prefix0:ByteString" />
-            </InputArguments>
-            <OutputArguments>
-              <Argument Name="ServiceError" DataType="Prefix0:Integer" />
-            </OutputArguments>
+          <Method SymbolicName="Prefix5:Disconnect" ModellingRule="Mandatory">
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>CommunicationRelationId</Name>
+              <DataType>
+                <Identifier>i=15</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ServiceError</Name>
+              <DataType>
+                <Identifier>i=27</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
           </Method>
         </Children>
       </Object>

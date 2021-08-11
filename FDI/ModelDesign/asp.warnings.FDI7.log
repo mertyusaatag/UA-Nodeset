@@ -1,7 +1,7 @@
-"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.3.2.23344";;;;"2021-05-29T10:56:42.4393457Z";;
-"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2021 Mariusz Postol";;;;"2021-05-29T10:56:42.4393457Z";;
-"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.Di.NodeSet2.xml";;;;"2021-05-29T10:57:49.8403989Z";;
-"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.FDI7.NodeSet2.xml";;;;"2021-05-29T10:58:05.3543036Z";;
-"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://fdi-cooperation.com/OPCUA/FDI7/ namespace.";;;;"2021-05-29T10:58:22.7983282Z";;
-"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 36 nodes and no errors/warnings reported";;;;"2021-05-29T10:58:23.0088507Z";;
-"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file Opc.Ua.FDI7.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2021-05-29T10:58:23.1648544Z";;
+"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.4.6.30717";;;;"2021-08-10T21:27:03.3016100Z";;
+"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2021 Mariusz Postol";;;;"2021-08-10T21:27:03.3016100Z";;
+"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.Di.NodeSet2.xml";;;;"2021-08-10T21:27:32.8225591Z";;
+"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.FDI7.NodeSet2.xml";;;;"2021-08-10T21:27:39.4895639Z";;
+"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://fdi-cooperation.com/OPCUA/FDI7/ namespace.";;;;"2021-08-10T21:27:47.8293433Z";;
+"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 36 nodes and no errors/warnings reported";;;;"2021-08-10T21:27:47.9672488Z";;
+"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file Opc.Ua.FDI7.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2021-08-10T21:27:48.1074700Z";;

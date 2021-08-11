@@ -1,7 +1,7 @@
-"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.3.2.23344";;;;"2021-05-26T15:06:44.1976830Z";;
-"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2021 Mariusz Postol";;;;"2021-05-26T15:06:44.1986892Z";;
-"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.AMLBaseTypes.NodeSet2.xml";;;;"2021-05-26T15:07:47.3503269Z";;
-"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.AMLLibraries.NodeSet2.xml";;;;"2021-05-26T15:07:48.0679183Z";;
-"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/AMLLibs/ namespace.";;;;"2021-05-26T15:07:54.8626122Z";;
-"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 95 nodes and no errors/warnings reported";;;;"2021-05-26T15:07:55.0938880Z";;
-"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file Opc.Ua.AMLLibraries.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2021-05-26T15:07:55.2475796Z";;
+"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.4.6.30717";;;;"2021-08-10T21:47:18.5836270Z";;
+"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2021 Mariusz Postol";;;;"2021-08-10T21:47:18.5836270Z";;
+"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.AMLBaseTypes.NodeSet2.xml";;;;"2021-08-10T21:47:48.0488792Z";;
+"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.AMLLibraries.NodeSet2.xml";;;;"2021-08-10T21:47:48.3773521Z";;
+"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/AMLLibs/ namespace.";;;;"2021-08-10T21:47:51.5277587Z";;
+"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 95 nodes and no errors/warnings reported";;;;"2021-08-10T21:47:51.7177210Z";;
+"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file Opc.Ua.AMLLibraries.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2021-08-10T21:47:51.8557222Z";;
