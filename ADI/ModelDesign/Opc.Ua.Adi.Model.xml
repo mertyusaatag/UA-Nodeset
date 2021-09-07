@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
-<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/ADI/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-08-10T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<ModelDesign xmlns:Prefix5="http://opcfoundation.org/UA/ADI/" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-08-10T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09.03.2021">http://opcfoundation.org/UA/DI/</Namespace>
@@ -25,21 +24,21 @@
               <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                 <DefaultValue>
                   <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ConfigData</Name>
-              <DataType>
-                <Identifier>i=15</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ConfigData
+              
+                i=15
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
                 </DefaultValue>
               </Property>
@@ -50,42 +49,42 @@
               <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                 <DefaultValue>
                   <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ConfigData</Name>
-              <DataType>
-                <Identifier>i=15</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ConfigData
+              
+                i=15
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
                 </DefaultValue>
               </Property>
               <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                 <DefaultValue>
                   <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ConfigDataDigest</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ConfigDataDigest
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
                 </DefaultValue>
               </Property>
@@ -96,21 +95,21 @@
               <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                 <DefaultValue>
                   <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ConfigDataDigest</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ConfigDataDigest
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
                 </DefaultValue>
               </Property>
@@ -121,42 +120,42 @@
               <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                 <DefaultValue>
                   <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ConfigDataDigest</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ConfigDataDigest
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
                 </DefaultValue>
               </Property>
               <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                 <DefaultValue>
                   <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>IsEqual</Name>
-              <DataType>
-                <Identifier>i=1</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              IsEqual
+              
+                i=1
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
                 </DefaultValue>
               </Property>
@@ -376,51 +375,51 @@
               <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                 <DefaultValue>
                   <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ExecutionCycle</Name>
-              <DataType>
-                <Identifier>ns=1;i=9378</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ExecutionCycleSubcode</Name>
-              <DataType>
-                <Identifier>i=7</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>SelectedStream</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ExecutionCycle
+              
+                ns=1;i=9378
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ExecutionCycleSubcode
+              
+                i=7
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              SelectedStream
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
                 </DefaultValue>
               </Property>
@@ -2958,226 +2957,226 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=7616</Identifier>
-          </TypeId>
-          <Body>
-            <EnumValueType>
-              <Value>0</Value>
-              <DisplayName>
-                <Locale>
-                </Locale>
-                <Text>IDLE</Text>
-              </DisplayName>
-              <Description>
-                <Locale>
-                </Locale>
-                <Text>Idle, no cleaning or acquisition cycle in progress</Text>
-              </Description>
-            </EnumValueType>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=7616</Identifier>
-          </TypeId>
-          <Body>
-            <EnumValueType>
-              <Value>1</Value>
-              <DisplayName>
-                <Locale>
-                </Locale>
-                <Text>DIAGNOSTIC</Text>
-              </DisplayName>
-              <Description>
-                <Locale>
-                </Locale>
-                <Text>Scquisition cycle collecting data for diagnostic purpose</Text>
-              </Description>
-            </EnumValueType>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=7616</Identifier>
-          </TypeId>
-          <Body>
-            <EnumValueType>
-              <Value>2</Value>
-              <DisplayName>
-                <Locale>
-                </Locale>
-                <Text>CLEANING</Text>
-              </DisplayName>
-              <Description>
-                <Locale>
-                </Locale>
-                <Text>Cleaning cycle</Text>
-              </Description>
-            </EnumValueType>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=7616</Identifier>
-          </TypeId>
-          <Body>
-            <EnumValueType>
-              <Value>4</Value>
-              <DisplayName>
-                <Locale>
-                </Locale>
-                <Text>CALIBRATION</Text>
-              </DisplayName>
-              <Description>
-                <Locale>
-                </Locale>
-                <Text>Calibration acquisition cycle</Text>
-              </Description>
-            </EnumValueType>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=7616</Identifier>
-          </TypeId>
-          <Body>
-            <EnumValueType>
-              <Value>8</Value>
-              <DisplayName>
-                <Locale>
-                </Locale>
-                <Text>VALIDATION</Text>
-              </DisplayName>
-              <Description>
-                <Locale>
-                </Locale>
-                <Text>Validation acquisition cycle</Text>
-              </Description>
-            </EnumValueType>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=7616</Identifier>
-          </TypeId>
-          <Body>
-            <EnumValueType>
-              <Value>16</Value>
-              <DisplayName>
-                <Locale>
-                </Locale>
-                <Text>SAMPLING</Text>
-              </DisplayName>
-              <Description>
-                <Locale>
-                </Locale>
-                <Text>Sample acquisition cycle</Text>
-              </Description>
-            </EnumValueType>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=7616</Identifier>
-          </TypeId>
-          <Body>
-            <EnumValueType>
-              <Value>32769</Value>
-              <DisplayName>
-                <Locale>
-                </Locale>
-                <Text>DIAGNOSTIC_WITH_GRAB_SAMPLE</Text>
-              </DisplayName>
-              <Description>
-                <Locale>
-                </Locale>
-                <Text>Scquisition cycle collecting data for diagnostic purpose and sample is extracted from the process to be sent in control lab</Text>
-              </Description>
-            </EnumValueType>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=7616</Identifier>
-          </TypeId>
-          <Body>
-            <EnumValueType>
-              <Value>32770</Value>
-              <DisplayName>
-                <Locale>
-                </Locale>
-                <Text>CLEANING_WITH_GRAB_SAMPLE</Text>
-              </DisplayName>
-              <Description>
-                <Locale>
-                </Locale>
-                <Text>Cleaning cycle with or without acquisition and sample is extracted from the process to be sent in control lab</Text>
-              </Description>
-            </EnumValueType>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=7616</Identifier>
-          </TypeId>
-          <Body>
-            <EnumValueType>
-              <Value>32772</Value>
-              <DisplayName>
-                <Locale>
-                </Locale>
-                <Text>CALIBRATION_WITH_GRAB_SAMPLE</Text>
-              </DisplayName>
-              <Description>
-                <Locale>
-                </Locale>
-                <Text>Calibration acquisition cycle and sample is extracted from the process to be sent in control lab</Text>
-              </Description>
-            </EnumValueType>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=7616</Identifier>
-          </TypeId>
-          <Body>
-            <EnumValueType>
-              <Value>32776</Value>
-              <DisplayName>
-                <Locale>
-                </Locale>
-                <Text>VALIDATION_WITH_GRAB_SAMPLE</Text>
-              </DisplayName>
-              <Description>
-                <Locale>
-                </Locale>
-                <Text>Validation acquisition cycle and sample is extracted from the process to be sent in control lab</Text>
-              </Description>
-            </EnumValueType>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=7616</Identifier>
-          </TypeId>
-          <Body>
-            <EnumValueType>
-              <Value>32784</Value>
-              <DisplayName>
-                <Locale>
-                </Locale>
-                <Text>SAMPLING_WITH_GRAB_SAMPLE</Text>
-              </DisplayName>
-              <Description>
-                <Locale>
-                </Locale>
-                <Text>Sample acquisition cycle and sample is extracted from the process to be sent in control lab</Text>
-              </Description>
-            </EnumValueType>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                
+                
+                IDLE
+              
+              
+                
+                
+                Idle, no cleaning or acquisition cycle in progress
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                
+                
+                DIAGNOSTIC
+              
+              
+                
+                
+                Scquisition cycle collecting data for diagnostic purpose
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              2
+              
+                
+                
+                CLEANING
+              
+              
+                
+                
+                Cleaning cycle
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              4
+              
+                
+                
+                CALIBRATION
+              
+              
+                
+                
+                Calibration acquisition cycle
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              8
+              
+                
+                
+                VALIDATION
+              
+              
+                
+                
+                Validation acquisition cycle
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              16
+              
+                
+                
+                SAMPLING
+              
+              
+                
+                
+                Sample acquisition cycle
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              32769
+              
+                
+                
+                DIAGNOSTIC_WITH_GRAB_SAMPLE
+              
+              
+                
+                
+                Scquisition cycle collecting data for diagnostic purpose and sample is extracted from the process to be sent in control lab
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              32770
+              
+                
+                
+                CLEANING_WITH_GRAB_SAMPLE
+              
+              
+                
+                
+                Cleaning cycle with or without acquisition and sample is extracted from the process to be sent in control lab
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              32772
+              
+                
+                
+                CALIBRATION_WITH_GRAB_SAMPLE
+              
+              
+                
+                
+                Calibration acquisition cycle and sample is extracted from the process to be sent in control lab
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              32776
+              
+                
+                
+                VALIDATION_WITH_GRAB_SAMPLE
+              
+              
+                
+                
+                Validation acquisition cycle and sample is extracted from the process to be sent in control lab
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              32784
+              
+                
+                
+                SAMPLING_WITH_GRAB_SAMPLE
+              
+              
+                
+                
+                Sample acquisition cycle and sample is extracted from the process to be sent in control lab
+              
+            
+          
+        
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -3224,31 +3223,31 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>NOT_USED</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>GOOD</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>BAD</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>UNKNOWN</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>PARTIAL</Text>
-        </LocalizedText>
+        
+          
+          
+          NOT_USED
+        
+        
+          
+          
+          GOOD
+        
+        
+          
+          
+          BAD
+        
+        
+          
+          
+          UNKNOWN
+        
+        
+          
+          
+          PARTIAL
+        
       </ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -3355,146 +3354,146 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=7616</Identifier>
-          </TypeId>
-          <Body>
-            <EnumValueType>
-              <Value>0</Value>
-              <DisplayName>
-                <Locale>
-                </Locale>
-                <Text>NORMAL_0</Text>
-              </DisplayName>
-              <Description>
-                <Locale>
-                </Locale>
-                <Text>Normal</Text>
-              </Description>
-            </EnumValueType>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=7616</Identifier>
-          </TypeId>
-          <Body>
-            <EnumValueType>
-              <Value>1</Value>
-              <DisplayName>
-                <Locale>
-                </Locale>
-                <Text>WARNING_LOW_1</Text>
-              </DisplayName>
-              <Description>
-                <Locale>
-                </Locale>
-                <Text>In low warning range</Text>
-              </Description>
-            </EnumValueType>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=7616</Identifier>
-          </TypeId>
-          <Body>
-            <EnumValueType>
-              <Value>2</Value>
-              <DisplayName>
-                <Locale>
-                </Locale>
-                <Text>WARNING_HIGH_2</Text>
-              </DisplayName>
-              <Description>
-                <Locale>
-                </Locale>
-                <Text>In high warning range</Text>
-              </Description>
-            </EnumValueType>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=7616</Identifier>
-          </TypeId>
-          <Body>
-            <EnumValueType>
-              <Value>4</Value>
-              <DisplayName>
-                <Locale>
-                </Locale>
-                <Text>WARNING_4</Text>
-              </DisplayName>
-              <Description>
-                <Locale>
-                </Locale>
-                <Text>In warning range (low or high) or some other warning cause</Text>
-              </Description>
-            </EnumValueType>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=7616</Identifier>
-          </TypeId>
-          <Body>
-            <EnumValueType>
-              <Value>8</Value>
-              <DisplayName>
-                <Locale>
-                </Locale>
-                <Text>ALARM_LOW_8</Text>
-              </DisplayName>
-              <Description>
-                <Locale>
-                </Locale>
-                <Text>In low alarm range</Text>
-              </Description>
-            </EnumValueType>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=7616</Identifier>
-          </TypeId>
-          <Body>
-            <EnumValueType>
-              <Value>16</Value>
-              <DisplayName>
-                <Locale>
-                </Locale>
-                <Text>ALARM_HIGH_16</Text>
-              </DisplayName>
-              <Description>
-                <Locale>
-                </Locale>
-                <Text>In high alarm range</Text>
-              </Description>
-            </EnumValueType>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=7616</Identifier>
-          </TypeId>
-          <Body>
-            <EnumValueType>
-              <Value>32</Value>
-              <DisplayName>
-                <Locale>
-                </Locale>
-                <Text>ALARM_32</Text>
-              </DisplayName>
-              <Description>
-                <Locale>
-                </Locale>
-                <Text>In alarm range (low or high) or some other alarm cause</Text>
-              </Description>
-            </EnumValueType>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                
+                
+                NORMAL_0
+              
+              
+                
+                
+                Normal
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                
+                
+                WARNING_LOW_1
+              
+              
+                
+                
+                In low warning range
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              2
+              
+                
+                
+                WARNING_HIGH_2
+              
+              
+                
+                
+                In high warning range
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              4
+              
+                
+                
+                WARNING_4
+              
+              
+                
+                
+                In warning range (low or high) or some other warning cause
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              8
+              
+                
+                
+                ALARM_LOW_8
+              
+              
+                
+                
+                In low alarm range
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              16
+              
+                
+                
+                ALARM_HIGH_16
+              
+              
+                
+                
+                In high alarm range
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              32
+              
+                
+                
+                ALARM_32
+              
+              
+                
+                
+                In alarm range (low or high) or some other alarm cause
+              
+            
+          
+        
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>

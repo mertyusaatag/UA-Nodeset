@@ -78,6 +78,8 @@ Please note we have a code of conduct, please follow it in all your interactions
 - [Official OPC UA .NET Standard Stack from the OPC Foundation][NETStandard]
 - [OPC UA Makes Machine-Centric Global Village Possible – Call for Sponsors](https://mpostol.wordpress.com/2020/01/03/opc-ua-makes-machine-centric-global-village-possible-call-for-sponsors/)
 
+Join me at [LinkedIn](https://www.linkedin.com/in/mpostol/)
+
 [NETStandard]: https://github.com/OPCFoundation/UA-.NETStandard#official-opc-ua-net-standard-stack-from-the-opc-foundation
 [ASMDComplianceTesting]: https://mpostol.github.io/ASMD/ASMD50-ModelsTesting
 [Sponsorship]: https://github.commsvr.com/AboutPartnershipProgram.md.html
@@ -85,5 +87,3 @@ Please note we have a code of conduct, please follow it in all your interactions
 [ModelCompiler]: https://github.com/OPCFoundation/UA-ModelCompiler
 [UANodeset]: https://github.com/OPCFoundation/UA-Nodeset#opc-ua-nodesets-and-other-supporting-files
 [ASP]: https://commsvr.gitbook.io/ooi/semantic-data-processing/addressspacecompliancetesttool
-
-Join me at [LinkedIn](https://www.linkedin.com/in/mpostol/)
