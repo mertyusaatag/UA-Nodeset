@@ -1,9 +1,0 @@
-"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.3.2.23344";;;;"2021-05-29T11:20:37.4774837Z";;
-"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2021 Mariusz Postol";;;;"2021-05-29T11:20:37.4774837Z";;
-"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.Di.NodeSet2.xml";;;;"2021-05-29T11:21:46.5495329Z";;
-"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.FDT.NodeSet2.xml";;;;"2021-05-29T11:22:03.9479682Z";;
-"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import";;;;"2021-05-29T11:22:03.9519716Z";;
-"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: XML, Identifier: P0-0001030000 Description: Models element cannot be null or empty Added default model http://opcfoundation.org/UA/schemas/FDT/1.0/";;;;"2021-05-29T11:22:03.9629948Z";;
-"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/schemas/FDT/1.0/ namespace.";;;;"2021-05-29T11:22:06.6721145Z";;
-"UANodeSetValidation";Warning;226242104;;"Finishing Validator.ValidateExportModel - the model contains 23 nodes and 1 errors reported.";;;;"2021-05-29T11:22:06.7571134Z";;
-"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file Opc.Ua.FDT.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2021-05-29T11:22:06.9221132Z";;

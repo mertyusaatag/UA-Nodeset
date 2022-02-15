@@ -1,7 +1,0 @@
-"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.3.2.23344";;;;"2021-05-20T12:19:11.8263803Z";;
-"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2021 Mariusz Postol";;;;"2021-05-20T12:19:11.8273664Z";;
-"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.Di.NodeSet2.xml";;;;"2021-05-20T12:20:29.8631975Z";;
-"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.Robotics.NodeSet2.xml";;;;"2021-05-20T12:20:46.5076802Z";;
-"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/Robotics/ namespace.";;;;"2021-05-20T12:20:59.2388238Z";;
-"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 26 nodes and no errors/warnings reported";;;;"2021-05-20T12:20:59.3988276Z";;
-"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file opc.Ua.Robotics.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2021-05-20T12:20:59.5458259Z";;
