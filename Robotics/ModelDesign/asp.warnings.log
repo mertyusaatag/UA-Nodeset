@@ -1,7 +1,7 @@
-"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.4.6.30717";;;;"2021-08-10T15:13:04.8831022Z";;
-"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2021 Mariusz Postol";;;;"2021-08-10T15:13:04.8841060Z";;
-"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.Di.NodeSet2.xml";;;;"2021-08-10T15:13:35.0628730Z";;
-"UANodeSetValidation";Information;190380256;;"Starting model import form file Opc.Ua.Robotics.NodeSet2.xml";;;;"2021-08-10T15:13:42.0200817Z";;
-"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/Robotics/ namespace.";;;;"2021-08-10T15:13:47.4626884Z";;
-"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 26 nodes and no errors/warnings reported";;;;"2021-08-10T15:13:47.5777281Z";;
-"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file opc.Ua.Robotics.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2021-08-10T15:13:47.7116878Z";;
+"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.4.6.40504";;;;"2022-03-07T10:17:50.7712623Z";;
+"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2021 Mariusz Postol";;;;"2022-03-07T10:17:50.7722595Z";;
+"UANodeSetValidation";Information;190380256;;"Entering ImportNodeSet and starting model import form file Opc.Ua.Di.NodeSet2.xml";;;;"2022-03-07T10:18:18.0393860Z";;
+"UANodeSetValidation";Information;190380256;;"Entering ImportNodeSet and starting model import form file Opc.Ua.Robotics.NodeSet2.xml";;;;"2022-03-07T10:18:23.8218989Z";;
+"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/Robotics/ namespace.";;;;"2022-03-07T10:18:28.3636272Z";;
+"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 26 nodes and no errors/warnings reported";;;;"2022-03-07T10:18:28.4606270Z";;
+"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file opc.Ua.Robotics.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2022-03-07T10:18:28.5791459Z";;
