@@ -1,0 +1,782 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:Prefix7="http://opcfoundation.org/UA/PADIM/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/Dictionary/IRDI" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-09T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="9.03.2021">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/Dictionary/IRDI" XmlNamespace="http://opcfoundation.org/UA/Dictionary/IRDI" XmlPrefix="Prefix5" FilePath="" Version="1.00" PublicationDate="4.02.2020">http://opcfoundation.org/UA/Dictionary/IRDI</Namespace>
+    <Namespace Name="Name6" Prefix="Prefix6" InternalPrefix="http://opcfoundation.org/UA/PADIM/" XmlNamespace="http://opcfoundation.org/UA/PADIM/" XmlPrefix="Prefix7" FilePath="" Version="1.0.2" PublicationDate="21.07.2021">http://opcfoundation.org/UA/PADIM/</Namespace>
+  </Namespaces>
+  <ObjectType SymbolicName="Prefix7:PADIMType" BaseType="Prefix3:ComponentType">
+    <Children>
+      <Property SymbolicName="Prefix3:ManufacturerUri" ModellingRule="Mandatory">
+        <DisplayName>URI of Manufacturer</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN591_001</TargetId>
+          </Reference>
+        </References>
+      </Property>
+      <Property SymbolicName="Prefix3:SerialNumber" ModellingRule="Mandatory">
+        <DisplayName>Serial number</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABA951_007</TargetId>
+          </Reference>
+        </References>
+      </Property>
+      <Property SymbolicName="Prefix3:SoftwareRevision" ModellingRule="Mandatory">
+        <DisplayName>Software revision</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABA601_006</TargetId>
+          </Reference>
+        </References>
+      </Property>
+      <Property SymbolicName="Prefix3:HardwareRevision" ModellingRule="Mandatory">
+        <DisplayName>Hardware revision</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABA926_006</TargetId>
+          </Reference>
+        </References>
+      </Property>
+      <Property SymbolicName="Prefix3:ProductCode" ModellingRule="Mandatory">
+        <DisplayName>Product code</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABA300_006</TargetId>
+          </Reference>
+        </References>
+      </Property>
+      <Variable SymbolicName="Prefix3:DeviceHealth" ModellingRule="Mandatory" DataType="Prefix3:DeviceHealthEnumeration">
+        <DisplayName>Device diagnostic status</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN972_001</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+      <Variable SymbolicName="Prefix7:DateOfLastChange" ModellingRule="Optional" DataType="Prefix1:DateTime">
+        <DisplayName>Date of last change</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN604_001</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+      <Variable SymbolicName="Prefix7:DisplayLanguage" ModellingRule="Optional" DataType="Prefix1:LocaleId" AccessLevel="ReadWrite">
+        <DisplayName>Display language</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN597_001</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+      <Object SymbolicName="Prefix7:SignalSet_no_" TypeDefinition="Prefix7:SignalSetType" ModellingRule="Optional">
+        <BrowseName>SignalSet</BrowseName>
+      </Object>
+      <Property SymbolicName="Prefix3:ProductInstanceUri" ModellingRule="Mandatory">
+        <DisplayName>URI of Product instance</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN590_001</TargetId>
+          </Reference>
+        </References>
+      </Property>
+      <Object SymbolicName="Prefix3:DeviceHealthAlarms" TypeDefinition="Prefix1:FolderType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix7:SubDevices" TypeDefinition="Prefix3:ConfigurableObjectType" ModellingRule="Optional">
+        <Children>
+          <Object SymbolicName="Prefix3:SupportedTypes" TypeDefinition="Prefix1:FolderType" />
+        </Children>
+      </Object>
+      <Method SymbolicName="Prefix7:FactoryReset" ModellingRule="Optional">
+        <DisplayName>Factory reset</DisplayName>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ResetMode</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=3;i=1156</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN609_001</TargetId>
+          </Reference>
+        </References>
+      </Method>
+      <Property SymbolicName="Prefix3:AssetId" ModellingRule="Mandatory" AccessLevel="ReadWrite">
+        <DisplayName>Asset ID</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABA038_003</TargetId>
+          </Reference>
+        </References>
+      </Property>
+      <Property SymbolicName="Prefix3:RevisionCounter" ModellingRule="Mandatory">
+        <DisplayName>Revision counter</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN603_001</TargetId>
+          </Reference>
+        </References>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasInterface</ReferenceType>
+        <TargetId>Prefix7:IAdministrationType</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix1:HasInterface</ReferenceType>
+        <TargetId>Prefix7:ISignalSetType</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix1:HasInterface</ReferenceType>
+        <TargetId>Prefix3:IDeviceHealthType</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix1:DictionaryEntryType_DictionaryEntryName_Placeholder</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:IAdministrationType" BaseType="Prefix1:BaseInterfaceType" IsAbstract="true">
+    <Children>
+      <Variable SymbolicName="Prefix7:DisplayLanguage" ModellingRule="Optional" DataType="Prefix1:LocaleId" AccessLevel="ReadWrite">
+        <DisplayName>Display language</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN597_001</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+      <Variable SymbolicName="Prefix7:DateOfLastChange" ModellingRule="Optional" DataType="Prefix1:DateTime">
+        <DisplayName>Date of last change</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN604_001</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+      <Method SymbolicName="Prefix7:FactoryReset" ModellingRule="Optional">
+        <DisplayName>Factory reset</DisplayName>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ResetMode</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=3;i=1156</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN609_001</TargetId>
+          </Reference>
+        </References>
+      </Method>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:ISignalSetType" BaseType="Prefix1:BaseInterfaceType" IsAbstract="true">
+    <Children>
+      <Object SymbolicName="Prefix7:SignalSet" TypeDefinition="Prefix7:SignalSetType" ModellingRule="Optional" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:SignalSetType">
+    <Children>
+      <Object SymbolicName="Prefix7:S_SignalIdentifier_" TypeDefinition="Prefix7:SignalType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;SignalIdentifier&gt;</BrowseName>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:AnalogSignalType" BaseType="Prefix7:SignalType">
+    <Children>
+      <Method SymbolicName="Prefix7:ZeroPointAdjustment" ModellingRule="Optional">
+        <DisplayName>Zero point adjustment</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN614_001</TargetId>
+          </Reference>
+        </References>
+      </Method>
+      <Variable SymbolicName="Prefix7:AnalogSignal" TypeDefinition="Prefix7:AnalogSignalVariableType" ModellingRule="Mandatory" ValueRank="ScalarOrArray" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN634_001</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:ControlSignalType" BaseType="Prefix7:SignalType">
+    <Children>
+      <Method SymbolicName="Prefix7:AutoAdjustPositioner" ModellingRule="Optional">
+        <DisplayName>Autoadjust</DisplayName>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionMode</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=3;i=1158</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN726_001</TargetId>
+          </Reference>
+        </References>
+      </Method>
+      <Variable SymbolicName="Prefix7:ControlSignal" TypeDefinition="Prefix7:ControlVariableType" ModellingRule="Mandatory" DataType="Prefix1:Float" ValueRank="ScalarOrArray" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABJ683_001</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <VariableType SymbolicName="Prefix7:AnalogSignalVariableType" BaseType="Prefix1:AnalogUnitRangeType" ValueRank="ScalarOrArray">
+    <Children>
+      <Variable SymbolicName="Prefix7:SimulationState" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <DisplayName>Simulation state</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN611_001</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+      <Variable SymbolicName="Prefix7:ActualValue" ModellingRule="Optional" ValueRank="ScalarOrArray" AccessLevel="ReadWrite">
+        <DisplayName>Actual value</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN644_001</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+      <Variable SymbolicName="Prefix7:SimulationValue" ModellingRule="Optional" ValueRank="ScalarOrArray" AccessLevel="ReadWrite">
+        <DisplayName>Simulation value</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN613_001</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+      <Property SymbolicName="Prefix7:Damping" ModellingRule="Optional" DataType="Prefix1:Float" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABH526_002</TargetId>
+          </Reference>
+        </References>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix5:S0112_2___61987_ABN634_001</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix7:TemperatureMeasurementVariableType" BaseType="Prefix7:AnalogSignalVariableType" DataType="Prefix1:Float" ValueRank="ScalarOrArray">
+    <Children>
+      <Variable SymbolicName="Prefix7:SensorType" TypeDefinition="Prefix1:MultiStateDictionaryEntryDiscreteType" ModellingRule="Mandatory" DataType="Prefix1:UInt32" ValueRank="ScalarOrArray" AccessLevel="ReadWrite">
+        <DisplayName>Sensor type</DisplayName>
+      </Variable>
+      <Variable SymbolicName="Prefix7:SensorConnection" TypeDefinition="Prefix1:MultiStateDictionaryEntryDiscreteType" ModellingRule="Optional" DataType="Prefix1:UInt32" ValueRank="ScalarOrArray" AccessLevel="ReadWrite">
+        <DisplayName>RTD-Sensor connection</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABB091_002</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+      <Variable SymbolicName="Prefix7:SensorReference" TypeDefinition="Prefix1:MultiStateDictionaryEntryDiscreteType" ModellingRule="Optional" DataType="Prefix1:UInt32" ValueRank="ScalarOrArray" AccessLevel="ReadWrite">
+        <DisplayName>TC-Sensor reference</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABB093_002</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix5:S0112_2___61987_ABA927_005</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix7:PressureMeasurementVariableType" BaseType="Prefix7:AnalogSignalVariableType" DataType="Prefix1:Float" ValueRank="ScalarOrArray">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix5:S0112_2___61987_ABN616_001</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix7:FlowMeasurementVariableType" BaseType="Prefix7:AnalogSignalVariableType" DataType="Prefix1:Float" ValueRank="ScalarOrArray">
+    <Children>
+      <Property SymbolicName="Prefix7:LowFlowCutOff" ModellingRule="Mandatory" DataType="Prefix1:Float" ValueRank="ScalarOrArray" AccessLevel="ReadWrite">
+        <DisplayName>Low flow cut off</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABJ724_002</TargetId>
+          </Reference>
+        </References>
+      </Property>
+      <Variable SymbolicName="Prefix7:FlowDirection" TypeDefinition="Prefix1:MultiStateDictionaryEntryDiscreteType" ModellingRule="Optional" DataType="Prefix1:UInt32" ValueRank="ScalarOrArray" AccessLevel="ReadWrite">
+        <DisplayName>Flow direction</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN594_002</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+    </Children>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix7:LevelMeasurementVariableType" BaseType="Prefix7:AnalogSignalVariableType" DataType="Prefix1:Float" ValueRank="ScalarOrArray">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix5:S0112_2___61987_ABH329_002</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix7:ActualDensityVariableType" BaseType="Prefix7:AnalogSignalVariableType" DataType="Prefix1:Float" ValueRank="ScalarOrArray">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix5:S0112_2___61987_ABA946_004</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix7:ControlVariableType" BaseType="Prefix7:AnalogSignalVariableType" DataType="Prefix1:Float" ValueRank="ScalarOrArray">
+    <Children>
+      <Variable SymbolicName="Prefix7:Setpoint" TypeDefinition="Prefix1:BaseAnalogType" ModellingRule="Mandatory" DataType="Prefix1:Float" ValueRank="ScalarOrArray" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN607_001</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+      <Variable SymbolicName="Prefix7:OperatingDirection" TypeDefinition="Prefix1:MultiStateDictionaryEntryDiscreteType" ModellingRule="Mandatory" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
+        <DisplayName>Operating direction</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABD740_002</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+      <Variable SymbolicName="Prefix7:ActuatorType" TypeDefinition="Prefix1:MultiStateDictionaryEntryDiscreteType" ModellingRule="Mandatory" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
+        <DisplayName>Actuator type</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABD742_002</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix5:S0112_2___61987_ABJ683_001</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix7:TotalizerVariableType" BaseType="Prefix7:AnalogSignalVariableType" ValueRank="ScalarOrArray">
+    <Children>
+      <Property SymbolicName="Prefix7:PulseValue" ModellingRule="Mandatory" AccessLevel="ReadWrite">
+        <DisplayName>Pulse value</DisplayName>
+      </Property>
+      <Property SymbolicName="Prefix7:PulseWidth" ModellingRule="Mandatory" DataType="Prefix1:Float" AccessLevel="ReadWrite">
+        <DisplayName>Pulse width</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABA635_002</TargetId>
+          </Reference>
+        </References>
+      </Property>
+    </Children>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix7:AnalyticalMeasurementVariableType" BaseType="Prefix7:AnalogSignalVariableType" DataType="Prefix1:Float" ValueRank="ScalarOrArray">
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix7:MassFlowRateVariableType" BaseType="Prefix7:FlowMeasurementVariableType" DataType="Prefix1:Float" ValueRank="ScalarOrArray">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix5:S0112_2___61987_ABB290_005</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix7:ActualVolumeFlowRateVariableType" BaseType="Prefix7:FlowMeasurementVariableType" DataType="Prefix1:Float" ValueRank="ScalarOrArray">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix5:S0112_2___61987_ABB291_005</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix7:NormalizedVolumeFlowRateVariableType" BaseType="Prefix7:FlowMeasurementVariableType" DataType="Prefix1:Float" ValueRank="ScalarOrArray">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix5:S0112_2___61987_ABB292_005</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix7:TwoStateDiscreteSignalVariableType" BaseType="Prefix1:TwoStateDiscreteType" DataType="Prefix1:Boolean" ValueRank="ScalarOrArray">
+    <Children>
+      <Variable SymbolicName="Prefix7:ActualValue" ModellingRule="Optional" DataType="Prefix1:Boolean" ValueRank="ScalarOrArray" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN____001</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+      <Variable SymbolicName="Prefix7:SimulationValue" ModellingRule="Optional" DataType="Prefix1:Boolean" ValueRank="ScalarOrArray" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_xzx665_001</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+      <Variable SymbolicName="Prefix7:SimulationState" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <DisplayName>Simulation state</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN611_001</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix5:S0112_2___61987_ABN635_001</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix7:MultiStateDiscreteSignalVariableType" BaseType="Prefix1:MultiStateDictionaryEntryDiscreteBaseType" DataType="Prefix1:UInt32">
+    <Children>
+      <Variable SymbolicName="Prefix7:ActualValue" ModellingRule="Optional" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN646_001</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+      <Variable SymbolicName="Prefix7:SimulationValue" ModellingRule="Optional" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN637_001</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+      <Variable SymbolicName="Prefix7:SimulationState" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <DisplayName>Simulation state</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN611_001</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix5:S0112_2___61987_ABN636_001</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix7:DiscreteSignalVariableType" BaseType="Prefix1:DiscreteItemType" DataType="Prefix1:BaseDataType" ValueRank="ScalarOrArray">
+    <Children>
+      <Variable SymbolicName="Prefix7:ActualValue" ModellingRule="Optional" DataType="Prefix1:BaseDataType" ValueRank="ScalarOrArray" AccessLevel="ReadWrite">
+        <DisplayName>Actual value</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN644_001</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+      <Variable SymbolicName="Prefix7:SimulationValue" ModellingRule="Optional" DataType="Prefix1:BaseDataType" ValueRank="ScalarOrArray" AccessLevel="ReadWrite">
+        <DisplayName>Simulation value</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN613_001</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+      <Variable SymbolicName="Prefix7:SimulationState" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <DisplayName>Simulation state</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN611_001</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+    </Children>
+    <ClassName />
+  </VariableType>
+  <DataType SymbolicName="Prefix7:ResetModeEnum" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Application</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2712</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Communication</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2713</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Factory</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Application" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="Communication" Identifier="2712" BitMask="" ArrayDimensions="" />
+      <Field Name="Factory" Identifier="2713" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix7:ExecutionModeEnum" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="2">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Start</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>255</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Abort</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Start" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="Abort" Identifier="255" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <ObjectType SymbolicName="Prefix7:SignalType">
+    <Children>
+      <Property SymbolicName="Prefix7:SignalTag" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <DisplayName>Tag</DisplayName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABB271_007</TargetId>
+          </Reference>
+        </References>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:DiscreteSignalType" BaseType="Prefix7:SignalType">
+    <Children>
+      <Variable SymbolicName="Prefix7:DiscreteSignal" TypeDefinition="Prefix7:DiscreteSignalVariableType" ModellingRule="Mandatory" DataType="Prefix1:BaseDataType" ValueRank="ScalarOrArray" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN634_001</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:TwoStateDiscreteSignalType" BaseType="Prefix7:SignalType">
+    <Children>
+      <Variable SymbolicName="Prefix7:TwoStateDiscreteSignal" TypeDefinition="Prefix7:TwoStateDiscreteSignalVariableType" ModellingRule="Mandatory" DataType="Prefix1:Boolean" ValueRank="ScalarOrArray" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN635_001</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:MultiStateDiscreteSignalType" BaseType="Prefix7:SignalType">
+    <Children>
+      <Variable SymbolicName="Prefix7:MultiStateDiscreteSignal" TypeDefinition="Prefix7:MultiStateDiscreteSignalVariableType" ModellingRule="Mandatory" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix5:S0112_2___61987_ABN636_001</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+</ModelDesign>

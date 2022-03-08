@@ -1,0 +1,9 @@
+"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.4.6.40504";;;;"2022-03-08T17:08:35.1049822Z";;
+"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2021 Mariusz Postol";;;;"2022-03-08T17:08:35.1059850Z";;
+"UANodeSetValidation";Information;190380256;;"Entering ImportNodeSet and starting model import form file Opc.MDIS.NodeSet2.xml";;;;"2022-03-08T17:09:00.7911105Z";;
+"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/MDIS namespace.";;;;"2022-03-08T17:09:03.4449152Z";;
+"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: Reference, Identifier: P3-0503030201 Description: Wrong Reference type targeting the Property component. Target node of the HasProperty reference cannot be 1:MajorVersion of a base type.";;;;"2022-03-08T17:09:03.5103838Z";;
+"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: Reference, Identifier: P3-0503030201 Description: Wrong Reference type targeting the Property component. Target node of the HasProperty reference cannot be 1:MinorVersion of a base type.";;;;"2022-03-08T17:09:03.5148459Z";;
+"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: Reference, Identifier: P3-0503030201 Description: Wrong Reference type targeting the Property component. Target node of the HasProperty reference cannot be 1:Build of a base type.";;;;"2022-03-08T17:09:03.5155590Z";;
+"UANodeSetValidation";Warning;226242104;;"Finishing Validator.ValidateExportModel - the model contains 26 nodes and 3 errors reported.";;;;"2022-03-08T17:09:03.5615359Z";;
+"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file Opc.Ua.MDIS.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2022-03-08T17:09:03.7354741Z";;

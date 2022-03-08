@@ -1,0 +1,1900 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:Prefix7="http://opcfoundation.org/UA/IA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix9="http://opcfoundation.org/UA/MachineTool/" xmlns:Prefix5="http://opcfoundation.org/UA/Machinery/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-08T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="9.03.2021">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/Machinery/" XmlNamespace="http://opcfoundation.org/UA/Machinery/" XmlPrefix="Prefix5" FilePath="" Version="1.01.0" PublicationDate="25.02.2021">http://opcfoundation.org/UA/Machinery/</Namespace>
+    <Namespace Name="Name6" Prefix="Prefix6" InternalPrefix="http://opcfoundation.org/UA/IA/" XmlNamespace="http://opcfoundation.org/UA/IA/" XmlPrefix="Prefix7" FilePath="" Version="1.01.0" PublicationDate="31.07.2021">http://opcfoundation.org/UA/IA/</Namespace>
+    <Namespace Name="Name8" Prefix="Prefix8" InternalPrefix="http://opcfoundation.org/UA/MachineTool/" XmlNamespace="http://opcfoundation.org/UA/MachineTool/" XmlPrefix="Prefix9" FilePath="" Version="1.00.0" PublicationDate="25.09.2020">http://opcfoundation.org/UA/MachineTool/</Namespace>
+  </Namespaces>
+  <DataType SymbolicName="Prefix9:ChannelMode" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="8">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Automatic</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>NC channel mode Automatic – execute CNC part programs.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MdaMdi</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>NC channel mode Mda/Mdi – manual data input and execution.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>JogManual</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>NC channel mode Jog Manual – axis movement triggered by user.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>JogIncrement</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>NC channel mode Jog Increment – incremental axis movement triggered by user.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>TeachingHandle</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>NC channel mode Teaching Handle – teaching a machine tool by moving axes of the machine tool by hand.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Remote</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>NC channel mode Remote – the machine tool can receive CNC files via a remote access mechanism.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Reference</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>NC channel mode Reference – The machine tool returns to its reference point/ zero position.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>7</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>NC channel mode is different from the values defined in this enumeration.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Automatic" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description Key="en">NC channel mode Automatic – execute CNC part programs.</Description>
+      </Field>
+      <Field Name="MdaMdi" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description Key="en">NC channel mode Mda/Mdi – manual data input and execution.</Description>
+      </Field>
+      <Field Name="JogManual" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description Key="en">NC channel mode Jog Manual – axis movement triggered by user.</Description>
+      </Field>
+      <Field Name="JogIncrement" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description Key="en">NC channel mode Jog Increment – incremental axis movement triggered by user.</Description>
+      </Field>
+      <Field Name="TeachingHandle" Identifier="4" BitMask="" ArrayDimensions="">
+        <Description Key="en">NC channel mode Teaching Handle – teaching a machine tool by moving axes of the machine tool by hand.</Description>
+      </Field>
+      <Field Name="Remote" Identifier="5" BitMask="" ArrayDimensions="">
+        <Description Key="en">NC channel mode Remote – the machine tool can receive CNC files via a remote access mechanism.</Description>
+      </Field>
+      <Field Name="Reference" Identifier="6" BitMask="" ArrayDimensions="">
+        <Description Key="en">NC channel mode Reference – The machine tool returns to its reference point/ zero position.</Description>
+      </Field>
+      <Field Name="Other" Identifier="7" BitMask="" ArrayDimensions="">
+        <Description Key="en">NC channel mode is different from the values defined in this enumeration.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix9:ChannelState" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Active</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>There is an active command being executed by the NC channel.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Interrupted</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The NC execution is interrupted. Execution of a program in the channel can be restarted.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Reset</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>No NC command is active in the NC channel. E.g. channel is idle.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Active" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description Key="en">There is an active command being executed by the NC channel.</Description>
+      </Field>
+      <Field Name="Interrupted" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description Key="en">The NC execution is interrupted. Execution of a program in the channel can be restarted.</Description>
+      </Field>
+      <Field Name="Reset" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description Key="en">No NC command is active in the NC channel. E.g. channel is idle.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix9:EDMGeneratorState" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="5">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Undefined</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The EDM spark generator state cannot be indicated.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Ready</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Generator is initialized and can receive a set of technology parameters.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Active_Low_Voltage</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Generator is switched on and is supplying pulses respecting the low voltage (≤ 25 V AC or ≤ 60 V DC) requirements of safety standard (ISO 28881).</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Active_High_Voltage</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Generator is switched on and is supplying pulse at high voltage (&gt; 25 V AC or &gt; 60 V DC).</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Error</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Generator is in an error state.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Undefined" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description Key="en">The EDM spark generator state cannot be indicated.</Description>
+      </Field>
+      <Field Name="Ready" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description Key="en">Generator is initialized and can receive a set of technology parameters.</Description>
+      </Field>
+      <Field Name="Active_Low_Voltage" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description Key="en">Generator is switched on and is supplying pulses respecting the low voltage (≤ 25 V AC or ≤ 60 V DC) requirements of safety standard (ISO 28881).</Description>
+      </Field>
+      <Field Name="Active_High_Voltage" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description Key="en">Generator is switched on and is supplying pulse at high voltage (&gt; 25 V AC or &gt; 60 V DC).</Description>
+      </Field>
+      <Field Name="Error" Identifier="4" BitMask="" ArrayDimensions="">
+        <Description Key="en">Generator is in an error state.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix9:LaserState" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Undefined</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The laser state cannot be indicated, for example because the device does not provide this information
+or because it is currently unavailable. This can be e.g. during the startup phase.
+</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Ready</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The laser is ready and laser programs can be started. No error state is active. In this state, laser
+emission is prohibited.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Active</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>In this state, safety clearances have to be set for processing and emission can be activated.
+For devices that can run programs themselves it indicates that a program is running on the laser
+device.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Error</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>An error state is reported from the laser device.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Undefined" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description Key="en">The laser state cannot be indicated, for example because the device does not provide this information
+or because it is currently unavailable. This can be e.g. during the startup phase.
+</Description>
+      </Field>
+      <Field Name="Ready" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description Key="en">The laser is ready and laser programs can be started. No error state is active. In this state, laser
+emission is prohibited.</Description>
+      </Field>
+      <Field Name="Active" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description Key="en">In this state, safety clearances have to be set for processing and emission can be activated.
+For devices that can run programs themselves it indicates that a program is running on the laser
+device.</Description>
+      </Field>
+      <Field Name="Error" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description Key="en">An error state is reported from the laser device.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix9:MachineOperationMode" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="6">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Manual</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The machine is controlled manually, by the operator. Depending on technology specific norms, the maximum axis movement speeds of the machine tool are limited.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Automatic</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Operating mode for the automatic, programmed and continuous operation of the machine. Manual loading and unloading workpieces are possible when the automatic program is stopped. Axis movement speeds are fully available to the machine tool’s ability.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Setup</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Depending on technology specific norms, the maximum axis movement speeds of the machine tool are limited. In this mode, the operator can make settings for the subsequent work processes.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>AutoWithManualIntervention</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Operating mode with the possibility of manual interventions in the machining process as well as limited automatic operation started by the operator. Depending on technology specific norms, the maximum axis movement speeds of the machine tool are limited.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Service</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Operating mode for service purposes. This mode shall not be used for manufacturing any parts. This mode shall only be used by authorized personnel.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The machine operation mode is different from the values defined in this enumeration.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Manual" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description Key="en">The machine is controlled manually, by the operator. Depending on technology specific norms, the maximum axis movement speeds of the machine tool are limited.</Description>
+      </Field>
+      <Field Name="Automatic" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description Key="en">Operating mode for the automatic, programmed and continuous operation of the machine. Manual loading and unloading workpieces are possible when the automatic program is stopped. Axis movement speeds are fully available to the machine tool’s ability.</Description>
+      </Field>
+      <Field Name="Setup" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description Key="en">Depending on technology specific norms, the maximum axis movement speeds of the machine tool are limited. In this mode, the operator can make settings for the subsequent work processes.</Description>
+      </Field>
+      <Field Name="AutoWithManualIntervention" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description Key="en">Operating mode with the possibility of manual interventions in the machining process as well as limited automatic operation started by the operator. Depending on technology specific norms, the maximum axis movement speeds of the machine tool are limited.</Description>
+      </Field>
+      <Field Name="Service" Identifier="4" BitMask="" ArrayDimensions="">
+        <Description Key="en">Operating mode for service purposes. This mode shall not be used for manufacturing any parts. This mode shall only be used by authorized personnel.</Description>
+      </Field>
+      <Field Name="Other" Identifier="5" BitMask="" ArrayDimensions="">
+        <Description Key="en">The machine operation mode is different from the values defined in this enumeration.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix9:PartQuality" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="5">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CapabilityUnavailable</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The machine tool is not able to give a statement about the part quality.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Good</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The part quality is determined good.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Bad</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The part quality is determined bad.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NotYetMeasured</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The PartQuality will still be determined in the machine tool to be either Good or Bad.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>WillNotBeMeasured</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The machine tool will not give a statement about the part quality.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="CapabilityUnavailable" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description Key="en">The machine tool is not able to give a statement about the part quality.</Description>
+      </Field>
+      <Field Name="Good" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description Key="en">The part quality is determined good.</Description>
+      </Field>
+      <Field Name="Bad" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description Key="en">The part quality is determined bad.</Description>
+      </Field>
+      <Field Name="NotYetMeasured" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description Key="en">The PartQuality will still be determined in the machine tool to be either Good or Bad.</Description>
+      </Field>
+      <Field Name="WillNotBeMeasured" Identifier="4" BitMask="" ArrayDimensions="">
+        <Description Key="en">The machine tool will not give a statement about the part quality.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix9:ProcessIrregularity" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CapabilityUnavailable</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The machine tool is not able to give a statement about process irregularities.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Detected</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>A process irregularity has been detected.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NotDetected</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>There was no process irregularity detected.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NotYetDetermined</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>A statement about the process irregularity is to be expected.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="CapabilityUnavailable" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description Key="en">The machine tool is not able to give a statement about process irregularities.</Description>
+      </Field>
+      <Field Name="Detected" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description Key="en">A process irregularity has been detected.</Description>
+      </Field>
+      <Field Name="NotDetected" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description Key="en">There was no process irregularity detected.</Description>
+      </Field>
+      <Field Name="NotYetDetermined" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description Key="en">A statement about the process irregularity is to be expected.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix9:ToolLifeIndication" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="8">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Time</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The tool life indicates the time the tool has been in use or can still be used. The value shall be given in hours (decimal value).</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NumberOfParts</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The tool life indicates the total number of parts that have been produced or can still be produced using the tool. The unit shall be „one“.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NumberOfUsages</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The tool life indicates counting the process steps this tool has been used or can still be used (for example usages of a punching tool). The unit shall be „one“.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Feed_Distance</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The tool life indicates the sum of the feed path covered by the tool and the workpiece relative to each other during machining. This value shall be given in one of the following units: millimetres, metres, kilometres.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Cutting_Distance</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The tool life indicates the sum of the lengths that the cutting knife works in the workpiece. If the knife is not fixed, this includes the lengths of the arc segments of the knife path. This value shall be given in one of the following units: millimetres, metres, kilometres. This value is likely only available for serial production with clearly defined machining conditions.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Length</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The tool life indicates the abraded length of the tool. This value shall be given in one of the following units: micrometres, millimetres, metres, kilometres.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Diameter</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The tool life indicates the abraded diameter of the tool. This value shall be given in one of the following units: micrometres, millimetres, metres, kilometres.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>7</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The tool life is indicated in a way not covered by the remaining enum values.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Time" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description Key="en">The tool life indicates the time the tool has been in use or can still be used. The value shall be given in hours (decimal value).</Description>
+      </Field>
+      <Field Name="NumberOfParts" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description Key="en">The tool life indicates the total number of parts that have been produced or can still be produced using the tool. The unit shall be „one“.</Description>
+      </Field>
+      <Field Name="NumberOfUsages" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description Key="en">The tool life indicates counting the process steps this tool has been used or can still be used (for example usages of a punching tool). The unit shall be „one“.</Description>
+      </Field>
+      <Field Name="Feed_Distance" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description Key="en">The tool life indicates the sum of the feed path covered by the tool and the workpiece relative to each other during machining. This value shall be given in one of the following units: millimetres, metres, kilometres.</Description>
+      </Field>
+      <Field Name="Cutting_Distance" Identifier="4" BitMask="" ArrayDimensions="">
+        <Description Key="en">The tool life indicates the sum of the lengths that the cutting knife works in the workpiece. If the knife is not fixed, this includes the lengths of the arc segments of the knife path. This value shall be given in one of the following units: millimetres, metres, kilometres. This value is likely only available for serial production with clearly defined machining conditions.</Description>
+      </Field>
+      <Field Name="Length" Identifier="5" BitMask="" ArrayDimensions="">
+        <Description Key="en">The tool life indicates the abraded length of the tool. This value shall be given in one of the following units: micrometres, millimetres, metres, kilometres.</Description>
+      </Field>
+      <Field Name="Diameter" Identifier="6" BitMask="" ArrayDimensions="">
+        <Description Key="en">The tool life indicates the abraded diameter of the tool. This value shall be given in one of the following units: micrometres, millimetres, metres, kilometres.</Description>
+      </Field>
+      <Field Name="Other" Identifier="7" BitMask="" ArrayDimensions="">
+        <Description Key="en">The tool life is indicated in a way not covered by the remaining enum values.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix9:ToolLocked" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="6">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CapabilityUnavailable</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The reason for locking the tool cannot be given.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ByOperator</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The tool is locked by an operator.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ToolBreak</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The tool is locked because a tool break has been detected.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ToolLife</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The tool is locked because it reached a tool life limit.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MeasurementError</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The tool is locked due to a measurement error of the tool.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The tool is locked for another reason.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="CapabilityUnavailable" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description Key="en">The reason for locking the tool cannot be given.</Description>
+      </Field>
+      <Field Name="ByOperator" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description Key="en">The tool is locked by an operator.</Description>
+      </Field>
+      <Field Name="ToolBreak" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description Key="en">The tool is locked because a tool break has been detected.</Description>
+      </Field>
+      <Field Name="ToolLife" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description Key="en">The tool is locked because it reached a tool life limit.</Description>
+      </Field>
+      <Field Name="MeasurementError" Identifier="4" BitMask="" ArrayDimensions="">
+        <Description Key="en">The tool is locked due to a measurement error of the tool.</Description>
+      </Field>
+      <Field Name="Other" Identifier="5" BitMask="" ArrayDimensions="">
+        <Description Key="en">The tool is locked for another reason.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix9:ToolManagement" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NumberBased</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The tool is addressed using a single identifier.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>GroupBased</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The tool is addressed using an identifier for the group and a second one for the tool within the group.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The tool is addressed by a different, custom defined system.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="NumberBased" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description Key="en">The tool is addressed using a single identifier.</Description>
+      </Field>
+      <Field Name="GroupBased" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description Key="en">The tool is addressed using an identifier for the group and a second one for the tool within the group.</Description>
+      </Field>
+      <Field Name="Other" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description Key="en">The tool is addressed by a different, custom defined system.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <VariableType SymbolicName="Prefix9:ToolLifeType">
+    <Children>
+      <Property SymbolicName="Prefix9:EngineeringUnits" ModellingRule="Mandatory" DataType="Prefix1:EUInformation" />
+      <Property SymbolicName="Prefix9:Indication" ModellingRule="Mandatory" DataType="Prefix9:ToolLifeIndication" />
+      <Property SymbolicName="Prefix9:IsCountingUp" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
+      <Property SymbolicName="Prefix9:LimitValue" ModellingRule="Optional" />
+      <Property SymbolicName="Prefix9:StartValue" ModellingRule="Optional" />
+      <Property SymbolicName="Prefix9:WarningValue" ModellingRule="Optional" />
+    </Children>
+    <ClassName />
+  </VariableType>
+  <ObjectType SymbolicName="Prefix9:OperatorConditionClassType" BaseType="Prefix1:BaseConditionClassType" IsAbstract="true">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ClampingConditionClassType" BaseType="Prefix1:ProcessConditionClassType" IsAbstract="true">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ManualProcessStepConditionClassType" BaseType="Prefix1:ProcessConditionClassType" IsAbstract="true">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:MeasurementConditionClassType" BaseType="Prefix1:ProcessConditionClassType" IsAbstract="true">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:PartMissingConditionClassType" BaseType="Prefix1:ProcessConditionClassType" IsAbstract="true">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ProcessIrregularityConditionClassType" BaseType="Prefix1:ProcessConditionClassType" IsAbstract="true">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ToolBreakageConditionClassType" BaseType="Prefix1:ProcessConditionClassType" IsAbstract="true">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ToolChangeConditionClassType" BaseType="Prefix1:ProcessConditionClassType" IsAbstract="true">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:UtilityConditionClassType" BaseType="Prefix1:BaseConditionClassType" IsAbstract="true">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:AlertType" BaseType="Prefix1:AlarmConditionType">
+    <Children>
+      <Property SymbolicName="Prefix9:ErrorCode" ModellingRule="Mandatory" DataType="Prefix1:String" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:MessagesType">
+    <References>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix9:MessagesType</TargetId>
+      </Reference>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix9:MessagesType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:InterruptionConditionType" BaseType="Prefix1:ConditionType" IsAbstract="true">
+    <Children>
+      <Property SymbolicName="Prefix9:IsAutomated" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
+        <DefaultValue>
+          <uax:Boolean xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">false</uax:Boolean>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ProductionJobStateMachineType" BaseType="Prefix9:ProductionStateMachineType">
+    <References>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix9:ProductionJobStateMachineType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:NotificationEventType" BaseType="Prefix1:BaseEventType" IsAbstract="true">
+    <Children>
+      <Property SymbolicName="Prefix9:Identifier" ModellingRule="Mandatory" DataType="Prefix1:String" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ProductionJobTransitionEventType" BaseType="Prefix1:TransitionEventType" IsAbstract="true">
+    <Children>
+      <Property SymbolicName="Prefix9:CustomerOrderIdentifier" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix9:Identifier" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <DefaultValue>
+          <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+      </uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix9:OrderIdentifier" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Variable SymbolicName="Prefix9:RunsCompleted" ModellingRule="Mandatory" DataType="Prefix1:UInt32" />
+      <Variable SymbolicName="Prefix9:RunsPlanned" ModellingRule="Mandatory" DataType="Prefix1:UInt32">
+        <Children>
+          <Property SymbolicName="Prefix9:IsValid" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
+        </Children>
+        <DefaultValue>
+          <uax:UInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt32>
+        </DefaultValue>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ProductionPartTransitionEventType" BaseType="Prefix1:TransitionEventType" IsAbstract="true">
+    <Children>
+      <Property SymbolicName="Prefix9:CustomerOrderIdentifier" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix9:Identifier" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix9:JobIdentifier" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix9:Name" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Variable SymbolicName="Prefix9:PartQuality" ModellingRule="Mandatory" DataType="Prefix9:PartQuality" />
+      <Variable SymbolicName="Prefix9:ProcessIrregularity" ModellingRule="Mandatory" DataType="Prefix9:ProcessIrregularity" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ProductionProgramTransitionEventType" BaseType="Prefix1:TransitionEventType" IsAbstract="true">
+    <Children>
+      <Property SymbolicName="Prefix9:JobIdentifier" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix9:Name" ModellingRule="Mandatory" DataType="Prefix1:String" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:BaseToolType" IsAbstract="true">
+    <Children>
+      <Property SymbolicName="Prefix9:Identifier" ModellingRule="Optional" DataType="Prefix1:String">
+        <DefaultValue>
+          <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+      </uax:String>
+        </DefaultValue>
+      </Property>
+      <Object SymbolicName="Prefix9:Location" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix9:Name" ModellingRule="Mandatory" DataType="Prefix1:String" />
+          <Property SymbolicName="Prefix9:PlaceNumber" ModellingRule="Mandatory" DataType="Prefix1:UInt16" />
+        </Children>
+      </Object>
+      <Property SymbolicName="Prefix9:Name" ModellingRule="Optional" DataType="Prefix1:String" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:MultiToolType" BaseType="Prefix9:BaseToolType">
+    <Children>
+      <Object SymbolicName="Prefix9:Tool" TypeDefinition="Prefix9:ToolType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;Tool&gt;</BrowseName>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ToolType" BaseType="Prefix9:BaseToolType">
+    <Children>
+      <Variable SymbolicName="Prefix9:ControlIdentifier1" ModellingRule="Mandatory" DataType="Prefix1:UInt32" />
+      <Variable SymbolicName="Prefix9:ControlIdentifier2" ModellingRule="Optional" DataType="Prefix1:UInt32" />
+      <Variable SymbolicName="Prefix9:ControlIdentifierInterpretation" ModellingRule="Mandatory" DataType="Prefix9:ToolManagement" />
+      <Variable SymbolicName="Prefix9:LastUsage" ModellingRule="Optional" DataType="Prefix1:UtcTime" />
+      <Variable SymbolicName="Prefix9:Locked" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
+        <Children>
+          <Property SymbolicName="Prefix9:ReasonForLocking" ModellingRule="Mandatory" DataType="Prefix9:ToolLocked" />
+        </Children>
+        <DefaultValue>
+          <uax:Boolean xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">false</uax:Boolean>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix9:PlannedForOperating" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Object SymbolicName="Prefix9:ToolLife" ModellingRule="Optional">
+        <Children>
+          <Variable SymbolicName="Prefix9:ToolLifeEntry" TypeDefinition="Prefix9:ToolLifeType" ModellingRule="MandatoryPlaceholder">
+            <BrowseName>&lt;ToolLifeEntry&gt;</BrowseName>
+          </Variable>
+        </Children>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ChannelModifierType">
+    <Children>
+      <Variable SymbolicName="Prefix9:BlockSkip" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix9:DryRun" ModellingRule="Mandatory" DataType="Prefix1:Boolean" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix9:OptionalStop" ModellingRule="Mandatory" DataType="Prefix1:Boolean" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix9:SingleStep" ModellingRule="Mandatory" DataType="Prefix1:Boolean" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix9:TestMode" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ElementMonitoringType" IsAbstract="true">
+    <Children>
+      <Property SymbolicName="Prefix9:Name" ModellingRule="Mandatory" DataType="Prefix1:String" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ChannelMonitoringType" BaseType="Prefix9:ElementMonitoringType">
+    <Children>
+      <Variable SymbolicName="Prefix9:ChannelMode" ModellingRule="Mandatory" DataType="Prefix9:ChannelMode" />
+      <Object SymbolicName="Prefix9:ChannelModifiers" TypeDefinition="Prefix9:ChannelModifierType" ModellingRule="Optional" />
+      <Variable SymbolicName="Prefix9:ChannelState" ModellingRule="Mandatory" DataType="Prefix9:ChannelState" />
+      <Variable SymbolicName="Prefix9:FeedOverride" TypeDefinition="Prefix1:AnalogUnitRangeType" ModellingRule="Mandatory" DataType="Prefix1:Double">
+        <DefaultValue>
+          <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix9:RapidOverride" TypeDefinition="Prefix1:AnalogUnitRangeType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <DefaultValue>
+          <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
+        </DefaultValue>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:CombinedChannelMonitoringType" BaseType="Prefix9:ChannelMonitoringType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:WorkingUnitMonitoringType" BaseType="Prefix9:ElementMonitoringType" IsAbstract="true">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:EDMGeneratorMonitoringType" BaseType="Prefix9:WorkingUnitMonitoringType">
+    <Children>
+      <Variable SymbolicName="Prefix9:EDMGeneratorState" ModellingRule="Mandatory" DataType="Prefix9:EDMGeneratorState" />
+      <Variable SymbolicName="Prefix9:IsOn" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:LaserMonitoringType" BaseType="Prefix9:WorkingUnitMonitoringType">
+    <Children>
+      <Variable SymbolicName="Prefix9:ControllerIsOn" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
+        <DefaultValue>
+          <uax:Boolean xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">false</uax:Boolean>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix9:LaserState" ModellingRule="Mandatory" DataType="Prefix9:LaserState" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:SpindleMonitoringType" BaseType="Prefix9:WorkingUnitMonitoringType">
+    <Children>
+      <Variable SymbolicName="Prefix9:IsRotating" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
+        <DefaultValue>
+          <uax:Boolean xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">false</uax:Boolean>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix9:IsUsedAsAxis" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix9:Override" TypeDefinition="Prefix1:AnalogUnitRangeType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <DefaultValue>
+          <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
+        </DefaultValue>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:EquipmentType">
+    <Children>
+      <Object SymbolicName="Prefix9:Tools" TypeDefinition="Prefix9:ToolListType" ModellingRule="Optional" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ToolListType">
+    <Children>
+      <Object SymbolicName="Prefix9:Tool" TypeDefinition="Prefix9:BaseToolType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;Tool&gt;</BrowseName>
+      </Object>
+      <Property SymbolicName="Prefix1:NodeVersion" ModellingRule="Optional" DataType="Prefix1:String" />
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:MachineToolIdentificationType" BaseType="Prefix5:MachineIdentificationType">
+    <Children>
+      <Object SymbolicName="Prefix9:SoftwareIdentification" ModellingRule="Optional">
+        <Children>
+          <Object SymbolicName="Prefix9:SoftwareItem" TypeDefinition="Prefix9:SoftwareIdentificationType" ModellingRule="MandatoryPlaceholder">
+            <BrowseName>&lt;SoftwareItem&gt;</BrowseName>
+          </Object>
+        </Children>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:SoftwareIdentificationType">
+    <Children>
+      <Property SymbolicName="Prefix9:Identifier" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <DefaultValue>
+          <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix3:Manufacturer" ModellingRule="Optional" DataType="Prefix1:LocalizedText" />
+      <Property SymbolicName="Prefix3:SoftwareRevision" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <DefaultValue>
+          <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:String>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:MachineOperationMonitoringType">
+    <Children>
+      <Variable SymbolicName="Prefix9:FeedOverride" TypeDefinition="Prefix1:AnalogUnitRangeType" ModellingRule="Optional" DataType="Prefix1:Double" />
+      <Variable SymbolicName="Prefix9:IsWarmUp" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix9:OperationMode" ModellingRule="Mandatory" DataType="Prefix9:MachineOperationMode" />
+      <Variable SymbolicName="Prefix9:PowerOnDuration" ModellingRule="Optional" DataType="Prefix1:UInt32" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:MachineToolType">
+    <Children>
+      <Object SymbolicName="Prefix9:Equipment" TypeDefinition="Prefix9:EquipmentType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix3:Identification" TypeDefinition="Prefix9:MachineToolIdentificationType" ModellingRule="Mandatory">
+        <Children>
+          <Property SymbolicName="Prefix3:Manufacturer" />
+          <Property SymbolicName="Prefix3:ProductInstanceUri" />
+          <Property SymbolicName="Prefix3:SerialNumber" />
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix9:Monitoring" TypeDefinition="Prefix9:MonitoringType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix9:Notification" TypeDefinition="Prefix9:NotificationType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix9:Production" TypeDefinition="Prefix9:ProductionType" ModellingRule="Mandatory" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:MonitoringType">
+    <Children>
+      <Object SymbolicName="Prefix9:MonitoredElement" TypeDefinition="Prefix9:ElementMonitoringType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;MonitoredElement&gt;</BrowseName>
+      </Object>
+      <Object SymbolicName="Prefix9:MachineTool" TypeDefinition="Prefix9:MachineOperationMonitoringType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix9:Stacklight" TypeDefinition="Prefix7:BasicStacklightType" ModellingRule="Optional">
+        <Children>
+          <Object SymbolicName="Prefix1:OrderedObject_Placeholder" TypeDefinition="Prefix7:StackElementLightType" ModellingRule="MandatoryPlaceholder">
+            <BrowseName>OrderedObject&gt;</BrowseName>
+            <Children>
+              <Variable SymbolicName="Prefix7:SignalColor" ModellingRule="Mandatory" />
+              <Variable SymbolicName="Prefix7:SignalMode" ModellingRule="Mandatory" />
+              <Property SymbolicName="Prefix7:SignalOn" ModellingRule="Mandatory" />
+            </Children>
+          </Object>
+        </Children>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:NotificationType">
+    <Children>
+      <Object SymbolicName="Prefix9:Messages" TypeDefinition="Prefix9:MessagesType" ModellingRule="Optional" SupportsEvents="true">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix9:NotificationType_Messages</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix9:NotificationType_Messages</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix9:Prognoses" TypeDefinition="Prefix9:PrognosisListType" ModellingRule="Optional" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:PrognosisListType">
+    <Children>
+      <Object SymbolicName="Prefix9:Prognosis" TypeDefinition="Prefix9:PrognosisType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;Prognosis&gt;</BrowseName>
+      </Object>
+      <Property SymbolicName="Prefix1:NodeVersion" ModellingRule="Optional" DataType="Prefix1:String" />
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ProductionType">
+    <Children>
+      <Object SymbolicName="Prefix9:ActiveProgram" TypeDefinition="Prefix9:ProductionActiveProgramType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix9:ProductionPlan" TypeDefinition="Prefix9:ProductionJobListType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix9:Statistics" TypeDefinition="Prefix9:ProductionStatisticsType" ModellingRule="Optional" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ProductionActiveProgramType" BaseType="Prefix9:ProductionProgramType">
+    <Children>
+      <Variable SymbolicName="Prefix9:JobIdentifier" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix9:JobNodeId" ModellingRule="Optional" DataType="Prefix1:NodeId" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ProductionProgramStateMachineType" BaseType="Prefix9:ProductionStateMachineType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ProductionJobListType" BaseType="Prefix1:OrderedListType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ProductionJobType">
+    <Children>
+      <Property SymbolicName="Prefix9:CustomerOrderIdentifier" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix9:Identifier" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <DefaultValue>
+          <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+      </uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix1:NumberInList" ModellingRule="Mandatory" DataType="Prefix1:UInt16" />
+      <Property SymbolicName="Prefix9:OrderIdentifier" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Object SymbolicName="Prefix9:PartSets" ModellingRule="Optional">
+        <Children>
+          <Object SymbolicName="Prefix9:PartSet" TypeDefinition="Prefix9:ProductionPartSetType" ModellingRule="MandatoryPlaceholder">
+            <BrowseName>&lt;PartSet&gt;</BrowseName>
+          </Object>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix9:ProductionPrograms" TypeDefinition="Prefix1:OrderedListType" ModellingRule="Mandatory" />
+      <Variable SymbolicName="Prefix9:RunsCompleted" ModellingRule="Mandatory" DataType="Prefix1:UInt32" />
+      <Variable SymbolicName="Prefix9:RunsPlanned" ModellingRule="Mandatory" DataType="Prefix1:UInt32">
+        <Children>
+          <Property SymbolicName="Prefix9:IsValid" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
+        </Children>
+        <DefaultValue>
+          <uax:UInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt32>
+        </DefaultValue>
+      </Variable>
+      <Object SymbolicName="Prefix9:State" TypeDefinition="Prefix9:ProductionJobStateMachineType" ModellingRule="Mandatory" />
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasInterface</ReferenceType>
+        <TargetId>Prefix1:IOrderedObjectType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ProductionProgramType">
+    <Children>
+      <Property SymbolicName="Prefix9:Name" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix1:NumberInList" ModellingRule="Mandatory" DataType="Prefix1:UInt16" />
+      <Object SymbolicName="Prefix9:State" TypeDefinition="Prefix9:ProductionProgramStateMachineType" ModellingRule="Optional" />
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasInterface</ReferenceType>
+        <TargetId>Prefix1:IOrderedObjectType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ProductionPartSetType">
+    <Children>
+      <Property SymbolicName="Prefix9:ContainsMixedParts" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
+      <Property SymbolicName="Prefix9:Name" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Variable SymbolicName="Prefix9:PartsCompletedPerRun" ModellingRule="Mandatory" DataType="Prefix1:UInt32" />
+      <Object SymbolicName="Prefix9:PartsPerRun" ModellingRule="Optional">
+        <Children>
+          <Object SymbolicName="Prefix9:Part" TypeDefinition="Prefix9:ProductionPartType" ModellingRule="MandatoryPlaceholder">
+            <BrowseName>&lt;Part&gt;</BrowseName>
+          </Object>
+        </Children>
+      </Object>
+      <Variable SymbolicName="Prefix9:PartsPlannedPerRun" ModellingRule="Mandatory" DataType="Prefix1:UInt32" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ProductionPartType">
+    <Children>
+      <Property SymbolicName="Prefix9:CustomerOrderIdentifier" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix9:Identifier" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix9:Name" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Variable SymbolicName="Prefix9:PartQuality" ModellingRule="Mandatory" DataType="Prefix9:PartQuality" />
+      <Variable SymbolicName="Prefix9:ProcessIrregularity" ModellingRule="Mandatory" DataType="Prefix9:ProcessIrregularity" />
+      <Object SymbolicName="Prefix9:State" TypeDefinition="Prefix9:ProductionPartStateMachineType" ModellingRule="Optional" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ProductionPartStateMachineType" BaseType="Prefix9:ProductionStateMachineType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ProductionStatisticsType">
+    <Children>
+      <Variable SymbolicName="Prefix9:PartsProducedInLifetime" ModellingRule="Optional" DataType="Prefix1:UInt32">
+        <DefaultValue>
+          <uax:UInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt32>
+        </DefaultValue>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:PrognosisType" IsAbstract="true">
+    <Children>
+      <Property SymbolicName="Prefix9:PredictedTime" ModellingRule="Mandatory" DataType="Prefix1:UtcTime">
+        <DefaultValue>
+          <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2000-01-01T00:00:00Z</uax:DateTime>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:MaintenancePrognosisType" BaseType="Prefix9:PrognosisType">
+    <Children>
+      <Variable SymbolicName="Prefix9:Activity" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ManualActivityPrognosisType" BaseType="Prefix9:PrognosisType">
+    <Children>
+      <Variable SymbolicName="Prefix9:Activity" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:PartLoadPrognosisType" BaseType="Prefix9:PrognosisType">
+    <Children>
+      <Variable SymbolicName="Prefix9:Location" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" />
+      <Variable SymbolicName="Prefix9:PartIdentifier" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix9:PartName" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix9:PartNodeId" ModellingRule="Optional" DataType="Prefix1:NodeId" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:PartUnloadPrognosisType" BaseType="Prefix9:PrognosisType">
+    <Children>
+      <Variable SymbolicName="Prefix9:Location" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" />
+      <Variable SymbolicName="Prefix9:PartIdentifier" ModellingRule="Optional" DataType="Prefix1:String">
+        <DefaultValue>
+          <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+      </uax:String>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix9:PartName" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Variable SymbolicName="Prefix9:PartNodeId" ModellingRule="Optional" DataType="Prefix1:NodeId" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ProcessChangeoverPrognosisType" BaseType="Prefix9:PrognosisType">
+    <Children>
+      <Variable SymbolicName="Prefix9:Activity" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" />
+      <Variable SymbolicName="Prefix9:Location" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ProductionJobEndPrognosisType" BaseType="Prefix9:PrognosisType">
+    <Children>
+      <Variable SymbolicName="Prefix9:JobNodeId" ModellingRule="Optional" DataType="Prefix1:NodeId" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix9:SourceIdentifier" ModellingRule="Mandatory" DataType="Prefix1:String" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ToolChangePrognosisType" BaseType="Prefix9:PrognosisType">
+    <Children>
+      <Variable SymbolicName="Prefix9:Location" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" />
+      <Variable SymbolicName="Prefix9:ToolIdentifier" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Variable SymbolicName="Prefix9:ToolName" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix9:ToolNodeId" ModellingRule="Optional" DataType="Prefix1:NodeId" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ToolLoadPrognosisType" BaseType="Prefix9:PrognosisType">
+    <Children>
+      <Variable SymbolicName="Prefix9:Location" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" />
+      <Variable SymbolicName="Prefix9:ToolIdentifier" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Variable SymbolicName="Prefix9:ToolName" ModellingRule="Optional" DataType="Prefix1:String" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ToolUnloadPrognosisType" BaseType="Prefix9:PrognosisType">
+    <Children>
+      <Variable SymbolicName="Prefix9:Location" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" />
+      <Variable SymbolicName="Prefix9:ToolIdentifier" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Variable SymbolicName="Prefix9:ToolName" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Variable SymbolicName="Prefix9:ToolNodeId" ModellingRule="Optional" DataType="Prefix1:NodeId" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:UtilityChangePrognosisType" BaseType="Prefix9:PrognosisType">
+    <Children>
+      <Variable SymbolicName="Prefix9:UtilityName" ModellingRule="Mandatory" DataType="Prefix1:String" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:ProductionStateMachineType" BaseType="Prefix1:FiniteStateMachineType">
+    <Children>
+      <Object SymbolicName="Prefix9:Aborted" TypeDefinition="Prefix1:StateType" />
+      <Object SymbolicName="Prefix9:AbortedToInitializing" TypeDefinition="Prefix1:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:FromState</ReferenceType>
+            <TargetId>Prefix9:ProductionStateMachineType_AbortedToInitializing</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix1:ToState</ReferenceType>
+            <TargetId>Prefix9:ProductionStateMachineType_Initializing</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix9:Ended" TypeDefinition="Prefix1:StateType" />
+      <Object SymbolicName="Prefix9:EndedToInitializing" TypeDefinition="Prefix1:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:FromState</ReferenceType>
+            <TargetId>Prefix9:ProductionStateMachineType_EndedToInitializing</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix1:ToState</ReferenceType>
+            <TargetId>Prefix9:ProductionStateMachineType_Initializing</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix9:Initializing" TypeDefinition="Prefix1:InitialStateType" />
+      <Object SymbolicName="Prefix9:InitializingToAborted" TypeDefinition="Prefix1:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:ToState</ReferenceType>
+            <TargetId>Prefix9:ProductionStateMachineType_InitializingToAborted</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:FromState</ReferenceType>
+            <TargetId>Prefix9:ProductionStateMachineType_InitializingToAborted</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix9:InitializingToRunning" TypeDefinition="Prefix1:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:FromState</ReferenceType>
+            <TargetId>Prefix9:ProductionStateMachineType_InitializingToRunning</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix1:ToState</ReferenceType>
+            <TargetId>Prefix9:ProductionStateMachineType_Running</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix9:Interrupted" TypeDefinition="Prefix1:StateType" />
+      <Object SymbolicName="Prefix9:InterruptedToAborted" TypeDefinition="Prefix1:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:ToState</ReferenceType>
+            <TargetId>Prefix9:ProductionStateMachineType_InterruptedToAborted</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:FromState</ReferenceType>
+            <TargetId>Prefix9:ProductionStateMachineType_InterruptedToAborted</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix9:InterruptedToRunning" TypeDefinition="Prefix1:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:FromState</ReferenceType>
+            <TargetId>Prefix9:ProductionStateMachineType_InterruptedToRunning</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix1:ToState</ReferenceType>
+            <TargetId>Prefix9:ProductionStateMachineType_Running</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix9:Running" TypeDefinition="Prefix1:StateType" />
+      <Object SymbolicName="Prefix9:RunningToAborted" TypeDefinition="Prefix1:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:ToState</ReferenceType>
+            <TargetId>Prefix9:ProductionStateMachineType_RunningToAborted</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:FromState</ReferenceType>
+            <TargetId>Prefix9:ProductionStateMachineType_RunningToAborted</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix9:RunningToEnded" TypeDefinition="Prefix1:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:ToState</ReferenceType>
+            <TargetId>Prefix9:ProductionStateMachineType_RunningToEnded</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:FromState</ReferenceType>
+            <TargetId>Prefix9:ProductionStateMachineType_RunningToEnded</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix9:RunningToInterrupted" TypeDefinition="Prefix1:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:ToState</ReferenceType>
+            <TargetId>Prefix9:ProductionStateMachineType_RunningToInterrupted</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:FromState</ReferenceType>
+            <TargetId>Prefix9:ProductionStateMachineType_RunningToInterrupted</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix9:RunningToRunning" TypeDefinition="Prefix1:TransitionType">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:FromState</ReferenceType>
+            <TargetId>Prefix9:ProductionStateMachineType_RunningToRunning</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:ToState</ReferenceType>
+            <TargetId>Prefix9:ProductionStateMachineType_RunningToRunning</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+</ModelDesign>

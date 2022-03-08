@@ -1,0 +1,3114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/Scales" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-09T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="9.03.2021">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/Scales" XmlNamespace="http://opcfoundation.org/UA/Scales" XmlPrefix="Prefix5" FilePath="" Version="1.0 " PublicationDate="1.06.2020">http://opcfoundation.org/UA/Scales</Namespace>
+  </Namespaces>
+  <DataType SymbolicName="Prefix5:CheckweigherResetMode" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="4">
+        <DefaultValue>
+          <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:LocalizedText>
+          <uax:Text>None</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>ResetAfterTime</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>ResetAfterPieces</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>ResetAfterTimeOrPieces</uax:Text>
+        </uax:LocalizedText>
+      </uax:ListOfLocalizedText>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="None" Identifier="0" BitMask="" ArrayDimensions="" />
+      <Field Name="ResetAfterTime" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="ResetAfterPieces" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="ResetAfterTimeOrPieces" Identifier="3" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix5:DraftShieldType" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="4">
+        <DefaultValue>
+          <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:LocalizedText>
+          <uax:Text>Right_0</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Left_1</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Top_2</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>All_3</uax:Text>
+        </uax:LocalizedText>
+      </uax:ListOfLocalizedText>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Right_0" Identifier="0" BitMask="" ArrayDimensions="" />
+      <Field Name="Left_1" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="Top_2" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="All_3" Identifier="3" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix5:EdgeOperator" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="2">
+        <DefaultValue>
+          <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:LocalizedText>
+          <uax:Text>Rising_0</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Falling_1</uax:Text>
+        </uax:LocalizedText>
+      </uax:ListOfLocalizedText>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Rising_0" Identifier="0" BitMask="" ArrayDimensions="" />
+      <Field Name="Falling_1" Identifier="1" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix5:EqualityAndRelationalOperator" BaseType="Prefix1:Enumeration">
+    <Description>AnalogConditionMode</Description>
+    <Children>
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="6">
+        <DefaultValue>
+          <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:LocalizedText>
+          <uax:Text>Equal_0</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>NotEqual_1</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>LessOrEqualThan_2</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>GreaterOrEqualThan_3</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>LessThan_4</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>GreaterThan_5</uax:Text>
+        </uax:LocalizedText>
+      </uax:ListOfLocalizedText>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Equal_0" Identifier="0" BitMask="" ArrayDimensions="" />
+      <Field Name="NotEqual_1" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="LessOrEqualThan_2" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="GreaterOrEqualThan_3" Identifier="3" BitMask="" ArrayDimensions="" />
+      <Field Name="LessThan_4" Identifier="4" BitMask="" ArrayDimensions="" />
+      <Field Name="GreaterThan_5" Identifier="5" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix5:TareMode" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="4">
+        <DefaultValue>
+          <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:LocalizedText>
+          <uax:Text>None_0</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>MeasuredTare_1</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>PresetTare_2</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>ProportionalTare_3</uax:Text>
+        </uax:LocalizedText>
+      </uax:ListOfLocalizedText>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="None_0" Identifier="0" BitMask="" ArrayDimensions="" />
+      <Field Name="MeasuredTare_1" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="PresetTare_2" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="ProportionalTare_3" Identifier="3" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix5:ToleranceState" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="4">
+        <DefaultValue>
+          <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:LocalizedText>
+          <uax:Text>In_0</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Under_1</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Over_2</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>UnderOrOver_3</uax:Text>
+        </uax:LocalizedText>
+      </uax:ListOfLocalizedText>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="In_0" Identifier="0" BitMask="" ArrayDimensions="" />
+      <Field Name="Under_1" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="Over_2" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="UnderOrOver_3" Identifier="3" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix5:AbstractWeightType" BaseType="Prefix1:Structure" IsAbstract="true">
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix5:PrintableWeightType" BaseType="Prefix5:AbstractWeightType">
+    <ClassName />
+    <Fields>
+      <Field Name="Gross" BitMask="" DataType="Prefix1:String" ArrayDimensions="" />
+      <Field Name="Net" BitMask="" DataType="Prefix1:String" ArrayDimensions="" />
+      <Field Name="Tare" BitMask="" DataType="Prefix1:String" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix5:WeightType" BaseType="Prefix5:AbstractWeightType">
+    <ClassName />
+    <Fields>
+      <Field Name="Gross" BitMask="" DataType="Prefix1:Double" ArrayDimensions="" />
+      <Field Name="Net" BitMask="" DataType="Prefix1:Double" ArrayDimensions="" />
+      <Field Name="Tare" BitMask="" DataType="Prefix1:Double" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix5:RecipeReportElementType" BaseType="Prefix1:Structure">
+    <ClassName />
+    <Fields>
+      <Field Name="ReportMessage" BitMask="" DataType="Prefix1:LocalizedText" ArrayDimensions="" />
+      <Field Name="Timestamp" BitMask="" DataType="Prefix1:UtcTime" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix5:RecipeTargetValueType" BaseType="Prefix1:Structure">
+    <ClassName />
+    <Fields>
+      <Field Name="TargetValueId" BitMask="" DataType="Prefix1:UInt32" ArrayDimensions="" />
+      <Field Name="TargetValueNodeId" BitMask="" DataType="Prefix1:NodeId" ArrayDimensions="" />
+      <Field Name="TargetValueName" BitMask="" DataType="Prefix1:LocalizedText" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix5:RecipeThresholdType" BaseType="Prefix1:Structure">
+    <ClassName />
+    <Fields>
+      <Field Name="ThresholdId" BitMask="" DataType="Prefix1:UInt32" ArrayDimensions="" />
+      <Field Name="ThresholdNodeId" BitMask="" DataType="Prefix1:NodeId" ArrayDimensions="" />
+      <Field Name="ThresholdName" BitMask="" DataType="Prefix1:LocalizedText" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <ReferenceType SymbolicName="Prefix5:NextRecipeElement" BaseType="Prefix1:HierarchicalReferences">
+    <ClassName />
+    <InverseName>PreviousRecipeElement</InverseName>
+  </ReferenceType>
+  <VariableType SymbolicName="Prefix5:TargetItemType" BaseType="Prefix1:AnalogItemType" ValueRank="ScalarOrArray">
+    <Children>
+      <Property SymbolicName="Prefix5:AllowedEngineeringUnits" ModellingRule="Optional" DataType="Prefix1:EUInformation" ValueRank="Array" ArrayDimensions="0" />
+      <Variable SymbolicName="Prefix5:MinusTolerance" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:PlusTolerance" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix5:MeasuredItemType" BaseType="Prefix1:DataItemType" DataType="Prefix1:BaseDataType" ValueRank="ScalarOrArray">
+    <Children>
+      <Property SymbolicName="Prefix5:EngineeringUnits" ModellingRule="Mandatory" DataType="Prefix1:EUInformation" />
+      <Property SymbolicName="Prefix5:EURange" ModellingRule="Mandatory" DataType="Prefix1:Range" />
+      <Property SymbolicName="Prefix5:InstrumentRange" ModellingRule="Optional" DataType="Prefix1:Range" />
+      <Property SymbolicName="Prefix1:ValuePrecision">
+        <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix5:WeightItemType" BaseType="Prefix5:MeasuredItemType" DataType="Prefix5:WeightType">
+    <Children>
+      <Variable SymbolicName="Prefix5:ActualScaleInterval" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" />
+      <Property SymbolicName="Prefix5:CenterOfZero" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Property SymbolicName="Prefix5:CurrentRangeId" ModellingRule="Optional" DataType="Prefix1:UInt16" />
+      <Property SymbolicName="Prefix5:GrossNegative" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Property SymbolicName="Prefix5:HighResolutionValue" ModellingRule="Optional" DataType="Prefix5:WeightType" />
+      <Property SymbolicName="Prefix5:InsideZero" ModellingRule="Optional" DataType="Prefix1:Boolean">
+        <Description>Defines if the current measured value is within the valid range for the setting zero procedure. This is a necessary condition to success the setZero() method if available.</Description>
+      </Property>
+      <Property SymbolicName="Prefix5:Invalid" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
+      <Property SymbolicName="Prefix5:LegalForTrade" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Property SymbolicName="Prefix5:Overload" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
+      <Property SymbolicName="Prefix5:PrintableValue" ModellingRule="Optional" DataType="Prefix5:PrintableWeightType" />
+      <Property SymbolicName="Prefix5:TareMode" ModellingRule="Mandatory" DataType="Prefix5:TareMode" />
+      <Property SymbolicName="Prefix5:Underload" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix5:VerificationScaleInterval" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:WeightId" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix5:WeightStable" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+    </Children>
+    <ClassName />
+    <DefaultValue>
+      <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=89</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <WeightType xmlns="http://opcfoundation.org/UA/Scales/Types.xsd">
+            <Gross>0</Gross>
+            <Net>0</Net>
+            <Tare>0</Tare>
+          </WeightType>
+        </uax:Body>
+      </uax:ExtensionObject>
+    </DefaultValue>
+  </VariableType>
+  <ObjectType SymbolicName="Prefix5:ScaleAlarmType" BaseType="Prefix1:AlarmConditionType">
+    <Children>
+      <Property SymbolicName="Prefix5:AuxParameters" ModellingRule="Optional" DataType="Prefix1:String" ValueRank="Array" ArrayDimensions="1" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:HelpSource" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:NotificationCategory" TypeDefinition="Prefix1:MultiStateValueDiscreteType" ModellingRule="Mandatory" DataType="Prefix1:UInteger" AccessLevel="ReadWrite">
+        <Children>
+          <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName />
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Variable>
+      <Variable SymbolicName="Prefix5:NotificationId" TypeDefinition="Prefix1:MultiStateValueDiscreteType" ModellingRule="Mandatory" DataType="Prefix1:UInteger" AccessLevel="ReadWrite">
+        <Children>
+          <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+        </Children>
+      </Variable>
+      <Variable SymbolicName="Prefix5:VendorNotificationId" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:ScaleEventType" BaseType="Prefix1:BaseEventType">
+    <Children>
+      <Property SymbolicName="Prefix5:AuxParameters" ModellingRule="Optional" DataType="Prefix1:String" ValueRank="Array" ArrayDimensions="1" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:HelpSource" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:NotificationCategory" TypeDefinition="Prefix1:MultiStateValueDiscreteType" ModellingRule="Mandatory" DataType="Prefix1:UInteger" AccessLevel="ReadWrite">
+        <Children>
+          <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="8">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OTHERS</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PROCESS</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SYSTEM</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MEMORY</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>COMPONENT</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>COMMUNICATION</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>WEIGHING_MODULE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>7</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ENVIRONMENT</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Variable>
+      <Variable SymbolicName="Prefix5:NotificationId" TypeDefinition="Prefix1:MultiStateValueDiscreteType" ModellingRule="Mandatory" DataType="Prefix1:UInteger" AccessLevel="ReadWrite">
+        <Children>
+          <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+        </Children>
+      </Variable>
+      <Variable SymbolicName="Prefix5:VendorNotificationId" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:MaterialType">
+    <Description Key="en">Represents a material.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix5:MaterialId" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <Description Key="en">Defines a unique identifier for the material.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:MaterialName" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite">
+        <Description Key="en">Defines a user-readable name of the material.</Description>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:MaterialAutomaticType" BaseType="Prefix5:MaterialType">
+    <Description Key="en">Represents a material in a recipe that will be filled automatically.</Description>
+    <Children>
+      <Object SymbolicName="Prefix5:FillingProductInformation" TypeDefinition="Prefix5:AutomaticFillingProductType" ModellingRule="Mandatory">
+        <Description>Defines the parameters necessary for filling of the material.</Description>
+        <Children>
+          <Variable SymbolicName="Prefix5:MinimumDeltaPerFeedRateMeasuringInterval" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <Description>Defines the minimum amount of weight data which needs to change within the FeedRateMeasuringInterval.</Description>
+            <Children>
+              <Property SymbolicName="Prefix1:Definition">
+                <Description>A vendor-specific, human readable string that specifies how the value of this DataItem is calculated.</Description>
+              </Property>
+              <Property SymbolicName="Prefix1:ValuePrecision">
+                <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
+              </Property>
+            </Children>
+          </Variable>
+        </Children>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:AutomaticFillingProductType" BaseType="Prefix5:ProductType">
+    <Description>Represents a product of an automatic filling scale.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix5:FeedRateMeasuringInterval" ModellingRule="Optional" DataType="Prefix1:Duration" AccessLevel="ReadWrite">
+        <Description>Defines the measuring interval for evaluating the current flowrate.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:FillingTime" ModellingRule="Optional" DataType="Prefix1:Duration" AccessLevel="ReadWrite">
+        <Description>Defines the maximal duration for the filling process to take place. Needs to be completed during this period.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:FineFeedWeight" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>Defines the volume to be dosed in fine flow.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:Definition">
+            <Description>A vendor-specific, human readable string that specifies how the value of this DataItem is calculated.</Description>
+          </Property>
+          <Property SymbolicName="Prefix1:ValuePrecision">
+            <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
+          </Property>
+        </Children>
+      </Variable>
+      <Variable SymbolicName="Prefix5:InFlightWeight" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" AccessLevel="ReadWrite">
+        <Description>Defines the volume that is behind the valve / in flight after feeding is stopped.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:Definition">
+            <Description>A vendor-specific, human readable string that specifies how the value of this DataItem is calculated.</Description>
+          </Property>
+          <Property SymbolicName="Prefix1:ValuePrecision">
+            <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
+          </Property>
+        </Children>
+      </Variable>
+      <Variable SymbolicName="Prefix5:JogFeed" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>Defines if an additional dosage is necessary.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:MinimumDeltaPerFeedRateMeasuringInterval" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>Defines the minimum amount of weight data which needs to change within the FeedRateMeasuringIntervall.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:Definition">
+            <Description>A vendor-specific, human readable string that specifies how the value of this DataItem is calculated.</Description>
+          </Property>
+          <Property SymbolicName="Prefix1:ValuePrecision">
+            <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
+          </Property>
+        </Children>
+      </Variable>
+      <Variable SymbolicName="Prefix5:SettlingTime" ModellingRule="Optional" DataType="Prefix1:Duration" AccessLevel="ReadWrite">
+        <Description>Defines the Time that needs to be passed before measurement process can be triggered.</Description>
+      </Variable>
+      <Property SymbolicName="Prefix5:TareId" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <Description>Defines an Id of tare value for the current product or item.</Description>
+      </Property>
+      <Variable SymbolicName="Prefix5:TargetWeight" TypeDefinition="Prefix5:TargetItemType" ModellingRule="Mandatory" AccessLevel="ReadWrite">
+        <Description>Defines the preset of the volume to be processed.</Description>
+        <Children>
+          <Variable SymbolicName="Prefix5:PlusTolerance" TypeDefinition="Prefix1:AnalogItemType" ValueRank="Array" ArrayDimensions="0" AccessLevel="ReadWrite" />
+        </Children>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:StatisticType">
+    <Description>Container for the different statisticvalues. All variables are optional, so that the statistics can be instanced application-specific.</Description>
+    <Children>
+      <Object SymbolicName="Prefix5:LastItem" TypeDefinition="Prefix5:WeighingItemType" ModellingRule="Optional" />
+      <Property SymbolicName="Prefix5:ResetCondition" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:StartTime" ModellingRule="Optional" DataType="Prefix1:DateTime">
+        <Description>Defines the duration of the statistic analysis. This value is relevant for time statistics.</Description>
+      </Property>
+      <Variable SymbolicName="Prefix5:Tare" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Defines the last occurring tare value at time of statistic.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:ValuePrecision">
+            <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
+          </Property>
+        </Children>
+        <DefaultValue>
+          <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix5:Throughput" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:UInteger">
+        <Description>Defines the number of items registered over period of the statistic.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:ValuePrecision">
+            <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
+          </Property>
+        </Children>
+      </Variable>
+      <Object SymbolicName="Prefix5:TotalPackages" TypeDefinition="Prefix5:StatisticCounterType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:TotalPackagesWeighed" TypeDefinition="Prefix5:StatisticCounterType" ModellingRule="Optional" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:ProductionPresetType">
+    <Description>Provides methods to manage the Production preset.</Description>
+    <Children>
+      <Method SymbolicName="Prefix5:AddProduct" ModellingRule="Optional">
+        <Description>Creates an object with the JobType from the address space.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="3">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ProductName</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ProductId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ProductType</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=17</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ProductNodeId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=17</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Variable SymbolicName="Prefix5:CurrentProducts" ModellingRule="Optional" DataType="Prefix1:String" ValueRank="Array" ArrayDimensions="0" AccessLevel="ReadWrite" />
+      <Method SymbolicName="Prefix5:DeselectProduct" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ProductId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Object SymbolicName="Prefix5:Products" TypeDefinition="Prefix1:FolderType" ModellingRule="Optional">
+        <Description>The products used in the scale aggregated in the Products Object.</Description>
+        <Children>
+          <Object SymbolicName="Prefix5:Product" TypeDefinition="Prefix5:ProductType" ModellingRule="MandatoryPlaceholder">
+            <BrowseName>&lt;Product&gt;</BrowseName>
+          </Object>
+        </Children>
+      </Object>
+      <Method SymbolicName="Prefix5:RemoveProduct" ModellingRule="Optional">
+        <Description>Removes an object with the JobType from the address space.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ProductId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Method SymbolicName="Prefix5:SelectProduct" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ProductId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Method SymbolicName="Prefix5:SwitchProduct" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ProductId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:ProductType" IsAbstract="true">
+    <Description>Represents a product related to the scale.</Description>
+    <Children>
+      <Property SymbolicName="Prefix5:BatchId" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <Description Key="en">Defines a unique Id of this Batch.</Description>
+      </Property>
+      <Property SymbolicName="Prefix5:BatchName" ModellingRule="Optional" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite">
+        <Description Key="en">Defines the name of this Batch.</Description>
+      </Property>
+      <Property SymbolicName="Prefix5:JobId" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <Description>Defines a unique id of this job.</Description>
+      </Property>
+      <Property SymbolicName="Prefix5:JobName" ModellingRule="Optional" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite">
+        <Description>Defines the name of this job.</Description>
+      </Property>
+      <Object SymbolicName="Prefix5:Lock" TypeDefinition="Prefix3:LockingServicesType" ModellingRule="Optional">
+        <Children>
+          <Method SymbolicName="Prefix3:BreakLock">
+            <Children>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>BreakLockStatus</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=6</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
+          </Method>
+          <Method SymbolicName="Prefix3:ExitLock">
+            <Children>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExitLockStatus</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=6</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
+          </Method>
+          <Method SymbolicName="Prefix3:InitLock">
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Context</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>InitLockStatus</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=6</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
+          </Method>
+          <Method SymbolicName="Prefix3:RenewLock">
+            <Children>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+                <DefaultValue>
+                  <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RenewLockStatus</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=6</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
+          </Method>
+        </Children>
+      </Object>
+      <Variable SymbolicName="Prefix5:PresetTare" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:ProductId" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <Description>Defines a unique Id of this product.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:ProductMode" TypeDefinition="Prefix1:TwoStateDiscreteType" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <DefaultValue>
+          <uax:Boolean xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">false</uax:Boolean>
+        </DefaultValue>
+      </Variable>
+      <Property SymbolicName="Prefix5:ProductName" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite">
+        <Description>Defines the name of this product.</Description>
+      </Property>
+      <Object SymbolicName="Prefix5:Statistic" TypeDefinition="Prefix5:StatisticType" ModellingRule="Optional">
+        <Description>Contains the different statistic values of the product.</Description>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:CatchweigherProductType" BaseType="Prefix5:ProductType">
+    <Description>Represents a product of a Catchweigher.</Description>
+    <Children>
+      <Object SymbolicName="Prefix5:Zones" TypeDefinition="Prefix5:ZoneType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;Zones&gt;</BrowseName>
+      </Object>
+      <Method SymbolicName="Prefix5:AddZone" ModellingRule="Optional">
+        <Description>Adds a zone to the zone array.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="4">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ZoneName</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=21</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>LowerLimit</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=11</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>UpperLimit</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=11</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>EngineeringUnits</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=887</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ZoneNodeId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=17</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Object SymbolicName="Prefix5:LastItem" TypeDefinition="Prefix5:WeighingItemType" ModellingRule="Optional" />
+      <Variable SymbolicName="Prefix5:PresetHeight" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>Defines the predefined height (in direction of global gravity) of the measured item. The value must be write before the item is measured.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:PresetLength" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>Defines the predefined length (in direction of travel) of the measured item. The value must be written before the item is measured.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:PresetWidth" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>Defines the predefined width (in third possible orthogonal direction to height and length) of the measured item. The value must be write before the item is measured.</Description>
+      </Variable>
+      <Method SymbolicName="Prefix5:RemoveZone" ModellingRule="Optional">
+        <Description>Removes a zone from the zone array.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ZoneNodeId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=17</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Variable SymbolicName="Prefix5:TargetThroughput" TypeDefinition="Prefix5:TargetItemType" ModellingRule="Optional" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:ZoneType">
+    <Description>Container for the weighing zones in a Checkweigher.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix5:LowerLimit" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" AccessLevel="ReadWrite">
+        <Description>Defines the lower weight limit of this zone. The lower limit is prior to the upper limit if two zones are beside each other.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:ValuePrecision">
+            <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
+          </Property>
+        </Children>
+      </Variable>
+      <Variable SymbolicName="Prefix5:Name" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite">
+        <Description>Defines the user-readable name of the zone.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:UpperLimit" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" AccessLevel="ReadWrite">
+        <Description>Defines the upper weight limit of this zone.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:Definition">
+            <Description>A vendor-specific, human readable string that specifies how the value of this DataItem is calculated.</Description>
+          </Property>
+          <Property SymbolicName="Prefix1:ValuePrecision">
+            <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
+          </Property>
+        </Children>
+      </Variable>
+      <Object SymbolicName="Prefix5:ZoneStatistic" TypeDefinition="Prefix5:StatisticCounterType" ModellingRule="Optional">
+        <Description>Contains statistics regarding this zone.</Description>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:StatisticCounterType">
+    <Description>Container for the different statisticvalues needed in a Checkweigher.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix5:ItemCount" ModellingRule="Mandatory" DataType="Prefix1:UInteger" AccessLevel="ReadWrite">
+        <Description>Totalized count of measurements within the scope of this statistic.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:MaxValue" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:MeanValue" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>Mean value of zone measured within this statistic.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:MinValue" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:PercentageOfTotal" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>Percentage of this statistic in relation to the total. The total is defined as the duration the product is activated within the scale.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:StandardDeviation" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:SumWeight" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>Totalized weight of all items in ItemCount.</Description>
+      </Variable>
+      <Property SymbolicName="Prefix5:Weighed" ModellingRule="Mandatory" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>This flag indicates that the element is considered in the weighed statistic.</Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:WeighingItemType">
+    <Children>
+      <Property SymbolicName="Prefix5:ItemId" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <Description>Defines a unique number that is assigned to an item.</Description>
+      </Property>
+      <Variable SymbolicName="Prefix5:MeasuredHeight" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>Defines the maximum height (in direction of travel) of the measured item.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:ValuePrecision">
+            <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
+          </Property>
+        </Children>
+      </Variable>
+      <Variable SymbolicName="Prefix5:MeasuredLength" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>Defines the maximum measured length (in direction of travel) of the measured item.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:ValuePrecision">
+            <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
+          </Property>
+        </Children>
+      </Variable>
+      <Variable SymbolicName="Prefix5:MeasuredVolume" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>Defines the volume of the item.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:ValuePrecision">
+            <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
+          </Property>
+        </Children>
+      </Variable>
+      <Variable SymbolicName="Prefix5:MeasuredWeight" TypeDefinition="Prefix5:WeightItemType" ModellingRule="Mandatory" DataType="Prefix5:WeightType" AccessLevel="ReadWrite">
+        <Description>Defines the registered weight that may be unmistakeable referenced to one item.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:ValuePrecision" ModellingRule="Optional" DataType="Prefix1:Double" />
+        </Children>
+        <DefaultValue>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=89</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <WeightType xmlns="http://opcfoundation.org/UA/Scales/Types.xsd">
+            <Gross>0</Gross>
+            <Net>0</Net>
+            <Tare>0</Tare>
+          </WeightType>
+        </uax:Body>
+      </uax:ExtensionObject>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix5:MeasuredWidth" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>Defines the maximum width (in third possible orthogonal direction to height and length) of the measured item.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:ValuePrecision">
+            <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
+          </Property>
+        </Children>
+      </Variable>
+      <Property SymbolicName="Prefix5:ZoneName" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:AutomaticWeightPriceLabelerProductType" BaseType="Prefix5:CatchweigherProductType">
+    <Description>Represents a product of a automatic weight-price-labeler.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix5:UnitPrice" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>Defines the price per weight unit.</Description>
+        <Children>
+          <Property SymbolicName="Prefix5:CurrencyUnit" ModellingRule="Mandatory" DataType="Prefix1:CurrencyUnitType" AccessLevel="ReadWrite" />
+        </Children>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:PriceItemType" BaseType="Prefix5:WeighingItemType">
+    <Children>
+      <Variable SymbolicName="Prefix5:ItemPrice" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>ItemPrice defines the price related to measured weight and UnitPrice.</Description>
+        <Children>
+          <Property SymbolicName="Prefix5:CurrencyUnit" ModellingRule="Mandatory" DataType="Prefix1:CurrencyUnitType" AccessLevel="ReadWrite" />
+        </Children>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:CheckweigherProductType" BaseType="Prefix5:CatchweigherProductType">
+    <Description>Represents a product of a Checkweigher.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix5:NominalWeight" TypeDefinition="Prefix5:TargetItemType" ModellingRule="Mandatory" AccessLevel="ReadWrite">
+        <Description>Defines the nominal (printed) weight of the product.</Description>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:CheckweigherStatisticType" BaseType="Prefix5:StatisticType">
+    <Children>
+      <Object SymbolicName="Prefix5:PackagesAcceptedWithProperty" TypeDefinition="Prefix5:AcceptedStatisticCounterType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;PackagesAcceptedWithProperty&gt;</BrowseName>
+      </Object>
+      <Object SymbolicName="Prefix5:PackagesRejectedBySystem" TypeDefinition="Prefix5:StatisticCounterType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;PackagesRejectedBySystem&gt;</BrowseName>
+      </Object>
+      <Variable SymbolicName="Prefix5:GiveAway" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional">
+        <Description>Defines the totalized value of volume above TargetWeight.</Description>
+      </Variable>
+      <Object SymbolicName="Prefix5:PackagesAcceptedWithLowerToleranceLimit1" TypeDefinition="Prefix5:AcceptedStatisticCounterType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:PackagesRejectedByDistanceFault" TypeDefinition="Prefix5:RejectedStatisticCounterType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:PackagesRejectedByLength" TypeDefinition="Prefix5:RejectedStatisticCounterType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:PackagesRejectedByLowerToleranceLimit1" TypeDefinition="Prefix5:RejectedStatisticCounterType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:PackagesRejectedByLowerToleranceLimit2" TypeDefinition="Prefix5:RejectedStatisticCounterType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:PackagesRejectedByMeanValueRequirement" TypeDefinition="Prefix5:RejectedStatisticCounterType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:PackagesRejectedByMetal" TypeDefinition="Prefix5:RejectedStatisticCounterType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:PackagesRejectedByVision" TypeDefinition="Prefix5:RejectedStatisticCounterType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:PackagesRejectedByXRay" TypeDefinition="Prefix5:RejectedStatisticCounterType" ModellingRule="Optional" />
+      <Variable SymbolicName="Prefix5:PercentageLowerToleranceLimit" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional">
+        <Description>Defines the lower tolerance limit defined in welmec 6.4.</Description>
+      </Variable>
+      <Object SymbolicName="Prefix5:TotalPackagesAccepted" TypeDefinition="Prefix5:StatisticCounterType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:TotalPackagesRejected" TypeDefinition="Prefix5:StatisticCounterType" ModellingRule="Optional" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:AcceptedStatisticCounterType" BaseType="Prefix5:StatisticCounterType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:RejectedStatisticCounterType" BaseType="Prefix5:StatisticCounterType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:ContinuousProductType" BaseType="Prefix5:ProductType">
+    <Description>Represents a product of a continuous scale.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix5:MaterialDensity" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>Defines the density of the used material.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:TargetFlowRate" TypeDefinition="Prefix5:TargetItemType" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>Defines a preset of flowrate that needs to be conveyed. This value defines the setpoint for the FlowRate control loop.</Description>
+        <Children>
+          <Variable SymbolicName="Prefix5:PlusTolerance" TypeDefinition="Prefix1:AnalogItemType" ValueRank="Array" ArrayDimensions="0" AccessLevel="ReadWrite" />
+        </Children>
+      </Variable>
+      <Variable SymbolicName="Prefix5:TargetWeight" TypeDefinition="Prefix5:TargetItemType" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>Defines a preset of the volume to be processed.</Description>
+        <Children>
+          <Variable SymbolicName="Prefix5:PlusTolerance" TypeDefinition="Prefix1:AnalogItemType" ValueRank="Array" ArrayDimensions="0" AccessLevel="ReadWrite" />
+        </Children>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:PieceCountingProductType" BaseType="Prefix5:ProductType">
+    <Description>Represents a product of a piece counting scale.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix5:CurrentItemCount" ModellingRule="Optional" DataType="Prefix1:UInteger" AccessLevel="ReadWrite">
+        <Description>Defines the current number of items that are captured by the scale.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:FeedRateMeasuringInterval" ModellingRule="Optional" DataType="Prefix1:Duration" AccessLevel="ReadWrite">
+        <Description>Defines the measurement interval for evaluating the current flowrate.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:FillingTime" ModellingRule="Optional" DataType="Prefix1:Duration" AccessLevel="ReadWrite">
+        <Description>Defines the interval during which the filling has to be completed.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:FineFeedCount" ModellingRule="Optional" DataType="Prefix1:UInteger" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:InFlightCount" ModellingRule="Optional" DataType="Prefix1:UInteger" AccessLevel="ReadWrite">
+        <Description>Defines the number of items that is behind valve / in flight after feeding is stopped.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:JogFeed" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>Defines if an additional dosage is necessary.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:MinimumDeltaPerFeedRateMeasuringInterval" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>Defines the minimum amount of weight that needs to change within the FeedRateMeasuringInterval. Otherwise the filling procedure is not valid.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:ValuePrecision">
+            <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
+          </Property>
+        </Children>
+      </Variable>
+      <Variable SymbolicName="Prefix5:NumberOfReferencePieces" ModellingRule="Mandatory" DataType="Prefix1:UInteger" AccessLevel="ReadWrite">
+        <Description>Defines the number of pieces that need to be used for reference process.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:ReferencePieceWeight" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" AccessLevel="ReadWrite">
+        <Description>Defines the reference weight of a piece.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:ValuePrecision">
+            <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
+          </Property>
+        </Children>
+      </Variable>
+      <Variable SymbolicName="Prefix5:RegisteredPieceCount" ModellingRule="Mandatory" DataType="Prefix1:UInteger" AccessLevel="ReadWrite">
+        <Description>Defines the number of pieces that were actually counted related to the ReferencePieceWeight.</Description>
+      </Variable>
+      <Method SymbolicName="Prefix5:SetTargetItemCount" ModellingRule="Optional">
+        <Description>Set the number of TargetItemCount.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>TargetItemCount</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=7</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Method SymbolicName="Prefix5:SetTargetPieceCount" ModellingRule="Optional">
+        <Description>Sets the value of TargetPieceCount. See TargetPieceCount.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="3">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>TargetPieceCount</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=7</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>PlusTolerance</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=7</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>MinusTolerance</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=7</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Variable SymbolicName="Prefix5:SettlingTime" ModellingRule="Optional" DataType="Prefix1:Duration" AccessLevel="ReadWrite">
+        <Description>Defines the time that needs to be passed before measurement process can be triggered.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:TareId" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <Description>Defines the Id of tare value for the current product or item.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:TargetItemCount" ModellingRule="Optional" DataType="Prefix1:UInteger" AccessLevel="ReadWrite">
+        <Description>Defines the number of items that are supposed to be counted during the measurement process.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:TargetPieceCount" TypeDefinition="Prefix5:TargetItemType" ModellingRule="Optional" DataType="Prefix1:UInteger" AccessLevel="ReadWrite">
+        <Description>Defines the number of pieces that need to be counted.</Description>
+        <Children>
+          <Variable SymbolicName="Prefix5:PlusTolerance" TypeDefinition="Prefix1:AnalogItemType" ValueRank="Array" ArrayDimensions="0" AccessLevel="ReadWrite" />
+        </Children>
+      </Variable>
+      <Variable SymbolicName="Prefix5:TotalizedItemCount" ModellingRule="Optional" DataType="Prefix1:UInteger" AccessLevel="ReadWrite">
+        <Description>Defines the summed up number of items. Will be reset either triggered by the user or a different product selection.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:TotalizedWeight" TypeDefinition="Prefix5:WeightItemType" ModellingRule="Optional" DataType="Prefix5:WeightType" AccessLevel="ReadWrite">
+        <Description>Defines the summed up number of weight. Will be reset either triggered by the user or a different product selection.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:ValuePrecision" ModellingRule="Optional" DataType="Prefix1:Double" />
+        </Children>
+        <DefaultValue>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=89</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <WeightType xmlns="http://opcfoundation.org/UA/Scales/Types.xsd">
+            <Gross>0</Gross>
+            <Net>0</Net>
+            <Tare>0</Tare>
+          </WeightType>
+        </uax:Body>
+      </uax:ExtensionObject>
+        </DefaultValue>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:RecipeProductType" BaseType="Prefix5:ProductType">
+    <Description>Represents a product of a recipe scale.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix5:RecipeNodeId" ModellingRule="Mandatory" DataType="Prefix1:NodeId" AccessLevel="ReadWrite">
+        <Description>Defines the node id of the recipe that is being produced.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:Report" ModellingRule="Mandatory" DataType="Prefix5:RecipeReportElementType" ValueRank="Array" ArrayDimensions="1" AccessLevel="ReadWrite">
+        <Description>Defines an array with the various messages from the recipe. Each RecipeElement generates its own report message.</Description>
+      </Variable>
+      <Object SymbolicName="Prefix5:ReportFile" TypeDefinition="Prefix1:FileType" ModellingRule="Optional">
+        <Description>Defines the File (binary, xml or other) that contains the report of the current process.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:OpenCount">
+            <Description>The current number of open file handles.</Description>
+          </Property>
+          <Property SymbolicName="Prefix1:Size">
+            <Description>The size of the file in bytes.</Description>
+          </Property>
+          <Property SymbolicName="Prefix1:UserWritable">
+            <Description>Whether the file is writable by the current user.</Description>
+          </Property>
+          <Property SymbolicName="Prefix1:Writable">
+            <Description>Whether the file is writable.</Description>
+          </Property>
+        </Children>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:SimpleProductType" BaseType="Prefix5:ProductType">
+    <Description>Represents a product of a simple scale.</Description>
+    <Children>
+      <Property SymbolicName="Prefix5:ContainerId" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:UnitPrice" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Children>
+          <Property SymbolicName="Prefix5:CurrencyUnit" ModellingRule="Mandatory" DataType="Prefix1:CurrencyUnitType" AccessLevel="ReadWrite" />
+        </Children>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:TotalizingHopperProductType" BaseType="Prefix5:ProductType">
+    <Description>Represents a product of a totalizing hopper scale.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix5:TipCounter" ModellingRule="Mandatory" DataType="Prefix1:UInteger" AccessLevel="ReadWrite">
+        <Description>Defines the number of fillings (downpour, bulk produce)</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:VolumeTargetValue" TypeDefinition="Prefix5:TargetItemType" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>Defines the preset of the volume to be processed.</Description>
+        <Children>
+          <Variable SymbolicName="Prefix5:PlusTolerance" TypeDefinition="Prefix1:AnalogItemType" ValueRank="Array" ArrayDimensions="0" AccessLevel="ReadWrite" />
+        </Children>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:VehicleProductType" BaseType="Prefix5:ProductType">
+    <Children>
+      <Property SymbolicName="Prefix5:CarrierDisplayName" ModellingRule="Optional" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:CarrierId" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:Customer" ModellingRule="Optional" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:DeltaWeight" TypeDefinition="Prefix5:WeightItemType" ModellingRule="Mandatory" DataType="Prefix5:WeightType" AccessLevel="ReadWrite">
+        <Children>
+          <Property SymbolicName="Prefix5:IsFilling" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite" />
+        </Children>
+        <DefaultValue>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=89</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <WeightType xmlns="http://opcfoundation.org/UA/Scales/Types.xsd">
+            <Gross>0</Gross>
+            <Net>0</Net>
+            <Tare>0</Tare>
+          </WeightType>
+        </uax:Body>
+      </uax:ExtensionObject>
+        </DefaultValue>
+      </Variable>
+      <Property SymbolicName="Prefix5:Destination" ModellingRule="Optional" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:DriverDisplayName" ModellingRule="Optional" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:DriverId" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+      <Method SymbolicName="Prefix5:GetVehicleInformation" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>VehicleId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Property SymbolicName="Prefix5:InboundScale" ModellingRule="Optional" DataType="Prefix1:NodeId" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:InboundWeight" TypeDefinition="Prefix5:WeightItemType" ModellingRule="Optional" DataType="Prefix5:WeightType" AccessLevel="ReadWrite">
+        <DefaultValue>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=89</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <WeightType xmlns="http://opcfoundation.org/UA/Scales/Types.xsd">
+            <Gross>0</Gross>
+            <Net>0</Net>
+            <Tare>0</Tare>
+          </WeightType>
+        </uax:Body>
+      </uax:ExtensionObject>
+        </DefaultValue>
+      </Variable>
+      <Object SymbolicName="Prefix5:Material" TypeDefinition="Prefix5:MaterialType" ModellingRule="Optional" />
+      <Property SymbolicName="Prefix5:OutboundScale" ModellingRule="Optional" DataType="Prefix1:NodeId" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix5:OutboundWeight" TypeDefinition="Prefix5:WeightItemType" ModellingRule="Mandatory" DataType="Prefix5:WeightType" AccessLevel="ReadWrite">
+        <DefaultValue>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=89</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <WeightType xmlns="http://opcfoundation.org/UA/Scales/Types.xsd">
+            <Gross>0</Gross>
+            <Net>0</Net>
+            <Tare>0</Tare>
+          </WeightType>
+        </uax:Body>
+      </uax:ExtensionObject>
+        </DefaultValue>
+      </Variable>
+      <Property SymbolicName="Prefix5:ScaleOperatorId" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:Supplier" ModellingRule="Optional" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:Tare" ModellingRule="Optional" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:TareExpirationDate" ModellingRule="Optional" DataType="Prefix1:DateTime" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:TotalWeight" ModellingRule="Optional" DataType="Prefix5:WeightType" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:TotalWeightResetDate" ModellingRule="Optional" DataType="Prefix1:DateTime" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:VehicleId" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:RecipeElementType" IsAbstract="true">
+    <Description>Represents a step, process or action in a recipe.</Description>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:ActivationType" BaseType="Prefix5:RecipeElementType">
+    <Description>Represents a activation step in a recipe.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix5:TargetValue" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" AccessLevel="ReadWrite">
+        <Description>Defines the value to be reached of the TargetValue of an aggregate that is referenced by TargetValueId.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:ValuePrecision">
+            <Description>The maximum precision that the server can maintain for the item based on restrictions in the target environment.</Description>
+          </Property>
+        </Children>
+      </Variable>
+      <Property SymbolicName="Prefix5:TargetValueId" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <Description>Defines a unique Id of the aggregate that is being activated. A list of all possible TargetValueIds is defined in RecipeScaleDeviceType.</Description>
+      </Property>
+      <Property SymbolicName="Prefix5:TargetValueNodeId" ModellingRule="Optional" DataType="Prefix1:NodeId" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:ConditionSleepType" BaseType="Prefix5:RecipeElementType" IsAbstract="true">
+    <Description>Represents a condition sleep step in a recipe.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix5:TargetThresholdValue" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:BaseDataType" AccessLevel="ReadWrite">
+        <Description>The target value with which the threshold value is compared.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:ThresholdValueId" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <Description>Defines an Id of process value that needs to be monitored and is element of the SupportedThresholdValues in the RecipeScale.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:ThresholdValueNodeId" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix1:NodeId" AccessLevel="ReadWrite">
+        <Description>The NodeId of process value that needs to be monitored and is element of the SuppoertedThresholdValues in the RecipeScale. This variable should be used if the value is part of the address space.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:Timeout" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix1:Duration" AccessLevel="ReadWrite">
+        <Description>Timeout specifies the duration within the TargetThresholdValue needs to be reached. If Timeout is exceeded and operator intervention is necessary.</Description>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:AnalogConditionSleepType" BaseType="Prefix5:ConditionSleepType">
+    <Description>Represents a condition sleep step in a recipe.</Description>
+    <Children>
+      <Property SymbolicName="Prefix5:ConditionMode" ModellingRule="Mandatory" DataType="Prefix5:EqualityAndRelationalOperator" AccessLevel="ReadWrite">
+        <Description>Defines the type of condition operator that is used.</Description>
+      </Property>
+      <Variable SymbolicName="Prefix5:TargetThresholdValue" TypeDefinition="Prefix5:TargetItemType" AccessLevel="ReadWrite">
+        <Children>
+          <Variable SymbolicName="Prefix5:PlusTolerance" TypeDefinition="Prefix1:AnalogItemType" ValueRank="Array" ArrayDimensions="0" AccessLevel="ReadWrite" />
+        </Children>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:EdgeTriggeredSleepType" BaseType="Prefix5:ConditionSleepType">
+    <Description>Represents a condition sleep step in a recipe.</Description>
+    <Children>
+      <Property SymbolicName="Prefix5:ConditionMode" ModellingRule="Mandatory" DataType="Prefix5:EdgeOperator" AccessLevel="ReadWrite">
+        <Description>Defines the type of condition operator that is used.</Description>
+      </Property>
+      <Variable SymbolicName="Prefix5:TargetThresholdValue" TypeDefinition="Prefix1:DataItemType" DataType="Prefix1:Boolean" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:TimerType" BaseType="Prefix5:RecipeElementType">
+    <Description>TimerType represents a timer step in a recipe. The recipe waits until at least Duration has passed from now.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix5:Duration" ModellingRule="Mandatory" DataType="Prefix1:Duration" AccessLevel="ReadWrite">
+        <Description>Defines the period of time the processing needs to wait before processing the next RecipeElement.</Description>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:UserInstructionType" BaseType="Prefix5:RecipeElementType">
+    <Description>UserInstructionType represents a recipe step that requires user interaction. The recipe scale display instruction (a text and/or some application- specific symbols) on an HMI and waits until the user acknowledged the instruction.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix5:DisplayText" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite">
+        <Description>Defines instructions for this RecipeElement that will be displayed to the user.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:InstructionId" ModellingRule="Optional" DataType="Prefix1:UInteger" AccessLevel="ReadWrite">
+        <Description>Defines a unique Id used to identify the instruction that is displayed via DisplayText.</Description>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:WeighingType" BaseType="Prefix5:RecipeElementType">
+    <Description>Represents a weighing process in a recipe. The process can be an automatic or manual filling process.</Description>
+    <Children>
+      <Object SymbolicName="Prefix5:Material" TypeDefinition="Prefix5:MaterialType" ModellingRule="Optional">
+        <Description>Defines the material which needs to be measured. Each material has different characteristics that are defined in MaterialType.</Description>
+      </Object>
+      <Variable SymbolicName="Prefix5:TargetWeight" TypeDefinition="Prefix5:TargetItemType" ModellingRule="Mandatory" AccessLevel="ReadWrite">
+        <Description>Defines the preset of the volume to be processed.</Description>
+        <Children>
+          <Variable SymbolicName="Prefix5:PlusTolerance" TypeDefinition="Prefix1:AnalogItemType" ValueRank="Array" ArrayDimensions="0" AccessLevel="ReadWrite" />
+        </Children>
+      </Variable>
+      <Variable SymbolicName="Prefix5:WeighingModuleNodeId" ModellingRule="Mandatory" DataType="Prefix1:NodeId" AccessLevel="ReadWrite">
+        <Description>Defines the Id of the load cell which is used for weighing the product.</Description>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:RecipeManagementType">
+    <Description>Contains methods and properties required for managing recipes.</Description>
+    <Children>
+      <Object SymbolicName="Prefix5:Recipe_No" TypeDefinition="Prefix5:RecipeType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;Recipe_No&gt;</BrowseName>
+        <Description>Defines an instance of a recipe with the number No.</Description>
+        <Children>
+          <Method SymbolicName="Prefix5:AddRecipeElement">
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="3">
+                <DefaultValue>
+                  <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ElementType</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=17</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ElementName</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>PreviousElements</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=17</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                <DefaultValue>
+                  <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ElementNodeId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=17</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
+          </Method>
+          <Method SymbolicName="Prefix5:RemoveRecipeElement">
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                <DefaultValue>
+                  <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RecipeElementNodeId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=17</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
+          </Method>
+        </Children>
+      </Object>
+      <Method SymbolicName="Prefix5:AddRecipe" ModellingRule="Optional">
+        <Description>Method to add an additional recipe of RecipeType.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RecipeId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RecipeName</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=21</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RecipeNodeId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=17</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Method SymbolicName="Prefix5:RemoveRecipe" ModellingRule="Optional">
+        <Description>Method to remove a recipe of RecipeType.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RecipeId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:RecipeType">
+    <Description>Represents a recipe. It defines additional methods and properties required for managing a recipe.</Description>
+    <Children>
+      <Method SymbolicName="Prefix5:AddRecipeElement" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="3">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ElementType</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=17</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ElementName</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>PreviousElements</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=17</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ElementNodeId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=17</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Object SymbolicName="Prefix5:RecipeElements" TypeDefinition="Prefix1:FolderType" ModellingRule="Optional">
+        <Description>Defines a Placeholder for all RecipeElements that are part of the Recipe.</Description>
+      </Object>
+      <Property SymbolicName="Prefix5:RecipeId" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <Description>RecipeId defines a unique identifier of a recipe.</Description>
+      </Property>
+      <Property SymbolicName="Prefix5:RecipeName" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite">
+        <Description>Defines a user-readable name of the recipe.</Description>
+      </Property>
+      <Method SymbolicName="Prefix5:RemoveRecipeElement" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RecipeElementNodeId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=17</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:FloatingStatisticType" BaseType="Prefix5:StatisticType">
+    <Description>Container for the different statisticvalues. All variables are optional, so that the statistics can be instanced application-specific. Should be used for application-specific statistics.</Description>
+    <Children>
+      <Property SymbolicName="Prefix5:NumberOfValues" ModellingRule="Mandatory" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
+        <Description>Defines the number of values that are considered for this floating statistics.</Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:FeederModuleType" BaseType="Prefix3:ComponentType">
+    <Description>Represents a feeder system. A feeder system is a subdevice of an automatic scale for conveying the product to or from the WeighingBridge.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix5:FeederLoad" TypeDefinition="Prefix5:MeasuredItemType" ModellingRule="Optional">
+        <Description>Defines the current loaded weight on the feeder system.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:ValuePrecision" ModellingRule="Optional" DataType="Prefix1:Double" />
+        </Children>
+      </Variable>
+      <Property SymbolicName="Prefix5:FeederRunning" ModellingRule="Optional" DataType="Prefix1:Boolean">
+        <Description>Indicates that the feeder system is running.</Description>
+      </Property>
+      <Variable SymbolicName="Prefix5:FeederSpeed" TypeDefinition="Prefix5:TargetItemType" ModellingRule="Optional">
+        <Description>Defines the current speed of a feeder system. The unit of the FeederSpeed depends on the construction system.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:MaximumFeederSpeed" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional">
+        <Description>Defines the maximal possible speed of the feeder.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:MinimalFeederSpeed" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional">
+        <Description>Defines the minimal possible speed of the feeder.</Description>
+      </Variable>
+      <Method SymbolicName="Prefix5:SetFeederSpeed" ModellingRule="Optional">
+        <Description>Allows to set a new value for the speed of the feeder system. The OPC UA server must check if the value is between the minimal and maximum allowed speed and if the unit is allowed.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>FeederSpeed</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=10</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>EngineeringUnits</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=887</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:PrinterModuleType" BaseType="Prefix3:ComponentType">
+    <Description>Represents a printing device. A printing device is a subdevice of a scale, that prints labels or other documents releated to the scale or the measurement results.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix5:LabelLength" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional">
+        <Description>Defines the length of the labels in stock.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:LabelStock" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional">
+        <Description>Indicates the level of labels in stock in percent.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:LabelTypeId" ModellingRule="Optional" DataType="Prefix1:String">
+        <Description>Defines the id of the label to be printed.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:LabelWidth" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional">
+        <Description>Defines the width of the labels in stock.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:PrintMediaStock" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional">
+        <Description>Defines the level of the print media in percent (e.g. ink, wear of thermal element, etc)</Description>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:ScaleDeviceType" BaseType="Prefix3:ComponentType" IsAbstract="true">
+    <Description>Represents a scale.</Description>
+    <Children>
+      <Property SymbolicName="Prefix5:AllowedEngineeringUnits" ModellingRule="Optional" DataType="Prefix1:EUInformation" ValueRank="Array" ArrayDimensions="0" AccessLevel="ReadWrite" />
+      <Method SymbolicName="Prefix5:ClearTare" ModellingRule="Optional" />
+      <Variable SymbolicName="Prefix5:CurrentWeight" TypeDefinition="Prefix5:WeightItemType" ModellingRule="Mandatory" DataType="Prefix5:WeightType" AccessLevel="ReadWrite">
+        <Description>Defines the current value that is measured at the sensor at the current timestamp. Might be a highly fluctuating value.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:ValuePrecision" ModellingRule="Optional" DataType="Prefix1:Double" />
+        </Children>
+        <DefaultValue>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=89</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <WeightType xmlns="http://opcfoundation.org/UA/Scales/Types.xsd">
+            <Gross>0</Gross>
+            <Net>0</Net>
+            <Tare>0</Tare>
+          </WeightType>
+        </uax:Body>
+      </uax:ExtensionObject>
+        </DefaultValue>
+      </Variable>
+      <Object SymbolicName="Prefix5:WeighingRange" TypeDefinition="Prefix5:WeighingRangeElementType" ModellingRule="MandatoryPlaceholder">
+        <BrowseName>&lt;WeighingRange&gt;</BrowseName>
+      </Object>
+      <Property SymbolicName="Prefix5:MaterialClass" ModellingRule="Optional" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite">
+        <Description>Defines the allowed material the scale may measure. Only relevant for certain scales (e.g. totalizing hopper scale or continuous scale)</Description>
+      </Property>
+      <Property SymbolicName="Prefix5:ProcessStateId" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <Description>Contains an relating identification for the occurring ProcessStateMessage.</Description>
+      </Property>
+      <Property SymbolicName="Prefix5:ProcessStateMessage" ModellingRule="Optional" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite">
+        <Description>Contains the message of the current overall state of the scale.</Description>
+      </Property>
+      <Object SymbolicName="Prefix5:ProductionPreset" TypeDefinition="Prefix5:ProductionPresetType" ModellingRule="Optional">
+        <Description>Contains the productions presets.</Description>
+      </Object>
+      <Variable SymbolicName="Prefix5:RegisteredWeight" TypeDefinition="Prefix5:WeightItemType" ModellingRule="Optional" DataType="Prefix5:WeightType" AccessLevel="ReadWrite">
+        <Description>Defines the last valid measurement that was recorded and will be used for further processing. This is the legal registered value of the scale.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:ValuePrecision" ModellingRule="Optional" DataType="Prefix1:Double" />
+        </Children>
+        <DefaultValue>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=89</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <WeightType xmlns="http://opcfoundation.org/UA/Scales/Types.xsd">
+            <Gross>0</Gross>
+            <Net>0</Net>
+            <Tare>0</Tare>
+          </WeightType>
+        </uax:Body>
+      </uax:ExtensionObject>
+        </DefaultValue>
+      </Variable>
+      <Method SymbolicName="Prefix5:RegisterWeight" ModellingRule="Optional" />
+      <Method SymbolicName="Prefix5:SetPresetTare" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>PresetTare</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=11</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>EngineeringUnits</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=887</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Method SymbolicName="Prefix5:SetTare" ModellingRule="Optional" />
+      <Method SymbolicName="Prefix5:SetZero" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:SubDevices" TypeDefinition="Prefix3:ConfigurableObjectType" ModellingRule="Optional">
+        <Children>
+          <Object SymbolicName="Prefix3:FeederModule" TypeDefinition="Prefix5:FeederModuleType" ModellingRule="OptionalPlaceholder">
+            <BrowseName>&lt;FeederModule&gt;</BrowseName>
+          </Object>
+          <Object SymbolicName="Prefix3:PrinterModule" TypeDefinition="Prefix5:PrinterModuleType" ModellingRule="OptionalPlaceholder">
+            <BrowseName>&lt;PrinterModule&gt;</BrowseName>
+          </Object>
+          <Object SymbolicName="Prefix3:SupportedTypes" TypeDefinition="Prefix1:FolderType">
+            <Description>Folder maintaining the set of (sub-types of) BaseObjectTypes that can be instantiated in the ConfigurableComponent.</Description>
+          </Object>
+          <Object SymbolicName="Prefix5:WeighingModule" TypeDefinition="Prefix5:WeighingModuleType" ModellingRule="OptionalPlaceholder" />
+        </Children>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:WeighingRangeElementType">
+    <Description>For each weighing range a scale supports the OPC UA server provides an object of WeighingRangeElementType that contains the propertys of the weighing range like the ScaleDivision.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix5:ActualScaleInterval" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>Value expressed in units of mass of the difference between two consecutive indicated values, for digital indication ("d" as described in Welmec /OIML).</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:Range" ModellingRule="Mandatory" DataType="Prefix1:Range" AccessLevel="ReadWrite">
+        <Description>Defines the range within the scale may be operated depending on the additional parameters within this type.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:EngineeringUnits" ModellingRule="Mandatory" DataType="Prefix1:EUInformation" AccessLevel="ReadWrite" />
+        </Children>
+        <DefaultValue>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>i=885</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <uax:Range>
+            <uax:Low>0</uax:Low>
+            <uax:High>0</uax:High>
+          </uax:Range>
+        </uax:Body>
+      </uax:ExtensionObject>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix5:VerificationScaleInterval" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>Value, expressed in units of mass, used for the classification and verification of an instrument. ("e" as described in Welmec /OIML)</Description>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:WeighingModuleType" BaseType="Prefix5:SimpleScaleType">
+    <Description>Represents a weighing bridge.</Description>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:AutomaticFillingScaleType" BaseType="Prefix5:ScaleDeviceType">
+    <Description>Represents an automatic filling scale.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix5:Deviation" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>Defines the relative amount of over (positive value) or under (negative value) dosed value in relation of the TargetWeight.</Description>
+      </Variable>
+      <Property SymbolicName="Prefix5:ToleranceState" ModellingRule="Optional" DataType="Prefix5:ToleranceState" AccessLevel="ReadWrite">
+        <Description>Describes the state of the tolerance deviation. The option under and over needs to be determined via TargetItemType information of TargetWeight.</Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:CatchweigherType" BaseType="Prefix5:ScaleDeviceType">
+    <Description>Represents a Catchweigher. It has no method or properties defined.</Description>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:AutomaticWeightPriceLabelerType" BaseType="Prefix5:CatchweigherType">
+    <Description>Represents an automatic weight-price-labeler.</Description>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:CheckweigherType" BaseType="Prefix5:CatchweigherType">
+    <Description>Represents a Checkweigher.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix5:TU1Percent" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>Permitted percentage of items with weight less than TU1</Description>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:ContinuousScaleType" BaseType="Prefix5:ScaleDeviceType">
+    <Description>Represents a continuous scale.</Description>
+    <Children>
+      <Object SymbolicName="Prefix5:Totalizer" TypeDefinition="Prefix5:TotalizerType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;Totalizer&gt;</BrowseName>
+        <Description>Defines the overall volume that was conveyed over a defined duration. Multiple object may be instantiated depending on the use case.</Description>
+      </Object>
+      <Variable SymbolicName="Prefix5:FlowRate" TypeDefinition="Prefix5:MeasuredItemType" ModellingRule="Mandatory" DataType="Prefix1:BaseDataType" AccessLevel="ReadWrite">
+        <Description>Defines the conveying capacity in volume per time.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:ValuePrecision" ModellingRule="Optional" DataType="Prefix1:Double" />
+        </Children>
+      </Variable>
+      <Variable SymbolicName="Prefix5:HopperWeight" TypeDefinition="Prefix5:MeasuredItemType" ModellingRule="Optional" DataType="Prefix1:BaseDataType" AccessLevel="ReadWrite">
+        <Description>Defines the remaining amount of supplied product in the hopper.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:ValuePrecision" ModellingRule="Optional" DataType="Prefix1:Double" />
+        </Children>
+      </Variable>
+      <Object SymbolicName="Prefix5:MasterTotalizer" TypeDefinition="Prefix5:TotalizerType" ModellingRule="Mandatory">
+        <Description>Defines the overall volume that was conveyed over the lifetime of the scale.</Description>
+      </Object>
+      <Variable SymbolicName="Prefix5:MaxFlowRate" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" AccessLevel="ReadWrite">
+        <Description>Defines the maximum volume that may be conveyed. Largest volume per time.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:MinFlowRate" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" AccessLevel="ReadWrite">
+        <Description>Defines the minimum volume that can be conveyed. Smallest volume per time.</Description>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:TotalizerType">
+    <Description>Contains the sum over the last measurement results.</Description>
+    <Children>
+      <Method SymbolicName="Prefix5:ResetTotalizer" ModellingRule="Optional">
+        <Description>Resets the TotalizedValue of this totalizer object. Only useful if reset is not related to a period of time.</Description>
+      </Method>
+      <Variable SymbolicName="Prefix5:TotalizedValue" TypeDefinition="Prefix5:MeasuredItemType" ModellingRule="Mandatory" DataType="Prefix5:AbstractWeightType">
+        <Description>Defines a summed up/totalized volume within a period of time.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:ValuePrecision" ModellingRule="Optional" DataType="Prefix1:Double" />
+        </Children>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:LossInWeightScaleType" BaseType="Prefix5:ContinuousScaleType">
+    <Description>Represents a loss in weight scale.</Description>
+    <Children>
+      <Method SymbolicName="Prefix5:DischargeStart" ModellingRule="Mandatory">
+        <Description>Starts a discharging process.</Description>
+      </Method>
+      <Method SymbolicName="Prefix5:DischargeStop" ModellingRule="Mandatory">
+        <Description>Stops a discharging process.</Description>
+      </Method>
+      <Property SymbolicName="Prefix5:Discharging" ModellingRule="Mandatory" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>Indicates that a discharging process is taking place.</Description>
+      </Property>
+      <Property SymbolicName="Prefix5:Refilling" ModellingRule="Mandatory" DataType="Prefix1:Boolean" AccessLevel="ReadWrite" />
+      <Method SymbolicName="Prefix5:RefillStart" ModellingRule="Mandatory">
+        <Description>Starts a refilling process.</Description>
+      </Method>
+      <Method SymbolicName="Prefix5:RefillStop" ModellingRule="Mandatory">
+        <Description>Stops a refilling process.</Description>
+      </Method>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:PieceCountingScaleType" BaseType="Prefix5:ScaleDeviceType">
+    <Description>Represents a piece counting scale.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix5:CurrentPieceCount" TypeDefinition="Prefix5:MeasuredItemType" ModellingRule="Mandatory" AccessLevel="ReadWrite">
+        <Description>Defines the number of pieces that are currently measured related to the ReferencePieceWeight.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:ValuePrecision" ModellingRule="Optional" DataType="Prefix1:Double" />
+        </Children>
+      </Variable>
+      <Variable SymbolicName="Prefix5:ReferenceOptimisationRange" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>Defines the tolerance range within the scale may optimize the ReferencePieceWeight.</Description>
+      </Variable>
+      <Method SymbolicName="Prefix5:SetNumberOfReferencePieces" ModellingRule="Mandatory">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>NumberOfReferencePieces</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=7</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Method SymbolicName="Prefix5:SetReferencePieceWeight" ModellingRule="Mandatory">
+        <Description>Sets the value for the ReferencePieceWeight (product-specific data).</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ReferencePieceWeight</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=7</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>EngineeringUnits</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=887</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Method SymbolicName="Prefix5:StartReference" ModellingRule="Optional">
+        <Description>Triggers the reference weighing process.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>NumberOfReferencePieces</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=7</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:RecipeScaleType" BaseType="Prefix5:ScaleDeviceType">
+    <Description>RecipeScaleType represents a recipe scale.</Description>
+    <Children>
+      <Method SymbolicName="Prefix5:AbortRecipe" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RecipeNodeId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=17</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Method SymbolicName="Prefix5:ContinueRecipe" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RecipeNodeId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=17</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Object SymbolicName="Prefix5:Recipes" TypeDefinition="Prefix5:RecipeManagementType" ModellingRule="Optional">
+        <Description>Defines a folder that contains all recipes. Elements in this folder must have the RecipeType.</Description>
+        <Children>
+          <Method SymbolicName="Prefix5:AddRecipe">
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
+                <DefaultValue>
+                  <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RecipeId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RecipeName</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=21</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                <DefaultValue>
+                  <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RecipeNodeId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=17</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
+          </Method>
+          <Object SymbolicName="Prefix5:Recipe_No" TypeDefinition="Prefix5:RecipeType">
+            <BrowseName>&lt;Recipe_No&gt;</BrowseName>
+            <DisplayName>Recipe</DisplayName>
+            <Children>
+              <Method SymbolicName="Prefix5:AddRecipeElement">
+                <Children>
+                  <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="3">
+                    <DefaultValue>
+                      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ElementType</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=17</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ElementName</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>PreviousElements</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=17</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+                    </DefaultValue>
+                  </Property>
+                  <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                    <DefaultValue>
+                      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ElementNodeId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=17</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+                    </DefaultValue>
+                  </Property>
+                </Children>
+              </Method>
+              <Method SymbolicName="Prefix5:RemoveRecipeElement">
+                <Children>
+                  <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                    <DefaultValue>
+                      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RecipeElementNodeId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=17</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+                    </DefaultValue>
+                  </Property>
+                </Children>
+              </Method>
+            </Children>
+          </Object>
+          <Method SymbolicName="Prefix5:RemoveRecipe">
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                <DefaultValue>
+                  <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RecipeId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
+          </Method>
+        </Children>
+      </Object>
+      <Method SymbolicName="Prefix5:SkipCurrentRecipeElement" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RecipeNodeId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=17</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Method SymbolicName="Prefix5:StartRecipe" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RecipeNodeId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=17</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Method SymbolicName="Prefix5:StopRecipe" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RecipeNodeId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=17</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Object SymbolicName="Prefix5:SupportedMaterial" TypeDefinition="Prefix5:MaterialType" ModellingRule="Optional">
+        <Children>
+          <Variable SymbolicName="Prefix5:MaterialId" AccessLevel="ReadWrite" />
+          <Variable SymbolicName="Prefix5:MaterialName" AccessLevel="ReadWrite" />
+        </Children>
+      </Object>
+      <Variable SymbolicName="Prefix5:SupportedTargetValues" ModellingRule="Optional" DataType="Prefix5:RecipeTargetValueType" ValueRank="Array" ArrayDimensions="0" AccessLevel="ReadWrite">
+        <Description>Defines a list of values that may be set via the recipe.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:SupportedThresholdValues" ModellingRule="Optional" DataType="Prefix5:RecipeThresholdType" ValueRank="Array" ArrayDimensions="0" AccessLevel="ReadWrite">
+        <Description>Defines a list of threshold values that may be used within one recipe.</Description>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:SimpleScaleType" BaseType="Prefix5:ScaleDeviceType">
+    <Description>Represents a simple scale.</Description>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:HopperScaleType" BaseType="Prefix5:SimpleScaleType">
+    <Description>Represents a hopper scale.</Description>
+    <Children>
+      <Property SymbolicName="Prefix5:Limits" ModellingRule="OptionalPlaceholder" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <BrowseName>&lt;Limits&gt;</BrowseName>
+        <Description>Defines a placeholder for individual additional limits that may be reached.</Description>
+      </Property>
+      <Variable SymbolicName="Prefix5:LevelMax" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>Defines a the maximum fill level where a action is necessary.</Description>
+        <Children>
+          <Property SymbolicName="Prefix5:LevelMode" ModellingRule="Optional" DataType="Prefix5:EqualityAndRelationalOperator" AccessLevel="ReadWrite">
+            <Description>Defines with which condition the LevelMax and the current fill level (currentWeight) are compared.</Description>
+          </Property>
+        </Children>
+      </Variable>
+      <Variable SymbolicName="Prefix5:LevelMin" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" AccessLevel="ReadWrite">
+        <Description>Defines a the minimum fill level where a action is necessary.</Description>
+        <Children>
+          <Property SymbolicName="Prefix5:LevelMode" ModellingRule="Optional" DataType="Prefix5:EqualityAndRelationalOperator" AccessLevel="ReadWrite">
+            <Description>Defines with which condition the LevelMin and the current fill level (currentWeight) are compared.</Description>
+          </Property>
+        </Children>
+      </Variable>
+      <Property SymbolicName="Prefix5:LimitMax" ModellingRule="Mandatory" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>The current fill level exceeds the allowed maximum level.</Description>
+      </Property>
+      <Property SymbolicName="Prefix5:LimitMin" ModellingRule="Mandatory" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>The current fill level falls below the allowed minimum level.</Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:LaboratoryScaleType" BaseType="Prefix5:SimpleScaleType">
+    <Description>Represents a laboratory scale.</Description>
+    <Children>
+      <Property SymbolicName="Prefix5:CalibrationNeeded" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>Defines if a calibration procedure is needed and the current process should be paused.</Description>
+      </Property>
+      <Property SymbolicName="Prefix5:CalibrationRunning" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>Defines if a calibration procedure is running.</Description>
+      </Property>
+      <Method SymbolicName="Prefix5:CloseDraftShields" ModellingRule="Optional">
+        <Description>Method to close a certain or all draft shields.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Shield</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=65</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Property SymbolicName="Prefix5:DraftShieldLeftClosed" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>Defines if the left draft shield is closed.</Description>
+      </Property>
+      <Property SymbolicName="Prefix5:DraftShieldRightClosed" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>Defines if the right draft shield is closed.</Description>
+      </Property>
+      <Property SymbolicName="Prefix5:DraftShieldTopClosed" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>Defines if the top draft shield is closed.</Description>
+      </Property>
+      <Property SymbolicName="Prefix5:IonisatorRunning" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:LevelingRunning" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>Defines if a levelling process is running.</Description>
+      </Property>
+      <Method SymbolicName="Prefix5:OpenDraftShields" ModellingRule="Optional">
+        <Description>Method to open a certain or all draft shields.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Shield</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=65</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Method SymbolicName="Prefix5:StartCalibration" ModellingRule="Optional">
+        <Description>Method to start the automatic calibration procedure.</Description>
+      </Method>
+      <Method SymbolicName="Prefix5:StartIonisator" ModellingRule="Optional">
+        <Description>Method to start the ionization process.</Description>
+      </Method>
+      <Method SymbolicName="Prefix5:StartLeveling" ModellingRule="Optional">
+        <Description>Method to start the automatic leveling procedure of the scale.</Description>
+      </Method>
+      <Method SymbolicName="Prefix5:StopIonisator" ModellingRule="Optional">
+        <Description>Method to stop the ionization process.</Description>
+      </Method>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:TotalizingHopperScaleType" BaseType="Prefix5:ScaleDeviceType">
+    <Description>Represents a totalizing hopper scale.</Description>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:VehicleScaleType" BaseType="Prefix5:ScaleDeviceType">
+    <Children>
+      <Method SymbolicName="Prefix5:InboundWeighing" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>VehicleId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Method SymbolicName="Prefix5:OnePassWeighing" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>VehicleId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Method SymbolicName="Prefix5:OutboundWeighing" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>VehicleId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:ScaleSystemType" BaseType="Prefix3:ComponentType">
+    <Description>Represents a scale system and contains one or more scales.</Description>
+    <Children>
+      <Property SymbolicName="Prefix5:Policy" ModellingRule="Optional" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="0">
+        <Description>Defines the legal guidelines that apply for the scale or need to be complied by the scale.</Description>
+      </Property>
+      <Property SymbolicName="Prefix5:ProcessStateId" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <Description>Contains an relating identification for the occurring ProcessStateMessage.</Description>
+      </Property>
+      <Property SymbolicName="Prefix5:ProcessStateMessage" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite">
+        <Description>Contains the message of the current overall state of the scale.</Description>
+      </Property>
+      <Object SymbolicName="Prefix5:ProductionOutput" TypeDefinition="Prefix5:StatisticType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:ProductionPreset" TypeDefinition="Prefix5:ProductionPresetType" ModellingRule="Optional">
+        <Description>Contains the productions presets.</Description>
+      </Object>
+      <Method SymbolicName="Prefix5:ResetGlobalStatistics" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix5:SubDevices" TypeDefinition="Prefix3:ConfigurableObjectType" ModellingRule="Optional">
+        <Description>The Scales must be a subtype of the ScaleDeviceType but must not be from the same type.</Description>
+        <Children>
+          <Object SymbolicName="Prefix5:ScaleDevice" TypeDefinition="Prefix5:ScaleDeviceType" ModellingRule="OptionalPlaceholder">
+            <BrowseName>&lt;ScaleDevice&gt;</BrowseName>
+            <Children>
+              <Object SymbolicName="Prefix5:WeighingRange" TypeDefinition="Prefix5:WeighingRangeElementType" ModellingRule="MandatoryPlaceholder" />
+            </Children>
+          </Object>
+          <Object SymbolicName="Prefix3:SupportedTypes" TypeDefinition="Prefix1:FolderType">
+            <Description>Folder maintaining the set of (sub-types of) BaseObjectTypes that can be instantiated in the ConfigurableComponent.</Description>
+          </Object>
+        </Children>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+</ModelDesign>

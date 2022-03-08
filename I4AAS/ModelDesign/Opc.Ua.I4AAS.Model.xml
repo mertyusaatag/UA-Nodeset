@@ -1,0 +1,2421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix3="http://opcfoundation.org/UA/I4AAS/" TargetNamespace="http://opcfoundation.org/UA/I4AAS/" TargetVersion="" TargetPublicationDate="2022-03-08T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/I4AAS/" XmlNamespace="http://opcfoundation.org/UA/I4AAS/" XmlPrefix="Prefix3" FilePath="" Version="5.0.0" PublicationDate="4.06.2021">http://opcfoundation.org/UA/I4AAS/</Namespace>
+  </Namespaces>
+  <DataType SymbolicName="Prefix3:AASAssetKindDataType" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="2">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Type</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>hardware or software element which specifies the common attributes shared by all instances of the type
+[SOURCE: IEC TR 62390:2005-01, 3.1.25]
+</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Instance</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>concrete, clearly identifiable component of a certain type
+
+Note: It becomes an individual entity of a type, for example a device, by defining specific property values.
+
+Note: In an object-oriented view, an instance denotes an object of a class (of a type).
+
+[SOURCE: IEC 62890:2016, 3.1.16] 65/617/CDV
+</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Type" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>hardware or software element which specifies the common attributes shared by all instances of the type
+[SOURCE: IEC TR 62390:2005-01, 3.1.25]
+</Description>
+      </Field>
+      <Field Name="Instance" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>concrete, clearly identifiable component of a certain type
+
+Note: It becomes an individual entity of a type, for example a device, by defining specific property values.
+
+Note: In an object-oriented view, an instance denotes an object of a class (of a type).
+
+[SOURCE: IEC 62890:2016, 3.1.16] 65/617/CDV
+</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:AASCategoryDataType" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CONSTANT</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Constant</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PARAMETER</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Parameter</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>VARIABLE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Variable</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>RELATIONSHIP</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Relationship</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="CONSTANT" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>Constant</Description>
+      </Field>
+      <Field Name="PARAMETER" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>Parameter</Description>
+      </Field>
+      <Field Name="VARIABLE" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description>Variable</Description>
+      </Field>
+      <Field Name="RELATIONSHIP" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description>Relationship</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:AASDataTypeIEC61360DataType" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="12">
+        <DefaultValue>
+          <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:LocalizedText>
+          <uax:Text>DATE</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>STRING</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>STRING_TRANSLATABLE</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>REAL_MEASURE</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>REAL_COUNT</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>REAL_CURRENCY</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>BOOLEAN</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>URL</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>RATIONAL</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>RATIONAL_MEASURE</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>TIME</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>TIME_STAMP</uax:Text>
+        </uax:LocalizedText>
+      </uax:ListOfLocalizedText>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="BOOLEAN" Identifier="0" BitMask="" ArrayDimensions="" />
+      <Field Name="DATE" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="RATIONAL" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="RATIONAL_MEASURE" Identifier="3" BitMask="" ArrayDimensions="" />
+      <Field Name="REAL_COUNT" Identifier="4" BitMask="" ArrayDimensions="" />
+      <Field Name="REAL_CURRENCY" Identifier="5" BitMask="" ArrayDimensions="" />
+      <Field Name="REAL_MEASURE" Identifier="6" BitMask="" ArrayDimensions="" />
+      <Field Name="STRING" Identifier="7" BitMask="" ArrayDimensions="" />
+      <Field Name="STRING_TRANSLATABLE" Identifier="8" BitMask="" ArrayDimensions="" />
+      <Field Name="TIME" Identifier="9" BitMask="" ArrayDimensions="" />
+      <Field Name="TIME_STAMP" Identifier="10" BitMask="" ArrayDimensions="" />
+      <Field Name="URL" Identifier="11" BitMask="" ArrayDimensions="" />
+      <Field Name="INTEGER" Identifier="12" BitMask="" ArrayDimensions="" />
+      <Field Name="INTEGER_COUNT" Identifier="13" BitMask="" ArrayDimensions="" />
+      <Field Name="INTEGER_CURRENCY" Identifier="14" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:AASEntityTypeDataType" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="2">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CoManagedEntity</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Self-Managed Entities have their own AAS. This is why a reference to this asset is specified as well (Entity/asset). Additionally, further property statements (compare to [15]) can be added to the asset that are not specified in the AAS of the asset itself because they are specified in relation to the complex I4.0 Component only.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SelfManagedEntity</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>For co-managed entities there is no separate AAS. The relationships and property statements of such entities are managed within the AAS of the composite I4.0 Component.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="CoManagedEntity" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>Self-Managed Entities have their own AAS. This is why a reference to this asset is specified as well (Entity/asset). Additionally, further property statements (compare to [15]) can be added to the asset that are not specified in the AAS of the asset itself because they are specified in relation to the complex I4.0 Component only.</Description>
+      </Field>
+      <Field Name="SelfManagedEntity" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>For co-managed entities there is no separate AAS. The relationships and property statements of such entities are managed within the AAS of the composite I4.0 Component.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:AASIdentifierTypeDataType" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>IRDI</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>IRDI according to ISO29002-5 as an Identifier scheme for properties and classifications</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>IRI</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Internationalized Resource Identifier according to RFC3305</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Custom</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Custom identifiers like GUIDs (globally unique Identifiers)</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="IRDI" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>IRDI according to ISO29002-5 as an Identifier scheme for properties and classifications</Description>
+      </Field>
+      <Field Name="IRI" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>Internationalized Resource Identifier according to RFC3305</Description>
+      </Field>
+      <Field Name="Custom" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description>Custom identifiers like GUIDs (globally unique Identifiers)</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:AASKeyElementsDataType" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="24">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>AccessPermissionRule</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"AccessPermissionRule"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>AnnotatedRelationshipElement</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>“AnnotatedRelationshipElement”</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Asset</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"Asset"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>AssetAdministrationShell</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"AssetAdministrationShell"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Blob</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"Blob"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Capability</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"Capability"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ConceptDescription</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"ConceptDescription"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>7</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ConceptDictionary</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"ConceptDictionary"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>8</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DataElement</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"DataElement"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>9</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Entity</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"Entity"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>10</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Event</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"Event"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>11</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>File</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"File"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>12</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>FragmentReference</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"FragmentReference"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>13</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>GlobalReference</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"GlobalReference"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>14</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MultiLanguageProperty</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"MultiLanguageProperty"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>15</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Operation</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"Operation"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>16</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Property</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"Property"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>17</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Range</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"Range"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>18</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ReferenceElement</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"ReferenceElement"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>19</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>RelationshipElement</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"RelationshipElement"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>20</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Submodel</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"Submodel"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>21</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SubmodelElement</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"SubmodelElement"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>22</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SubmodelElementCollection</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"SubmodelElementCollection"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>23</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>View</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"View"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="AccessPermissionRule" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>"AccessPermissionRule"</Description>
+      </Field>
+      <Field Name="AnnotatedRelationshipElement" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>“AnnotatedRelationshipElement”</Description>
+      </Field>
+      <Field Name="Asset" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description>"Asset"</Description>
+      </Field>
+      <Field Name="AssetAdministrationShell" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description>"AssetAdministrationShell"</Description>
+      </Field>
+      <Field Name="Blob" Identifier="4" BitMask="" ArrayDimensions="">
+        <Description>"Blob"</Description>
+      </Field>
+      <Field Name="Capability" Identifier="5" BitMask="" ArrayDimensions="">
+        <Description>"Capability"</Description>
+      </Field>
+      <Field Name="ConceptDescription" Identifier="6" BitMask="" ArrayDimensions="">
+        <Description>"ConceptDescription"</Description>
+      </Field>
+      <Field Name="ConceptDictionary" Identifier="7" BitMask="" ArrayDimensions="">
+        <Description>"ConceptDictionary"</Description>
+      </Field>
+      <Field Name="DataElement" Identifier="8" BitMask="" ArrayDimensions="">
+        <Description>"DataElement"</Description>
+      </Field>
+      <Field Name="Entity" Identifier="9" BitMask="" ArrayDimensions="">
+        <Description>"Entity"</Description>
+      </Field>
+      <Field Name="Event" Identifier="10" BitMask="" ArrayDimensions="">
+        <Description>"Event"</Description>
+      </Field>
+      <Field Name="File" Identifier="11" BitMask="" ArrayDimensions="">
+        <Description>"File"</Description>
+      </Field>
+      <Field Name="FragmentReference" Identifier="12" BitMask="" ArrayDimensions="">
+        <Description>"FragmentReference"</Description>
+      </Field>
+      <Field Name="GlobalReference" Identifier="13" BitMask="" ArrayDimensions="">
+        <Description>"GlobalReference"</Description>
+      </Field>
+      <Field Name="MultiLanguageProperty" Identifier="14" BitMask="" ArrayDimensions="">
+        <Description>"MultiLanguageProperty"</Description>
+      </Field>
+      <Field Name="Operation" Identifier="15" BitMask="" ArrayDimensions="">
+        <Description>"Operation"</Description>
+      </Field>
+      <Field Name="Property" Identifier="16" BitMask="" ArrayDimensions="">
+        <Description>"Property"</Description>
+      </Field>
+      <Field Name="Range" Identifier="17" BitMask="" ArrayDimensions="">
+        <Description>"Range"</Description>
+      </Field>
+      <Field Name="ReferenceElement" Identifier="18" BitMask="" ArrayDimensions="">
+        <Description>"ReferenceElement"</Description>
+      </Field>
+      <Field Name="RelationshipElement" Identifier="19" BitMask="" ArrayDimensions="">
+        <Description>"RelationshipElement"</Description>
+      </Field>
+      <Field Name="Submodel" Identifier="20" BitMask="" ArrayDimensions="">
+        <Description>"Submodel"</Description>
+      </Field>
+      <Field Name="SubmodelElement" Identifier="21" BitMask="" ArrayDimensions="">
+        <Description>"SubmodelElement"</Description>
+      </Field>
+      <Field Name="SubmodelElementCollection" Identifier="22" BitMask="" ArrayDimensions="">
+        <Description>"SubmodelElementCollection"</Description>
+      </Field>
+      <Field Name="View" Identifier="23" BitMask="" ArrayDimensions="">
+        <Description>"View"</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:AASKeyTypeDataType" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="5">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>IdShort</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>...</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>FragmentId</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>...</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Custom</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>...</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>IRDI</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>...</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>IRI</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>...</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="IdShort" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>...</Description>
+      </Field>
+      <Field Name="FragmentId" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>...</Description>
+      </Field>
+      <Field Name="Custom" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description>...</Description>
+      </Field>
+      <Field Name="IRDI" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description>...</Description>
+      </Field>
+      <Field Name="IRI" Identifier="4" BitMask="" ArrayDimensions="">
+        <Description>...</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:AASLevelTypeDataType" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Min</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>“Minimum”</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Max</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>“Maximum”</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Num</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"Number"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Type</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>"Type"</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Min" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>“Minimum”</Description>
+      </Field>
+      <Field Name="Max" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>“Maximum”</Description>
+      </Field>
+      <Field Name="Num" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description>"Number"</Description>
+      </Field>
+      <Field Name="Type" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description>"Type"</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:AASModelingKindDataType" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="2">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Template</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Hardware or software element which specifies the common attributes shared by all instances of the type
+[SOURCE: IEC TR 62390:2005-01, 3.1.25]
+</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Instance</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Concrete, clearly identifiable component of a certain template. 
+
+Note: It becomes an individual entity of a template, for example a device model, by defining specific property values. 
+
+Note: In an object oriented view, an instance denotes an object of a template (class). 
+
+[SOURCE: IEC 62890:2016, 3.1.16 65/617/CDV] modified
+</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Template" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>Hardware or software element which specifies the common attributes shared by all instances of the type
+[SOURCE: IEC TR 62390:2005-01, 3.1.25]
+</Description>
+      </Field>
+      <Field Name="Instance" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>Concrete, clearly identifiable component of a certain template. 
+
+Note: It becomes an individual entity of a template, for example a device model, by defining specific property values. 
+
+Note: In an object oriented view, an instance denotes an object of a template (class). 
+
+[SOURCE: IEC 62890:2016, 3.1.16 65/617/CDV] modified
+</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:AASValueTypeDataType" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="16">
+        <DefaultValue>
+          <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:LocalizedText>
+          <uax:Text>Boolean</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>SByte</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Byte</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Int16</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>UInt16</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Int32</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>UInt32</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Int64</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>UInt64</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Float</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Double</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>String</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>DateTime</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>ByteString</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>LocalizedText</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>UtcTime</uax:Text>
+        </uax:LocalizedText>
+      </uax:ListOfLocalizedText>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Boolean" Identifier="0" BitMask="" ArrayDimensions="" />
+      <Field Name="SByte" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="Byte" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="Int16" Identifier="3" BitMask="" ArrayDimensions="" />
+      <Field Name="UInt16" Identifier="4" BitMask="" ArrayDimensions="" />
+      <Field Name="Int32" Identifier="5" BitMask="" ArrayDimensions="" />
+      <Field Name="UInt32" Identifier="6" BitMask="" ArrayDimensions="" />
+      <Field Name="Int64" Identifier="7" BitMask="" ArrayDimensions="" />
+      <Field Name="UInt64" Identifier="8" BitMask="" ArrayDimensions="" />
+      <Field Name="Float" Identifier="9" BitMask="" ArrayDimensions="" />
+      <Field Name="Double" Identifier="10" BitMask="" ArrayDimensions="" />
+      <Field Name="String" Identifier="11" BitMask="" ArrayDimensions="" />
+      <Field Name="DateTime" Identifier="12" BitMask="" ArrayDimensions="" />
+      <Field Name="ByteString" Identifier="13" BitMask="" ArrayDimensions="" />
+      <Field Name="LocalizedText" Identifier="14" BitMask="" ArrayDimensions="" />
+      <Field Name="UtcTime" Identifier="15" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:AASMimeDataType" BaseType="Prefix1:String">
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:AASPathDataType" BaseType="Prefix1:String">
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:AASPropertyValueDataType" BaseType="Prefix1:String">
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:AASQualifierDataType" BaseType="Prefix1:String">
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:AASKeyDataType" BaseType="Prefix1:Structure">
+    <ClassName />
+    <Fields>
+      <Field Name="Type" BitMask="" DataType="Prefix3:AASKeyElementsDataType" ArrayDimensions="" />
+      <Field Name="Local" BitMask="" DataType="Prefix1:Boolean" ArrayDimensions="" />
+      <Field Name="Value" BitMask="" DataType="Prefix1:String" ArrayDimensions="" />
+      <Field Name="IdType" BitMask="" DataType="Prefix3:AASKeyTypeDataType" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <ReferenceType SymbolicName="Prefix3:AASReference" BaseType="Prefix1:NonHierarchicalReferences">
+    <ClassName />
+    <InverseName>IsAASReferenceOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:HasInterface" BaseType="Prefix1:NonHierarchicalReferences">
+    <ClassName />
+    <InverseName>IsInterfaceOf</InverseName>
+  </ReferenceType>
+  <ObjectType SymbolicName="Prefix3:AASAdministrativeInformationType">
+    <Children>
+      <Property SymbolicName="Prefix3:Revision" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_AdministrativeInformation_x002F_revision</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+      </uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix3:Version" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_AdministrativeInformation_x002F_version</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+      </uax:String>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_AdministrativeInformation</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASAssetAdministrationShellType">
+    <Children>
+      <Object SymbolicName="Prefix3:ConceptDictionary" TypeDefinition="Prefix3:AASConceptDictionaryType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;ConceptDictionary&gt;</BrowseName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_AssetAdministrationShell_x002F_conceptDictionaries</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix3:DataSpecification" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;DataSpecification&gt;</BrowseName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_hasDataSpecification_x002F_dataSpecification</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix3:AASReference</ReferenceType>
+            <TargetId>Prefix3:AASAssetAdministrationShellType_DataSpecification_Keys</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix3:Submodel" TypeDefinition="Prefix3:AASSubmodelType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;Submodel&gt;</BrowseName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_AssetAdministrationShell_x002F_submodels</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix3:SubmodelReference" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;SubmodelReference&gt;</BrowseName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_AssetAdministrationShell_x002F_submodels</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix3:AASReference</ReferenceType>
+            <TargetId>Prefix3:AASAssetAdministrationShellType_SubmodelReference_Keys</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix3:View" TypeDefinition="Prefix3:AASViewType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;View&gt;</BrowseName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_AssetAdministrationShell_x002F_views</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix3:Asset" TypeDefinition="Prefix3:AASAssetType" ModellingRule="Mandatory">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Asset</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:AASAssetAdministrationShellType_Asset</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix3:DerivedFrom" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="Optional">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_AssetAdministrationShell_x002F_derivedFrom</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix3:AASReference</ReferenceType>
+            <TargetId>Prefix3:AASAssetAdministrationShellType_DerivedFrom_Keys</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_AssetAdministrationShell</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix1:HasInterface</ReferenceType>
+        <TargetId>Prefix3:IAASIdentifiableType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:IAASIdentifiableType" BaseType="Prefix3:IAASReferableType">
+    <Children>
+      <Object SymbolicName="Prefix3:Administration" TypeDefinition="Prefix3:AASAdministrativeInformationType" ModellingRule="Mandatory">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Identifiable_x002F_administration</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix3:Identification" TypeDefinition="Prefix3:AASIdentifierType" ModellingRule="Mandatory">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Identifiable_x002F_identification</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Identifiable</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASConceptDictionaryType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASReferenceType">
+    <Children>
+      <Object SymbolicName="Prefix3:Referable" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;Referable&gt;</BrowseName>
+      </Object>
+      <Property SymbolicName="Prefix3:Keys" ModellingRule="Mandatory" DataType="Prefix3:AASKeyDataType" ValueRank="Array" ArrayDimensions="0" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Reference_x002F_keys</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5039</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <AASKeyDataType xmlns="http://opcfoundation.org/UA/I4AAS/Types.xsd">
+            <Type>AccessPermissionRule_0</Type>
+            <Local>false</Local>
+            <Value>
+            </Value>
+            <IdType>IdShort_0</IdType>
+          </AASKeyDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:AASReference</ReferenceType>
+        <TargetId>Prefix3:AASReferenceType_Referable</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Reference</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASSubmodelType">
+    <Children>
+      <Object SymbolicName="Prefix3:DataSpecification" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;DataSpecification&gt;</BrowseName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Asset_x002F_dataSpecifications</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix3:Qualifier" TypeDefinition="Prefix3:AASQualifierType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;Qualifier&gt;</BrowseName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Submodel_x002F_qualifiers</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix3:SubmodelElement" TypeDefinition="Prefix3:AASSubmodelElementType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;SubmodelElement&gt;</BrowseName>
+        <Children>
+          <Property SymbolicName="Prefix3:IdShort" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
+            <References>
+              <Reference>
+                <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+                <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_SubmodelElement_x002F_idShort</TargetId>
+              </Reference>
+            </References>
+            <DefaultValue>
+              <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+      </uax:String>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Submodel_x002F_submodelElements</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Property SymbolicName="Prefix3:ModelingKind" ModellingRule="Mandatory" DataType="Prefix3:AASModelingKindDataType" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_HasKind_x002F_kind</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Int32>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Submodel</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix1:HasInterface</ReferenceType>
+        <TargetId>Prefix3:IAASIdentifiableType</TargetId>
+      </Reference>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:AASSubmodelType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASViewType" BaseType="Prefix1:FolderType">
+    <Children>
+      <Object SymbolicName="Prefix3:DataSpecification" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;DataSpecification&gt;</BrowseName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_View_x002F_dataSpecifications</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix3:AASReference</ReferenceType>
+            <TargetId>Prefix3:AASViewType_DataSpecification_Keys</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix3:Referable" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;Referable&gt;</BrowseName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_View_x002F_containedElements</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix3:AASReference</ReferenceType>
+            <TargetId>Prefix3:AASViewType_Referable_Keys</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_View</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASAssetType">
+    <Children>
+      <Object SymbolicName="Prefix3:DataSpecification" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;DataSpecification&gt;</BrowseName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Asset_x002F_dataSpecifications</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix3:AASReference</ReferenceType>
+            <TargetId>Prefix3:AASAssetType_DataSpecification_Keys</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix3:AssetIdentificationModel" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="Optional">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Asset_x002F_assetIdentificationModel</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Property SymbolicName="Prefix3:AssetKind" ModellingRule="Mandatory" DataType="Prefix3:AASAssetKindDataType" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Asset_x002F_assetKind</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Int32>
+        </DefaultValue>
+      </Property>
+      <Object SymbolicName="Prefix3:BillOfMaterial" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="Optional">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Asset_x002F_billOfMaterial</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Asset</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix1:HasInterface</ReferenceType>
+        <TargetId>Prefix3:IAASIdentifiableType</TargetId>
+      </Reference>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:AASAssetType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASDataSpecificationType" IsAbstract="true">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_DataSpecification</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix1:HasInterface</ReferenceType>
+        <TargetId>Prefix3:IAASIdentifiableType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASDataSpecificationIEC61360Type" BaseType="Prefix3:AASDataSpecificationType">
+    <Children>
+      <Object SymbolicName="Prefix3:Administration" TypeDefinition="Prefix3:AASAdministrativeInformationType" ModellingRule="Mandatory">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecification_x002F_administration</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Property SymbolicName="Prefix3:Category" ModellingRule="Optional" DataType="Prefix3:AASCategoryDataType" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecification_x002F_category</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Int32>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix3:DataType" ModellingRule="Optional" DataType="Prefix3:AASDataTypeIEC61360DataType" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_dataType</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Int32>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix3:DefaultInstanceBrowseName" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <DefaultValue>
+          <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">DataSpecificationIEC61360</uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix3:Definition" ModellingRule="Optional" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_definition</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:LocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+        </DefaultValue>
+      </Property>
+      <Object SymbolicName="Prefix3:Identification" TypeDefinition="Prefix3:AASIdentifierType" ModellingRule="Mandatory">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecification_x002F_identification</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Property SymbolicName="Prefix3:LevelType" ModellingRule="Optional" DataType="Prefix3:AASLevelTypeDataType" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_levelType</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Int32>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix3:PreferredName" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_preferredName</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:LocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix3:ShortName" ModellingRule="Optional" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_shortName</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:LocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix3:SourceOfDefinition" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_sourceOfDefinition</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+      </uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix3:Symbol" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_symbol</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+      </uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix3:Unit" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_unit</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+      </uax:String>
+        </DefaultValue>
+      </Property>
+      <Object SymbolicName="Prefix3:UnitId" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="Optional">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_unitId</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix3:AASReference</ReferenceType>
+            <TargetId>Prefix3:AASDataSpecificationIEC61360Type_UnitId_Keys</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Property SymbolicName="Prefix3:Value" ModellingRule="Optional" DataType="Prefix1:BaseDataType" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_value</TargetId>
+          </Reference>
+        </References>
+      </Property>
+      <Property SymbolicName="Prefix3:ValueFormat" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_valueFormat</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+      </uax:String>
+        </DefaultValue>
+      </Property>
+      <Object SymbolicName="Prefix3:ValueId" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="Optional">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_valueId</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix3:AASReference</ReferenceType>
+            <TargetId>Prefix3:AASDataSpecificationIEC61360Type_ValueId_Keys</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix3:ValueList" TypeDefinition="Prefix3:ValueListType" ModellingRule="Optional">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F_valueList</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASIdentifierType">
+    <Children>
+      <Property SymbolicName="Prefix3:Id" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Identifier_x002F_id</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+      </uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix3:IdType" ModellingRule="Mandatory" DataType="Prefix3:AASIdentifierTypeDataType" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Identifier_x002F_idType</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Int32>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Identifier</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:ValueListType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASQualifierType">
+    <Children>
+      <Property SymbolicName="Prefix3:Type" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Qualifier_x002F_type</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+      </uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix3:Value" ModellingRule="Optional" DataType="Prefix1:BaseDataType" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Qualifier_x002F_value</TargetId>
+          </Reference>
+        </References>
+      </Property>
+      <Object SymbolicName="Prefix3:ValueId" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="Optional">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix3:AASReference</ReferenceType>
+            <TargetId>Prefix3:AASQualifierType_ValueId_Keys</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Property SymbolicName="Prefix3:ValueType" ModellingRule="Mandatory" DataType="Prefix3:AASValueTypeDataType" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Qualifier_x002F_valueType</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Int32>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Qualifier</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASSubmodelElementType" IsAbstract="true">
+    <Children>
+      <Object SymbolicName="Prefix3:DataSpecification" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;DataSpecification&gt;</BrowseName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_hasDataSpecification_x002F_dataSpecification</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix3:AASReference</ReferenceType>
+            <TargetId>Prefix3:AASSubmodelElementType_DataSpecification_Keys</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix3:Qualifier" TypeDefinition="Prefix3:AASQualifierType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;Qualifier&gt;</BrowseName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_SubmodelElement_x002F_qualifiers</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Property SymbolicName="Prefix3:Category" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix3:ModelingKind" ModellingRule="Mandatory" DataType="Prefix3:AASModelingKindDataType" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_SubmodelElement_x002F_kind</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Int32>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:IRDI_or_IRI_or_Custom_concept_description_entry_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_SubmodelElement</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix1:HasInterface</ReferenceType>
+        <TargetId>Prefix3:IAASReferableType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:IAASReferableType" BaseType="Prefix1:BaseInterfaceType">
+    <Children>
+      <Property SymbolicName="Prefix3:Category" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Referable_x002F_category</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+      </uax:String>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Referable</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASBlobType" BaseType="Prefix3:AASSubmodelElementType">
+    <Children>
+      <Object SymbolicName="Prefix3:File" TypeDefinition="Prefix1:FileType" ModellingRule="Mandatory">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Blob_x002F_value</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Blob</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASCapabilityType" BaseType="Prefix3:AASSubmodelElementType">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Property</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASEntityType" BaseType="Prefix3:AASSubmodelElementType">
+    <Children>
+      <Object SymbolicName="Prefix3:SubmodelElement" TypeDefinition="Prefix3:AASSubmodelElementType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;SubmodelElement&gt;</BrowseName>
+        <Children>
+          <Property SymbolicName="Prefix3:IdShort" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
+            <References>
+              <Reference>
+                <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+                <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_SubmodelElement_x002F_idShort</TargetId>
+              </Reference>
+            </References>
+            <DefaultValue>
+              <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+      </uax:String>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Entity_x002F_statements</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix3:Asset" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="Optional">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Entity_x002F_asset</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix3:AASReference</ReferenceType>
+            <TargetId>Prefix3:AASEntityType_Asset_Keys</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Property SymbolicName="Prefix3:EntityType" ModellingRule="Mandatory" DataType="Prefix3:AASEntityTypeDataType" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Entity_x002F_entityType</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Int32>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Entity</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASEventType" BaseType="Prefix3:AASSubmodelElementType">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_BasicEvent</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASFileType" BaseType="Prefix3:AASSubmodelElementType">
+    <Children>
+      <Object SymbolicName="Prefix3:File" TypeDefinition="Prefix1:FileType" ModellingRule="Optional">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_File_x002F_value</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Property SymbolicName="Prefix3:MimeType" ModellingRule="Mandatory" DataType="Prefix3:AASMimeDataType" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_File_x002F_mimeType</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+      </uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix3:Value" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_File</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASMultiLanguagePropertyType" BaseType="Prefix3:AASSubmodelElementType">
+    <Children>
+      <Property SymbolicName="Prefix3:Value" ModellingRule="Optional" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="0" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_MultiLanguageProperty_x002F_value</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:LocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+        </DefaultValue>
+      </Property>
+      <Object SymbolicName="Prefix3:ValueId" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="Optional">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_MultiLanguageProperty_x002F_valueId</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix3:AASReference</ReferenceType>
+            <TargetId>Prefix3:AASMultiLanguagePropertyType_ValueId_Keys</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_MultiLanguageProperty</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASOperationType" BaseType="Prefix3:AASSubmodelElementType">
+    <Children>
+      <Method SymbolicName="Prefix3:Operation" ModellingRule="MandatoryPlaceholder" />
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Operation</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASPropertyType" BaseType="Prefix3:AASSubmodelElementType">
+    <Children>
+      <Property SymbolicName="Prefix3:Value" ModellingRule="Optional" DataType="Prefix1:BaseDataType" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Property_x002F_value</TargetId>
+          </Reference>
+        </References>
+      </Property>
+      <Object SymbolicName="Prefix3:ValueId" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="Optional">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Property_x002F_valueId</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix3:AASReference</ReferenceType>
+            <TargetId>Prefix3:AASPropertyType_ValueId_Keys</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Property SymbolicName="Prefix3:ValueType" ModellingRule="Mandatory" DataType="Prefix3:AASValueTypeDataType" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Property_x002F_valueType</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Int32>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Property</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASRangeType" BaseType="Prefix3:AASSubmodelElementType">
+    <Children>
+      <Property SymbolicName="Prefix3:Max" ModellingRule="Optional" DataType="Prefix1:BaseDataType" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Range_x002F_max</TargetId>
+          </Reference>
+        </References>
+      </Property>
+      <Property SymbolicName="Prefix3:Min" ModellingRule="Optional" DataType="Prefix1:BaseDataType" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Range_x002F_min</TargetId>
+          </Reference>
+        </References>
+      </Property>
+      <Property SymbolicName="Prefix3:ValueType" ModellingRule="Mandatory" DataType="Prefix3:AASValueTypeDataType" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Range_x002F_valueType</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Int32>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Range</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASReferenceElementType" BaseType="Prefix3:AASSubmodelElementType">
+    <Children>
+      <Object SymbolicName="Prefix3:Value" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="Mandatory">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_ReferenceElement_x002F_value</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix3:AASReference</ReferenceType>
+            <TargetId>Prefix3:AASReferenceElementType_Value_Keys</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_ReferenceElement</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASRelationshipElementType" BaseType="Prefix3:AASSubmodelElementType">
+    <Children>
+      <Object SymbolicName="Prefix3:First" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="Mandatory">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_RelationshipElement_x002F_first</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix3:AASReference</ReferenceType>
+            <TargetId>Prefix3:AASRelationshipElementType_First_Keys</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix3:Second" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="Mandatory">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_RelationshipElement_x002F_second</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix3:AASReference</ReferenceType>
+            <TargetId>Prefix3:AASRelationshipElementType_Second_Keys</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_RelationshipElement</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASAnnotatedRelationshipElementType" BaseType="Prefix3:AASRelationshipElementType">
+    <Children>
+      <Object SymbolicName="Prefix3:DataElement" TypeDefinition="Prefix3:AASSubmodelElementType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;DataElement&gt;</BrowseName>
+        <Children>
+          <Property SymbolicName="Prefix3:IdShort" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
+            <References>
+              <Reference>
+                <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+                <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_SubmodelElement_x002F_idShort</TargetId>
+              </Reference>
+            </References>
+            <DefaultValue>
+              <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+      </uax:String>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_AnnotatedRelationshipElement_x002F_annotations</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_AnnotatedRelationshipElement</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASSubmodelElementCollectionType" BaseType="Prefix3:AASSubmodelElementType">
+    <Children>
+      <Object SymbolicName="Prefix3:SubmodelElement" TypeDefinition="Prefix3:AASSubmodelElementType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;SubmodelElement&gt;</BrowseName>
+        <Children>
+          <Property SymbolicName="Prefix3:IdShort" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
+            <References>
+              <Reference>
+                <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+                <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_SubmodelElement_x002F_idShort</TargetId>
+              </Reference>
+            </References>
+            <DefaultValue>
+              <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+      </uax:String>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_SubmodelElementCollection_x002F_values</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Property SymbolicName="Prefix3:AllowDuplicates" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_SubmodelElementCollection_x002F_allowDuplicates</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:Boolean xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">false</uax:Boolean>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_SubmodelElementCollection</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASOrderedSubmodelElementCollectionType" BaseType="Prefix3:AASSubmodelElementCollectionType">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_SubmodelElementCollection</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASIrdiConceptDescriptionType" BaseType="Prefix1:IrdiDictionaryEntryType">
+    <Children>
+      <Object SymbolicName="Prefix3:DataSpecification" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;DataSpecification&gt;</BrowseName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_hasDataSpecification_x002F_dataSpecification</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix3:ConceptDescription" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;ConceptDescription&gt;</BrowseName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_ConceptDescription_x002F_IsCaseOf</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <References>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix1:HasInterface</ReferenceType>
+        <TargetId>Prefix3:AASIrdiConceptDescriptionType</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_ConceptDescription</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASIriConceptDescriptionType" BaseType="Prefix1:UriDictionaryEntryType">
+    <Children>
+      <Object SymbolicName="Prefix3:ConceptDescription" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;ConceptDescription&gt;</BrowseName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_ConceptDescription_x002F_IsCaseOf</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix3:DataSpecification" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;DataSpecification&gt;</BrowseName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_hasDataSpecification_x002F_dataSpecification</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <References>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix1:HasInterface</ReferenceType>
+        <TargetId>Prefix3:AASIriConceptDescriptionType</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_ConceptDescription</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AASCustomConceptDescriptionType" BaseType="Prefix1:DictionaryEntryType">
+    <Children>
+      <Object SymbolicName="Prefix3:ConceptDescription" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;ConceptDescription&gt;</BrowseName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_ConceptDescription_x002F_IsCaseOf</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix3:DataSpecification" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;DataSpecification&gt;</BrowseName>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_hasDataSpecification_x002F_dataSpecification</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <References>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix1:HasInterface</ReferenceType>
+        <TargetId>Prefix3:AASCustomConceptDescriptionType</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
+        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_ConceptDescription</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+</ModelDesign>
