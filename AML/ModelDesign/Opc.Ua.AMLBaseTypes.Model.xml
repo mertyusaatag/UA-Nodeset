@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
-<ModelDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix3="http://opcfoundation.org/UA/AML/" TargetNamespace="http://opcfoundation.org/UA/AML/" TargetVersion="" TargetPublicationDate="2021-08-10T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<ModelDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix3="http://opcfoundation.org/UA/AML/" TargetNamespace="http://opcfoundation.org/UA/AML/" TargetVersion="" TargetPublicationDate="2022-03-07T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/AML/" XmlNamespace="http://opcfoundation.org/UA/AML/" XmlPrefix="Prefix3" FilePath="" Version="1.00" PublicationDate="22.02.2016">http://opcfoundation.org/UA/AML/</Namespace>
@@ -69,7 +69,4 @@
   </ReferenceType>
   <Object SymbolicName="Prefix3:AutomationMLFiles" TypeDefinition="Prefix1:FolderType" />
   <Object SymbolicName="Prefix3:AutomationMLInstanceHierarchies" TypeDefinition="Prefix1:FolderType" />
-  <Object SymbolicName="Prefix3:AutomationMLLibraries" TypeDefinition="Prefix1:FolderType">
-    <Description>The browse entry point when looking for AutomationML libraries in the server address space.</Description>
-  </Object>
 </ModelDesign>

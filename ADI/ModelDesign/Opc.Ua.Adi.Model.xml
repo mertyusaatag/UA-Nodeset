@@ -1,201 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ModelDesign xmlns:Prefix5="http://opcfoundation.org/UA/ADI/" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-08-10T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/ADI/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-07T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
-    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09.03.2021">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="9.03.2021">http://opcfoundation.org/UA/DI/</Namespace>
     <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/ADI/" XmlNamespace="http://opcfoundation.org/UA/ADI/" XmlPrefix="Prefix5" FilePath="" Version="1.01" PublicationDate="31.07.2013">http://opcfoundation.org/UA/ADI/</Namespace>
   </Namespaces>
-  <ObjectType SymbolicName="Prefix5:AnalyserDeviceType" BaseType="Prefix3:DeviceType" IsAbstract="true">
-    <Children>
-      <Object SymbolicName="Prefix3:ParameterSet">
-        <Children>
-          <Variable SymbolicName="Prefix5:DiagnosticStatus" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix3:DeviceHealthEnumeration">
-            <Description>General health status of the analyser</Description>
-          </Variable>
-          <Object SymbolicName="Prefix5:ConfigData" TypeDefinition="Prefix1:FileType" ModellingRule="Optional">
-            <Description>Optional analyser device large configuration</Description>
-          </Object>
-        </Children>
-      </Object>
-      <Object SymbolicName="Prefix3:MethodSet" ModellingRule="Mandatory">
-        <Children>
-          <Method SymbolicName="Prefix5:GetConfiguration" ModellingRule="Mandatory">
-            <Children>
-              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
-                <DefaultValue>
-                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ConfigData
-              
-                i=15
-              
-              -1
-              
-            
-          
-        
-      </ListOfExtensionObject>
-                </DefaultValue>
-              </Property>
-            </Children>
-          </Method>
-          <Method SymbolicName="Prefix5:SetConfiguration" ModellingRule="Mandatory">
-            <Children>
-              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
-                <DefaultValue>
-                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ConfigData
-              
-                i=15
-              
-              -1
-              
-            
-          
-        
-      </ListOfExtensionObject>
-                </DefaultValue>
-              </Property>
-              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
-                <DefaultValue>
-                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ConfigDataDigest
-              
-                i=12
-              
-              -1
-              
-            
-          
-        
-      </ListOfExtensionObject>
-                </DefaultValue>
-              </Property>
-            </Children>
-          </Method>
-          <Method SymbolicName="Prefix5:GetConfigDataDigest" ModellingRule="Mandatory">
-            <Children>
-              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
-                <DefaultValue>
-                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ConfigDataDigest
-              
-                i=12
-              
-              -1
-              
-            
-          
-        
-      </ListOfExtensionObject>
-                </DefaultValue>
-              </Property>
-            </Children>
-          </Method>
-          <Method SymbolicName="Prefix5:CompareConfigDataDigest" ModellingRule="Mandatory">
-            <Children>
-              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
-                <DefaultValue>
-                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ConfigDataDigest
-              
-                i=12
-              
-              -1
-              
-            
-          
-        
-      </ListOfExtensionObject>
-                </DefaultValue>
-              </Property>
-              <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
-                <DefaultValue>
-                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              IsEqual
-              
-                i=1
-              
-              -1
-              
-            
-          
-        
-      </ListOfExtensionObject>
-                </DefaultValue>
-              </Property>
-            </Children>
-          </Method>
-          <Method SymbolicName="Prefix5:ResetAllChannels" ModellingRule="Mandatory">
-            <Description>Reset all AnalyserChannels belonging to this AnalyserDevice.</Description>
-          </Method>
-          <Method SymbolicName="Prefix5:StartAllChannels" ModellingRule="Mandatory">
-            <Description>Start all AnalyserChannels belonging to this AnalyserDevice.</Description>
-          </Method>
-          <Method SymbolicName="Prefix5:StopAllChannels" ModellingRule="Mandatory">
-            <Description>Stop all AnalyserChannels belonging to this AnalyserDevice.</Description>
-          </Method>
-          <Method SymbolicName="Prefix5:AbortAllChannels" ModellingRule="Mandatory">
-            <Description>Abort all AnalyserChannels belonging to this AnalyserDevice.</Description>
-          </Method>
-          <Method SymbolicName="Prefix5:GotoOperating" ModellingRule="Mandatory">
-            <Description>AnalyserDeviceStateMachine to go to Operating state, forcing all AnalyserChannels to leave the SlaveMode state and go to the Operating state.</Description>
-          </Method>
-          <Method SymbolicName="Prefix5:GotoMaintenance" ModellingRule="Mandatory">
-            <Description>AnalyserDeviceStateMachine to go to Maintenance state, forcing all AnalyserChannels to SlaveMode state.</Description>
-          </Method>
-        </Children>
-      </Object>
-      <Object SymbolicName="Prefix5:Configuration" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Mandatory" />
-      <Object SymbolicName="Prefix5:Status" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Mandatory" />
-      <Object SymbolicName="Prefix5:FactorySettings" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Mandatory" />
-      <Object SymbolicName="Prefix5:AnalyserStateMachine" TypeDefinition="Prefix5:AnalyserDeviceStateMachineType" ModellingRule="Mandatory" />
-      <Object SymbolicName="Prefix5:ChannelIdentifier" TypeDefinition="Prefix5:AnalyserChannelType" ModellingRule="OptionalPlaceholder">
-        <BrowseName>&lt;ChannelIdentifier&gt;</BrowseName>
-        <Description>Channel definition</Description>
-      </Object>
-      <Object SymbolicName="Prefix5:AccessorySlotIdentifier" TypeDefinition="Prefix5:AccessorySlotType" ModellingRule="OptionalPlaceholder">
-        <BrowseName>&lt;AccessorySlotIdentifier&gt;</BrowseName>
-        <Description>AccessorySlot definition</Description>
-      </Object>
-    </Children>
-    <ClassName />
-  </ObjectType>
   <ObjectType SymbolicName="Prefix5:AnalyserDeviceStateMachineType" BaseType="Prefix1:FiniteStateMachineType">
     <Children>
       <Object SymbolicName="Prefix5:Powerup" TypeDefinition="Prefix1:InitialStateType">
@@ -340,134 +150,6 @@
             <TargetId>Prefix5:AnalyserDeviceStateMachineType_MaintenanceToShutdownTransition</TargetId>
           </Reference>
         </References>
-      </Object>
-    </Children>
-    <ClassName />
-  </ObjectType>
-  <ObjectType SymbolicName="Prefix5:AnalyserChannelType" BaseType="Prefix3:TopologyElementType">
-    <Children>
-      <Object SymbolicName="Prefix3:ParameterSet">
-        <Children>
-          <Variable SymbolicName="Prefix5:ChannelId" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix1:String">
-            <Description>Channel Id defined by user</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:IsEnabled" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
-            <Description>True if the channel is enabled and accepting commands</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:DiagnosticStatus" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix3:DeviceHealthEnumeration">
-            <Description>AnalyserChannel health status</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:ActiveStream" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:String">
-            <Description>Active stream for this AnalyserChannel</Description>
-          </Variable>
-        </Children>
-      </Object>
-      <Object SymbolicName="Prefix3:MethodSet" ModellingRule="Mandatory">
-        <Children>
-          <Method SymbolicName="Prefix5:GotoOperating" ModellingRule="Mandatory">
-            <Description>Transitions the AnalyserChannel to Operating mode.</Description>
-          </Method>
-          <Method SymbolicName="Prefix5:GotoMaintenance" ModellingRule="Mandatory">
-            <Description>Transitions the AnalyserChannel to Maintenance mode.</Description>
-          </Method>
-          <Method SymbolicName="Prefix5:StartSingleAcquisition" ModellingRule="Mandatory">
-            <Children>
-              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
-                <DefaultValue>
-                  <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExecutionCycle
-              
-                ns=1;i=9378
-              
-              -1
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              ExecutionCycleSubcode
-              
-                i=7
-              
-              -1
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              SelectedStream
-              
-                i=12
-              
-              -1
-              
-            
-          
-        
-      </ListOfExtensionObject>
-                </DefaultValue>
-              </Property>
-            </Children>
-          </Method>
-          <Method SymbolicName="Prefix5:Reset" ModellingRule="Mandatory">
-            <Description>Causes transition to the Resetting state.</Description>
-          </Method>
-          <Method SymbolicName="Prefix5:Start" ModellingRule="Mandatory">
-            <Description>Causes transition to the Starting state.</Description>
-          </Method>
-          <Method SymbolicName="Prefix5:Stop" ModellingRule="Mandatory">
-            <Description>Causes transition to the Stopping state.</Description>
-          </Method>
-          <Method SymbolicName="Prefix5:Hold" ModellingRule="Mandatory">
-            <Description>Causes transition to the Holding state.</Description>
-          </Method>
-          <Method SymbolicName="Prefix5:Unhold" ModellingRule="Mandatory">
-            <Description>Causes transition to the Unholding state.</Description>
-          </Method>
-          <Method SymbolicName="Prefix5:Suspend" ModellingRule="Mandatory">
-            <Description>Causes transition to the Suspending state.</Description>
-          </Method>
-          <Method SymbolicName="Prefix5:Unsuspend" ModellingRule="Mandatory">
-            <Description>Causes transition to the Unsuspending state.</Description>
-          </Method>
-          <Method SymbolicName="Prefix5:Abort" ModellingRule="Mandatory">
-            <Description>Causes transition to the Aborting state.</Description>
-          </Method>
-          <Method SymbolicName="Prefix5:Clear" ModellingRule="Mandatory">
-            <Description>Causes transition to the Clearing state.</Description>
-          </Method>
-        </Children>
-      </Object>
-      <Object SymbolicName="Prefix5:GroupIdentifier" TypeDefinition="Prefix3:FunctionalGroupType">
-        <BrowseName>&lt;GroupIdentifier&gt;</BrowseName>
-        <Description>Group definition</Description>
-      </Object>
-      <Object SymbolicName="Prefix5:Configuration" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Mandatory" />
-      <Object SymbolicName="Prefix5:Status" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Mandatory" />
-      <Object SymbolicName="Prefix5:ChannelStateMachine" TypeDefinition="Prefix5:AnalyserChannelStateMachineType" ModellingRule="Mandatory" SupportsEvents="true" />
-      <Object SymbolicName="Prefix5:StreamIdentifier" TypeDefinition="Prefix5:StreamType" ModellingRule="OptionalPlaceholder">
-        <BrowseName>&lt;StreamIdentifier&gt;</BrowseName>
-        <Description>Stream definition</Description>
-      </Object>
-      <Object SymbolicName="Prefix5:AccessorySlotIdentifier" TypeDefinition="Prefix5:AccessorySlotType" ModellingRule="OptionalPlaceholder">
-        <BrowseName>&lt;AccessorySlotIdentifier&gt;</BrowseName>
-        <Description>AccessorySlot definition</Description>
       </Object>
     </Children>
     <ClassName />
@@ -2723,110 +2405,6 @@
     </Children>
     <ClassName />
   </ObjectType>
-  <ObjectType SymbolicName="Prefix5:StreamType" BaseType="Prefix3:TopologyElementType">
-    <Children>
-      <Object SymbolicName="Prefix3:ParameterSet">
-        <Children>
-          <Variable SymbolicName="Prefix5:IsEnabled" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
-            <Description>True if this stream maybe used to perform acquisition</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:IsForced" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix1:Boolean">
-            <Description>True if this stream is forced, which means that is the only Stream on this AnalyserChannel that can be used to perform acquisition</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:DiagnosticStatus" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix3:DeviceHealthEnumeration">
-            <Description>Stream health status</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:LastCalibrationTime" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix1:DateTime">
-            <Description>Time at which the last calibration was run</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:LastValidationTime" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix1:DateTime">
-            <Description>Time at which the last validation was run</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:LastSampleTime" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:DateTime">
-            <Description>Time at which the last sample was acquired</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:TimeBetweenSamples" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Duration">
-            <Description>Number of milliseconds between two consecutive starts of acquisition</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:IsActive" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
-            <Description>True if this stream is actually running, acquiring data</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:ExecutionCycle" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix5:ExecutionCycleEnumeration">
-            <Description>Indicates which Execution cycle is in progress</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:ExecutionCycleSubcode" TypeDefinition="Prefix1:MultiStateDiscreteType" ModellingRule="Mandatory" DataType="Prefix1:UInteger">
-            <Description>Indicates which Execution cycle subcode is in progress</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:Progress" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:Float">
-            <Description>Indicates the progress of an acquisition in terms of percentage of completion. Its value shall be between 0 and 100.</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:AcquisitionCounter" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Counter">
-            <Description>Simple counter incremented after each Sampling acquisition performed on this Stream</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:AcquisitionResultStatus" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix5:AcquisitionResultStatusEnumeration">
-            <Description>Quality of the acquisition</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:RawData" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix1:BaseDataType">
-            <Description>Raw data produced as a result of data acquisition on the Stream</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:ScaledData" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:BaseDataType">
-            <Description>Scaled data produced as a result of data acquisition on the Stream and application of the analyser model</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:Offset" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix1:Duration">
-            <Description>Difference in milliseconds between the start of sample extraction and the start of the analysis.</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:AcquisitionEndTime" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:DateTime">
-            <Description>The end time of the AnalyseSample or AnalyseCalibrationSample or AnalyseValidationSample state of the AnalyserChannel_OperatingModeExecuteSubStateMachine state machine</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:CampaignId" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
-            <Description>Defines the current campaign</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:BatchId" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
-            <Description>Defines the current batch</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:SubBatchId" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
-            <Description>Defines the current sub-batch</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:LotId" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
-            <Description>Defines the current lot</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:MaterialId" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
-            <Description>Defines the current material</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:Process" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
-            <Description>Current Process name</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:Unit" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
-            <Description>Current Unit name</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:Operation" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
-            <Description>Current Operation name</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:Phase" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
-            <Description>Current Phase name</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:UserId" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
-            <Description>Login name of the user who is logged on at the device console</Description>
-          </Variable>
-          <Variable SymbolicName="Prefix5:SampleId" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
-            <Description>Identifier for the sample</Description>
-          </Variable>
-        </Children>
-      </Object>
-      <Object SymbolicName="Prefix5:GroupIdentifier" TypeDefinition="Prefix3:FunctionalGroupType">
-        <BrowseName>&lt;GroupIdentifier&gt;</BrowseName>
-        <Description>Group definition</Description>
-      </Object>
-      <Object SymbolicName="Prefix5:Configuration" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Mandatory" />
-      <Object SymbolicName="Prefix5:Status" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Mandatory" />
-      <Object SymbolicName="Prefix5:AcquisitionSettings" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Mandatory" />
-      <Object SymbolicName="Prefix5:AcquisitionStatus" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Mandatory" />
-      <Object SymbolicName="Prefix5:AcquisitionData" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Mandatory" />
-      <Object SymbolicName="Prefix5:ChemometricModelSettings" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Mandatory" />
-      <Object SymbolicName="Prefix5:Context" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Mandatory" />
-    </Children>
-    <ClassName />
-  </ObjectType>
   <ObjectType SymbolicName="Prefix5:AnalyserChannelOperatingStateType" BaseType="Prefix1:StateType">
     <References>
       <Reference>
@@ -2957,226 +2535,226 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                
-                
-                IDLE
-              
-              
-                
-                
-                Idle, no cleaning or acquisition cycle in progress
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                
-                
-                DIAGNOSTIC
-              
-              
-                
-                
-                Scquisition cycle collecting data for diagnostic purpose
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                
-                
-                CLEANING
-              
-              
-                
-                
-                Cleaning cycle
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                
-                
-                CALIBRATION
-              
-              
-                
-                
-                Calibration acquisition cycle
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              8
-              
-                
-                
-                VALIDATION
-              
-              
-                
-                
-                Validation acquisition cycle
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              16
-              
-                
-                
-                SAMPLING
-              
-              
-                
-                
-                Sample acquisition cycle
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              32769
-              
-                
-                
-                DIAGNOSTIC_WITH_GRAB_SAMPLE
-              
-              
-                
-                
-                Scquisition cycle collecting data for diagnostic purpose and sample is extracted from the process to be sent in control lab
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              32770
-              
-                
-                
-                CLEANING_WITH_GRAB_SAMPLE
-              
-              
-                
-                
-                Cleaning cycle with or without acquisition and sample is extracted from the process to be sent in control lab
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              32772
-              
-                
-                
-                CALIBRATION_WITH_GRAB_SAMPLE
-              
-              
-                
-                
-                Calibration acquisition cycle and sample is extracted from the process to be sent in control lab
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              32776
-              
-                
-                
-                VALIDATION_WITH_GRAB_SAMPLE
-              
-              
-                
-                
-                Validation acquisition cycle and sample is extracted from the process to be sent in control lab
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              32784
-              
-                
-                
-                SAMPLING_WITH_GRAB_SAMPLE
-              
-              
-                
-                
-                Sample acquisition cycle and sample is extracted from the process to be sent in control lab
-              
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>0</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>IDLE</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Idle, no cleaning or acquisition cycle in progress</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>1</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>DIAGNOSTIC</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Scquisition cycle collecting data for diagnostic purpose</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>2</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>CLEANING</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Cleaning cycle</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>4</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>CALIBRATION</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Calibration acquisition cycle</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>8</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>VALIDATION</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Validation acquisition cycle</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>16</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>SAMPLING</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Sample acquisition cycle</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>32769</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>DIAGNOSTIC_WITH_GRAB_SAMPLE</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Scquisition cycle collecting data for diagnostic purpose and sample is extracted from the process to be sent in control lab</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>32770</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>CLEANING_WITH_GRAB_SAMPLE</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Cleaning cycle with or without acquisition and sample is extracted from the process to be sent in control lab</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>32772</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>CALIBRATION_WITH_GRAB_SAMPLE</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Calibration acquisition cycle and sample is extracted from the process to be sent in control lab</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>32776</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>VALIDATION_WITH_GRAB_SAMPLE</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Validation acquisition cycle and sample is extracted from the process to be sent in control lab</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>32784</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>SAMPLING_WITH_GRAB_SAMPLE</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Sample acquisition cycle and sample is extracted from the process to be sent in control lab</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -3223,31 +2801,31 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-          
-          NOT_USED
-        
-        
-          
-          
-          GOOD
-        
-        
-          
-          
-          BAD
-        
-        
-          
-          
-          UNKNOWN
-        
-        
-          
-          
-          PARTIAL
-        
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>NOT_USED</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>GOOD</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>BAD</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>UNKNOWN</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>PARTIAL</Text>
+        </LocalizedText>
       </ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -3354,146 +2932,146 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                
-                
-                NORMAL_0
-              
-              
-                
-                
-                Normal
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                
-                
-                WARNING_LOW_1
-              
-              
-                
-                
-                In low warning range
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                
-                
-                WARNING_HIGH_2
-              
-              
-                
-                
-                In high warning range
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                
-                
-                WARNING_4
-              
-              
-                
-                
-                In warning range (low or high) or some other warning cause
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              8
-              
-                
-                
-                ALARM_LOW_8
-              
-              
-                
-                
-                In low alarm range
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              16
-              
-                
-                
-                ALARM_HIGH_16
-              
-              
-                
-                
-                In high alarm range
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              32
-              
-                
-                
-                ALARM_32
-              
-              
-                
-                
-                In alarm range (low or high) or some other alarm cause
-              
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>0</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>NORMAL_0</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Normal</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>1</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>WARNING_LOW_1</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>In low warning range</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>2</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>WARNING_HIGH_2</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>In high warning range</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>4</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>WARNING_4</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>In warning range (low or high) or some other warning cause</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>8</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>ALARM_LOW_8</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>In low alarm range</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>16</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>ALARM_HIGH_16</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>In high alarm range</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>32</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>ALARM_32</Text>
+              </DisplayName>
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>In alarm range (low or high) or some other alarm cause</Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>

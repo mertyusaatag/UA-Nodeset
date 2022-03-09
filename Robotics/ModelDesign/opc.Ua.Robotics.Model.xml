@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
-<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/Robotics/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2021-08-10T00:00:00+02:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/Robotics/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-07T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
-    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09.03.2021">http://opcfoundation.org/UA/DI/</Namespace>
-    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/Robotics/" XmlNamespace="http://opcfoundation.org/UA/Robotics/" XmlPrefix="Prefix5" FilePath="" Version="1.0.0" PublicationDate="06.05.2019">http://opcfoundation.org/UA/Robotics/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="9.03.2021">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/Robotics/" XmlNamespace="http://opcfoundation.org/UA/Robotics/" XmlPrefix="Prefix5" FilePath="" Version="1.01.2" PublicationDate="20.05.2021">http://opcfoundation.org/UA/Robotics/</Namespace>
   </Namespaces>
   <ObjectType SymbolicName="Prefix5:MotionDeviceSystemType" BaseType="Prefix3:ComponentType">
     <Description>Contains the set of controllers and motion devices in a closely-coupled motion device system.</Description>
@@ -119,7 +119,7 @@
             <Description>The speed of the CPU fan.</Description>
           </Variable>
           <Variable SymbolicName="Prefix5:InputVoltage" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double">
-            <Description>The input voltage of the controller which can be a configured value. To distuinguish between an AC or DC supply the optional property Definition of the base type DataItemType shall be used.</Description>
+            <Description>The input voltage of the controller which can be a configured value. To distinguish between an AC or DC supply the optional property Definition of the base type DataItemType shall be used.</Description>
           </Variable>
           <Variable SymbolicName="Prefix5:Temperature" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double">
             <Description>The controller temperature given by a temperature sensor inside of the controller.</Description>
@@ -178,7 +178,7 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix5:UserType">
-    <Description>The UserType ObjectType describes information of the registred user groups within the control system.</Description>
+    <Description>The UserType ObjectType describes information of the registered user groups within the control system.</Description>
     <Children>
       <Property SymbolicName="Prefix5:Level" ModellingRule="Mandatory" DataType="Prefix1:String">
         <Description>The weight of the load mounted on one mounting point.</Description>
@@ -256,7 +256,7 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix5:PowerTrainType" BaseType="Prefix3:ComponentType">
-    <Description>The PowerTrainType represents instances of power trains of a motion device.</Description>
+    <Description>The PowerTrainType represents instances of powertrains of a motion device.</Description>
     <Children>
       <Object SymbolicName="Prefix5:MotorIdentifier" TypeDefinition="Prefix5:MotorType" ModellingRule="MandatoryPlaceholder">
         <BrowseName>&lt;MotorIdentifier&gt;</BrowseName>
@@ -293,17 +293,17 @@
     <ClassName />
   </ObjectType>
   <ReferenceType SymbolicName="Prefix5:Requires" BaseType="Prefix1:HierarchicalReferences">
-    <Description>Reference: Describe the coupling between a power train and axes from the axis point of view. An axis has a Requires reference to all powertrains that need to move such that only this single axis moves.</Description>
+    <Description>Reference: Describe the coupling between a powertrain and axes from the axis point of view. An axis has a Requires reference to all powertrains that need to move such that only this single axis moves.</Description>
     <ClassName />
     <InverseName>IsRequiredBy</InverseName>
   </ReferenceType>
   <ReferenceType SymbolicName="Prefix5:Moves" BaseType="Prefix1:HierarchicalReferences">
-    <Description>Reference: Describe the coupling between a power train and the axes from the power train point of view.</Description>
+    <Description>Reference: Describe the coupling between a powertrain and the axes from the powertrain point of view.</Description>
     <ClassName />
     <InverseName>IsMovedBy</InverseName>
   </ReferenceType>
   <ReferenceType SymbolicName="Prefix5:HasSlave" BaseType="Prefix1:HierarchicalReferences">
-    <Description>Reference: Provide the master-slave relationship of power trains which provide torque for a common axis. The InverseName is IsSlaveOf.</Description>
+    <Description>Reference: Provide the master-slave relationship of powertrains which provide torque for a common axis. The InverseName is IsSlaveOf.</Description>
     <ClassName />
     <InverseName>IsSlaveOf</InverseName>
   </ReferenceType>
@@ -326,18 +326,14 @@
     </Children>
     <References>
       <Reference>
-        <ReferenceType>Prefix5:IsConnectedTo</ReferenceType>
-        <TargetId>Prefix5:GearIdentifier</TargetId>
-      </Reference>
-      <Reference>
         <ReferenceType>Prefix5:IsDrivenBy</ReferenceType>
-        <TargetId>Prefix5:DriveIdentifiier</TargetId>
+        <TargetId>Prefix5:DriveIdentifier</TargetId>
       </Reference>
     </References>
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix5:GearType" BaseType="Prefix3:ComponentType">
-    <Description>The GearType describes a gear in a power train, e.g. a gear box or a spindle.</Description>
+    <Description>The GearType describes a gear in a powertrain, e.g. a gear box or a spindle.</Description>
     <Children>
       <Variable SymbolicName="Prefix5:GearRatio" TypeDefinition="Prefix1:RationalNumberType" ModellingRule="Mandatory" DataType="Prefix1:RationalNumber">
         <Description>The transmission ratio of the gear expressed as a fraction as input velocity (motor side) by output velocity (load side).</Description>
@@ -346,18 +342,8 @@
         <Description>Pitch describes the distance covered in millimeters (mm) for linear motion per one revolution of the output side of the driving unit. Pitch is used in combination with GearRatio to describe the overall transmission from input to output of the gear.</Description>
       </Variable>
     </Children>
-    <References>
-      <Reference>
-        <ReferenceType>Prefix5:IsConnectedTo</ReferenceType>
-        <TargetId>Prefix5:MotorIdentifier</TargetId>
-      </Reference>
-    </References>
     <ClassName />
   </ObjectType>
-  <ReferenceType SymbolicName="Prefix5:IsConnectedTo" BaseType="Prefix1:NonHierarchicalReferences" Symmetric="true">
-    <Description>Reference: Describe dependencies between objects which are mounted or mechanically linked or connected to each other. The IsConnectedTo reference is symmetric and has no InverseName.</Description>
-    <ClassName />
-  </ReferenceType>
   <ReferenceType SymbolicName="Prefix5:IsDrivenBy" BaseType="Prefix1:HierarchicalReferences">
     <Description>Reference: Describe dependencies between objects which have a driving or powering character. The BrowseName IsDrivenBy and the InverseName Drives describe semantically the hierarchical dependency.</Description>
     <ClassName />
@@ -417,7 +403,7 @@
         </Children>
       </Object>
       <Property SymbolicName="Prefix3:ComponentName" ModellingRule="Mandatory">
-        <Description>A user writeable name provided by the vendor, integrator or user of the device.</Description>
+        <Description>A user writable name provided by the vendor, integrator or user of the device.</Description>
       </Property>
     </Children>
     <References>
@@ -446,6 +432,10 @@
     </Children>
     <ClassName />
   </ObjectType>
+  <ReferenceType SymbolicName="Prefix5:IsConnectedTo" BaseType="Prefix1:NonHierarchicalReferences" Symmetric="true">
+    <Description>Reference: Describe dependencies between objects which are mounted or mechanically linked or connected to each other. The IsConnectedTo reference is symmetric and has no InverseName.</Description>
+    <ClassName />
+  </ReferenceType>
   <DataType SymbolicName="Prefix5:ExecutionModeEnumeration" BaseType="Prefix1:Enumeration">
     <Children>
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="0">
