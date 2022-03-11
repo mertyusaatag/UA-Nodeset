@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
-<ModelDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix3="http://opcfoundation.org/UA/MTConnect/v2/" TargetNamespace="http://opcfoundation.org/UA/MTConnect/v2/" TargetVersion="" TargetPublicationDate="2022-03-07T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<ModelDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix3="http://opcfoundation.org/UA/MTConnect/v2/" TargetNamespace="http://opcfoundation.org/UA/MTConnect/v2/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
-    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20.11.2020">http://opcfoundation.org/UA/</Namespace>
-    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/MTConnect/v2/" XmlNamespace="http://opcfoundation.org/UA/MTConnect/v2/" XmlPrefix="Prefix3" FilePath="" Version="2.00.01" PublicationDate="5.06.2020">http://opcfoundation.org/UA/MTConnect/v2/</Namespace>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/MTConnect/v2/" XmlNamespace="http://opcfoundation.org/UA/MTConnect/v2/" XmlPrefix="Prefix3" FilePath="" Version="2.00.01" PublicationDate="05/06/2020">http://opcfoundation.org/UA/MTConnect/v2/</Namespace>
   </Namespaces>
   <ObjectType SymbolicName="Prefix3:MTChannelType">
     <Description>
@@ -47,6 +47,180 @@
       represents each sensing element connected to a sensor unit.
     </Description>
       </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:MTComponentType" IsAbstract="true">
+    <Description>
+      The base \gls{MTComponent} Type from which all MTConnect Components are
+      derived. The component types will be created once for all
+      \gls{MTComponent} \glspl{Object} of that type based on the \gls{QName} of
+      the MTConnect XML element. The Component Objects will be created and
+      inserted into the \mtmodel{Components} folder with a \gls{BrowseName} of
+      the Component \gls{QName} and the \mtmodel{name} element if specified
+      surrounded by square brackets, \texttt{[]}. For example if the MTConnect
+      Element is: \xml{&lt;Linear name='X'&gt;...&lt;/...&gt;} The OPC
+      UA Object with \gls{BrowseName} \xml{Linear[X]} will be created with the
+      \uamodel{HasTypeDefinition} referencing the \mtmodel{Linear} OPC UA
+      \gls{Type}. The meta data for the component and its relationships are
+      static. The dynamic data will be represented using the \cite{UAPart8}. An
+      abstract XML element. Replaced in the XML document by types of component
+      elements representing physical parts and logical functions of a piece of
+      equipment.
+    </Description>
+    <Children>
+      <Property SymbolicName="Prefix3:Name" ModellingRule="Optional" DataType="Prefix1:String">
+        <Description>
+      The base \gls{MTComponent} Type from which all MTConnect Components are
+      derived. The component types will be created once for all
+      \gls{MTComponent} \glspl{Object} of that type based on the \gls{QName} of
+      the MTConnect XML element. The Component Objects will be created and
+      inserted into the \mtmodel{Components} folder with a \gls{BrowseName} of
+      the Component \gls{QName} and the \mtmodel{name} element if specified
+      surrounded by square brackets, \texttt{[]}. For example if the MTConnect
+      Element is: \xml{&lt;Linear name='X'&gt;...&lt;/...&gt;} The OPC
+      UA Object with \gls{BrowseName} \xml{Linear[X]} will be created with the
+      \uamodel{HasTypeDefinition} referencing the \mtmodel{Linear} OPC UA
+      \gls{Type}. The meta data for the component and its relationships are
+      static. The dynamic data will be represented using the \cite{UAPart8}. An
+      abstract XML element. Replaced in the XML document by types of component
+      elements representing physical parts and logical functions of a piece of
+      equipment.
+    </Description>
+      </Property>
+      <Property SymbolicName="Prefix3:NativeName" ModellingRule="Optional" DataType="Prefix1:String">
+        <Description>
+      The base \gls{MTComponent} Type from which all MTConnect Components are
+      derived. The component types will be created once for all
+      \gls{MTComponent} \glspl{Object} of that type based on the \gls{QName} of
+      the MTConnect XML element. The Component Objects will be created and
+      inserted into the \mtmodel{Components} folder with a \gls{BrowseName} of
+      the Component \gls{QName} and the \mtmodel{name} element if specified
+      surrounded by square brackets, \texttt{[]}. For example if the MTConnect
+      Element is: \xml{&lt;Linear name='X'&gt;...&lt;/...&gt;} The OPC
+      UA Object with \gls{BrowseName} \xml{Linear[X]} will be created with the
+      \uamodel{HasTypeDefinition} referencing the \mtmodel{Linear} OPC UA
+      \gls{Type}. The meta data for the component and its relationships are
+      static. The dynamic data will be represented using the \cite{UAPart8}. An
+      abstract XML element. Replaced in the XML document by types of component
+      elements representing physical parts and logical functions of a piece of
+      equipment.
+    </Description>
+      </Property>
+      <Property SymbolicName="Prefix3:SampleInterval" ModellingRule="Optional" DataType="Prefix1:Float">
+        <Description>
+      The base \gls{MTComponent} Type from which all MTConnect Components are
+      derived. The component types will be created once for all
+      \gls{MTComponent} \glspl{Object} of that type based on the \gls{QName} of
+      the MTConnect XML element. The Component Objects will be created and
+      inserted into the \mtmodel{Components} folder with a \gls{BrowseName} of
+      the Component \gls{QName} and the \mtmodel{name} element if specified
+      surrounded by square brackets, \texttt{[]}. For example if the MTConnect
+      Element is: \xml{&lt;Linear name='X'&gt;...&lt;/...&gt;} The OPC
+      UA Object with \gls{BrowseName} \xml{Linear[X]} will be created with the
+      \uamodel{HasTypeDefinition} referencing the \mtmodel{Linear} OPC UA
+      \gls{Type}. The meta data for the component and its relationships are
+      static. The dynamic data will be represented using the \cite{UAPart8}. An
+      abstract XML element. Replaced in the XML document by types of component
+      elements representing physical parts and logical functions of a piece of
+      equipment.
+    </Description>
+      </Property>
+      <Property SymbolicName="Prefix3:SampleRate" ModellingRule="Optional" DataType="Prefix1:Float">
+        <Description>
+      The base \gls{MTComponent} Type from which all MTConnect Components are
+      derived. The component types will be created once for all
+      \gls{MTComponent} \glspl{Object} of that type based on the \gls{QName} of
+      the MTConnect XML element. The Component Objects will be created and
+      inserted into the \mtmodel{Components} folder with a \gls{BrowseName} of
+      the Component \gls{QName} and the \mtmodel{name} element if specified
+      surrounded by square brackets, \texttt{[]}. For example if the MTConnect
+      Element is: \xml{&lt;Linear name='X'&gt;...&lt;/...&gt;} The OPC
+      UA Object with \gls{BrowseName} \xml{Linear[X]} will be created with the
+      \uamodel{HasTypeDefinition} referencing the \mtmodel{Linear} OPC UA
+      \gls{Type}. The meta data for the component and its relationships are
+      static. The dynamic data will be represented using the \cite{UAPart8}. An
+      abstract XML element. Replaced in the XML document by types of component
+      elements representing physical parts and logical functions of a piece of
+      equipment.
+    </Description>
+      </Property>
+      <Property SymbolicName="Prefix3:Uuid" ModellingRule="Optional" DataType="Prefix1:String">
+        <Description>
+      The base \gls{MTComponent} Type from which all MTConnect Components are
+      derived. The component types will be created once for all
+      \gls{MTComponent} \glspl{Object} of that type based on the \gls{QName} of
+      the MTConnect XML element. The Component Objects will be created and
+      inserted into the \mtmodel{Components} folder with a \gls{BrowseName} of
+      the Component \gls{QName} and the \mtmodel{name} element if specified
+      surrounded by square brackets, \texttt{[]}. For example if the MTConnect
+      Element is: \xml{&lt;Linear name='X'&gt;...&lt;/...&gt;} The OPC
+      UA Object with \gls{BrowseName} \xml{Linear[X]} will be created with the
+      \uamodel{HasTypeDefinition} referencing the \mtmodel{Linear} OPC UA
+      \gls{Type}. The meta data for the component and its relationships are
+      static. The dynamic data will be represented using the \cite{UAPart8}. An
+      abstract XML element. Replaced in the XML document by types of component
+      elements representing physical parts and logical functions of a piece of
+      equipment.
+    </Description>
+      </Property>
+      <Property SymbolicName="Prefix3:XmlId" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <Description>
+      The base \gls{MTComponent} Type from which all MTConnect Components are
+      derived. The component types will be created once for all
+      \gls{MTComponent} \glspl{Object} of that type based on the \gls{QName} of
+      the MTConnect XML element. The Component Objects will be created and
+      inserted into the \mtmodel{Components} folder with a \gls{BrowseName} of
+      the Component \gls{QName} and the \mtmodel{name} element if specified
+      surrounded by square brackets, \texttt{[]}. For example if the MTConnect
+      Element is: \xml{&lt;Linear name='X'&gt;...&lt;/...&gt;} The OPC
+      UA Object with \gls{BrowseName} \xml{Linear[X]} will be created with the
+      \uamodel{HasTypeDefinition} referencing the \mtmodel{Linear} OPC UA
+      \gls{Type}. The meta data for the component and its relationships are
+      static. The dynamic data will be represented using the \cite{UAPart8}. An
+      abstract XML element. Replaced in the XML document by types of component
+      elements representing physical parts and logical functions of a piece of
+      equipment.
+    </Description>
+      </Property>
+      <Object SymbolicName="Prefix3:Description" TypeDefinition="Prefix3:MTDescriptionType" ModellingRule="Optional">
+        <Description>
+      The base \gls{MTComponent} Type from which all MTConnect Components are
+      derived. The component types will be created once for all
+      \gls{MTComponent} \glspl{Object} of that type based on the \gls{QName} of
+      the MTConnect XML element. The Component Objects will be created and
+      inserted into the \mtmodel{Components} folder with a \gls{BrowseName} of
+      the Component \gls{QName} and the \mtmodel{name} element if specified
+      surrounded by square brackets, \texttt{[]}. For example if the MTConnect
+      Element is: \xml{&lt;Linear name='X'&gt;...&lt;/...&gt;} The OPC
+      UA Object with \gls{BrowseName} \xml{Linear[X]} will be created with the
+      \uamodel{HasTypeDefinition} referencing the \mtmodel{Linear} OPC UA
+      \gls{Type}. The meta data for the component and its relationships are
+      static. The dynamic data will be represented using the \cite{UAPart8}. An
+      abstract XML element. Replaced in the XML document by types of component
+      elements representing physical parts and logical functions of a piece of
+      equipment.
+    </Description>
+      </Object>
+      <Object SymbolicName="Prefix3:Configuration" TypeDefinition="Prefix3:MTConfigurationType" ModellingRule="Optional">
+        <Description>
+      The base \gls{MTComponent} Type from which all MTConnect Components are
+      derived. The component types will be created once for all
+      \gls{MTComponent} \glspl{Object} of that type based on the \gls{QName} of
+      the MTConnect XML element. The Component Objects will be created and
+      inserted into the \mtmodel{Components} folder with a \gls{BrowseName} of
+      the Component \gls{QName} and the \mtmodel{name} element if specified
+      surrounded by square brackets, \texttt{[]}. For example if the MTConnect
+      Element is: \xml{&lt;Linear name='X'&gt;...&lt;/...&gt;} The OPC
+      UA Object with \gls{BrowseName} \xml{Linear[X]} will be created with the
+      \uamodel{HasTypeDefinition} referencing the \mtmodel{Linear} OPC UA
+      \gls{Type}. The meta data for the component and its relationships are
+      static. The dynamic data will be represented using the \cite{UAPart8}. An
+      abstract XML element. Replaced in the XML document by types of component
+      elements representing physical parts and logical functions of a piece of
+      equipment.
+    </Description>
+      </Object>
     </Children>
     <ClassName />
   </ObjectType>
@@ -190,6 +364,49 @@
       item. The data items are added to the \gls{Composition} by their
       \glspl{BrowseName}. An XML element used to describe the lowest level
       structural building blocks contained within a component element.
+    </Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:MTSensorConfigurationType" BaseType="Prefix3:MTConfigurationType">
+    <Description>
+      An MTConnect Sensor Configuration associated with the Component. See
+      SensorConfigurationType in type-specifications. An element that can
+      contain descriptive content defining the configuration information for
+      sensor.
+    </Description>
+    <Children>
+      <Property SymbolicName="Prefix3:CalibrationDate" ModellingRule="Optional" DataType="Prefix1:UtcTime">
+        <Description>
+      An MTConnect Sensor Configuration associated with the Component. See
+      SensorConfigurationType in type-specifications. An element that can
+      contain descriptive content defining the configuration information for
+      sensor.
+    </Description>
+      </Property>
+      <Property SymbolicName="Prefix3:CalibrationInitials" ModellingRule="Optional" DataType="Prefix1:String">
+        <Description>
+      An MTConnect Sensor Configuration associated with the Component. See
+      SensorConfigurationType in type-specifications. An element that can
+      contain descriptive content defining the configuration information for
+      sensor.
+    </Description>
+      </Property>
+      <Property SymbolicName="Prefix3:FirwareVersion" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <Description>
+      An MTConnect Sensor Configuration associated with the Component. See
+      SensorConfigurationType in type-specifications. An element that can
+      contain descriptive content defining the configuration information for
+      sensor.
+    </Description>
+      </Property>
+      <Property SymbolicName="Prefix3:NextCalibrationDate" ModellingRule="Optional" DataType="Prefix1:UtcTime">
+        <Description>
+      An MTConnect Sensor Configuration associated with the Component. See
+      SensorConfigurationType in type-specifications. An element that can
+      contain descriptive content defining the configuration information for
+      sensor.
     </Description>
       </Property>
     </Children>
