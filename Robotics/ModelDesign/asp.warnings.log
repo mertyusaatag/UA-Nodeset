@@ -1,7 +1,7 @@
-"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.4.6.40504";;;;"2022-03-07T10:17:50.7712623Z";;
-"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2021 Mariusz Postol";;;;"2022-03-07T10:17:50.7722595Z";;
-"UANodeSetValidation";Information;190380256;;"Entering ImportNodeSet and starting model import form file Opc.Ua.Di.NodeSet2.xml";;;;"2022-03-07T10:18:18.0393860Z";;
-"UANodeSetValidation";Information;190380256;;"Entering ImportNodeSet and starting model import form file Opc.Ua.Robotics.NodeSet2.xml";;;;"2022-03-07T10:18:23.8218989Z";;
-"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/Robotics/ namespace.";;;;"2022-03-07T10:18:28.3636272Z";;
-"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 26 nodes and no errors/warnings reported";;;;"2022-03-07T10:18:28.4606270Z";;
-"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file opc.Ua.Robotics.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2022-03-07T10:18:28.5791459Z";;
+"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.5.0.40483";;;;"2022-03-11T13:06:42.3892588Z";;
+"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2022 Mariusz Postol";;;;"2022-03-11T13:06:42.3902576Z";;
+"UANodeSetValidation";Information;190380256;;"Entering ImportNodeSet and starting model import form file Opc.Ua.Di.NodeSet2.xml";;;;"2022-03-11T13:07:09.5779005Z";;
+"UANodeSetValidation";Information;190380256;;"Entering ImportNodeSet and starting model import form file Opc.Ua.Robotics.NodeSet2.xml";;;;"2022-03-11T13:07:15.2537222Z";;
+"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/Robotics/ namespace.";;;;"2022-03-11T13:07:19.4303640Z";;
+"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 26 nodes and no errors/warnings reported";;;;"2022-03-11T13:07:19.5312262Z";;
+"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file opc.Ua.Robotics.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2022-03-11T13:07:19.6485284Z";;
