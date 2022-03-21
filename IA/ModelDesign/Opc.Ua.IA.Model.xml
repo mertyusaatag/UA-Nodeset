@@ -1,0 +1,739 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/IA/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09/03/2021">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/IA/" XmlNamespace="http://opcfoundation.org/UA/IA/" XmlPrefix="Prefix5" FilePath="" Version="1.01.0" PublicationDate="31/07/2021">http://opcfoundation.org/UA/IA/</Namespace>
+  </Namespaces>
+  <DataType SymbolicName="Prefix5:LevelDisplayMode" BaseType="Prefix1:Enumeration">
+    <Description Key="en">Contains the values used to indicate how a percentual value is displayed if the stacklight unit works in Levelmeter mode.</Description>
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Dimmed</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Uses dimming to display fractions.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Blinking</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Uses blinking to display fractions.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Display fractions in a way not defined in this version of the specification.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Dimmed" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description Key="en">Uses dimming to display fractions.</Description>
+      </Field>
+      <Field Name="Blinking" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description Key="en">Uses blinking to display fractions.</Description>
+      </Field>
+      <Field Name="Other" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description Key="en">Display fractions in a way not defined in this version of the specification.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix5:SignalColor" BaseType="Prefix1:Enumeration">
+    <Description Key="en">Holds the possible colour values for stacklight lamps.</Description>
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="8">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Off</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Element is disabled.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Red</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>This value indicates a red lamp colour.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Green</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>This value indicates a green lamp colour.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Blue</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>This value indicates a blue lamp colour.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Yellow</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>This value indicates a yellow lamp colour (R+G).</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Purple</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>This value indicates a purple lamp colour (R+B).</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Cyan</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>This value indicates a cyan lamp colour (G+B).</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>7</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>White</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>This value indicates a white lamp colour (R+G+B).</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Off" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description Key="en">Element is disabled.</Description>
+      </Field>
+      <Field Name="Red" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description Key="en">This value indicates a red lamp colour.</Description>
+      </Field>
+      <Field Name="Green" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description Key="en">This value indicates a green lamp colour.</Description>
+      </Field>
+      <Field Name="Blue" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description Key="en">This value indicates a blue lamp colour.</Description>
+      </Field>
+      <Field Name="Yellow" Identifier="4" BitMask="" ArrayDimensions="">
+        <Description Key="en">This value indicates a yellow lamp colour (R+G).</Description>
+      </Field>
+      <Field Name="Purple" Identifier="5" BitMask="" ArrayDimensions="">
+        <Description Key="en">This value indicates a purple lamp colour (R+B).</Description>
+      </Field>
+      <Field Name="Cyan" Identifier="6" BitMask="" ArrayDimensions="">
+        <Description Key="en">This value indicates a cyan lamp colour (G+B).</Description>
+      </Field>
+      <Field Name="White" Identifier="7" BitMask="" ArrayDimensions="">
+        <Description Key="en">This value indicates a white lamp colour (R+G+B).</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix5:SignalModeLight" BaseType="Prefix1:Enumeration">
+    <Description Key="en">Contains the values used to indicate in what way a lamp behaves when switched on.</Description>
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Continuous</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>This value indicates a continuous light.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Blinking</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>This value indicates a blinking light (blinking in regular intervals with equally long on and off times).</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Flashing</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>This value indicates a flashing light (blinking in intervals with longer off times than on times, per interval multiple on times are possible).</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The light is handled in a way not defined in this version of the specification.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Continuous" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description Key="en">This value indicates a continuous light.</Description>
+      </Field>
+      <Field Name="Blinking" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description Key="en">This value indicates a blinking light (blinking in regular intervals with equally long on and off times).</Description>
+      </Field>
+      <Field Name="Flashing" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description Key="en">This value indicates a flashing light (blinking in intervals with longer off times than on times, per interval multiple on times are possible).</Description>
+      </Field>
+      <Field Name="Other" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description Key="en">The light is handled in a way not defined in this version of the specification.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix5:StacklightOperationMode" BaseType="Prefix1:Enumeration">
+    <Description Key="en">Contains the values used to indicate how a stacklight (as a whole unit) is used.</Description>
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Segmented</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Stacklight is used as stack of individual lights</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Levelmeter</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Stacklight is used as level meter</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Running_Light</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The whole stack acts as a running light</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Stacklight is used in a way not defined in this version of the specification</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Segmented" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description Key="en">Stacklight is used as stack of individual lights</Description>
+      </Field>
+      <Field Name="Levelmeter" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description Key="en">Stacklight is used as level meter</Description>
+      </Field>
+      <Field Name="Running_Light" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description Key="en">The whole stack acts as a running light</Description>
+      </Field>
+      <Field Name="Other" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description Key="en">Stacklight is used in a way not defined in this version of the specification</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <ReferenceType SymbolicName="Prefix5:HasStatisticComponent" BaseType="Prefix1:HasComponent">
+    <Description Key="en">References of this type link Variables managing statistical data either directly or indirectly to an Object or ObjectType implementing the IStatisticsType interface.</Description>
+    <ClassName />
+    <InverseName>StatisticComponentOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix5:HasReferenceMeasurementInstrument" BaseType="Prefix1:NonHierarchicalReferences">
+    <Description Key="en">Relates the source node to a reference measurement instrument, like for example a calibration target using a reference measurement instrument.</Description>
+    <ClassName />
+    <InverseName>ReferenceMeasurementInstrumentOf</InverseName>
+  </ReferenceType>
+  <VariableType SymbolicName="Prefix5:CalibrationValueType" BaseType="Prefix1:DataItemType" ValueRank="ScalarOrArray">
+    <Description Key="en">Represents the specific quantity and value (with engineering unit) that a calibration target provides for calibration of equipment.</Description>
+    <Children>
+      <Property SymbolicName="Prefix1:EngineeringUnits" ModellingRule="Mandatory" DataType="Prefix1:EUInformation" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix5:CapacityRangeType" BaseType="Prefix1:DataItemType" DataType="Prefix1:Range">
+    <Description Key="en">Represent a scale of calibration values. The value defines the range (lowest and highest value), and the resolution property the size of each step.</Description>
+    <Children>
+      <Property SymbolicName="Prefix1:EngineeringUnits" ModellingRule="Mandatory" DataType="Prefix1:EUInformation" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix5:Resolution" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </VariableType>
+  <ObjectType SymbolicName="Prefix5:AcousticSignalType">
+    <Description Key="en">Represents an acoustic signal.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix5:AudioSample" ModellingRule="Optional" DataType="Prefix1:AudioDataType" AccessLevel="ReadWrite">
+        <Description Key="en">Contains the audio data, e.g. for devices capable of audio playback.</Description>
+      </Variable>
+      <Property SymbolicName="Prefix1:NumberInList" ModellingRule="Mandatory" DataType="Prefix1:UInteger" AccessLevel="ReadWrite">
+        <Description Key="en">Enumerate the acoustic signals. Instances of StackElementAcousticType index into this number using the OperationMode Property.</Description>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasInterface</ReferenceType>
+        <TargetId>Prefix1:IOrderedObjectType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:BaseCalibrationTargetCategoryType" IsAbstract="true">
+    <Description Key="en">Abstract base type for categorizing calibration targets. Subtypes define the concrete categories.</Description>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:DynamicCalibrationTargetCategoryType" BaseType="Prefix5:BaseCalibrationTargetCategoryType">
+    <Description Key="en">Characterizes a calibration target to be used together with a measurement instrument, that determines the values to be calibrated. It can be a piece created during the normal production process or an item specifically created for calibration purposes. The calibration target represents an individual piece or item, that is, if a new piece should be used or item is created, a new Object of this ObjectType is created.</Description>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:OneTimeCalibrationTargetCategoryType" BaseType="Prefix5:BaseCalibrationTargetCategoryType">
+    <Description Key="en">Categorizes a calibration target to be used only once, for example because the calibration destroys the target. Typically, Objects of this ObjectType do not represent one individual calibration target, but a batch of calibration targets with the same characteristics.</Description>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:ReusableCalibrationTargetCategoryType" BaseType="Prefix5:BaseCalibrationTargetCategoryType">
+    <Description Key="en">Categorizes a calibration target to be reused several times. For example, a calibration target like a meter, that is bought specifically for calibration and not destroyed by an individual usage is of this category.</Description>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:ReusableDeviceCalibrationTargetCategoryType" BaseType="Prefix5:ReusableCalibrationTargetCategoryType">
+    <Description Key="en">Categorizes a calibration target to be a reusable device that produces a certain environment like pressure that can be used for calibration.</Description>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:IStatisticsType" BaseType="Prefix1:BaseInterfaceType" IsAbstract="true">
+    <Description Key="en">Base interface for managing statistical data.</Description>
+    <Children>
+      <Method SymbolicName="Prefix5:ResetStatistics" ModellingRule="Optional">
+        <Description Key="en">Restarts all statistical data, including a reset of the StartTime to the current time.</Description>
+      </Method>
+      <Property SymbolicName="Prefix5:StartTime" ModellingRule="Optional" DataType="Prefix1:DateTime" AccessLevel="ReadWrite">
+        <Description Key="en">Indicates the point in time at which the collection of the statistical data has been started.</Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:IAggregateStatisticsType" BaseType="Prefix5:IStatisticsType" IsAbstract="true">
+    <Description Key="en">Base interface for managing statistical data that is not rolled over all data from the start of  tracking the statistical data are considered, until the tracking gets reset.</Description>
+    <Children>
+      <Property SymbolicName="Prefix5:ResetCondition" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <Description Key="en">The reason and context for the reset of the statistics, which is done without a trigger from an OPC UA Client, like calling the ResetStatistics Method. ResetCondition is a vendor-specific, human readable string. ResetCondition is non-localized and might contain an expression that can be parsed by certain clients. Examples are: “AFTER 4 HOURS”, “AFTER 1000 ITEMS”, “OPERATOR”. “OPERATOR” means, that an operator resets the statistics on a local HMI.</Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:IRollingStatisticsType" BaseType="Prefix5:IStatisticsType" IsAbstract="true">
+    <Description Key="en">Base interface for managing statistical data that is rolled over, i.e. only a certain amount of data is considered for statistical data.</Description>
+    <Children>
+      <Property SymbolicName="Prefix5:WindowDuration" ModellingRule="Optional" DataType="Prefix1:Duration" AccessLevel="ReadWrite">
+        <Description Key="en">The duration after the statistical data are rolled over. Only the data that were gathered during that duration are considered for the statistical data, even if the time intervals between the StartTime and the current time is longer.</Description>
+      </Property>
+      <Property SymbolicName="Prefix5:WindowNumberOfValues" ModellingRule="Optional" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
+        <Description Key="en">The number of values before the data gets rolled over. For the statistical data, only the data fitting into the number of values is considered, even if more data were gathered since StartTime.</Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:CalibrationTargetType">
+    <Description Key="en">Provides information about a calibration target.</Description>
+    <Children>
+      <Object SymbolicName="Prefix5:CalibrationTargetCategory" TypeDefinition="Prefix5:BaseCalibrationTargetCategoryType" ModellingRule="Mandatory">
+        <Description Key="en">Defines what category the calibration target is of.</Description>
+      </Object>
+      <Object SymbolicName="Prefix5:CalibrationTargetFeatures" TypeDefinition="Prefix1:FolderType" ModellingRule="Mandatory">
+        <Description Key="en">A folder containing information about the features of a calibration target, that is, what can be calibrated with the calibration target.</Description>
+        <Children>
+          <Variable SymbolicName="Prefix5:CalibrationValue" TypeDefinition="Prefix5:CalibrationValueType" ModellingRule="OptionalPlaceholder" AccessLevel="ReadWrite">
+            <BrowseName>&lt;CalibrationValue&gt;</BrowseName>
+            <Description Key="en">A calibration value indicates the value the calibration target provides for calibration and includes its quantity and engineering unit.</Description>
+          </Variable>
+          <Variable SymbolicName="Prefix5:CapacityRange" TypeDefinition="Prefix5:CapacityRangeType" ModellingRule="OptionalPlaceholder" DataType="Prefix1:Range" AccessLevel="ReadWrite">
+            <BrowseName>&lt;CapacityRange&gt;</BrowseName>
+            <Description Key="en">A capacity range indicates a range (low and high value) as well as a resolution, and thus defines a number of values the calibration target provides for calibration and includes the quantity and engineering unit.</Description>
+          </Variable>
+        </Children>
+      </Object>
+      <Property SymbolicName="Prefix5:CertificateUri" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <Description Key="en">Contains the Uri of a certificate of the calibration target, in case the calibration target is certified and the information available. Otherwise, the Property should be omitted.</Description>
+      </Property>
+      <Object SymbolicName="Prefix3:Identification" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Mandatory">
+        <Description Key="en">Provides identification information.</Description>
+        <Children>
+          <Property SymbolicName="Prefix3:AssetId" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+          <Property SymbolicName="Prefix3:ComponentName" ModellingRule="Optional" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite" />
+          <Property SymbolicName="Prefix3:DeviceClass" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+          <Property SymbolicName="Prefix3:DeviceManual" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+          <Property SymbolicName="Prefix3:DeviceRevision" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+          <Property SymbolicName="Prefix3:HardwareRevision" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+          <Property SymbolicName="Prefix3:Manufacturer" ModellingRule="Optional" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite" />
+          <Property SymbolicName="Prefix3:ManufacturerUri" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+          <Property SymbolicName="Prefix3:Model" ModellingRule="Optional" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite" />
+          <Property SymbolicName="Prefix3:ProductCode" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+          <Property SymbolicName="Prefix3:ProductInstanceUri" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+          <Property SymbolicName="Prefix3:RevisionCounter" ModellingRule="Optional" DataType="Prefix1:Int32" AccessLevel="ReadWrite" />
+          <Property SymbolicName="Prefix3:SerialNumber" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+          <Property SymbolicName="Prefix3:SoftwareRevision" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasInterface</ReferenceType>
+            <TargetId>Prefix3:ITagNameplateType</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix1:HasInterface</ReferenceType>
+            <TargetId>Prefix3:IVendorNameplateType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Property SymbolicName="Prefix5:LastValidationDate" ModellingRule="Optional" DataType="Prefix1:UtcTime" AccessLevel="ReadWrite">
+        <Description Key="en">Provides the date, the calibration target was validated the last time. If there is no specific validation date known, the date when the calibration target was bought or created should be used.</Description>
+      </Property>
+      <Property SymbolicName="Prefix5:NextValidationDate" ModellingRule="Optional" DataType="Prefix1:UtcTime" AccessLevel="ReadWrite">
+        <Description Key="en">Provides the date, when the calibration target should be validated the next time. If this date is not known, the Property should be omitted. Note: Potentially the NextValidationDate is in the past, when the next validation did not take place.</Description>
+      </Property>
+      <Object SymbolicName="Prefix5:OperationalConditions" TypeDefinition="Prefix1:FolderType" ModellingRule="Optional">
+        <Description Key="en">A folder containing information about operational conditions of the calibration target. For example, it might provide in what ranges of humidity the calibration target can be operated. It might also provide correction information, for example, depending on the temperature the calibration values need to be corrected (in case of a length, the length might increase with high temperatures). If no operational conditions are provided, this folder should be omitted.</Description>
+      </Object>
+      <Property SymbolicName="Prefix5:Quality" ModellingRule="Optional" DataType="Prefix1:Byte" AccessLevel="ReadWrite">
+        <Description Key="en">Provides the quality of the calibration target in percentage, this is, the value shall be between 0 and 100. 100 means the highest quality, 0 the lowest. The semantic of the quality is application-specific.</Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:ControlChannelType">
+    <Description Key="en">Used for control channels of single colour elements within a stack element (e.g. RGB elements would use three ControlChannels, one for each controllable colour).</Description>
+    <Children>
+      <Variable SymbolicName="Prefix5:ChannelColor" ModellingRule="Mandatory" DataType="Prefix5:SignalColor" AccessLevel="ReadWrite">
+        <Description Key="en">Indicates in what mode (continuously on, blinking, flashing) the channel operates when switched on.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:Intensity" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Float" AccessLevel="ReadWrite">
+        <Description Key="en">Shows the channel’s intensity, thus its brightness. The mandatory EURange Property of the Variable indicates the lowest and highest value and thereby allows to calculate the percentage represented by the value. The lowest value is interpreted as 0 percent, the highest is interpreted as 100 percent.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:SignalMode" ModellingRule="Mandatory" DataType="Prefix5:SignalModeLight" AccessLevel="ReadWrite">
+        <Description Key="en">Contains a list of audio signals used by this acoustic stacklight element.</Description>
+      </Variable>
+      <Property SymbolicName="Prefix5:SignalOn" ModellingRule="Mandatory" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description Key="enIndicates if the colour is switched on.Indicates if the colour is switched on.">Indicates if the colour is switched on.</Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:BasicStacklightType" BaseType="Prefix1:OrderedListType">
+    <Description Key="en">Entry point to a stacklight containing elements of the stacklight as well as additional information valid for the whole unit.</Description>
+    <Children>
+      <Object SymbolicName="Prefix1:OrderedObject_Placeholder" TypeDefinition="Prefix5:StackElementType">
+        <BrowseName>OrderedObject&gt;</BrowseName>
+        <Description Key="en">Represent the stack elements (lamps and acoustic elements) the stacklight is composed of. The HasOrderedComponent Reference shall represent the ordering from the base of the stacklight.</Description>
+      </Object>
+      <Object SymbolicName="Prefix5:StackLevel" TypeDefinition="Prefix5:StackLevelType" ModellingRule="Optional">
+        <Description Key="en">Valid if the stacklight is used in “Levelmeter” StacklightMode. If so, the whole stack is controlled by a single percentual value. In this case, the SignalOn parameter of any stack element of StackElementLightType has no meaning.</Description>
+      </Object>
+      <Property SymbolicName="Prefix5:StacklightMode" ModellingRule="Mandatory" DataType="Prefix5:StacklightOperationMode" AccessLevel="ReadWrite">
+        <Description Key="en">Shows in what way (stack of individual lights, level meter, running light) the stacklight unit is used.</Description>
+      </Property>
+      <Object SymbolicName="Prefix5:StackRunning" TypeDefinition="Prefix5:StackRunningType" ModellingRule="Optional">
+        <Description Key="en">Valid if the stacklight is used in “Running_Light” StacklightMode.</Description>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:StackElementType" IsAbstract="true">
+    <Description Key="en">Base class for elements in a stacklight.</Description>
+    <Children>
+      <Property SymbolicName="Prefix5:IsPartOfBase" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description Key="en">Indicates, if the element is contained in the mounting base of the stacklight. All elements contained in the mounting base shall be at the beginning of the list of stack elements.</Description>
+      </Property>
+      <Property SymbolicName="Prefix1:NumberInList" ModellingRule="Mandatory" DataType="Prefix1:UInteger" AccessLevel="ReadWrite">
+        <Description Key="en">Enumerate the stacklight elements counting upwards beginning from the base of the stacklight.</Description>
+      </Property>
+      <Property SymbolicName="Prefix5:SignalOn" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description Key="en">Indicates if the signal emitted by the stack element is currently switched on or not.</Description>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasInterface</ReferenceType>
+        <TargetId>Prefix1:IOrderedObjectType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:StackLevelType">
+    <Description Key="en">Contains information relevant to a stacklight operating as a level meter. The whole stack is controlled by a percentual value.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix5:DisplayMode" ModellingRule="Mandatory" DataType="Prefix5:LevelDisplayMode" AccessLevel="ReadWrite">
+        <Description Key="en">Indicates in what way the percentual value is displayed with the stacklight.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:LevelPercent" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" AccessLevel="ReadWrite">
+        <Description Key="en">Shows the percentual value the stacklight is representing. The mandatory EURange Property of the Variable indicates the lowest and highest value and thereby allows to calculate the percentage represented by the value. The lowest value is interpreted as 0 percent, the highest is interpreted as 100 percent.</Description>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:StackRunningType">
+    <Description Key="en">Contains information relevant to a stacklight operating as a running light. This base type does not define any specific information, but can be extended.</Description>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:StacklightType" BaseType="Prefix5:BasicStacklightType">
+    <Description Key="en">Entry point to a stacklight with the possibility to show the stacklight’s health status.</Description>
+    <Children>
+      <Variable SymbolicName="Prefix3:DeviceHealth" ModellingRule="Optional" DataType="Prefix3:DeviceHealthEnumeration" AccessLevel="ReadWrite">
+        <Description Key="en">Contains the health status information of the stacklight.</Description>
+      </Variable>
+      <Object SymbolicName="Prefix3:DeviceHealthAlarms" TypeDefinition="Prefix1:FolderType" ModellingRule="Optional">
+        <Description Key="en">Contains alarms of the stacklights providing more detailed information on the health of the stacklight.</Description>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:HasInterface</ReferenceType>
+        <TargetId>Prefix3:IDeviceHealthType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:StackElementAcousticType" BaseType="Prefix5:StackElementType">
+    <Description Key="en">Represents an acoustic element in a stacklight.</Description>
+    <Children>
+      <Object SymbolicName="Prefix5:AcousticSignals" TypeDefinition="Prefix1:OrderedListType" ModellingRule="Mandatory">
+        <Description Key="en">Contains a list of audio signals used by this acoustic stacklight element.</Description>
+        <Children>
+          <Object SymbolicName="Prefix1:OrderedObject" TypeDefinition="Prefix5:AcousticSignalType" ModellingRule="MandatoryPlaceholder">
+            <BrowseName>OrderedObject&gt;</BrowseName>
+            <Description Key="en">Represents an acoustic signal.</Description>
+          </Object>
+        </Children>
+      </Object>
+      <Variable SymbolicName="Prefix5:Intensity" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Float" AccessLevel="ReadWrite">
+        <Description Key="en">Indicates the sound pressure level of the acoustic signal when switched on. This value shall only have positive values. The mandatory EURange Property of the Variable indicates the lowest and highest value and thereby allows to calculate the percentage represented by the value. The lowest value is interpreted as 0 percent, the highest is interpreted as 100 percent.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:OperationMode" ModellingRule="Mandatory" DataType="Prefix1:UInteger" AccessLevel="ReadWrite">
+        <Description Key="en">Indicates what signal of the list of AcousticSignalType nodes is played when the acoustic element is switched on. It shall contain an index into the NumberInList of the respective AcousticSignalType Object of AcousticSignals.</Description>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:StackElementLightType" BaseType="Prefix5:StackElementType">
+    <Description Key="en">Represents a lamp element in a stacklight.</Description>
+    <Children>
+      <Object SymbolicName="Prefix5:ControlChannel" TypeDefinition="Prefix5:ControlChannelType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;ControlChannel&gt;</BrowseName>
+        <Description Key="en">The list of &lt;ControlChannel&gt; instances shows the control information for each independent colour channel of the stacked element.</Description>
+      </Object>
+      <Variable SymbolicName="Prefix5:Intensity" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Float" AccessLevel="ReadWrite">
+        <Description Key="en">Intensity of the lamp, thus its brightness. The mandatory EURange Property of the Variable indicates the lowest and highest value and thereby allows to calculate the percentage represented by the value. The lowest value is interpreted as 0 percent, the highest is interpreted as 100 percent.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:SignalColor" ModellingRule="Optional" DataType="Prefix5:SignalColor" AccessLevel="ReadWrite">
+        <Description Key="en">Indicates the colour the lamp element has when switched on.</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix5:SignalMode" ModellingRule="Optional" DataType="Prefix5:SignalModeLight" AccessLevel="ReadWrite">
+        <Description Key="en">Shows in what way the lamp is used (continuous light, flashing, blinking) when switched on.</Description>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+</ModelDesign>
