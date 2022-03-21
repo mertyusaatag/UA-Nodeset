@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:Prefix7="http://opcfoundation.org/UA/PackML/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix9="http://opcfoundation.org/UA/Weihenstephan/" xmlns:Prefix5="http://opcfoundation.org/UA/Machinery/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09/03/2021">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/Machinery/" XmlNamespace="http://opcfoundation.org/UA/Machinery/" XmlPrefix="Prefix5" FilePath="" Version="1.01.0" PublicationDate="25/02/2021">http://opcfoundation.org/UA/Machinery/</Namespace>
+    <Namespace Name="Name6" Prefix="Prefix6" InternalPrefix="http://opcfoundation.org/UA/PackML/" XmlNamespace="http://opcfoundation.org/UA/PackML/" XmlPrefix="Prefix7" FilePath="" Version="1.01" PublicationDate="08/10/2020">http://opcfoundation.org/UA/PackML/</Namespace>
+    <Namespace Name="Name8" Prefix="Prefix8" InternalPrefix="http://opcfoundation.org/UA/Weihenstephan/" XmlNamespace="http://opcfoundation.org/UA/Weihenstephan/" XmlPrefix="Prefix9" FilePath="" Version="1.00.0" PublicationDate="12/07/2021">http://opcfoundation.org/UA/Weihenstephan/</Namespace>
+  </Namespaces>
+  <ObjectType SymbolicName="Prefix9:WSMachineType">
+    <Description>Definition of a machine according to the Weihenstephan standards</Description>
+    <Children>
+      <Property SymbolicName="Prefix9:WSVersionVendor" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix9:WSVersionProject" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+      <Object SymbolicName="Prefix9:Counters" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix9:BatchAndArticleTracing" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix9:OperatingModes" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix9:OperatingStates" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix9:Programs" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix9:Alarms" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix9:MeasuredValues" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix9:Parameters" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix9:Warnings" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+      <Property SymbolicName="Prefix9:WSVersion" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+      <Object SymbolicName="Prefix3:Identification" TypeDefinition="Prefix5:MachineIdentificationType" ModellingRule="Mandatory">
+        <Children>
+          <Property SymbolicName="Prefix3:SerialNumber" />
+          <Property SymbolicName="Prefix3:ProductInstanceUri" />
+          <Property SymbolicName="Prefix3:Manufacturer" />
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasInterface</ReferenceType>
+            <TargetId>Prefix5:IMachineTagNameplateType</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix1:HasInterface</ReferenceType>
+            <TargetId>Prefix5:IMachineVendorNameplateType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Property SymbolicName="Prefix9:WSMachineProfile" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+      <Object SymbolicName="Prefix9:ComputedValues" TypeDefinition="Prefix3:FunctionalGroupType" ModellingRule="Optional" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:WSBaseObjectType">
+    <Children>
+      <Property SymbolicName="Prefix9:WSTagNumber" ModellingRule="Optional" DataType="Prefix1:UInt16" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:WSAlarmType" BaseType="Prefix9:WSBaseObjectType">
+    <Children>
+      <Variable SymbolicName="Prefix9:WSAlarmCode" ModellingRule="Mandatory" DataType="Prefix1:UInt32" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix9:WSAlarmMessage" ModellingRule="Optional" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:WSWarningType" BaseType="Prefix9:WSBaseObjectType">
+    <Children>
+      <Variable SymbolicName="Prefix9:WS__Warning_Code" ModellingRule="Mandatory" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
+        <BrowseName>WSWarningCode</BrowseName>
+      </Variable>
+      <Variable SymbolicName="Prefix9:WS_Warning__Message" ModellingRule="Optional" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite">
+        <BrowseName>WSWarningMessage</BrowseName>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:WSBaseStateMachineType" BaseType="Prefix7:PackMLBaseStateMachineType">
+    <Children>
+      <Property SymbolicName="Prefix9:WSTagNumber" ModellingRule="Optional" DataType="Prefix1:UInt16" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:WSExecuteStateMachineType" BaseType="Prefix7:PackMLExecuteStateMachineType">
+    <Children>
+      <Object SymbolicName="Prefix9:HeldState" TypeDefinition="Prefix9:WSHeldStateMachineType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix9:SuspendedState" TypeDefinition="Prefix9:WSSuspendedStateMachineType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix7:Held" TypeDefinition="Prefix1:StateType">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasSubStateMachine</ReferenceType>
+            <TargetId>Prefix9:HeldState</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix7:Suspended" TypeDefinition="Prefix1:StateType">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:HasSubStateMachine</ReferenceType>
+            <TargetId>Prefix9:SuspendedState</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:WSHeldStateMachineType" BaseType="Prefix1:FiniteStateMachineType">
+    <Children>
+      <Object SymbolicName="Prefix9:EquipmentFailure" TypeDefinition="Prefix1:StateType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix9:ExternalFailure" TypeDefinition="Prefix1:StateType" ModellingRule="Mandatory" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:WSSuspendedStateMachineType" BaseType="Prefix1:FiniteStateMachineType">
+    <Children>
+      <Object SymbolicName="Prefix9:Lack" TypeDefinition="Prefix1:StateType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix9:LackBranchLine" TypeDefinition="Prefix1:StateType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix9:Prepared" TypeDefinition="Prefix1:StateType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix9:Tailback" TypeDefinition="Prefix1:StateType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix9:TailbackBranchLine" TypeDefinition="Prefix1:StateType" ModellingRule="Mandatory" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <DataType SymbolicName="Prefix9:WSOperatingModeEnumerationType" BaseType="Prefix1:Enumeration">
+    <Description>The operating mode provides information about the nature and extent of the intervention on the control equipment by the operators, and also via feedback from the equipment (DIN 19 237). This value must be coded in bit form or be documented as an integer for machines which are components of bottling systems:</Description>
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4" AccessLevel="ReadWrite">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Off</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The machine state (in the Weihenstephan Standards the machine state is understood to be the operating mode) provides information about whether the machine is off (Off: relevant bit = 1 or identification by the documented integer number). If this bit is not set, then the machine is in operation and is in one of the following operating modes.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Manual</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>An operating mode in which the control units only operate with intervention by the operator and involve possible locking mechanisms (DIN 19237). As opposed to the DIN standard, in the context of the Weihenstephan Standards this term also includes the setup mode, the step setting mode and tipping mode.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Semi-automatic</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>An operating mode in which only some of the controls or part of the program function without intervention by the operator (DIN 19 237). In the context of the Weihenstephan Standards, this term means that the machines of a bottling plant are not integrated into a control concept for the entire system and the set output is manually controlled on site.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>8</uax:Value>
+              <uax:DisplayName>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Automatic</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>An operating mode in which the control unit operates without intervention by the operator following a set of control procedures (DIN 19 237). In the context of the Weihenstephan Standards this term means that the machines of a production plant are integrated into a control concept for the entire system and the set output is automatically controlled.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Off" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>The machine state (in the Weihenstephan Standards the machine state is understood to be the operating mode) provides information about whether the machine is off (Off: relevant bit = 1 or identification by the documented integer number). If this bit is not set, then the machine is in operation and is in one of the following operating modes.</Description>
+      </Field>
+      <Field Name="Manual" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description>An operating mode in which the control units only operate with intervention by the operator and involve possible locking mechanisms (DIN 19237). As opposed to the DIN standard, in the context of the Weihenstephan Standards this term also includes the setup mode, the step setting mode and tipping mode.</Description>
+      </Field>
+      <Field Name="Semi-automatic" Identifier="4" BitMask="" ArrayDimensions="">
+        <Description>An operating mode in which only some of the controls or part of the program function without intervention by the operator (DIN 19 237). In the context of the Weihenstephan Standards, this term means that the machines of a bottling plant are not integrated into a control concept for the entire system and the set output is manually controlled on site.</Description>
+      </Field>
+      <Field Name="Automatic" Identifier="8" BitMask="" ArrayDimensions="">
+        <Description>An operating mode in which the control unit operates without intervention by the operator following a set of control procedures (DIN 19 237). In the context of the Weihenstephan Standards this term means that the machines of a production plant are integrated into a control concept for the entire system and the set output is automatically controlled.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix9:WSProgramEnumerationType" BaseType="Prefix1:Enumeration">
+    <Description>The program is a consequent sequence of control instructions for a self-contained application-oriented function (DIN 19237). For bottling machines, bits or documented integer numbers must be used for machine operation with the following programs:</Description>
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="8" AccessLevel="ReadWrite">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Undefined (No Program)</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>A machine was turned on, but no program for a special application function has been selected. „Undefined“ may also be used to provide the information that a machine is ready for action, but not required („No Order, No Activity“)</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Production</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The machine is functioning as designed by the manufacturer.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Start Up</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Although the machine is functioning as designed by the manufacturer, it is running a start-up pro-gram which ensures full production after a warm-up period as stipulated by regulations or for safe-ty considerations, or in conjunction with container buffering machines.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Run Down</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Although the machine is functioning as designed by the manufacturer, it is running a stop program which ensures production stop after a run-down period as stipulated by regulations or for safety considerations, or in conjunction with container buffering machines.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>8</uax:Value>
+              <uax:DisplayName>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Clean</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The machine is running the cleaning program. This program can consist of program steps which can be controlled independently of each another, for example the program step “flush” for the filling or closing machine, or the program step “headspace disinfection” for the cleaning machine.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>16</uax:Value>
+              <uax:DisplayName>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Changeover</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The machine is running the changeover program in which automatic machine adjustments are made depending on specific parameters.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>32</uax:Value>
+              <uax:DisplayName>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Maintenance</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The machine is running the maintenance program in which the maintenance and service work are carried out.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>64</uax:Value>
+              <uax:DisplayName>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Break</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>The machine is running the break program. This ensures there is start up of the machine in accordance with regulations after a break.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Undefined (No Program)" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>A machine was turned on, but no program for a special application function has been selected. „Undefined“ may also be used to provide the information that a machine is ready for action, but not required („No Order, No Activity“)</Description>
+      </Field>
+      <Field Name="Production" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>The machine is functioning as designed by the manufacturer.</Description>
+      </Field>
+      <Field Name="Start Up" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description>Although the machine is functioning as designed by the manufacturer, it is running a start-up pro-gram which ensures full production after a warm-up period as stipulated by regulations or for safe-ty considerations, or in conjunction with container buffering machines.</Description>
+      </Field>
+      <Field Name="Run Down" Identifier="4" BitMask="" ArrayDimensions="">
+        <Description>Although the machine is functioning as designed by the manufacturer, it is running a stop program which ensures production stop after a run-down period as stipulated by regulations or for safety considerations, or in conjunction with container buffering machines.</Description>
+      </Field>
+      <Field Name="Clean" Identifier="8" BitMask="" ArrayDimensions="">
+        <Description>The machine is running the cleaning program. This program can consist of program steps which can be controlled independently of each another, for example the program step “flush” for the filling or closing machine, or the program step “headspace disinfection” for the cleaning machine.</Description>
+      </Field>
+      <Field Name="Changeover" Identifier="16" BitMask="" ArrayDimensions="">
+        <Description>The machine is running the changeover program in which automatic machine adjustments are made depending on specific parameters.</Description>
+      </Field>
+      <Field Name="Maintenance" Identifier="32" BitMask="" ArrayDimensions="">
+        <Description>The machine is running the maintenance program in which the maintenance and service work are carried out.</Description>
+      </Field>
+      <Field Name="Break" Identifier="64" BitMask="" ArrayDimensions="">
+        <Description>The machine is running the break program. This ensures there is start up of the machine in accordance with regulations after a break.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <VariableType SymbolicName="Prefix9:WSAnalogUnitType" BaseType="Prefix1:AnalogUnitType" DataType="Prefix1:BaseDataType">
+    <Children>
+      <Property SymbolicName="Prefix9:WSTagNumber" ModellingRule="Optional" DataType="Prefix1:UInt16" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix9:WSBaseDataVariableType" DataType="Prefix1:BaseDataType">
+    <Children>
+      <Property SymbolicName="Prefix9:WSTagNumber" ModellingRule="Optional" DataType="Prefix1:UInt16" ValueRank="ScalarOrArray" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </VariableType>
+</ModelDesign>

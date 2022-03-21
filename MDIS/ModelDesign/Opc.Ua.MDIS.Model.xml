@@ -1,0 +1,1086 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix3="http://opcfoundation.org/UA/MDIS" TargetNamespace="http://opcfoundation.org/UA/MDIS" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/MDIS" XmlNamespace="http://opcfoundation.org/UA/MDIS" XmlPrefix="Prefix3" FilePath="" Version="1.20" PublicationDate="03/10/2018">http://opcfoundation.org/UA/MDIS</Namespace>
+  </Namespaces>
+  <ReferenceType SymbolicName="Prefix3:HasInterlock" BaseType="Prefix1:HasComponent">
+    <Description>Reference used to indicate an interlock variable (all Options)</Description>
+    <ClassName />
+    <InverseName>InterlockOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:HasSignature" BaseType="Prefix1:HasComponent">
+    <Description>Reference used to indicate an interlock variable (all Options)</Description>
+    <ClassName />
+    <InverseName>SignatureOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:InterlockFor" BaseType="Prefix1:NonHierarchicalReferences">
+    <Description>Reference used to indicate an interlock variable associated with the given boolean summary interlock</Description>
+    <ClassName />
+    <InverseName>HasInterlockInformation</InverseName>
+  </ReferenceType>
+  <ObjectType SymbolicName="Prefix3:MDISBaseObjectType" IsAbstract="true">
+    <Description>The base Object type from which all other station types are built</Description>
+    <Children>
+      <Variable SymbolicName="Prefix3:Fault" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix3:FaultCode" ModellingRule="Optional" DataType="Prefix1:UInt32" />
+      <Variable SymbolicName="Prefix3:Warning" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix3:WarningCode" ModellingRule="Optional" DataType="Prefix1:UInt32" />
+      <Variable SymbolicName="Prefix3:Enabled" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Method SymbolicName="Prefix3:EnableDisable" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>Enable</Name>
+              <DataType>
+                <Identifier>i=1</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Disable the device (false), or enable the device (true)</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Property SymbolicName="Prefix3:TagId" ModellingRule="Optional" DataType="Prefix1:String">
+        <DisplayName>Tag ID</DisplayName>
+        <Description>The id used in other parts of the system</Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <DataType SymbolicName="Prefix3:SignatureStatusEnum" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="0">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>1</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>NotAvailable</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>2</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Completed</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>4</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Failed</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="NotAvailable" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="Completed" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="Failed" Identifier="4" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:SetCalculatedPositionEnum" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="0">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>0</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Initial</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>1</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Inprogress</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>2</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Complete</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>4</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Fault</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Initial" Identifier="0" BitMask="" ArrayDimensions="" />
+      <Field Name="Inprogress" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="Complete" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="Fault" Identifier="4" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:CommandEnum" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="0">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>1</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Close</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>2</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Open</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>4</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>None</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Close" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="Open" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="None" Identifier="4" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:ChokeCommandEnum" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="0">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>1</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Close</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>2</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Open</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Close" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="Open" Identifier="2" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:SEMEnum" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="0">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>1</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>SEM_A</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>2</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>SEM_B</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>4</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Auto</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="SEM_A" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="SEM_B" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="Auto" Identifier="4" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:ValvePositionEnum" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="0">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>1</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Closed</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>2</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Open</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>4</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Moving</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>8</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Unknown</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Closed" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="Open" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="Moving" Identifier="4" BitMask="" ArrayDimensions="" />
+      <Field Name="Unknown" Identifier="8" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:ChokeMoveEnum" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="0">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>1</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Moving</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>2</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Stopped</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Moving" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="Stopped" Identifier="2" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:MDISVersionDataType" BaseType="Prefix1:Structure">
+    <ClassName />
+    <Fields>
+      <Field Name="MajorVersion" BitMask="" DataType="Prefix1:Byte" ArrayDimensions="" />
+      <Field Name="MinorVersion" BitMask="" DataType="Prefix1:Byte" ArrayDimensions="" />
+      <Field Name="Build" BitMask="" DataType="Prefix1:Byte" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <VariableType SymbolicName="Prefix3:InterlockVariableType" DataType="Prefix1:Boolean">
+    <Description>This Variable type returns a Boolean indicating if the interlock is active, it shall also contain an InterlockFor reference</Description>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix3:MDISVersionVariableType" DataType="Prefix3:MDISVersionDataType">
+    <Description>a standard representation of the version information that is related the MDIS Specification</Description>
+    <Children>
+      <Property SymbolicName="Prefix3:MajorVersion" ModellingRule="Mandatory" DataType="Prefix1:Byte" />
+      <Property SymbolicName="Prefix3:MinorVersion" ModellingRule="Mandatory" DataType="Prefix1:Byte" />
+      <Property SymbolicName="Prefix3:Build" ModellingRule="Mandatory" DataType="Prefix1:Byte" />
+    </Children>
+    <ClassName />
+  </VariableType>
+  <ObjectType SymbolicName="Prefix3:MDISValveObjectType" BaseType="Prefix3:MDISBaseObjectType">
+    <Description>The definition of a standard MDIS Valve Object</Description>
+    <Children>
+      <Variable SymbolicName="Prefix3:Position" ModellingRule="Mandatory" DataType="Prefix3:ValvePositionEnum" />
+      <Variable SymbolicName="Prefix3:CommandRejected" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix3:SignatureRequestStatus" ModellingRule="Optional" DataType="Prefix3:SignatureStatusEnum" />
+      <Variable SymbolicName="Prefix3:LastCommand" ModellingRule="Optional" DataType="Prefix3:CommandEnum" />
+      <Variable SymbolicName="Prefix3:NonDefeatableOpenInterlock" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix3:DefeatableOpenInterlock" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix3:NonDefeatableCloseInterlock" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix3:DefeatableCloseInterlock" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Method SymbolicName="Prefix3:Move" ModellingRule="Mandatory">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>Direction</Name>
+              <DataType>
+                <Identifier>ns=1;i=3</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>The enumeration indicates whether the command is to open the valve or to close the valve</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>OverrideInterlock</Name>
+              <DataType>
+                <Identifier>i=1</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Boolean indicating if the open or close command should override any defeat able interlocks</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>SEM</Name>
+              <DataType>
+                <Identifier>ns=1;i=5</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>The selection of which SEM to send the command to. </Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>Signature</Name>
+              <DataType>
+                <Identifier>i=1</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Boolean indicating if a profile should be generated by this move command request.</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ShutdownRequest</Name>
+              <DataType>
+                <Identifier>i=1</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Boolean indicates that this command is a shutdown move command.</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Property SymbolicName="Prefix3:OpenTimeDuration" ModellingRule="Optional" DataType="Prefix1:Duration" />
+      <Property SymbolicName="Prefix3:CloseTimeDuration" ModellingRule="Optional" DataType="Prefix1:Duration" />
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasInterlock</ReferenceType>
+        <TargetId>Prefix3:InterlockPlaceholder</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasSignature</ReferenceType>
+        <TargetId>Prefix3:ValveSignature</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:MDISDigitalInstrumentObjectType" BaseType="Prefix3:MDISBaseObjectType">
+    <Description>The definition of a MDIS standard Digital Instrument</Description>
+    <Children>
+      <Variable SymbolicName="Prefix3:State" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:MDISDigitalOutObjectType" BaseType="Prefix3:MDISDigitalInstrumentObjectType">
+    <Description>The definition of a MDIS standard Digital Output</Description>
+    <Children>
+      <Method SymbolicName="Prefix3:WriteState" ModellingRule="Mandatory">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>State</Name>
+              <DataType>
+                <Identifier>i=1</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Boolean state that is being written to the object</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:MDISDiscreteInstrumentObjectType" BaseType="Prefix3:MDISBaseObjectType">
+    <Description>The definition of a MDIS standard Discrete Instrument</Description>
+    <Children>
+      <Variable SymbolicName="Prefix3:State" ModellingRule="Mandatory" DataType="Prefix1:UInt32" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:MDISDiscreteOutObjectType" BaseType="Prefix3:MDISDiscreteInstrumentObjectType">
+    <Description>The definition of a MDIS standard Discrete Instrument</Description>
+    <Children>
+      <Method SymbolicName="Prefix3:WriteValue" ModellingRule="Mandatory">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>State</Name>
+              <DataType>
+                <Identifier>i=7</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Unit32 state that is being written to the object</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:MDISInstrumentObjectType" BaseType="Prefix3:MDISBaseObjectType">
+    <Description>The definition of a MDIS standard Instrument</Description>
+    <Children>
+      <Variable SymbolicName="Prefix3:ProcessVariable" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix3:HHlimit" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix3:Hlimit" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix3:Llimit" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix3:LLlimit" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Property SymbolicName="Prefix3:HHSetPoint" ModellingRule="Optional" DataType="Prefix1:Float" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix3:HSetPoint" ModellingRule="Optional" DataType="Prefix1:Float" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix3:LSetPoint" ModellingRule="Optional" DataType="Prefix1:Float" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix3:LLSetPoint" ModellingRule="Optional" DataType="Prefix1:Float" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:MDISInstrumentOutObjectType" BaseType="Prefix3:MDISInstrumentObjectType">
+    <Description>The definition of a MDIS standard instrument Output</Description>
+    <Children>
+      <Method SymbolicName="Prefix3:WriteValue" ModellingRule="Mandatory">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>Value</Name>
+              <DataType>
+                <Identifier>i=10</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Float value that is being written to the object</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:MDISChokeObjectType" BaseType="Prefix3:MDISBaseObjectType">
+    <Description>The definition of a standard MDIS Valve Object</Description>
+    <Children>
+      <Variable SymbolicName="Prefix3:CalculatedPosition" ModellingRule="Mandatory" DataType="Prefix1:Float" />
+      <Variable SymbolicName="Prefix3:SetCalculatedPositionStatus" ModellingRule="Optional" DataType="Prefix3:SetCalculatedPositionEnum" />
+      <Variable SymbolicName="Prefix3:PositionInSteps" ModellingRule="Optional" DataType="Prefix1:Int16" />
+      <Variable SymbolicName="Prefix3:Moving" ModellingRule="Mandatory" DataType="Prefix3:ChokeMoveEnum" />
+      <Variable SymbolicName="Prefix3:CommandRejected" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix3:NonDefeatableOpenInterlock" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix3:DefeatableOpenInterlock" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix3:NonDefeatableCloseInterlock" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix3:DefeatableCloseInterlock" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Method SymbolicName="Prefix3:Move" ModellingRule="Mandatory">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>Position</Name>
+              <DataType>
+                <Identifier>i=10</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>A number (in prercent) indicating the percent open</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>OverrideInterlock</Name>
+              <DataType>
+                <Identifier>i=1</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Boolean indicating if the open or close command should override any defeat able interlocks</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>SEM</Name>
+              <DataType>
+                <Identifier>ns=1;i=5</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>The selection of which SEM to send the command to. </Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Method SymbolicName="Prefix3:Step" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>Direction</Name>
+              <DataType>
+                <Identifier>ns=1;i=701</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>true is opening a valve, false if closing the valve</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>Steps</Name>
+              <DataType>
+                <Identifier>i=5</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>number of steps to open/close the valve</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>OverrideInterlock</Name>
+              <DataType>
+                <Identifier>i=1</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Boolean indicating if the open or close command should override any defeat able interlocks</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>SEM</Name>
+              <DataType>
+                <Identifier>ns=1;i=5</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>The selection of which SEM to send the command to. </Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Method SymbolicName="Prefix3:Abort" ModellingRule="Mandatory" />
+      <Method SymbolicName="Prefix3:SetCalculatedPosition" ModellingRule="Mandatory">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>Position</Name>
+              <DataType>
+                <Identifier>i=10</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>A number (in percent) indicating the percent open</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Property SymbolicName="Prefix3:StepDurationOpen" ModellingRule="Optional" DataType="Prefix1:Duration" />
+      <Property SymbolicName="Prefix3:StepDurationClose" ModellingRule="Optional" DataType="Prefix1:Duration" />
+      <Property SymbolicName="Prefix3:TotalSteps" ModellingRule="Optional" DataType="Prefix1:UInt16" />
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasInterlock</ReferenceType>
+        <TargetId>Prefix3:InterlockPlaceholder</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:MDISAggregateObjectType" BaseType="Prefix3:MDISBaseObjectType" IsAbstract="true">
+    <Description>The definition of a standard MDIS Valve Object</Description>
+    <Children>
+      <Object SymbolicName="Prefix3:InstrumentPlaceholder" TypeDefinition="Prefix3:MDISInstrumentObjectType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;InstrumentPlaceholder&gt;</BrowseName>
+      </Object>
+      <Object SymbolicName="Prefix3:InstrumentOutPlaceholder" TypeDefinition="Prefix3:MDISInstrumentOutObjectType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;InstrumentOutPlaceholder&gt;</BrowseName>
+      </Object>
+      <Object SymbolicName="Prefix3:DigitalInstrumentPlaceholder" TypeDefinition="Prefix3:MDISDigitalInstrumentObjectType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;DigitalInstrumentPlaceholder&gt;</BrowseName>
+      </Object>
+      <Object SymbolicName="Prefix3:DiscreteInstrumentPlaceholder" TypeDefinition="Prefix3:MDISDiscreteInstrumentObjectType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;DiscreteInstrumentPlaceholder&gt;</BrowseName>
+      </Object>
+      <Object SymbolicName="Prefix3:DigitalOutPlaceholder" TypeDefinition="Prefix3:MDISDigitalOutObjectType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;DigitalOutPlaceholder&gt;</BrowseName>
+      </Object>
+      <Object SymbolicName="Prefix3:DiscreteOutPlaceholder" TypeDefinition="Prefix3:MDISDiscreteOutObjectType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;DiscreteOutPlaceholder&gt;</BrowseName>
+      </Object>
+      <Object SymbolicName="Prefix3:ValvePlaceholder" TypeDefinition="Prefix3:MDISValveObjectType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;ValvePlaceholder&gt;</BrowseName>
+      </Object>
+      <Object SymbolicName="Prefix3:ChokePlaceholder" TypeDefinition="Prefix3:MDISChokeObjectType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;ChokePlaceholder&gt;</BrowseName>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasInterlock</ReferenceType>
+        <TargetId>Prefix3:InterlockPlaceholder</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:MDISTimeSyncObjectType">
+    <Description>The definition of a MDIS Time Sync object</Description>
+    <Children>
+      <Method SymbolicName="Prefix3:SetTime" ModellingRule="Mandatory">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
+            <DefaultValue>
+              <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>TargetTime</Name>
+              <DataType>
+                <Identifier>i=294</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>The UTC Time that the Server shall use to update its internal clock.</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:MDISInformationObjectType">
+    <Description>The definition of a MDIS standard Information</Description>
+    <Children>
+      <Object SymbolicName="Prefix3:TimeSynchronization" TypeDefinition="Prefix3:MDISTimeSyncObjectType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix3:Signatures" TypeDefinition="Prefix1:FolderType" ModellingRule="Optional" />
+      <Variable SymbolicName="Prefix3:MDISVersion" TypeDefinition="Prefix3:MDISVersionVariableType" ModellingRule="Mandatory" DataType="Prefix3:MDISVersionDataType" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <Object SymbolicName="Prefix3:MDISInformation" TypeDefinition="Prefix3:MDISInformationObjectType" />
+</ModelDesign>

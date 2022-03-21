@@ -1,0 +1,1320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix3="http://www.opcfoundation.org/UA/2013/01/ISA95" TargetNamespace="http://www.opcfoundation.org/UA/2013/01/ISA95" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://www.opcfoundation.org/UA/2013/01/ISA95" XmlNamespace="http://www.opcfoundation.org/UA/2013/01/ISA95" XmlPrefix="Prefix3" FilePath="" Version="1.00" PublicationDate="06/11/2013">http://www.opcfoundation.org/UA/2013/01/ISA95</Namespace>
+  </Namespaces>
+  <ReferenceType SymbolicName="Prefix3:MadeUpOf" BaseType="Prefix1:Aggregates" IsAbstract="true">
+    <Description>This ReferenceType is used to describe a shared aggregation</Description>
+    <ClassName />
+    <InverseName>ContainedBy</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:HasISA95ClassProperty" BaseType="Prefix1:HasComponent">
+    <Description>This ReferenceType is used to describe the ownership of an ISA95ClassProperty</Description>
+    <ClassName />
+    <InverseName>ISA95ClassPropertyOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:HasISA95Property" BaseType="Prefix1:HasComponent">
+    <Description>This ReferenceType is used to describe the ownership of ISA-95 Property</Description>
+    <ClassName />
+    <InverseName>ISA95PropertyOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:HasISA95Attribute" BaseType="Prefix1:HasComponent">
+    <Description>This ReferenceType indicates an ownership of ISA95Attribute</Description>
+    <ClassName />
+    <InverseName>ISA95AttributeOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:HasCDTSupplemental" BaseType="Prefix1:HasProperty">
+    <Description>This ReferenceType indicates an ownership of supplemental elements regarding CDT</Description>
+    <ClassName />
+    <InverseName>CDTSupplementalOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:DefinedBy" BaseType="Prefix1:NonHierarchicalReferences" IsAbstract="true">
+    <Description>This ReferenceType is used to describe a categorization of the SourceNode</Description>
+    <ClassName />
+    <InverseName>DefinitionOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:TestedBy" BaseType="Prefix1:NonHierarchicalReferences" IsAbstract="true">
+    <Description>A reference that is used to describe an ISA-95 Test Specification that is associated with the SourceNode</Description>
+    <ClassName />
+    <InverseName>TestSpecificationOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:ImplementedBy" BaseType="Prefix1:NonHierarchicalReferences">
+    <Description>A reference that is used to describe a relationship between ISA95Equipment and ISA95PhysicalAsset.</Description>
+    <ClassName />
+    <InverseName>ImplementationOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:HasTestResult" BaseType="Prefix1:HasProperty">
+    <Description>A reference that is used to describe the test results that are associated with an ISA95Property.</Description>
+    <ClassName />
+    <InverseName>TestResultOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:LocatedIn" BaseType="Prefix1:HasProperty">
+    <Description>A reference that is used to describe the test results that are associated with an ISA95Property.</Description>
+    <ClassName />
+    <InverseName>LocationOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:ResultsForSpecification" BaseType="Prefix1:NonHierarchicalReferences">
+    <Description>A reference that is used to describe the test results that are associated with an ISA95Property.</Description>
+    <ClassName />
+    <InverseName>TestResultOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:DefinedByPersonnelClass" BaseType="Prefix3:DefinedBy">
+    <Description>This ReferenceType is used to describe a categorization of the SourceNode.</Description>
+    <ClassName />
+    <InverseName>PersonnelClassOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:TestedByQualificationTest" BaseType="Prefix3:TestedBy">
+    <Description>This ReferenceType is used to describe a qualification test that is associated with the SourceNode.</Description>
+    <ClassName />
+    <InverseName>QualificationTestOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:DefinedByEquipmentClass" BaseType="Prefix3:DefinedBy">
+    <Description>This ReferenceType is used to describe a categorization of the SourceNode.</Description>
+    <ClassName />
+    <InverseName>EquipmentClassOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:TestedByEquipmentTest" BaseType="Prefix3:TestedBy">
+    <Description>This ReferenceType is used to describe a qualification test that is associated with the SourceNode.</Description>
+    <ClassName />
+    <InverseName>EquipmentTestOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:MadeUpOfEquipment" BaseType="Prefix3:MadeUpOf">
+    <Description>This ReferenceType is used to describe a shared aggregation</Description>
+    <ClassName />
+    <InverseName>ContainedByEquipment</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:DefinedByPhysicalAssetClass" BaseType="Prefix3:DefinedBy">
+    <Description>This ReferenceType is used to describe a categorization of the SourceNode.</Description>
+    <ClassName />
+    <InverseName>PhysicalAssetClassOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:TestedByPhysicalAssetTest" BaseType="Prefix3:TestedBy">
+    <Description>This ReferenceType is used to describe a qualification test that is associated with the SourceNode</Description>
+    <ClassName />
+    <InverseName>PhysicalAssetTestOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:MadeUpOfPhysicalAsset" BaseType="Prefix3:MadeUpOf">
+    <Description>This ReferenceType is used to describe a shared aggregation</Description>
+    <ClassName />
+    <InverseName>ContainedByPhysicalAsset</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:DefinedByMaterialDefinition" BaseType="Prefix3:DefinedBy">
+    <Description>This ReferenceType is used to describe a categorization of the SourceNode.</Description>
+    <ClassName />
+    <InverseName>MaterialClassOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:TestedByMaterialTest" BaseType="Prefix3:TestedBy">
+    <Description>This ReferenceType is used to describe a MaterialTestSpecification that is associated with the SourceNode</Description>
+    <ClassName />
+    <InverseName>MaterialTestOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:AssembledFrom" BaseType="Prefix1:Aggregates" IsAbstract="true">
+    <Description>This ReferenceType is used to describe the assemblies that compose a material, where the assemblies are other material.</Description>
+    <ClassName />
+    <InverseName>AssemblyTo</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:AssembledFromDefinition" BaseType="Prefix3:AssembledFrom">
+    <Description>This ReferenceType is used to describe the assemblies that compose a material, where the assemblies are other material.</Description>
+    <ClassName />
+    <InverseName>AssemblyToDefinition</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:AssembledFromClass" BaseType="Prefix3:AssembledFrom">
+    <Description>This ReferenceType is used to describe the assemblies that compose a material, where the assemblies are other material.</Description>
+    <ClassName />
+    <InverseName>AssemblyToClass</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:AssembledFromLot" BaseType="Prefix3:AssembledFrom">
+    <Description>This ReferenceType is used to describe the assemblies that compose a material, where the assemblies are other material.</Description>
+    <ClassName />
+    <InverseName>AssemblyToLot</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix3:MadeUpOfMaterialSublot" BaseType="Prefix3:MadeUpOf">
+    <Description>This ReferenceType is used to describe a shared aggregation</Description>
+    <ClassName />
+    <InverseName>ContainedByMaterialSublot</InverseName>
+  </ReferenceType>
+  <DataType SymbolicName="Prefix3:DecimalString" BaseType="Prefix1:String">
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:DateString" BaseType="Prefix1:String">
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:TimeString" BaseType="Prefix1:String">
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:DurationString" BaseType="Prefix1:String">
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:NormalizedString" BaseType="Prefix1:String">
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:Decimal" BaseType="Prefix1:ByteString">
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:CurrencyCode" BaseType="Prefix1:Structure">
+    <ClassName />
+    <Fields>
+      <Field Name="namespaceUri" BitMask="" DataType="Prefix1:String" ArrayDimensions="" />
+      <Field Name="unitId" BitMask="" DataType="Prefix1:Int32" ArrayDimensions="" />
+      <Field Name="charId" BitMask="" DataType="Prefix1:Byte" ValueRank="Array" ArrayDimensions="" />
+      <Field Name="displayName" BitMask="" DataType="Prefix1:LocalizedText" ArrayDimensions="" />
+      <Field Name="Description" BitMask="" DataType="Prefix1:LocalizedText" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:CDTAmountDecimal" BaseType="Prefix3:Decimal">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:Currency</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:CDTBinaryObject" BaseType="Prefix1:ByteString">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:MimeContentType</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:CharacterSet</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:Encoding</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:MIMEListId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:MIMEListAgencyId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:MIMEListVersionId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:CharacterSetListId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:CharacterSetListAgencyId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:CharacterSetListVersionId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:EncodingListId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:EncodingListAgencyId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:EncodingListVersionId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:FileName</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:CDTCode" BaseType="Prefix1:String">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:ListId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:ListAgencyId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:ListVersionId</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:CDTDateTime" BaseType="Prefix1:UtcTime">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:Timezone</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:DaylightSavings</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:CDTGraphic" BaseType="Prefix1:ByteString">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:MimeContentType</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:MIMEListId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:MIMEListAgencyId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:MIMEListVersionId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:FileName</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:CDTIdentifier" BaseType="Prefix1:String">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:SchemeId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:SchemeVersionId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:SchemeAgencyId</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:CDTMeasureDecimal" BaseType="Prefix3:Decimal">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:Unit</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:CDTMeasureDouble" BaseType="Prefix1:Double">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:Unit</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:CDTMeasureFloat" BaseType="Prefix1:Float">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:Unit</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:CDTMeasureInt16" BaseType="Prefix1:Int16">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:Unit</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:CDTMeasureInt32" BaseType="Prefix1:Int32">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:Unit</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:CDTMeasureInt64" BaseType="Prefix1:Int64">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:Unit</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:CDTOrdinal" BaseType="Prefix1:Int32">
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:CDTPicture" BaseType="Prefix1:Image">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:MimeContentType</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:MIMEListId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:MIMEListAgencyId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:MIMEListVersionId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:FileName</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:CDTRateDecimal" BaseType="Prefix3:Decimal">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:Multiplier</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:Unit</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:Currency</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:BaseMultiplier</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:BaseUnit</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:BaseCurrency</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:CDTRateDouble" BaseType="Prefix1:Double">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:Multiplier</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:Unit</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:Currency</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:BaseMultiplier</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:BaseUnit</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:BaseCurrency</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:CDTRateFloat" BaseType="Prefix1:Float">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:Multiplier</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:Unit</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:Currency</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:BaseMultiplier</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:BaseUnit</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:BaseCurrency</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:CDTRateInt32" BaseType="Prefix1:Int32">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:Multiplier</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:Unit</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:Currency</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:BaseMultiplier</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:BaseUnit</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:BaseCurrency</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:CDTSound" BaseType="Prefix1:ByteString">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:MimeContentType</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:MIMEListId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:MIMEListAgencyId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:MIMEListVersionId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:FileName</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:CDTVideo" BaseType="Prefix1:ByteString">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:MimeContentType</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:MIMEListId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:MIMEListAgencyId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:MIMEListVersionId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasCDTSupplemental</ReferenceType>
+        <TargetId>Prefix3:FileName</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+    <Fields />
+  </DataType>
+  <DataType SymbolicName="Prefix3:ISA95EquipmentElementLevelEnum" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array">
+        <DefaultValue>
+          <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Enterprise</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Site</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Area</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>ProcessCell</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Unit</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>ProductionLine</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>WorkCell</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>ProductionUnit</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>StorageZone</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>StorageUnit</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>WorkCenter</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>WorkUnit</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>EquipmentModule</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>ControlModule</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Other</Text>
+        </LocalizedText>
+      </ListOfLocalizedText>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="Enterprise" Identifier="0" BitMask="" ArrayDimensions="" />
+      <Field Name="Site" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="Area" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="ProcessCell" Identifier="3" BitMask="" ArrayDimensions="" />
+      <Field Name="Unit" Identifier="4" BitMask="" ArrayDimensions="" />
+      <Field Name="ProductionLine" Identifier="5" BitMask="" ArrayDimensions="" />
+      <Field Name="WorkCell" Identifier="6" BitMask="" ArrayDimensions="" />
+      <Field Name="ProductionUnit" Identifier="7" BitMask="" ArrayDimensions="" />
+      <Field Name="StorageZone" Identifier="8" BitMask="" ArrayDimensions="" />
+      <Field Name="StorageUnit" Identifier="9" BitMask="" ArrayDimensions="" />
+      <Field Name="WorkCenter" Identifier="10" BitMask="" ArrayDimensions="" />
+      <Field Name="WorkUnit" Identifier="11" BitMask="" ArrayDimensions="" />
+      <Field Name="EquipmentModule" Identifier="12" BitMask="" ArrayDimensions="" />
+      <Field Name="ControlModule" Identifier="13" BitMask="" ArrayDimensions="" />
+      <Field Name="Other" Identifier="14" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:ISA95TestResultMeasurementDataType" BaseType="Prefix1:Structure">
+    <ClassName />
+    <Fields>
+      <Field Name="Id" BitMask="" DataType="Prefix1:NodeId" ArrayDimensions="" />
+      <Field Name="TestResultDescription" BitMask="" DataType="Prefix1:LocalizedText" ArrayDimensions="" />
+      <Field Name="Date" BitMask="" DataType="Prefix1:DateTime" ArrayDimensions="" />
+      <Field Name="Result" BitMask="" ArrayDimensions="" />
+      <Field Name="ResultUnitOfMeasure" BitMask="" DataType="Prefix1:EUInformation" ArrayDimensions="" />
+      <Field Name="Expiration" BitMask="" DataType="Prefix1:DateTime" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:ISA95TestResultDataType" BaseType="Prefix1:Structure">
+    <ClassName />
+    <Fields>
+      <Field Name="Id" BitMask="" DataType="Prefix1:NodeId" ArrayDimensions="" />
+      <Field Name="TestResultDescription" BitMask="" DataType="Prefix1:LocalizedText" ArrayDimensions="" />
+      <Field Name="Date" BitMask="" DataType="Prefix1:DateTime" ArrayDimensions="" />
+      <Field Name="Result" BitMask="" ArrayDimensions="" />
+      <Field Name="ResultUnitOfMeasure" BitMask="" DataType="Prefix1:String" ArrayDimensions="" />
+      <Field Name="Expiration" BitMask="" DataType="Prefix1:DateTime" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:ISA95AssetAssignmentDataType" BaseType="Prefix1:Structure">
+    <ClassName />
+    <Fields>
+      <Field Name="Id" BitMask="" DataType="Prefix1:NodeId" ArrayDimensions="" />
+      <Field Name="AssinmentDescription" BitMask="" DataType="Prefix1:LocalizedText" ArrayDimensions="" />
+      <Field Name="StartTime" BitMask="" DataType="Prefix1:DateTime" ArrayDimensions="" />
+      <Field Name="EndTime" BitMask="" DataType="Prefix1:DateTime" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <VariableType SymbolicName="Prefix3:ISA95ClassPropertyType" IsAbstract="true" DataType="Prefix1:BaseDataType" ValueRank="ScalarOrArray">
+    <Description>This VariableType is used to define an ISA95ClassProperty for an ISA95Class</Description>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:Key</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix3:ISA95PropertyType" IsAbstract="true" DataType="Prefix1:BaseDataType" ValueRank="ScalarOrArray">
+    <Description>This VariableType is used to define an ISA95Property for an ISA95Object</Description>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:Key</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix3:ISA95TestResultType" DataType="Prefix1:BaseDataType" ValueRank="ScalarOrArray">
+    <Description />
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:Id</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:ResultDescription</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:TestDate</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:Result</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:ResultUnitOfMeasure</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:Expiration</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix3:ISA95TestResultNonEUType" BaseType="Prefix3:ISA95TestResultType" DataType="Prefix3:ISA95TestResultDataType" ValueRank="ScalarOrArray">
+    <Description />
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:ResultUnitOfMeasure</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix3:ISA95TestResultEUType" BaseType="Prefix3:ISA95TestResultType" DataType="Prefix3:ISA95TestResultMeasurementDataType" ValueRank="ScalarOrArray">
+    <Description />
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:ResultUnitOfMeasure</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <ObjectType SymbolicName="Prefix3:ISA95ClassType" IsAbstract="true">
+    <Description>This abstract ObjectType is used to define groupings of functionality that is associated with an ISA95Object</Description>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:ISA95ObjectType" IsAbstract="true">
+    <Description>This abstract ObjectType</Description>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:ISA95TestSpecificationType" IsAbstract="true">
+    <Description>This ObjectType indicates the existence of a test specification.</Description>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:Version</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <VariableType SymbolicName="Prefix3:ISA95AssetAssignmentType" DataType="Prefix1:BaseDataType" ValueRank="ScalarOrArray">
+    <Description />
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:Id</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:AssignmentDescription</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:StartTime</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:StopTime</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix3:QualificationTestResultType" BaseType="Prefix3:ISA95TestResultType" DataType="Prefix1:Structure" ValueRank="ScalarOrArray">
+    <Description />
+    <ClassName />
+  </VariableType>
+  <ObjectType SymbolicName="Prefix3:QualificationTestSpecificationType" BaseType="Prefix3:ISA95TestSpecificationType">
+    <Description>This ObjectType indicates the existence of a test specification.</Description>
+    <ClassName />
+  </ObjectType>
+  <VariableType SymbolicName="Prefix3:PersonnelClassPropertyType" BaseType="Prefix3:ISA95ClassPropertyType" DataType="Prefix1:BaseDataType">
+    <Description>This VariableType indicates ISA95ClassProperties for PersonnelClass.</Description>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95ClassProperty</ReferenceType>
+        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:TestedByQualificationTest</ReferenceType>
+        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix3:PersonPropertyType" BaseType="Prefix3:ISA95PropertyType" DataType="Prefix1:BaseDataType">
+    <Description>This VariableType indicates ISA95Properties of a person</Description>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Property</ReferenceType>
+        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:TestedByQualificationTest</ReferenceType>
+        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasTestResult</ReferenceType>
+        <TargetId>Prefix3:_x003C_TestResult_x003E_</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <ObjectType SymbolicName="Prefix3:PersonnelClassType" BaseType="Prefix3:ISA95ClassType">
+    <Description>This ObjectType indicates a grouping of persons with similar characteristics for a definite purpose such as manufacturing operations definition, scheduling, capability and performance</Description>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95ClassProperty</ReferenceType>
+        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:TestedByQualificationTest</ReferenceType>
+        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:PersonType" BaseType="Prefix3:ISA95ObjectType">
+    <Description>This ObjectType indicates a specifically identified individual</Description>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Property</ReferenceType>
+        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:DefinedByPersonnelClass</ReferenceType>
+        <TargetId>Prefix3:_x003C_PersonnelClass_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:TestedByQualificationTest</ReferenceType>
+        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <VariableType SymbolicName="Prefix3:GeoSpatialLocationType" DataType="Prefix1:String" ValueRank="ScalarOrArray">
+    <Description>This VariableType is used to provide details regarding Physical Location information for PhysicalAssetClassType</Description>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix3:CompanyType" DataType="Prefix1:BaseDataType" ValueRank="ScalarOrArray">
+    <Description>This VariableType is used to provide details regarding company information for PhysicalAssetClassTypes or for instances of PhysicalAssetType</Description>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix3:PhysicalAssetCapabilityTestResultType" BaseType="Prefix3:ISA95TestResultType" DataType="Prefix1:Structure" ValueRank="ScalarOrArray">
+    <Description>This VariableType indicates the results from a physical asset capability test for a specific physical asset.</Description>
+    <ClassName />
+  </VariableType>
+  <ObjectType SymbolicName="Prefix3:PhysicalAssetCapabilityTestSpecificationType" BaseType="Prefix3:ISA95TestSpecificationType">
+    <Description>This ObjectType indicates the existence of a test specification.</Description>
+    <ClassName />
+  </ObjectType>
+  <VariableType SymbolicName="Prefix3:PhysicalAssetClassPropertyType" BaseType="Prefix3:ISA95ClassPropertyType" DataType="Prefix1:BaseDataType">
+    <Description>This VariableType indicates ISA95ClassProperties for a PhysicalAssetClassType</Description>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95ClassProperty</ReferenceType>
+        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:TestedByPhysicalAssetTest</ReferenceType>
+        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix3:PhysicalAssetPropertyType" BaseType="Prefix3:ISA95ClassPropertyType" DataType="Prefix1:BaseDataType">
+    <Description>This VariableType indicates ISA95Properties of a role based equipment.</Description>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Property</ReferenceType>
+        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:TestedByPhysicalAssetTest</ReferenceType>
+        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasTestResult</ReferenceType>
+        <TargetId>Prefix3:_x003C_TestResult_x003E_</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <ObjectType SymbolicName="Prefix3:PhysicalAssetClassType" BaseType="Prefix3:ISA95ClassType">
+    <Description>This ObjectType indicates a grouping of equipment with similar characteristics for a definite purpose such as manufacturing operations definition, scheduling, capability and performance</Description>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95ClassProperty</ReferenceType>
+        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:TestedByPhysicalAssetTest</ReferenceType>
+        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:Manufacturer</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:ModelNumber</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:PhysicalAssetType" BaseType="Prefix3:ISA95ObjectType">
+    <Description>This ObjectType defines a piece of equipment</Description>
+    <Children>
+      <Variable SymbolicName="Prefix3:AssetAssignment" TypeDefinition="Prefix3:ISA95AssetAssignmentType" ModellingRule="Optional" DataType="Prefix1:BaseDataType">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+            <TargetId>Prefix3:Id</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+            <TargetId>Prefix3:AssignmentDescription</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+            <TargetId>Prefix3:StartTime</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+            <TargetId>Prefix3:StopTime</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Property</ReferenceType>
+        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Property</ReferenceType>
+        <TargetId>Prefix3:_x003C_PhysicalAsset_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:DefinedByPhysicalAssetClass</ReferenceType>
+        <TargetId>Prefix3:PhysicalAssetClass</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:TestedByPhysicalAssetTest</ReferenceType>
+        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:LocatedIn</ReferenceType>
+        <TargetId>Prefix3:PhysicalLocation</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:FixedAssetId</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:VendorId</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <VariableType SymbolicName="Prefix3:EquipmentCapabilityTestResultType" BaseType="Prefix3:ISA95TestResultType" DataType="Prefix1:Structure" ValueRank="ScalarOrArray">
+    <Description />
+    <ClassName />
+  </VariableType>
+  <ObjectType SymbolicName="Prefix3:EquipmentCapabilityTestSpecificationType" BaseType="Prefix3:ISA95TestSpecificationType">
+    <Description>This ObjectType indicates the existence of a test specification.</Description>
+    <ClassName />
+  </ObjectType>
+  <VariableType SymbolicName="Prefix3:EquipmentClassPropertyType" BaseType="Prefix3:ISA95ClassPropertyType" DataType="Prefix1:BaseDataType">
+    <Description />
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95ClassProperty</ReferenceType>
+        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:TestedByEquipmentTest</ReferenceType>
+        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix3:EquipmentPropertyType" BaseType="Prefix3:ISA95PropertyType" DataType="Prefix1:BaseDataType">
+    <Description />
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Property</ReferenceType>
+        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:TestedByEquipmentTest</ReferenceType>
+        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasTestResult</ReferenceType>
+        <TargetId>Prefix3:_x003C_TestResult_x003E_</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <ObjectType SymbolicName="Prefix3:EquipmentClassType" BaseType="Prefix3:ISA95ClassType">
+    <Description>This ObjectType indicates a grouping of equipment with similar characteristics for a definite purpose such as manufacturing operations definition, scheduling, capability and performance</Description>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95ClassProperty</ReferenceType>
+        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:TestedByEquipmentTest</ReferenceType>
+        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:EquipmentLevel</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:EquipmentType" BaseType="Prefix3:ISA95ObjectType">
+    <Description>This ObjectType defines a piece of equipment</Description>
+    <Children>
+      <Variable SymbolicName="Prefix3:AssetAssignment" TypeDefinition="Prefix3:ISA95AssetAssignmentType" ModellingRule="Optional" DataType="Prefix1:BaseDataType">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+            <TargetId>Prefix3:Id</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+            <TargetId>Prefix3:AssignmentDescription</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+            <TargetId>Prefix3:StartTime</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+            <TargetId>Prefix3:StopTime</TargetId>
+          </Reference>
+        </References>
+      </Variable>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95ClassProperty</ReferenceType>
+        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:DefinedByEquipmentClass</ReferenceType>
+        <TargetId>Prefix3:_x003C_EquipmentClass_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:TestedByEquipmentTest</ReferenceType>
+        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:MadeUpOfEquipment</ReferenceType>
+        <TargetId>Prefix3:_x003C_Equipment_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:EquipmentLevel</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:ImplementedBy</ReferenceType>
+        <TargetId>Prefix3:_x003C_PhysicalAsset_x003E_</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <VariableType SymbolicName="Prefix3:MaterialTestResultType" BaseType="Prefix3:ISA95TestResultType" DataType="Prefix1:Structure" ValueRank="ScalarOrArray">
+    <Description>This VariableType indicates the results from executing an instance of a MaterialTestSpecificationType for a specific MaterialLotType</Description>
+    <ClassName />
+  </VariableType>
+  <ObjectType SymbolicName="Prefix3:MaterialTestSpecificationType" BaseType="Prefix3:ISA95TestSpecificationType">
+    <Description>This ObjectType indicates the existence of a test specification.</Description>
+    <ClassName />
+  </ObjectType>
+  <VariableType SymbolicName="Prefix3:MaterialDefinitionPropertyType" BaseType="Prefix3:ISA95ClassPropertyType" DataType="Prefix1:BaseDataType">
+    <Description />
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95ClassProperty</ReferenceType>
+        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:TestedByMaterialTest</ReferenceType>
+        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix3:MaterialClassPropertyType" BaseType="Prefix3:ISA95ClassPropertyType" DataType="Prefix1:BaseDataType">
+    <Description />
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95ClassProperty</ReferenceType>
+        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:TestedByMaterialTest</ReferenceType>
+        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <VariableType SymbolicName="Prefix3:MaterialLotPropertyType" BaseType="Prefix3:MaterialTestResultType" DataType="Prefix1:Structure">
+    <Description />
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasTestResult</ReferenceType>
+        <TargetId>Prefix3:_x003C_TestResult_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Property</ReferenceType>
+        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:TestedByMaterialTest</ReferenceType>
+        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </VariableType>
+  <ObjectType SymbolicName="Prefix3:MaterialClassType" BaseType="Prefix3:ISA95ClassType">
+    <Description />
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95ClassProperty</ReferenceType>
+        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:TestedByMaterialTest</ReferenceType>
+        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:AssembledFromClass</ReferenceType>
+        <TargetId>Prefix3:_x003C_AssemblyClass_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:AssemblyType</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:AssemblyRelationship</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:MaterialDefinitionType" BaseType="Prefix3:ISA95ClassType">
+    <Description />
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95ClassProperty</ReferenceType>
+        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:TestedByMaterialTest</ReferenceType>
+        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:AssembledFromDefinition</ReferenceType>
+        <TargetId>Prefix3:_x003C_AssemblyClass_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:AssemblyType</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:AssemblyRelationship</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:MaterialLotType" BaseType="Prefix3:ISA95ObjectType">
+    <Description />
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Property</ReferenceType>
+        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:TestedByMaterialTest</ReferenceType>
+        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:DefinedByMaterialDefinition</ReferenceType>
+        <TargetId>Prefix3:_x003C_MaterialDefinition_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:AssembledFromLot</ReferenceType>
+        <TargetId>Prefix3:_x003C_AssemblyLot_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:AssemblyType</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:AssemblyRelationship</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:Status</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:StorageLocation</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:Quantity</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:MaterialSublotType" BaseType="Prefix3:ISA95ObjectType">
+    <Description />
+    <References>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Property</ReferenceType>
+        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:TestedByMaterialTest</ReferenceType>
+        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:AssembledFromLot</ReferenceType>
+        <TargetId>Prefix3:_x003C_AssemblyLot_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:AssemblyType</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:AssemblyRelationship</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:MadeUpOfMaterialSublot</ReferenceType>
+        <TargetId>Prefix3:_x003C_Sublot_x003E_</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:Status</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:StorageLocation</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
+        <TargetId>Prefix3:Quantity</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+</ModelDesign>

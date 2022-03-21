@@ -1,7 +1,7 @@
-"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.5.0.40483";;;;"2022-03-11T13:04:33.6824742Z";;
-"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2022 Mariusz Postol";;;;"2022-03-11T13:04:33.6834401Z";;
-"UANodeSetValidation";Information;190380256;;"Entering ImportNodeSet and starting model import form file Opc.Ua.PackML.NodeSet2.xml";;;;"2022-03-11T13:04:58.8301035Z";;
-"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import";;;;"2022-03-11T13:04:58.8531004Z";;
-"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/PackML/ namespace.";;;;"2022-03-11T13:05:02.9821008Z";;
-"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 19 nodes and no errors/warnings reported";;;;"2022-03-11T13:05:03.1007770Z";;
-"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file Opc.Ua.PackML.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2022-03-11T13:05:03.2235701Z";;
+"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.5.0.40483";;;;"2022-03-11T14:02:52.9909521Z";;
+"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2022 Mariusz Postol";;;;"2022-03-11T14:02:52.9919174Z";;
+"UANodeSetValidation";Information;190380256;;"Entering ImportNodeSet and starting model import form file Opc.Ua.PackML.NodeSet2.xml";;;;"2022-03-11T14:03:18.0257934Z";;
+"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import";;;;"2022-03-11T14:03:18.0442067Z";;
+"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/PackML/ namespace.";;;;"2022-03-11T14:03:22.1491551Z";;
+"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 19 nodes and no errors/warnings reported";;;;"2022-03-11T14:03:22.2616642Z";;
+"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file Opc.Ua.PackML.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2022-03-11T14:03:22.3813795Z";;
