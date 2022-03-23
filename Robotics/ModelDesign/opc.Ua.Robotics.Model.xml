@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
-<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/Robotics/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<ModelDesign xmlns:Prefix5="http://opcfoundation.org/UA/Robotics/" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09/03/2021">http://opcfoundation.org/UA/DI/</Namespace>
@@ -283,10 +282,10 @@
       <Variable SymbolicName="Prefix5:Mass" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Mandatory" DataType="Prefix1:Double">
         <Description>The weight of the load mounted on one mounting point.</Description>
       </Variable>
-      <Variable SymbolicName="Prefix5:CenterOfMass" TypeDefinition="Prefix1:_x0033_DFrameType" ModellingRule="Optional" DataType="Prefix1:_x0033_DFrame">
+      <Variable SymbolicName="Prefix5:CenterOfMass" TypeDefinition="Prefix1:X0033_DFrameType" ModellingRule="Optional" DataType="Prefix1:X0033_DFrame">
         <Description>The position and orientation of the center of the mass related to the mounting point using a FrameType. X, Y, Z define the position of the center of gravity relative to the mounting point coordinate system. A, B, C define the orientation of the principal axes of inertia relative to the mounting point coordinate system. Orientation A, B, C can be "0" for systems which do not need these  values.</Description>
       </Variable>
-      <Variable SymbolicName="Prefix5:Inertia" TypeDefinition="Prefix1:_x0033_DVectorType" ModellingRule="Optional" DataType="Prefix1:_x0033_DVector">
+      <Variable SymbolicName="Prefix5:Inertia" TypeDefinition="Prefix1:X0033_DVectorType" ModellingRule="Optional" DataType="Prefix1:X0033_DVector">
         <Description>The Inertia uses the VectorType to describe the three values of the principal moments of inertia with respect to the mounting point coordinate system. If inertia values are provided for rotary axis the CenterOfMass shall be completely filled as well.</Description>
       </Variable>
     </Children>
@@ -441,21 +440,21 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>CYCLE</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>CONTINUOUS</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>STEP</Text>
-        </LocalizedText>
+        
+          
+          
+          CYCLE
+        
+        
+          
+          
+          CONTINUOUS
+        
+        
+          
+          
+          STEP
+        
       </ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -478,41 +477,41 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>OTHER</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>ARTICULATED_ROBOT</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>SCARA_ROBOT</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>CARTESIAN_ROBOT</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>SPHERICAL_ROBOT</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>PARALLEL_ROBOT</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>CYLINDRICAL_ROBOT</Text>
-        </LocalizedText>
+        
+          
+          
+          OTHER
+        
+        
+          
+          
+          ARTICULATED_ROBOT
+        
+        
+          
+          
+          SCARA_ROBOT
+        
+        
+          
+          
+          CARTESIAN_ROBOT
+        
+        
+          
+          
+          SPHERICAL_ROBOT
+        
+        
+          
+          
+          PARALLEL_ROBOT
+        
+        
+          
+          
+          CYLINDRICAL_ROBOT
+        
       </ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -547,31 +546,31 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>OTHER</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>ROTARY</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>ROTARY_ENDLESS</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>LINEAR</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>LINEAR_ENDLESS</Text>
-        </LocalizedText>
+        
+          
+          
+          OTHER
+        
+        
+          
+          
+          ROTARY
+        
+        
+          
+          
+          ROTARY_ENDLESS
+        
+        
+          
+          
+          LINEAR
+        
+        
+          
+          
+          LINEAR_ENDLESS
+        
       </ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -600,31 +599,31 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>OTHER</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>MANUAL_REDUCED_SPEED</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>MANUAL_HIGH_SPEED</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>AUTOMATIC</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>AUTOMATIC_EXTERNAL</Text>
-        </LocalizedText>
+        
+          
+          
+          OTHER
+        
+        
+          
+          
+          MANUAL_REDUCED_SPEED
+        
+        
+          
+          
+          MANUAL_HIGH_SPEED
+        
+        
+          
+          
+          AUTOMATIC
+        
+        
+          
+          
+          AUTOMATIC_EXTERNAL
+        
       </ListOfLocalizedText>
         </DefaultValue>
       </Property>

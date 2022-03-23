@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
-<ModelDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix3="http://www.opcfoundation.org/UA/2013/01/ISA95" TargetNamespace="http://www.opcfoundation.org/UA/2013/01/ISA95" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<ModelDesign xmlns:Prefix3="http://www.opcfoundation.org/UA/2013/01/ISA95" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix1="http://opcfoundation.org/UA/" TargetNamespace="http://www.opcfoundation.org/UA/2013/01/ISA95" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://www.opcfoundation.org/UA/2013/01/ISA95" XmlNamespace="http://www.opcfoundation.org/UA/2013/01/ISA95" XmlPrefix="Prefix3" FilePath="" Version="1.00" PublicationDate="06/11/2013">http://www.opcfoundation.org/UA/2013/01/ISA95</Namespace>
@@ -137,27 +136,21 @@
   </ReferenceType>
   <DataType SymbolicName="Prefix3:DecimalString" BaseType="Prefix1:String">
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:DateString" BaseType="Prefix1:String">
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:TimeString" BaseType="Prefix1:String">
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:DurationString" BaseType="Prefix1:String">
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:NormalizedString" BaseType="Prefix1:String">
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:Decimal" BaseType="Prefix1:ByteString">
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:CurrencyCode" BaseType="Prefix1:Structure">
     <ClassName />
@@ -177,7 +170,6 @@
       </Reference>
     </References>
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:CDTBinaryObject" BaseType="Prefix1:ByteString">
     <References>
@@ -235,7 +227,6 @@
       </Reference>
     </References>
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:CDTCode" BaseType="Prefix1:String">
     <References>
@@ -253,7 +244,6 @@
       </Reference>
     </References>
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:CDTDateTime" BaseType="Prefix1:UtcTime">
     <References>
@@ -267,7 +257,6 @@
       </Reference>
     </References>
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:CDTGraphic" BaseType="Prefix1:ByteString">
     <References>
@@ -293,7 +282,6 @@
       </Reference>
     </References>
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:CDTIdentifier" BaseType="Prefix1:String">
     <References>
@@ -311,7 +299,6 @@
       </Reference>
     </References>
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:CDTMeasureDecimal" BaseType="Prefix3:Decimal">
     <References>
@@ -321,7 +308,6 @@
       </Reference>
     </References>
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:CDTMeasureDouble" BaseType="Prefix1:Double">
     <References>
@@ -331,7 +317,6 @@
       </Reference>
     </References>
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:CDTMeasureFloat" BaseType="Prefix1:Float">
     <References>
@@ -341,7 +326,6 @@
       </Reference>
     </References>
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:CDTMeasureInt16" BaseType="Prefix1:Int16">
     <References>
@@ -351,7 +335,6 @@
       </Reference>
     </References>
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:CDTMeasureInt32" BaseType="Prefix1:Int32">
     <References>
@@ -361,7 +344,6 @@
       </Reference>
     </References>
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:CDTMeasureInt64" BaseType="Prefix1:Int64">
     <References>
@@ -371,11 +353,9 @@
       </Reference>
     </References>
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:CDTOrdinal" BaseType="Prefix1:Int32">
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:CDTPicture" BaseType="Prefix1:Image">
     <References>
@@ -401,7 +381,6 @@
       </Reference>
     </References>
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:CDTRateDecimal" BaseType="Prefix3:Decimal">
     <References>
@@ -431,7 +410,6 @@
       </Reference>
     </References>
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:CDTRateDouble" BaseType="Prefix1:Double">
     <References>
@@ -461,7 +439,6 @@
       </Reference>
     </References>
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:CDTRateFloat" BaseType="Prefix1:Float">
     <References>
@@ -491,7 +468,6 @@
       </Reference>
     </References>
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:CDTRateInt32" BaseType="Prefix1:Int32">
     <References>
@@ -521,7 +497,6 @@
       </Reference>
     </References>
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:CDTSound" BaseType="Prefix1:ByteString">
     <References>
@@ -547,7 +522,6 @@
       </Reference>
     </References>
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:CDTVideo" BaseType="Prefix1:ByteString">
     <References>
@@ -573,88 +547,87 @@
       </Reference>
     </References>
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:ISA95EquipmentElementLevelEnum" BaseType="Prefix1:Enumeration">
     <Children>
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array">
         <DefaultValue>
           <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>Enterprise</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>Site</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>Area</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>ProcessCell</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>Unit</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>ProductionLine</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>WorkCell</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>ProductionUnit</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>StorageZone</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>StorageUnit</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>WorkCenter</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>WorkUnit</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>EquipmentModule</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>ControlModule</Text>
-        </LocalizedText>
-        <LocalizedText>
-          <Locale>
-          </Locale>
-          <Text>Other</Text>
-        </LocalizedText>
+        
+          
+          
+          Enterprise
+        
+        
+          
+          
+          Site
+        
+        
+          
+          
+          Area
+        
+        
+          
+          
+          ProcessCell
+        
+        
+          
+          
+          Unit
+        
+        
+          
+          
+          ProductionLine
+        
+        
+          
+          
+          WorkCell
+        
+        
+          
+          
+          ProductionUnit
+        
+        
+          
+          
+          StorageZone
+        
+        
+          
+          
+          StorageUnit
+        
+        
+          
+          
+          WorkCenter
+        
+        
+          
+          
+          WorkUnit
+        
+        
+          
+          
+          EquipmentModule
+        
+        
+          
+          
+          ControlModule
+        
+        
+          
+          
+          Other
+        
       </ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -730,7 +703,6 @@
     <ClassName />
   </VariableType>
   <VariableType SymbolicName="Prefix3:ISA95TestResultType" DataType="Prefix1:BaseDataType" ValueRank="ScalarOrArray">
-    <Description />
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
@@ -760,7 +732,6 @@
     <ClassName />
   </VariableType>
   <VariableType SymbolicName="Prefix3:ISA95TestResultNonEUType" BaseType="Prefix3:ISA95TestResultType" DataType="Prefix3:ISA95TestResultDataType" ValueRank="ScalarOrArray">
-    <Description />
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
@@ -770,7 +741,6 @@
     <ClassName />
   </VariableType>
   <VariableType SymbolicName="Prefix3:ISA95TestResultEUType" BaseType="Prefix3:ISA95TestResultType" DataType="Prefix3:ISA95TestResultMeasurementDataType" ValueRank="ScalarOrArray">
-    <Description />
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
@@ -798,7 +768,6 @@
     <ClassName />
   </ObjectType>
   <VariableType SymbolicName="Prefix3:ISA95AssetAssignmentType" DataType="Prefix1:BaseDataType" ValueRank="ScalarOrArray">
-    <Description />
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
@@ -820,7 +789,6 @@
     <ClassName />
   </VariableType>
   <VariableType SymbolicName="Prefix3:QualificationTestResultType" BaseType="Prefix3:ISA95TestResultType" DataType="Prefix1:Structure" ValueRank="ScalarOrArray">
-    <Description />
     <ClassName />
   </VariableType>
   <ObjectType SymbolicName="Prefix3:QualificationTestSpecificationType" BaseType="Prefix3:ISA95TestSpecificationType">
@@ -832,11 +800,11 @@
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasISA95ClassProperty</ReferenceType>
-        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_PropertyNameX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:TestedByQualificationTest</ReferenceType>
-        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_TestSpecificationX003E_</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -846,15 +814,15 @@
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasISA95Property</ReferenceType>
-        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_PropertyNameX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:TestedByQualificationTest</ReferenceType>
-        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_TestSpecificationX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:HasTestResult</ReferenceType>
-        <TargetId>Prefix3:_x003C_TestResult_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_TestResultX003E_</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -864,11 +832,11 @@
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasISA95ClassProperty</ReferenceType>
-        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_PropertyNameX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:TestedByQualificationTest</ReferenceType>
-        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_TestSpecificationX003E_</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -878,15 +846,15 @@
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasISA95Property</ReferenceType>
-        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_PropertyNameX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:DefinedByPersonnelClass</ReferenceType>
-        <TargetId>Prefix3:_x003C_PersonnelClass_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_PersonnelClassX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:TestedByQualificationTest</ReferenceType>
-        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_TestSpecificationX003E_</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -912,11 +880,11 @@
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasISA95ClassProperty</ReferenceType>
-        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_PropertyNameX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:TestedByPhysicalAssetTest</ReferenceType>
-        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_TestSpecificationX003E_</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -926,15 +894,15 @@
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasISA95Property</ReferenceType>
-        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_PropertyNameX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:TestedByPhysicalAssetTest</ReferenceType>
-        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_TestSpecificationX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:HasTestResult</ReferenceType>
-        <TargetId>Prefix3:_x003C_TestResult_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_TestResultX003E_</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -944,11 +912,11 @@
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasISA95ClassProperty</ReferenceType>
-        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_PropertyNameX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:TestedByPhysicalAssetTest</ReferenceType>
-        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_TestSpecificationX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
@@ -988,11 +956,11 @@
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasISA95Property</ReferenceType>
-        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_PropertyNameX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:HasISA95Property</ReferenceType>
-        <TargetId>Prefix3:_x003C_PhysicalAsset_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_PhysicalAssetX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:DefinedByPhysicalAssetClass</ReferenceType>
@@ -1000,7 +968,7 @@
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:TestedByPhysicalAssetTest</ReferenceType>
-        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_TestSpecificationX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:LocatedIn</ReferenceType>
@@ -1018,7 +986,6 @@
     <ClassName />
   </ObjectType>
   <VariableType SymbolicName="Prefix3:EquipmentCapabilityTestResultType" BaseType="Prefix3:ISA95TestResultType" DataType="Prefix1:Structure" ValueRank="ScalarOrArray">
-    <Description />
     <ClassName />
   </VariableType>
   <ObjectType SymbolicName="Prefix3:EquipmentCapabilityTestSpecificationType" BaseType="Prefix3:ISA95TestSpecificationType">
@@ -1026,33 +993,31 @@
     <ClassName />
   </ObjectType>
   <VariableType SymbolicName="Prefix3:EquipmentClassPropertyType" BaseType="Prefix3:ISA95ClassPropertyType" DataType="Prefix1:BaseDataType">
-    <Description />
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasISA95ClassProperty</ReferenceType>
-        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_PropertyNameX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:TestedByEquipmentTest</ReferenceType>
-        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_TestSpecificationX003E_</TargetId>
       </Reference>
     </References>
     <ClassName />
   </VariableType>
   <VariableType SymbolicName="Prefix3:EquipmentPropertyType" BaseType="Prefix3:ISA95PropertyType" DataType="Prefix1:BaseDataType">
-    <Description />
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasISA95Property</ReferenceType>
-        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_PropertyNameX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:TestedByEquipmentTest</ReferenceType>
-        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_TestSpecificationX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:HasTestResult</ReferenceType>
-        <TargetId>Prefix3:_x003C_TestResult_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_TestResultX003E_</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -1062,11 +1027,11 @@
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasISA95ClassProperty</ReferenceType>
-        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_PropertyNameX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:TestedByEquipmentTest</ReferenceType>
-        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_TestSpecificationX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
@@ -1102,19 +1067,19 @@
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasISA95ClassProperty</ReferenceType>
-        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_PropertyNameX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:DefinedByEquipmentClass</ReferenceType>
-        <TargetId>Prefix3:_x003C_EquipmentClass_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_EquipmentClassX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:TestedByEquipmentTest</ReferenceType>
-        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_TestSpecificationX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:MadeUpOfEquipment</ReferenceType>
-        <TargetId>Prefix3:_x003C_Equipment_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_EquipmentX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
@@ -1122,7 +1087,7 @@
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:ImplementedBy</ReferenceType>
-        <TargetId>Prefix3:_x003C_PhysicalAsset_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_PhysicalAssetX003E_</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -1136,65 +1101,61 @@
     <ClassName />
   </ObjectType>
   <VariableType SymbolicName="Prefix3:MaterialDefinitionPropertyType" BaseType="Prefix3:ISA95ClassPropertyType" DataType="Prefix1:BaseDataType">
-    <Description />
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasISA95ClassProperty</ReferenceType>
-        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_PropertyNameX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:TestedByMaterialTest</ReferenceType>
-        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_TestSpecificationX003E_</TargetId>
       </Reference>
     </References>
     <ClassName />
   </VariableType>
   <VariableType SymbolicName="Prefix3:MaterialClassPropertyType" BaseType="Prefix3:ISA95ClassPropertyType" DataType="Prefix1:BaseDataType">
-    <Description />
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasISA95ClassProperty</ReferenceType>
-        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_PropertyNameX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:TestedByMaterialTest</ReferenceType>
-        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_TestSpecificationX003E_</TargetId>
       </Reference>
     </References>
     <ClassName />
   </VariableType>
   <VariableType SymbolicName="Prefix3:MaterialLotPropertyType" BaseType="Prefix3:MaterialTestResultType" DataType="Prefix1:Structure">
-    <Description />
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasTestResult</ReferenceType>
-        <TargetId>Prefix3:_x003C_TestResult_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_TestResultX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:HasISA95Property</ReferenceType>
-        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_PropertyNameX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:TestedByMaterialTest</ReferenceType>
-        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_TestSpecificationX003E_</TargetId>
       </Reference>
     </References>
     <ClassName />
   </VariableType>
   <ObjectType SymbolicName="Prefix3:MaterialClassType" BaseType="Prefix3:ISA95ClassType">
-    <Description />
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasISA95ClassProperty</ReferenceType>
-        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_PropertyNameX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:TestedByMaterialTest</ReferenceType>
-        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_TestSpecificationX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:AssembledFromClass</ReferenceType>
-        <TargetId>Prefix3:_x003C_AssemblyClass_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_AssemblyClassX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
@@ -1208,19 +1169,18 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix3:MaterialDefinitionType" BaseType="Prefix3:ISA95ClassType">
-    <Description />
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasISA95ClassProperty</ReferenceType>
-        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_PropertyNameX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:TestedByMaterialTest</ReferenceType>
-        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_TestSpecificationX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:AssembledFromDefinition</ReferenceType>
-        <TargetId>Prefix3:_x003C_AssemblyClass_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_AssemblyClassX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
@@ -1234,23 +1194,22 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix3:MaterialLotType" BaseType="Prefix3:ISA95ObjectType">
-    <Description />
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasISA95Property</ReferenceType>
-        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_PropertyNameX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:TestedByMaterialTest</ReferenceType>
-        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_TestSpecificationX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:DefinedByMaterialDefinition</ReferenceType>
-        <TargetId>Prefix3:_x003C_MaterialDefinition_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_MaterialDefinitionX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:AssembledFromLot</ReferenceType>
-        <TargetId>Prefix3:_x003C_AssemblyLot_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_AssemblyLotX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
@@ -1276,19 +1235,18 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix3:MaterialSublotType" BaseType="Prefix3:ISA95ObjectType">
-    <Description />
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasISA95Property</ReferenceType>
-        <TargetId>Prefix3:_x003C_PropertyName_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_PropertyNameX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:TestedByMaterialTest</ReferenceType>
-        <TargetId>Prefix3:_x003C_TestSpecification_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_TestSpecificationX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:AssembledFromLot</ReferenceType>
-        <TargetId>Prefix3:_x003C_AssemblyLot_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_AssemblyLotX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>
@@ -1300,7 +1258,7 @@
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:MadeUpOfMaterialSublot</ReferenceType>
-        <TargetId>Prefix3:_x003C_Sublot_x003E_</TargetId>
+        <TargetId>Prefix3:X003C_SublotX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix3:HasISA95Attribute</ReferenceType>

@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
-<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/IA/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<ModelDesign xmlns:Prefix5="http://opcfoundation.org/UA/IA/" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09/03/2021">http://opcfoundation.org/UA/DI/</Namespace>
@@ -12,57 +11,57 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>0</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Dimmed</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>Uses dimming to display fractions.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>1</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Blinking</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>Uses blinking to display fractions.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>2</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Other</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>Display fractions in a way not defined in this version of the specification.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                Dimmed
+              
+              
+                en
+                Uses dimming to display fractions.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                Blinking
+              
+              
+                en
+                Uses blinking to display fractions.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              2
+              
+                Other
+              
+              
+                en
+                Display fractions in a way not defined in this version of the specification.
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -86,142 +85,142 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="8">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>0</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Off</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>Element is disabled.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>1</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Red</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>This value indicates a red lamp colour.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>2</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Green</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>This value indicates a green lamp colour.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>3</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Blue</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>This value indicates a blue lamp colour.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>4</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Yellow</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>This value indicates a yellow lamp colour (R+G).</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>5</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Purple</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>This value indicates a purple lamp colour (R+B).</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>6</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Cyan</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>This value indicates a cyan lamp colour (G+B).</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>7</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>White</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>This value indicates a white lamp colour (R+G+B).</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                Off
+              
+              
+                en
+                Element is disabled.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                Red
+              
+              
+                en
+                This value indicates a red lamp colour.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              2
+              
+                Green
+              
+              
+                en
+                This value indicates a green lamp colour.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              3
+              
+                Blue
+              
+              
+                en
+                This value indicates a blue lamp colour.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              4
+              
+                Yellow
+              
+              
+                en
+                This value indicates a yellow lamp colour (R+G).
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              5
+              
+                Purple
+              
+              
+                en
+                This value indicates a purple lamp colour (R+B).
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              6
+              
+                Cyan
+              
+              
+                en
+                This value indicates a cyan lamp colour (G+B).
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              7
+              
+                White
+              
+              
+                en
+                This value indicates a white lamp colour (R+G+B).
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -260,74 +259,74 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>0</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Continuous</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>This value indicates a continuous light.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>1</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Blinking</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>This value indicates a blinking light (blinking in regular intervals with equally long on and off times).</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>2</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Flashing</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>This value indicates a flashing light (blinking in intervals with longer off times than on times, per interval multiple on times are possible).</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>3</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Other</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The light is handled in a way not defined in this version of the specification.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                Continuous
+              
+              
+                en
+                This value indicates a continuous light.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                Blinking
+              
+              
+                en
+                This value indicates a blinking light (blinking in regular intervals with equally long on and off times).
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              2
+              
+                Flashing
+              
+              
+                en
+                This value indicates a flashing light (blinking in intervals with longer off times than on times, per interval multiple on times are possible).
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              3
+              
+                Other
+              
+              
+                en
+                The light is handled in a way not defined in this version of the specification.
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -354,74 +353,74 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>0</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Segmented</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>Stacklight is used as stack of individual lights</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>1</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Levelmeter</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>Stacklight is used as level meter</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>2</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Running_Light</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The whole stack acts as a running light</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>3</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Other</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>Stacklight is used in a way not defined in this version of the specification</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                Segmented
+              
+              
+                en
+                Stacklight is used as stack of individual lights
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                Levelmeter
+              
+              
+                en
+                Stacklight is used as level meter
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              2
+              
+                Running_Light
+              
+              
+                en
+                The whole stack acts as a running light
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              3
+              
+                Other
+              
+              
+                en
+                Stacklight is used in a way not defined in this version of the specification
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>

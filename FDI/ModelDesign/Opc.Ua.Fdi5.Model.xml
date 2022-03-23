@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
-<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://fdi-cooperation.com/OPCUA/FDI5/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<ModelDesign xmlns:Prefix5="http://fdi-cooperation.com/OPCUA/FDI5/" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09/03/2021">http://opcfoundation.org/UA/DI/</Namespace>
@@ -32,72 +31,72 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ActionName</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>MethodArguments</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ActionName
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              MethodArguments
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ActionNodeId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>InvokeActionError</Name>
-              <DataType>
-                <Identifier>i=6</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ActionNodeId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              InvokeActionError
+              
+                i=6
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -108,57 +107,57 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ActionNodeId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>Response</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ActionNodeId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              Response
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>RespondActionError</Name>
-              <DataType>
-                <Identifier>i=6</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              RespondActionError
+              
+                i=6
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -169,42 +168,42 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ActionNodeId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ActionNodeId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>AbortActionError</Name>
-              <DataType>
-                <Identifier>i=6</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              AbortActionError
+              
+                i=6
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -221,51 +220,51 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=7616</Identifier>
-          </TypeId>
-          <Body>
-            <EnumValueType>
-              <Value>1</Value>
-              <DisplayName>
-                <Locale>
-                </Locale>
-                <Text>ModalWindow</Text>
-              </DisplayName>
-            </EnumValueType>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=7616</Identifier>
-          </TypeId>
-          <Body>
-            <EnumValueType>
-              <Value>2</Value>
-              <DisplayName>
-                <Locale>
-                </Locale>
-                <Text>NonModalWindow</Text>
-              </DisplayName>
-            </EnumValueType>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=7616</Identifier>
-          </TypeId>
-          <Body>
-            <EnumValueType>
-              <Value>3</Value>
-              <DisplayName>
-                <Locale>
-                </Locale>
-                <Text>UIP</Text>
-              </DisplayName>
-            </EnumValueType>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                
+                
+                ModalWindow
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              2
+              
+                
+                
+                NonModalWindow
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              3
+              
+                
+                
+                UIP
+              
+            
+          
+        
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -282,36 +281,36 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=7616</Identifier>
-          </TypeId>
-          <Body>
-            <EnumValueType>
-              <Value>1</Value>
-              <DisplayName>
-                <Locale>
-                </Locale>
-                <Text>Window</Text>
-              </DisplayName>
-            </EnumValueType>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=7616</Identifier>
-          </TypeId>
-          <Body>
-            <EnumValueType>
-              <Value>2</Value>
-              <DisplayName>
-                <Locale>
-                </Locale>
-                <Text>Dialog</Text>
-              </DisplayName>
-            </EnumValueType>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                
+                
+                Window
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              2
+              
+                
+                
+                Dialog
+              
+            
+          
+        
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -368,72 +367,72 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ParentId</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>TargetWindowMode</Name>
-              <DataType>
-                <Identifier>ns=1;i=194</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ParentId
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              TargetWindowMode
+              
+                ns=1;i=194
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>EditContextId</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>GetEditContextStatus</Name>
-              <DataType>
-                <Identifier>i=6</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              EditContextId
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              GetEditContextStatus
+              
+                i=6
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -444,59 +443,59 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>EditContextId</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>NodesToRegister</Name>
-              <DataType>
-                <Identifier>ns=1;i=37</Identifier>
-              </DataType>
-              <ValueRank>1</ValueRank>
-              <ArrayDimensions>
-                <UInt32>0</UInt32>
-              </ArrayDimensions>
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              EditContextId
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              NodesToRegister
+              
+                ns=1;i=37
+              
+              1
+              
+                0
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>RegisterNodesStatus</Name>
-              <DataType>
-                <Identifier>ns=1;i=39</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              RegisterNodesStatus
+              
+                ns=1;i=39
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -507,59 +506,59 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>EditContextId</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>NodesToRegister</Name>
-              <DataType>
-                <Identifier>ns=1;i=37</Identifier>
-              </DataType>
-              <ValueRank>1</ValueRank>
-              <ArrayDimensions>
-                <UInt32>0</UInt32>
-              </ArrayDimensions>
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              EditContextId
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              NodesToRegister
+              
+                ns=1;i=37
+              
+              1
+              
+                0
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>RegisterNodesStatus</Name>
-              <DataType>
-                <Identifier>ns=1;i=39</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              RegisterNodesStatus
+              
+                ns=1;i=39
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -570,42 +569,42 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>EditContextId</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              EditContextId
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplyStatus</Name>
-              <DataType>
-                <Identifier>ns=1;i=44</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplyStatus
+              
+                ns=1;i=44
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -616,42 +615,42 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>EditContextId</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              EditContextId
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ResetStatus</Name>
-              <DataType>
-                <Identifier>i=6</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ResetStatus
+              
+                i=6
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -662,42 +661,42 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>EditContextId</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              EditContextId
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>DiscardStatus</Name>
-              <DataType>
-                <Identifier>i=6</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              DiscardStatus
+              
+                i=6
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -713,42 +712,42 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>Context</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              Context
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>InitDirectAccessError</Name>
-              <DataType>
-                <Identifier>i=6</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              InitDirectAccessError
+              
+                i=6
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -759,57 +758,57 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>SendData</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ReceiveData</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              SendData
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ReceiveData
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>TransferError</Name>
-              <DataType>
-                <Identifier>i=6</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              TransferError
+              
+                i=6
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -820,42 +819,42 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>InvalidateCache</Name>
-              <DataType>
-                <Identifier>i=1</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              InvalidateCache
+              
+                i=1
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>EndDirectAccessError</Name>
-              <DataType>
-                <Identifier>i=6</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              EndDirectAccessError
+              
+                i=6
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>

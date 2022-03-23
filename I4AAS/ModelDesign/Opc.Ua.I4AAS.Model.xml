@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
-<ModelDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix3="http://opcfoundation.org/UA/I4AAS/" TargetNamespace="http://opcfoundation.org/UA/I4AAS/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<ModelDesign xmlns:Prefix3="http://opcfoundation.org/UA/I4AAS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix1="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/I4AAS/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/I4AAS/" XmlNamespace="http://opcfoundation.org/UA/I4AAS/" XmlPrefix="Prefix3" FilePath="" Version="5.0.0" PublicationDate="04/06/2021">http://opcfoundation.org/UA/I4AAS/</Namespace>
@@ -10,47 +9,47 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="2">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>0</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Type</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>hardware or software element which specifies the common attributes shared by all instances of the type
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                Type
+              
+              
+                hardware or software element which specifies the common attributes shared by all instances of the type
 [SOURCE: IEC TR 62390:2005-01, 3.1.25]
-</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>1</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Instance</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>concrete, clearly identifiable component of a certain type
+
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                Instance
+              
+              
+                concrete, clearly identifiable component of a certain type
 
 Note: It becomes an individual entity of a type, for example a device, by defining specific property values.
 
 Note: In an object-oriented view, an instance denotes an object of a class (of a type).
 
 [SOURCE: IEC 62890:2016, 3.1.16] 65/617/CDV
-</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
+
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -79,70 +78,70 @@ Note: In an object-oriented view, an instance denotes an object of a class (of a
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>0</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>CONSTANT</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>Constant</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>1</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>PARAMETER</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>Parameter</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>2</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>VARIABLE</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>Variable</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>3</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>RELATIONSHIP</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>Relationship</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                CONSTANT
+              
+              
+                Constant
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                PARAMETER
+              
+              
+                Parameter
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              2
+              
+                VARIABLE
+              
+              
+                Variable
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              3
+              
+                RELATIONSHIP
+              
+              
+                Relationship
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -168,42 +167,42 @@ Note: In an object-oriented view, an instance denotes an object of a class (of a
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="12">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:LocalizedText>
-          <uax:Text>DATE</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>STRING</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>STRING_TRANSLATABLE</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>REAL_MEASURE</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>REAL_COUNT</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>REAL_CURRENCY</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>BOOLEAN</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>URL</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>RATIONAL</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>RATIONAL_MEASURE</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>TIME</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>TIME_STAMP</uax:Text>
-        </uax:LocalizedText>
+        
+          DATE
+        
+        
+          STRING
+        
+        
+          STRING_TRANSLATABLE
+        
+        
+          REAL_MEASURE
+        
+        
+          REAL_COUNT
+        
+        
+          REAL_CURRENCY
+        
+        
+          BOOLEAN
+        
+        
+          URL
+        
+        
+          RATIONAL
+        
+        
+          RATIONAL_MEASURE
+        
+        
+          TIME
+        
+        
+          TIME_STAMP
+        
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -232,38 +231,38 @@ Note: In an object-oriented view, an instance denotes an object of a class (of a
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="2">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>0</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>CoManagedEntity</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>Self-Managed Entities have their own AAS. This is why a reference to this asset is specified as well (Entity/asset). Additionally, further property statements (compare to [15]) can be added to the asset that are not specified in the AAS of the asset itself because they are specified in relation to the complex I4.0 Component only.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>1</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>SelfManagedEntity</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>For co-managed entities there is no separate AAS. The relationships and property statements of such entities are managed within the AAS of the composite I4.0 Component.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                CoManagedEntity
+              
+              
+                Self-Managed Entities have their own AAS. This is why a reference to this asset is specified as well (Entity/asset). Additionally, further property statements (compare to [15]) can be added to the asset that are not specified in the AAS of the asset itself because they are specified in relation to the complex I4.0 Component only.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                SelfManagedEntity
+              
+              
+                For co-managed entities there is no separate AAS. The relationships and property statements of such entities are managed within the AAS of the composite I4.0 Component.
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -283,54 +282,54 @@ Note: In an object-oriented view, an instance denotes an object of a class (of a
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>0</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>IRDI</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>IRDI according to ISO29002-5 as an Identifier scheme for properties and classifications</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>1</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>IRI</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>Internationalized Resource Identifier according to RFC3305</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>2</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Custom</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>Custom identifiers like GUIDs (globally unique Identifiers)</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                IRDI
+              
+              
+                IRDI according to ISO29002-5 as an Identifier scheme for properties and classifications
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                IRI
+              
+              
+                Internationalized Resource Identifier according to RFC3305
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              2
+              
+                Custom
+              
+              
+                Custom identifiers like GUIDs (globally unique Identifiers)
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -353,390 +352,390 @@ Note: In an object-oriented view, an instance denotes an object of a class (of a
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="24">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>0</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>AccessPermissionRule</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"AccessPermissionRule"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>1</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>AnnotatedRelationshipElement</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>“AnnotatedRelationshipElement”</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>2</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Asset</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"Asset"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>3</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>AssetAdministrationShell</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"AssetAdministrationShell"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>4</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Blob</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"Blob"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>5</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Capability</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"Capability"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>6</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>ConceptDescription</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"ConceptDescription"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>7</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>ConceptDictionary</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"ConceptDictionary"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>8</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>DataElement</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"DataElement"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>9</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Entity</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"Entity"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>10</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Event</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"Event"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>11</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>File</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"File"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>12</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>FragmentReference</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"FragmentReference"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>13</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>GlobalReference</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"GlobalReference"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>14</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>MultiLanguageProperty</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"MultiLanguageProperty"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>15</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Operation</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"Operation"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>16</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Property</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"Property"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>17</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Range</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"Range"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>18</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>ReferenceElement</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"ReferenceElement"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>19</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>RelationshipElement</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"RelationshipElement"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>20</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Submodel</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"Submodel"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>21</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>SubmodelElement</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"SubmodelElement"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>22</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>SubmodelElementCollection</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"SubmodelElementCollection"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>23</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>View</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"View"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                AccessPermissionRule
+              
+              
+                "AccessPermissionRule"
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                AnnotatedRelationshipElement
+              
+              
+                “AnnotatedRelationshipElement”
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              2
+              
+                Asset
+              
+              
+                "Asset"
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              3
+              
+                AssetAdministrationShell
+              
+              
+                "AssetAdministrationShell"
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              4
+              
+                Blob
+              
+              
+                "Blob"
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              5
+              
+                Capability
+              
+              
+                "Capability"
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              6
+              
+                ConceptDescription
+              
+              
+                "ConceptDescription"
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              7
+              
+                ConceptDictionary
+              
+              
+                "ConceptDictionary"
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              8
+              
+                DataElement
+              
+              
+                "DataElement"
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              9
+              
+                Entity
+              
+              
+                "Entity"
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              10
+              
+                Event
+              
+              
+                "Event"
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              11
+              
+                File
+              
+              
+                "File"
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              12
+              
+                FragmentReference
+              
+              
+                "FragmentReference"
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              13
+              
+                GlobalReference
+              
+              
+                "GlobalReference"
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              14
+              
+                MultiLanguageProperty
+              
+              
+                "MultiLanguageProperty"
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              15
+              
+                Operation
+              
+              
+                "Operation"
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              16
+              
+                Property
+              
+              
+                "Property"
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              17
+              
+                Range
+              
+              
+                "Range"
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              18
+              
+                ReferenceElement
+              
+              
+                "ReferenceElement"
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              19
+              
+                RelationshipElement
+              
+              
+                "RelationshipElement"
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              20
+              
+                Submodel
+              
+              
+                "Submodel"
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              21
+              
+                SubmodelElement
+              
+              
+                "SubmodelElement"
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              22
+              
+                SubmodelElementCollection
+              
+              
+                "SubmodelElementCollection"
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              23
+              
+                View
+              
+              
+                "View"
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -822,86 +821,86 @@ Note: In an object-oriented view, an instance denotes an object of a class (of a
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="5">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>0</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>IdShort</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>...</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>1</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>FragmentId</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>...</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>2</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Custom</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>...</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>3</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>IRDI</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>...</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>4</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>IRI</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>...</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                IdShort
+              
+              
+                ...
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                FragmentId
+              
+              
+                ...
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              2
+              
+                Custom
+              
+              
+                ...
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              3
+              
+                IRDI
+              
+              
+                ...
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              4
+              
+                IRI
+              
+              
+                ...
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -930,70 +929,70 @@ Note: In an object-oriented view, an instance denotes an object of a class (of a
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>0</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Min</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>“Minimum”</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>1</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Max</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>“Maximum”</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>2</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Num</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"Number"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>3</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Type</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>"Type"</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                Min
+              
+              
+                “Minimum”
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                Max
+              
+              
+                “Maximum”
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              2
+              
+                Num
+              
+              
+                "Number"
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              3
+              
+                Type
+              
+              
+                "Type"
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1019,47 +1018,47 @@ Note: In an object-oriented view, an instance denotes an object of a class (of a
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="2">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>0</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Template</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>Hardware or software element which specifies the common attributes shared by all instances of the type
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                Template
+              
+              
+                Hardware or software element which specifies the common attributes shared by all instances of the type
 [SOURCE: IEC TR 62390:2005-01, 3.1.25]
-</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>1</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Instance</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Text>Concrete, clearly identifiable component of a certain template. 
+
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                Instance
+              
+              
+                Concrete, clearly identifiable component of a certain template. 
 
 Note: It becomes an individual entity of a template, for example a device model, by defining specific property values. 
 
 Note: In an object oriented view, an instance denotes an object of a template (class). 
 
 [SOURCE: IEC 62890:2016, 3.1.16 65/617/CDV] modified
-</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
+
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1088,54 +1087,54 @@ Note: In an object oriented view, an instance denotes an object of a template (c
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="16">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:LocalizedText>
-          <uax:Text>Boolean</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>SByte</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>Byte</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>Int16</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>UInt16</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>Int32</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>UInt32</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>Int64</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>UInt64</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>Float</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>Double</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>String</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>DateTime</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>ByteString</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>LocalizedText</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>UtcTime</uax:Text>
-        </uax:LocalizedText>
+        
+          Boolean
+        
+        
+          SByte
+        
+        
+          Byte
+        
+        
+          Int16
+        
+        
+          UInt16
+        
+        
+          Int32
+        
+        
+          UInt32
+        
+        
+          Int64
+        
+        
+          UInt64
+        
+        
+          Float
+        
+        
+          Double
+        
+        
+          String
+        
+        
+          DateTime
+        
+        
+          ByteString
+        
+        
+          LocalizedText
+        
+        
+          UtcTime
+        
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -1162,19 +1161,15 @@ Note: In an object oriented view, an instance denotes an object of a template (c
   </DataType>
   <DataType SymbolicName="Prefix3:AASMimeDataType" BaseType="Prefix1:String">
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:AASPathDataType" BaseType="Prefix1:String">
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:AASPropertyValueDataType" BaseType="Prefix1:String">
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:AASQualifierDataType" BaseType="Prefix1:String">
     <ClassName />
-    <Fields />
   </DataType>
   <DataType SymbolicName="Prefix3:AASKeyDataType" BaseType="Prefix1:Structure">
     <ClassName />
@@ -1199,7 +1194,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_AdministrativeInformation_x002F_revision</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_AdministrativeInformationX002F_revision</TargetId>
           </Reference>
         </References>
         <DefaultValue>
@@ -1211,7 +1206,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_AdministrativeInformation_x002F_version</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_AdministrativeInformationX002F_version</TargetId>
           </Reference>
         </References>
         <DefaultValue>
@@ -1223,7 +1218,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_AdministrativeInformation</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_AdministrativeInformation</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -1235,7 +1230,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_AssetAdministrationShell_x002F_conceptDictionaries</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_AssetAdministrationShellX002F_conceptDictionaries</TargetId>
           </Reference>
         </References>
       </Object>
@@ -1244,7 +1239,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_hasDataSpecification_x002F_dataSpecification</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_hasDataSpecificationX002F_dataSpecification</TargetId>
           </Reference>
           <Reference>
             <ReferenceType>Prefix3:AASReference</ReferenceType>
@@ -1257,7 +1252,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_AssetAdministrationShell_x002F_submodels</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_AssetAdministrationShellX002F_submodels</TargetId>
           </Reference>
         </References>
       </Object>
@@ -1266,7 +1261,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_AssetAdministrationShell_x002F_submodels</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_AssetAdministrationShellX002F_submodels</TargetId>
           </Reference>
           <Reference>
             <ReferenceType>Prefix3:AASReference</ReferenceType>
@@ -1279,7 +1274,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_AssetAdministrationShell_x002F_views</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_AssetAdministrationShellX002F_views</TargetId>
           </Reference>
         </References>
       </Object>
@@ -1287,7 +1282,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Asset</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_Asset</TargetId>
           </Reference>
           <Reference IsInverse="true">
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
@@ -1299,7 +1294,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_AssetAdministrationShell_x002F_derivedFrom</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_AssetAdministrationShellX002F_derivedFrom</TargetId>
           </Reference>
           <Reference>
             <ReferenceType>Prefix3:AASReference</ReferenceType>
@@ -1311,7 +1306,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_AssetAdministrationShell</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_AssetAdministrationShell</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix1:HasInterface</ReferenceType>
@@ -1326,7 +1321,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Identifiable_x002F_administration</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_IdentifiableX002F_administration</TargetId>
           </Reference>
         </References>
       </Object>
@@ -1334,7 +1329,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Identifiable_x002F_identification</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_IdentifiableX002F_identification</TargetId>
           </Reference>
         </References>
       </Object>
@@ -1342,7 +1337,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Identifiable</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_Identifiable</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -1359,24 +1354,23 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Reference_x002F_keys</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_ReferenceX002F_keys</TargetId>
           </Reference>
         </References>
         <DefaultValue>
-          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:TypeId>
-          <uax:Identifier>ns=1;i=5039</uax:Identifier>
-        </uax:TypeId>
-        <uax:Body>
-          <AASKeyDataType xmlns="http://opcfoundation.org/UA/I4AAS/Types.xsd">
-            <Type>AccessPermissionRule_0</Type>
-            <Local>false</Local>
-            <Value>
-            </Value>
-            <IdType>IdShort_0</IdType>
-          </AASKeyDataType>
-        </uax:Body>
-      </uax:ExtensionObject>
+          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+            <TypeId>
+              <Identifier>ns=1;i=5039</Identifier>
+            </TypeId>
+            <Body>
+              <AASKeyDataType xmlns="http://opcfoundation.org/UA/I4AAS/Types.xsd">
+                <Type>AccessPermissionRule_0</Type>
+                <Local>false</Local>
+                <Value></Value>
+                <IdType>IdShort_0</IdType>
+              </AASKeyDataType>
+            </Body>
+          </ExtensionObject>
         </DefaultValue>
       </Property>
     </Children>
@@ -1387,7 +1381,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
       </Reference>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Reference</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_Reference</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -1399,7 +1393,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Asset_x002F_dataSpecifications</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_AssetX002F_dataSpecifications</TargetId>
           </Reference>
         </References>
       </Object>
@@ -1408,7 +1402,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Submodel_x002F_qualifiers</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_SubmodelX002F_qualifiers</TargetId>
           </Reference>
         </References>
       </Object>
@@ -1419,7 +1413,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
             <References>
               <Reference>
                 <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-                <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_SubmodelElement_x002F_idShort</TargetId>
+                <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_SubmodelElementX002F_idShort</TargetId>
               </Reference>
             </References>
             <DefaultValue>
@@ -1431,7 +1425,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Submodel_x002F_submodelElements</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_SubmodelX002F_submodelElements</TargetId>
           </Reference>
         </References>
       </Object>
@@ -1439,7 +1433,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_HasKind_x002F_kind</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_HasKindX002F_kind</TargetId>
           </Reference>
         </References>
         <DefaultValue>
@@ -1450,7 +1444,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Submodel</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_Submodel</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix1:HasInterface</ReferenceType>
@@ -1470,7 +1464,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_View_x002F_dataSpecifications</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_ViewX002F_dataSpecifications</TargetId>
           </Reference>
           <Reference>
             <ReferenceType>Prefix3:AASReference</ReferenceType>
@@ -1483,7 +1477,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_View_x002F_containedElements</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_ViewX002F_containedElements</TargetId>
           </Reference>
           <Reference>
             <ReferenceType>Prefix3:AASReference</ReferenceType>
@@ -1495,7 +1489,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_View</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_View</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -1507,7 +1501,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Asset_x002F_dataSpecifications</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_AssetX002F_dataSpecifications</TargetId>
           </Reference>
           <Reference>
             <ReferenceType>Prefix3:AASReference</ReferenceType>
@@ -1519,7 +1513,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Asset_x002F_assetIdentificationModel</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_AssetX002F_assetIdentificationModel</TargetId>
           </Reference>
         </References>
       </Object>
@@ -1527,7 +1521,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Asset_x002F_assetKind</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_AssetX002F_assetKind</TargetId>
           </Reference>
         </References>
         <DefaultValue>
@@ -1538,7 +1532,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Asset_x002F_billOfMaterial</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_AssetX002F_billOfMaterial</TargetId>
           </Reference>
         </References>
       </Object>
@@ -1546,7 +1540,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Asset</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_Asset</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix1:HasInterface</ReferenceType>
@@ -1563,7 +1557,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_DataSpecification</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_DataSpecification</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix1:HasInterface</ReferenceType>
@@ -1578,7 +1572,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecification_x002F_administration</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_DataSpecificationX002F_administration</TargetId>
           </Reference>
         </References>
       </Object>
@@ -1586,7 +1580,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecification_x002F_category</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_DataSpecificationX002F_category</TargetId>
           </Reference>
         </References>
         <DefaultValue>
@@ -1597,7 +1591,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_dataType</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_DataSpecificationTemplatesX002F_DataSpecificationIEC61360X002F_2X002F_0X002F_x005F_X002F_DataSpecificationIEC61360X002F_dataType</TargetId>
           </Reference>
         </References>
         <DefaultValue>
@@ -1613,18 +1607,15 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_definition</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_DataSpecificationTemplatesX002F_DataSpecificationIEC61360X002F_2X002F_0X002F_x005F_X002F_DataSpecificationIEC61360X002F_definition</TargetId>
           </Reference>
         </References>
-        <DefaultValue>
-          <uax:LocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-        </DefaultValue>
       </Property>
       <Object SymbolicName="Prefix3:Identification" TypeDefinition="Prefix3:AASIdentifierType" ModellingRule="Mandatory">
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecification_x002F_identification</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_DataSpecificationX002F_identification</TargetId>
           </Reference>
         </References>
       </Object>
@@ -1632,7 +1623,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_levelType</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_DataSpecificationTemplatesX002F_DataSpecificationIEC61360X002F_2X002F_0X002F_x005F_X002F_DataSpecificationIEC61360X002F_levelType</TargetId>
           </Reference>
         </References>
         <DefaultValue>
@@ -1643,29 +1634,23 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_preferredName</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_DataSpecificationTemplatesX002F_DataSpecificationIEC61360X002F_2X002F_0X002F_x005F_X002F_DataSpecificationIEC61360X002F_preferredName</TargetId>
           </Reference>
         </References>
-        <DefaultValue>
-          <uax:LocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-        </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix3:ShortName" ModellingRule="Optional" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite">
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_shortName</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_DataSpecificationTemplatesX002F_DataSpecificationIEC61360X002F_2X002F_0X002F_x005F_X002F_DataSpecificationIEC61360X002F_shortName</TargetId>
           </Reference>
         </References>
-        <DefaultValue>
-          <uax:LocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-        </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix3:SourceOfDefinition" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_sourceOfDefinition</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_DataSpecificationTemplatesX002F_DataSpecificationIEC61360X002F_2X002F_0X002F_x005F_X002F_DataSpecificationIEC61360X002F_sourceOfDefinition</TargetId>
           </Reference>
         </References>
         <DefaultValue>
@@ -1677,7 +1662,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_symbol</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_DataSpecificationTemplatesX002F_DataSpecificationIEC61360X002F_2X002F_0X002F_x005F_X002F_DataSpecificationIEC61360X002F_symbol</TargetId>
           </Reference>
         </References>
         <DefaultValue>
@@ -1689,7 +1674,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_unit</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_DataSpecificationTemplatesX002F_DataSpecificationIEC61360X002F_2X002F_0X002F_x005F_X002F_DataSpecificationIEC61360X002F_unit</TargetId>
           </Reference>
         </References>
         <DefaultValue>
@@ -1701,7 +1686,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_unitId</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_DataSpecificationTemplatesX002F_DataSpecificationIEC61360X002F_2X002F_0X002F_x005F_X002F_DataSpecificationIEC61360X002F_unitId</TargetId>
           </Reference>
           <Reference>
             <ReferenceType>Prefix3:AASReference</ReferenceType>
@@ -1713,7 +1698,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_value</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_DataSpecificationTemplatesX002F_DataSpecificationIEC61360X002F_2X002F_0X002F_x005F_X002F_DataSpecificationIEC61360X002F_value</TargetId>
           </Reference>
         </References>
       </Property>
@@ -1721,7 +1706,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_valueFormat</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_DataSpecificationTemplatesX002F_DataSpecificationIEC61360X002F_2X002F_0X002F_x005F_X002F_DataSpecificationIEC61360X002F_valueFormat</TargetId>
           </Reference>
         </References>
         <DefaultValue>
@@ -1733,7 +1718,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F__x002F_DataSpecificationIEC61360_x002F_valueId</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_DataSpecificationTemplatesX002F_DataSpecificationIEC61360X002F_2X002F_0X002F_x005F_X002F_DataSpecificationIEC61360X002F_valueId</TargetId>
           </Reference>
           <Reference>
             <ReferenceType>Prefix3:AASReference</ReferenceType>
@@ -1745,7 +1730,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0_x002F_valueList</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_DataSpecificationTemplatesX002F_DataSpecificationIEC61360X002F_2X002F_0X002F_valueList</TargetId>
           </Reference>
         </References>
       </Object>
@@ -1753,7 +1738,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_DataSpecificationTemplates_x002F_DataSpecificationIEC61360_x002F_2_x002F_0</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_DataSpecificationTemplatesX002F_DataSpecificationIEC61360X002F_2X002F_0</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -1764,7 +1749,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Identifier_x002F_id</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_IdentifierX002F_id</TargetId>
           </Reference>
         </References>
         <DefaultValue>
@@ -1776,7 +1761,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Identifier_x002F_idType</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_IdentifierX002F_idType</TargetId>
           </Reference>
         </References>
         <DefaultValue>
@@ -1787,7 +1772,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Identifier</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_Identifier</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -1801,7 +1786,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Qualifier_x002F_type</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_QualifierX002F_type</TargetId>
           </Reference>
         </References>
         <DefaultValue>
@@ -1813,7 +1798,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Qualifier_x002F_value</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_QualifierX002F_value</TargetId>
           </Reference>
         </References>
       </Property>
@@ -1829,7 +1814,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Qualifier_x002F_valueType</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_QualifierX002F_valueType</TargetId>
           </Reference>
         </References>
         <DefaultValue>
@@ -1840,7 +1825,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Qualifier</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_Qualifier</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -1852,7 +1837,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_hasDataSpecification_x002F_dataSpecification</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_hasDataSpecificationX002F_dataSpecification</TargetId>
           </Reference>
           <Reference>
             <ReferenceType>Prefix3:AASReference</ReferenceType>
@@ -1865,7 +1850,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_SubmodelElement_x002F_qualifiers</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_SubmodelElementX002F_qualifiers</TargetId>
           </Reference>
         </References>
       </Object>
@@ -1874,7 +1859,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_SubmodelElement_x002F_kind</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_SubmodelElementX002F_kind</TargetId>
           </Reference>
         </References>
         <DefaultValue>
@@ -1885,11 +1870,11 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:IRDI_or_IRI_or_Custom_concept_description_entry_x003E_</TargetId>
+        <TargetId>Prefix3:IRDI_or_IRI_or_Custom_concept_description_entryX003E_</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_SubmodelElement</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_SubmodelElement</TargetId>
       </Reference>
       <Reference>
         <ReferenceType>Prefix1:HasInterface</ReferenceType>
@@ -1904,7 +1889,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Referable_x002F_category</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_ReferableX002F_category</TargetId>
           </Reference>
         </References>
         <DefaultValue>
@@ -1916,7 +1901,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Referable</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_Referable</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -1927,7 +1912,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Blob_x002F_value</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_BlobX002F_value</TargetId>
           </Reference>
         </References>
       </Object>
@@ -1935,7 +1920,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Blob</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_Blob</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -1944,7 +1929,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Property</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_Property</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -1958,7 +1943,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
             <References>
               <Reference>
                 <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-                <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_SubmodelElement_x002F_idShort</TargetId>
+                <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_SubmodelElementX002F_idShort</TargetId>
               </Reference>
             </References>
             <DefaultValue>
@@ -1970,7 +1955,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Entity_x002F_statements</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_EntityX002F_statements</TargetId>
           </Reference>
         </References>
       </Object>
@@ -1978,7 +1963,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Entity_x002F_asset</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_EntityX002F_asset</TargetId>
           </Reference>
           <Reference>
             <ReferenceType>Prefix3:AASReference</ReferenceType>
@@ -1990,7 +1975,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Entity_x002F_entityType</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_EntityX002F_entityType</TargetId>
           </Reference>
         </References>
         <DefaultValue>
@@ -2001,7 +1986,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Entity</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_Entity</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -2010,7 +1995,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_BasicEvent</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_BasicEvent</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -2021,7 +2006,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_File_x002F_value</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_FileX002F_value</TargetId>
           </Reference>
         </References>
       </Object>
@@ -2029,7 +2014,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_File_x002F_mimeType</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_FileX002F_mimeType</TargetId>
           </Reference>
         </References>
         <DefaultValue>
@@ -2042,7 +2027,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_File</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_File</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -2053,18 +2038,15 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_MultiLanguageProperty_x002F_value</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_MultiLanguagePropertyX002F_value</TargetId>
           </Reference>
         </References>
-        <DefaultValue>
-          <uax:LocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-        </DefaultValue>
       </Property>
       <Object SymbolicName="Prefix3:ValueId" TypeDefinition="Prefix3:AASReferenceType" ModellingRule="Optional">
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_MultiLanguageProperty_x002F_valueId</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_MultiLanguagePropertyX002F_valueId</TargetId>
           </Reference>
           <Reference>
             <ReferenceType>Prefix3:AASReference</ReferenceType>
@@ -2076,7 +2058,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_MultiLanguageProperty</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_MultiLanguageProperty</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -2088,7 +2070,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Operation</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_Operation</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -2099,7 +2081,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Property_x002F_value</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_PropertyX002F_value</TargetId>
           </Reference>
         </References>
       </Property>
@@ -2107,7 +2089,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Property_x002F_valueId</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_PropertyX002F_valueId</TargetId>
           </Reference>
           <Reference>
             <ReferenceType>Prefix3:AASReference</ReferenceType>
@@ -2119,7 +2101,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Property_x002F_valueType</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_PropertyX002F_valueType</TargetId>
           </Reference>
         </References>
         <DefaultValue>
@@ -2130,7 +2112,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Property</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_Property</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -2141,7 +2123,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Range_x002F_max</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_RangeX002F_max</TargetId>
           </Reference>
         </References>
       </Property>
@@ -2149,7 +2131,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Range_x002F_min</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_RangeX002F_min</TargetId>
           </Reference>
         </References>
       </Property>
@@ -2157,7 +2139,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Range_x002F_valueType</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_RangeX002F_valueType</TargetId>
           </Reference>
         </References>
         <DefaultValue>
@@ -2168,7 +2150,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_Range</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_Range</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -2179,7 +2161,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_ReferenceElement_x002F_value</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_ReferenceElementX002F_value</TargetId>
           </Reference>
           <Reference>
             <ReferenceType>Prefix3:AASReference</ReferenceType>
@@ -2191,7 +2173,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_ReferenceElement</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_ReferenceElement</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -2202,7 +2184,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_RelationshipElement_x002F_first</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_RelationshipElementX002F_first</TargetId>
           </Reference>
           <Reference>
             <ReferenceType>Prefix3:AASReference</ReferenceType>
@@ -2214,7 +2196,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_RelationshipElement_x002F_second</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_RelationshipElementX002F_second</TargetId>
           </Reference>
           <Reference>
             <ReferenceType>Prefix3:AASReference</ReferenceType>
@@ -2226,7 +2208,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_RelationshipElement</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_RelationshipElement</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -2240,7 +2222,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
             <References>
               <Reference>
                 <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-                <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_SubmodelElement_x002F_idShort</TargetId>
+                <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_SubmodelElementX002F_idShort</TargetId>
               </Reference>
             </References>
             <DefaultValue>
@@ -2252,7 +2234,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_AnnotatedRelationshipElement_x002F_annotations</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_AnnotatedRelationshipElementX002F_annotations</TargetId>
           </Reference>
         </References>
       </Object>
@@ -2260,7 +2242,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_AnnotatedRelationshipElement</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_AnnotatedRelationshipElement</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -2274,7 +2256,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
             <References>
               <Reference>
                 <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-                <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_SubmodelElement_x002F_idShort</TargetId>
+                <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_SubmodelElementX002F_idShort</TargetId>
               </Reference>
             </References>
             <DefaultValue>
@@ -2286,7 +2268,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_SubmodelElementCollection_x002F_values</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_SubmodelElementCollectionX002F_values</TargetId>
           </Reference>
         </References>
       </Object>
@@ -2294,7 +2276,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_SubmodelElementCollection_x002F_allowDuplicates</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_SubmodelElementCollectionX002F_allowDuplicates</TargetId>
           </Reference>
         </References>
         <DefaultValue>
@@ -2305,7 +2287,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_SubmodelElementCollection</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_SubmodelElementCollection</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -2314,7 +2296,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
     <References>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_SubmodelElementCollection</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_SubmodelElementCollection</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -2326,7 +2308,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_hasDataSpecification_x002F_dataSpecification</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_hasDataSpecificationX002F_dataSpecification</TargetId>
           </Reference>
         </References>
       </Object>
@@ -2335,7 +2317,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_ConceptDescription_x002F_IsCaseOf</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_ConceptDescriptionX002F_IsCaseOf</TargetId>
           </Reference>
         </References>
       </Object>
@@ -2347,7 +2329,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
       </Reference>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_ConceptDescription</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_ConceptDescription</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -2359,7 +2341,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_ConceptDescription_x002F_IsCaseOf</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_ConceptDescriptionX002F_IsCaseOf</TargetId>
           </Reference>
         </References>
       </Object>
@@ -2368,7 +2350,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_hasDataSpecification_x002F_dataSpecification</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_hasDataSpecificationX002F_dataSpecification</TargetId>
           </Reference>
         </References>
       </Object>
@@ -2380,7 +2362,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
       </Reference>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_ConceptDescription</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_ConceptDescription</TargetId>
       </Reference>
     </References>
     <ClassName />
@@ -2392,7 +2374,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_ConceptDescription_x002F_IsCaseOf</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_ConceptDescriptionX002F_IsCaseOf</TargetId>
           </Reference>
         </References>
       </Object>
@@ -2401,7 +2383,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
         <References>
           <Reference>
             <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-            <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_hasDataSpecification_x002F_dataSpecification</TargetId>
+            <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_hasDataSpecificationX002F_dataSpecification</TargetId>
           </Reference>
         </References>
       </Object>
@@ -2413,7 +2395,7 @@ Note: In an object oriented view, an instance denotes an object of a template (c
       </Reference>
       <Reference>
         <ReferenceType>Prefix1:HasDictionaryEntry</ReferenceType>
-        <TargetId>Prefix3:Admin-shell.io_x002F_aas_x002F_2_x002F_0_x002F_ConceptDescription</TargetId>
+        <TargetId>Prefix3:Admin-shell.ioX002F_aasX002F_2X002F_0X002F_ConceptDescription</TargetId>
       </Reference>
     </References>
     <ClassName />

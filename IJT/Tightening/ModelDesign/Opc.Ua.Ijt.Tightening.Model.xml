@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
-<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:Prefix7="http://opcfoundation.org/UA/IJT/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/Machinery/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<ModelDesign xmlns:Prefix7="http://opcfoundation.org/UA/IJT/" xmlns:Prefix5="http://opcfoundation.org/UA/Machinery/" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09/03/2021">http://opcfoundation.org/UA/DI/</Namespace>
@@ -13,15 +12,15 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:LocalizedText>
-          <uax:Text>UNDEFINED</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>OK</uax:Text>
-        </uax:LocalizedText>
-        <uax:LocalizedText>
-          <uax:Text>NOT_OK</uax:Text>
-        </uax:LocalizedText>
+        
+          UNDEFINED
+        
+        
+          OK
+        
+        
+          NOT_OK
+        
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -328,15 +327,12 @@
         <Description>The optional ErrorId is the system-wide unique identifier of the error in the system. This will be useful if system wants to provide an identifier where user can query the system and get more information for troubleshooting. It can also point to the respective EventId reported if available.</Description>
         <DefaultValue>
           <uax:Guid xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:String>00000000-0000-0000-0000-000000000000</uax:String>
+        00000000-0000-0000-0000-000000000000
       </uax:Guid>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix7:ErrorMessage" ModellingRule="Optional" DataType="Prefix1:LocalizedText">
         <Description>The optional ErrorMessage is user readable text message to describe the error.</Description>
-        <DefaultValue>
-          <uax:LocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-        </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix7:ErrorType" ModellingRule="Mandatory" DataType="Prefix1:Byte">
         <Description>The mandatory ErrorType is the classification of type of errors due to external factors.</Description>
@@ -360,20 +356,19 @@
       <Property SymbolicName="Prefix7:EngineeringUnits" ModellingRule="Optional" DataType="Prefix1:EUInformation">
         <Description>The optional 0:EngineeringUnits defines the engineering unit of the values.</Description>
         <DefaultValue>
-          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:TypeId>
-          <uax:Identifier>i=888</uax:Identifier>
-        </uax:TypeId>
-        <uax:Body>
-          <uax:EUInformation>
-            <uax:NamespaceUri>
-            </uax:NamespaceUri>
-            <uax:UnitId>-1</uax:UnitId>
-            <uax:DisplayName />
-            <uax:Description />
-          </uax:EUInformation>
-        </uax:Body>
-      </uax:ExtensionObject>
+          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+            <TypeId>
+              <Identifier>i=888</Identifier>
+            </TypeId>
+            <Body>
+              <uax:EUInformation xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:NamespaceUri></uax:NamespaceUri>
+                <uax:UnitId>-1</uax:UnitId>
+                <uax:DisplayName />
+                <uax:Description />
+              </uax:EUInformation>
+            </Body>
+          </ExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix7:PhysicalQuantity" ModellingRule="Optional" DataType="Prefix1:Byte">
@@ -404,7 +399,7 @@
         <Description>The optional GeneratorAssetId is the identifier of the asset which has generated the result.</Description>
         <DefaultValue>
           <uax:Guid xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:String>00000000-0000-0000-0000-000000000000</uax:String>
+        00000000-0000-0000-0000-000000000000
       </uax:Guid>
         </DefaultValue>
       </Variable>
@@ -429,25 +424,25 @@
       <Variable SymbolicName="Prefix7:ProcessingTimes" ModellingRule="Optional" DataType="Prefix7:ProcessingTimesDataType">
         <Description>The optional ProcessingTimes is the collection of different processing times that were needed to create the result.</Description>
         <DefaultValue>
-          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:TypeId>
-          <uax:Identifier>ns=1;i=5002</uax:Identifier>
-        </uax:TypeId>
-        <uax:Body>
-          <ProcessingTimesDataType xmlns="http://opcfoundation.org/UA/IJT/Types.xsd">
-            <EncodingMask>0</EncodingMask>
-            <StartTime>1900-01-01T00:00:00Z</StartTime>
-            <EndTime>1900-01-01T00:00:00Z</EndTime>
-          </ProcessingTimesDataType>
-        </uax:Body>
-      </uax:ExtensionObject>
+          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+            <TypeId>
+              <Identifier>ns=1;i=5002</Identifier>
+            </TypeId>
+            <Body>
+              <ProcessingTimesDataType xmlns="http://opcfoundation.org/UA/IJT/Types.xsd">
+                <EncodingMask>0</EncodingMask>
+                <StartTime>1900-01-01T00:00:00Z</StartTime>
+                <EndTime>1900-01-01T00:00:00Z</EndTime>
+              </ProcessingTimesDataType>
+            </Body>
+          </ExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix7:ReporterAssetId" ModellingRule="Optional" DataType="Prefix1:Guid">
         <Description>The optional ReporterAssetId is the identifier of the asset which has reported the result.</Description>
         <DefaultValue>
           <uax:Guid xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:String>00000000-0000-0000-0000-000000000000</uax:String>
+        00000000-0000-0000-0000-000000000000
       </uax:Guid>
         </DefaultValue>
       </Variable>
@@ -468,15 +463,12 @@
       </Variable>
       <Variable SymbolicName="Prefix7:ResultEvaluationDetails" ModellingRule="Optional" DataType="Prefix1:LocalizedText">
         <Description>The optional ResultEvaluationDetails provides high level evaluation information in a user-friendly text. This can be left empty for successful operations.</Description>
-        <DefaultValue>
-          <uax:LocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-        </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix7:ResultId" ModellingRule="Mandatory" DataType="Prefix1:Guid">
         <Description>The mandatory ResultId is the system-wide unique identifier of the result.</Description>
         <DefaultValue>
           <uax:Guid xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:String>00000000-0000-0000-0000-000000000000</uax:String>
+        00000000-0000-0000-0000-000000000000
       </uax:Guid>
         </DefaultValue>
       </Variable>
@@ -489,19 +481,17 @@
       <Variable SymbolicName="Prefix7:Tags" ModellingRule="Optional" DataType="Prefix7:TagDataType" ValueRank="Array" ArrayDimensions="0">
         <Description>The optional Tags is a list of identifiers associated to the given result. Examples: {VIN, XYZ1234}, {PartId, E54YJH}, {SocketNumber, 5}, etc.</Description>
         <DefaultValue>
-          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:TypeId>
-          <uax:Identifier>ns=1;i=5075</uax:Identifier>
-        </uax:TypeId>
-        <uax:Body>
-          <TagDataType xmlns="http://opcfoundation.org/UA/IJT/Types.xsd">
-            <Name>
-            </Name>
-            <Value>
-            </Value>
-          </TagDataType>
-        </uax:Body>
-      </uax:ExtensionObject>
+          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+            <TypeId>
+              <Identifier>ns=1;i=5075</Identifier>
+            </TypeId>
+            <Body>
+              <TagDataType xmlns="http://opcfoundation.org/UA/IJT/Types.xsd">
+                <Name></Name>
+                <Value></Value>
+              </TagDataType>
+            </Body>
+          </ExtensionObject>
         </DefaultValue>
       </Variable>
     </Children>
@@ -533,7 +523,7 @@
         <Description>The optional ReporterId is the system-wide unique identifier of the parameter configured in the Tightening Program which is being monitored or sampled.</Description>
         <DefaultValue>
           <uax:Guid xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:String>00000000-0000-0000-0000-000000000000</uax:String>
+        00000000-0000-0000-0000-000000000000
       </uax:Guid>
         </DefaultValue>
       </Variable>
@@ -554,7 +544,7 @@
         <Description>The optional SensorId is the system-wide unique identifier of the sensor which has reported the value.</Description>
         <DefaultValue>
           <uax:Guid xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:String>00000000-0000-0000-0000-000000000000</uax:String>
+        00000000-0000-0000-0000-000000000000
       </uax:Guid>
         </DefaultValue>
       </Variable>
@@ -586,7 +576,7 @@
         <Description>The optional ValueId is the system-wide unique Identifier of the given value if it is available in the system.</Description>
         <DefaultValue>
           <uax:Guid xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:String>00000000-0000-0000-0000-000000000000</uax:String>
+        00000000-0000-0000-0000-000000000000
       </uax:Guid>
         </DefaultValue>
       </Variable>
@@ -632,7 +622,7 @@
         <Description>The optional ProgramStepId is the system-wide unique identifier of the Program Step.</Description>
         <DefaultValue>
           <uax:Guid xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:String>00000000-0000-0000-0000-000000000000</uax:String>
+        00000000-0000-0000-0000-000000000000
       </uax:Guid>
         </DefaultValue>
       </Variable>
@@ -652,7 +642,7 @@
         <Description>The mandatory StepResultId is the system-wide unique identifier of the step result.</Description>
         <DefaultValue>
           <uax:Guid xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:String>00000000-0000-0000-0000-000000000000</uax:String>
+        00000000-0000-0000-0000-000000000000
       </uax:Guid>
         </DefaultValue>
       </Variable>
@@ -663,7 +653,7 @@
         <Description>The optional StepTraceId is  the system-wide unique identifier of the StepTrace associated to the StepResult.</Description>
         <DefaultValue>
           <uax:Guid xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:String>00000000-0000-0000-0000-000000000000</uax:String>
+        00000000-0000-0000-0000-000000000000
       </uax:Guid>
         </DefaultValue>
       </Variable>
@@ -695,7 +685,7 @@
         <Description>The mandatory StepResultId is the system-wide unique identifier of the associated step result.</Description>
         <DefaultValue>
           <uax:Guid xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:String>00000000-0000-0000-0000-000000000000</uax:String>
+        00000000-0000-0000-0000-000000000000
       </uax:Guid>
         </DefaultValue>
       </Variable>
@@ -706,7 +696,7 @@
         <Description>The mandatory StepTraceId is the system-wide unique identifier of the step trace.</Description>
         <DefaultValue>
           <uax:Guid xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:String>00000000-0000-0000-0000-000000000000</uax:String>
+        00000000-0000-0000-0000-000000000000
       </uax:Guid>
         </DefaultValue>
       </Variable>
@@ -723,7 +713,7 @@
         <Description>The optional FailingStepResultId is the identifier of the step result which is the primary cause of failure.</Description>
         <DefaultValue>
           <uax:Guid xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:String>00000000-0000-0000-0000-000000000000</uax:String>
+        00000000-0000-0000-0000-000000000000
       </uax:Guid>
         </DefaultValue>
       </Variable>
@@ -737,7 +727,7 @@
         <Description>The optional JointId is the system-wide unique identifier of the Joint corresponding to this result.</Description>
         <DefaultValue>
           <uax:Guid xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:String>00000000-0000-0000-0000-000000000000</uax:String>
+        00000000-0000-0000-0000-000000000000
       </uax:Guid>
         </DefaultValue>
       </Variable>
@@ -748,7 +738,7 @@
         <Description>The optional ProgramId the system-wide unique Identifier of the Program configured for generating this result.</Description>
         <DefaultValue>
           <uax:Guid xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:String>00000000-0000-0000-0000-000000000000</uax:String>
+        00000000-0000-0000-0000-000000000000
       </uax:Guid>
         </DefaultValue>
       </Variable>
@@ -756,7 +746,7 @@
         <Description>The optional ProgramVersionId is the system-wide unique version identifier of the Program configured for generating this result. This will be unique for every change/update of the given program.</Description>
         <DefaultValue>
           <uax:Guid xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:String>00000000-0000-0000-0000-000000000000</uax:String>
+        00000000-0000-0000-0000-000000000000
       </uax:Guid>
         </DefaultValue>
       </Variable>
@@ -790,15 +780,12 @@
         <Description>The optional SensorId is the system-wide unique identifier of the sensor which has reported the values. This will be useful for identifying the sensor when the same set of samples are reported by multiple sensors.</Description>
         <DefaultValue>
           <uax:Guid xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:String>00000000-0000-0000-0000-000000000000</uax:String>
+        00000000-0000-0000-0000-000000000000
       </uax:Guid>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix7:Values" TypeDefinition="Prefix7:JoiningDataVariableType" ModellingRule="Mandatory" DataType="Prefix1:Double" ValueRank="Array" ArrayDimensions="0">
         <Description>The mandatory Values is an array of trace samples. The values correspond to the PhysicalQuantity attribute of JoiningDataVariableType.</Description>
-        <DefaultValue>
-          <uax:ListOfDouble xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-        </DefaultValue>
       </Variable>
     </Children>
     <ClassName />
@@ -810,7 +797,7 @@
         <Description>The mandatory ResultId is the system-wide unique identifier of the associated result. This is useful to link Result and Trace instances when the Result and Trace are sent separately.</Description>
         <DefaultValue>
           <uax:Guid xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:String>00000000-0000-0000-0000-000000000000</uax:String>
+        00000000-0000-0000-0000-000000000000
       </uax:Guid>
         </DefaultValue>
       </Variable>
@@ -818,7 +805,7 @@
         <Description>The mandatory TraceId is the system-wide unique identifier of the Trace.</Description>
         <DefaultValue>
           <uax:Guid xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:String>00000000-0000-0000-0000-000000000000</uax:String>
+        00000000-0000-0000-0000-000000000000
       </uax:Guid>
         </DefaultValue>
       </Variable>
@@ -840,9 +827,6 @@
     <Children>
       <Property SymbolicName="Prefix7:JoiningTechnology" ModellingRule="Optional" DataType="Prefix1:LocalizedText">
         <Description>The optional JoiningTechnology is a human readable text to identify which joining technology triggered the event. </Description>
-        <DefaultValue>
-          <uax:LocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-        </DefaultValue>
       </Property>
     </Children>
     <ClassName />
@@ -863,8 +847,8 @@
         <Description>The default BrowseName for instances of the type.</Description>
         <DefaultValue>
           <uax:QualifiedName xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:NamespaceIndex>1</uax:NamespaceIndex>
-        <uax:Name>ResultManagement</uax:Name>
+        1
+        ResultManagement
       </uax:QualifiedName>
         </DefaultValue>
       </Property>
@@ -874,92 +858,92 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>ResourceTimeout</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=6</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>With this argument the client can give a hint to the server how long it will need access to the result data. 
+        
+          
+            i=297
+          
+          
+            
+              ResourceTimeout
+              
+                i=6
+              
+              -1
+              
+              
+                With this argument the client can give a hint to the server how long it will need access to the result data. 
 A value &gt; 0 indicates an estimated maximum time for processing the data in milliseconds. 
 A value = 0 indicates that the client will not need anything besides the data returned by the method call. 
 A value &lt; 0 indicates that the client cannot give an estimate. 
-The client cannot rely on the data being available during the indicated time period. The argument is merely a hint allowing the server to optimize its resource management.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
+The client cannot rely on the data being available during the indicated time period. The argument is merely a hint allowing the server to optimize its resource management.
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="3">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>ResultHandle</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>The server shall return to each client requesting result data a system-wide unique handle identifying the result set / client combination. This handle should be used by the client to indicate to the server that the result data is no longer needed, allowing the server to optimize its resource handling.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>Result</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>ns=1;i=3004</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>The result including metadata.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>Error</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=6</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>0 – OK 
+        
+          
+            i=297
+          
+          
+            
+              ResultHandle
+              
+                i=7
+              
+              -1
+              
+              
+                The server shall return to each client requesting result data a system-wide unique handle identifying the result set / client combination. This handle should be used by the client to indicate to the server that the result data is no longer needed, allowing the server to optimize its resource handling.
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              Result
+              
+                ns=1;i=3004
+              
+              -1
+              
+              
+                The result including metadata.
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              Error
+              
+                i=6
+              
+              -1
+              
+              
+                0 – OK 
 Values &gt; 0 are reserved for errors defined by this and future standards. 
 Values &lt; 0 shall be used for application-specific errors.
 
-Note: If the error != 0, the server is allowed to return NULL values for Result and 0 for ResultHandle but server might still return some data which is application specific.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
+Note: If the error != 0, the server is allowed to return NULL values for Result and 0 for ResultHandle but server might still return some data which is application specific.
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -971,110 +955,110 @@ Note: If the error != 0, the server is allowed to return NULL values for Result 
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>ResultId</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=14</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>System-wide unique identifier for the result.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>ResourceTimeout</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=6</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>With this argument the client can give a hint to the server how long it will need access to the result data. 
+        
+          
+            i=297
+          
+          
+            
+              ResultId
+              
+                i=14
+              
+              -1
+              
+              
+                System-wide unique identifier for the result.
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ResourceTimeout
+              
+                i=6
+              
+              -1
+              
+              
+                With this argument the client can give a hint to the server how long it will need access to the result data. 
 A value &gt; 0 indicates an estimated maximum time for processing the data in milliseconds. 
 A value = 0 indicates that the client will not need anything besides the data returned by the method call. 
 A value &lt; 0 indicates that the client cannot give an estimate. 
-The client cannot rely on the data being available during the indicated time period. The argument is merely a hint allowing the server to optimize its resource management.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
+The client cannot rely on the data being available during the indicated time period. The argument is merely a hint allowing the server to optimize its resource management.
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="3">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>ResultHandle</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>The server shall return to each client requesting result data a system-wide unique handle identifying the result set / client combination. This handle should be used by the client to indicate to the server that the result data is no longer needed, allowing the server to optimize its resource handling.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>Result</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>ns=1;i=3004</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>The result including metadata.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>Error</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=6</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>0 – OK 
+        
+          
+            i=297
+          
+          
+            
+              ResultHandle
+              
+                i=7
+              
+              -1
+              
+              
+                The server shall return to each client requesting result data a system-wide unique handle identifying the result set / client combination. This handle should be used by the client to indicate to the server that the result data is no longer needed, allowing the server to optimize its resource handling.
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              Result
+              
+                ns=1;i=3004
+              
+              -1
+              
+              
+                The result including metadata.
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              Error
+              
+                i=6
+              
+              -1
+              
+              
+                0 – OK 
 Values &gt; 0 are reserved for errors defined by this and future standards. 
 Values &lt; 0 shall be used for application-specific errors.
 
-Note: If the error != 0, the server is allowed to return NULL values for Result and 0 for ResultHandle but server might still return some data which is application specific.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
+Note: If the error != 0, the server is allowed to return NULL values for Result and 0 for ResultHandle but server might still return some data which is application specific.
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1086,350 +1070,350 @@ Note: If the error != 0, the server is allowed to return NULL values for Result 
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="12">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>FromTime</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=294</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>If not null, results from the given FromTime  are returned in the ResultList.
-Any set of results whose StartTime is greater or equal to FromTime will be returned in the ResultList.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>ToTime</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=294</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>If not null, results till the given toTime are returned in the ResultList.
-Any set of results whose EndTime is less than or equal to ToTime will be returned in the ResultList.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>ResultEvaluation</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>ns=1;i=3008</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Input to return results based on OK or NOT_OK count. The results based on the evaluation are returned in the ResultList.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>SequenceNumbers</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=6</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>1</uax:ValueRank>
-              <uax:ArrayDimensions>
-                <uax:UInt32>0</uax:UInt32>
-              </uax:ArrayDimensions>
-              <uax:Description>
-                <uax:Text>If not an empty array, the list of sequence numbers requested from the client.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>MaxResults</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Maximum number of results to return in one call; by passing 0, the client indicates that it does not put a limit on the number of results.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>StartIndex</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Shall be 0 on the first call, multiples of MaxResults on subsequent calls to retrieve portions of the entire list, if necessary.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>ReporterAssetId</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=14</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>If not null, System wide unique identifier of the asset which reports the results.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>GeneratorAssetId</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=14</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>If not null, System wide unique identifier of the asset which generates the results.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>IncludeStepResults</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=1</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>A Boolean flag to notify the application to include list of step results in the ResultList. By default, it is set to false.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>IncludeErrors</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=1</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>A Boolean flag to notify the application to include list of errors in the ResultList. By default, it is set to false.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>IncludeTraces</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=1</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>A Boolean flag to notify the application to include list of traces in the ResultList. By default, it is set to false.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>ResourceTimeout</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=6</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>With this argument the client can give a hint to the server how long it will need access to the result data. 
+        
+          
+            i=297
+          
+          
+            
+              FromTime
+              
+                i=294
+              
+              -1
+              
+              
+                If not null, results from the given FromTime  are returned in the ResultList.
+Any set of results whose StartTime is greater or equal to FromTime will be returned in the ResultList.
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ToTime
+              
+                i=294
+              
+              -1
+              
+              
+                If not null, results till the given toTime are returned in the ResultList.
+Any set of results whose EndTime is less than or equal to ToTime will be returned in the ResultList.
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ResultEvaluation
+              
+                ns=1;i=3008
+              
+              -1
+              
+              
+                Input to return results based on OK or NOT_OK count. The results based on the evaluation are returned in the ResultList.
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              SequenceNumbers
+              
+                i=6
+              
+              1
+              
+                0
+              
+              
+                If not an empty array, the list of sequence numbers requested from the client.
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              MaxResults
+              
+                i=7
+              
+              -1
+              
+              
+                Maximum number of results to return in one call; by passing 0, the client indicates that it does not put a limit on the number of results.
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              StartIndex
+              
+                i=7
+              
+              -1
+              
+              
+                Shall be 0 on the first call, multiples of MaxResults on subsequent calls to retrieve portions of the entire list, if necessary.
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ReporterAssetId
+              
+                i=14
+              
+              -1
+              
+              
+                If not null, System wide unique identifier of the asset which reports the results.
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              GeneratorAssetId
+              
+                i=14
+              
+              -1
+              
+              
+                If not null, System wide unique identifier of the asset which generates the results.
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              IncludeStepResults
+              
+                i=1
+              
+              -1
+              
+              
+                A Boolean flag to notify the application to include list of step results in the ResultList. By default, it is set to false.
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              IncludeErrors
+              
+                i=1
+              
+              -1
+              
+              
+                A Boolean flag to notify the application to include list of errors in the ResultList. By default, it is set to false.
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              IncludeTraces
+              
+                i=1
+              
+              -1
+              
+              
+                A Boolean flag to notify the application to include list of traces in the ResultList. By default, it is set to false.
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ResourceTimeout
+              
+                i=6
+              
+              -1
+              
+              
+                With this argument the client can give a hint to the server how long it will need access to the result data. 
 A value &gt; 0 indicates an estimated maximum time for processing the data in milliseconds. 
 A value = 0 indicates that the client will not need anything besides the data returned by the method call. 
 A value &lt; 0 indicates that the client cannot give an estimate. 
-The client cannot rely on the data being available during the indicated time period. The argument is merely a hint allowing the server to optimize its resource management.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
+The client cannot rely on the data being available during the indicated time period. The argument is merely a hint allowing the server to optimize its resource management.
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="6">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>IsComplete</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=1</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Indicates whether there are more results in the entire list than retrieved according to StartIndex and ResultCount.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>ResultCount</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Provides the number of results returned in ResultList in the specific method call.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>TotalAvailableResults</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>This is the total number of results available based on the filtering criteria. This value will be same till the IsComplete is set to true if it is based on filter criteria.
-If filter criteria is not provided, then it is the total number of results available in the server.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>ResultHandle</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>The server shall return to each client requesting result data a system-wide unique handle identifying the result set / client combination. This handle should be used by the client to indicate to the server that the result data is no longer needed, allowing the server to optimize its resource handling.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>ResultList</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>ns=1;i=3004</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>1</uax:ValueRank>
-              <uax:ArrayDimensions>
-                <uax:UInt32>0</uax:UInt32>
-              </uax:ArrayDimensions>
-              <uax:Description>
-                <uax:Text>The server shall return to each client requesting result data a system-wide unique handle identifying the result set / client combination. This handle should be used by the client to indicate to the server that the result data is no longer needed, allowing the server to optimize its resource handling.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>Error</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=6</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>0 – OK 
+        
+          
+            i=297
+          
+          
+            
+              IsComplete
+              
+                i=1
+              
+              -1
+              
+              
+                Indicates whether there are more results in the entire list than retrieved according to StartIndex and ResultCount.
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ResultCount
+              
+                i=7
+              
+              -1
+              
+              
+                Provides the number of results returned in ResultList in the specific method call.
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              TotalAvailableResults
+              
+                i=7
+              
+              -1
+              
+              
+                This is the total number of results available based on the filtering criteria. This value will be same till the IsComplete is set to true if it is based on filter criteria.
+If filter criteria is not provided, then it is the total number of results available in the server.
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ResultHandle
+              
+                i=7
+              
+              -1
+              
+              
+                The server shall return to each client requesting result data a system-wide unique handle identifying the result set / client combination. This handle should be used by the client to indicate to the server that the result data is no longer needed, allowing the server to optimize its resource handling.
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ResultList
+              
+                ns=1;i=3004
+              
+              1
+              
+                0
+              
+              
+                The server shall return to each client requesting result data a system-wide unique handle identifying the result set / client combination. This handle should be used by the client to indicate to the server that the result data is no longer needed, allowing the server to optimize its resource handling.
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              Error
+              
+                i=6
+              
+              -1
+              
+              
+                0 – OK 
 Values &gt; 0 are reserved for errors defined by this and future standards. 
 Values &lt; 0 shall be used for application-specific errors.
-Note: If the error != 0, the server is allowed to return NULL values for ResultList and 0 for ResultHandle but server might still return some data which is application specific.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
+Note: If the error != 0, the server is allowed to return NULL values for ResultList and 0 for ResultHandle but server might still return some data which is application specific.
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1441,50 +1425,50 @@ Note: If the error != 0, the server is allowed to return NULL values for ResultL
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>ResultHandle</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=7</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>Handle returned by GetResultById or GetResultListFiltered or GetLatestResult, identifying the result set/client combination.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ResultHandle
+              
+                i=7
+              
+              -1
+              
+              
+                Handle returned by GetResultById or GetResultListFiltered or GetLatestResult, identifying the result set/client combination.
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=297</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:Argument>
-              <uax:Name>Error</uax:Name>
-              <uax:DataType>
-                <uax:Identifier>i=6</uax:Identifier>
-              </uax:DataType>
-              <uax:ValueRank>-1</uax:ValueRank>
-              <uax:ArrayDimensions />
-              <uax:Description>
-                <uax:Text>0 – OK 
+        
+          
+            i=297
+          
+          
+            
+              Error
+              
+                i=6
+              
+              -1
+              
+              
+                0 – OK 
 Values &gt; 0 are reserved for errors defined by this and future standards. 
-Values &lt; 0 shall be used for application-specific errors.</uax:Text>
-              </uax:Description>
-            </uax:Argument>
-          </uax:Body>
-        </uax:ExtensionObject>
+Values &lt; 0 shall be used for application-specific errors.
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1517,9 +1501,6 @@ This interface has a standard MachineryItemIdentificationType add-in which can b
         <Children>
           <Variable SymbolicName="Prefix7:Description" ModellingRule="Optional" DataType="Prefix1:LocalizedText">
             <Description>The optional Description is the system specific description of the asset.</Description>
-            <DefaultValue>
-              <uax:LocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-            </DefaultValue>
           </Variable>
           <Variable SymbolicName="Prefix7:ErrorCode" ModellingRule="Optional" DataType="Prefix1:Int32">
             <Description>The optional ErrorCode is the system specific code for the error occurred.</Description>
@@ -1529,9 +1510,6 @@ This interface has a standard MachineryItemIdentificationType add-in which can b
           </Variable>
           <Variable SymbolicName="Prefix7:ErrorMessage" ModellingRule="Optional" DataType="Prefix1:LocalizedText">
             <Description>The optional ErrorMessage is the user readable text of the error reported by the given asset.</Description>
-            <DefaultValue>
-              <uax:LocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-            </DefaultValue>
           </Variable>
           <Variable SymbolicName="Prefix7:ErrorTimestamp" ModellingRule="Optional" DataType="Prefix1:UtcTime">
             <Description>The optional ErrorTimestamp is the timestamp when the error occurred in the given asset.</Description>
@@ -1543,7 +1521,7 @@ This interface has a standard MachineryItemIdentificationType add-in which can b
             <Description>The optional ProductInstanceId is a system-wide unique identifier as GUID to be consistent with other entities like Result, Programs, etc. for ease of automation.</Description>
             <DefaultValue>
               <uax:Guid xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:String>00000000-0000-0000-0000-000000000000</uax:String>
+        00000000-0000-0000-0000-000000000000
       </uax:Guid>
             </DefaultValue>
           </Variable>
@@ -1577,11 +1555,7 @@ This interface has a standard MachineryItemIdentificationType add-in which can b
       </uax:String>
             </DefaultValue>
           </Property>
-          <Property SymbolicName="Prefix3:ComponentName" AccessLevel="ReadWrite">
-            <DefaultValue>
-              <uax:LocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-            </DefaultValue>
-          </Property>
+          <Property SymbolicName="Prefix3:ComponentName" AccessLevel="ReadWrite" />
         </Children>
       </Object>
       <Object SymbolicName="Prefix7:ServiceInformation" TypeDefinition="Prefix1:FolderType" ModellingRule="Optional">

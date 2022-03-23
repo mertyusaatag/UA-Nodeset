@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
-<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:Prefix7="http://opcfoundation.org/UA/IA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix9="http://opcfoundation.org/UA/MachineTool/" xmlns:Prefix5="http://opcfoundation.org/UA/Machinery/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<ModelDesign xmlns:Prefix7="http://opcfoundation.org/UA/IA/" xmlns:Prefix5="http://opcfoundation.org/UA/Machinery/" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix9="http://opcfoundation.org/UA/MachineTool/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09/03/2021">http://opcfoundation.org/UA/DI/</Namespace>
@@ -13,142 +12,142 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="8">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>0</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Automatic</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>NC channel mode Automatic – execute CNC part programs.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>1</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>MdaMdi</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>NC channel mode Mda/Mdi – manual data input and execution.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>2</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>JogManual</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>NC channel mode Jog Manual – axis movement triggered by user.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>3</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>JogIncrement</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>NC channel mode Jog Increment – incremental axis movement triggered by user.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>4</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>TeachingHandle</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>NC channel mode Teaching Handle – teaching a machine tool by moving axes of the machine tool by hand.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>5</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Remote</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>NC channel mode Remote – the machine tool can receive CNC files via a remote access mechanism.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>6</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Reference</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>NC channel mode Reference – The machine tool returns to its reference point/ zero position.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>7</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Other</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>NC channel mode is different from the values defined in this enumeration.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                Automatic
+              
+              
+                en
+                NC channel mode Automatic – execute CNC part programs.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                MdaMdi
+              
+              
+                en
+                NC channel mode Mda/Mdi – manual data input and execution.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              2
+              
+                JogManual
+              
+              
+                en
+                NC channel mode Jog Manual – axis movement triggered by user.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              3
+              
+                JogIncrement
+              
+              
+                en
+                NC channel mode Jog Increment – incremental axis movement triggered by user.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              4
+              
+                TeachingHandle
+              
+              
+                en
+                NC channel mode Teaching Handle – teaching a machine tool by moving axes of the machine tool by hand.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              5
+              
+                Remote
+              
+              
+                en
+                NC channel mode Remote – the machine tool can receive CNC files via a remote access mechanism.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              6
+              
+                Reference
+              
+              
+                en
+                NC channel mode Reference – The machine tool returns to its reference point/ zero position.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              7
+              
+                Other
+              
+              
+                en
+                NC channel mode is different from the values defined in this enumeration.
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -186,57 +185,57 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>0</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Active</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>There is an active command being executed by the NC channel.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>1</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Interrupted</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The NC execution is interrupted. Execution of a program in the channel can be restarted.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>2</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Reset</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>No NC command is active in the NC channel. E.g. channel is idle.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                Active
+              
+              
+                en
+                There is an active command being executed by the NC channel.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                Interrupted
+              
+              
+                en
+                The NC execution is interrupted. Execution of a program in the channel can be restarted.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              2
+              
+                Reset
+              
+              
+                en
+                No NC command is active in the NC channel. E.g. channel is idle.
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -259,91 +258,91 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="5">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>0</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Undefined</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The EDM spark generator state cannot be indicated.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>1</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Ready</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>Generator is initialized and can receive a set of technology parameters.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>2</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Active_Low_Voltage</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>Generator is switched on and is supplying pulses respecting the low voltage (≤ 25 V AC or ≤ 60 V DC) requirements of safety standard (ISO 28881).</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>3</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Active_High_Voltage</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>Generator is switched on and is supplying pulse at high voltage (&gt; 25 V AC or &gt; 60 V DC).</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>4</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Error</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>Generator is in an error state.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                Undefined
+              
+              
+                en
+                The EDM spark generator state cannot be indicated.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                Ready
+              
+              
+                en
+                Generator is initialized and can receive a set of technology parameters.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              2
+              
+                Active_Low_Voltage
+              
+              
+                en
+                Generator is switched on and is supplying pulses respecting the low voltage (≤ 25 V AC or ≤ 60 V DC) requirements of safety standard (ISO 28881).
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              3
+              
+                Active_High_Voltage
+              
+              
+                en
+                Generator is switched on and is supplying pulse at high voltage (&gt; 25 V AC or &gt; 60 V DC).
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              4
+              
+                Error
+              
+              
+                en
+                Generator is in an error state.
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -372,79 +371,79 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>0</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Undefined</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The laser state cannot be indicated, for example because the device does not provide this information
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                Undefined
+              
+              
+                en
+                The laser state cannot be indicated, for example because the device does not provide this information
 or because it is currently unavailable. This can be e.g. during the startup phase.
-</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>1</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Ready</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The laser is ready and laser programs can be started. No error state is active. In this state, laser
-emission is prohibited.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>2</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Active</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>In this state, safety clearances have to be set for processing and emission can be activated.
+
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                Ready
+              
+              
+                en
+                The laser is ready and laser programs can be started. No error state is active. In this state, laser
+emission is prohibited.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              2
+              
+                Active
+              
+              
+                en
+                In this state, safety clearances have to be set for processing and emission can be activated.
 For devices that can run programs themselves it indicates that a program is running on the laser
-device.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>3</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Error</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>An error state is reported from the laser device.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
+device.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              3
+              
+                Error
+              
+              
+                en
+                An error state is reported from the laser device.
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -475,108 +474,108 @@ device.</Description>
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="6">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>0</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Manual</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The machine is controlled manually, by the operator. Depending on technology specific norms, the maximum axis movement speeds of the machine tool are limited.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>1</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Automatic</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>Operating mode for the automatic, programmed and continuous operation of the machine. Manual loading and unloading workpieces are possible when the automatic program is stopped. Axis movement speeds are fully available to the machine tool’s ability.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>2</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Setup</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>Depending on technology specific norms, the maximum axis movement speeds of the machine tool are limited. In this mode, the operator can make settings for the subsequent work processes.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>3</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>AutoWithManualIntervention</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>Operating mode with the possibility of manual interventions in the machining process as well as limited automatic operation started by the operator. Depending on technology specific norms, the maximum axis movement speeds of the machine tool are limited.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>4</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Service</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>Operating mode for service purposes. This mode shall not be used for manufacturing any parts. This mode shall only be used by authorized personnel.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>5</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Other</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The machine operation mode is different from the values defined in this enumeration.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                Manual
+              
+              
+                en
+                The machine is controlled manually, by the operator. Depending on technology specific norms, the maximum axis movement speeds of the machine tool are limited.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                Automatic
+              
+              
+                en
+                Operating mode for the automatic, programmed and continuous operation of the machine. Manual loading and unloading workpieces are possible when the automatic program is stopped. Axis movement speeds are fully available to the machine tool’s ability.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              2
+              
+                Setup
+              
+              
+                en
+                Depending on technology specific norms, the maximum axis movement speeds of the machine tool are limited. In this mode, the operator can make settings for the subsequent work processes.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              3
+              
+                AutoWithManualIntervention
+              
+              
+                en
+                Operating mode with the possibility of manual interventions in the machining process as well as limited automatic operation started by the operator. Depending on technology specific norms, the maximum axis movement speeds of the machine tool are limited.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              4
+              
+                Service
+              
+              
+                en
+                Operating mode for service purposes. This mode shall not be used for manufacturing any parts. This mode shall only be used by authorized personnel.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              5
+              
+                Other
+              
+              
+                en
+                The machine operation mode is different from the values defined in this enumeration.
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -608,91 +607,91 @@ device.</Description>
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="5">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>0</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>CapabilityUnavailable</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The machine tool is not able to give a statement about the part quality.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>1</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Good</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The part quality is determined good.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>2</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Bad</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The part quality is determined bad.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>3</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>NotYetMeasured</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The PartQuality will still be determined in the machine tool to be either Good or Bad.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>4</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>WillNotBeMeasured</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The machine tool will not give a statement about the part quality.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                CapabilityUnavailable
+              
+              
+                en
+                The machine tool is not able to give a statement about the part quality.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                Good
+              
+              
+                en
+                The part quality is determined good.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              2
+              
+                Bad
+              
+              
+                en
+                The part quality is determined bad.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              3
+              
+                NotYetMeasured
+              
+              
+                en
+                The PartQuality will still be determined in the machine tool to be either Good or Bad.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              4
+              
+                WillNotBeMeasured
+              
+              
+                en
+                The machine tool will not give a statement about the part quality.
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -721,74 +720,74 @@ device.</Description>
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>0</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>CapabilityUnavailable</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The machine tool is not able to give a statement about process irregularities.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>1</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Detected</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>A process irregularity has been detected.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>2</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>NotDetected</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>There was no process irregularity detected.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>3</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>NotYetDetermined</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>A statement about the process irregularity is to be expected.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                CapabilityUnavailable
+              
+              
+                en
+                The machine tool is not able to give a statement about process irregularities.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                Detected
+              
+              
+                en
+                A process irregularity has been detected.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              2
+              
+                NotDetected
+              
+              
+                en
+                There was no process irregularity detected.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              3
+              
+                NotYetDetermined
+              
+              
+                en
+                A statement about the process irregularity is to be expected.
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -814,142 +813,142 @@ device.</Description>
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="8">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>0</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Time</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The tool life indicates the time the tool has been in use or can still be used. The value shall be given in hours (decimal value).</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>1</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>NumberOfParts</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The tool life indicates the total number of parts that have been produced or can still be produced using the tool. The unit shall be „one“.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>2</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>NumberOfUsages</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The tool life indicates counting the process steps this tool has been used or can still be used (for example usages of a punching tool). The unit shall be „one“.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>3</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Feed_Distance</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The tool life indicates the sum of the feed path covered by the tool and the workpiece relative to each other during machining. This value shall be given in one of the following units: millimetres, metres, kilometres.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>4</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Cutting_Distance</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The tool life indicates the sum of the lengths that the cutting knife works in the workpiece. If the knife is not fixed, this includes the lengths of the arc segments of the knife path. This value shall be given in one of the following units: millimetres, metres, kilometres. This value is likely only available for serial production with clearly defined machining conditions.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>5</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Length</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The tool life indicates the abraded length of the tool. This value shall be given in one of the following units: micrometres, millimetres, metres, kilometres.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>6</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Diameter</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The tool life indicates the abraded diameter of the tool. This value shall be given in one of the following units: micrometres, millimetres, metres, kilometres.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>7</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Other</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The tool life is indicated in a way not covered by the remaining enum values.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                Time
+              
+              
+                en
+                The tool life indicates the time the tool has been in use or can still be used. The value shall be given in hours (decimal value).
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                NumberOfParts
+              
+              
+                en
+                The tool life indicates the total number of parts that have been produced or can still be produced using the tool. The unit shall be „one“.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              2
+              
+                NumberOfUsages
+              
+              
+                en
+                The tool life indicates counting the process steps this tool has been used or can still be used (for example usages of a punching tool). The unit shall be „one“.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              3
+              
+                Feed_Distance
+              
+              
+                en
+                The tool life indicates the sum of the feed path covered by the tool and the workpiece relative to each other during machining. This value shall be given in one of the following units: millimetres, metres, kilometres.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              4
+              
+                Cutting_Distance
+              
+              
+                en
+                The tool life indicates the sum of the lengths that the cutting knife works in the workpiece. If the knife is not fixed, this includes the lengths of the arc segments of the knife path. This value shall be given in one of the following units: millimetres, metres, kilometres. This value is likely only available for serial production with clearly defined machining conditions.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              5
+              
+                Length
+              
+              
+                en
+                The tool life indicates the abraded length of the tool. This value shall be given in one of the following units: micrometres, millimetres, metres, kilometres.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              6
+              
+                Diameter
+              
+              
+                en
+                The tool life indicates the abraded diameter of the tool. This value shall be given in one of the following units: micrometres, millimetres, metres, kilometres.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              7
+              
+                Other
+              
+              
+                en
+                The tool life is indicated in a way not covered by the remaining enum values.
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -987,108 +986,108 @@ device.</Description>
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="6">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>0</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>CapabilityUnavailable</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The reason for locking the tool cannot be given.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>1</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>ByOperator</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The tool is locked by an operator.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>2</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>ToolBreak</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The tool is locked because a tool break has been detected.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>3</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>ToolLife</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The tool is locked because it reached a tool life limit.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>4</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>MeasurementError</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The tool is locked due to a measurement error of the tool.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>5</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Other</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The tool is locked for another reason.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                CapabilityUnavailable
+              
+              
+                en
+                The reason for locking the tool cannot be given.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                ByOperator
+              
+              
+                en
+                The tool is locked by an operator.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              2
+              
+                ToolBreak
+              
+              
+                en
+                The tool is locked because a tool break has been detected.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              3
+              
+                ToolLife
+              
+              
+                en
+                The tool is locked because it reached a tool life limit.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              4
+              
+                MeasurementError
+              
+              
+                en
+                The tool is locked due to a measurement error of the tool.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              5
+              
+                Other
+              
+              
+                en
+                The tool is locked for another reason.
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1120,57 +1119,57 @@ device.</Description>
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>0</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>NumberBased</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The tool is addressed using a single identifier.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>1</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>GroupBased</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The tool is addressed using an identifier for the group and a second one for the tool within the group.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
-        <uax:ExtensionObject>
-          <uax:TypeId>
-            <uax:Identifier>i=7616</uax:Identifier>
-          </uax:TypeId>
-          <uax:Body>
-            <uax:EnumValueType>
-              <uax:Value>2</uax:Value>
-              <uax:DisplayName>
-                <uax:Text>Other</uax:Text>
-              </uax:DisplayName>
-              <uax:Description>
-                <uax:Locale>en</uax:Locale>
-                <uax:Text>The tool is addressed by a different, custom defined system.</uax:Text>
-              </uax:Description>
-            </uax:EnumValueType>
-          </uax:Body>
-        </uax:ExtensionObject>
+        
+          
+            i=7616
+          
+          
+            
+              0
+              
+                NumberBased
+              
+              
+                en
+                The tool is addressed using a single identifier.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              1
+              
+                GroupBased
+              
+              
+                en
+                The tool is addressed using an identifier for the group and a second one for the tool within the group.
+              
+            
+          
+        
+        
+          
+            i=7616
+          
+          
+            
+              2
+              
+                Other
+              
+              
+                en
+                The tool is addressed by a different, custom defined system.
+              
+            
+          
+        
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
