@@ -1,20 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="UAModelDesignerSolution.xslt"?>
 <UAModelDesignerSolution xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Name>Solution10</Name>
-  <Projects>
-    <UAModelDesignerProject ProjectIdentifier="5317f431-4580-4f59-b35e-e6c0b19c02e6">
-      <Name>Opc.Ua.Adi.Model</Name>
-      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
-      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
-      <FileName>Opc.Ua.Adi.Model.xml</FileName>
-    </UAModelDesignerProject>
-    <UAModelDesignerProject ProjectIdentifier="369b334d-ff7b-49b5-8852-7293d2c0df14">
-      <Name>Opc.Ua.Di.Model</Name>
-      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
-      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
-      <FileName>..\..\DI\ModelDesign\Opc.Ua.Di.Model.xml</FileName>
-    </UAModelDesignerProject>
-  </Projects>
+  <Name>Solution11</Name>
+  <Projects />
   <ServerDetails codebase="" configuration="" />
 </UAModelDesignerSolution>
