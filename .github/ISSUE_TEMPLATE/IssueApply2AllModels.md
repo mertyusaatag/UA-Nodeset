@@ -1,24 +1,24 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
-title: 'Enhance/Improve <sth>'
+name: A task applied for each model
+about: Description of a task that must be applied to all models
+title: 'Do something for each model'
 labels: 'Feature request'
 assignees: ''
 ---
 
-### Describe problem
+## Describe problem
 
 A clear and concise description of what the problem is.
 
-### Describe the solution you'd like
+## Describe the solution you'd like
 
 A clear and concise description of what you want to happen.
 
-### Describe alternatives you've considered
+## Describe alternatives you've considered
 
 A clear and concise description of any alternative solutions or features you've considered.
 
-### List of model taht the task is to be accomplished
+## List of model that the task is to be applied to
 
 -[ ] ADI
 -[ ] AML
