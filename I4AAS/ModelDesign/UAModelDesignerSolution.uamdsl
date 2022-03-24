@@ -1,14 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="UAModelDesignerSolution.xslt"?>
 <UAModelDesignerSolution xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Name>Solution111</Name>
-  <Projects>
-    <UAModelDesignerProject ProjectIdentifier="543156f8-8b5d-4246-bb8a-b07f00a57351">
-      <Name>Opc.Ua.I4AAS.Model</Name>
-      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
-      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
-      <FileName>Opc.Ua.I4AAS.Model.xml</FileName>
-    </UAModelDesignerProject>
-  </Projects>
+  <Name>I4AAS</Name>
+  <Projects />
   <ServerDetails codebase="" configuration="" />
 </UAModelDesignerSolution>
