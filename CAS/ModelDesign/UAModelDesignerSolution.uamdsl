@@ -1,32 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="UAModelDesignerSolution.xslt"?>
 <UAModelDesignerSolution xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Name>Solution11</Name>
-  <Projects>
-    <UAModelDesignerProject ProjectIdentifier="53f7e6b9-182f-482d-9a1e-3ac0b030e1a5">
-      <Name>Opc.Ua.Di.Model</Name>
-      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
-      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
-      <FileName>..\..\DI\ModelDesign\Opc.Ua.Di.Model.xml</FileName>
-    </UAModelDesignerProject>
-    <UAModelDesignerProject ProjectIdentifier="722079af-5794-4232-93a9-6746d8024912">
-      <Name>Opc.Ua.IA.Model</Name>
-      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
-      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
-      <FileName>..\..\IA\ModelDesign\Opc.Ua.IA.Model.xml</FileName>
-    </UAModelDesignerProject>
-    <UAModelDesignerProject ProjectIdentifier="3e5d5520-6cb1-4319-b1d4-11199ba4f133">
-      <Name>Opc.Ua.Machinery.Model</Name>
-      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
-      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
-      <FileName>..\..\Machinery\ModelDesign\Opc.Ua.Machinery.Model.xml</FileName>
-    </UAModelDesignerProject>
-    <UAModelDesignerProject ProjectIdentifier="f656d134-65b1-4f39-83be-e7285cac87dd">
-      <Name>Opc.Ua.CAS.Model</Name>
-      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
-      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
-      <FileName>Opc.Ua.CAS.Model.xml</FileName>
-    </UAModelDesignerProject>
-  </Projects>
+  <Name>CAS</Name>
+  <Projects />
   <ServerDetails codebase="" configuration="" />
 </UAModelDesignerSolution>
