@@ -1,14 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="UAModelDesignerSolution.xslt"?>
 <UAModelDesignerSolution xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Name>Solution11</Name>
-  <Projects>
-    <UAModelDesignerProject ProjectIdentifier="927cdc86-37c4-496c-9efb-1f3eea6335d6">
-      <Name>Opc.Ua.ISA95.Model</Name>
-      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
-      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
-      <FileName>Opc.Ua.ISA95.Model.xml</FileName>
-    </UAModelDesignerProject>
-  </Projects>
+  <Name>ISA-95</Name>
+  <Projects />
   <ServerDetails codebase="" configuration="" />
 </UAModelDesignerSolution>
