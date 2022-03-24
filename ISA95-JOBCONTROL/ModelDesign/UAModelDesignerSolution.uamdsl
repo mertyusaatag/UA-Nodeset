@@ -1,14 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="UAModelDesignerSolution.xslt"?>
 <UAModelDesignerSolution xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Name>Solution12</Name>
-  <Projects>
-    <UAModelDesignerProject ProjectIdentifier="7211608c-b566-4063-87fa-fb15e1b2de31">
-      <Name>Opc.Ua.ISA95-JOBCONTROL.Model</Name>
-      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
-      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
-      <FileName>Opc.Ua.ISA95-JOBCONTROL.Model.xml</FileName>
-    </UAModelDesignerProject>
-  </Projects>
+  <Name>ISA95-JOBCONTROL</Name>
+  <Projects />
   <ServerDetails codebase="" configuration="" />
 </UAModelDesignerSolution>
