@@ -1,14 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="UAModelDesignerSolution.xslt"?>
 <UAModelDesignerSolution xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Name>Solution12</Name>
-  <Projects>
-    <UAModelDesignerProject ProjectIdentifier="71f9ba9a-a6cb-4f80-8863-2c1f8ebb86ed">
-      <Name>Opc.Ua.PROFINET.Model</Name>
-      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
-      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
-      <FileName>Opc.Ua.PROFINET.Model.xml</FileName>
-    </UAModelDesignerProject>
-  </Projects>
+  <Name>PROFINET</Name>
+  <Projects />
   <ServerDetails codebase="" configuration="" />
 </UAModelDesignerSolution>
