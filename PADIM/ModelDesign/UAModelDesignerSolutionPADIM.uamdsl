@@ -1,26 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="UAModelDesignerSolution.xslt"?>
 <UAModelDesignerSolution xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Name>Solution17</Name>
-  <Projects>
-    <UAModelDesignerProject ProjectIdentifier="ba87ea53-4640-4cc8-9dba-2f4bdd8ba1f7">
-      <Name>Opc.Ua.IRDI.Model</Name>
-      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
-      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
-      <FileName>Opc.Ua.IRDI.Model.xml</FileName>
-    </UAModelDesignerProject>
-    <UAModelDesignerProject ProjectIdentifier="aebbfaf1-e927-408c-af23-539ebd3f42c1">
-      <Name>Opc.Ua.PADIM.Model</Name>
-      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
-      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
-      <FileName>Opc.Ua.PADIM.Model.xml</FileName>
-    </UAModelDesignerProject>
-    <UAModelDesignerProject ProjectIdentifier="ad252fa8-a80a-4c11-9433-7e250f8182e7">
-      <Name>Opc.Ua.Di.Model</Name>
-      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
-      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
-      <FileName>..\..\DI\ModelDesign\Opc.Ua.Di.Model.xml</FileName>
-    </UAModelDesignerProject>
-  </Projects>
+  <Name>PADIM</Name>
+  <Projects />
   <ServerDetails codebase="" configuration="" />
 </UAModelDesignerSolution>
