@@ -1,14 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="UAModelDesignerSolution.xslt"?>
 <UAModelDesignerSolution xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Name>Solution15</Name>
-  <Projects>
-    <UAModelDesignerProject ProjectIdentifier="5107c04c-901f-4fa7-84af-342697ce1bbf">
-      <Name>Opc.Ua.Safety.Model</Name>
-      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
-      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
-      <FileName>Opc.Ua.Safety.Model.xml</FileName>
-    </UAModelDesignerProject>
-  </Projects>
+  <Name>Safety</Name>
+  <Projects />
   <ServerDetails codebase="" configuration="" />
 </UAModelDesignerSolution>
