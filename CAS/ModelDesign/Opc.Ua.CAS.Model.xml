@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ModelDesign xmlns:Prefix7="http://opcfoundation.org/UA/Machinery/" xmlns:Prefix5="http://opcfoundation.org/UA/IA/" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix9="http://opcfoundation.org/UA/CAS/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:Prefix7="http://opcfoundation.org/UA/Machinery/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix9="http://opcfoundation.org/UA/CAS/" xmlns:Prefix5="http://opcfoundation.org/UA/IA/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09/03/2021">http://opcfoundation.org/UA/DI/</Namespace>
@@ -12,70 +13,70 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                OK
-              
-              
-                All requirements can be fulfilled.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                Warning
-              
-              
-                Check required, possibly there is a problem that leads to an Error.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                Error
-              
-              
-                Immediate action needed to avoid Critical.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                Critical
-              
-              
-                At least one requirement cannot be fulfilled.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OK</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>All requirements can be fulfilled.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Warning</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Check required, possibly there is a problem that leads to an Error.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Error</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Immediate action needed to avoid Critical.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Critical</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>At least one requirement cannot be fulfilled.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -101,54 +102,54 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                FullyIntegrated
-              
-              
-                The MCS controls all compressors of this airnet.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                PartiallyIntegrated
-              
-              
-                At least one compressor of this airnet is not controlled by the MCS.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                FullyIsolated
-              
-              
-                The MCS does not control any compressor of this airnet.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>FullyIntegrated</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The MCS controls all compressors of this airnet.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PartiallyIntegrated</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>At least one compressor of this airnet is not controlled by the MCS.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>FullyIsolated</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The MCS does not control any compressor of this airnet.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -171,86 +172,86 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="5">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                Other
-              
-              
-                The airnet is in a state not specified by this enumeration.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                Stopped
-              
-              
-                The requirements shall not be fulfilled.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                Starting
-              
-              
-                Transition phase to end in Operational state.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                Stopping
-              
-              
-                Transition phase to end in Stopped state.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                Operational
-              
-              
-                The requirements should be fulfilled.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The airnet is in a state not specified by this enumeration.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Stopped</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The requirements shall not be fulfilled.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Starting</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Transition phase to end in Operational state.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Stopping</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Transition phase to end in Stopped state.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Operational</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The requirements should be fulfilled.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -279,134 +280,134 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="8">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                Other
-              
-              
-                The compressor is in a state not specified by this enumeration.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                Stopped
-              
-              
-                The motor is not running.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                Starting
-              
-              
-                Transition phase to end in Unloaded state.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                Stopping
-              
-              
-                Transition phase to end in Stopped state.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                Unloaded
-              
-              
-                The motor is running but the compressor does not deliver compressed air to the airnet.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              5
-              
-                Loading
-              
-              
-                Transition phase to end in Loaded state.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              6
-              
-                Unloading
-              
-              
-                Transition phase to end in Unloaded state.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              7
-              
-                Loaded
-              
-              
-                The compressor does deliver compressed air to the airnet.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The compressor is in a state not specified by this enumeration.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Stopped</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The motor is not running.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Starting</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Transition phase to end in Unloaded state.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Stopping</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Transition phase to end in Stopped state.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Unloaded</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The motor is running but the compressor does not deliver compressed air to the airnet.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Loading</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Transition phase to end in Loaded state.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Unloading</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Transition phase to end in Unloaded state.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>7</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Loaded</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The compressor does deliver compressed air to the airnet.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -445,214 +446,214 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="13">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                Other
-              
-              
-                Not specified in this enumeration
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                AxialTurboCompressor
-              
-              
-                Axial Turbo compressor
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                BellowsCompressor
-              
-              
-                Bellows compressor
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                DiaphragmCompressor
-              
-              
-                Diaphragm compressor
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                LiquidRingCompressor
-              
-              
-                Liquid ring compressor
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              5
-              
-                PistonCompressor
-              
-              
-                Piston compressor
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              6
-              
-                RadialTurboCompressor
-              
-              
-                Radial Turbo compressor
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              7
-              
-                RootsCompressor
-              
-              
-                Roots compressor
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              8
-              
-                ScrewCompressor
-              
-              
-                Screw compressor
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              9
-              
-                ScrollCompressor
-              
-              
-                Scroll compressor
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              10
-              
-                SideChannelCompressor
-              
-              
-                Side channel compressor
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              11
-              
-                StraightLobeCompressor
-              
-              
-                Straight lobe compressor
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              12
-              
-                VaneCompressor
-              
-              
-                Vane compressor
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Not specified in this enumeration</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>AxialTurboCompressor</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Axial Turbo compressor</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>BellowsCompressor</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Bellows compressor</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DiaphragmCompressor</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Diaphragm compressor</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>LiquidRingCompressor</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Liquid ring compressor</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PistonCompressor</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Piston compressor</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>RadialTurboCompressor</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Radial Turbo compressor</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>7</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>RootsCompressor</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Roots compressor</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>8</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ScrewCompressor</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Screw compressor</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>9</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ScrollCompressor</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Scroll compressor</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>10</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SideChannelCompressor</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Side channel compressor</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>11</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>StraightLobeCompressor</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Straight lobe compressor</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>12</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>VaneCompressor</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Vane compressor</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -706,38 +707,38 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="2">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                Other
-              
-              
-                Not specified in this enumeration
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                CatalyticHCConverter
-              
-              
-                Catalytic hydrocarbons converter
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Not specified in this enumeration</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CatalyticHCConverter</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Catalytic hydrocarbons converter</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -758,38 +759,38 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="2">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                PositiveDisplacement
-              
-              
-                Positive displacement compressor
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                DynamicDisplacement
-              
-              
-                Dynamic displacement compressor
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PositiveDisplacement</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Positive displacement compressor</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DynamicDisplacement</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Dynamic displacement compressor</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -810,70 +811,70 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                Other
-              
-              
-                Not specified in this enumeration
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                CapacitiveDrain
-              
-              
-                Capacitive drain
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                LevelControlledDrain
-              
-              
-                Level controlled drain
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                TimedDrain
-              
-              
-                Timed drain
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Not specified in this enumeration</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CapacitiveDrain</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Capacitive drain</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>LevelControlledDrain</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Level controlled drain</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>TimedDrain</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Timed drain</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -899,214 +900,214 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="13">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                Other
-              
-              
-                The dryer is in a state not specified by this enumeration.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                Stopped
-              
-              
-                The dryer is stopped. This state is applicable to all adsorption dryers.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                Running
-              
-              
-                The dryer is running. This state is applicable to all dryers.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                RefrigerantCompressorStopped
-              
-              
-                The compressor of the refrigerant circuit is standing still, and the refrigerant dryer is operating using the stored cold. This state is applicable to refrigerant dryers.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                RefrigerantCompressorRunning
-              
-              
-                The compressor of the refrigerant circuit is running and compressing refrigerant, creating cold. This state is applicable to refrigerant dryers.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              5
-              
-                PurgeValveClosed
-              
-              
-                Purge valve is closed, and no purge air is consumed, no purge of the humidity from membranes dryer. This state is applicable to membrane dryers.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              6
-              
-                PurgeValveOpen
-              
-              
-                Purge air can flow to purge the humidity out of the membrane dryer. This state is applicable to membrane dryers.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              7
-              
-                ParallelModeOfBothVessels
-              
-              
-                Both vessels of the adsorption dryer are used in parallel for adsorption. This state is applicable to all adsorption dryers.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              8
-              
-                Depressurizing
-              
-              
-                One vessel of the adsorption dryer is depressurized for regeneration. This state is applicable to heatless and heated adsorption dryers, not HOC.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              9
-              
-                Desorbing
-              
-              
-                One vessel of the adsorption dryer is in desorption phase, using purge or ambient air, heated or not heated. This state is applicable to all adsorption dryers.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              10
-              
-                Cooling
-              
-              
-                One vessel of the adsorption dryer is being cooled after being heated in the previous desorption phase. This state is applicable to heated adsorption dryers and HOC.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              11
-              
-                Pressurizing
-              
-              
-                The depressurized vessel is pressurized again. This state is applicable to heatless and heated adsorption dryers, not HOC.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              12
-              
-                RegeneratedVesselInStand-by
-              
-              
-                The regenerated vessel is in standby and ready for adsorption phase. This state is applicable to all adsorption dryers.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The dryer is in a state not specified by this enumeration.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Stopped</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The dryer is stopped. This state is applicable to all adsorption dryers.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Running</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The dryer is running. This state is applicable to all dryers.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>RefrigerantCompressorStopped</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The compressor of the refrigerant circuit is standing still, and the refrigerant dryer is operating using the stored cold. This state is applicable to refrigerant dryers.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>RefrigerantCompressorRunning</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The compressor of the refrigerant circuit is running and compressing refrigerant, creating cold. This state is applicable to refrigerant dryers.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PurgeValveClosed</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Purge valve is closed, and no purge air is consumed, no purge of the humidity from membranes dryer. This state is applicable to membrane dryers.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PurgeValveOpen</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Purge air can flow to purge the humidity out of the membrane dryer. This state is applicable to membrane dryers.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>7</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ParallelModeOfBothVessels</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Both vessels of the adsorption dryer are used in parallel for adsorption. This state is applicable to all adsorption dryers.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>8</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Depressurizing</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>One vessel of the adsorption dryer is depressurized for regeneration. This state is applicable to heatless and heated adsorption dryers, not HOC.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>9</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Desorbing</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>One vessel of the adsorption dryer is in desorption phase, using purge or ambient air, heated or not heated. This state is applicable to all adsorption dryers.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>10</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Cooling</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>One vessel of the adsorption dryer is being cooled after being heated in the previous desorption phase. This state is applicable to heated adsorption dryers and HOC.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>11</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Pressurizing</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The depressurized vessel is pressurized again. This state is applicable to heatless and heated adsorption dryers, not HOC.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>12</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>RegeneratedVesselInStand-by</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The regenerated vessel is in standby and ready for adsorption phase. This state is applicable to all adsorption dryers.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1160,86 +1161,86 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="5">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                Other
-              
-              
-                Not specified in this enumeration
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                AbsorptionDryer
-              
-              
-                Absorption dryer
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                AdsorptionDryer
-              
-              
-                Adsorption dryer
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                MembraneDryer
-              
-              
-                Membrane dryer
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                RefrigerationDryer
-              
-              
-                Refrigeration dryer
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Not specified in this enumeration</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>AbsorptionDryer</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Absorption dryer</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>AdsorptionDryer</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Adsorption dryer</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MembraneDryer</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Membrane dryer</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>RefrigerationDryer</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Refrigeration dryer</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1269,195 +1270,195 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="11">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                0
-              
-              
-                As specified by the equipment user or supplier and more stringent than class 1.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                1
-              
-              
-                Particles: By Particle Size: 0.1 µm &lt; d ≤ 0.5 µm: ≤ 20,000; 0.5 µ m&lt; d ≤ 1.0 µm: ≤ 400; 1.0 µm &lt; d ≤ 5.0 µm: ≤ 10;
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>0</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>As specified by the equipment user or supplier and more stringent than class 1.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>1</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Particles: By Particle Size: 0.1 µm &lt; d ≤ 0.5 µm: ≤ 20,000; 0.5 µ m&lt; d ≤ 1.0 µm: ≤ 400; 1.0 µm &lt; d ≤ 5.0 µm: ≤ 10;
 Water: Vapor Pressure Dewpoint: ≤ -70 °C, ≤ -94 °F;
-Oil: Liquid, Aerosol, &amp; Vapor: ≤ 0.01 mg/m3;
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                2
-              
-              
-                Particles: By Particle Size: 0.1 µm &lt; d ≤ 0.5 µm: ≤ 400,000; 0.5 µ m&lt; d ≤ 1.0 µm: ≤ 6,000; 1.0 µm &lt; d ≤ 5.0 µm: ≤ 100;
+Oil: Liquid, Aerosol, &amp; Vapor: ≤ 0.01 mg/m3;</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>2</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Particles: By Particle Size: 0.1 µm &lt; d ≤ 0.5 µm: ≤ 400,000; 0.5 µ m&lt; d ≤ 1.0 µm: ≤ 6,000; 1.0 µm &lt; d ≤ 5.0 µm: ≤ 100;
 Water: Vapor Pressure Dewpoint: ≤ -40 °C, ≤ -40 °F;
-Oil: Liquid, Aerosol, &amp; Vapor: ≤ 0.1 mg/m3;
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                3
-              
-              
-                Particles: By Particle Size: 0.5 µ m&lt; d ≤ 1.0 µm: ≤ 90,000; 1.0 µm &lt; d ≤ 5.0 µm: ≤ 1,000;
+Oil: Liquid, Aerosol, &amp; Vapor: ≤ 0.1 mg/m3;</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>3</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Particles: By Particle Size: 0.5 µ m&lt; d ≤ 1.0 µm: ≤ 90,000; 1.0 µm &lt; d ≤ 5.0 µm: ≤ 1,000;
 Water: Vapor Pressure Dewpoint: ≤ -20 °C, ≤ -4 °F;
-Oil: Liquid, Aerosol, &amp; Vapor: ≤ 1 mg/m3;
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                4
-              
-              
-                Particles: By Particle Size: 1.0 µm &lt; d ≤ 5.0 µm: ≤ 10,000;
+Oil: Liquid, Aerosol, &amp; Vapor: ≤ 1 mg/m3;</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>4</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Particles: By Particle Size: 1.0 µm &lt; d ≤ 5.0 µm: ≤ 10,000;
 Water: Vapor Pressure Dewpoint: ≤ +3 °C, ≤ +37 °F;
-Oil: Liquid, Aerosol, &amp; Vapor: ≤ 5 mg/m3;
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              5
-              
-                5
-              
-              
-                Particles: By Particle Size: 1.0 µm &lt; d ≤ 5.0 µm: ≤ 100,000;
-Water: Vapor Pressure Dewpoint: ≤ +7 °C, ≤ +45 °F;
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              6
-              
-                6
-              
-              
-                Particles: By Mass: 0 – ≤ 5 mg/m3;
-Water: Vapor Pressure Dewpoint: ≤ +10 °C, ≤ +50 °F;
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              7
-              
-                7
-              
-              
-                Particles: By Mass: 5 – ≤ 10 mg/m3;
-Water: Liquid: ≤ 0.5 g/m3;
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              8
-              
-                8
-              
-              
-                Water: Liquid: ≤ 5 g/m3;
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              9
-              
-                9
-              
-              
-                Water: Liquid: ≤ 10 g/m3;
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              10
-              
-                X
-              
-              
-                Particles: By Mass: &gt; 10 mg/m3;
+Oil: Liquid, Aerosol, &amp; Vapor: ≤ 5 mg/m3;</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>5</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Particles: By Particle Size: 1.0 µm &lt; d ≤ 5.0 µm: ≤ 100,000;
+Water: Vapor Pressure Dewpoint: ≤ +7 °C, ≤ +45 °F;</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>6</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Particles: By Mass: 0 – ≤ 5 mg/m3;
+Water: Vapor Pressure Dewpoint: ≤ +10 °C, ≤ +50 °F;</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>7</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>7</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Particles: By Mass: 5 – ≤ 10 mg/m3;
+Water: Liquid: ≤ 0.5 g/m3;</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>8</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>8</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Water: Liquid: ≤ 5 g/m3;</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>9</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>9</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Water: Liquid: ≤ 10 g/m3;</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>10</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>X</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Particles: By Mass: &gt; 10 mg/m3;
 Water: Liquid: &gt; 10 g/m3;
-Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;
-              
-            
-          
-        
+Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1518,118 +1519,118 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="7">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                Other
-              
-              
-                Not specified in this enumeration
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                ActivatedCarbonFilter
-              
-              
-                Activated carbon filter
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                AdsorptionFilter
-              
-              
-                Adsorption filter
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                CoalescingFilter
-              
-              
-                Coalescing filter
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                ParticulateFilter
-              
-              
-                Particulate filter
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              5
-              
-                FabricFilter
-              
-              
-                Fabric filter
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              6
-              
-                SterileFilter
-              
-              
-                Sterile filter
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Not specified in this enumeration</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ActivatedCarbonFilter</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Activated carbon filter</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>AdsorptionFilter</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Adsorption filter</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CoalescingFilter</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Coalescing filter</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ParticulateFilter</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Particulate filter</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>FabricFilter</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Fabric filter</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SterileFilter</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Sterile filter</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1665,70 +1666,70 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                Air
-              
-              
-                Air used as fluid
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                Condensate
-              
-              
-                Condensate used as fluid
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                Oil
-              
-              
-                Oil used as fluid
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                Water
-              
-              
-                Water used as fluid
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Air</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Air used as fluid</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Condensate</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Condensate used as fluid</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Oil</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Oil used as fluid</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Water</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Water used as fluid</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1754,70 +1755,70 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                OK
-              
-              
-                The main function can be fulfilled.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                Warning
-              
-              
-                Check required, possibly there is a problem that leads to an Error.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                Error
-              
-              
-                Immediate action needed to avoid Critical.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                Critical
-              
-              
-                The main function cannot be fulfilled.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OK</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The main function can be fulfilled.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Warning</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Check required, possibly there is a problem that leads to an Error.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Error</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Immediate action needed to avoid Critical.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Critical</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The main function cannot be fulfilled.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1843,54 +1844,54 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                FullyIntegrated
-              
-              
-                Compressed air generation or treatment is fully controlled by the MCS.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                PartiallyIntegrated
-              
-              
-                Compressed air generation or treatment is partially controlled by the MCS.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                FullyIsolated
-              
-              
-                Compressed air generation or treatment is not controlled by the MCS.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>FullyIntegrated</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Compressed air generation or treatment is fully controlled by the MCS.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PartiallyIntegrated</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Compressed air generation or treatment is partially controlled by the MCS.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>FullyIsolated</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Compressed air generation or treatment is not controlled by the MCS.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1913,38 +1914,38 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="2">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                IPv4
-              
-              
-                IP address is in IPv4 format
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                IPv6
-              
-              
-                IP address is in IPv6 format
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>IPv4</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>IP address is in IPv4 format</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>IPv6</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>IP address is in IPv6 format</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1965,54 +1966,54 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                NoLubrication
-              
-              
-                No lubrication
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                OilLubricated
-              
-              
-                Oil lubricated
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                WaterLubricated
-              
-              
-                Water lubricated
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NoLubrication</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>No lubrication</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OilLubricated</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Oil lubricated</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>WaterLubricated</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Water lubricated</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -2035,86 +2036,86 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="5">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                Other
-              
-              
-                The component is in a state not specified by this enumeration.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                Stopped
-              
-              
-                The main function shall not be fulfilled.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                Starting
-              
-              
-                Transition phase to end in Operational state.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                Stopping
-              
-              
-                Transition phase to end in Stopped state.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                Operational
-              
-              
-                The main function should be fulfilled.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The component is in a state not specified by this enumeration.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Stopped</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The main function shall not be fulfilled.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Starting</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Transition phase to end in Operational state.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Stopping</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Transition phase to end in Stopped state.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Operational</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The main function should be fulfilled.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -2144,54 +2145,54 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                Other
-              
-              
-                Not specified in this enumeration
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                DryReceiver
-              
-              
-                Dry Receiver
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                WetReceiver
-              
-              
-                Wet Receiver
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Not specified in this enumeration</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DryReceiver</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Dry Receiver</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>WetReceiver</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Wet Receiver</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -2215,214 +2216,214 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="13">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                Other
-              
-              
-                Not specified in this enumeration
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                Ammeter
-              
-              
-                Ammeter
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                DewPointSensor
-              
-              
-                Dew point sensor
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                FlowRateSensor
-              
-              
-                Flow rate sensor
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                FlowSpeedSensor
-              
-              
-                Flow speed sensor
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              5
-              
-                HumiditySensor
-              
-              
-                Humidity sensor
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              6
-              
-                OilConcentrationSensor
-              
-              
-                Oil concentration sensor
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              7
-              
-                ParticleCounter
-              
-              
-                Particle counter
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              8
-              
-                PressureSensor
-              
-              
-                Pressure sensor
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              9
-              
-                TemperatureSensor
-              
-              
-                Temperature sensor
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              10
-              
-                Voltmeter
-              
-              
-                Voltmeter
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              11
-              
-                VolumeSensor
-              
-              
-                Volume sensor
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              12
-              
-                Wattmeter
-              
-              
-                Wattmeter
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Not specified in this enumeration</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Ammeter</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Ammeter</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DewPointSensor</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Dew point sensor</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>FlowRateSensor</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Flow rate sensor</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>FlowSpeedSensor</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Flow speed sensor</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>HumiditySensor</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Humidity sensor</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OilConcentrationSensor</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Oil concentration sensor</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>7</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ParticleCounter</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Particle counter</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>8</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PressureSensor</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Pressure sensor</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>9</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>TemperatureSensor</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Temperature sensor</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>10</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Voltmeter</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Voltmeter</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>11</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>VolumeSensor</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Volume sensor</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>12</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Wattmeter</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Wattmeter</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -2476,102 +2477,102 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="6">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                Other
-              
-              
-                Not specified in this enumeration
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                CentrifugalOilyWaterSeparator
-              
-              
-                Centrifugal oily water separator
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                EmulsionSplittingSeparator
-              
-              
-                Emulsion splitting separator
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                FlotationSeparator
-              
-              
-                Flotation separator
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                GravityPlateSeparator
-              
-              
-                Gravity plate separator
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              5
-              
-                HydrocycloneOilyWaterSeparator
-              
-              
-                Hydrocyclone oily water separator
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Not specified in this enumeration</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CentrifugalOilyWaterSeparator</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Centrifugal oily water separator</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>EmulsionSplittingSeparator</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Emulsion splitting separator</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>FlotationSeparator</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Flotation separator</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>GravityPlateSeparator</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Gravity plate separator</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>HydrocycloneOilyWaterSeparator</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Hydrocyclone oily water separator</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -2604,102 +2605,102 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="6">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                Other
-              
-              
-                Not specified in this enumeration
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                CheckValve
-              
-              
-                Check valve
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                ContinuousValve
-              
-              
-                Continuous valve
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                FlowControlValve
-              
-              
-                Flow control valve
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                PressureValve
-              
-              
-                Pressure valve
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              5
-              
-                SwitchingValve
-              
-              
-                Switching valve
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Not specified in this enumeration</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CheckValve</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Check valve</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ContinuousValve</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Continuous valve</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>FlowControlValve</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Flow control valve</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PressureValve</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Pressure valve</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SwitchingValve</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Switching valve</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -2741,7 +2742,7 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
       </Field>
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix9:SensorTechnologyOptionSet" BaseType="Prefix1:OptionSet">
+  <DataType SymbolicName="Prefix9:SensorTechnologyOptionSet" BaseType="Prefix1:OptionSet" IsOptionSet="true">
     <Description Key="en">flags for the used sensor technologies for a sensor</Description>
     <ClassName />
     <Fields>
@@ -3063,42 +3064,42 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
               <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                 <DefaultValue>
                   <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              EventId
-              
-                i=15
-              
-              -1
-              
-              
-                The identifier for the event to comment.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              Comment
-              
-                i=21
-              
-              -1
-              
-              
-                The comment to add to the condition.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>EventId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The identifier for the event to comment.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Comment</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=21</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The comment to add to the condition.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
                 </DefaultValue>
               </Property>
@@ -3136,42 +3137,42 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
               <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                 <DefaultValue>
                   <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              EventId
-              
-                i=15
-              
-              -1
-              
-              
-                The identifier for the event to comment.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              Comment
-              
-                i=21
-              
-              -1
-              
-              
-                The comment to add to the condition.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>EventId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The identifier for the event to comment.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Comment</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=21</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The comment to add to the condition.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
                 </DefaultValue>
               </Property>
@@ -3188,42 +3189,42 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
               <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                 <DefaultValue>
                   <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              EventId
-              
-                i=15
-              
-              -1
-              
-              
-                The identifier for the event to comment.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              Comment
-              
-                i=21
-              
-              -1
-              
-              
-                The comment to add to the condition.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>EventId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The identifier for the event to comment.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Comment</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=21</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The comment to add to the condition.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
                 </DefaultValue>
               </Property>
@@ -3240,42 +3241,42 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
               <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
                 <DefaultValue>
                   <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              EventId
-              
-                i=15
-              
-              -1
-              
-              
-                The identifier for the event to comment.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              Comment
-              
-                i=21
-              
-              -1
-              
-              
-                The comment to add to the condition.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>EventId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The identifier for the event to comment.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Comment</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=21</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The comment to add to the condition.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
                 </DefaultValue>
               </Property>
@@ -3361,42 +3362,42 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
               <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                 <DefaultValue>
                   <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              EventId
-              
-                i=15
-              
-              -1
-              
-              
-                The identifier for the event to comment.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              Comment
-              
-                i=21
-              
-              -1
-              
-              
-                The comment to add to the condition.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>EventId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The identifier for the event to comment.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Comment</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=21</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The comment to add to the condition.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
                 </DefaultValue>
               </Property>
@@ -3413,42 +3414,42 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
               <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                 <DefaultValue>
                   <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              EventId
-              
-                i=15
-              
-              -1
-              
-              
-                The identifier for the event to comment.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              Comment
-              
-                i=21
-              
-              -1
-              
-              
-                The comment to add to the condition.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>EventId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The identifier for the event to comment.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Comment</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=21</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The comment to add to the condition.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
                 </DefaultValue>
               </Property>
@@ -3465,42 +3466,42 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
               <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
                 <DefaultValue>
                   <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              EventId
-              
-                i=15
-              
-              -1
-              
-              
-                The identifier for the event to comment.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              Comment
-              
-                i=21
-              
-              -1
-              
-              
-                The comment to add to the condition.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>EventId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The identifier for the event to comment.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Comment</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=21</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The comment to add to the condition.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
                 </DefaultValue>
               </Property>
@@ -3586,42 +3587,42 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
               <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                 <DefaultValue>
                   <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              EventId
-              
-                i=15
-              
-              -1
-              
-              
-                The identifier for the event to comment.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              Comment
-              
-                i=21
-              
-              -1
-              
-              
-                The comment to add to the condition.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>EventId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The identifier for the event to comment.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Comment</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=21</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The comment to add to the condition.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
                 </DefaultValue>
               </Property>
@@ -3638,42 +3639,42 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
               <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                 <DefaultValue>
                   <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              EventId
-              
-                i=15
-              
-              -1
-              
-              
-                The identifier for the event to comment.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              Comment
-              
-                i=21
-              
-              -1
-              
-              
-                The comment to add to the condition.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>EventId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The identifier for the event to comment.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Comment</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=21</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The comment to add to the condition.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
                 </DefaultValue>
               </Property>
@@ -3690,42 +3691,42 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
               <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
                 <DefaultValue>
                   <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              EventId
-              
-                i=15
-              
-              -1
-              
-              
-                The identifier for the event to comment.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              Comment
-              
-                i=21
-              
-              -1
-              
-              
-                The comment to add to the condition.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>EventId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The identifier for the event to comment.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Comment</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=21</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The comment to add to the condition.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
                 </DefaultValue>
               </Property>
@@ -3811,42 +3812,42 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
               <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                 <DefaultValue>
                   <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              EventId
-              
-                i=15
-              
-              -1
-              
-              
-                The identifier for the event to comment.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              Comment
-              
-                i=21
-              
-              -1
-              
-              
-                The comment to add to the condition.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>EventId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The identifier for the event to comment.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Comment</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=21</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The comment to add to the condition.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
                 </DefaultValue>
               </Property>
@@ -3863,42 +3864,42 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
               <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                 <DefaultValue>
                   <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              EventId
-              
-                i=15
-              
-              -1
-              
-              
-                The identifier for the event to comment.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              Comment
-              
-                i=21
-              
-              -1
-              
-              
-                The comment to add to the condition.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>EventId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The identifier for the event to comment.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Comment</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=21</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The comment to add to the condition.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
                 </DefaultValue>
               </Property>
@@ -3915,42 +3916,42 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
               <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
                 <DefaultValue>
                   <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              EventId
-              
-                i=15
-              
-              -1
-              
-              
-                The identifier for the event to comment.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              Comment
-              
-                i=21
-              
-              -1
-              
-              
-                The comment to add to the condition.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>EventId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The identifier for the event to comment.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Comment</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=21</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The comment to add to the condition.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
                 </DefaultValue>
               </Property>
@@ -4320,10 +4321,10 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
             <Description>Available operating modes for an airnet in a compressed air system.</Description>
             <DefaultValue>
               <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          0
-          stopped
-        
+        <uax:LocalizedText>
+          <uax:Locale>0</uax:Locale>
+          <uax:Text>stopped</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
             </DefaultValue>
           </Property>
@@ -4409,18 +4410,18 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
       <Variable SymbolicName="Prefix9:FilterClass" TypeDefinition="Prefix1:DataItemType" ModellingRule="Optional" DataType="Prefix9:FilterClassDataType">
         <Description>Filter classes according to ISO 8573-1.</Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5043</Identifier>
-            </TypeId>
-            <Body>
-              <FilterClassDataType xmlns="http://opcfoundation.org/UA/CAS/Types.xsd">
-                <A>0_0</A>
-                <B>0_0</B>
-                <C>0_0</C>
-              </FilterClassDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5043</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <FilterClassDataType xmlns="http://opcfoundation.org/UA/CAS/Types.xsd">
+            <A>0_0</A>
+            <B>0_0</B>
+            <C>0_0</C>
+          </FilterClassDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
     </Children>
@@ -4755,42 +4756,42 @@ Oil: Liquid, Aerosol, &amp; Vapor: &gt; 5 mg/m3;</Description>
                   <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                     <DefaultValue>
                       <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              EventId
-              
-                i=15
-              
-              -1
-              
-              
-                The identifier for the event to comment.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              Comment
-              
-                i=21
-              
-              -1
-              
-              
-                The comment to add to the condition.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>EventId</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The identifier for the event to comment.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Comment</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=21</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The comment to add to the condition.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
                     </DefaultValue>
                   </Property>

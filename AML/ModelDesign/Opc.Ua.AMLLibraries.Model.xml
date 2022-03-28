@@ -1,49 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ModelDesign xmlns:Prefix5="http://opcfoundation.org/UA/AMLLibs/" xmlns:Prefix3="http://opcfoundation.org/UA/AML/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" TargetNamespace="http://opcfoundation.org/UA/AML/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/AML/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/AMLLibs/" TargetNamespace="http://opcfoundation.org/UA/AML/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/AML/" XmlNamespace="http://opcfoundation.org/UA/AML/" XmlPrefix="Prefix3" FilePath="" Version="1.00" PublicationDate="22/02/2016">http://opcfoundation.org/UA/AML/</Namespace>
     <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/AMLLibs/" XmlNamespace="http://opcfoundation.org/UA/AMLLibs/" XmlPrefix="Prefix5" FilePath="" PublicationDate="11/03/2022">http://opcfoundation.org/UA/AMLLibs/</Namespace>
   </Namespaces>
   <ObjectType SymbolicName="Prefix1:AutomationMLBaseInterface" BaseType="Prefix3:CAEXObjectType">
+    <Description />
     <Children>
       <Property SymbolicName="Prefix1:ID" DataType="Prefix1:BaseDataType">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix1:Version" DataType="Prefix1:BaseDataType">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -81,44 +83,45 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:AutomationMLBaseRole" BaseType="Prefix3:CAEXObjectType">
+    <Description />
     <Children>
       <Property SymbolicName="Prefix1:ID" DataType="Prefix1:BaseDataType">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix1:Version" DataType="Prefix1:BaseDataType">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -164,44 +167,45 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:BatchManufacturingEquipment" BaseType="Prefix3:CAEXObjectType">
+    <Description />
     <Children>
       <Property SymbolicName="Prefix1:ID" DataType="Prefix1:BaseDataType">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix1:Version" DataType="Prefix1:BaseDataType">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -209,44 +213,45 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:ContManufacturingEquipment" BaseType="Prefix3:CAEXObjectType">
+    <Description />
     <Children>
       <Property SymbolicName="Prefix1:ID" DataType="Prefix1:BaseDataType">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix1:Version" DataType="Prefix1:BaseDataType">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -254,6 +259,7 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:DiscManufacturingEquipment" BaseType="Prefix1:Resource">
+    <Description />
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasAMLInternalLink</ReferenceType>
@@ -295,6 +301,7 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:ControlEquipment" BaseType="Prefix1:Resource">
+    <Description />
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasAMLInternalLink</ReferenceType>
@@ -320,45 +327,59 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:PLCFacet" BaseType="Prefix1:Facet">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:HMIFacet" BaseType="Prefix1:Facet">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Enterprise" BaseType="Prefix1:ResourceStructure">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Site" BaseType="Prefix1:ResourceStructure">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Area" BaseType="Prefix1:ResourceStructure">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:ProductionLine" BaseType="Prefix1:ResourceStructure">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:WorkCell" BaseType="Prefix1:ResourceStructure">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:ProcessCell" BaseType="Prefix1:ResourceStructure">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Unit" BaseType="Prefix1:ResourceStructure">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:ProductionUnit" BaseType="Prefix1:ResourceStructure">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:StorageZone" BaseType="Prefix1:ResourceStructure">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:StorageUnit" BaseType="Prefix1:ResourceStructure">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Turntable" BaseType="Prefix1:Transport">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Conveyor" BaseType="Prefix1:Transport">
+    <Description />
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasAMLInternalLink</ReferenceType>
@@ -384,39 +405,51 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:LiftingTable" BaseType="Prefix1:Transport">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:AGV" BaseType="Prefix1:Transport">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Transposer" BaseType="Prefix1:Transport">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:CarrierHandlingSystem" BaseType="Prefix1:Transport">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:BodyStore" BaseType="Prefix1:Storage">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Lift" BaseType="Prefix1:Transport">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Rollerbed" BaseType="Prefix1:Transport">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:StationaryTool" BaseType="Prefix1:Tool">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:MovableTool" BaseType="Prefix1:Tool">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:ControlCabinet" BaseType="Prefix1:ControlEquipment">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:IODevice" BaseType="Prefix1:ControlEquipment">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:HMI" BaseType="Prefix1:ControlEquipment">
+    <Description />
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasAMLInternalLink</ReferenceType>
@@ -426,379 +459,395 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:ActuatingDrive" BaseType="Prefix1:Actuator">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:MotionController" BaseType="Prefix1:ControlEquipment">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Panel" BaseType="Prefix1:ControlHardware">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:MeasuringEquipment" BaseType="Prefix1:Resource">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Clamp" BaseType="Prefix1:Fixture">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:ProcessController" BaseType="Prefix1:Controller">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Loader" BaseType="Prefix1:Storage">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Unloader" BaseType="Prefix1:Storage">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Port" BaseType="Prefix1:AutomationMLBaseRole">
+    <Description />
     <Children>
-      <Object SymbolicName="Prefix1:ConnectionPoint" TypeDefinition="Prefix1:PortConnector" />
+      <Object SymbolicName="Prefix1:ConnectionPoint" TypeDefinition="Prefix1:PortConnector">
+        <Description />
+      </Object>
       <Variable SymbolicName="Prefix1:Direction" DataType="Prefix1:String">
+        <Description />
         <Children>
           <Property SymbolicName="Prefix1:ID" DataType="Prefix1:BaseDataType">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:Version" DataType="Prefix1:BaseDataType">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
         </Children>
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix1:Cardinality" DataType="Prefix1:String">
+        <Description />
         <Children>
           <Property SymbolicName="Prefix1:ID" DataType="Prefix1:BaseDataType">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:Version" DataType="Prefix1:BaseDataType">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Variable SymbolicName="Prefix1:MinOccur" DataType="Prefix1:UInt32">
+            <Description />
             <Children>
               <Property SymbolicName="Prefix1:ID" DataType="Prefix1:BaseDataType">
                 <DefaultValue>
                   <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
                 </DefaultValue>
               </Property>
               <Property SymbolicName="Prefix1:Version" DataType="Prefix1:BaseDataType">
                 <DefaultValue>
                   <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
                 </DefaultValue>
               </Property>
             </Children>
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                UInt32
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>UInt32</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Variable>
           <Variable SymbolicName="Prefix1:MaxOccur" DataType="Prefix1:UInt32">
+            <Description />
             <Children>
               <Property SymbolicName="Prefix1:ID" DataType="Prefix1:BaseDataType">
                 <DefaultValue>
                   <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
                 </DefaultValue>
               </Property>
               <Property SymbolicName="Prefix1:Version" DataType="Prefix1:BaseDataType">
                 <DefaultValue>
                   <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
                 </DefaultValue>
               </Property>
             </Children>
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                UInt32
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>UInt32</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Variable>
         </Children>
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix1:Category" DataType="Prefix1:String">
+        <Description />
         <Children>
           <Property SymbolicName="Prefix1:ID" DataType="Prefix1:BaseDataType">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:Version" DataType="Prefix1:BaseDataType">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
         </Children>
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Variable>
       <Property SymbolicName="Prefix1:ID">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix1:Version">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -806,44 +855,45 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:PortConnector" BaseType="Prefix1:AutomationMLBaseInterface">
+    <Description />
     <Children>
       <Property SymbolicName="Prefix1:ID">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix1:Version">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -851,106 +901,108 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Order" BaseType="Prefix1:AutomationMLBaseInterface">
+    <Description />
     <Children>
       <Variable SymbolicName="Prefix1:Direction" DataType="Prefix1:String">
+        <Description />
         <Children>
           <Property SymbolicName="Prefix1:ID" DataType="Prefix1:BaseDataType">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:Version" DataType="Prefix1:BaseDataType">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
         </Children>
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Variable>
       <Property SymbolicName="Prefix1:ID">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix1:Version">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -958,106 +1010,108 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:ExternalDataConnector" BaseType="Prefix1:AutomationMLBaseInterface">
+    <Description />
     <Children>
       <Variable SymbolicName="Prefix1:refURI" DataType="Prefix1:String">
+        <Description />
         <Children>
           <Property SymbolicName="Prefix1:ID" DataType="Prefix1:BaseDataType">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:Version" DataType="Prefix1:BaseDataType">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
         </Children>
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Variable>
       <Property SymbolicName="Prefix1:ID">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix1:Version">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1075,86 +1129,88 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:InterlockingVariableInterface" BaseType="Prefix1:VariableInterface">
+    <Description />
     <Children>
       <Variable SymbolicName="Prefix1:SafeConditionEquals" DataType="Prefix1:Boolean">
+        <Description />
         <Children>
           <Property SymbolicName="Prefix1:ID" DataType="Prefix1:BaseDataType">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:Version" DataType="Prefix1:BaseDataType">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:DefaultValue" DataType="Prefix1:BaseDataType">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              true
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>true</Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
         </Children>
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                Boolean
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>Boolean</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Variable>
@@ -1162,106 +1218,108 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Group" BaseType="Prefix1:AutomationMLBaseRole">
+    <Description />
     <Children>
       <Variable SymbolicName="Prefix1:AssociatedFacet" DataType="Prefix1:String">
+        <Description />
         <Children>
           <Property SymbolicName="Prefix1:ID" DataType="Prefix1:BaseDataType">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:Version" DataType="Prefix1:BaseDataType">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
         </Children>
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Variable>
       <Property SymbolicName="Prefix1:ID">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix1:Version">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1279,44 +1337,45 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:InterlockingConnector" BaseType="Prefix1:AutomationMLBaseInterface">
+    <Description />
     <Children>
       <Property SymbolicName="Prefix1:ID">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix1:Version">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1324,44 +1383,45 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:PPRConnector" BaseType="Prefix1:AutomationMLBaseInterface">
+    <Description />
     <Children>
       <Property SymbolicName="Prefix1:ID">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix1:Version">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1369,44 +1429,45 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Communication" BaseType="Prefix1:AutomationMLBaseInterface">
+    <Description />
     <Children>
       <Property SymbolicName="Prefix1:ID">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix1:Version">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1420,44 +1481,45 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:AttachmentInterface" BaseType="Prefix1:AutomationMLBaseInterface">
+    <Description />
     <Children>
       <Property SymbolicName="Prefix1:ID">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix1:Version">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1465,9 +1527,11 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:COLLADAInterface" BaseType="Prefix1:ExternalDataConnector">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:PLCopenXMLInterface" BaseType="Prefix1:ExternalDataConnector">
+    <Description />
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasAMLInternalLink</ReferenceType>
@@ -1481,12 +1545,15 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:SignalInterface" BaseType="Prefix1:Communication">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:LogicInterface" BaseType="Prefix1:PLCopenXMLInterface">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:VariableInterface" BaseType="Prefix1:PLCopenXMLInterface">
+    <Description />
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasAMLInternalLink</ReferenceType>
@@ -1496,44 +1563,45 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Facet" BaseType="Prefix1:AutomationMLBaseRole">
+    <Description />
     <Children>
       <Property SymbolicName="Prefix1:ID">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix1:Version">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1541,44 +1609,45 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Resource" BaseType="Prefix1:AutomationMLBaseRole">
+    <Description />
     <Children>
       <Property SymbolicName="Prefix1:ID">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix1:Version">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1586,44 +1655,45 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Product" BaseType="Prefix1:AutomationMLBaseRole">
+    <Description />
     <Children>
       <Property SymbolicName="Prefix1:ID">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix1:Version">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1631,44 +1701,45 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Process" BaseType="Prefix1:AutomationMLBaseRole">
+    <Description />
     <Children>
       <Property SymbolicName="Prefix1:ID">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix1:Version">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1676,44 +1747,45 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Structure" BaseType="Prefix1:AutomationMLBaseRole">
+    <Description />
     <Children>
       <Property SymbolicName="Prefix1:ID">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix1:Version">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1735,44 +1807,45 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:PropertySet" BaseType="Prefix1:AutomationMLBaseRole">
+    <Description />
     <Children>
       <Property SymbolicName="Prefix1:ID">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix1:Version">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1780,44 +1853,45 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Frame" BaseType="Prefix1:AutomationMLBaseRole">
+    <Description />
     <Children>
       <Property SymbolicName="Prefix1:ID">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix1:Version">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              
-              
-                String
-              
-              -1
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name></Name>
+              <DataType>
+                <Identifier>String</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1825,51 +1899,67 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:SignalGroup" BaseType="Prefix1:Group">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:ComponentGroup" BaseType="Prefix1:Group">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:ProductStructure" BaseType="Prefix1:Structure">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:ProcessStructure" BaseType="Prefix1:Structure">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:ResourceStructure" BaseType="Prefix1:Structure">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Transport" BaseType="Prefix1:DiscManufacturingEquipment">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Storage" BaseType="Prefix1:DiscManufacturingEquipment">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Fixture" BaseType="Prefix1:DiscManufacturingEquipment">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Gate" BaseType="Prefix1:DiscManufacturingEquipment">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Robot" BaseType="Prefix1:DiscManufacturingEquipment">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Tool" BaseType="Prefix1:DiscManufacturingEquipment">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Carrier" BaseType="Prefix1:DiscManufacturingEquipment">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Machine" BaseType="Prefix1:DiscManufacturingEquipment">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:StaticObject" BaseType="Prefix1:DiscManufacturingEquipment">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Communication" BaseType="Prefix1:ControlEquipment">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:ControlHardware" BaseType="Prefix1:ControlEquipment">
+    <Description />
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasAMLInternalLink</ReferenceType>
@@ -1891,12 +1981,15 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Sensor" BaseType="Prefix1:ControlEquipment">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Actuator" BaseType="Prefix1:ControlEquipment">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Controller" BaseType="Prefix1:ControlEquipment">
+    <Description />
     <References>
       <Reference>
         <ReferenceType>Prefix3:HasAMLInternalLink</ReferenceType>
@@ -1918,45 +2011,59 @@
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:PC" BaseType="Prefix1:ControlHardware">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:IPC" BaseType="Prefix1:ControlHardware">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:EmbeddedDevice" BaseType="Prefix1:ControlHardware">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:Handheld" BaseType="Prefix1:ControlHardware">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:PLC" BaseType="Prefix1:Controller">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:NC" BaseType="Prefix1:Controller">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:RC" BaseType="Prefix1:Controller">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:PAC" BaseType="Prefix1:Controller">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:BeltConveyor" BaseType="Prefix1:Conveyor">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:RollConveyor" BaseType="Prefix1:Conveyor">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:ChainConveyor" BaseType="Prefix1:Conveyor">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:PalletConveyor" BaseType="Prefix1:Conveyor">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:OverheadConveyor" BaseType="Prefix1:Conveyor">
+    <Description />
     <ClassName />
   </ObjectType>
   <ObjectType SymbolicName="Prefix1:WarningEquipment" BaseType="Prefix1:HMI">
+    <Description />
     <ClassName />
   </ObjectType>
 </ModelDesign>
