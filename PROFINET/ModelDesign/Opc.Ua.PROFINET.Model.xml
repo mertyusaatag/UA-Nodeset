@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ModelDesign xmlns:Prefix3="http://opcfoundation.org/UA/PROFINET/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix1="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/PROFINET/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix3="http://opcfoundation.org/UA/PROFINET/" TargetNamespace="http://opcfoundation.org/UA/PROFINET/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/PROFINET/" XmlNamespace="http://opcfoundation.org/UA/PROFINET/" XmlPrefix="Prefix3" FilePath="" Version="1.0.1" PublicationDate="13/04/2021">http://opcfoundation.org/UA/PROFINET/</Namespace>
@@ -9,15 +10,15 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          FUNCTION
-        
-        
-          LOCATION
-        
-        
-          BOTH
-        
+        <uax:LocalizedText>
+          <uax:Text>FUNCTION</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>LOCATION</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>BOTH</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -34,86 +35,86 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="5">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                CONNECTED
-              
-              
-                The AR connection to the device is established
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                UNCONNECTED
-              
-              
-                The AR connection to the device is not established
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                UNCONNECTED_ERR_DEVICE_NOT_FOUND
-              
-              
-                The AR connection to the device is not established because the device is not available in the network
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                UNCONNECTED_ERR_DUPLICATE_IP
-              
-              
-                The AR connection to the device is not established because the IP address of the device exists multiple times
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                UNCONNECTED_ERR_DUPLICATE_NOS
-              
-              
-                The AR connection to the device is not established because the Name of Station of the device exists multiple times
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CONNECTED</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The AR connection to the device is established</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UNCONNECTED</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The AR connection to the device is not established</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UNCONNECTED_ERR_DEVICE_NOT_FOUND</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The AR connection to the device is not established because the device is not available in the network</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UNCONNECTED_ERR_DUPLICATE_IP</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The AR connection to the device is not established because the IP address of the device exists multiple times</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UNCONNECTED_ERR_DUPLICATE_NOS</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The AR connection to the device is not established because the Name of Station of the device exists multiple times</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -142,68 +143,68 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                IOCARSingle
-              
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              6
-              
-                IOSAR
-              
-              
-                The supervisor AR is a special form of the IOCARSingle allowing takeover of the ownership of a submodule
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              16
-              
-                IOCARSingleUsingRT_CLASS_3
-              
-              
-                This is a special form of the IOCARSingle indicating RT_CLASS_3 communication
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              32
-              
-                IOCARSR
-              
-              
-                The SR AR is a special form of the IOCARSingle indicating system redundancy or dynamic reconfiguration usage
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>IOCARSingle</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>IOSAR</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The supervisor AR is a special form of the IOCARSingle allowing takeover of the ownership of a submodule</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>16</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>IOCARSingleUsingRT_CLASS_3</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>This is a special form of the IOCARSingle indicating RT_CLASS_3 communication</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>32</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>IOCARSR</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The SR AR is a special form of the IOCARSingle indicating system redundancy or dynamic reconfiguration usage</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -227,54 +228,54 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                INSERTED
-              
-              
-                Asset has been added
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                REMOVED
-              
-              
-                Asset has been removed
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                CHANGED
-              
-              
-                Asset has been changed
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>INSERTED</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Asset has been added</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>REMOVED</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Asset has been removed</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CHANGED</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Asset has been changed</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -297,70 +298,70 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                DEVICE
-              
-              
-                Device
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                MODULE
-              
-              
-                Real Module
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                SUBMODULE
-              
-              
-                Real Submodule
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                ASSET
-              
-              
-                Asset
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DEVICE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Device</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MODULE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Real Module</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SUBMODULE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Real Submodule</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ASSET</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Asset</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -386,42 +387,42 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="2">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                SINGLE
-              
-              
-                Single channel 
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SINGLE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Single channel 
 Diagnosis only for the reported channel
-
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              256
-              
-                ACCUMULATIVE
-              
-              
-                Multiple channel 
+</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>256</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCUMULATIVE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Multiple channel 
 Accumulative diagnosis from more than one channel
-
-              
-            
-          
-        
+</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -445,70 +446,70 @@ Accumulative diagnosis from more than one channel
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                MANUFACTURER_SPECIFIC
-              
-              
-                Manufacturer specific
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              8192
-              
-                INPUT_CHANNEL
-              
-              
-                Input
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              16384
-              
-                OUTPUT_CHANNEL
-              
-              
-                Output
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              24576
-              
-                BIDIRECTIONAL_CHANNEL
-              
-              
-                Input/Output
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MANUFACTURER_SPECIFIC</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Manufacturer specific</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>8192</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>INPUT_CHANNEL</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Input</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>16384</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OUTPUT_CHANNEL</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Output</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>24576</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>BIDIRECTIONAL_CHANNEL</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Input/Output</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -534,70 +535,70 @@ Accumulative diagnosis from more than one channel
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                FAULT
-              
-              
-                Fault
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              512
-              
-                MAINTENANCE_REQUIRED
-              
-              
-                Maintenance required
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1024
-              
-                MAINTENANCE_DEMANDED
-              
-              
-                Maintenance demanded
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1536
-              
-                USE_QUALIFIED_CHANNEL_QUALIFIER
-              
-              
-                Use QualifiedChannelQualifier variable
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>FAULT</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Fault</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>512</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MAINTENANCE_REQUIRED</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Maintenance required</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1024</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MAINTENANCE_DEMANDED</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Maintenance demanded</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1536</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>USE_QUALIFIED_CHANNEL_QUALIFIER</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Use QualifiedChannelQualifier variable</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -623,76 +624,76 @@ Accumulative diagnosis from more than one channel
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                ALL_DISAPPEARS
-              
-              
-                The Diagnosis ASE contains no longer any entries (of any severity) for this channel
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2048
-              
-                APPEARS
-              
-              
-                An event appears and/or exists further
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ALL_DISAPPEARS</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The Diagnosis ASE contains no longer any entries (of any severity) for this channel</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2048</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>APPEARS</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>An event appears and/or exists further
 The Diagnosis ASE contains this and possible other entries for this channel.
-
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4096
-              
-                DISAPPEARS
-              
-              
-                An event disappears and/or exists no longer
+</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4096</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DISAPPEARS</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>An event disappears and/or exists no longer
 The Diagnosis ASE contains no longer any entries of the same severity for this channel
-
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              6144
-              
-                DISAPPEARS_OTHER_REMAIN
-              
-              
-                An event disappears
+</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6144</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DISAPPEARS_OTHER_REMAIN</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>An event disappears
 The Diagnosis ASE still contains other entries of the same severity for this channel
-
-              
-            
-          
-        
+</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -724,136 +725,136 @@ The Diagnosis ASE still contains other entries of the same severity for this cha
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="8">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                UNSPECIFIC
-              
-              
-                Shall be used if the field ChannelNumber contains the value 0x8000 (submodule)
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UNSPECIFIC</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Shall be used if the field ChannelNumber contains the value 0x8000 (submodule)
 Furthermore, it shall be used if none of the below defined types are appropriate.
-
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                1BIT
-              
-              
-                The data length of this channel is 1 Bit.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                2BIT
-              
-              
-                The data length of this channel is 2 Bit.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                4BIT
-              
-              
-                The data length of this channel is 4 Bit.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                8BIT
-              
-              
-                The data length of this channel is 8 Bit.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              5
-              
-                16BIT
-              
-              
-                The data length of this channel is 16 Bit.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              6
-              
-                32BIT
-              
-              
-                The data length of this channel is 32 Bit.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              7
-              
-                64BIT
-              
-              
-                The data length of this channel is 64 Bit.
-              
-            
-          
-        
+</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>1BIT</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The data length of this channel is 1 Bit.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>2BIT</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The data length of this channel is 2 Bit.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>4BIT</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The data length of this channel is 4 Bit.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>8BIT</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The data length of this channel is 8 Bit.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>16BIT</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The data length of this channel is 16 Bit.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>32BIT</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The data length of this channel is 32 Bit.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>7</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>64BIT</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The data length of this channel is 64 Bit.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -893,70 +894,70 @@ Furthermore, it shall be used if none of the below defined types are appropriate
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                OFFLINE
-              
-              
-                The device is not online, or no information is available. The device is offline if no ARs other than possible Device Access AR’s exist.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                OFFLINE_DOCKING
-              
-              
-                The device is a docking device and currently not online.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                ONLINE
-              
-              
-                The device is online. This is the case if at least one AR other than possible Device Access AR’s exists.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                ONLINE_DOCKING
-              
-              
-                The device is a docking device and currently online.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OFFLINE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The device is not online, or no information is available. The device is offline if no ARs other than possible Device Access AR’s exist.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OFFLINE_DOCKING</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The device is a docking device and currently not online.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ONLINE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The device is online. This is the case if at least one AR other than possible Device Access AR’s exists.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ONLINE_DOCKING</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The device is a docking device and currently online.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -982,118 +983,118 @@ Furthermore, it shall be used if none of the below defined types are appropriate
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="7">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                UP
-              
-              
-                Ready to pass packets
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                DOWN
-              
-              
-                No packets are passed
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                TESTING
-              
-              
-                In some test mode
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                UNKNOWN
-              
-              
-                Status cannot be determined
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              5
-              
-                DORMANT
-              
-              
-                In pending state waiting  for some external event
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              6
-              
-                NOT_PRESENT
-              
-              
-                Port not present
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              7
-              
-                LOWER_LAYER_DOWN
-              
-              
-                Down due to lower layer
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UP</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Ready to pass packets</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DOWN</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>No packets are passed</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>TESTING</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>In some test mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UNKNOWN</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Status cannot be determined</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DORMANT</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>In pending state waiting  for some external event</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NOT_PRESENT</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Port not present</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>7</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>LOWER_LAYER_DOWN</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Down due to lower layer</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1128,86 +1129,86 @@ Furthermore, it shall be used if none of the below defined types are appropriate
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="5">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                NO_MODULE
-              
-              
-                For example module not plugged
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                WRONG_MODULE
-              
-              
-                For example ModuleIdentNumber wrong
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                PROPER_MODULE
-              
-              
-                Module is okay but at least one submodule is locked, wrong or missing
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                SUBSTITUTE
-              
-              
-                Module is not the same as requested – but the IO device was able to adapt by its own knowledge
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                OK
-              
-              
-                Default state
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NO_MODULE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>For example module not plugged</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>WRONG_MODULE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>For example ModuleIdentNumber wrong</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PROPER_MODULE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Module is okay but at least one submodule is locked, wrong or missing</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SUBSTITUTE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Module is not the same as requested – but the IO device was able to adapt by its own knowledge</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OK</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Default state</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1236,112 +1237,112 @@ Furthermore, it shall be used if none of the below defined types are appropriate
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="7">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                UNKNOWN
-              
-              
-                Status cannot be determined
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                DISABLED_DISCARDING
-              
-              
-                The port is administratively disabled and discarding frames
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                BLOCKING
-              
-              
-                The port blocks incoming frames
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                LISTENING
-              
-              
-                The port is listening to and sending BPDUs (Bridge Protocol Data Units).
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                LEARNING
-              
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              5
-              
-                FORWARDING
-              
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              6
-              
-                BROKEN
-              
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UNKNOWN</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Status cannot be determined</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DISABLED_DISCARDING</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The port is administratively disabled and discarding frames</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>BLOCKING</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The port blocks incoming frames</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>LISTENING</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The port is listening to and sending BPDUs (Bridge Protocol Data Units).</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>LEARNING</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>FORWARDING</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>BROKEN</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1370,36 +1371,36 @@ Furthermore, it shall be used if none of the below defined types are appropriate
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="2">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                NO_ADD_INFO
-              
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                TAKEOVER_NOT_ALLOWED
-              
-              
-                This Submodule is not available for takeover by IOSAR.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NO_ADD_INFO</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>TAKEOVER_NOT_ALLOWED</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>This Submodule is not available for takeover by IOSAR.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1417,86 +1418,86 @@ Furthermore, it shall be used if none of the below defined types are appropriate
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="5">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                OWN
-              
-              
-                This AR is owner of the submodule
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              128
-              
-                APPLICATION_READY_PENDING
-              
-              
-                This AR is owner of the submodule but it is blocked. For example parameter checking pending
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              256
-              
-                SUPERORDINATED_LOCKED
-              
-              
-                This AR is not owner of the submodule. It is blocked by superordinated means
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              384
-              
-                LOCKED_BY_IO_CONTROLLER
-              
-              
-                This AR is not owner of the submodule. It is owned by another IOAR
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              512
-              
-                LOCKED_BY_IO_SUPERVISOR
-              
-              
-                This AR is not owner of the submodule. It is owned by another IOSAR
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OWN</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>This AR is owner of the submodule</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>128</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>APPLICATION_READY_PENDING</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>This AR is owner of the submodule but it is blocked. For example parameter checking pending</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>256</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SUPERORDINATED_LOCKED</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>This AR is not owner of the submodule. It is blocked by superordinated means</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>384</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>LOCKED_BY_IO_CONTROLLER</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>This AR is not owner of the submodule. It is owned by another IOAR</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>512</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>LOCKED_BY_IO_SUPERVISOR</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>This AR is not owner of the submodule. It is owned by another IOSAR</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1525,70 +1526,70 @@ Furthermore, it shall be used if none of the below defined types are appropriate
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                OK
-              
-              
-                OK
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2048
-              
-                SUBSTITUTE
-              
-              
-                Substitute (SU)
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4096
-              
-                WRONG
-              
-              
-                Wrong (WR)
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              6144
-              
-                NO_SUBMODULE
-              
-              
-                NoSubmodule (NO)
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OK</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>OK</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2048</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SUBSTITUTE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Substitute (SU)</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4096</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>WRONG</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Wrong (WR)</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6144</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NO_SUBMODULE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>NoSubmodule (NO)</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1609,7 +1610,7 @@ Furthermore, it shall be used if none of the below defined types are appropriate
       </Field>
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix3:PnDeviceRoleOptionSet" BaseType="Prefix1:OptionSet">
+  <DataType SymbolicName="Prefix3:PnDeviceRoleOptionSet" BaseType="Prefix1:OptionSet" IsOptionSet="true">
     <ClassName />
     <Fields>
       <Field Name="IO_DEVICE" Identifier="0" BitMask="" ArrayDimensions="">
@@ -1681,63 +1682,63 @@ Furthermore, it shall be used if none of the below defined types are appropriate
       </Field>
     </Fields>
   </DataType>
-  <ReferenceType SymbolicName="Prefix3:HasPnApplicationRelation" BaseType="Prefix1:HasComponent">
+  <ReferenceType SymbolicName="Prefix3:HasPnApplicationRelation" Category="Attribute, BrowseName, InverseName, Symmetric, IsAbstract, Subtype of the HasComponent from [OPC 10000-5]." BaseType="Prefix1:HasComponent">
     <ClassName />
     <InverseName>IsPnApplicationRelationOf</InverseName>
   </ReferenceType>
-  <ReferenceType SymbolicName="Prefix3:HasPnAsset" BaseType="Prefix1:HasComponent">
+  <ReferenceType SymbolicName="Prefix3:HasPnAsset" Category="Attribute, BrowseName, InverseName, Symmetric, IsAbstract, Subtype of the HasComponent from [OPC 10000-5]." BaseType="Prefix1:HasComponent">
     <ClassName />
     <InverseName>IsPnAssetOf</InverseName>
   </ReferenceType>
-  <ReferenceType SymbolicName="Prefix3:HasPnExpectedModule" BaseType="Prefix1:HasComponent">
+  <ReferenceType SymbolicName="Prefix3:HasPnExpectedModule" Category="Attribute, BrowseName, InverseName, Symmetric, IsAbstract, Subtype of the HasComponent from [OPC 10000-5]." BaseType="Prefix1:HasComponent">
     <ClassName />
     <InverseName>IsPnExpectedModuleOf</InverseName>
   </ReferenceType>
-  <ReferenceType SymbolicName="Prefix3:HasPnExpectedSubmodule" BaseType="Prefix1:HasComponent">
+  <ReferenceType SymbolicName="Prefix3:HasPnExpectedSubmodule" Category="Attribute, BrowseName, InverseName, Symmetric, IsAbstract, Subtype of the HasComponent from [OPC 10000-5]." BaseType="Prefix1:HasComponent">
     <ClassName />
     <InverseName>IsPnExpectedSubmoduleOf</InverseName>
   </ReferenceType>
-  <ReferenceType SymbolicName="Prefix3:HasPnInterface" BaseType="Prefix1:HasComponent">
+  <ReferenceType SymbolicName="Prefix3:HasPnInterface" Category="Attribute, BrowseName, InverseName, Symmetric, IsAbstract, Subtype of the HasComponent from [OPC 10000-5]." BaseType="Prefix1:HasComponent">
     <ClassName />
     <InverseName>IsPnInterfaceOf</InverseName>
   </ReferenceType>
-  <ReferenceType SymbolicName="Prefix3:HasPnPort" BaseType="Prefix1:HasComponent">
+  <ReferenceType SymbolicName="Prefix3:HasPnPort" Category="Attribute, BrowseName, InverseName, Symmetric, IsAbstract, Subtype of the HasComponent from [OPC 10000-5]." BaseType="Prefix1:HasComponent">
     <ClassName />
     <InverseName>IsPnPortOf</InverseName>
   </ReferenceType>
-  <ReferenceType SymbolicName="Prefix3:HasPnRealModule" BaseType="Prefix1:HasComponent">
+  <ReferenceType SymbolicName="Prefix3:HasPnRealModule" Category="Attribute, BrowseName, InverseName, Symmetric, IsAbstract, Subtype of the HasComponent from [OPC 10000-5]." BaseType="Prefix1:HasComponent">
     <ClassName />
     <InverseName>IsPnRealModuleOf</InverseName>
   </ReferenceType>
-  <ReferenceType SymbolicName="Prefix3:HasPnRealSubmodule" BaseType="Prefix1:HasComponent">
+  <ReferenceType SymbolicName="Prefix3:HasPnRealSubmodule" Category="Attribute, BrowseName, InverseName, Symmetric, IsAbstract, Subtype of the HasComponent from [OPC 10000-5]." BaseType="Prefix1:HasComponent">
     <ClassName />
     <InverseName>IsPnRealSubmoduleOf</InverseName>
   </ReferenceType>
-  <ReferenceType SymbolicName="Prefix3:CommLinkTo" BaseType="Prefix1:Organizes">
+  <ReferenceType SymbolicName="Prefix3:CommLinkTo" Category="Attribute, BrowseName, InverseName, Symmetric, IsAbstract, Subtype of the Organizes from [OPC 10000-5]." BaseType="Prefix1:Organizes">
     <ClassName />
     <InverseName>CommLinkFrom</InverseName>
   </ReferenceType>
-  <ReferenceType SymbolicName="Prefix3:IsPnApplicationRelationControllerInterface" BaseType="Prefix1:NonHierarchicalReferences">
+  <ReferenceType SymbolicName="Prefix3:IsPnApplicationRelationControllerInterface" Category="Attribute, BrowseName, InverseName, Symmetric, IsAbstract, Subtype of the NonHierarchicalReferences from [OPC 10000-5]." BaseType="Prefix1:NonHierarchicalReferences">
     <ClassName />
     <InverseName>UsedByPnApplicationRelation</InverseName>
   </ReferenceType>
-  <ReferenceType SymbolicName="Prefix3:IsPnApplicationRelationDeviceInterface" BaseType="Prefix1:NonHierarchicalReferences">
+  <ReferenceType SymbolicName="Prefix3:IsPnApplicationRelationDeviceInterface" Category="Attribute, BrowseName, InverseName, Symmetric, IsAbstract, Subtype of the NonHierarchicalReferences from [OPC 10000-5]." BaseType="Prefix1:NonHierarchicalReferences">
     <ClassName />
     <InverseName>UsedByPnApplicationRelation</InverseName>
   </ReferenceType>
-  <ReferenceType SymbolicName="Prefix3:IsPnInterface" BaseType="Prefix1:NonHierarchicalReferences">
+  <ReferenceType SymbolicName="Prefix3:IsPnInterface" Category="Attribute, BrowseName, InverseName, Symmetric, IsAbstract, Subtype of the NonHierarchicalReferences from [OPC 10000-5]." BaseType="Prefix1:NonHierarchicalReferences">
     <ClassName />
     <InverseName>RealizedByPnSubmodule</InverseName>
   </ReferenceType>
-  <ReferenceType SymbolicName="Prefix3:IsPnPort" BaseType="Prefix1:NonHierarchicalReferences">
+  <ReferenceType SymbolicName="Prefix3:IsPnPort" Category="Attribute, BrowseName, InverseName, Symmetric, IsAbstract, Subtype of the NonHierarchicalReferences from [OPC 10000-5]." BaseType="Prefix1:NonHierarchicalReferences">
     <ClassName />
     <InverseName>RealizedByPnSubmodule</InverseName>
   </ReferenceType>
-  <ReferenceType SymbolicName="Prefix3:IsPnRealModule" BaseType="Prefix1:NonHierarchicalReferences">
+  <ReferenceType SymbolicName="Prefix3:IsPnRealModule" Category="Attribute, BrowseName, InverseName, Symmetric, IsAbstract, Subtype of the NonHierarchicalReferences from [OPC 10000-5]." BaseType="Prefix1:NonHierarchicalReferences">
     <ClassName />
     <InverseName>IsPnExpectedModule</InverseName>
   </ReferenceType>
-  <ReferenceType SymbolicName="Prefix3:IsPnRealSubmodule" BaseType="Prefix1:NonHierarchicalReferences">
+  <ReferenceType SymbolicName="Prefix3:IsPnRealSubmodule" Category="Attribute, BrowseName, InverseName, Symmetric, IsAbstract, Subtype of the NonHierarchicalReferences from [OPC 10000-5]." BaseType="Prefix1:NonHierarchicalReferences">
     <ClassName />
     <InverseName>IsPnExpectedSubmodule</InverseName>
   </ReferenceType>
@@ -1768,33 +1769,33 @@ Furthermore, it shall be used if none of the below defined types are appropriate
       <Variable SymbolicName="Prefix3:Diagnosis" ModellingRule="Optional" DataType="Prefix3:PnDeviceDiagnosisDataType" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            ns=1;i=5005
-          
-          
-            
-              0
-              0
-              0
-              0
-              UNSPECIFIC_0
-              SINGLE_0
-              FAULT_0
-              ALL_DISAPPEARS_0
-              MANUFACTURER_SPECIFIC_0
-              0
-              0
-              0
-              0
-              0
-              
-              
-              
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>ns=1;i=5005</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <PnDeviceDiagnosisDataType xmlns="http://opcfoundation.org/UA/PROFINET/Types.xsd">
+              <API>0</API>
+              <Slot>0</Slot>
+              <Subslot>0</Subslot>
+              <ChannelNumber>0</ChannelNumber>
+              <Type>UNSPECIFIC_0</Type>
+              <Accumulative>SINGLE_0</Accumulative>
+              <Maintenance>FAULT_0</Maintenance>
+              <Specifier>ALL_DISAPPEARS_0</Specifier>
+              <Direction>MANUFACTURER_SPECIFIC_0</Direction>
+              <UserStructureIdentifier>0</UserStructureIdentifier>
+              <ChannelErrorType>0</ChannelErrorType>
+              <ExtChannelErrorType>0</ExtChannelErrorType>
+              <ExtChannelAddValue>0</ExtChannelAddValue>
+              <QualifiedChannelQualifier>0</QualifiedChannelQualifier>
+              <ManufacturerData>
+              </ManufacturerData>
+              <Message />
+              <HelpText />
+            </PnDeviceDiagnosisDataType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Variable>
@@ -1818,33 +1819,33 @@ Furthermore, it shall be used if none of the below defined types are appropriate
       <Variable SymbolicName="Prefix3:Diagnosis" ModellingRule="Optional" DataType="Prefix3:PnDeviceDiagnosisDataType" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            ns=1;i=5005
-          
-          
-            
-              0
-              0
-              0
-              0
-              UNSPECIFIC_0
-              SINGLE_0
-              FAULT_0
-              ALL_DISAPPEARS_0
-              MANUFACTURER_SPECIFIC_0
-              0
-              0
-              0
-              0
-              0
-              
-              
-              
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>ns=1;i=5005</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <PnDeviceDiagnosisDataType xmlns="http://opcfoundation.org/UA/PROFINET/Types.xsd">
+              <API>0</API>
+              <Slot>0</Slot>
+              <Subslot>0</Subslot>
+              <ChannelNumber>0</ChannelNumber>
+              <Type>UNSPECIFIC_0</Type>
+              <Accumulative>SINGLE_0</Accumulative>
+              <Maintenance>FAULT_0</Maintenance>
+              <Specifier>ALL_DISAPPEARS_0</Specifier>
+              <Direction>MANUFACTURER_SPECIFIC_0</Direction>
+              <UserStructureIdentifier>0</UserStructureIdentifier>
+              <ChannelErrorType>0</ChannelErrorType>
+              <ExtChannelErrorType>0</ExtChannelErrorType>
+              <ExtChannelAddValue>0</ExtChannelAddValue>
+              <QualifiedChannelQualifier>0</QualifiedChannelQualifier>
+              <ManufacturerData>
+              </ManufacturerData>
+              <Message />
+              <HelpText />
+            </PnDeviceDiagnosisDataType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Variable>
@@ -1870,33 +1871,33 @@ Furthermore, it shall be used if none of the below defined types are appropriate
       <Variable SymbolicName="Prefix3:Diagnosis" ModellingRule="Optional" DataType="Prefix3:PnDeviceDiagnosisDataType" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            ns=1;i=5005
-          
-          
-            
-              0
-              0
-              0
-              0
-              UNSPECIFIC_0
-              SINGLE_0
-              FAULT_0
-              ALL_DISAPPEARS_0
-              MANUFACTURER_SPECIFIC_0
-              0
-              0
-              0
-              0
-              0
-              
-              
-              
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>ns=1;i=5005</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <PnDeviceDiagnosisDataType xmlns="http://opcfoundation.org/UA/PROFINET/Types.xsd">
+              <API>0</API>
+              <Slot>0</Slot>
+              <Subslot>0</Subslot>
+              <ChannelNumber>0</ChannelNumber>
+              <Type>UNSPECIFIC_0</Type>
+              <Accumulative>SINGLE_0</Accumulative>
+              <Maintenance>FAULT_0</Maintenance>
+              <Specifier>ALL_DISAPPEARS_0</Specifier>
+              <Direction>MANUFACTURER_SPECIFIC_0</Direction>
+              <UserStructureIdentifier>0</UserStructureIdentifier>
+              <ChannelErrorType>0</ChannelErrorType>
+              <ExtChannelErrorType>0</ExtChannelErrorType>
+              <ExtChannelAddValue>0</ExtChannelAddValue>
+              <QualifiedChannelQualifier>0</QualifiedChannelQualifier>
+              <ManufacturerData>
+              </ManufacturerData>
+              <Message />
+              <HelpText />
+            </PnDeviceDiagnosisDataType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Variable>
@@ -2037,24 +2038,24 @@ Furthermore, it shall be used if none of the below defined types are appropriate
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              Date
-              
-                i=13
-              
-              -1
-              
-              
-                New I&amp;M2 | IM_Date to be written remanent to the device. 
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Date</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=13</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>New I&amp;M2 | IM_Date to be written remanent to the device. </uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -2065,24 +2066,24 @@ Furthermore, it shall be used if none of the below defined types are appropriate
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              Descriptor
-              
-                i=12
-              
-              -1
-              
-              
-                New I&amp;M3 | IM_Descriptor to be written remanent to the device. 
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Descriptor</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>New I&amp;M3 | IM_Descriptor to be written remanent to the device. </uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -2093,60 +2094,60 @@ Furthermore, it shall be used if none of the below defined types are appropriate
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="3">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              Tag_Selector
-              
-                ns=1;i=3021
-              
-              -1
-              
-              
-                If 1, Tag_Function shall be written, If 2, Tag_Location shall be written, if 3 both.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              Tag_Function
-              
-                i=12
-              
-              -1
-              
-              
-                String containing the new I&amp;M1 | IM_Tag_Function to be written remanent to the device. 
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              Tag_Location
-              
-                i=12
-              
-              -1
-              
-              
-                String containing the new I&amp;M1 | IM_Tag_Location to be written remanent to the device.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Tag_Selector</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3021</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>If 1, Tag_Function shall be written, If 2, Tag_Location shall be written, if 3 both.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Tag_Function</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>String containing the new I&amp;M1 | IM_Tag_Function to be written remanent to the device. </uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Tag_Location</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>String containing the new I&amp;M1 | IM_Tag_Location to be written remanent to the device.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -2216,25 +2217,25 @@ Furthermore, it shall be used if none of the below defined types are appropriate
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              NameOfStation
-              
-                i=12
-              
-              -1
-              
-              
-                String containing the new NameOfStation to be written remanent to the device. The maximum length shall be limited to 240 characters (See [PN Protocol] for details).
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>NameOfStation</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>String containing the new NameOfStation to be written remanent to the device. The maximum length shall be limited to 240 characters (See [PN Protocol] for details).
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>

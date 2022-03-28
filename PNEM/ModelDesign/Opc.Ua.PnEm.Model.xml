@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ModelDesign xmlns:Prefix5="http://opcfoundation.org/UA/PNEM/" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/PNEM/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09/03/2021">http://opcfoundation.org/UA/DI/</Namespace>
@@ -10,232 +11,232 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="16">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                ACCURACY_CLASS_0
-              
-              
-                Reserved
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                ACCURACY_CLASS_1
-              
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                ACCURACY_CLASS_2
-              
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                ACCURACY_CLASS_3
-              
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                ACCURACY_CLASS_4
-              
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              5
-              
-                ACCURACY_CLASS_5
-              
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              6
-              
-                ACCURACY_CLASS_6
-              
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              7
-              
-                ACCURACY_CLASS_7
-              
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              8
-              
-                ACCURACY_CLASS_8
-              
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              9
-              
-                ACCURACY_CLASS_9
-              
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              10
-              
-                ACCURACY_CLASS_10
-              
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              11
-              
-                ACCURACY_CLASS_11
-              
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              12
-              
-                ACCURACY_CLASS_12
-              
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              13
-              
-                ACCURACY_CLASS_13
-              
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              14
-              
-                ACCURACY_CLASS_14
-              
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              15
-              
-                ACCURACY_CLASS_15
-              
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCURACY_CLASS_0</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Reserved</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCURACY_CLASS_1</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCURACY_CLASS_2</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCURACY_CLASS_3</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCURACY_CLASS_4</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCURACY_CLASS_5</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCURACY_CLASS_6</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>7</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCURACY_CLASS_7</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>8</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCURACY_CLASS_8</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>9</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCURACY_CLASS_9</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>10</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCURACY_CLASS_10</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>11</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCURACY_CLASS_11</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>12</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCURACY_CLASS_12</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>13</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCURACY_CLASS_13</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>14</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCURACY_CLASS_14</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>15</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCURACY_CLASS_15</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -267,86 +268,86 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="5">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                ACCURACY_DOMAIN_RESERVED
-              
-              
-                Reserved
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                ACCURACY_DOMAIN_PERCENT_FULL_SCALE
-              
-              
-                The accuracy is given as percent of the full-scale reading. 
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                ACCURACY_DOMAIN_PERCENT_ACTUAL_READING
-              
-              
-                The accuracy is given as percent of the actual reading.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                ACCURACY_DOMAIN_IEC
-              
-              
-                The accuracy is given according to IEC 61557-12. 
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                ACCURACY_DOMAIN_EN
-              
-              
-                The accuracy is given as specified in the EN 50470-3, Chapter 8.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCURACY_DOMAIN_RESERVED</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Reserved</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCURACY_DOMAIN_PERCENT_FULL_SCALE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The accuracy is given as percent of the full-scale reading. </uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCURACY_DOMAIN_PERCENT_ACTUAL_READING</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The accuracy is given as percent of the actual reading.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCURACY_DOMAIN_IEC</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The accuracy is given according to IEC 61557-12. </uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ACCURACY_DOMAIN_EN</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The accuracy is given as specified in the EN 50470-3, Chapter 8.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -375,54 +376,54 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                PE_CLASS1
-              
-              
-                The PE Entity supports energy management functionality.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                PE_CLASS2
-              
-              
-                The PE Entity supports energy measurement functionality.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                PE_CLASS3
-              
-              
-                The PE Entity supports both energy management and energy measurement functionality.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PE_CLASS1</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The PE Entity supports energy management functionality.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PE_CLASS2</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The PE Entity supports energy measurement functionality.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PE_CLASS3</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The PE Entity supports both energy management and energy measurement functionality.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -445,38 +446,38 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="2">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                PE_SUBCLASS1
-              
-              
-                The PE Entity does not support energy management disabled.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                PE_SUBCLASS2
-              
-              
-                The PE Entity supports energy management disabled.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PE_SUBCLASS1</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The PE Entity does not support energy management disabled.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PE_SUBCLASS2</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The PE Entity supports energy management disabled.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -585,18 +586,18 @@
     <Children>
       <Variable SymbolicName="Prefix5:AcCurrent" TypeDefinition="Prefix5:MeasurementValueType" ModellingRule="Mandatory" DataType="Prefix5:AcPeDataType" AccessLevel="ReadWrite">
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5011</Identifier>
-            </TypeId>
-            <Body>
-              <AcPeDataType xmlns="http://opcfoundation.org/UA/PNEM/Types.xsd">
-                <A>0</A>
-                <B>0</B>
-                <C>0</C>
-              </AcPeDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5011</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <AcPeDataType xmlns="http://opcfoundation.org/UA/PNEM/Types.xsd">
+            <A>0</A>
+            <B>0</B>
+            <C>0</C>
+          </AcPeDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
     </Children>
@@ -622,100 +623,100 @@
       <Variable SymbolicName="Prefix5:AcActiveEnergyTotalImportHp" TypeDefinition="Prefix5:MeasurementValueType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite" />
       <Variable SymbolicName="Prefix5:AcActivePower" TypeDefinition="Prefix5:MeasurementValueType" ModellingRule="Mandatory" DataType="Prefix5:AcPeDataType" AccessLevel="ReadWrite">
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5011</Identifier>
-            </TypeId>
-            <Body>
-              <AcPeDataType xmlns="http://opcfoundation.org/UA/PNEM/Types.xsd">
-                <A>0</A>
-                <B>0</B>
-                <C>0</C>
-              </AcPeDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5011</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <AcPeDataType xmlns="http://opcfoundation.org/UA/PNEM/Types.xsd">
+            <A>0</A>
+            <B>0</B>
+            <C>0</C>
+          </AcPeDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix5:AcCurrent" TypeDefinition="Prefix5:MeasurementValueType" ModellingRule="Mandatory" DataType="Prefix5:AcPeDataType" AccessLevel="ReadWrite">
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5011</Identifier>
-            </TypeId>
-            <Body>
-              <AcPeDataType xmlns="http://opcfoundation.org/UA/PNEM/Types.xsd">
-                <A>0</A>
-                <B>0</B>
-                <C>0</C>
-              </AcPeDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5011</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <AcPeDataType xmlns="http://opcfoundation.org/UA/PNEM/Types.xsd">
+            <A>0</A>
+            <B>0</B>
+            <C>0</C>
+          </AcPeDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix5:AcPowerFactor" TypeDefinition="Prefix5:MeasurementValueType" ModellingRule="Mandatory" DataType="Prefix5:AcPeDataType" AccessLevel="ReadWrite">
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5011</Identifier>
-            </TypeId>
-            <Body>
-              <AcPeDataType xmlns="http://opcfoundation.org/UA/PNEM/Types.xsd">
-                <A>0</A>
-                <B>0</B>
-                <C>0</C>
-              </AcPeDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5011</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <AcPeDataType xmlns="http://opcfoundation.org/UA/PNEM/Types.xsd">
+            <A>0</A>
+            <B>0</B>
+            <C>0</C>
+          </AcPeDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix5:AcReactiveEnergyTotalExportHp" TypeDefinition="Prefix5:MeasurementValueType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite" />
       <Variable SymbolicName="Prefix5:AcReactiveEnergyTotalImportHp" TypeDefinition="Prefix5:MeasurementValueType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite" />
       <Variable SymbolicName="Prefix5:AcReactivePower" TypeDefinition="Prefix5:MeasurementValueType" ModellingRule="Mandatory" DataType="Prefix5:AcPeDataType" AccessLevel="ReadWrite">
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5011</Identifier>
-            </TypeId>
-            <Body>
-              <AcPeDataType xmlns="http://opcfoundation.org/UA/PNEM/Types.xsd">
-                <A>0</A>
-                <B>0</B>
-                <C>0</C>
-              </AcPeDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5011</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <AcPeDataType xmlns="http://opcfoundation.org/UA/PNEM/Types.xsd">
+            <A>0</A>
+            <B>0</B>
+            <C>0</C>
+          </AcPeDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix5:AcVoltagePe" TypeDefinition="Prefix5:MeasurementValueType" ModellingRule="Mandatory" DataType="Prefix5:AcPeDataType" AccessLevel="ReadWrite">
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5011</Identifier>
-            </TypeId>
-            <Body>
-              <AcPeDataType xmlns="http://opcfoundation.org/UA/PNEM/Types.xsd">
-                <A>0</A>
-                <B>0</B>
-                <C>0</C>
-              </AcPeDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5011</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <AcPeDataType xmlns="http://opcfoundation.org/UA/PNEM/Types.xsd">
+            <A>0</A>
+            <B>0</B>
+            <C>0</C>
+          </AcPeDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix5:AcVoltagePp" TypeDefinition="Prefix5:MeasurementValueType" ModellingRule="Mandatory" DataType="Prefix5:AcPpDataType" AccessLevel="ReadWrite">
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5014</Identifier>
-            </TypeId>
-            <Body>
-              <AcPpDataType xmlns="http://opcfoundation.org/UA/PNEM/Types.xsd">
-                <A_b>0</A_b>
-                <B_c>0</B_c>
-                <C_a>0</C_a>
-              </AcPpDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5014</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <AcPpDataType xmlns="http://opcfoundation.org/UA/PNEM/Types.xsd">
+            <A_b>0</A_b>
+            <B_c>0</B_c>
+            <C_a>0</C_a>
+          </AcPpDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
     </Children>
@@ -730,97 +731,97 @@
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="5">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ModeID
-              
-                i=3
-              
-              -1
-              
-              
-                ID of the destination energy saving mode (0xFE)  if successful, otherwise unchanged.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              CurrentTimeToDestination
-              
-                i=290
-              
-              -1
-              
-              
-                Time needed to reach the energy saving mode if successful, otherwise unchanged.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              RegularTimeToOperate
-              
-                i=290
-              
-              -1
-              
-              
-                Time needed to reach PE_ready_to_operate again if the destination energy saving mode will be regularly terminated if successful, otherwise unchanged.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              TimeMinLengthOfStay
-              
-                i=290
-              
-              -1
-              
-              
-                Time of minimum stay in the destination energy saving mode if successful, otherwise unchanged.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              ReturnCode
-              
-                i=3
-              
-              -1
-              
-              
-                PROFIenergy  return code. See Table 11.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ModeID</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=3</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>ID of the destination energy saving mode (0xFE)  if successful, otherwise unchanged.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>CurrentTimeToDestination</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=290</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>Time needed to reach the energy saving mode if successful, otherwise unchanged.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RegularTimeToOperate</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=290</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>Time needed to reach PE_ready_to_operate again if the destination energy saving mode will be regularly terminated if successful, otherwise unchanged.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>TimeMinLengthOfStay</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=290</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>Time of minimum stay in the destination energy saving mode if successful, otherwise unchanged.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ReturnCode</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=3</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>PROFIenergy  return code. See Table 11.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -869,19 +870,19 @@
       <Variable SymbolicName="Prefix5:CurrentTransitionData" ModellingRule="Optional" DataType="Prefix5:StandbyModeTransitionDataType" />
       <Variable SymbolicName="Prefix5:StateInformation" ModellingRule="Mandatory" DataType="Prefix5:EnergyStateInformationDataType">
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5005</Identifier>
-            </TypeId>
-            <Body>
-              <EnergyStateInformationDataType xmlns="http://opcfoundation.org/UA/PNEM/Types.xsd">
-                <IDSource>0</IDSource>
-                <IDDestination>0</IDDestination>
-                <RegularTimeToOperate>0</RegularTimeToOperate>
-                <ModePowerConsumption>0</ModePowerConsumption>
-              </EnergyStateInformationDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5005</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <EnergyStateInformationDataType xmlns="http://opcfoundation.org/UA/PNEM/Types.xsd">
+            <IDSource>0</IDSource>
+            <IDDestination>0</IDDestination>
+            <RegularTimeToOperate>0</RegularTimeToOperate>
+            <ModePowerConsumption>0</ModePowerConsumption>
+          </EnergyStateInformationDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
     </Children>
@@ -894,43 +895,43 @@
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              CurrentTimeToOperate
-              
-                i=290
-              
-              -1
-              
-              
-                Time needed to reach PE_ready_to_operate if successful, otherwise unchanged.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              ReturnCode
-              
-                i=3
-              
-              -1
-              
-              
-                PROFIenergy  return code. See table Table 11.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>CurrentTimeToOperate</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=290</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>Time needed to reach PE_ready_to_operate if successful, otherwise unchanged.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ReturnCode</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=3</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>PROFIenergy  return code. See table Table 11.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -945,22 +946,22 @@
               <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                 <DefaultValue>
                   <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              BreakLockStatus
-              
-                i=6
-              
-              -1
-              
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>BreakLockStatus</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=6</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
                 </DefaultValue>
               </Property>
@@ -971,22 +972,22 @@
               <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                 <DefaultValue>
                   <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExitLockStatus
-              
-                i=6
-              
-              -1
-              
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExitLockStatus</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=6</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
                 </DefaultValue>
               </Property>
@@ -997,44 +998,44 @@
               <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                 <DefaultValue>
                   <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              Context
-              
-                i=12
-              
-              -1
-              
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Context</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
                 </DefaultValue>
               </Property>
               <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                 <DefaultValue>
                   <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              InitLockStatus
-              
-                i=6
-              
-              -1
-              
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>InitLockStatus</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=6</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
                 </DefaultValue>
               </Property>
@@ -1045,22 +1046,22 @@
               <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                 <DefaultValue>
                   <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              RenewLockStatus
-              
-                i=6
-              
-              -1
-              
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RenewLockStatus</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=6</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
                 </DefaultValue>
               </Property>
@@ -1075,121 +1076,121 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              PauseTime
-              
-                i=290
-              
-              -1
-              
-              
-                Requested pause time.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>PauseTime</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=290</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>Requested pause time.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="5">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ModeID
-              
-                i=3
-              
-              -1
-              
-              
-                ID of the destination energy saving mode if successful, otherwise unchanged.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              CurrentTimeToDestination
-              
-                i=290
-              
-              -1
-              
-              
-                Time needed to reach the energy saving mode if successful, otherwise unchanged.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              RegularTimeToOperate
-              
-                i=290
-              
-              -1
-              
-              
-                Time needed to reach PE_ready_to_operate again if the destination energy saving mode will be regularly terminated if successful, otherwise unchanged.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              TimeMinLengthToStay
-              
-                i=290
-              
-              -1
-              
-              
-                Time of minimum stay in the destination energy saving mode if successful, otherwise unchanged.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              ReturnCode
-              
-                i=3
-              
-              -1
-              
-              
-                PROFIenergy return code. See Table 11.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ModeID</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=3</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>ID of the destination energy saving mode if successful, otherwise unchanged.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>CurrentTimeToDestination</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=290</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>Time needed to reach the energy saving mode if successful, otherwise unchanged.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RegularTimeToOperate</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=290</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>Time needed to reach PE_ready_to_operate again if the destination energy saving mode will be regularly terminated if successful, otherwise unchanged.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>TimeMinLengthToStay</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=290</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>Time of minimum stay in the destination energy saving mode if successful, otherwise unchanged.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ReturnCode</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=3</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>PROFIenergy return code. See Table 11.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1200,121 +1201,121 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ModeID
-              
-                i=3
-              
-              -1
-              
-              
-                ID of the requested energy saving mode.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ModeID</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=3</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>ID of the requested energy saving mode.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="5">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              EffectiveModeID
-              
-                i=3
-              
-              -1
-              
-              
-                ID of the effectively chosen destination energy saving mode if successful, otherwise current mode.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              CurrentTimeToDestination
-              
-                i=290
-              
-              -1
-              
-              
-                Time needed to reach the destination energy saving mode if successful, otherwise unchanged.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              RegularTimeToOperate
-              
-                i=290
-              
-              -1
-              
-              
-                Time needed to reach PE_ready_to_operate again if the destination energy saving mode will be regularly terminated if successful, otherwise unchanged.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              TimeMinLengthOfStay
-              
-                i=290
-              
-              -1
-              
-              
-                Time of minimum stay in the destination energy saving mode if successful, otherwise unchanged.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              ReturnCode
-              
-                i=3
-              
-              -1
-              
-              
-                Return code. See table Table 11.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>EffectiveModeID</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=3</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>ID of the effectively chosen destination energy saving mode if successful, otherwise current mode.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>CurrentTimeToDestination</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=290</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>Time needed to reach the destination energy saving mode if successful, otherwise unchanged.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RegularTimeToOperate</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=290</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>Time needed to reach PE_ready_to_operate again if the destination energy saving mode will be regularly terminated if successful, otherwise unchanged.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>TimeMinLengthOfStay</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=290</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>Time of minimum stay in the destination energy saving mode if successful, otherwise unchanged.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ReturnCode</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=3</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>Return code. See table Table 11.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>

@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ModelDesign xmlns:Prefix5="http://opcfoundation.org/UA/TMC/" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/TMC/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09/03/2021">http://opcfoundation.org/UA/DI/</Namespace>
@@ -10,27 +11,27 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="7">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Abort
-        
-        
-          Start
-        
-        
-          Stop
-        
-        
-          Reset
-        
-        
-          Hold
-        
-        
-          Un-Hold
-        
-        
-          Clear
-        
+        <uax:LocalizedText>
+          <uax:Text>Abort</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Start</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Stop</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Reset</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Hold</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Un-Hold</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Clear</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -51,33 +52,33 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="9">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          OTHER
-        
-        
-          PRODUCTION
-        
-        
-          MAINTENANCE
-        
-        
-          MANUAL
-        
-        
-          CHANGE OVER
-        
-        
-          CLEAN
-        
-        
-          SET UP
-        
-        
-          EMPTY OUT
-        
-        
-          REMOTE SERVICE
-        
+        <uax:LocalizedText>
+          <uax:Text>OTHER</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>PRODUCTION</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>MAINTENANCE</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>MANUAL</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>CHANGE OVER</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>CLEAN</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>SET UP</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>EMPTY OUT</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>REMOTE SERVICE</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -100,24 +101,24 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="6">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Other
-        
-        
-          IOImage
-        
-        
-          LiveStream
-        
-        
-          RemoteConnection
-        
-        
-          ScreenshotCurrentPage
-        
-        
-          SystemDump
-        
+        <uax:LocalizedText>
+          <uax:Text>Other</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>IOImage</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>LiveStream</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>RemoteConnection</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>ScreenshotCurrentPage</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>SystemDump</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -137,15 +138,15 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Other
-        
-        
-          SoftwarePackageRepository
-        
-        
-          SoftwarePackageInstall
-        
+        <uax:LocalizedText>
+          <uax:Text>Other</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>SoftwarePackageRepository</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>SoftwarePackageInstall</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -162,84 +163,84 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="26">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          BYTE
-        
-        
-          WORD
-        
-        
-          DWORD
-        
-        
-          LWORD
-        
-        
-          SINT
-        
-        
-          INT
-        
-        
-          DINT
-        
-        
-          LINT
-        
-        
-          USINT
-        
-        
-          UINT
-        
-        
-          UDINT
-        
-        
-          ULINT
-        
-        
-          REAL
-        
-        
-          LREAL
-        
-        
-          TIME
-        
-        
-          LTIME
-        
-        
-          DATE
-        
-        
-          LDATE
-        
-        
-          TIME_OF_DAY
-        
-        
-          LTIME_OF_DAY
-        
-        
-          DATE_AND_TIME
-        
-        
-          LDATE_AND_TIME
-        
-        
-          CHAR
-        
-        
-          WCHAR
-        
-        
-          STRING
-        
-        
-          WSTRING
-        
+        <uax:LocalizedText>
+          <uax:Text>BYTE</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>WORD</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>DWORD</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>LWORD</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>SINT</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>INT</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>DINT</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>LINT</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>USINT</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>UINT</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>UDINT</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>ULINT</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>REAL</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>LREAL</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>TIME</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>LTIME</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>DATE</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>LDATE</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>TIME_OF_DAY</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>LTIME_OF_DAY</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>DATE_AND_TIME</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>LDATE_AND_TIME</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>CHAR</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>WCHAR</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>STRING</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>WSTRING</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -280,68 +281,68 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                Other
-              
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                MES
-              
-              
-                The MES system is in charge of material integrity checks.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                Local
-              
-              
-                The local application is in charge of materil integrity checks.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                None
-              
-              
-                The material integrity checks are performed (visual) by the operator and no system is in charge of material integrity checks.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description />
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MES</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The MES system is in charge of material integrity checks.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Local</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The local application is in charge of materil integrity checks.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>None</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The material integrity checks are performed (visual) by the operator and no system is in charge of material integrity checks.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -365,15 +366,15 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Machine
-        
-        
-          Brand
-        
-        
-          Machine and Brand
-        
+        <uax:LocalizedText>
+          <uax:Text>Machine</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Brand</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Machine and Brand</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -390,18 +391,18 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Other
-        
-        
-          Brand Change
-        
-        
-          Production
-        
-        
-          No Production
-        
+        <uax:LocalizedText>
+          <uax:Text>Other</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Brand Change</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Production</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>No Production</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -419,57 +420,57 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="17">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Stopped
-        
-        
-          Resetting
-        
-        
-          Idle
-        
-        
-          Starting
-        
-        
-          Execute
-        
-        
-          Completing
-        
-        
-          Complete
-        
-        
-          Aborting
-        
-        
-          Aborted
-        
-        
-          Stopping
-        
-        
-          Clearing
-        
-        
-          Suspending
-        
-        
-          Suspended
-        
-        
-          Un-Suspending
-        
-        
-          Holding
-        
-        
-          Held
-        
-        
-          Un-holding
-        
+        <uax:LocalizedText>
+          <uax:Text>Stopped</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Resetting</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Idle</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Starting</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Execute</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Completing</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Complete</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Aborting</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Aborted</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Stopping</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Clearing</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Suspending</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Suspended</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Un-Suspending</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Holding</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Held</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Un-holding</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -500,18 +501,18 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Other
-        
-        
-          FIFO
-        
-        
-          LIFO
-        
-        
-          FEFO
-        
+        <uax:LocalizedText>
+          <uax:Text>Other</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>FIFO</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>LIFO</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>FEFO</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -529,54 +530,54 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                Other
-              
-              
-                None of the below
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                Essential
-              
-              
-                Essential server functionality
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                Adavnced
-              
-              
-                Advanced features are implemented
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>None of the below</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Essential</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Essential server functionality</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Adavnced</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Advanced features are implemented</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -839,19 +840,20 @@ The Property DisplayFormat specifies how the value shall be displayed across all
 The Property UoM specifies the unit of measure used to quantify the material quantity. The Units of measure shall be taken from UN/ECE Rec20.
 </Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>i=888</Identifier>
-            </TypeId>
-            <Body>
-              <uax:EUInformation xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-                <uax:NamespaceUri></uax:NamespaceUri>
-                <uax:UnitId>-1</uax:UnitId>
-                <uax:DisplayName />
-                <uax:Description />
-              </uax:EUInformation>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>i=888</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <uax:EUInformation>
+            <uax:NamespaceUri>
+            </uax:NamespaceUri>
+            <uax:UnitId>-1</uax:UnitId>
+            <uax:DisplayName />
+            <uax:Description />
+          </uax:EUInformation>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Property>
     </Children>
@@ -884,26 +886,31 @@ The OPC UA Variable Type MaterialLotType describes a lot of materials, i.e. the 
       <Property SymbolicName="Prefix5:Material" ModellingRule="Mandatory" DataType="Prefix5:MaterialType" AccessLevel="ReadWrite">
         <Description>The Property Material describes the type of the material. The Property Material describes the type of the material. </Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5008</Identifier>
-            </TypeId>
-            <Body>
-              <MaterialType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
-                <Group></Group>
-                <MaterialId></MaterialId>
-                <BatchId></BatchId>
-                <Description />
-                <MES_Id></MES_Id>
-                <BaseUoM>
-                  <NamespaceUri xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd"></NamespaceUri>
-                  <UnitId xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</UnitId>
-                  <DisplayName xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-                  <Description xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-                </BaseUoM>
-              </MaterialType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5008</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <MaterialType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
+            <Group>
+            </Group>
+            <MaterialId>
+            </MaterialId>
+            <BatchId>
+            </BatchId>
+            <Description />
+            <MES_Id>
+            </MES_Id>
+            <BaseUoM>
+              <NamespaceUri xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+              </NamespaceUri>
+              <UnitId xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</UnitId>
+              <DisplayName xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+              <Description xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+            </BaseUoM>
+          </MaterialType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Property>
     </Children>
@@ -954,49 +961,49 @@ The Method SendCommand sends a command to change the state of the machine module
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              Command
-              
-                ns=1;i=3007
-              
-              -1
-              
-              
-                The command to be sent to the machine module.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Command</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3007</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The command to be sent to the machine module.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1010,50 +1017,50 @@ The Method SetControlMode sets the control mode of the machine module.
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ControlModeToSet
-              
-                ns=1;i=3023
-              
-              -1
-              
-              
-                The control mode that the client requires to be set to the state machine od the machine module.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ControlModeToSet</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3023</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The control mode that the client requires to be set to the state machine od the machine module.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1065,50 +1072,50 @@ The Method SetControlMode sets the control mode of the machine module.
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              IdleEnergySavingMode
-              
-                i=1
-              
-              -1
-              
-              
-                When IdleEnergyMode is True (False), the energy saving mode is turned on (off) when the machine module state is idle.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>IdleEnergySavingMode</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=1</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>When IdleEnergyMode is True (False), the energy saving mode is turned on (off) when the machine module state is idle.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1153,19 +1160,20 @@ This OPC UA MachineModuleSetupType ObjectType contains the value of all the sett
       <Property SymbolicName="Prefix5:DataSet" ModellingRule="Mandatory" DataType="Prefix5:DataSetType">
         <Description>The Property DataSet contains all the digital settings (other than the mechanical settings stored in the folder MechanicalAdjustments) required by the machine module. The Property DataSet contains all the digital settings (other than the mechanical settings stored in the folder MechanicalAdjustments) required by the machine module. </Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5046</Identifier>
-            </TypeId>
-            <Body>
-              <DataSetType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
-                <DataSetId></DataSetId>
-                <DataSetDescription />
-                <DataValues />
-                <DataSetCRC>0</DataSetCRC>
-              </DataSetType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5046</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <DataSetType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
+            <DataSetId>
+            </DataSetId>
+            <DataSetDescription />
+            <DataValues />
+            <DataSetCRC>0</DataSetCRC>
+          </DataSetType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Property>
       <Method SymbolicName="Prefix5:LoadDataSet" ModellingRule="Mandatory">
@@ -1176,50 +1184,50 @@ The Method LoadDataSet loads the whole dataset to the underlying system after ha
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              DataSet
-              
-                ns=1;i=3018
-              
-              -1
-              
-              
-                The dataset to be loaded to the underlying system.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>DataSet</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3018</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The dataset to be loaded to the underlying system.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1236,50 +1244,50 @@ The Method SelectiveLoadDataSet loads any subset of the whole dataset to the und
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              DataSet
-              
-                ns=1;i=3018
-              
-              -1
-              
-              
-                The dataset to be loaded to the underlying system.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>DataSet</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3018</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The dataset to be loaded to the underlying system.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1293,88 +1301,88 @@ The Method ValidateDataSet passes a dataset to the underlying system and returns
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              DataSet
-              
-                ns=1;i=3018
-              
-              -1
-              
-              
-                The dataset to be valdated by the underlying system.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>DataSet</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3018</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The dataset to be valdated by the underlying system.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="3">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ValidationFailedDataSet
-              
-                ns=1;i=3018
-              
-              -1
-              
-              
-                The list of parameters (in a dataset) that failed the validation by the underlying system.
-
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              FailedValidationMessages
-              
-                ns=1;i=3002
-              
-              1
-              
-              
-                The list of messages describing the problems encountered with the parameters in the ValidationFailedSet.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ValidationFailedDataSet</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3018</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The list of parameters (in a dataset) that failed the validation by the underlying system.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>FailedValidationMessages</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3002</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The list of messages describing the problems encountered with the parameters in the ValidationFailedSet.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1414,7 +1422,7 @@ The Method ValidateDataSet passes a dataset to the underlying system and returns
         <Description>The value(s) of the measurement that was identified as a defect.</Description>
         <DefaultValue>
           <uax:ListOfFloat xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        0
+        <uax:Float>0</uax:Float>
       </uax:ListOfFloat>
         </DefaultValue>
       </Property>
@@ -1428,6 +1436,9 @@ This OPC UA DefectDetectionSensorType ObjectType describes a sensor fitted to th
     <Children>
       <Property SymbolicName="Prefix5:Description" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText">
         <Description>Description of the defect detected and detection sensor.</Description>
+        <DefaultValue>
+          <uax:LocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+        </DefaultValue>
       </Property>
       <Variable SymbolicName="Prefix5:DetectionCountMasterTotal" ModellingRule="Mandatory" DataType="Prefix1:Int64">
         <Description>Counts  how many times a defect was detected by the sensor while the DetectionMode is true. Increments at every detection, never reset to zero.</Description>
@@ -1449,6 +1460,9 @@ This OPC UA DefectDetectionSensorType ObjectType describes a sensor fitted to th
       </Property>
       <Property SymbolicName="Prefix5:DisplayName" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText">
         <Description>Identification to be used for the defect detection sensor in displays and HMI faceplates.</Description>
+        <DefaultValue>
+          <uax:LocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+        </DefaultValue>
       </Property>
       <Method SymbolicName="Prefix5:LoadReferenceImages" ModellingRule="Optional">
         <Description>The Method LoadReferenceImages loads to the underlying system images to be used as references for visual defect detection.
@@ -1458,50 +1472,50 @@ The Method LoadReferenceImages loads to the underlying system images to be used 
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              Images
-              
-                i=30
-              
-              1
-              
-              
-                The list of images to be used as references for an image detection system.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Images</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=30</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The list of images to be used as references for an image detection system.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1515,25 +1529,25 @@ The Method ResetDetectionCountTotal resets to zero the DetectionCountTotal.
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1560,50 +1574,50 @@ The Method SetDetectionMode enables or disables the defect detection sensor.
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              Enable
-              
-                i=1
-              
-              -1
-              
-              
-                Specifies if the method enables or disables the defect detection sensor
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Enable</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=1</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>Specifies if the method enables or disables the defect detection sensor
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1655,17 +1669,18 @@ The Method SetDetectionMode enables or disables the defect detection sensor.
         <Description>The StopReason_s Property represents a list of one or more reasons generated by the control system for the logged downtime.
 </Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5037</Identifier>
-            </TypeId>
-            <Body>
-              <MessageType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
-                <ID></ID>
-                <LocalText />
-              </MessageType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5037</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <MessageType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
+            <ID>
+            </ID>
+            <LocalText />
+          </MessageType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Property>
     </Children>
@@ -1712,25 +1727,25 @@ The Variable DownstreamHeld is intended to be used with OPC UA Time Sensitive Ne
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1748,20 +1763,23 @@ The Variable DownstreamHeld is intended to be used with OPC UA Time Sensitive Ne
         <Description>The Property UnloadPoint contains the identification of the material output physical location and the material capabilities.
 </Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5040</Identifier>
-            </TypeId>
-            <Body>
-              <LoadUnloadPointType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
-                <ID></ID>
-                <Description />
-                <MaterialCapability />
-                <UserName></UserName>
-                <MES_ID></MES_ID>
-              </LoadUnloadPointType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5040</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <LoadUnloadPointType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
+            <ID>
+            </ID>
+            <Description />
+            <MaterialCapability />
+            <UserName>
+            </UserName>
+            <MES_ID>
+            </MES_ID>
+          </LoadUnloadPointType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Property>
     </Children>
@@ -1795,45 +1813,53 @@ The Variable DownstreamHeld is intended to be used with OPC UA Time Sensitive Ne
 The Property ExpectedMaterial contains the description of the material that is expected. It is duty of the underlying system to fill in the Property ExpectedMaterial from the production parameters.
 </Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5008</Identifier>
-            </TypeId>
-            <Body>
-              <MaterialType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
-                <Group></Group>
-                <MaterialId></MaterialId>
-                <BatchId></BatchId>
-                <Description />
-                <MES_Id></MES_Id>
-                <BaseUoM>
-                  <NamespaceUri xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd"></NamespaceUri>
-                  <UnitId xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</UnitId>
-                  <DisplayName xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-                  <Description xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-                </BaseUoM>
-              </MaterialType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5008</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <MaterialType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
+            <Group>
+            </Group>
+            <MaterialId>
+            </MaterialId>
+            <BatchId>
+            </BatchId>
+            <Description />
+            <MES_Id>
+            </MES_Id>
+            <BaseUoM>
+              <NamespaceUri xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+              </NamespaceUri>
+              <UnitId xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</UnitId>
+              <DisplayName xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+              <Description xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+            </BaseUoM>
+          </MaterialType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix5:LoadingPoint" ModellingRule="Mandatory" DataType="Prefix5:LoadUnloadPointType">
         <Description>The Property LoadingPoint contains the identification of the loading point and the material that will be loaded. The Property LoadingPoint contains the identification of the loading point and the material that will be loaded. </Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5040</Identifier>
-            </TypeId>
-            <Body>
-              <LoadUnloadPointType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
-                <ID></ID>
-                <Description />
-                <MaterialCapability />
-                <UserName></UserName>
-                <MES_ID></MES_ID>
-              </LoadUnloadPointType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5040</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <LoadUnloadPointType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
+            <ID>
+            </ID>
+            <Description />
+            <MaterialCapability />
+            <UserName>
+            </UserName>
+            <MES_ID>
+            </MES_ID>
+          </LoadUnloadPointType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix5:MaterialIntegrityAgent" ModellingRule="Mandatory" DataType="Prefix5:MaterialIntergrityAgentEnumeration">
@@ -1847,69 +1873,69 @@ The Method MaterialIntegrityCheck validates a presented, e.g. via bar code scann
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              Material
-              
-                ns=1;i=3010
-              
-              -1
-              
-              
-                The material presented to the loading point.
-
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              MaterialQuantity
-              
-                i=11
-              
-              -1
-              
-              
-                The quantity of the material presented to the loading point.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Material</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3010</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The material presented to the loading point.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>MaterialQuantity</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=11</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The quantity of the material presented to the loading point.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1940,24 +1966,24 @@ The Variable TotalLoadedLot indicates the complete lot of material loaded into t
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -2028,50 +2054,50 @@ The Method LoadMachineModuleDocumentation allows to securely load any machine mo
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              DocumentToBeLoaded
-              
-                i=15
-              
-              -1
-              
-              
-                The document, as a byte string, to be transferred to the DocumentationRep folder.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>DocumentToBeLoaded</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The document, as a byte string, to be transferred to the DocumentationRep folder.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -2083,23 +2109,23 @@ The Property MaterialLoadingPoints identifies the loading points of the machine 
 </Description>
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            ns=1;i=5040
-          
-          
-            
-              
-              
-              
-              
-              
-              
-              
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>ns=1;i=5040</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <LoadUnloadPointType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
+              <ID>
+              </ID>
+              <Description />
+              <MaterialCapability />
+              <UserName>
+              </UserName>
+              <MES_ID>
+              </MES_ID>
+            </LoadUnloadPointType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -2108,38 +2134,46 @@ The Property MaterialLoadingPoints identifies the loading points of the machine 
 The Property MaterialStorageBuffers describes the buffers inside the machine module and their current status. The Property MaterialStorageBuffers is a list of objects of type MaterialStorageBufferDataType.
 </Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5042</Identifier>
-            </TypeId>
-            <Body>
-              <MaterialStorageBufferDataType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
-                <ID></ID>
-                <MES_ID></MES_ID>
-                <StoredMaterial>
-                  <Group></Group>
-                  <MaterialId></MaterialId>
-                  <BatchId></BatchId>
-                  <Description />
-                  <MES_Id></MES_Id>
-                  <BaseUoM>
-                    <NamespaceUri xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd"></NamespaceUri>
-                    <UnitId xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</UnitId>
-                    <DisplayName xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-                    <Description xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-                  </BaseUoM>
-                </StoredMaterial>
-                <EUInfo>
-                  <NamespaceUri xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd"></NamespaceUri>
-                  <UnitId xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</UnitId>
-                  <DisplayName xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-                  <Description xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-                </EUInfo>
-                <TotalStorageCapacity>0</TotalStorageCapacity>
-                <StorageLogic>Other_0</StorageLogic>
-              </MaterialStorageBufferDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5042</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <MaterialStorageBufferDataType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
+            <ID>
+            </ID>
+            <MES_ID>
+            </MES_ID>
+            <StoredMaterial>
+              <Group>
+              </Group>
+              <MaterialId>
+              </MaterialId>
+              <BatchId>
+              </BatchId>
+              <Description />
+              <MES_Id>
+              </MES_Id>
+              <BaseUoM>
+                <NamespaceUri xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                </NamespaceUri>
+                <UnitId xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</UnitId>
+                <DisplayName xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+                <Description xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+              </BaseUoM>
+            </StoredMaterial>
+            <EUInfo>
+              <NamespaceUri xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+              </NamespaceUri>
+              <UnitId xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</UnitId>
+              <DisplayName xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+              <Description xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+            </EUInfo>
+            <TotalStorageCapacity>0</TotalStorageCapacity>
+            <StorageLogic>Other_0</StorageLogic>
+          </MaterialStorageBufferDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Property>
       <Method SymbolicName="Prefix5:SetNewSpecification" ModellingRule="Mandatory">
@@ -2148,69 +2182,69 @@ The Property MaterialStorageBuffers describes the buffers inside the machine mod
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              NewMaterialLoadingPoints
-              
-                ns=1;i=3013
-              
-              -1
-              
-              
-                The information about the material loading points that will be valid after the machine specification is changed.
-
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              NewMaterialStorageBuffers
-              
-                ns=1;i=3014
-              
-              -1
-              
-              
-                The information about the storage buffers that will be valid after the machine specification is changed.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>NewMaterialLoadingPoints</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3013</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The information about the material loading points that will be valid after the machine specification is changed.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>NewMaterialStorageBuffers</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3014</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The information about the storage buffers that will be valid after the machine specification is changed.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -2269,9 +2303,15 @@ The Property ValidSince is the date since the configuration was last modified.
         <Description>Description of the The Property Description describes the rejection trap device.
 The Property Description describes the rejection trap device.
  rejection trap.</Description>
+        <DefaultValue>
+          <uax:LocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+        </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix5:DisplayName" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText">
         <Description>The Property DisplayName is the identification of the rejection trap device used on displaying systems, e.g. HMI and SCADA.</Description>
+        <DefaultValue>
+          <uax:LocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+        </DefaultValue>
       </Property>
       <Variable SymbolicName="Prefix5:MaterialQuantityRejectedMasterTotal" TypeDefinition="Prefix5:MaterialLotType" ModellingRule="Mandatory" DataType="Prefix1:Double">
         <Description>The Variable MaterialQuantityRejectedMasterTotal totalises the material rejected and is never reset. 
@@ -2292,26 +2332,31 @@ The Variable MaterialRejectedTotal totalises the material rejected since the las
       <Property SymbolicName="Prefix5:MaterialRejected" ModellingRule="Mandatory" DataType="Prefix5:MaterialType">
         <Description>The Property MaterialRejected identifies the material that is discharged at the rejection trap. The Property MaterialRejected identifies the material that is discharged at the rejection trap. </Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5008</Identifier>
-            </TypeId>
-            <Body>
-              <MaterialType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
-                <Group></Group>
-                <MaterialId></MaterialId>
-                <BatchId></BatchId>
-                <Description />
-                <MES_Id></MES_Id>
-                <BaseUoM>
-                  <NamespaceUri xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd"></NamespaceUri>
-                  <UnitId xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</UnitId>
-                  <DisplayName xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-                  <Description xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-                </BaseUoM>
-              </MaterialType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5008</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <MaterialType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
+            <Group>
+            </Group>
+            <MaterialId>
+            </MaterialId>
+            <BatchId>
+            </BatchId>
+            <Description />
+            <MES_Id>
+            </MES_Id>
+            <BaseUoM>
+              <NamespaceUri xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+              </NamespaceUri>
+              <UnitId xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</UnitId>
+              <DisplayName xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+              <Description xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+            </BaseUoM>
+          </MaterialType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Property>
       <Variable SymbolicName="Prefix5:MaterialRejectedRatio" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="None" Historizing="true">
@@ -2368,25 +2413,25 @@ The Method ResetRejectionTotals resets the MaterialQuantityRejectedTotal and Rej
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -2400,50 +2445,50 @@ The Method SetRejectionMode turns the rejection on or off.
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              RejectionMode
-              
-                i=1
-              
-              -1
-              
-              
-                When true, the rejection trap rejects. When false, the rejection trap does not reject.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RejectionMode</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=1</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>When true, the rejection trap rejects. When false, the rejection trap does not reject.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -2505,44 +2550,44 @@ The Method SetRejectionMode turns the rejection on or off.
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              IOImage
-              
-                ns=1;i=3034
-              
-              1
-              
-              
-                IO image as a file.
-
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>IOImage</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3034</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>IO image as a file.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -2555,44 +2600,44 @@ The Method SetRejectionMode turns the rejection on or off.
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ScreenStream
-              
-                i=30
-              
-              -1
-              
-              
-                The url of the video stream.
-
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ScreenStream</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=30</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The url of the video stream.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -2605,25 +2650,25 @@ The Method SetRejectionMode turns the rejection on or off.
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -2637,44 +2682,44 @@ The Method SetRejectionMode turns the rejection on or off.
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              CurrentScreenshot
-              
-                i=30
-              
-              -1
-              
-              
-                The screenshot in jpg, gif, bmp or png format.
-
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>CurrentScreenshot</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=30</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The screenshot in jpg, gif, bmp or png format.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -2688,44 +2733,44 @@ The Method GetSupportedFeatures returns the list of features that the controls�
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              SupportedFeatures
-              
-                ns=1;i=3027
-              
-              1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>SupportedFeatures</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3027</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -2739,44 +2784,44 @@ The Method GetSystemDump returns a file containing the system dump. The system d
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              SystemDump
-              
-                i=15
-              
-              -1
-              
-              
-                The system dump file.
-
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>SystemDump</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The system dump file.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -2847,35 +2892,43 @@ When the SystemDumpIsSupported Variable is true, the controls' hardware componen
       <Property SymbolicName="Prefix5:ProductionOrder" ModellingRule="Mandatory" DataType="Prefix5:POType" AccessLevel="ReadWrite">
         <Description>The Property ProductionOrder contains information about the currently running production orderThe Property ProductionOrder contains information about the currently running production order.</Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5044</Identifier>
-            </TypeId>
-            <Body>
-              <POType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
-                <Number></Number>
-                <ProducedMaterial>
-                  <Group></Group>
-                  <MaterialId></MaterialId>
-                  <BatchId></BatchId>
-                  <Description />
-                  <MES_Id></MES_Id>
-                  <BaseUoM>
-                    <NamespaceUri xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd"></NamespaceUri>
-                    <UnitId xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</UnitId>
-                    <DisplayName xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-                    <Description xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
-                  </BaseUoM>
-                </ProducedMaterial>
-                <TargetQuantity>0</TargetQuantity>
-                <ContinueAtJobEnd>false</ContinueAtJobEnd>
-                <TargetStartTime>1900-01-01T00:00:00Z</TargetStartTime>
-                <TargetEndTime>1900-01-01T00:00:00Z</TargetEndTime>
-                <DatasetId></DatasetId>
-                <DatasetDescription></DatasetDescription>
-              </POType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5044</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <POType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
+            <Number>
+            </Number>
+            <ProducedMaterial>
+              <Group>
+              </Group>
+              <MaterialId>
+              </MaterialId>
+              <BatchId>
+              </BatchId>
+              <Description />
+              <MES_Id>
+              </MES_Id>
+              <BaseUoM>
+                <NamespaceUri xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                </NamespaceUri>
+                <UnitId xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0</UnitId>
+                <DisplayName xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+                <Description xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+              </BaseUoM>
+            </ProducedMaterial>
+            <TargetQuantity>0</TargetQuantity>
+            <ContinueAtJobEnd>false</ContinueAtJobEnd>
+            <TargetStartTime>1900-01-01T00:00:00Z</TargetStartTime>
+            <TargetEndTime>1900-01-01T00:00:00Z</TargetEndTime>
+            <DatasetId>
+            </DatasetId>
+            <DatasetDescription>
+            </DatasetDescription>
+          </POType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix5:ProductionStatus" ModellingRule="Mandatory" DataType="Prefix5:ProductionStatusEnumeration" AccessLevel="ReadWrite">
@@ -2887,50 +2940,50 @@ When the SystemDumpIsSupported Variable is true, the controls' hardware componen
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              POToStart
-              
-                ns=1;i=3016
-              
-              -1
-              
-              
-                The production order to be started.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>POToStart</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3016</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The production order to be started.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -2944,25 +2997,25 @@ The Method StopProductionOrder sends a command to the underlying system to stop 
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -3007,107 +3060,107 @@ The Property DataSetList of type DataSetListType contains the descriptors for al
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="3">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              Dependency
-              
-                ns=1;i=3005
-              
-              -1
-              
-              
-                The method filters parameters that have the required dependency and per this input parameter.
-
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              UserSubset
-              
-                i=1
-              
-              -1
-              
-              
-                The method filters parameters that are in the user subset as required by this input parameter.
-
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              CompleteSet
-              
-                i=1
-              
-              -1
-              
-              
-                If CompleteSet is True then the method returns the complete dataset without considering the input parameters Dependency and UserSubset.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Dependency</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3005</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The method filters parameters that have the required dependency and per this input parameter.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>UserSubset</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=1</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The method filters parameters that are in the user subset as required by this input parameter.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>CompleteSet</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=1</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>If CompleteSet is True then the method returns the complete dataset without considering the input parameters Dependency and UserSubset.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              DataSetList
-              
-                ns=1;i=3021
-              
-              -1
-              
-              
-                The list of parameter descriptions filtered by the input parameters: dependency, user subset.
-
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeeback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>DataSetList</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3021</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The list of parameter descriptions filtered by the input parameters: dependency, user subset.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeeback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -3121,44 +3174,44 @@ The Method GetRootCauseGroupList returns the complete list of root causes groups
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              RootCauseGroupList
-              
-                ns=1;i=3030
-              
-              1
-              
-              
-                The list of groups the root causes are grouped in.
-
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RootCauseGroupList</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3030</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The list of groups the root causes are grouped in.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -3172,44 +3225,44 @@ The Method GetRootCauseList returns the complete list of root causes as stored i
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              RootCauseList
-              
-                ns=1;i=3029
-              
-              1
-              
-              
-                The complete list of root cause messages.
-
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RootCauseList</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3029</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The complete list of root cause messages.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -3223,44 +3276,44 @@ The method GetStopReasonList returns the complete list of root causes as stored 
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              StopReasonList
-              
-                ns=1;i=3002
-              
-              1
-              
-              
-                The complete list of stop reason messages.
-
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeeback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>StopReasonList</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3002</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The complete list of stop reason messages.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeeback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -3309,69 +3362,69 @@ The Method SetRootCauseLists sets both the RootCauseList and RootCauseGroupList 
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              RootCauseList
-              
-                ns=1;i=3029
-              
-              1
-              
-              
-                The list of root causes to be transferred to the OPC UA Server.
-
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              RootCauseGroupList
-              
-                ns=1;i=3030
-              
-              1
-              
-              
-                The list of root cause groups to be transferred to the OPC UA Server.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RootCauseList</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3029</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The list of root causes to be transferred to the OPC UA Server.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>RootCauseGroupList</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3030</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The list of root cause groups to be transferred to the OPC UA Server.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -3380,17 +3433,18 @@ The Method SetRootCauseLists sets both the RootCauseList and RootCauseGroupList 
       <Property SymbolicName="Prefix5:StopReasonList" ModellingRule="Mandatory" DataType="Prefix5:MessageType" ValueRank="Array" ArrayDimensions="1">
         <Description>The Property StopReasonList is a list containing the descriptors for all the possible machine module stop messages or warning messages. The list is created by the OEM. The Property StopReasonList is a list containing the descriptors for all the possible machine module stop messages or warning messages. The list is created by the OEM. </Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5037</Identifier>
-            </TypeId>
-            <Body>
-              <MessageType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
-                <ID></ID>
-                <LocalText />
-              </MessageType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5037</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <MessageType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
+            <ID>
+            </ID>
+            <LocalText />
+          </MessageType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix5:TimeZone" ModellingRule="Mandatory" DataType="Prefix1:UtcTime" AccessLevel="ReadWrite" />
@@ -3444,32 +3498,34 @@ The Property UserMachineName of type String contains the name used by the user t
     <Children>
       <Variable SymbolicName="Prefix5:NewStopReasonList" ModellingRule="Mandatory" DataType="Prefix5:MessageType" ValueRank="Array" AccessLevel="ReadWrite">
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5037</Identifier>
-            </TypeId>
-            <Body>
-              <MessageType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
-                <ID></ID>
-                <LocalText />
-              </MessageType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5037</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <MessageType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
+            <ID>
+            </ID>
+            <LocalText />
+          </MessageType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix5:OldStopReasonList" ModellingRule="Mandatory" DataType="Prefix5:MessageType" ValueRank="Array" AccessLevel="ReadWrite">
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5037</Identifier>
-            </TypeId>
-            <Body>
-              <MessageType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
-                <ID></ID>
-                <LocalText />
-              </MessageType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5037</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <MessageType xmlns="http://opcfoundation.org/UA/TMC/Types.xsd">
+            <ID>
+            </ID>
+            <LocalText />
+          </MessageType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
     </Children>
@@ -3535,19 +3591,20 @@ The Variable EffectivePrecision specifies the significant part of the value, e.g
       <Property SymbolicName="Prefix1:EngineeringUnits" ModellingRule="Mandatory" DataType="Prefix1:EUInformation" AccessLevel="ReadWrite">
         <Description>The Property EUInfo specifies the units for the AnalogMeasurement’s value (e.g., DEGC, hertz, seconds). The Property EUInfo specifies the units for the AnalogMeasurement’s value (e.g., DEGC, hertz, seconds). </Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>i=888</Identifier>
-            </TypeId>
-            <Body>
-              <uax:EUInformation xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-                <uax:NamespaceUri></uax:NamespaceUri>
-                <uax:UnitId>-1</uax:UnitId>
-                <uax:DisplayName />
-                <uax:Description />
-              </uax:EUInformation>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>i=888</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <uax:EUInformation>
+            <uax:NamespaceUri>
+            </uax:NamespaceUri>
+            <uax:UnitId>-1</uax:UnitId>
+            <uax:DisplayName />
+            <uax:Description />
+          </uax:EUInformation>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Property>
       <Variable SymbolicName="Prefix5:H" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite">
@@ -3649,8 +3706,8 @@ When the instance of the OPC server acts as an aggregation server, the Variable 
 </Description>
         <DefaultValue>
           <uax:ListOfString xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-        
+        <uax:String>
+        </uax:String>
       </uax:ListOfString>
         </DefaultValue>
       </Property>
@@ -3670,44 +3727,44 @@ The Method GetTMCImplementedLevel returns the implemented level of the server.
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              TMCImplementedLevel
-              
-                ns=1;i=3031
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>TMCImplementedLevel</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3031</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -3721,50 +3778,50 @@ The Method SetServerTime sets the time of the server. It is used for time synchr
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              DateTimeToSet
-              
-                i=294
-              
-              -1
-              
-              
-                The time to set the internal clock of the server.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>DateTimeToSet</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=294</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The time to set the internal clock of the server.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -3786,44 +3843,44 @@ The Method GetSupportedFeatures returns the features that are supported by the c
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              SupportedFeatures
-              
-                ns=1;i=3028
-              
-              1
-              
-              
-                The list of supported features.
-
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>SupportedFeatures</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3028</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The list of supported features.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -3837,50 +3894,50 @@ The Method InstallSoftwarePackageRemotely passes the software package to be inst
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              SoftwarePackage
-              
-                i=15
-              
-              -1
-              
-              
-                The software installation package.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>SoftwarePackage</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The software installation package.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -3910,44 +3967,44 @@ The Method TransferSoftwarePackageFromRepository transfers the latest saved file
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="2">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              SoftwarePackage
-              
-                i=15
-              
-              -1
-              
-              
-                The software package uploaded from the repository.
-
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>SoftwarePackage</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The software package uploaded from the repository.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -3961,50 +4018,50 @@ The Method TransferSoftwarePackageToRepository transfers the file passed as an a
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              SoftwarePackage
-              
-                i=15
-              
-              -1
-              
-              
-                The software package to be transferred to the controls’ software component.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>SoftwarePackage</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=15</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The software package to be transferred to the controls’ software component.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
             <DefaultValue>
               <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              ExecutionFeedback
-              
-                ns=1;i=3009
-              
-              -1
-              
-              
-                The extended feedback returning a detailed message in case of execution failure.
-
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>ExecutionFeedback</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>ns=1;i=3009</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description>
+                <uax:Text>The extended feedback returning a detailed message in case of execution failure.
+</uax:Text>
+              </uax:Description>
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
             </DefaultValue>
           </Property>

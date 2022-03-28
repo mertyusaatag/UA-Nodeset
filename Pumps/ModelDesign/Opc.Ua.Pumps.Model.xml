@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ModelDesign xmlns:Prefix7="http://opcfoundation.org/UA/Pumps/" xmlns:Prefix5="http://opcfoundation.org/UA/Machinery/" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:Prefix7="http://opcfoundation.org/UA/Pumps/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/Machinery/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09/03/2021">http://opcfoundation.org/UA/DI/</Namespace>
@@ -12,198 +13,198 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="12">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                ConstantPressureControl
-              
-              
-                Constant pressure control mode
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                ConstantTemperatureControl
-              
-              
-                Constant temperature control mode
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                DifferentialPressureControl
-              
-              
-                Differential pressure control mode
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                ConstantDifferentialPressureControl
-              
-              
-                Constant differential pressure control mode
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                VariableDifferentialPressureControl
-              
-              
-                Variable differential pressure control mode
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              5
-              
-                FlowDependentDifferentialPressureControl
-              
-              
-                Flow-dependent differential pressure control mode
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              6
-              
-                ReturnFlowTemperatureControl
-              
-              
-                Return flow temperature control mode
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              7
-              
-                FlowTemperatureControl
-              
-              
-                Flow temperature control mode
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              8
-              
-                FlowRateControl
-              
-              
-                Flow rate control mode
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              9
-              
-                SpeedControl
-              
-              
-                Speed control mode
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              10
-              
-                Automatic
-              
-              
-                Automatic control mode
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              11
-              
-                Uncontrolled
-              
-              
-                None / uncontrolled mode
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ConstantPressureControl</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Constant pressure control mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ConstantTemperatureControl</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Constant temperature control mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DifferentialPressureControl</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Differential pressure control mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ConstantDifferentialPressureControl</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Constant differential pressure control mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>VariableDifferentialPressureControl</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Variable differential pressure control mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>FlowDependentDifferentialPressureControl</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Flow-dependent differential pressure control mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ReturnFlowTemperatureControl</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Return flow temperature control mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>7</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>FlowTemperatureControl</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Flow temperature control mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>8</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>FlowRateControl</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Flow rate control mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>9</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SpeedControl</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Speed control mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>10</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Automatic</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Automatic control mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>11</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Uncontrolled</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>None / uncontrolled mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -254,70 +255,70 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                ManufacturerSpecific
-              
-              
-                Manufacturer specific distribution of operation time
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                OperatorSpecific
-              
-              
-                Operator specific distribution of operation time
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                ConcerningTimeDistribution
-              
-              
-                Equivalent distribution of operation time, concerning time distribution
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                ConcerningLoadDistribution
-              
-              
-                Equivalent distribution of operation time, concerning load distribution
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ManufacturerSpecific</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Manufacturer specific distribution of operation time</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OperatorSpecific</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Operator specific distribution of operation time</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ConcerningTimeDistribution</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Equivalent distribution of operation time, concerning time distribution</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ConcerningLoadDistribution</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Equivalent distribution of operation time, concerning load distribution</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -344,54 +345,54 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                ManufacturerSpecific
-              
-              
-                Manufacturer specific pump exchange mode
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                ExchangeDisabled
-              
-              
-                Pump exchange disabled
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                OperatorSpecific
-              
-              
-                Operator specific pump exchange mode
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ManufacturerSpecific</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Manufacturer specific pump exchange mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ExchangeDisabled</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Pump exchange disabled</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OperatorSpecific</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Operator specific pump exchange mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -415,806 +416,806 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="50">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                Other
-              
-              
-                Fieldbus is not specified in this enumeration
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                ARCNET
-              
-              
-                ARCNET
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                AS-Interface
-              
-              
-                AS-Interface
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                BACnet/IP
-              
-              
-                BACnet/IP
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                BACnet/MSTP
-              
-              
-                BACnet/MSTP
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              5
-              
-                Bluetooth
-              
-              
-                Bluetooth
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              6
-              
-                BluetoothLowEnergy
-              
-              
-                Bluetooth Low Energy
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              7
-              
-                CAN
-              
-              
-                CAN
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              8
-              
-                CANopen
-              
-              
-                CANopen
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              9
-              
-                CC-Link
-              
-              
-                CC-Link
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              10
-              
-                ControlNet
-              
-              
-                ControlNet
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              11
-              
-                DALI
-              
-              
-                DALI
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              12
-              
-                DECTULE
-              
-              
-                DECT ULE
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              13
-              
-                DeviceNet
-              
-              
-                DeviceNet
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              14
-              
-                DMX
-              
-              
-                DMX
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              15
-              
-                KNX
-              
-              
-                KNX
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              16
-              
-                EnOcean
-              
-              
-                EnOcean
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              17
-              
-                EtherCAT
-              
-              
-                EtherCAT
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              18
-              
-                Ethernet/IP
-              
-              
-                Ethernet/IP
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              19
-              
-                EthernetTCP/IP
-              
-              
-                Ethernet TCP/IP
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              20
-              
-                IEEE1588
-              
-              
-                IEEE1588
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              21
-              
-                GSM
-              
-              
-                GSM
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              22
-              
-                Interbus
-              
-              
-                Interbus
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              23
-              
-                IO-Link
-              
-              
-                IO-Link
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              24
-              
-                HART
-              
-              
-                HART
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              25
-              
-                LON
-              
-              
-                LON
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              26
-              
-                LoRaWAN
-              
-              
-                LoRaWAN
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              27
-              
-                LIN-Bus
-              
-              
-                LIN-Bus
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              28
-              
-                LTE
-              
-              
-                LTE
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              29
-              
-                LTE-M
-              
-              
-                LTE-M
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              30
-              
-                M-Bus
-              
-              
-                M-Bus
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              31
-              
-                ModbusTCP
-              
-              
-                Modbus TCP
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              32
-              
-                ModbusRTU
-              
-              
-                Modbus RTU
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              33
-              
-                MP-Bus
-              
-              
-                MP-Bus
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              34
-              
-                NB-IOT
-              
-              
-                NB-IOT
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              35
-              
-                NFC
-              
-              
-                NFC
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              36
-              
-                OPCUA
-              
-              
-                OPC UA
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              37
-              
-                OPCDA
-              
-              
-                OPC DA
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              38
-              
-                PROFIBUSDP
-              
-              
-                PROFIBUS DP
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              39
-              
-                PROFINETRT
-              
-              
-                PROFINET RT
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              40
-              
-                Powerlink
-              
-              
-                Powerlink
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              41
-              
-                SERCOS
-              
-              
-                SERCOS
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              42
-              
-                SMI
-              
-              
-                SMI
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              43
-              
-                Thread
-              
-              
-                Thread
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              44
-              
-                UMTS
-              
-              
-                UMTS
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              45
-              
-                WIFI
-              
-              
-                WIFI
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              46
-              
-                X2X-Link
-              
-              
-                X2X-Link
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              47
-              
-                VARAN
-              
-              
-                VARAN
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              48
-              
-                ZigBee
-              
-              
-                ZigBee
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              49
-              
-                Z-Wave
-              
-              
-                Z-Wave
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Other</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Fieldbus is not specified in this enumeration</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ARCNET</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>ARCNET</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>AS-Interface</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>AS-Interface</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>BACnet/IP</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>BACnet/IP</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>BACnet/MSTP</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>BACnet/MSTP</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Bluetooth</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Bluetooth</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>BluetoothLowEnergy</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Bluetooth Low Energy</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>7</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CAN</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>CAN</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>8</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CANopen</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>CANopen</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>9</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CC-Link</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>CC-Link</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>10</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ControlNet</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>ControlNet</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>11</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DALI</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>DALI</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>12</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DECTULE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>DECT ULE</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>13</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DeviceNet</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>DeviceNet</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>14</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DMX</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>DMX</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>15</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>KNX</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>KNX</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>16</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>EnOcean</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>EnOcean</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>17</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>EtherCAT</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>EtherCAT</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>18</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Ethernet/IP</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Ethernet/IP</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>19</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>EthernetTCP/IP</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Ethernet TCP/IP</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>20</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>IEEE1588</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>IEEE1588</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>21</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>GSM</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>GSM</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>22</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Interbus</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Interbus</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>23</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>IO-Link</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>IO-Link</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>24</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>HART</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>HART</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>25</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>LON</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>LON</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>26</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>LoRaWAN</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>LoRaWAN</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>27</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>LIN-Bus</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>LIN-Bus</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>28</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>LTE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>LTE</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>29</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>LTE-M</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>LTE-M</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>30</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>M-Bus</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>M-Bus</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>31</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ModbusTCP</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Modbus TCP</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>32</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ModbusRTU</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Modbus RTU</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>33</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MP-Bus</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>MP-Bus</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>34</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NB-IOT</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>NB-IOT</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>35</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>NFC</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>NFC</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>36</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OPCUA</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>OPC UA</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>37</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OPCDA</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>OPC DA</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>38</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PROFIBUSDP</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>PROFIBUS DP</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>39</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PROFINETRT</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>PROFINET RT</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>40</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Powerlink</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Powerlink</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>41</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SERCOS</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>SERCOS</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>42</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SMI</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>SMI</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>43</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Thread</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Thread</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>44</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>UMTS</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>UMTS</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>45</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>WIFI</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>WIFI</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>46</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>X2X-Link</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>X2X-Link</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>47</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>VARAN</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>VARAN</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>48</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ZigBee</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>ZigBee</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>49</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Z-Wave</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Z-Wave</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1379,86 +1380,86 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="5">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                Level1
-              
-              
-                Level 1 is characterized by simple actions carried out with minimal training
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                Level2
-              
-              
-                Level 2 is characterized by basic actions which have to be carried out by qualified personnel using detailed procedures 
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                Level3
-              
-              
-                Level 3 is characterized by complex actions carried out by qualified technical personnel using detailed procedures
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                Level4
-              
-              
-                Level 4 is characterized by actions which imply the know-how of a technique or a technology and carried out by specialized technical personnel
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                Level5
-              
-              
-                Level 5 is characterized by actions which imply a knowledge held by the manufacturer or a specialized company with industrial logistic support equipment
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Level1</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Level 1 is characterized by simple actions carried out with minimal training</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Level2</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Level 2 is characterized by basic actions which have to be carried out by qualified personnel using detailed procedures </uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Level3</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Level 3 is characterized by complex actions carried out by qualified technical personnel using detailed procedures</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Level4</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Level 4 is characterized by actions which imply the know-how of a technique or a technology and carried out by specialized technical personnel</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Level5</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Level 5 is characterized by actions which imply a knowledge held by the manufacturer or a specialized company with industrial logistic support equipment</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1488,70 +1489,70 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                Standalone
-              
-              
-                Standalone mode
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                RedundancyOperation
-              
-              
-                pump fulfils the process function of another pump
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                AdditionOperation
-              
-              
-                supplementary fulfilling of the process function
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                MixedRedundancy
-              
-              
-                Redundancy and addition operation mixed
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Standalone</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Standalone mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>RedundancyOperation</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>pump fulfils the process function of another pump</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>AdditionOperation</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>supplementary fulfilling of the process function</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>MixedRedundancy</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Redundancy and addition operation mixed</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1578,54 +1579,54 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                SingleOperation
-              
-              
-                Single operating mode
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                SeriesOperation
-              
-              
-                Series operating mode
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                ParallelOperation
-              
-              
-                Parallel operating mode
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SingleOperation</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Single operating mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SeriesOperation</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Series operating mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ParallelOperation</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Parallel operating mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1649,182 +1650,182 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="11">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                AutoControl
-              
-              
-                standard control algorithm, not configurable
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                ClosedLoopStandardPID
-              
-              
-                pid algorithm, control parameters configurable in functional element ControlPID
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                Advanced
-              
-              
-                manufacturer specific control algorithm, control parameters configurable
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                StandBy
-              
-              
-                ready for operation 
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                OpenLoopMin
-              
-              
-                open loop operation at minimum characteristic
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              5
-              
-                OpenLoopValue
-              
-              
-                open loop operation at set point value
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              6
-              
-                OpenLoopMax
-              
-              
-                open loop operation at maximum characteristic
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              7
-              
-                ClosedLoopMin
-              
-              
-                closed loop operation at minimum characteristic
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              8
-              
-                ClosedLoopMax
-              
-              
-                closed loop operation at maximum characteristic
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              9
-              
-                Test
-              
-              
-                Test operation
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              10
-              
-                Calibration
-              
-              
-                Calibration mode
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>AutoControl</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>standard control algorithm, not configurable</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ClosedLoopStandardPID</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>pid algorithm, control parameters configurable in functional element ControlPID</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Advanced</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>manufacturer specific control algorithm, control parameters configurable</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>StandBy</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>ready for operation </uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OpenLoopMin</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>open loop operation at minimum characteristic</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OpenLoopValue</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>open loop operation at set point value</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OpenLoopMax</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>open loop operation at maximum characteristic</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>7</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ClosedLoopMin</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>closed loop operation at minimum characteristic</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>8</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ClosedLoopMax</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>closed loop operation at maximum characteristic</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>9</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Test</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Test operation</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>10</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Calibration</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Calibration mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1872,54 +1873,54 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                In
-              
-              
-                Ports with the direction “In” can only be connected to ports with the direction “Out” or “InOut”.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                Out
-              
-              
-                Ports with the direction “Out” can only be connected to ports with the direction “In” or “InOut”.
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                InOut
-              
-              
-                Ports with the direction “InOut” can be connected to ports with arbitrary directions.
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>In</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Ports with the direction “In” can only be connected to ports with the direction “Out” or “InOut”.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Out</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Ports with the direction “Out” can only be connected to ports with the direction “In” or “InOut”.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>InOut</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Ports with the direction “InOut” can be connected to ports with arbitrary directions.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -1944,118 +1945,118 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="7">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                RotodynamicPump
-              
-              
-                Rotodynamic pump
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                PositiveDisplacementPump
-              
-              
-                Positive displacement pump
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                ProcessVacuumPump
-              
-              
-                Process vacuum pump
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                TurboVacuumPump
-              
-              
-                Turbo vacuum pump
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                VacuumPump
-              
-              
-                Vacuum pump
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              5
-              
-                LiquidPump
-              
-              
-                Liquid pump
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              6
-              
-                Pump
-              
-              
-                Pump
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>RotodynamicPump</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Rotodynamic pump</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>PositiveDisplacementPump</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Positive displacement pump</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ProcessVacuumPump</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Process vacuum pump</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>TurboVacuumPump</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Turbo vacuum pump</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>VacuumPump</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Vacuum pump</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>LiquidPump</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Liquid pump</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Pump</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Pump</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -2091,54 +2092,54 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                ManufacturerSpecific
-              
-              
-                Manufacturer specific pump kick mode
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                Disabled
-              
-              
-                Pump kick mode disabled
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                OperatorSpecific
-              
-              
-                Operator specific pump kick mode
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ManufacturerSpecific</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Manufacturer specific pump kick mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Disabled</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Pump kick mode disabled</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OperatorSpecific</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Operator specific pump kick mode</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -2162,54 +2163,54 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                Slave
-              
-              
-                Slave
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                Master
-              
-              
-                Master
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                SlaveAndAuxiliaryMaster
-              
-              
-                Slave and auxiliary master
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Slave</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Slave</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Master</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Master</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>SlaveAndAuxiliaryMaster</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Slave and auxiliary master</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -2233,86 +2234,86 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="5">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                IdleState
-              
-              
-                Item is in up state and non-operating outside required time
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                StandByState
-              
-              
-                Item is in up state and non-operating during required time
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                OperatingState
-              
-              
-                Item is in up state and operating as required
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                ExternalDisabledState
-              
-              
-                Item is in up state, but lacks required external resources or is disabled due to planned actions other than maintenance
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                DownState
-              
-              
-                Item is unable to perform a required function due to preventive maintenance or a fault
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>IdleState</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Item is in up state and non-operating outside required time</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>StandByState</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Item is in up state and non-operating during required time</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>OperatingState</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Item is in up state and operating as required</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ExternalDisabledState</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Item is in up state, but lacks required external resources or is disabled due to planned actions other than maintenance</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>DownState</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Item is unable to perform a required function due to preventive maintenance or a fault</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -2336,7 +2337,7 @@
       </Field>
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix7:DeclarationOfConformityOptionSet" BaseType="Prefix1:OptionSet">
+  <DataType SymbolicName="Prefix7:DeclarationOfConformityOptionSet" BaseType="Prefix1:OptionSet" IsOptionSet="true">
     <Description>defines flags for directives on the basis of which conformity was determined</Description>
     <ClassName />
     <Fields>
@@ -2366,7 +2367,7 @@
       </Field>
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix7:ExplosionProtectionOptionSet" BaseType="Prefix1:OptionSet">
+  <DataType SymbolicName="Prefix7:ExplosionProtectionOptionSet" BaseType="Prefix1:OptionSet" IsOptionSet="true">
     <Description>defines flags for the category of explosion protection for devices according to EU Directive 2014/34/EU (ATEX)</Description>
     <ClassName />
     <Fields>
@@ -2396,7 +2397,7 @@
       </Field>
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix7:ExplosionZoneOptionSet" BaseType="Prefix1:OptionSet">
+  <DataType SymbolicName="Prefix7:ExplosionZoneOptionSet" BaseType="Prefix1:OptionSet" IsOptionSet="true">
     <Description>defines flags for the category of explosion zones for devices</Description>
     <ClassName />
     <Fields>
@@ -2420,7 +2421,7 @@
       </Field>
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix7:OfferedControlModesOptionSet" BaseType="Prefix1:OptionSet">
+  <DataType SymbolicName="Prefix7:OfferedControlModesOptionSet" BaseType="Prefix1:OptionSet" IsOptionSet="true">
     <Description>defines flags for offerd control modes supported by the manufacturer for the product</Description>
     <ClassName />
     <Fields>
@@ -2462,7 +2463,7 @@
       </Field>
     </Fields>
   </DataType>
-  <DataType SymbolicName="Prefix7:OfferedFieldbusesOptionSet" BaseType="Prefix1:OptionSet">
+  <DataType SymbolicName="Prefix7:OfferedFieldbusesOptionSet" BaseType="Prefix1:OptionSet" IsOptionSet="true">
     <Description>defines flags for fieldbuses supported by the manufacturer for the product</Description>
     <ClassName />
     <Fields>
@@ -2668,16 +2669,16 @@
       <Property SymbolicName="Prefix7:PhysicalAddress" ModellingRule="Optional" DataType="Prefix7:PhysicalAddressDataType" AccessLevel="ReadWrite">
         <Description>Physical address of the manufacturer.</Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5017</Identifier>
-            </TypeId>
-            <Body>
-              <PhysicalAddressDataType xmlns="http://opcfoundation.org/UA/Pumps/Types.xsd">
-                <EncodingMask>0</EncodingMask>
-              </PhysicalAddressDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5017</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <PhysicalAddressDataType xmlns="http://opcfoundation.org/UA/Pumps/Types.xsd">
+            <EncodingMask>0</EncodingMask>
+          </PhysicalAddressDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix7:Supplier" ModellingRule="Optional" DataType="Prefix1:String">
@@ -2729,16 +2730,16 @@
       <Property SymbolicName="Prefix7:PhysicalAddress" ModellingRule="Optional" DataType="Prefix7:PhysicalAddressDataType">
         <Description>Physical address of the manufacturer.</Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5017</Identifier>
-            </TypeId>
-            <Body>
-              <PhysicalAddressDataType xmlns="http://opcfoundation.org/UA/Pumps/Types.xsd">
-                <EncodingMask>0</EncodingMask>
-              </PhysicalAddressDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5017</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <PhysicalAddressDataType xmlns="http://opcfoundation.org/UA/Pumps/Types.xsd">
+            <EncodingMask>0</EncodingMask>
+          </PhysicalAddressDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix7:Supplier" ModellingRule="Optional" DataType="Prefix1:String">
@@ -2954,8 +2955,8 @@
           <Variable SymbolicName="Prefix7:AdditionalFieldbuses" TypeDefinition="Prefix1:DataItemType" ValueRank="Array" ArrayDimensions="128">
             <DefaultValue>
               <uax:ListOfString xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-        
+        <uax:String>
+        </uax:String>
       </uax:ListOfString>
             </DefaultValue>
           </Variable>

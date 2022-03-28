@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ModelDesign xmlns:Prefix5="http://opcfoundation.org/UA/Machinery/" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/Machinery/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09/03/2021">http://opcfoundation.org/UA/DI/</Namespace>
@@ -21,8 +22,8 @@
         <Description Key="en">The default BrowseName for instances of the type.</Description>
         <DefaultValue>
           <uax:QualifiedName xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        2
-        Identification
+        <uax:NamespaceIndex>2</uax:NamespaceIndex>
+        <uax:Name>Identification</uax:Name>
       </uax:QualifiedName>
         </DefaultValue>
       </Property>
@@ -78,6 +79,9 @@
       </Property>
       <Property SymbolicName="Prefix3:ComponentName" ModellingRule="Optional" DataType="Prefix1:LocalizedText" AccessLevel="ReadWrite">
         <Description Key="en">To be used by end users to store a human-readable localized text for the MachineryItem. The minimum number of locales supported for this property shall be two. Servers shall support at least 40 Unicode characters for the clients writing the text part of each locale, this means clients can expect to be able to write texts with a length of 40 Unicode characters into that field.</Description>
+        <DefaultValue>
+          <uax:LocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+        </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix3:DeviceClass" ModellingRule="Optional" DataType="Prefix1:String">
         <Description Key="en">Indicates in which domain or for what purpose the MachineryItem is used.</Description>
@@ -144,8 +148,8 @@
         <Description Key="en">The default BrowseName for instances of the type.</Description>
         <DefaultValue>
           <uax:QualifiedName xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        2
-        Identification
+        <uax:NamespaceIndex>2</uax:NamespaceIndex>
+        <uax:Name>Identification</uax:Name>
       </uax:QualifiedName>
         </DefaultValue>
       </Property>
@@ -171,8 +175,8 @@
         <Description Key="en">The default BrowseName for instances of the type.</Description>
         <DefaultValue>
           <uax:QualifiedName xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        1
-        Components
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>Components</uax:Name>
       </uax:QualifiedName>
         </DefaultValue>
       </Property>

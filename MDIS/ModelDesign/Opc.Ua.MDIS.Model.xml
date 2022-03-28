@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ModelDesign xmlns:Prefix3="http://opcfoundation.org/UA/MDIS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix1="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/MDIS" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix3="http://opcfoundation.org/UA/MDIS" TargetNamespace="http://opcfoundation.org/UA/MDIS" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/MDIS" XmlNamespace="http://opcfoundation.org/UA/MDIS" XmlPrefix="Prefix3" FilePath="" Version="1.20" PublicationDate="03/10/2018">http://opcfoundation.org/UA/MDIS</Namespace>
@@ -32,26 +33,26 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              Enable
-              
-                i=1
-              
-              -1
-              
-              
-                
-                
-                Disable the device (false), or enable the device (true)
-              
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>Enable</Name>
+              <DataType>
+                <Identifier>i=1</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Disable the device (false), or enable the device (true)</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -69,51 +70,51 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                
-                
-                NotAvailable
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                
-                
-                Completed
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                
-                
-                Failed
-              
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>1</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>NotAvailable</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>2</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Completed</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>4</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Failed</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -130,66 +131,66 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                
-                
-                Initial
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                
-                
-                Inprogress
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                
-                
-                Complete
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                
-                
-                Fault
-              
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>0</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Initial</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>1</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Inprogress</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>2</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Complete</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>4</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Fault</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -207,51 +208,51 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                
-                
-                Close
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                
-                
-                Open
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                
-                
-                None
-              
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>1</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Close</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>2</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Open</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>4</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>None</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -268,36 +269,36 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                
-                
-                Close
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                
-                
-                Open
-              
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>1</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Close</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>2</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Open</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -313,51 +314,51 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                
-                
-                SEM_A
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                
-                
-                SEM_B
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                
-                
-                Auto
-              
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>1</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>SEM_A</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>2</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>SEM_B</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>4</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Auto</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -374,66 +375,66 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                
-                
-                Closed
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                
-                
-                Open
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                
-                
-                Moving
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              8
-              
-                
-                
-                Unknown
-              
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>1</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Closed</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>2</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Open</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>4</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Moving</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>8</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Unknown</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -451,36 +452,36 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="0">
         <DefaultValue>
           <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                
-                
-                Moving
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                
-                
-                Stopped
-              
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>1</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Moving</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>2</Value>
+              <DisplayName>
+                <Locale>
+                </Locale>
+                <Text>Stopped</Text>
+              </DisplayName>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -528,106 +529,106 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              Direction
-              
-                ns=1;i=3
-              
-              -1
-              
-              
-                
-                
-                The enumeration indicates whether the command is to open the valve or to close the valve
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              OverrideInterlock
-              
-                i=1
-              
-              -1
-              
-              
-                
-                
-                Boolean indicating if the open or close command should override any defeat able interlocks
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              SEM
-              
-                ns=1;i=5
-              
-              -1
-              
-              
-                
-                
-                The selection of which SEM to send the command to. 
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              Signature
-              
-                i=1
-              
-              -1
-              
-              
-                
-                
-                Boolean indicating if a profile should be generated by this move command request.
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              ShutdownRequest
-              
-                i=1
-              
-              -1
-              
-              
-                
-                
-                Boolean indicates that this command is a shutdown move command.
-              
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>Direction</Name>
+              <DataType>
+                <Identifier>ns=1;i=3</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>The enumeration indicates whether the command is to open the valve or to close the valve</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>OverrideInterlock</Name>
+              <DataType>
+                <Identifier>i=1</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Boolean indicating if the open or close command should override any defeat able interlocks</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>SEM</Name>
+              <DataType>
+                <Identifier>ns=1;i=5</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>The selection of which SEM to send the command to. </Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>Signature</Name>
+              <DataType>
+                <Identifier>i=1</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Boolean indicating if a profile should be generated by this move command request.</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>ShutdownRequest</Name>
+              <DataType>
+                <Identifier>i=1</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Boolean indicates that this command is a shutdown move command.</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -663,26 +664,26 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              State
-              
-                i=1
-              
-              -1
-              
-              
-                
-                
-                Boolean state that is being written to the object
-              
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>State</Name>
+              <DataType>
+                <Identifier>i=1</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Boolean state that is being written to the object</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -706,26 +707,26 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              State
-              
-                i=7
-              
-              -1
-              
-              
-                
-                
-                Unit32 state that is being written to the object
-              
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>State</Name>
+              <DataType>
+                <Identifier>i=7</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Unit32 state that is being written to the object</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -757,26 +758,26 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              Value
-              
-                i=10
-              
-              -1
-              
-              
-                
-                
-                Float value that is being written to the object
-              
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>Value</Name>
+              <DataType>
+                <Identifier>i=10</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Float value that is being written to the object</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -802,66 +803,66 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              Position
-              
-                i=10
-              
-              -1
-              
-              
-                
-                
-                A number (in prercent) indicating the percent open
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              OverrideInterlock
-              
-                i=1
-              
-              -1
-              
-              
-                
-                
-                Boolean indicating if the open or close command should override any defeat able interlocks
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              SEM
-              
-                ns=1;i=5
-              
-              -1
-              
-              
-                
-                
-                The selection of which SEM to send the command to. 
-              
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>Position</Name>
+              <DataType>
+                <Identifier>i=10</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>A number (in prercent) indicating the percent open</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>OverrideInterlock</Name>
+              <DataType>
+                <Identifier>i=1</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Boolean indicating if the open or close command should override any defeat able interlocks</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>SEM</Name>
+              <DataType>
+                <Identifier>ns=1;i=5</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>The selection of which SEM to send the command to. </Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -872,86 +873,86 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              Direction
-              
-                ns=1;i=701
-              
-              -1
-              
-              
-                
-                
-                true is opening a valve, false if closing the valve
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              Steps
-              
-                i=5
-              
-              -1
-              
-              
-                
-                
-                number of steps to open/close the valve
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              OverrideInterlock
-              
-                i=1
-              
-              -1
-              
-              
-                
-                
-                Boolean indicating if the open or close command should override any defeat able interlocks
-              
-            
-          
-        
-        
-          
-            i=297
-          
-          
-            
-              SEM
-              
-                ns=1;i=5
-              
-              -1
-              
-              
-                
-                
-                The selection of which SEM to send the command to. 
-              
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>Direction</Name>
+              <DataType>
+                <Identifier>ns=1;i=701</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>true is opening a valve, false if closing the valve</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>Steps</Name>
+              <DataType>
+                <Identifier>i=5</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>number of steps to open/close the valve</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>OverrideInterlock</Name>
+              <DataType>
+                <Identifier>i=1</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>Boolean indicating if the open or close command should override any defeat able interlocks</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>SEM</Name>
+              <DataType>
+                <Identifier>ns=1;i=5</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>The selection of which SEM to send the command to. </Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -963,26 +964,26 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              Position
-              
-                i=10
-              
-              -1
-              
-              
-                
-                
-                A number (in percent) indicating the percent open
-              
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>Position</Name>
+              <DataType>
+                <Identifier>i=10</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>A number (in percent) indicating the percent open</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1044,26 +1045,26 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=297
-          
-          
-            
-              TargetTime
-              
-                i=294
-              
-              -1
-              
-              
-                
-                
-                The UTC Time that the Server shall use to update its internal clock.
-              
-            
-          
-        
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=297</Identifier>
+          </TypeId>
+          <Body>
+            <Argument>
+              <Name>TargetTime</Name>
+              <DataType>
+                <Identifier>i=294</Identifier>
+              </DataType>
+              <ValueRank>-1</ValueRank>
+              <ArrayDimensions />
+              <Description>
+                <Locale>
+                </Locale>
+                <Text>The UTC Time that the Server shall use to update its internal clock.</Text>
+              </Description>
+            </Argument>
+          </Body>
+        </ExtensionObject>
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
