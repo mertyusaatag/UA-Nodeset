@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ModelDesign xmlns:Prefix5="http://opcfoundation.org/UA/CommercialKitchenEquipment/" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/CommercialKitchenEquipment/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09/03/2021">http://opcfoundation.org/UA/DI/</Namespace>
@@ -10,18 +11,18 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Inactive
-        
-        
-          Small
-        
-        
-          Large
-        
-        
-          ExtraLarge
-        
+        <uax:LocalizedText>
+          <uax:Text>Inactive</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Small</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Large</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>ExtraLarge</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -39,63 +40,63 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="19">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          NoSpecialMode
-        
-        
-          Off
-        
-        
-          Autostart
-        
-        
-          Standby
-        
-        
-          PreHeat
-        
-        
-          CoolDown
-        
-        
-          Working
-        
-        
-          Cleaning
-        
-        
-          EnergySave
-        
-        
-          ServiceMode
-        
-        
-          QuickCool
-        
-        
-          FlashFreeze
-        
-        
-          ProofingInterruption
-        
-        
-          ProofingDelay
-        
-        
-          Proofing
-        
-        
-          Setting
-        
-        
-          Defrost
-        
-        
-          Baking
-        
-        
-          Steaming
-        
+        <uax:LocalizedText>
+          <uax:Text>NoSpecialMode</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Off</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Autostart</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Standby</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>PreHeat</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>CoolDown</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Working</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Cleaning</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>EnergySave</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>ServiceMode</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>QuickCool</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>FlashFreeze</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>ProofingInterruption</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>ProofingDelay</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Proofing</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Setting</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Defrost</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Baking</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Steaming</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -128,18 +129,18 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Off
-        
-        
-          Standby
-        
-        
-          Error
-        
-        
-          Cleaning
-        
+        <uax:LocalizedText>
+          <uax:Text>Off</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Standby</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Error</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Cleaning</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -157,39 +158,39 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="11">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Off
-        
-        
-          On
-        
-        
-          Preheat
-        
-        
-          StandBy
-        
-        
-          Steaming
-        
-        
-          CombiSteaming
-        
-        
-          HotAir
-        
-        
-          Perfection
-        
-        
-          Cleaning
-        
-        
-          PresetStart
-        
-        
-          Error
-        
+        <uax:LocalizedText>
+          <uax:Text>Off</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>On</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Preheat</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>StandBy</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Steaming</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>CombiSteaming</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>HotAir</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Perfection</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Cleaning</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>PresetStart</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Error</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -214,33 +215,33 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="9">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Off
-        
-        
-          Preheat
-        
-        
-          SoftCook
-        
-        
-          Cook
-        
-        
-          CookSlow
-        
-        
-          KeepWarming
-        
-        
-          Stiring
-        
-        
-          PresetStart
-        
-        
-          Error
-        
+        <uax:LocalizedText>
+          <uax:Text>Off</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Preheat</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>SoftCook</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Cook</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>CookSlow</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>KeepWarming</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Stiring</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>PresetStart</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Error</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -263,18 +264,18 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Off
-        
-        
-          Standby
-        
-        
-          Power
-        
-        
-          PotDetection
-        
+        <uax:LocalizedText>
+          <uax:Text>Off</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Standby</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Power</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>PotDetection</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -292,15 +293,15 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Electric
-        
-        
-          Gas
-        
-        
-          Steam
-        
+        <uax:LocalizedText>
+          <uax:Text>Electric</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Gas</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Steam</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -317,27 +318,27 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="7">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Off
-        
-        
-          Preheat
-        
-        
-          Melting
-        
-        
-          Frying
-        
-        
-          StandBy
-        
-        
-          Filtering
-        
-        
-          Error
-        
+        <uax:LocalizedText>
+          <uax:Text>Off</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Preheat</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Melting</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Frying</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>StandBy</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Filtering</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Error</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -358,36 +359,36 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="10">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Off
-        
-        
-          Preheat
-        
-        
-          SoftCook
-        
-        
-          Cook
-        
-        
-          CookSlow
-        
-        
-          Frying
-        
-        
-          PressureCooking
-        
-        
-          KeepWarming
-        
-        
-          PresetStart
-        
-        
-          Error
-        
+        <uax:LocalizedText>
+          <uax:Text>Off</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Preheat</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>SoftCook</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Cook</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>CookSlow</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Frying</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>PressureCooking</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>KeepWarming</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>PresetStart</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Error</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -411,18 +412,18 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Off
-        
-        
-          Standby
-        
-        
-          Idle
-        
-        
-          Grilling
-        
+        <uax:LocalizedText>
+          <uax:Text>Off</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Standby</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Idle</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Grilling</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -440,24 +441,24 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="6">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          HygieneOperationOFF
-        
-        
-          HygieneA0
-        
-        
-          HygieneHUE
-        
-        
-          HygieneMU
-        
-        
-          HygieneThermolable
-        
-        
-          HygieneA0_TD
-        
+        <uax:LocalizedText>
+          <uax:Text>HygieneOperationOFF</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>HygieneA0</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>HygieneHUE</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>HygieneMU</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>HygieneThermolable</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>HygieneA0_TD</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -477,54 +478,54 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="16">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Off
-        
-        
-          On
-        
-        
-          Preheat
-        
-        
-          StandBy
-        
-        
-          PressureCooking
-        
-        
-          SoftCooking
-        
-        
-          Cooking
-        
-        
-          Grilling
-        
-        
-          Frying
-        
-        
-          Regenerate
-        
-        
-          DeltaTcooking
-        
-        
-          ZoneGrilling
-        
-        
-          ZoneCooking
-        
-        
-          Cleaning
-        
-        
-          PresetStart
-        
-        
-          Error
-        
+        <uax:LocalizedText>
+          <uax:Text>Off</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>On</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Preheat</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>StandBy</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>PressureCooking</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>SoftCooking</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Cooking</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Grilling</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Frying</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Regenerate</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>DeltaTcooking</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>ZoneGrilling</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>ZoneCooking</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Cleaning</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>PresetStart</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Error</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -554,33 +555,33 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="9">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Preheat
-        
-        
-          CoolDown
-        
-        
-          Process
-        
-        
-          PowerSaving
-        
-        
-          Standby
-        
-        
-          Service
-        
-        
-          Cleaning
-        
-        
-          Off
-        
-        
-          Error
-        
+        <uax:LocalizedText>
+          <uax:Text>Preheat</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>CoolDown</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Process</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>PowerSaving</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Standby</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Service</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Cleaning</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Off</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Error</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -603,54 +604,54 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="16">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Init
-        
-        
-          MachineOff
-        
-        
-          Filling
-        
-        
-          FillingHeating
-        
-        
-          Heating
-        
-        
-          EnableOperation
-        
-        
-          ReadyForOperation
-        
-        
-          Operation
-        
-        
-          Cycle_pause
-        
-        
-          NotDefined1
-        
-        
-          SelfCleaning
-        
-        
-          NotDefined2
-        
-        
-          RemoteControl
-        
-        
-          ControllingOutputs
-        
-        
-          NotDefined3
-        
-        
-          Error
-        
+        <uax:LocalizedText>
+          <uax:Text>Init</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>MachineOff</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Filling</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>FillingHeating</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Heating</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>EnableOperation</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>ReadyForOperation</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Operation</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Cycle_pause</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>NotDefined1</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>SelfCleaning</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>NotDefined2</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>RemoteControl</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>ControllingOutputs</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>NotDefined3</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Error</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -680,30 +681,30 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="8">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Off
-        
-        
-          Preheat
-        
-        
-          SoftCook
-        
-        
-          Cook
-        
-        
-          CookSlow
-        
-        
-          KeepWarming
-        
-        
-          PresetStart
-        
-        
-          Error
-        
+        <uax:LocalizedText>
+          <uax:Text>Off</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Preheat</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>SoftCook</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Cook</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>CookSlow</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>KeepWarming</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>PresetStart</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Error</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -725,18 +726,18 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Home
-        
-        
-          Cooking
-        
-        
-          Idle
-        
-        
-          Open
-        
+        <uax:LocalizedText>
+          <uax:Text>Home</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Cooking</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Idle</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Open</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -754,33 +755,33 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="9">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Off
-        
-        
-          Preheat
-        
-        
-          SoftCook
-        
-        
-          Cook
-        
-        
-          CookSlow
-        
-        
-          Pressure
-        
-        
-          KeepWarming
-        
-        
-          PresetStart
-        
-        
-          Error
-        
+        <uax:LocalizedText>
+          <uax:Text>Off</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Preheat</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>SoftCook</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Cook</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>CookSlow</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Pressure</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>KeepWarming</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>PresetStart</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Error</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -803,36 +804,36 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="10">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          OperationOFF
-        
-        
-          PreWash
-        
-        
-          Cleaning1
-        
-        
-          WashTimeIncreased
-        
-        
-          Cleaning2
-        
-        
-          DrainingPause
-        
-        
-          Draining
-        
-        
-          FinalRinse
-        
-        
-          WaitingTime
-        
-        
-          HeatRecovery
-        
+        <uax:LocalizedText>
+          <uax:Text>OperationOFF</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>PreWash</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Cleaning1</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>WashTimeIncreased</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Cleaning2</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>DrainingPause</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Draining</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>FinalRinse</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>WaitingTime</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>HeatRecovery</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -856,15 +857,15 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          SignalOff
-        
-        
-          SignalOn
-        
-        
-          SignalAck
-        
+        <uax:LocalizedText>
+          <uax:Text>SignalOff</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>SignalOn</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>SignalAck</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -881,36 +882,36 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="10">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          NoSpecialMode
-        
-        
-          Baking
-        
-        
-          SousVide
-        
-        
-          RestStage
-        
-        
-          Humidification
-        
-        
-          PerfectHold
-        
-        
-          InfoStep
-        
-        
-          Smoking
-        
-        
-          LowTemp-Cooking
-        
-        
-          DeltaTSteaming
-        
+        <uax:LocalizedText>
+          <uax:Text>NoSpecialMode</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Baking</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>SousVide</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>RestStage</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Humidification</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>PerfectHold</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>InfoStep</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Smoking</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>LowTemp-Cooking</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>DeltaTSteaming</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -934,18 +935,18 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="4">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          LidUpDown
-        
-        
-          PanTilt
-        
-        
-          WaterSupply
-        
-        
-          DrainOnOff
-        
+        <uax:LocalizedText>
+          <uax:Text>LidUpDown</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>PanTilt</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>WaterSupply</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>DrainOnOff</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -963,63 +964,63 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="19">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          INIT
-        
-        
-          WATER_PURGE
-        
-        
-          PRE_CHILL
-        
-        
-          FREEZE
-        
-        
-          HARVEST
-        
-        
-          BIN_FULL
-        
-        
-          CLEAN
-        
-        
-          OFF
-        
-        
-          SLEEP_MODE
-        
-        
-          STANDBY
-        
-        
-          SAFE_MODE
-        
-        
-          WATER_OUTAGE
-        
-        
-          HPCO_DELAY_ACTIVE
-        
-        
-          CURTAIN_OPEN
-        
-        
-          PRODUCTION_TEST
-        
-        
-          SAFE_MODE_PRECHILL
-        
-        
-          SAFE_MODE_FREEZE
-        
-        
-          SAFE_MODE_HARVEST
-        
-        
-          SAFE_MODE_FULL_BIN
-        
+        <uax:LocalizedText>
+          <uax:Text>INIT</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>WATER_PURGE</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>PRE_CHILL</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>FREEZE</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>HARVEST</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>BIN_FULL</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>CLEAN</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>OFF</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>SLEEP_MODE</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>STANDBY</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>SAFE_MODE</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>WATER_OUTAGE</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>HPCO_DELAY_ACTIVE</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>CURTAIN_OPEN</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>PRODUCTION_TEST</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>SAFE_MODE_PRECHILL</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>SAFE_MODE_FREEZE</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>SAFE_MODE_HARVEST</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>SAFE_MODE_FULL_BIN</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -1052,24 +1053,24 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="6">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Off
-        
-        
-          PreHeat
-        
-        
-          PreCool
-        
-        
-          HoldWarm
-        
-        
-          HoldCool
-        
-        
-          Regenerating
-        
+        <uax:LocalizedText>
+          <uax:Text>Off</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>PreHeat</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>PreCool</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>HoldWarm</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>HoldCool</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Regenerating</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -1089,36 +1090,36 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="10">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Generic
-        
-        
-          HeaterPlate
-        
-        
-          CoolingPlate
-        
-        
-          CombiPlate
-        
-        
-          BainMarie
-        
-        
-          HeaterCabinet
-        
-        
-          CoolingCabinet
-        
-        
-          HeatBridge
-        
-        
-          CombiCabinet
-        
-        
-          RegenCabinet
-        
+        <uax:LocalizedText>
+          <uax:Text>Generic</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>HeaterPlate</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>CoolingPlate</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>CombiPlate</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>BainMarie</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>HeaterCabinet</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>CoolingCabinet</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>HeatBridge</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>CombiCabinet</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>RegenCabinet</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>

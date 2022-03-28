@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ModelDesign xmlns:Prefix3="http://opcfoundation.org/UA/CNC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix1="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/CNC" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix3="http://opcfoundation.org/UA/CNC" TargetNamespace="http://opcfoundation.org/UA/CNC" TargetVersion="" TargetPublicationDate="2022-03-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/CNC" XmlNamespace="http://opcfoundation.org/UA/CNC" XmlPrefix="Prefix3" FilePath="" Version="1.0.0" PublicationDate="19/06/2017">http://opcfoundation.org/UA/CNC</Namespace>
@@ -10,57 +11,57 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                InPosition
-              
-              
-                en
-                Axis reached commanded position
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                Moving
-              
-              
-                en
-                Axis is moving to reach commanded position
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                Parked
-              
-              
-                en
-                Axis is configured but not active
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>InPosition</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Axis reached commanded position</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Moving</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Axis is moving to reach commanded position</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Parked</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Axis is configured but not active</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -85,91 +86,91 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="5">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                Stopped
-              
-              
-                en
-                Channel program stopped
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                Running
-              
-              
-                en
-                Channel program running
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                Waiting
-              
-              
-                en
-                Channel program in waiting state
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                Interrupted
-              
-              
-                en
-                Channel program interrupted
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                Canceled
-              
-              
-                en
-                Channel program canceled
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Stopped</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Channel program stopped</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Running</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Channel program running</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Waiting</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Channel program in waiting state</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Interrupted</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Channel program interrupted</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Canceled</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Channel program canceled</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -199,57 +200,57 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                Active
-              
-              
-                en
-                Channel active
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                Interrupted
-              
-              
-                en
-                Channel interrupted
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                Reset
-              
-              
-                en
-                Channel resetting
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Active</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Channel active</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Interrupted</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Channel interrupted</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Reset</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Channel resetting</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -273,15 +274,15 @@
       <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          Manual
-        
-        
-          MDA
-        
-        
-          Automatic
-        
+        <uax:LocalizedText>
+          <uax:Text>Manual</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>MDA</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>Automatic</uax:Text>
+        </uax:LocalizedText>
       </uax:ListOfLocalizedText>
         </DefaultValue>
       </Property>
@@ -299,91 +300,91 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="5">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                Stopped
-              
-              
-                en
-                Spindle stopped
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                InTargetArea
-              
-              
-                en
-                Spindle reached commanded velocity
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                Accelerating
-              
-              
-                en
-                Spindle accelerating
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              3
-              
-                Decelerating
-              
-              
-                en
-                Spindle decelerating
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              4
-              
-                Parked
-              
-              
-                en
-                Spindle configured but not active
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Stopped</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Spindle stopped</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>InTargetArea</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Spindle reached commanded velocity</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Accelerating</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Spindle accelerating</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Decelerating</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Spindle decelerating</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>Parked</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Spindle configured but not active</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -413,57 +414,57 @@
       <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="3">
         <DefaultValue>
           <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        
-          
-            i=7616
-          
-          
-            
-              0
-              
-                None
-              
-              
-                en
-                No rotation
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              1
-              
-                CW
-              
-              
-                en
-                Clockwise
-              
-            
-          
-        
-        
-          
-            i=7616
-          
-          
-            
-              2
-              
-                CCW
-              
-              
-                en
-                Counter Clockwise
-              
-            
-          
-        
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>None</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>No rotation</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CW</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Clockwise</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>CCW</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Locale>en</uax:Locale>
+                <uax:Text>Counter Clockwise</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
       </uax:ListOfExtensionObject>
         </DefaultValue>
       </Property>
@@ -559,6 +560,9 @@
       </Variable>
       <Variable SymbolicName="Prefix3:ActGFunctions" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:UInt32" ValueRank="Array" AccessLevel="ReadWrite">
         <Description Key="en">Array of active G functions; there can be several G functions active at a time (modal and non-modal G functions).</Description>
+        <DefaultValue>
+          <uax:ListOfUInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+        </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix3:ActJogIncrement" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite">
         <Description Key="en">Active JOG increment.</Description>
@@ -595,6 +599,9 @@
       </Variable>
       <Variable SymbolicName="Prefix3:ActMFunctions" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:UInt32" ValueRank="Array" AccessLevel="ReadWrite">
         <Description Key="en">Array of active M functions: there can be several M functions active at a time (modal and non-modal M functions).</Description>
+        <DefaultValue>
+          <uax:ListOfUInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+        </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix3:ActModalOffsetFunction" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
         <Description Key="en">Active zero offset function.</Description>
@@ -616,6 +623,9 @@
       </Variable>
       <Variable SymbolicName="Prefix3:ActProgramBlock" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:String" ValueRank="Array" ArrayDimensions="3" AccessLevel="ReadWrite">
         <Description Key="en">Block of lines containing the previous, actual and subsequent lines of a CNC part program.</Description>
+        <DefaultValue>
+          <uax:ListOfString xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+        </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix3:ActProgramFile" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite">
         <Description Key="en">Path of active CNC program file (main or subprogram).</Description>
@@ -702,205 +712,205 @@
       <Variable SymbolicName="Prefix3:PosTcpBcsA" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian base coordinate system.</Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5007</Identifier>
-            </TypeId>
-            <Body>
-              <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
-                <ActPos>0</ActPos>
-                <CmdPos>0</CmdPos>
-                <RemDist>0</RemDist>
-              </CncPositionDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5007</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
+            <ActPos>0</ActPos>
+            <CmdPos>0</CmdPos>
+            <RemDist>0</RemDist>
+          </CncPositionDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix3:PosTcpBcsB" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian base coordinate system.</Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5007</Identifier>
-            </TypeId>
-            <Body>
-              <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
-                <ActPos>0</ActPos>
-                <CmdPos>0</CmdPos>
-                <RemDist>0</RemDist>
-              </CncPositionDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5007</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
+            <ActPos>0</ActPos>
+            <CmdPos>0</CmdPos>
+            <RemDist>0</RemDist>
+          </CncPositionDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix3:PosTcpBcsC" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian base coordinate system.</Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5007</Identifier>
-            </TypeId>
-            <Body>
-              <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
-                <ActPos>0</ActPos>
-                <CmdPos>0</CmdPos>
-                <RemDist>0</RemDist>
-              </CncPositionDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5007</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
+            <ActPos>0</ActPos>
+            <CmdPos>0</CmdPos>
+            <RemDist>0</RemDist>
+          </CncPositionDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix3:PosTcpBcsX" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian base coordinate system.</Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5007</Identifier>
-            </TypeId>
-            <Body>
-              <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
-                <ActPos>0</ActPos>
-                <CmdPos>0</CmdPos>
-                <RemDist>0</RemDist>
-              </CncPositionDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5007</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
+            <ActPos>0</ActPos>
+            <CmdPos>0</CmdPos>
+            <RemDist>0</RemDist>
+          </CncPositionDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix3:PosTcpBcsY" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian base coordinate system.</Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5007</Identifier>
-            </TypeId>
-            <Body>
-              <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
-                <ActPos>0</ActPos>
-                <CmdPos>0</CmdPos>
-                <RemDist>0</RemDist>
-              </CncPositionDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5007</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
+            <ActPos>0</ActPos>
+            <CmdPos>0</CmdPos>
+            <RemDist>0</RemDist>
+          </CncPositionDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix3:PosTcpBcsZ" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian base coordinate system.</Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5007</Identifier>
-            </TypeId>
-            <Body>
-              <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
-                <ActPos>0</ActPos>
-                <CmdPos>0</CmdPos>
-                <RemDist>0</RemDist>
-              </CncPositionDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5007</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
+            <ActPos>0</ActPos>
+            <CmdPos>0</CmdPos>
+            <RemDist>0</RemDist>
+          </CncPositionDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix3:PosTcpWcsA" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian workpiece coordinate system.</Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5007</Identifier>
-            </TypeId>
-            <Body>
-              <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
-                <ActPos>0</ActPos>
-                <CmdPos>0</CmdPos>
-                <RemDist>0</RemDist>
-              </CncPositionDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5007</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
+            <ActPos>0</ActPos>
+            <CmdPos>0</CmdPos>
+            <RemDist>0</RemDist>
+          </CncPositionDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix3:PosTcpWcsB" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian workpiece coordinate system.</Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5007</Identifier>
-            </TypeId>
-            <Body>
-              <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
-                <ActPos>0</ActPos>
-                <CmdPos>0</CmdPos>
-                <RemDist>0</RemDist>
-              </CncPositionDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5007</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
+            <ActPos>0</ActPos>
+            <CmdPos>0</CmdPos>
+            <RemDist>0</RemDist>
+          </CncPositionDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix3:PosTcpWcsC" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian workpiece coordinate system.</Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5007</Identifier>
-            </TypeId>
-            <Body>
-              <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
-                <ActPos>0</ActPos>
-                <CmdPos>0</CmdPos>
-                <RemDist>0</RemDist>
-              </CncPositionDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5007</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
+            <ActPos>0</ActPos>
+            <CmdPos>0</CmdPos>
+            <RemDist>0</RemDist>
+          </CncPositionDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix3:PosTcpWcsX" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian workpiece coordinate system.</Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5007</Identifier>
-            </TypeId>
-            <Body>
-              <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
-                <ActPos>0</ActPos>
-                <CmdPos>0</CmdPos>
-                <RemDist>0</RemDist>
-              </CncPositionDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5007</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
+            <ActPos>0</ActPos>
+            <CmdPos>0</CmdPos>
+            <RemDist>0</RemDist>
+          </CncPositionDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix3:PosTcpWcsY" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian workpiece coordinate system.</Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5007</Identifier>
-            </TypeId>
-            <Body>
-              <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
-                <ActPos>0</ActPos>
-                <CmdPos>0</CmdPos>
-                <RemDist>0</RemDist>
-              </CncPositionDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5007</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
+            <ActPos>0</ActPos>
+            <CmdPos>0</CmdPos>
+            <RemDist>0</RemDist>
+          </CncPositionDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix3:PosTcpWcsZ" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Actual position of the tool center point in machine’s Cartesian workpiece coordinate system.</Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5007</Identifier>
-            </TypeId>
-            <Body>
-              <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
-                <ActPos>0</ActPos>
-                <CmdPos>0</CmdPos>
-                <RemDist>0</RemDist>
-              </CncPositionDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5007</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
+            <ActPos>0</ActPos>
+            <CmdPos>0</CmdPos>
+            <RemDist>0</RemDist>
+          </CncPositionDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix3:ToolId" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
@@ -988,6 +998,9 @@
       </Property>
       <Property SymbolicName="Prefix3:AuxParameters" ModellingRule="Optional" DataType="Prefix1:String" ValueRank="Array" AccessLevel="ReadWrite">
         <Description Key="en">Array of auxiliary parameter for additional alarm description.</Description>
+        <DefaultValue>
+          <uax:ListOfString xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+        </DefaultValue>
       </Property>
       <Property SymbolicName="Prefix3:HelpSource" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
         <Description Key="en">Additional information to message giving information on how to solve problem that caused the alarm.</Description>
@@ -1039,35 +1052,35 @@
       <Variable SymbolicName="Prefix3:PosDirect" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Position actual value referring to axis' direct measurement system.</Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5007</Identifier>
-            </TypeId>
-            <Body>
-              <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
-                <ActPos>0</ActPos>
-                <CmdPos>0</CmdPos>
-                <RemDist>0</RemDist>
-              </CncPositionDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5007</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
+            <ActPos>0</ActPos>
+            <CmdPos>0</CmdPos>
+            <RemDist>0</RemDist>
+          </CncPositionDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix3:PosIndirect" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Position actual value referring to axis' indirect measurement system.</Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5007</Identifier>
-            </TypeId>
-            <Body>
-              <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
-                <ActPos>0</ActPos>
-                <CmdPos>0</CmdPos>
-                <RemDist>0</RemDist>
-              </CncPositionDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5007</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
+            <ActPos>0</ActPos>
+            <CmdPos>0</CmdPos>
+            <RemDist>0</RemDist>
+          </CncPositionDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix3:ZeroOffset" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite">
@@ -1152,18 +1165,18 @@
       <Variable SymbolicName="Prefix3:AnglePos" TypeDefinition="Prefix3:CncPositionVariableType" ModellingRule="Mandatory" DataType="Prefix3:CncPositionDataType" AccessLevel="ReadWrite">
         <Description Key="en">Spindle angular position values in case of interpolated (position controlled) spindle movement. Returns zeros in case of regular spindle operation (velocity controlled).</Description>
         <DefaultValue>
-          <ExtensionObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-            <TypeId>
-              <Identifier>ns=1;i=5007</Identifier>
-            </TypeId>
-            <Body>
-              <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
-                <ActPos>0</ActPos>
-                <CmdPos>0</CmdPos>
-                <RemDist>0</RemDist>
-              </CncPositionDataType>
-            </Body>
-          </ExtensionObject>
+          <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>ns=1;i=5007</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <CncPositionDataType xmlns="http://opcfoundation.org/UA/CNC/Types.xsd">
+            <ActPos>0</ActPos>
+            <CmdPos>0</CmdPos>
+            <RemDist>0</RemDist>
+          </CncPositionDataType>
+        </uax:Body>
+      </uax:ExtensionObject>
         </DefaultValue>
       </Variable>
       <Variable SymbolicName="Prefix3:CmdGear" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
@@ -1194,7 +1207,7 @@
         <Description Key="en">NodeId of the channel object (CncChannelType) that administrates this drive to expose drive’s channel affiliation.</Description>
         <DefaultValue>
           <uax:NodeId xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        i=0
+        <uax:Identifier>i=0</uax:Identifier>
       </uax:NodeId>
         </DefaultValue>
       </Variable>
@@ -1252,6 +1265,9 @@
           </Variable>
           <Variable SymbolicName="Prefix3:ActGFunctions" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:UInt32" ValueRank="Array">
             <Description Key="en">Active G function.</Description>
+            <DefaultValue>
+              <uax:ListOfUInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+            </DefaultValue>
           </Variable>
           <Variable SymbolicName="Prefix3:ActJogIncrement" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double">
             <Description Key="en">Active JOG increment.</Description>
@@ -1288,6 +1304,9 @@
           </Variable>
           <Variable SymbolicName="Prefix3:ActMFunctions" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:UInt32" ValueRank="Array">
             <Description Key="en">Active M function.</Description>
+            <DefaultValue>
+              <uax:ListOfUInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+            </DefaultValue>
           </Variable>
           <Variable SymbolicName="Prefix3:ActModalOffsetFunction" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:UInt32">
             <Description Key="en">active zero offset function</Description>
@@ -1298,6 +1317,9 @@
           <Variable SymbolicName="Prefix3:ActOperationMode" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix3:CncOperationMode" AccessLevel="ReadWrite" />
           <Variable SymbolicName="Prefix3:ActProgramBlock" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:String" ValueRank="Array" ArrayDimensions="3">
             <Description Key="en">previous, actual and subsequent CNC program lines</Description>
+            <DefaultValue>
+              <uax:ListOfString xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+            </DefaultValue>
           </Variable>
           <Variable SymbolicName="Prefix3:ActProgramFile" TypeDefinition="Prefix1:DataItemType" ModellingRule="Mandatory" DataType="Prefix1:String">
             <Description Key="en">Path of active CNC program file (main or subprogram).</Description>
