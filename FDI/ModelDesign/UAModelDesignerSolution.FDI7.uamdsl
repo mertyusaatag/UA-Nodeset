@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="UAModelDesignerSolution.xslt"?>
 <UAModelDesignerSolution xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Name>FDI</Name>
+  <Name>Solution11</Name>
   <Projects>
-    <UAModelDesignerProject ProjectIdentifier="88ced2ba-f3f0-4a20-81b9-e9ad74065f45">
-      <Name>Opc.Ua.Fdi5.Model</Name>
+    <UAModelDesignerProject ProjectIdentifier="e3835260-a346-4909-b669-f1766caec28a">
+      <Name>Opc.Ua.FDI7.Model</Name>
       <CSVFileName>$(ProjectFileName).csv</CSVFileName>
       <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
-      <FileName>Opc.Ua.Fdi5.Model.xml</FileName>
+      <FileName>Opc.Ua.FDI7.Model.xml</FileName>
     </UAModelDesignerProject>
-    <UAModelDesignerProject ProjectIdentifier="9dd671fe-1538-4a3e-bb19-f9e5af8d1c8c">
+    <UAModelDesignerProject ProjectIdentifier="dacb3d52-8c63-4e48-80b3-c4fecbb22b48">
       <Name>Opc.Ua.Di.Model</Name>
       <CSVFileName>$(ProjectFileName).csv</CSVFileName>
       <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
