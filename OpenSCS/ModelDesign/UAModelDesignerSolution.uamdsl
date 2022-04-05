@@ -2,6 +2,13 @@
 <?xml-stylesheet type="text/xsl" href="UAModelDesignerSolution.xslt"?>
 <UAModelDesignerSolution xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name>OPENSCS</Name>
-  <Projects />
+  <Projects>
+    <UAModelDesignerProject ProjectIdentifier="04d3242b-5479-4d79-8edc-3bc43b7821ab">
+      <Name>Opc.Ua.OPENSCS.Model</Name>
+      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
+      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
+      <FileName>Opc.Ua.OPENSCS.Model.xml</FileName>
+    </UAModelDesignerProject>
+  </Projects>
   <ServerDetails codebase="" configuration="" />
 </UAModelDesignerSolution>
