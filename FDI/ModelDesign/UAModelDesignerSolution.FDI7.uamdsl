@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="UAModelDesignerSolution.xslt"?>
 <UAModelDesignerSolution xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Name>TMC</Name>
+  <Name>Solution11</Name>
   <Projects>
-    <UAModelDesignerProject ProjectIdentifier="c984a4cb-4a14-4c90-beae-016692ca9a12">
+    <UAModelDesignerProject ProjectIdentifier="e3835260-a346-4909-b669-f1766caec28a">
+      <Name>Opc.Ua.FDI7.Model</Name>
+      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
+      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
+      <FileName>Opc.Ua.FDI7.Model.xml</FileName>
+    </UAModelDesignerProject>
+    <UAModelDesignerProject ProjectIdentifier="dacb3d52-8c63-4e48-80b3-c4fecbb22b48">
       <Name>Opc.Ua.Di.Model</Name>
       <CSVFileName>$(ProjectFileName).csv</CSVFileName>
       <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
       <FileName>..\..\DI\ModelDesign\Opc.Ua.Di.Model.xml</FileName>
-    </UAModelDesignerProject>
-    <UAModelDesignerProject ProjectIdentifier="1d479bf4-ed6f-4469-b11f-0f3eefc6db10">
-      <Name>Opc.Ua.TMC.Model</Name>
-      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
-      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
-      <FileName>Opc.Ua.TMC.Model.xml</FileName>
     </UAModelDesignerProject>
   </Projects>
   <ServerDetails codebase="" configuration="" />
