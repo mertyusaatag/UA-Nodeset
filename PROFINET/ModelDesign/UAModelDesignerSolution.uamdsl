@@ -2,6 +2,19 @@
 <?xml-stylesheet type="text/xsl" href="UAModelDesignerSolution.xslt"?>
 <UAModelDesignerSolution xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name>PROFINET</Name>
-  <Projects />
+  <Projects>
+    <UAModelDesignerProject ProjectIdentifier="85e803a7-eae5-4305-a37a-8f40da2491c6">
+      <Name>Opc.Ua.PROFINET.Model</Name>
+      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
+      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
+      <FileName>Opc.Ua.PROFINET.Model.xml</FileName>
+    </UAModelDesignerProject>
+    <UAModelDesignerProject ProjectIdentifier="5deaf0d0-3ba3-4d6d-a562-1a7586c4e51b">
+      <Name>Opc.Ua.POWERLINK.Model</Name>
+      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
+      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
+      <FileName>..\..\POWERLINK\ModelDesign\Opc.Ua.POWERLINK.Model.xml</FileName>
+    </UAModelDesignerProject>
+  </Projects>
   <ServerDetails codebase="" configuration="" />
 </UAModelDesignerSolution>
