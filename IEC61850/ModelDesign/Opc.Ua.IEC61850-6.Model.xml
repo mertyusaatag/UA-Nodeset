@@ -1,0 +1,1110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/IEC61850-6" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/IEC61850-7-3" TargetNamespace="http://opcfoundation.org/UA/IEC61850-6" TargetVersion="" TargetPublicationDate="2022-04-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/IEC61850-6" XmlNamespace="http://opcfoundation.org/UA/IEC61850-6" XmlPrefix="Prefix3" FilePath="" Version="2.0" PublicationDate="05/02/2018">http://opcfoundation.org/UA/IEC61850-6</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/IEC61850-7-3" XmlNamespace="http://opcfoundation.org/UA/IEC61850-7-3" XmlPrefix="Prefix5" FilePath="" Version="2.0" PublicationDate="05/02/2018">http://opcfoundation.org/UA/IEC61850-7-3</Namespace>
+  </Namespaces>
+  <ReferenceType SymbolicName="Prefix5:HasLN" BaseType="Prefix1:HasComponent">
+    <Description>HasLN</Description>
+    <ClassName />
+    <InverseName>LNOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix5:HasLNode" BaseType="Prefix1:HasComponent">
+    <Description>HasLNode</Description>
+    <ClassName />
+    <InverseName>LNodeOf</InverseName>
+  </ReferenceType>
+  <ReferenceType SymbolicName="Prefix5:HasTerminal" BaseType="Prefix1:NonHierarchicalReferences">
+    <Description>HasTerminal</Description>
+    <ClassName />
+    <InverseName>TerminalOf</InverseName>
+  </ReferenceType>
+  <ObjectType SymbolicName="Prefix3:IEC61850IEDBaseObjectType" IsAbstract="true">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:IEC61850ProcessBaseObjectType" IsAbstract="true">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:LDeviceType" BaseType="Prefix3:IEC61850IEDBaseObjectType">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix5:HasLN</ReferenceType>
+        <TargetId>Prefix3:_x003C_LN_x003E_</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:ServerType" BaseType="Prefix3:IEC61850IEDBaseObjectType">
+    <Children>
+      <Object SymbolicName="Prefix3:_x003C_LDevice_x003E_" TypeDefinition="Prefix3:LDeviceType" ModellingRule="MandatoryPlaceholder">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix5:HasLN</ReferenceType>
+            <TargetId>Prefix3:_x003C_LN_x003E_</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AccessPointType" BaseType="Prefix3:IEC61850IEDBaseObjectType">
+    <Children>
+      <Object SymbolicName="Prefix3:Server" TypeDefinition="Prefix3:ServerType" ModellingRule="Optional" />
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix5:HasLN</ReferenceType>
+        <TargetId>Prefix3:_x003C_LN_x003E_</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:IEDType" BaseType="Prefix3:IEC61850IEDBaseObjectType">
+    <Children>
+      <Object SymbolicName="Prefix3:_x003C_AccessPoint_x003E_" TypeDefinition="Prefix3:AccessPointType" ModellingRule="MandatoryPlaceholder" />
+      <Property SymbolicName="Prefix3:manufacturer" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix3:type" ModellingRule="Optional" DataType="Prefix1:String" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <DataType SymbolicName="Prefix3:GeneralEquipmentKind" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix3:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>0</Value>
+              <DisplayName>
+                <Locale />
+                <Text>AXN</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>1</Value>
+              <DisplayName>
+                <Locale />
+                <Text>BAT</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>2</Value>
+              <DisplayName>
+                <Locale />
+                <Text>MOT</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>3</Value>
+              <DisplayName>
+                <Locale />
+                <Text>FAN</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>4</Value>
+              <DisplayName>
+                <Locale />
+                <Text>FIL</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>5</Value>
+              <DisplayName>
+                <Locale />
+                <Text>PMP</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>6</Value>
+              <DisplayName>
+                <Locale />
+                <Text>VLV</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="AXN" Identifier="0" BitMask="" ArrayDimensions="" />
+      <Field Name="BAT" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="MOT" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="FAN" Identifier="3" BitMask="" ArrayDimensions="" />
+      <Field Name="FIL" Identifier="4" BitMask="" ArrayDimensions="" />
+      <Field Name="PMP" Identifier="5" BitMask="" ArrayDimensions="" />
+      <Field Name="VLV" Identifier="6" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:ConductingEquipmentKind" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix3:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>0</Value>
+              <DisplayName>
+                <Locale />
+                <Text>CBR</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>1</Value>
+              <DisplayName>
+                <Locale />
+                <Text>DIS</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>2</Value>
+              <DisplayName>
+                <Locale />
+                <Text>VTR</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>3</Value>
+              <DisplayName>
+                <Locale />
+                <Text>CTR</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>4</Value>
+              <DisplayName>
+                <Locale />
+                <Text>GEN</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>5</Value>
+              <DisplayName>
+                <Locale />
+                <Text>CAP</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>6</Value>
+              <DisplayName>
+                <Locale />
+                <Text>REA</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>7</Value>
+              <DisplayName>
+                <Locale />
+                <Text>CON</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>8</Value>
+              <DisplayName>
+                <Locale />
+                <Text>MOT</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>9</Value>
+              <DisplayName>
+                <Locale />
+                <Text>EFN</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>10</Value>
+              <DisplayName>
+                <Locale />
+                <Text>PSH</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>11</Value>
+              <DisplayName>
+                <Locale />
+                <Text>BAT</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>12</Value>
+              <DisplayName>
+                <Locale />
+                <Text>BSH</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>13</Value>
+              <DisplayName>
+                <Locale />
+                <Text>CAB</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>14</Value>
+              <DisplayName>
+                <Locale />
+                <Text>GIL</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>15</Value>
+              <DisplayName>
+                <Locale />
+                <Text>LIN</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>16</Value>
+              <DisplayName>
+                <Locale />
+                <Text>RRC</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>17</Value>
+              <DisplayName>
+                <Locale />
+                <Text>SAR</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>18</Value>
+              <DisplayName>
+                <Locale />
+                <Text>TCF</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>19</Value>
+              <DisplayName>
+                <Locale />
+                <Text>TCR</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>20</Value>
+              <DisplayName>
+                <Locale />
+                <Text>IFL</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>21</Value>
+              <DisplayName>
+                <Locale />
+                <Text>FAN</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>22</Value>
+              <DisplayName>
+                <Locale />
+                <Text>SCR</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>23</Value>
+              <DisplayName>
+                <Locale />
+                <Text>SMC</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="CBR" Identifier="0" BitMask="" ArrayDimensions="" />
+      <Field Name="DIS" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="VTR" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="CTR" Identifier="3" BitMask="" ArrayDimensions="" />
+      <Field Name="GEN" Identifier="4" BitMask="" ArrayDimensions="" />
+      <Field Name="CAP" Identifier="5" BitMask="" ArrayDimensions="" />
+      <Field Name="REA" Identifier="6" BitMask="" ArrayDimensions="" />
+      <Field Name="CON" Identifier="7" BitMask="" ArrayDimensions="" />
+      <Field Name="MOT" Identifier="8" BitMask="" ArrayDimensions="" />
+      <Field Name="EFN" Identifier="9" BitMask="" ArrayDimensions="" />
+      <Field Name="PSH" Identifier="10" BitMask="" ArrayDimensions="" />
+      <Field Name="BAT" Identifier="11" BitMask="" ArrayDimensions="" />
+      <Field Name="BSH" Identifier="12" BitMask="" ArrayDimensions="" />
+      <Field Name="CAB" Identifier="13" BitMask="" ArrayDimensions="" />
+      <Field Name="GIL" Identifier="14" BitMask="" ArrayDimensions="" />
+      <Field Name="LIN" Identifier="15" BitMask="" ArrayDimensions="" />
+      <Field Name="RRC" Identifier="16" BitMask="" ArrayDimensions="" />
+      <Field Name="SAR" Identifier="17" BitMask="" ArrayDimensions="" />
+      <Field Name="TCF" Identifier="18" BitMask="" ArrayDimensions="" />
+      <Field Name="TCR" Identifier="19" BitMask="" ArrayDimensions="" />
+      <Field Name="IFL" Identifier="20" BitMask="" ArrayDimensions="" />
+      <Field Name="FAN" Identifier="21" BitMask="" ArrayDimensions="" />
+      <Field Name="SCR" Identifier="22" BitMask="" ArrayDimensions="" />
+      <Field Name="SMC" Identifier="23" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:PowerTransformerKind" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix3:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>0</Value>
+              <DisplayName>
+                <Locale />
+                <Text>PTR</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="PTR" Identifier="0" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:TransformerWindingKind" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix3:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>0</Value>
+              <DisplayName>
+                <Locale />
+                <Text>PTW</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="PTW" Identifier="0" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:PhaseKind" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix3:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array">
+        <DefaultValue>
+          <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>0</Value>
+              <DisplayName>
+                <Locale />
+                <Text>A</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>1</Value>
+              <DisplayName>
+                <Locale />
+                <Text>B</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>2</Value>
+              <DisplayName>
+                <Locale />
+                <Text>C</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>3</Value>
+              <DisplayName>
+                <Locale />
+                <Text>N</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>4</Value>
+              <DisplayName>
+                <Locale />
+                <Text>all</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>5</Value>
+              <DisplayName>
+                <Locale />
+                <Text>none</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>6</Value>
+              <DisplayName>
+                <Locale />
+                <Text>AB</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>7</Value>
+              <DisplayName>
+                <Locale />
+                <Text>BC</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+        <ExtensionObject>
+          <TypeId>
+            <Identifier>i=7616</Identifier>
+          </TypeId>
+          <Body>
+            <EnumValueType>
+              <Value>8</Value>
+              <DisplayName>
+                <Locale />
+                <Text>CA</Text>
+              </DisplayName>
+              <Description>
+                <Locale />
+                <Text>
+                </Text>
+              </Description>
+            </EnumValueType>
+          </Body>
+        </ExtensionObject>
+      </ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="A" Identifier="0" BitMask="" ArrayDimensions="" />
+      <Field Name="B" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="C" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="N" Identifier="3" BitMask="" ArrayDimensions="" />
+      <Field Name="all" Identifier="4" BitMask="" ArrayDimensions="" />
+      <Field Name="none" Identifier="5" BitMask="" ArrayDimensions="" />
+      <Field Name="AB" Identifier="6" BitMask="" ArrayDimensions="" />
+      <Field Name="BC" Identifier="7" BitMask="" ArrayDimensions="" />
+      <Field Name="CA" Identifier="8" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix3:ValueWithUnit" BaseType="Prefix1:Structure">
+    <ClassName />
+    <Fields>
+      <Field Name="value" BitMask="" DataType="Prefix1:Float" ArrayDimensions="" />
+      <Field Name="unit" BitMask="" DataType="Prefix5:Unit" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <ObjectType SymbolicName="Prefix3:LNodeContainerType" BaseType="Prefix3:IEC61850ProcessBaseObjectType" IsAbstract="true">
+    <References>
+      <Reference>
+        <ReferenceType>Prefix5:HasLNode</ReferenceType>
+        <TargetId>Prefix3:_x003C_LNode_x003E_</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:PowerSystemResourceType" BaseType="Prefix3:LNodeContainerType" IsAbstract="true">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:EquipmentType" BaseType="Prefix3:PowerSystemResourceType" IsAbstract="true">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:GeneralEquipmentType" BaseType="Prefix3:EquipmentType">
+    <Children>
+      <Property SymbolicName="Prefix3:type" ModellingRule="Optional" DataType="Prefix3:GeneralEquipmentKind" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:SubEquipmentType" BaseType="Prefix3:PowerSystemResourceType">
+    <Children>
+      <Property SymbolicName="Prefix3:phase" ModellingRule="Mandatory" DataType="Prefix3:PhaseKind" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:ConnectivityNodeType" BaseType="Prefix3:LNodeContainerType">
+    <Children>
+      <Property SymbolicName="Prefix3:pathName" ModellingRule="Mandatory" DataType="Prefix1:String" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:AbstractConductingEquipmentType" BaseType="Prefix3:EquipmentType" IsAbstract="true">
+    <Children>
+      <Object SymbolicName="Prefix3:_x003C_SubEquipment_x003E_" TypeDefinition="Prefix3:SubEquipmentType" ModellingRule="OptionalPlaceholder" />
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix5:HasTerminal</ReferenceType>
+        <TargetId>Prefix3:_x003C_ConnectivityNode_x003E_</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:TapChangerType" BaseType="Prefix3:PowerSystemResourceType">
+    <Children>
+      <Property SymbolicName="Prefix3:type" ModellingRule="Optional" DataType="Prefix1:String" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:TransformerWindingType" BaseType="Prefix3:AbstractConductingEquipmentType">
+    <Children>
+      <Object SymbolicName="Prefix3:TapChanger" TypeDefinition="Prefix3:TapChangerType" ModellingRule="Optional" />
+      <Property SymbolicName="Prefix3:type" ModellingRule="Mandatory" DataType="Prefix3:TransformerWindingKind" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:PowerTransformerType" BaseType="Prefix3:EquipmentType">
+    <Children>
+      <Object SymbolicName="Prefix3:_x003C_TransformerWinding_x003E_" TypeDefinition="Prefix3:TransformerWindingType" ModellingRule="MandatoryPlaceholder" />
+      <Property SymbolicName="Prefix3:type" ModellingRule="Mandatory" DataType="Prefix3:PowerTransformerKind" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:EquipmentContainerType" BaseType="Prefix3:PowerSystemResourceType" IsAbstract="true">
+    <Children>
+      <Object SymbolicName="Prefix3:_x003C_GeneralEquipment_x003E_" TypeDefinition="Prefix3:GeneralEquipmentType" ModellingRule="OptionalPlaceholder" />
+      <Object SymbolicName="Prefix3:_x003C_PowerTransformer_x003E_" TypeDefinition="Prefix3:PowerTransformerType" ModellingRule="OptionalPlaceholder" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:ConductingEquipmentType" BaseType="Prefix3:AbstractConductingEquipmentType">
+    <Children>
+      <Property SymbolicName="Prefix3:type" ModellingRule="Mandatory" DataType="Prefix3:ConductingEquipmentKind" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:SubFunctionType" BaseType="Prefix3:PowerSystemResourceType">
+    <Children>
+      <Object SymbolicName="Prefix3:_x003C_ConductingEquipement_x003E_" TypeDefinition="Prefix3:ConductingEquipmentType" ModellingRule="OptionalPlaceholder" />
+      <Object SymbolicName="Prefix3:_x003C_GeneralEquipment_x003E_" TypeDefinition="Prefix3:GeneralEquipmentType" ModellingRule="OptionalPlaceholder" />
+      <Property SymbolicName="Prefix3:type" ModellingRule="Optional" DataType="Prefix1:String" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:FunctionType" BaseType="Prefix3:PowerSystemResourceType">
+    <Children>
+      <Object SymbolicName="Prefix3:_x003C_ConductingEquipement_x003E_" TypeDefinition="Prefix3:ConductingEquipmentType" ModellingRule="OptionalPlaceholder" />
+      <Object SymbolicName="Prefix3:_x003C_GeneralEquipment_x003E_" TypeDefinition="Prefix3:GeneralEquipmentType" ModellingRule="OptionalPlaceholder" />
+      <Object SymbolicName="Prefix3:_x003C_SubFunction_x003E_" TypeDefinition="Prefix3:SubFunctionType" ModellingRule="OptionalPlaceholder" />
+      <Property SymbolicName="Prefix3:type" ModellingRule="Optional" DataType="Prefix1:String" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:BayType" BaseType="Prefix3:EquipmentContainerType">
+    <Children>
+      <Object SymbolicName="Prefix3:_x003C_ConductingEquipement_x003E_" TypeDefinition="Prefix3:ConductingEquipmentType" ModellingRule="OptionalPlaceholder" />
+      <Object SymbolicName="Prefix3:_x003C_ConnectivityNode_x003E_" TypeDefinition="Prefix3:ConnectivityNodeType" ModellingRule="OptionalPlaceholder" />
+      <Object SymbolicName="Prefix3:_x003C_Function_x003E_" TypeDefinition="Prefix3:FunctionType" ModellingRule="OptionalPlaceholder" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:VoltageLevelType" BaseType="Prefix3:EquipmentContainerType">
+    <Children>
+      <Object SymbolicName="Prefix3:_x003C_Bay_x003E_" TypeDefinition="Prefix3:BayType" ModellingRule="MandatoryPlaceholder" />
+      <Object SymbolicName="Prefix3:_x003C_Function_x003E_" TypeDefinition="Prefix3:FunctionType" ModellingRule="OptionalPlaceholder" />
+      <Property SymbolicName="Prefix3:voltage" ModellingRule="Mandatory" DataType="Prefix3:ValueWithUnit" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix3:SubstationType" BaseType="Prefix3:EquipmentContainerType">
+    <Children>
+      <Object SymbolicName="Prefix3:_x003C_VoltageLevel_x003E_" TypeDefinition="Prefix3:VoltageLevelType" ModellingRule="MandatoryPlaceholder" />
+      <Object SymbolicName="Prefix3:_x003C_Function_x003E_" TypeDefinition="Prefix3:FunctionType" ModellingRule="OptionalPlaceholder" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <View SymbolicName="Prefix5:ProcessView" ModellingRule="Mandatory">
+    <DisplayName>Process view</DisplayName>
+    <Description>Process view</Description>
+  </View>
+  <View SymbolicName="Prefix5:IEDView" ModellingRule="Mandatory">
+    <DisplayName>IED view</DisplayName>
+    <Description>IED view</Description>
+  </View>
+</ModelDesign>
