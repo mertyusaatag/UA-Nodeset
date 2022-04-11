@@ -1,0 +1,7 @@
+"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.5.0.40483";;;;"2022-04-11T09:19:24.8967353Z";;
+"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2022 Mariusz Postol";;;;"2022-04-11T09:19:24.8977357Z";;
+"UANodeSetValidation";Information;190380256;;"Entering ImportNodeSet and starting model import form file Opc.Ua.IEC61850-7-3.NodeSet2.xml";;;;"2022-04-11T09:19:50.7937665Z";;
+"UANodeSetValidation";Information;190380256;;"Entering ImportNodeSet and starting model import form file Opc.Ua.IEC61850-7-4.NodeSet2.xml";;;;"2022-04-11T09:20:00.6711534Z";;
+"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/IEC61850-7-4 namespace.";;;;"2022-04-11T09:22:09.4568645Z";;
+"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 258 nodes and no errors/warnings reported";;;;"2022-04-11T09:22:11.0783523Z";;
+"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file Opc.Ua.IEC61850-7-4.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2022-04-11T09:22:11.2057040Z";;
