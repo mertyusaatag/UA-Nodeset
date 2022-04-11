@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://sercos.org/UA/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-04-11T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09/03/2021">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://sercos.org/UA/" XmlNamespace="http://sercos.org/UA/" XmlPrefix="Prefix5" FilePath="" Version="1.00" PublicationDate="13/03/2017">http://sercos.org/UA/</Namespace>
+  </Namespaces>
+  <ObjectType SymbolicName="Prefix5:FunctionalGroupType" BaseType="Prefix1:FolderType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:SercosProfileType" BaseType="Prefix5:FunctionalGroupType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:SercosClassType" BaseType="Prefix5:FunctionalGroupType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:SercosFunctionGroupType" BaseType="Prefix5:FunctionalGroupType">
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:SercosDeviceType" BaseType="Prefix3:DeviceType">
+    <Children>
+      <Object SymbolicName="Prefix5:ParameterSet" TypeDefinition="Prefix5:FunctionalGroupType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix5:ProfileSet" TypeDefinition="Prefix5:FunctionalGroupType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix5:ClassSet" TypeDefinition="Prefix5:FunctionalGroupType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix5:FunctionGroupSet" TypeDefinition="Prefix5:FunctionalGroupType" ModellingRule="Mandatory" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:ProfileSet" BaseType="Prefix5:FunctionalGroupType">
+    <Children>
+      <Object SymbolicName="Prefix5:SercosProfileIdentifier_Placeholder" TypeDefinition="Prefix5:SercosProfileType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;SercosProfileIdentifier&gt;</BrowseName>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:ClassSet" BaseType="Prefix5:FunctionalGroupType">
+    <Children>
+      <Object SymbolicName="Prefix5:SercosClassIdentifier_Placeholder" TypeDefinition="Prefix5:SercosClassType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;SercosClassIdentifier&gt;</BrowseName>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix5:FunctionGroupSet" BaseType="Prefix5:FunctionalGroupType">
+    <Children>
+      <Object SymbolicName="Prefix5:FunctionGroupIdentifier_Placeholder" TypeDefinition="Prefix5:SercosFunctionGroupType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>&lt;FunctionGroupIdentifier&gt;</BrowseName>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <VariableType SymbolicName="Prefix5:SercosParameterType" DataType="Prefix1:BaseDataType" ValueRank="ScalarOrArray">
+    <Children>
+      <Property SymbolicName="Prefix5:Attribute" ModellingRule="Mandatory" DataType="Prefix1:UInt32" />
+      <Property SymbolicName="Prefix5:DisplayValue" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix5:DisplayMaxValue" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix5:DisplayMinValue" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix5:Exponent" ModellingRule="Optional" DataType="Prefix1:SByte" />
+      <Property SymbolicName="Prefix5:MaxValue" ModellingRule="Optional" DataType="Prefix1:BaseDataType" />
+      <Property SymbolicName="Prefix5:MinValue" ModellingRule="Optional" DataType="Prefix1:BaseDataType" />
+      <Property SymbolicName="Prefix5:ProcedureCommand" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+    </Children>
+    <ClassName />
+  </VariableType>
+</ModelDesign>
