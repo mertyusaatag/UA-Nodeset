@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:Prefix7="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix9="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/HaulOff/" xmlns:Prefix5="http://opcfoundation.org/UA/DI/" TargetNamespace="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" TargetVersion="" TargetPublicationDate="2022-04-12T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" XmlPrefix="Prefix3" FilePath="" Version="1.03" PublicationDate="10/05/2021">http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix5" FilePath="" Version="1.02.2" PublicationDate="02/06/2020">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name6" Prefix="Prefix6" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/" XmlPrefix="Prefix7" FilePath="" Version="1.01" PublicationDate="01/04/2021">http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/</Namespace>
+    <Namespace Name="Name8" Prefix="Prefix8" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/HaulOff/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/HaulOff/" XmlPrefix="Prefix9" FilePath="" Version="1.00" PublicationDate="01/06/2020">http://opcfoundation.org/UA/PlasticsRubber/Extrusion/HaulOff/</Namespace>
+  </Namespaces>
+  <ObjectType SymbolicName="Prefix9:HaulOff_InterfaceType" BaseType="Prefix7:ExtrusionDeviceType">
+    <Children>
+      <Property SymbolicName="Prefix9:ClampClosed" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
+      <Method SymbolicName="Prefix9:CloseClamp" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix9:Drives" TypeDefinition="Prefix3:DrivesType" ModellingRule="Mandatory">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix9:Force" TypeDefinition="Prefix3:MonitoredParameterType" ModellingRule="Optional">
+        <Children>
+          <Variable SymbolicName="Prefix3:ActualValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="None">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:AlarmSuppression" TypeDefinition="Prefix1:MultiStateValueDiscreteType" AccessLevel="ReadWrite">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+          <Property SymbolicName="Prefix3:AutomaticMonitoring" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Boolean>false</uax:Boolean>
+            </DefaultValue>
+          </Property>
+          <Variable SymbolicName="Prefix3:LowerTolerance" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:LowerTolerance2" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:MaxValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:MinValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:MonitoringSensitivity" TypeDefinition="Prefix1:MultiStateValueDiscreteType">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+          <Method SymbolicName="Prefix3:ResetMonitoring" />
+          <Variable SymbolicName="Prefix3:SetRampDown" TypeDefinition="Prefix1:AnalogItemType">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:SetRampUp" TypeDefinition="Prefix1:AnalogItemType">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:SetValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:UpperTolerance" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:UpperTolerance2" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+        </Children>
+      </Object>
+      <Method SymbolicName="Prefix9:OpenClamp" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix9:TemperatureZones" TypeDefinition="Prefix7:ExtrusionTemperatureZonesType" ModellingRule="Optional" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+</ModelDesign>

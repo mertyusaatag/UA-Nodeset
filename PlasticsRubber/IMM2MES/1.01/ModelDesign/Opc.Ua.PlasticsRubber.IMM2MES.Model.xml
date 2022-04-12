@@ -1,0 +1,953 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:Prefix7="http://opcfoundation.org/UA/PlasticsRubber/IMM2MES/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-04-12T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09/03/2021">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" XmlPrefix="Prefix5" FilePath="" Version="1.03" PublicationDate="10/05/2021">http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/</Namespace>
+    <Namespace Name="Name6" Prefix="Prefix6" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/IMM2MES/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/IMM2MES/" XmlPrefix="Prefix7" FilePath="" Version="1.01" PublicationDate="01/06/2020">http://opcfoundation.org/UA/PlasticsRubber/IMM2MES/</Namespace>
+  </Namespaces>
+  <DataType SymbolicName="Prefix7:IMMMessageClassificationEnumeration" BaseType="Prefix1:Enumeration">
+    <Description>This Enumeration specifies the values to be used in the Classification property in the MessageConditionType and related logbook events of OPC 40083</Description>
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="39">
+        <DefaultValue>
+          <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>0</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>OTHER</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>100</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>IMM_INJECTION_UNIT</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>101</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>IMM_CLAMPING_UNIT</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>102</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>IMM_HARDWARE</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>103</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>IMM_COMPRESSED_AIR_CONTROL</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>104</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>IMM_MACHINE_MONITORING</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>105</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>IMM_MOULD</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>106</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>IMM_EJECTOR</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>107</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>IMM_CORE_PULL</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>108</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>IMM_TABLE</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>109</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>IMM_INJECTION_PROGRAM</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>110</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>IMM_HYDRAULIC_TEMPERATURE_CONTROL</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>111</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>IMM_CYLINDER_TEMPERATURE_CONTROL</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>112</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>IMM_MOULD_TEMPERATURE_CONTROL</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>113</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>IMM_HOT_RUNNER</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>114</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>IMM_INTERFACES</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>115</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>IMM_MEASURING_SYSTEM</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>116</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>IMM_ROBOTIC_SYSTEM_INTERFACE</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>117</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>IMM_SPECIAL_PURPOSE_SIGNALS</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>118</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>IMM_REAL_TIME_ETHERNET_SYSTEM</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>119</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>IMM_MACHINE_CONTROLLER</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>120</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>IMM_SOFTWARE_MONITORING</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>200</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>PERIPHERAL_EXTERNAL_DEVICE_INTERFACE</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>201</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>PERIPHERAL_TEMPERATURE_CONTROL_UNIT</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>202</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>PERIPHERAL_ROBOTICS_SYSTEM</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>203</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>PERIPHERAL_LSR</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>204</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>PERIPHERAL_STRIPPER_UNIT</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>205</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>PERIPHERAL_DRYER</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>206</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>PERIPHERAL_CONVEYOR_BELT</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>207</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>PERIPHERAL_SORTER_UNIT</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>208</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>PERIPHERAL_COLOURING_UNIT</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>209</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>PERIPHERAL_FEEDING</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>210</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>PERIPHERAL_EXTERNAL_ALARMS</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>211</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>PERIPHERAL_VACUUM_CONTROL</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>212</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>PERIPHERAL_PRINTER_INTERFACE</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>300</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>OPERATION_QUALITY_MONITORING</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>301</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>OPERATION_MANUAL_OPERATION</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>302</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>OPERATION_EMERGENCY_STOP</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>303</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>OPERATION_JOB_STATUS</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description />
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="OTHER" Identifier="0" BitMask="" ArrayDimensions="" />
+      <Field Name="IMM_INJECTION_UNIT" Identifier="100" BitMask="" ArrayDimensions="" />
+      <Field Name="IMM_CLAMPING_UNIT" Identifier="101" BitMask="" ArrayDimensions="" />
+      <Field Name="IMM_HARDWARE" Identifier="102" BitMask="" ArrayDimensions="" />
+      <Field Name="IMM_COMPRESSED_AIR_CONTROL" Identifier="103" BitMask="" ArrayDimensions="" />
+      <Field Name="IMM_MACHINE_MONITORING" Identifier="104" BitMask="" ArrayDimensions="" />
+      <Field Name="IMM_MOULD" Identifier="105" BitMask="" ArrayDimensions="" />
+      <Field Name="IMM_EJECTOR" Identifier="106" BitMask="" ArrayDimensions="" />
+      <Field Name="IMM_CORE_PULL" Identifier="107" BitMask="" ArrayDimensions="" />
+      <Field Name="IMM_TABLE" Identifier="108" BitMask="" ArrayDimensions="" />
+      <Field Name="IMM_INJECTION_PROGRAM" Identifier="109" BitMask="" ArrayDimensions="" />
+      <Field Name="IMM_HYDRAULIC_TEMPERATURE_CONTROL" Identifier="110" BitMask="" ArrayDimensions="" />
+      <Field Name="IMM_CYLINDER_TEMPERATURE_CONTROL" Identifier="111" BitMask="" ArrayDimensions="" />
+      <Field Name="IMM_MOULD_TEMPERATURE_CONTROL" Identifier="112" BitMask="" ArrayDimensions="" />
+      <Field Name="IMM_HOT_RUNNER" Identifier="113" BitMask="" ArrayDimensions="" />
+      <Field Name="IMM_INTERFACES" Identifier="114" BitMask="" ArrayDimensions="" />
+      <Field Name="IMM_MEASURING_SYSTEM" Identifier="115" BitMask="" ArrayDimensions="" />
+      <Field Name="IMM_ROBOTIC_SYSTEM_INTERFACE" Identifier="116" BitMask="" ArrayDimensions="" />
+      <Field Name="IMM_SPECIAL_PURPOSE_SIGNALS" Identifier="117" BitMask="" ArrayDimensions="" />
+      <Field Name="IMM_REAL_TIME_ETHERNET_SYSTEM" Identifier="118" BitMask="" ArrayDimensions="" />
+      <Field Name="IMM_MACHINE_CONTROLLER" Identifier="119" BitMask="" ArrayDimensions="" />
+      <Field Name="IMM_SOFTWARE_MONITORING" Identifier="120" BitMask="" ArrayDimensions="" />
+      <Field Name="PERIPHERAL_EXTERNAL_DEVICE_INTERFACE" Identifier="200" BitMask="" ArrayDimensions="" />
+      <Field Name="PERIPHERAL_TEMPERATURE_CONTROL_UNIT" Identifier="201" BitMask="" ArrayDimensions="" />
+      <Field Name="PERIPHERAL_ROBOTICS_SYSTEM" Identifier="202" BitMask="" ArrayDimensions="" />
+      <Field Name="PERIPHERAL_LSR" Identifier="203" BitMask="" ArrayDimensions="" />
+      <Field Name="PERIPHERAL_STRIPPER_UNIT" Identifier="204" BitMask="" ArrayDimensions="" />
+      <Field Name="PERIPHERAL_DRYER" Identifier="205" BitMask="" ArrayDimensions="" />
+      <Field Name="PERIPHERAL_CONVEYOR_BELT" Identifier="206" BitMask="" ArrayDimensions="" />
+      <Field Name="PERIPHERAL_SORTER_UNIT" Identifier="207" BitMask="" ArrayDimensions="" />
+      <Field Name="PERIPHERAL_COLOURING_UNIT" Identifier="208" BitMask="" ArrayDimensions="" />
+      <Field Name="PERIPHERAL_FEEDING" Identifier="209" BitMask="" ArrayDimensions="" />
+      <Field Name="PERIPHERAL_EXTERNAL_ALARMS" Identifier="210" BitMask="" ArrayDimensions="" />
+      <Field Name="PERIPHERAL_VACUUM_CONTROL" Identifier="211" BitMask="" ArrayDimensions="" />
+      <Field Name="PERIPHERAL_PRINTER_INTERFACE" Identifier="212" BitMask="" ArrayDimensions="" />
+      <Field Name="OPERATION_QUALITY_MONITORING" Identifier="300" BitMask="" ArrayDimensions="" />
+      <Field Name="OPERATION_MANUAL_OPERATION" Identifier="301" BitMask="" ArrayDimensions="" />
+      <Field Name="OPERATION_EMERGENCY_STOP" Identifier="302" BitMask="" ArrayDimensions="" />
+      <Field Name="OPERATION_JOB_STATUS" Identifier="303" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <ObjectType SymbolicName="Prefix7:IMM_MES_InterfaceType">
+    <Description>Root ObjectType representing an injection moulding machine with all its subcomponents for data exchange with an MES</Description>
+    <Children>
+      <Object SymbolicName="Prefix7:InjectionUnits" TypeDefinition="Prefix7:InjectionUnitsType" ModellingRule="Mandatory">
+        <Description>Container for the injection units</Description>
+      </Object>
+      <Object SymbolicName="Prefix7:Jobs" TypeDefinition="Prefix5:JobsType" ModellingRule="Optional" SupportsEvents="true">
+        <Description>Management of production jobs on the machine and information on their status including process parameters</Description>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix5:RequestCyclicJobListEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix7:MachineConfiguration" TypeDefinition="Prefix5:MachineConfigurationType" ModellingRule="Mandatory">
+        <Description>Current configuration of the machine</Description>
+      </Object>
+      <Object SymbolicName="Prefix7:MachineInformation" TypeDefinition="Prefix5:MachineInformationType" ModellingRule="Mandatory">
+        <Description>General description of the machine</Description>
+      </Object>
+      <Object SymbolicName="Prefix7:MachineMESConfiguration" TypeDefinition="Prefix5:MachineMESConfigurationType" ModellingRule="Mandatory">
+        <Description>Current configuration of a machine related to a Manufacturing Execution System (MES)</Description>
+      </Object>
+      <Object SymbolicName="Prefix7:MachineMESStatus" TypeDefinition="Prefix5:MachineMESStatusType" ModellingRule="Mandatory" SupportsEvents="true">
+        <Description>Current status of a machine related to the MES</Description>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix5:MessageConditionType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix7:MachineStatus" TypeDefinition="Prefix5:MachineStatusType" ModellingRule="Mandatory">
+        <Description>Information on the current status of the machine</Description>
+      </Object>
+      <Object SymbolicName="Prefix7:Moulds" TypeDefinition="Prefix5:MouldsType" ModellingRule="Mandatory">
+        <Description>Container for the moulds</Description>
+      </Object>
+      <Object SymbolicName="Prefix7:PowerUnits" TypeDefinition="Prefix5:PowerUnitsType" ModellingRule="Mandatory">
+        <Description>Container for the power units</Description>
+      </Object>
+      <Object SymbolicName="Prefix7:ProductionDatasetManagement" TypeDefinition="Prefix5:ProductionDatasetManagementType" ModellingRule="Optional">
+        <Description>Management of production datasets</Description>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix5:CycleParametersEventType</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix5:LogbookEventType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:InjectionUnitsType">
+    <Description>Container for objects of InjectionUnitType</Description>
+    <Children>
+      <Object SymbolicName="Prefix7:InjectionUnit__Nr_" TypeDefinition="Prefix7:InjectionUnitType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>InjectionUnit_&lt;Nr&gt;</BrowseName>
+      </Object>
+      <Property SymbolicName="Prefix1:NodeVersion" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:InjectionUnitCycleParametersType" IsAbstract="true">
+    <Children>
+      <Variable SymbolicName="Prefix7:BackPressure" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Back pressure is the melt-pressure against the screw movement during dosage</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:CavityPressureMaximum" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Maximum pressure during the injection process in the cavity or mould</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:CushionStroke" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Stroke position at cushion</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:CushionVolume" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double">
+        <Description>Material volume remained in front of the screw after injection and holding pressure</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:DecompressionVolumeAfterPlastification" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Decompression after plastification is the movement of the screw in the opposite direction to injection</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:DecompressionVolumeBeforePlastification" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Decompression before plastification is the movement of the screw in the opposite direction to injection</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:DosingTime" ModellingRule="Mandatory" DataType="Prefix1:Duration">
+        <Description>Time to melt-up the plastic granulates and feed the melt for the next injection shot to the front of the screw</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:FlowIndex" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Flow index</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:HoldHydraulicPressureAverage" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Average holding pressure in the hydraulic cylinder</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:HoldHydraulicPressureMaximum" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Maximum holding pressure in the hydraulic cylinder</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:HoldSpecificPressureAverage" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Average holding pressure in front of the screw</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:HoldSpecificPressureMaximum" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Maximum holding pressure in front of the screw</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:HydraulicPressureMaximum" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Maximum pressure in the hydraulic cylinder</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Property SymbolicName="Prefix7:Index" ModellingRule="Mandatory" DataType="Prefix1:UInt32">
+        <Description>Index of the injection unit</Description>
+        <DefaultValue>
+          <uax:UInt32>0</uax:UInt32>
+        </DefaultValue>
+      </Property>
+      <Variable SymbolicName="Prefix7:InjectionSpeedAverage" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Average injection speed (e.g. mm/s)</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:InjectionSpeedMaximum" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Maximum injection speed (e.g. mm/s)</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:InjectionStartPosition" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Start position of the injection</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:InjectionTime" ModellingRule="Mandatory" DataType="Prefix1:Duration">
+        <Description>Time required to fill the cavity or mould</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:PlastificationCircumferentialSpeedAverage" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Average screw circumferential speed for plastification (e.g. mm/s)</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:PlastificationCircumferentialSpeedMaximum" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Maximum screw circumferential speed for plastification (e.g. mm/s)</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:PlastificationHydraulicPressureAverage" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Average plastification pressure in cylinder</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:PlastificationHydraulicPressureMaximum" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Maximum plastification pressure in cylinder </Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:PlastificationRotationalSpeedAverage" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Average plastification speed of the injection unit (RPM)</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:PlastificationRotationalSpeedMaximum" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Maximum plastification speed of the injection unit (RPM)</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:PlastificationSpecificPressureAverage" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Average plastification pressure in front of the screw tip</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:PlastificationSpecificPressureMaximum" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Maximum plastification pressure in front of the screw tip</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:PlastificationVolume" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double">
+        <Description>Volume dosed by the machine for the next injection shot</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:SpecificPressureMaximum" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double">
+        <Description>Pressure in front of the screw tip</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:TransferCavityPressure" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Cavity pressure in the mould during switch-over to the holding pressure</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:TransferHydraulicPressure" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Hydraulic pressure in the cylinder during switch-over to the holding pressure</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:TransferSpecificPressure" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Pressure in front of the screw tip during switch-over to the holding pressure</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:TransferStroke" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Switch-over point to the holding pressure via stroke</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:TransferVolume" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Switch-over point to the holding pressure via volume</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:VPChangeOverPosition" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Screw position at switching between injection (V) and holding pressure (P)</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:InjectionUnitType">
+    <Description>Description and status of an injection unit </Description>
+    <Children>
+      <Property SymbolicName="Prefix7:BarrelId" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <Description>Id (e.g. serial number) of the barrel</Description>
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix7:Index" ModellingRule="Mandatory" DataType="Prefix1:UInt32">
+        <Description>Number of the injection unit</Description>
+        <DefaultValue>
+          <uax:UInt32>0</uax:UInt32>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix7:InProduction" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
+        <Description>information if the injection unit is used in the current running production</Description>
+        <DefaultValue>
+          <uax:Boolean>true</uax:Boolean>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix7:IsPresent" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
+        <Description>Information if the injection unit is physically installed on the injection machines</Description>
+        <DefaultValue>
+          <uax:Boolean>true</uax:Boolean>
+        </DefaultValue>
+      </Property>
+      <Variable SymbolicName="Prefix7:MaxScrewStroke" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>maximum stroke of the screw installed in the injection unit</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:ScrewDiameter" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>diameter of the screw installed in the injection unit</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Property SymbolicName="Prefix7:ScrewId" ModellingRule="Optional" DataType="Prefix1:String">
+        <Description>Id of the screw installed in the injection unit</Description>
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+      <Variable SymbolicName="Prefix7:ScrewVolume" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>volume of the screw installed in the injection unit</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Object SymbolicName="Prefix7:TemperatureZones" TypeDefinition="Prefix5:TemperatureZonesType" ModellingRule="Mandatory">
+        <Description>container for the barrel temperature zones of the injection unit</Description>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+</ModelDesign>

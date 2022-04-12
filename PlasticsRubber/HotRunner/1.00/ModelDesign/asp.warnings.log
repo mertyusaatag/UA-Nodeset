@@ -1,0 +1,10 @@
+"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.5.0.40483";;;;"2022-04-12T20:08:59.5877067Z";;
+"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2022 Mariusz Postol";;;;"2022-04-12T20:08:59.5887072Z";;
+"UANodeSetValidation";Information;190380256;;"Entering ImportNodeSet and starting model import form file Opc.Ua.Di.NodeSet2.xml";;;;"2022-04-12T20:09:24.5604677Z";;
+"UANodeSetValidation";Information;190380256;;"Entering ImportNodeSet and starting model import form file Opc.Ua.PlasticsRubber.GeneralTypes.NodeSet2.xml";;;;"2022-04-12T20:09:30.2153122Z";;
+"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import";;;;"2022-04-12T20:09:30.2292745Z";;
+"UANodeSetValidation";Information;190380256;;"Entering ImportNodeSet and starting model import form file Opc.Ua.PlasticsRubber.HotRunner.NodeSet2.xml";;;;"2022-04-12T20:09:48.0476258Z";;
+"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import";;;;"2022-04-12T20:09:48.0615577Z";;
+"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/PlasticsRubber/HotRunner/ namespace.";;;;"2022-04-12T20:10:07.8626059Z";;
+"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 13 nodes and no errors/warnings reported";;;;"2022-04-12T20:10:07.9693211Z";;
+"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file Opc.Ua.PlasticsRubber.HotRunner.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2022-04-12T20:10:08.0876329Z";;

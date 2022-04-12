@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:Prefix7="http://opcfoundation.org/UA/PlasticsRubber/HotRunner/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-04-12T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09/03/2021">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" XmlPrefix="Prefix5" FilePath="" Version="1.03" PublicationDate="10/05/2021">http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/</Namespace>
+    <Namespace Name="Name6" Prefix="Prefix6" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/HotRunner/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/HotRunner/" XmlPrefix="Prefix7" FilePath="" Version="1.00" PublicationDate="10/05/2021">http://opcfoundation.org/UA/PlasticsRubber/HotRunner/</Namespace>
+  </Namespaces>
+  <DataType SymbolicName="Prefix7:ControllerTypeEnumeration" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="7">
+        <DefaultValue>
+          <uax:ListOfLocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>CLOSED_LOOP_CONTROL</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>MANUAL</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>SYNCHRONOUS_ZONE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>CASCADE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>COOL_ZONE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>MEASURING_ZONE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>NOT_USED</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="CLOSED_LOOP_CONTROL" Identifier="0" BitMask="" ArrayDimensions="" />
+      <Field Name="MANUAL" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="SYNCHRONOUS_ZONE" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="CASCADE" Identifier="3" BitMask="" ArrayDimensions="" />
+      <Field Name="COOL_ZONE" Identifier="4" BitMask="" ArrayDimensions="" />
+      <Field Name="MEASURING_ZONE" Identifier="5" BitMask="" ArrayDimensions="" />
+      <Field Name="NOT_USED" Identifier="6" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix7:ZoneStatusEnumeration" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="10">
+        <DefaultValue>
+          <uax:ListOfLocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>OTHER</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>GOOD</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>SENSOR_FAULT</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>TEMPERATURE_SENSOR_BROKEN</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>TEMPERATURE_SENSOR_REVERSED</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>POWER_UNIT_FAILED</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>HEATING_OUTPUT_TO_LOW</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>ERROR</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>WARNING</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>LEAKAGE_DETECTED</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="OTHER" Identifier="0" BitMask="" ArrayDimensions="" />
+      <Field Name="GOOD" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="SENSOR_FAULT" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="TEMPERATURE_SENSOR_BROKEN" Identifier="3" BitMask="" ArrayDimensions="" />
+      <Field Name="TEMPERATURE_SENSOR_REVERSED" Identifier="4" BitMask="" ArrayDimensions="" />
+      <Field Name="POWER_UNIT_FAILED" Identifier="5" BitMask="" ArrayDimensions="" />
+      <Field Name="HEATING_OUTPUT_TO_LOW" Identifier="6" BitMask="" ArrayDimensions="" />
+      <Field Name="ERROR" Identifier="7" BitMask="" ArrayDimensions="" />
+      <Field Name="WARNING" Identifier="8" BitMask="" ArrayDimensions="" />
+      <Field Name="LEAKAGE_DETECTED" Identifier="9" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix7:TimeMethodPIDParametersDataType" BaseType="Prefix1:Structure">
+    <ClassName />
+    <Fields>
+      <Field Name="Xp" BitMask="" DataType="Prefix1:Double" ArrayDimensions="">
+        <Description>proportional band</Description>
+      </Field>
+      <Field Name="Tn" BitMask="" DataType="Prefix1:Double" ArrayDimensions="">
+        <Description>reset time</Description>
+      </Field>
+      <Field Name="Tv" BitMask="" DataType="Prefix1:Double" ArrayDimensions="">
+        <Description>derivative time</Description>
+      </Field>
+      <Field Name="Ts" BitMask="" DataType="Prefix1:Double" ArrayDimensions="">
+        <Description>sample time</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <ObjectType SymbolicName="Prefix7:ZoneAlarmType" BaseType="Prefix5:HelpOffNormalAlarmType">
+    <Description>Represent zone-related text messages of an HRD</Description>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:ControllerType">
+    <Description>Configuration and operation of the zone controller</Description>
+    <Children>
+      <Variable SymbolicName="Prefix7:ActualOutput" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Indicates the currently active output in percent</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Property SymbolicName="Prefix7:ActualType" ModellingRule="Mandatory" DataType="Prefix7:ControllerTypeEnumeration">
+        <Description>Actual value for the controller type used by the zone</Description>
+        <DefaultValue>
+          <uax:Int32>0</uax:Int32>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix7:ActualValueActive" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
+        <Description>Indicates the current status of the controller</Description>
+        <DefaultValue>
+          <uax:Boolean>false</uax:Boolean>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix7:AutomaticReferenceZoneSelection" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>If true, the HRD selects automatically the reference zone.</Description>
+      </Property>
+      <Variable SymbolicName="Prefix7:AverageControllerOutput" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Indicates the average output which can be used when a sensor is broken</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Object SymbolicName="Prefix7:LoadCurrent" TypeDefinition="Prefix5:MonitoredParameterType" ModellingRule="Optional">
+        <Description>Information about the load current in Ampere</Description>
+      </Object>
+      <Object SymbolicName="Prefix7:LoadPower" TypeDefinition="Prefix5:MonitoredParameterType" ModellingRule="Optional">
+        <Description>Information about the load power in Watt</Description>
+      </Object>
+      <Variable SymbolicName="Prefix7:LowerOutput" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>Limitation of the minimum output in closed-loop control in %</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Property SymbolicName="Prefix7:OutputTime" ModellingRule="Optional" DataType="Prefix1:Duration" AccessLevel="ReadWrite">
+        <Description>Time basis for operating the actuator</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix7:ReferenceZone" ModellingRule="Optional" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
+        <Description>If zones are to operate parallel to a control zone, the reference relation can be realised with this parameter.</Description>
+        <DefaultValue>
+          <uax:UInt32>0</uax:UInt32>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix7:SetValueActive" ModellingRule="Mandatory" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>A control zone is switched on and off with this parameter.</Description>
+      </Property>
+      <Variable SymbolicName="Prefix7:SetValueManualOutput" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>Manually given output in percent if SetValueType = MANUAL is selected</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:SetValueType" TypeDefinition="Prefix1:MultiStateValueDiscreteType" ModellingRule="Mandatory" DataType="Prefix1:UInt16" AccessLevel="ReadWrite">
+        <Description>Set value for the controller type used by the zone</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+        </Children>
+      </Variable>
+      <Variable SymbolicName="Prefix7:UpperOutput" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>Limitation of the maximum output in closed-loop control in %</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:UpperSetValueCascade" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>If the two controllers are cascaded, the master defines to which nominal temperature value the slave is to control to. With this parameter, the upper limit for the slave is defined.</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:HeatUpType">
+    <Description>Alternative to the SetRamp functionality of MonitoredParameterType defined in OPC 40083. With HeatUpType, it can be pre-defined how the control circuit is to be operated when it is switched on for the next time; with or without heat-up process.</Description>
+    <Children>
+      <Property SymbolicName="Prefix7:EvenHeatUpEnabled" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>Enables even heat-up process until nominal SetValue of Temperature of ZoneType is reached</Description>
+      </Property>
+      <Property SymbolicName="Prefix7:ManualOutputLimitActive" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>Activates heat-up process with pre-defined SetValueManualOutputLimit until SetValueTemperature is reached</Description>
+      </Property>
+      <Property SymbolicName="Prefix7:RelayHeatingGroup" ModellingRule="Optional" DataType="Prefix1:Byte" AccessLevel="ReadWrite">
+        <Description>Number of the heating group for relay heating</Description>
+      </Property>
+      <Property SymbolicName="Prefix7:RelayHeatingTime" ModellingRule="Optional" DataType="Prefix1:Duration" AccessLevel="ReadWrite">
+        <Description>Time for relay heating of the zone. When RelayHeatingTime of all zones of a heating group have expired, the next group starts heating.</Description>
+      </Property>
+      <Variable SymbolicName="Prefix7:SetValueManualOutputLimit" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>This pre-defined maximum output (in percent) is valid until the SetValueTemperature is reached.</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:SetValueTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>If ManualOutputLimitActive is set, SetValueManualOutputLimit is active until this nominal temperature value is reached.</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:HRD_InterfaceType">
+    <Description>Root ObjectType representing a hot runner device with its subcomponents</Description>
+    <Children>
+      <Object SymbolicName="Prefix7:Diagnostics" TypeDefinition="Prefix5:DiagnosticsType" ModellingRule="Optional">
+        <Description>Diagnosis functions to check, for example, the wiring to the heating system or the sensor and heater allocation</Description>
+      </Object>
+      <Property SymbolicName="Prefix7:DisplayLanguage" ModellingRule="Optional" DataType="Prefix1:LocaleId" AccessLevel="ReadWrite">
+        <Description>Setting of desired language on the user interface at the HRD</Description>
+      </Property>
+      <Object SymbolicName="Prefix7:Identification" TypeDefinition="Prefix5:IdentificationType" ModellingRule="Mandatory">
+        <Description>Identification of the device </Description>
+      </Object>
+      <Object SymbolicName="Prefix7:MachineConfiguration" TypeDefinition="Prefix5:MachineConfigurationType" ModellingRule="Mandatory">
+        <Description>Current configuration of the hot runner device</Description>
+      </Object>
+      <Object SymbolicName="Prefix7:MaintenanceInformation" TypeDefinition="Prefix7:MaintenanceInformationType" ModellingRule="Optional">
+        <Description>Information about the maintenance status of various parts of a hot runner device</Description>
+      </Object>
+      <Object SymbolicName="Prefix7:Operation" TypeDefinition="Prefix7:OperationType" ModellingRule="Mandatory">
+        <Description>Contains components which are necessary to operate the HRD</Description>
+      </Object>
+      <Object SymbolicName="Prefix7:Zones" TypeDefinition="Prefix7:ZonesType" ModellingRule="Mandatory">
+        <Description>Container for the zones</Description>
+        <Children>
+          <Object SymbolicName="Prefix7:Zone__Nr_" TypeDefinition="Prefix7:ZoneType">
+            <BrowseName>Zone_&lt;Nr&gt;</BrowseName>
+          </Object>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix5:HelpOffNormalAlarmType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:MaintenanceInformationType">
+    <Description>Information about the maintenance status of various parts of a hot runner device</Description>
+    <Children>
+      <Object SymbolicName="Prefix7:CoolingFan" TypeDefinition="Prefix5:MaintenanceType" ModellingRule="Optional">
+        <Description>Information about the maintenance status of the cooling fan</Description>
+        <Children>
+          <Method SymbolicName="Prefix5:Reset">
+            <Description>This Method sets the CurrentInterval to 0 and Status to NOT_DUE_0</Description>
+          </Method>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix7:Heating" TypeDefinition="Prefix5:MaintenanceType" ModellingRule="Optional">
+        <Description>Information about the maintenance status of the heating</Description>
+        <Children>
+          <Method SymbolicName="Prefix5:Reset">
+            <Description>This Method sets the CurrentInterval to 0 and Status to NOT_DUE_0</Description>
+          </Method>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix7:SafetyTest" TypeDefinition="Prefix5:MaintenanceType" ModellingRule="Optional">
+        <Description>Information about the maintenance status of the safety test</Description>
+        <Children>
+          <Method SymbolicName="Prefix5:Reset">
+            <Description>This Method sets the CurrentInterval to 0 and Status to NOT_DUE_0</Description>
+          </Method>
+        </Children>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:OperationType">
+    <Description>Contains components which are necessary to operate the HRD</Description>
+    <Children>
+      <Variable SymbolicName="Prefix7:ActiveErrors" ModellingRule="Mandatory" DataType="Prefix5:ClassifiedActiveErrorDataType" ValueRank="Array" ArrayDimensions="0">
+        <Description>List of the active errors of the device</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix7:ActiveSetValues" TypeDefinition="Prefix1:MultiStateValueDiscreteType" ModellingRule="Mandatory" DataType="Prefix1:UInt16" AccessLevel="ReadWrite">
+        <Description>Central selection of the used set temperature for the temperature zones </Description>
+        <Children>
+          <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+        </Children>
+        <DefaultValue>
+          <uax:UInt16>0</uax:UInt16>
+        </DefaultValue>
+      </Variable>
+      <Property SymbolicName="Prefix7:DeviceMappingNumber" ModellingRule="Mandatory" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
+        <Description>Unique identifier/address/number for devices of the same DeviceType within a local network</Description>
+      </Property>
+      <Property SymbolicName="Prefix7:EnablePower" ModellingRule="Mandatory" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>Global power control switch for all zone controllers</Description>
+        <DefaultValue>
+          <uax:Boolean>false</uax:Boolean>
+        </DefaultValue>
+      </Property>
+      <Variable SymbolicName="Prefix7:EvenHeatUpMaxTemperatureDifference" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>Definition of the maximum temperature difference of all zones during even heat-up </Description>
+      </Variable>
+      <Property SymbolicName="Prefix7:HighestActiveAlarmSeverity" ModellingRule="Mandatory" DataType="Prefix1:UInt16">
+        <Description>Indication of the severity of the highest active alarm</Description>
+      </Property>
+      <Method SymbolicName="Prefix7:IdentifyDevice" ModellingRule="Optional">
+        <Description>The peripheral device on which this method is called shows itself by e.g. activation of a LED.</Description>
+      </Method>
+      <Variable SymbolicName="Prefix7:ReactionOnDisconnect" TypeDefinition="Prefix1:MultiStateValueDiscreteType" ModellingRule="Mandatory" DataType="Prefix1:UInt16">
+        <Description>Selection of the set temperature for the temperature zones in case of a disconnection from the OPC UA client </Description>
+      </Variable>
+      <Method SymbolicName="Prefix7:ResetAllErrors" ModellingRule="Optional">
+        <Description>Method to reset all errors of the device</Description>
+      </Method>
+      <Method SymbolicName="Prefix7:ResetErrorById" ModellingRule="Optional">
+        <Description>Method to reset one error of the device</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Id</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Property SymbolicName="Prefix7:SessionNameForReactionOnDisconnect" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <Description>Contains the sessionName of the connection with the client relevant for ReactionOnDisconnect</Description>
+      </Property>
+      <Method SymbolicName="Prefix7:SetReactionOnDisconnect" ModellingRule="Mandatory">
+        <Description>Method to set ReactionOnDisconnect and SessionNameForReactionOnDisconnect</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>ReactionOnDisconnect</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=5</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:ZonesType">
+    <Description>Container for the zones</Description>
+    <Children>
+      <Property SymbolicName="Prefix1:NodeVersion" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+      <Object SymbolicName="Prefix7:Zone__Nr_" TypeDefinition="Prefix7:ZoneType" ModellingRule="MandatoryPlaceholder">
+        <BrowseName>Zone_&lt;Nr&gt;</BrowseName>
+        <Description>A HRD zone</Description>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:ZoneType">
+    <Description>Represents all functionalities of a heating zone, such as temperature monitoring, control, heatup</Description>
+    <Children>
+      <Variable SymbolicName="Prefix7:CommunicationProtocolType" TypeDefinition="Prefix1:MultiStateValueDiscreteType" ModellingRule="Optional" DataType="Prefix1:UInt16" AccessLevel="ReadWrite">
+        <Description>Used communication protocol between the sensor and the control system of the HRD</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+        </Children>
+      </Variable>
+      <Object SymbolicName="Prefix7:Controller" TypeDefinition="Prefix7:ControllerType" ModellingRule="Mandatory">
+        <Description>Setting and monitoring of the controller</Description>
+      </Object>
+      <Object SymbolicName="Prefix7:HeatUp" TypeDefinition="Prefix7:HeatUpType" ModellingRule="Optional">
+        <Description>Setting for heat up procedure</Description>
+      </Object>
+      <Property SymbolicName="Prefix7:HighestActiveAlarmSeverity" ModellingRule="Mandatory" DataType="Prefix1:UInt16">
+        <Description>Indicates the severity of the highest active alarm related to the current zone</Description>
+      </Property>
+      <Property SymbolicName="Prefix7:Name" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <Description>A user given name of the zone</Description>
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+      <Object SymbolicName="Prefix7:Temperature" TypeDefinition="Prefix7:HRDTemperatureType" ModellingRule="Mandatory">
+        <Description>Setting and monitoring of the temperature</Description>
+      </Object>
+      <Object SymbolicName="Prefix7:TemperatureRiseMonitoring" TypeDefinition="Prefix7:TemperatureRiseMonitoringType" ModellingRule="Optional">
+        <Description>Additional monitoring for the process temperature</Description>
+      </Object>
+      <Variable SymbolicName="Prefix7:ThermocoupleType" TypeDefinition="Prefix1:MultiStateValueDiscreteType" ModellingRule="Optional" DataType="Prefix1:UInt16" AccessLevel="ReadWrite">
+        <Description>Type of connected external temperature sensor </Description>
+        <Children>
+          <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+        </Children>
+        <DefaultValue>
+          <uax:UInt16>0</uax:UInt16>
+        </DefaultValue>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:HRDTemperatureType" BaseType="Prefix5:ControlledParameterType">
+    <Description>Used for setting and monitoring the temperatures in a HRD</Description>
+    <Children>
+      <Variable SymbolicName="Prefix7:ActiveSetValue" TypeDefinition="Prefix1:MultiStateValueDiscreteType" ModellingRule="Mandatory" DataType="Prefix1:UInt16">
+        <Description>Current active set temperature for the temperature zone </Description>
+      </Variable>
+      <Variable SymbolicName="Prefix7:BoostSetValue" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>Set value for boost mode</Description>
+      </Variable>
+      <Property SymbolicName="Prefix7:BoostTime" ModellingRule="Optional" DataType="Prefix1:Duration" AccessLevel="ReadWrite">
+        <Description>Duration of the boost mode after which the set value which was active before boost is becoming active again</Description>
+      </Property>
+      <Variable SymbolicName="Prefix7:SecondSetValue" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>Second set value for fast switch-over</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix7:StandbySetValue" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>Set value for standby mode</Description>
+      </Variable>
+      <Property SymbolicName="Prefix7:TimeMethodPIDParameters" ModellingRule="Optional" DataType="Prefix7:TimeMethodPIDParametersDataType" ValueRank="Array" ArrayDimensions="0" AccessLevel="ReadWrite">
+        <Description>Setting of PID parameters with time method</Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:TemperatureRiseMonitoringType">
+    <Description>At maximum controller output, the temperature value must change in a given time by a specified value, otherwise there is an error in the measuring circuit.</Description>
+    <Children>
+      <Property SymbolicName="Prefix7:ErrorDetected" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
+        <Description>Result of the TemperatureRiseMonitoring</Description>
+        <DefaultValue>
+          <uax:Boolean>false</uax:Boolean>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix7:SetValueActive" ModellingRule="Mandatory" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>On / Off for the TemperatureRiseMonitoring</Description>
+      </Property>
+      <Variable SymbolicName="Prefix7:SetValueTemperatureChange" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>Specification of the set value change</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Property SymbolicName="Prefix7:SupervisionTime" ModellingRule="Optional" DataType="Prefix1:Duration" AccessLevel="ReadWrite">
+        <Description>Specification of the time within the temperature must have changed</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+</ModelDesign>
