@@ -1,0 +1,998 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:Prefix7="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/ExtrusionLine/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-04-12T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09/03/2021">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" XmlPrefix="Prefix5" FilePath="" Version="1.03" PublicationDate="10/05/2021">http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/</Namespace>
+    <Namespace Name="Name6" Prefix="Prefix6" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/ExtrusionLine/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/ExtrusionLine/" XmlPrefix="Prefix7" FilePath="" Version="1.00.01" PublicationDate="09/11/2020">http://opcfoundation.org/UA/PlasticsRubber/Extrusion/ExtrusionLine/</Namespace>
+  </Namespaces>
+  <DataType SymbolicName="Prefix7:MaterialMappingType" BaseType="Prefix1:Structure">
+    <ClassName />
+    <Fields>
+      <Field Name="MaterialId" BitMask="" DataType="Prefix1:String" ArrayDimensions="" />
+      <Field Name="MaterialLot" BitMask="" DataType="Prefix1:String" ArrayDimensions="" />
+      <Field Name="HopperId" BitMask="" DataType="Prefix1:String" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <ObjectType SymbolicName="Prefix7:JobGroupStatusChangedEventType" BaseType="Prefix1:BaseEventType" IsAbstract="true">
+    <Children>
+      <Property SymbolicName="Prefix7:ActiveStatus" ModellingRule="Mandatory" DataType="Prefix5:JobStatusEnumeration">
+        <DefaultValue>
+          <uax:Int32>0</uax:Int32>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix7:Id" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix7:LastStatus" ModellingRule="Mandatory" DataType="Prefix5:JobStatusEnumeration">
+        <DefaultValue>
+          <uax:Int32>0</uax:Int32>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:JobGroupsType">
+    <Children>
+      <Method SymbolicName="Prefix7:AddJobGroup" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="10">
+            <DefaultValue>
+              <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Id</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Description</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>EquipmentDescription</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>ProductionDatasetName</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>MaterialMapping</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>ns=1;i=3003</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Priority</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=7</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>PlannedStart</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=294</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>PlannedProductionTime</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=290</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>PlannedSetUpTime</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=290</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>LatestEnd</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=294</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>JobGroupNodeId</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=17</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Method SymbolicName="Prefix7:FinishJobGroupById" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Id</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Method SymbolicName="Prefix7:InterruptJobGroupById" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Id</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Object SymbolicName="Prefix7:JobGroup__Nr_" TypeDefinition="Prefix7:JobGroupType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>JobGroup_&lt;Nr&gt;</BrowseName>
+      </Object>
+      <Property SymbolicName="Prefix1:NodeVersion" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix7:JobGroupsType_NodeVersion</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix7:JobGroupsType_NodeVersion</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix7:JobGroupsType_NodeVersion</TargetId>
+          </Reference>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix7:JobGroupsType_NodeVersion</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+      <Method SymbolicName="Prefix7:RemoveJobGroupById" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Id</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Method SymbolicName="Prefix7:StartJobGroupById" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Id</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+    </Children>
+    <References>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix7:JobGroupsType</TargetId>
+      </Reference>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix7:JobGroupsType</TargetId>
+      </Reference>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix7:JobGroupsType</TargetId>
+      </Reference>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix7:JobGroupsType</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:JobStatusChangedEventType" BaseType="Prefix1:BaseEventType" IsAbstract="true">
+    <Children>
+      <Property SymbolicName="Prefix7:ActiveStatus" ModellingRule="Mandatory" DataType="Prefix5:JobStatusEnumeration">
+        <DefaultValue>
+          <uax:Int32>0</uax:Int32>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix7:JobGroupId" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix7:JobId" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix7:LastStatus" ModellingRule="Mandatory" DataType="Prefix5:JobStatusEnumeration">
+        <DefaultValue>
+          <uax:Int32>0</uax:Int32>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:LotFinishedEventType" BaseType="Prefix1:BaseEventType" IsAbstract="true">
+    <Children>
+      <Property SymbolicName="Prefix7:JobGroupId" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix7:JobId" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix7:Lot" ModellingRule="Mandatory" DataType="Prefix1:UInt32">
+        <DefaultValue>
+          <uax:UInt32>0</uax:UInt32>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:RequestAddMaterialEventType" BaseType="Prefix1:BaseEventType" IsAbstract="true">
+    <Children>
+      <Property SymbolicName="Prefix7:Id" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:UnitFinishedEventType" BaseType="Prefix1:BaseEventType" IsAbstract="true">
+    <Children>
+      <Property SymbolicName="Prefix7:GoodProduct" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
+        <DefaultValue>
+          <uax:Boolean>true</uax:Boolean>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix7:JobGroupId" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix7:JobId" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix7:Unit" ModellingRule="Mandatory" DataType="Prefix1:UInt32">
+        <DefaultValue>
+          <uax:UInt32>0</uax:UInt32>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:ExtrusionLine_InterfaceType">
+    <Children>
+      <Method SymbolicName="Prefix7:ClearMESMessage" ModellingRule="Optional" />
+      <Property SymbolicName="Prefix7:ConfigurationParameters" ModellingRule="Mandatory" DataType="Prefix5:ConfigurationParameterType" ValueRank="Array" ArrayDimensions="0" />
+      <Object SymbolicName="Prefix7:JobGroups" TypeDefinition="Prefix7:JobGroupsType" ModellingRule="Optional" />
+      <Property SymbolicName="Prefix7:LineId" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix7:LineStatus" ModellingRule="Mandatory" DataType="Prefix5:ProductionStatusEnumeration">
+        <DefaultValue>
+          <uax:Int32>0</uax:Int32>
+        </DefaultValue>
+      </Property>
+      <Object SymbolicName="Prefix7:MachineConfiguration" TypeDefinition="Prefix5:MachineConfigurationType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix7:MachineInformation" TypeDefinition="Prefix5:MachineInformationType" ModellingRule="Mandatory">
+        <Children>
+          <Property SymbolicName="Prefix3:DeviceManual" ModellingRule="Mandatory">
+            <Description>Address (pathname in the file system or a URL | Web address) of user manual for the device</Description>
+          </Property>
+          <Property SymbolicName="Prefix3:DeviceRevision" ModellingRule="Mandatory">
+            <Description>Overall revision level of the device</Description>
+          </Property>
+          <Property SymbolicName="Prefix3:HardwareRevision" ModellingRule="Mandatory">
+            <Description>Revision level of the hardware of the device</Description>
+          </Property>
+          <Property SymbolicName="Prefix3:RevisionCounter" ModellingRule="Mandatory">
+            <Description>An incremental counter indicating the number of times the static data within the Device has been modified</Description>
+          </Property>
+          <Property SymbolicName="Prefix3:SoftwareRevision" ModellingRule="Mandatory">
+            <Description>Revision level of the software/firmware of the device</Description>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix7:MachineMESConfiguration" TypeDefinition="Prefix5:MachineMESConfigurationType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix7:MaterialList" TypeDefinition="Prefix5:MaterialListType" ModellingRule="Mandatory">
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix7:ExtrusionLine_InterfaceType_MaterialList</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix7:MESMessage" TypeDefinition="Prefix5:MESMessageType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix7:ProductionDatasetManagement" TypeDefinition="Prefix5:ProductionDatasetManagementType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix7:ProductionParameters" TypeDefinition="Prefix7:ProductionParametersType" ModellingRule="Mandatory" />
+      <Method SymbolicName="Prefix7:SetMESMessage" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="3">
+            <DefaultValue>
+              <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Id</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Message</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Message2</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=5</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Object SymbolicName="Prefix7:Users" TypeDefinition="Prefix5:UsersType" ModellingRule="Mandatory">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix5:LogbookEventType</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix5:MessageConditionType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:ProductionParametersType">
+    <Children>
+      <Object SymbolicName="Prefix7:ElectricalEnergy" TypeDefinition="Prefix5:EnergyType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix7:FluidEnergy" TypeDefinition="Prefix5:EnergyType" ModellingRule="Optional" />
+      <Variable SymbolicName="Prefix7:GoodProduct" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
+        <DefaultValue>
+          <uax:Boolean>false</uax:Boolean>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:LineSpeed" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Object SymbolicName="Prefix7:PressureAir" TypeDefinition="Prefix5:EnergyType" ModellingRule="Optional" />
+      <Variable SymbolicName="Prefix7:ProductWeight" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:Throughput" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:JobGroupType">
+    <Children>
+      <Method SymbolicName="Prefix7:AddJob" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="10">
+            <DefaultValue>
+              <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Id</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Description</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>CustomerName</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>ProductName</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>ProductDescription</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Strand</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=7</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Sequence</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=7</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>ParameterSetting</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>ns=2;i=3026</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>SetOutput</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=11</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>LotSize</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=11</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+          <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>JobNodeId</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=17</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Property SymbolicName="Prefix7:ConfigurationParameters" ModellingRule="Mandatory" DataType="Prefix5:ConfigurationParameterType" ValueRank="Array" ArrayDimensions="0" />
+      <Property SymbolicName="Prefix7:Description" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+      <Variable SymbolicName="Prefix7:ElectricalEnergyConsumption" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double" />
+      <Property SymbolicName="Prefix7:EquipmentDescription" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Method SymbolicName="Prefix7:FinishJobById" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Id</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Variable SymbolicName="Prefix7:FluidEnergyConsumption" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double" />
+      <Property SymbolicName="Prefix7:Id" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+      <Method SymbolicName="Prefix7:InterruptJobById" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Id</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Object SymbolicName="Prefix7:Job__Nr_" TypeDefinition="Prefix7:JobType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>Job_&lt;Nr&gt;</BrowseName>
+      </Object>
+      <Property SymbolicName="Prefix7:LatestEnd" ModellingRule="Mandatory" DataType="Prefix1:UtcTime" />
+      <Property SymbolicName="Prefix7:MaterialMapping" ModellingRule="Mandatory" DataType="Prefix7:MaterialMappingType" ValueRank="Array" ArrayDimensions="0" />
+      <Property SymbolicName="Prefix1:NodeVersion" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix7:PlannedProductionTime" ModellingRule="Mandatory" DataType="Prefix1:Duration" />
+      <Property SymbolicName="Prefix7:PlannedSetUpTime" ModellingRule="Mandatory" DataType="Prefix1:Duration" />
+      <Property SymbolicName="Prefix7:PlannedStart" ModellingRule="Mandatory" DataType="Prefix1:UtcTime" />
+      <Variable SymbolicName="Prefix7:PressureAirConsumption" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double" />
+      <Property SymbolicName="Prefix7:Priority" ModellingRule="Mandatory" DataType="Prefix1:UInt32" />
+      <Property SymbolicName="Prefix7:ProductionDatasetName" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Method SymbolicName="Prefix7:RemoveJobById" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Id</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Method SymbolicName="Prefix7:StartJobById" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Id</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Property SymbolicName="Prefix7:Status" ModellingRule="Mandatory" DataType="Prefix5:JobStatusEnumeration" />
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:JobType">
+    <Children>
+      <Variable SymbolicName="Prefix7:ActualBadOutput" ModellingRule="Optional" DataType="Prefix1:Double">
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:ActualGoodOutput" ModellingRule="Optional" DataType="Prefix1:Double">
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:ActualLot" ModellingRule="Mandatory" DataType="Prefix1:UInt32" />
+      <Variable SymbolicName="Prefix7:ActualLotName" ModellingRule="Optional" DataType="Prefix1:String" AccessLevel="ReadWrite">
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:ActualOutput" ModellingRule="Mandatory" DataType="Prefix1:Double" />
+      <Variable SymbolicName="Prefix7:ActualOutputRate" ModellingRule="Mandatory" DataType="Prefix1:Double" />
+      <Variable SymbolicName="Prefix7:ActualSampleOutput" ModellingRule="Optional" DataType="Prefix1:Double">
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Property SymbolicName="Prefix7:CustomerName" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix7:Description" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Variable SymbolicName="Prefix7:GoodProduct" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
+      <Property SymbolicName="Prefix7:Id" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+      <Variable SymbolicName="Prefix7:LineSpeed" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double" />
+      <Property SymbolicName="Prefix7:LotSize" ModellingRule="Mandatory" DataType="Prefix1:Double" />
+      <Property SymbolicName="Prefix7:ParameterSetting" ModellingRule="Mandatory" DataType="Prefix5:ParameterSettingType" ValueRank="Array" ArrayDimensions="0" />
+      <Property SymbolicName="Prefix7:ProductDescription" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix7:ProductId" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Variable SymbolicName="Prefix7:ProductWeight" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double" />
+      <Property SymbolicName="Prefix7:Sequence" ModellingRule="Mandatory" DataType="Prefix1:UInt32" />
+      <Property SymbolicName="Prefix7:SetOutput" ModellingRule="Mandatory" DataType="Prefix1:Double" />
+      <Property SymbolicName="Prefix7:Status" ModellingRule="Mandatory" DataType="Prefix5:JobStatusEnumeration" />
+      <Property SymbolicName="Prefix7:Strand" ModellingRule="Mandatory" DataType="Prefix1:UInt32" />
+      <Variable SymbolicName="Prefix7:Throughput" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+</ModelDesign>

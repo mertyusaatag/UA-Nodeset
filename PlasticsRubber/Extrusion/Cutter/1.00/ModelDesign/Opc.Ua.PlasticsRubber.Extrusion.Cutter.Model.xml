@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:Prefix7="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix9="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Cutter/" xmlns:Prefix5="http://opcfoundation.org/UA/DI/" TargetNamespace="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" TargetVersion="" TargetPublicationDate="2022-04-12T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" XmlPrefix="Prefix3" FilePath="" Version="1.03" PublicationDate="10/05/2021">http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix5" FilePath="" Version="1.02.2" PublicationDate="02/06/2020">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name6" Prefix="Prefix6" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/" XmlPrefix="Prefix7" FilePath="" Version="1.01" PublicationDate="01/04/2021">http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/</Namespace>
+    <Namespace Name="Name8" Prefix="Prefix8" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Cutter/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Cutter/" XmlPrefix="Prefix9" FilePath="" Version="1.00" PublicationDate="01/06/2020">http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Cutter/</Namespace>
+  </Namespaces>
+  <DataType SymbolicName="Prefix9:WallThickeningEnumeration" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="4">
+        <DefaultValue>
+          <uax:ListOfLocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>NO</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>FRONT</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>END</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>BOTH</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="NO" Identifier="0" BitMask="" ArrayDimensions="" />
+      <Field Name="FRONT" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="END" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="BOTH" Identifier="3" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <ObjectType SymbolicName="Prefix9:CutEventType" BaseType="Prefix1:BaseEventType" IsAbstract="true">
+    <Children>
+      <Property SymbolicName="Prefix9:ActualOutput" ModellingRule="Mandatory" DataType="Prefix1:UInt64" />
+      <Property SymbolicName="Prefix9:CuttingProductId" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix9:TotalOutput" ModellingRule="Mandatory" DataType="Prefix1:UInt64" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:Cutter_InterfaceType" BaseType="Prefix7:ExtrusionDeviceType">
+    <Children>
+      <Object SymbolicName="Prefix9:CuttingProducts" TypeDefinition="Prefix9:CuttingProductsType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix9:CuttingProgram" TypeDefinition="Prefix3:StartDeviceType" ModellingRule="Optional" />
+      <Method SymbolicName="Prefix9:ManualCut" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix9:ProductSpeed" TypeDefinition="Prefix3:MonitoredParameterType" ModellingRule="Optional">
+        <Children>
+          <Variable SymbolicName="Prefix3:MonitoringSensitivity" TypeDefinition="Prefix1:MultiStateValueDiscreteType">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+        </Children>
+      </Object>
+      <Method SymbolicName="Prefix9:SampleCut" ModellingRule="Optional" />
+      <Variable SymbolicName="Prefix9:SampleCuttingLength" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix9:SideClampClosed" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Variable SymbolicName="Prefix9:TotalWasteLength" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double" />
+      <Variable SymbolicName="Prefix9:WasteCuttingLength" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix9:WasteIndicator" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite" />
+    </Children>
+    <References>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix9:Cutter_InterfaceType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:CuttingProductsType">
+    <Children>
+      <Variable SymbolicName="Prefix9:ActualCuttingProductId" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+      <Object SymbolicName="Prefix9:CuttingProduct__Nr_" TypeDefinition="Prefix9:CuttingProductType" ModellingRule="MandatoryPlaceholder">
+        <BrowseName>CuttingProduct_&lt;Nr&gt;</BrowseName>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:CuttingProductType">
+    <Children>
+      <Variable SymbolicName="Prefix9:ActualOutput" ModellingRule="Mandatory" DataType="Prefix1:UInt64" />
+      <Property SymbolicName="Prefix9:Id" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Variable SymbolicName="Prefix9:Length" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix9:LengthCorrection" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite" />
+      <Method SymbolicName="Prefix9:ResetOutput" ModellingRule="Optional" />
+      <Variable SymbolicName="Prefix9:SetOutput" ModellingRule="Mandatory" DataType="Prefix1:UInt64" AccessLevel="ReadWrite" />
+      <Variable SymbolicName="Prefix9:TotalOutput" ModellingRule="Mandatory" DataType="Prefix1:UInt64" />
+      <Variable SymbolicName="Prefix9:WallThickeningLength" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite" />
+      <Property SymbolicName="Prefix9:WallThickeningPosition" ModellingRule="Optional" DataType="Prefix9:WallThickeningEnumeration" AccessLevel="ReadWrite" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+</ModelDesign>

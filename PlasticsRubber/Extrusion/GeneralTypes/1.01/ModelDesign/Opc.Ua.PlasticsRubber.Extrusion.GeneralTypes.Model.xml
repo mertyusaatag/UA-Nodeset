@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:Prefix7="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-04-12T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09/03/2021">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" XmlPrefix="Prefix5" FilePath="" Version="1.03" PublicationDate="10/05/2021">http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/</Namespace>
+    <Namespace Name="Name6" Prefix="Prefix6" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/" XmlPrefix="Prefix7" FilePath="" Version="1.01" PublicationDate="01/04/2021">http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/</Namespace>
+  </Namespaces>
+  <DataType SymbolicName="Prefix7:ComponentStatusEnumeration" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="8">
+        <DefaultValue>
+          <uax:ListOfLocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>OFFLINE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>IDLE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>PREPARING</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>READY_TO_RUN</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>MANUAL_RUN</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>CONTROLLED_RUN</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>MALFUNCTION</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>MAINTENANCE</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="OFFLINE" Identifier="0" BitMask="" ArrayDimensions="" />
+      <Field Name="IDLE" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="PREPARING" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="READY_TO_RUN" Identifier="3" BitMask="" ArrayDimensions="" />
+      <Field Name="MANUAL_RUN" Identifier="4" BitMask="" ArrayDimensions="" />
+      <Field Name="CONTROLLED_RUN" Identifier="5" BitMask="" ArrayDimensions="" />
+      <Field Name="MALFUNCTION" Identifier="6" BitMask="" ArrayDimensions="" />
+      <Field Name="MAINTENANCE" Identifier="7" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix7:ExtrusionMessageClassificationEnumeration" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="29">
+        <DefaultValue>
+          <uax:ListOfLocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>OTHER</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>LINE_CONTROL</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>MATERIAL_HANDLING</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>PRE_HEATING</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>FEEDING</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>DOSING</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>EXTRUDER</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>VACUUM_STATION</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>FILTER</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>MELT_PUMP</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>DIE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>COOLING</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>HAUL_OFF</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>CORRUGATOR</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>SAW</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>CALIBRATION</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>ROLL_STACK</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>MDO</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>BIAX</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>CUTTING</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>WINDER</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>PELLETIZING</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>DRYER</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>HANDLING_SYSTEM</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>LAMINATION_SYSTEM</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>MEASURING_SYSTEM</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>QUALITY_SYSTEM</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>MANUAL_INSPECTION</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>MANUAL_OPERATION</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="OTHER" Identifier="0" BitMask="" ArrayDimensions="" />
+      <Field Name="LINE_CONTROL" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="MATERIAL_HANDLING" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="PRE_HEATING" Identifier="3" BitMask="" ArrayDimensions="" />
+      <Field Name="FEEDING" Identifier="4" BitMask="" ArrayDimensions="" />
+      <Field Name="DOSING" Identifier="5" BitMask="" ArrayDimensions="" />
+      <Field Name="EXTRUDER" Identifier="6" BitMask="" ArrayDimensions="" />
+      <Field Name="VACUUM_STATION" Identifier="7" BitMask="" ArrayDimensions="" />
+      <Field Name="FILTER" Identifier="8" BitMask="" ArrayDimensions="" />
+      <Field Name="MELT_PUMP" Identifier="9" BitMask="" ArrayDimensions="" />
+      <Field Name="DIE" Identifier="10" BitMask="" ArrayDimensions="" />
+      <Field Name="COOLING" Identifier="11" BitMask="" ArrayDimensions="" />
+      <Field Name="HAUL_OFF" Identifier="12" BitMask="" ArrayDimensions="" />
+      <Field Name="CORRUGATOR" Identifier="13" BitMask="" ArrayDimensions="" />
+      <Field Name="SAW" Identifier="14" BitMask="" ArrayDimensions="" />
+      <Field Name="CALIBRATION" Identifier="15" BitMask="" ArrayDimensions="" />
+      <Field Name="ROLL_STACK" Identifier="16" BitMask="" ArrayDimensions="" />
+      <Field Name="MDO" Identifier="17" BitMask="" ArrayDimensions="" />
+      <Field Name="BIAX" Identifier="18" BitMask="" ArrayDimensions="" />
+      <Field Name="CUTTING" Identifier="19" BitMask="" ArrayDimensions="" />
+      <Field Name="WINDER" Identifier="20" BitMask="" ArrayDimensions="" />
+      <Field Name="PELLETIZING" Identifier="21" BitMask="" ArrayDimensions="" />
+      <Field Name="DRYER" Identifier="22" BitMask="" ArrayDimensions="" />
+      <Field Name="HANDLING_SYSTEM" Identifier="23" BitMask="" ArrayDimensions="" />
+      <Field Name="LAMINATION_SYSTEM" Identifier="24" BitMask="" ArrayDimensions="" />
+      <Field Name="MEASURING_SYSTEM" Identifier="25" BitMask="" ArrayDimensions="" />
+      <Field Name="QUALITY_SYSTEM" Identifier="26" BitMask="" ArrayDimensions="" />
+      <Field Name="MANUAL_INSPECTION" Identifier="27" BitMask="" ArrayDimensions="" />
+      <Field Name="MANUAL_OPERATION" Identifier="28" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <ObjectType SymbolicName="Prefix7:ExtrusionDeviceType" IsAbstract="true">
+    <Children>
+      <Object SymbolicName="Prefix7:AdditionalMeasuringDevices" TypeDefinition="Prefix5:MeasuringDevicesType" ModellingRule="Optional">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix7:ElectricalEnergy" TypeDefinition="Prefix5:EnergyType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix7:FluidEnergy" TypeDefinition="Prefix5:EnergyType" ModellingRule="Optional" />
+      <Property SymbolicName="Prefix7:IsPresent" ModellingRule="Mandatory" DataType="Prefix1:Boolean" />
+      <Property SymbolicName="Prefix7:LineId" ModellingRule="Mandatory" DataType="Prefix1:String" AccessLevel="ReadWrite" />
+      <Object SymbolicName="Prefix7:MachineConfiguration" TypeDefinition="Prefix5:MachineConfigurationType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix7:MachineInformation" TypeDefinition="Prefix5:MachineInformationType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix7:Maintenance" TypeDefinition="Prefix5:MaintenanceType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix7:PressureAir" TypeDefinition="Prefix5:EnergyType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix7:ProductionDatasetManagement" TypeDefinition="Prefix5:ProductionDatasetManagementType" ModellingRule="Optional">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix5:LogbookEventType</TargetId>
+          </Reference>
+          <Reference>
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix5:MessageConditionType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix7:StartDevice" TypeDefinition="Prefix5:StartDeviceType" ModellingRule="Optional" />
+      <Property SymbolicName="Prefix7:Status" ModellingRule="Mandatory" DataType="Prefix7:ComponentStatusEnumeration" />
+      <Property SymbolicName="Prefix7:Strand" ModellingRule="Optional" DataType="Prefix1:UInt32" />
+      <Property SymbolicName="Prefix7:Target" ModellingRule="Optional" DataType="Prefix1:String" />
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix5:LogbookEventType</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix5:MessageConditionType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:ExtrusionTemperatureZonesType">
+    <Children>
+      <Object SymbolicName="Prefix7:Maintenance" TypeDefinition="Prefix5:MaintenanceType" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix5:AdditionalInformation" />
+          <Variable SymbolicName="Prefix5:Interval" TypeDefinition="Prefix1:AnalogItemType">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:RemainingInterval" TypeDefinition="Prefix1:AnalogItemType">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Method SymbolicName="Prefix5:Reset" />
+          <Property SymbolicName="Prefix5:Status">
+            <DefaultValue>
+              <uax:Int32>0</uax:Int32>
+            </DefaultValue>
+          </Property>
+          <Variable SymbolicName="Prefix5:TotalOperation" TypeDefinition="Prefix1:AnalogItemType" />
+        </Children>
+      </Object>
+      <Property SymbolicName="Prefix1:NodeVersion" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <DefaultValue>
+          <uax:String>0</uax:String>
+        </DefaultValue>
+      </Property>
+      <Object SymbolicName="Prefix7:StartTempering" TypeDefinition="Prefix5:StartDeviceType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix7:TemperatureZone__Nr_" TypeDefinition="Prefix7:ExtrusionTemperatureZoneType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>TemperatureZone_&lt;Nr&gt;</BrowseName>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:ExtrusionTemperatureZoneType" BaseType="Prefix5:MeasuringDeviceType">
+    <Children>
+      <Variable SymbolicName="Prefix7:ControllerOutput" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Object SymbolicName="Prefix7:ElectricalCurrent" TypeDefinition="Prefix5:MonitoredParameterType" ModellingRule="Optional">
+        <Children>
+          <Variable SymbolicName="Prefix5:ActualValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="None">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:AlarmSuppression" TypeDefinition="Prefix1:MultiStateValueDiscreteType" AccessLevel="ReadWrite">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+          <Property SymbolicName="Prefix5:AutomaticMonitoring" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Boolean>false</uax:Boolean>
+            </DefaultValue>
+          </Property>
+          <Variable SymbolicName="Prefix5:LowerTolerance" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:LowerTolerance2" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:MaxValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:MinValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:MonitoringSensitivity" TypeDefinition="Prefix1:MultiStateValueDiscreteType">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+          <Method SymbolicName="Prefix5:ResetMonitoring" />
+          <Variable SymbolicName="Prefix5:SetRampDown" TypeDefinition="Prefix1:AnalogItemType">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:SetRampUp" TypeDefinition="Prefix1:AnalogItemType">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:SetValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:UpperTolerance" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:UpperTolerance2" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+        </Children>
+      </Object>
+      <Variable SymbolicName="Prefix7:NominalCoolingPower" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:NominalHeatingPower" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:GapsType">
+    <Children>
+      <Object SymbolicName="Prefix7:Gap__Nr_" TypeDefinition="Prefix7:GapType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>Gap_&lt;Nr&gt;</BrowseName>
+      </Object>
+      <Property SymbolicName="Prefix1:NodeVersion" ModellingRule="Mandatory" DataType="Prefix1:String" />
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:GapType">
+    <Children>
+      <Object SymbolicName="Prefix7:ContactForce" TypeDefinition="Prefix5:MonitoredParameterType" ModellingRule="Optional">
+        <Children>
+          <Variable SymbolicName="Prefix5:MonitoringSensitivity" TypeDefinition="Prefix1:MultiStateValueDiscreteType">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix7:DistanceLeft" TypeDefinition="Prefix5:MonitoredParameterType" ModellingRule="Optional">
+        <Children>
+          <Variable SymbolicName="Prefix5:MonitoringSensitivity" TypeDefinition="Prefix1:MultiStateValueDiscreteType">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix7:DistanceRight" TypeDefinition="Prefix5:MonitoredParameterType" ModellingRule="Optional">
+        <Children>
+          <Variable SymbolicName="Prefix5:MonitoringSensitivity" TypeDefinition="Prefix1:MultiStateValueDiscreteType">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+        </Children>
+      </Object>
+      <Property SymbolicName="Prefix7:Id" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Variable SymbolicName="Prefix7:IsClosed" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Property SymbolicName="Prefix7:RollId1" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix7:RollId2" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix7:StockingGuideIsPresent" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:RollBendingType">
+    <Children>
+      <Property SymbolicName="Prefix1:NodeVersion" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Object SymbolicName="Prefix7:ReferencePoint__Nr_" TypeDefinition="Prefix5:MeasuringDeviceType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>ReferencePoint_&lt;Nr&gt;</BrowseName>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:RollPeripheralDevicesType">
+    <Children>
+      <Object SymbolicName="Prefix7:CleaningSystem__Nr_" TypeDefinition="Prefix5:StartDeviceType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>CleaningSystem_&lt;Nr&gt;</BrowseName>
+      </Object>
+      <Object SymbolicName="Prefix7:InfraredHeatingSystem__Nr_" TypeDefinition="Prefix5:StartDeviceType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>InfraredHeatingSystem_&lt;Nr&gt;</BrowseName>
+      </Object>
+      <Property SymbolicName="Prefix1:NodeVersion" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+          </Reference>
+        </References>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:RollsType">
+    <Children>
+      <Property SymbolicName="Prefix1:NodeVersion" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Object SymbolicName="Prefix7:Roll__Nr_" TypeDefinition="Prefix7:RollType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>Roll_&lt;Nr&gt;</BrowseName>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:RollType">
+    <Children>
+      <Object SymbolicName="Prefix7:CrossAxisLeft" TypeDefinition="Prefix5:MonitoredParameterType" ModellingRule="Optional">
+        <Children>
+          <Variable SymbolicName="Prefix5:MonitoringSensitivity" TypeDefinition="Prefix1:MultiStateValueDiscreteType">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix7:CrossAxisRight" TypeDefinition="Prefix5:MonitoredParameterType" ModellingRule="Optional">
+        <Children>
+          <Variable SymbolicName="Prefix5:MonitoringSensitivity" TypeDefinition="Prefix1:MultiStateValueDiscreteType">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix7:Drive" TypeDefinition="Prefix5:DriveType" ModellingRule="Mandatory" />
+      <Property SymbolicName="Prefix7:Id" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix7:MasterRollId" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix7:Name" ModellingRule="Optional" DataType="Prefix1:LocalizedText" />
+      <Object SymbolicName="Prefix7:PeripheralDevices" TypeDefinition="Prefix7:RollPeripheralDevicesType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix7:RollBending" TypeDefinition="Prefix7:RollBendingType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix7:Temperature" TypeDefinition="Prefix7:ExtrusionTemperatureZoneType" ModellingRule="Mandatory" />
+    </Children>
+    <ClassName />
+  </ObjectType>
+</ModelDesign>

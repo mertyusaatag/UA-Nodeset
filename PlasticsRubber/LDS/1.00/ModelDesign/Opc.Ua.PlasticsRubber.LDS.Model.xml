@@ -1,0 +1,783 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:Prefix7="http://opcfoundation.org/UA/PlasticsRubber/LDS/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-04-12T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09/03/2021">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" XmlPrefix="Prefix5" FilePath="" Version="1.03" PublicationDate="10/05/2021">http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/</Namespace>
+    <Namespace Name="Name6" Prefix="Prefix6" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/LDS/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/LDS/" XmlPrefix="Prefix7" FilePath="" Version="1.00.1" PublicationDate="21/06/2021">http://opcfoundation.org/UA/PlasticsRubber/LDS/</Namespace>
+  </Namespaces>
+  <DataType SymbolicName="Prefix7:AdditiveStatusEnumeration" BaseType="Prefix1:Enumeration">
+    <Description>Actual status of the additive provides a minimal error handling for devices without event support.</Description>
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="5">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>GOOD</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Component has no error or warning.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>WARNING</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The component has an undefined warning, but no need to stop the production.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ADVANCE_WARNING_ADDITIVE_CHANGE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Warning, additive change is imminent. No need to stop the process.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ERROR_EMPTY</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Error, the additive is empty. Production need to be stopped.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ERROR</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The additive has an error and process needs to be stopped.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="GOOD" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>Component has no error or warning.</Description>
+      </Field>
+      <Field Name="WARNING" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>The component has an undefined warning, but no need to stop the production.</Description>
+      </Field>
+      <Field Name="ADVANCE_WARNING_ADDITIVE_CHANGE" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description>Warning, additive change is imminent. No need to stop the process.</Description>
+      </Field>
+      <Field Name="ERROR_EMPTY" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description>Error, the additive is empty. Production need to be stopped.</Description>
+      </Field>
+      <Field Name="ERROR" Identifier="4" BitMask="" ArrayDimensions="">
+        <Description>The additive has an error and process needs to be stopped.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix7:ComponentStatusEnumeration" BaseType="Prefix1:Enumeration">
+    <Description>Actual status of the component provides a minimal error handling for devices without event support.</Description>
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="7">
+        <DefaultValue>
+          <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>0</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>GOOD</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Component has no error or warning.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>1</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>WARNING</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The component has an undefined warning, but no need to stop the production.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>2</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>WARNING_PRESSURE_TOO_HIGH</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Pressure is too high. No need to stop the process but influence to the part quality.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>3</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>WARNING_PRESSURE_TOO_LOW</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Pressure is too low. No need to stop the process but influence to the part quality.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>4</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ADVANCE_WARNING_DRUM_CHANGE</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Warning, barrel change is imminent. No need to stop the process.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>5</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ERROR_DRUM_EMPTY</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>Drum of the component is empty. Production need to be stopped.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=7616</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:EnumValueType>
+              <uax:Value>6</uax:Value>
+              <uax:DisplayName>
+                <uax:Text>ERROR</uax:Text>
+              </uax:DisplayName>
+              <uax:Description>
+                <uax:Text>The component has an error and process needs to be stopped.</uax:Text>
+              </uax:Description>
+            </uax:EnumValueType>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="GOOD" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>Component has no error or warning.</Description>
+      </Field>
+      <Field Name="WARNING" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>The component has an undefined warning, but no need to stop the production.</Description>
+      </Field>
+      <Field Name="WARNING_PRESSURE_TOO_HIGH" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description>Pressure is too high. No need to stop the process but influence to the part quality.</Description>
+      </Field>
+      <Field Name="WARNING_PRESSURE_TOO_LOW" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description>Pressure is too low. No need to stop the process but influence to the part quality.</Description>
+      </Field>
+      <Field Name="ADVANCE_WARNING_DRUM_CHANGE" Identifier="4" BitMask="" ArrayDimensions="">
+        <Description>Warning, barrel change is imminent. No need to stop the process.</Description>
+      </Field>
+      <Field Name="ERROR_DRUM_EMPTY" Identifier="5" BitMask="" ArrayDimensions="">
+        <Description>Drum of the component is empty. Production need to be stopped.</Description>
+      </Field>
+      <Field Name="ERROR" Identifier="6" BitMask="" ArrayDimensions="">
+        <Description>The component has an error and process needs to be stopped.</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix7:MaterialBalanceSystemTypeEnumeration" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="3">
+        <DefaultValue>
+          <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:LocalizedText>
+          <uax:Text>NOT_AVAILABLE</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>ALWAYS_ACTIVE</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>SELECTABLE</uax:Text>
+        </uax:LocalizedText>
+      </uax:ListOfLocalizedText>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="NOT_AVAILABLE" Identifier="0" BitMask="" ArrayDimensions="" />
+      <Field Name="ALWAYS_ACTIVE" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="SELECTABLE" Identifier="2" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <DataType SymbolicName="Prefix7:PurgeStatusEnumeration" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="5">
+        <DefaultValue>
+          <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:LocalizedText>
+          <uax:Text>OFF</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>COMPONENT_A</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>COMPONENT_B</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>COMPONENT_A_AND_B</uax:Text>
+        </uax:LocalizedText>
+        <uax:LocalizedText>
+          <uax:Text>COMPONENT_A_AND_B_CYCLIC</uax:Text>
+        </uax:LocalizedText>
+      </uax:ListOfLocalizedText>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="OFF" Identifier="0" BitMask="" ArrayDimensions="" />
+      <Field Name="COMPONENT_A" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="COMPONENT_B" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="COMPONENT_A_AND_B" Identifier="3" BitMask="" ArrayDimensions="" />
+      <Field Name="COMPONENT_A_AND_B_CYCLIC" Identifier="4" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <ObjectType SymbolicName="Prefix7:AdditiveType">
+    <Description>Information about used additives</Description>
+    <Children>
+      <Property SymbolicName="Prefix7:ActivateAdditive" ModellingRule="Mandatory" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>Set value to activate the additive</Description>
+      </Property>
+      <Property SymbolicName="Prefix7:ActivateClosedLoopControl" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>Activate the closed loop control of the additive</Description>
+      </Property>
+      <Property SymbolicName="Prefix7:AdditiveActivated" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
+        <Description>Is true if the additive is activated.</Description>
+        <DefaultValue>
+          <uax:Boolean xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">false</uax:Boolean>
+        </DefaultValue>
+      </Property>
+      <Object SymbolicName="Prefix7:AdditiveFraction" TypeDefinition="Prefix5:ControlledParameterType" ModellingRule="Optional">
+        <Description>Contains the SetValue, ActualValue, LowerTolerance and UpperTolerance of the additive fraction in percent</Description>
+        <Children>
+          <Variable SymbolicName="Prefix5:MonitoringSensitivity" TypeDefinition="Prefix1:MultiStateValueDiscreteType">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix7:AdditiveStrokeVolume" TypeDefinition="Prefix5:ControlledParameterType" ModellingRule="Optional">
+        <Description>Defines the value of additive per shot/stroke</Description>
+        <Children>
+          <Variable SymbolicName="Prefix5:MonitoringSensitivity" TypeDefinition="Prefix1:MultiStateValueDiscreteType">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+        </Children>
+      </Object>
+      <Property SymbolicName="Prefix7:ClosedLoopControlActivated" ModellingRule="Optional" DataType="Prefix1:Boolean">
+        <Description>Is true if the closed loop control of the additive is activated</Description>
+      </Property>
+      <Property SymbolicName="Prefix7:IsPresent" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
+        <Description>Informs the client if the additive is physically present.</Description>
+      </Property>
+      <Property SymbolicName="Prefix7:Status" ModellingRule="Mandatory" DataType="Prefix7:AdditiveStatusEnumeration">
+        <Description>Actual status of the additive provides a minimal error handling for devices without event support.</Description>
+        <DefaultValue>
+          <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Int32>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:AdditiveAlarmType" BaseType="Prefix5:HelpOffNormalAlarmType">
+    <Description>Represent additive-related text messages</Description>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:ComponentAlarmType" BaseType="Prefix5:HelpOffNormalAlarmType">
+    <Description>Represent component-related text messages</Description>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:LDSCycleParametersEventType" BaseType="Prefix1:BaseEventType" IsAbstract="true">
+    <Description>Information on a dosing cycle</Description>
+    <Children>
+      <Variable SymbolicName="Prefix7:AdditivesPressure" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" ValueRank="Array" ArrayDimensions="0">
+        <Description>Average pressure of the additive during the last cycle at the measuring point</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix7:AdditivesRatioActual" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" ValueRank="Array" ArrayDimensions="0">
+        <Description>Actual ratios of additive in percentage</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix7:AdditivesRatioTarget" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" ValueRank="Array" ArrayDimensions="0">
+        <Description>Target ratios of additives in percentage which are set in AdditiveFraction of AdditiveType</Description>
+      </Variable>
+      <Property SymbolicName="Prefix7:CycleNumber" ModellingRule="Mandatory" DataType="Prefix1:UInt64">
+        <Description>Number of the dosing cycle</Description>
+      </Property>
+      <Property SymbolicName="Prefix7:DosingTime" ModellingRule="Optional" DataType="Prefix1:Duration">
+        <Description>Duration of the dosing cycle</Description>
+      </Property>
+      <Variable SymbolicName="Prefix7:FilterPressurePrimary" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Average material pressure during the last cycle before the filter</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix7:FilterPressureSecondary" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Average material pressure during the last cycle after the filter</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix7:MixingPointPressureA" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Average pressure of component A during the last cycle at the blender</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix7:MixingPointPressureB" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Average pressure of component B during the last cycle at the blender</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix7:MixingPointPressureBlender" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Average pressure of components A&amp;B during the last cycle at the blender</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix7:MixingRatioActual" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Actual mixing ratio of the components</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix7:MixingRatioTarget" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Target mixing ratio of the last cycle (includes ratio change when MaterialBalanceSystem is active)</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix7:ResidualAmountA" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Residual weight amount of component A at the end of the dosing cycle</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix7:ResidualAmountB" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Residual weight amount of component B at the end of the dosing cycle</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix7:VolumeA" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Volume of component A that was added to the process in the last cycle</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix7:VolumeAB" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Volume of components A + B that was added to the process in the last cycle</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix7:VolumeAdditives" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" ValueRank="Array" ArrayDimensions="0">
+        <Description>Volumes of the additives that were added to the process in the last cycle</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix7:VolumeB" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Volume of component B that was added to the process in the last cycle</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix7:VolumeTotal" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Volume of all components (A + B + all additives)</Description>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:OperationType">
+    <Description>This ObjectType contains components which are necessary to operate the LDS.</Description>
+    <Children>
+      <Property SymbolicName="Prefix7:ActivateMaterialBalanceSystem" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>If the value is true, the material balance system is activated</Description>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix7:OperationType_ActivateMaterialBalanceSystem</TargetId>
+          </Reference>
+        </References>
+      </Property>
+      <Variable SymbolicName="Prefix7:ActivateRemoteControl" TypeDefinition="Prefix1:MultiStateValueDiscreteType" ModellingRule="Mandatory" DataType="Prefix1:UInt16" AccessLevel="ReadWrite">
+        <Description>With this variable the client selects the method of remote control</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix7:ActiveErrors" ModellingRule="Mandatory" DataType="Prefix5:ClassifiedActiveErrorDataType" ValueRank="Array" ArrayDimensions="0">
+        <Description>List of the active errors of the device</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix7:ActualDeviationMixingRatio" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Actual deviation of the mixing ratio (in percent)</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix7:ActualShotWeight" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Specifies the value determined by the feeder as the shot weight</Description>
+        <DefaultValue>
+          <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Object SymbolicName="Prefix7:Additive__Y_" TypeDefinition="Prefix7:AdditiveType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>Additive_&lt;Y&gt;</BrowseName>
+        <Description>Information about the additives</Description>
+      </Object>
+      <Object SymbolicName="Prefix7:Component_A" TypeDefinition="Prefix7:ComponentType" ModellingRule="Mandatory">
+        <Description>Information about component A</Description>
+      </Object>
+      <Object SymbolicName="Prefix7:Component_B" TypeDefinition="Prefix7:ComponentType" ModellingRule="Mandatory">
+        <Description>Information about component B</Description>
+        <Children>
+          <Method SymbolicName="Prefix7:SetSetValueDensity">
+            <Children>
+              <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+                <DefaultValue>
+                  <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Density</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=11</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+                </DefaultValue>
+              </Property>
+            </Children>
+          </Method>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix7:DeliveryFlowrate" TypeDefinition="Prefix5:ControlledParameterType" ModellingRule="Optional">
+        <Description>Delivery volumetric flow rate</Description>
+      </Object>
+      <Object SymbolicName="Prefix7:DeliveryPressure" TypeDefinition="Prefix5:ControlledParameterType" ModellingRule="Optional">
+        <Description>With this Object the client can set (and monitor) the delivery pressure of the LDS.</Description>
+      </Object>
+      <Variable SymbolicName="Prefix7:DeliveryPressureMeasuringPoint" TypeDefinition="Prefix1:MultiStateValueDiscreteType" ModellingRule="Optional" DataType="Prefix1:UInt16" AccessLevel="ReadWrite">
+        <Description>Position of the pressure sensor used for the DeliveryPressure</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+        </Children>
+        <DefaultValue>
+          <uax:UInt16 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt16>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:DeliveryType" TypeDefinition="Prefix1:MultiStateValueDiscreteType" ModellingRule="Mandatory" DataType="Prefix1:UInt16" AccessLevel="ReadWrite">
+        <Description>INdication if the dosing system works with delivery pressure or volumetric flow</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+        </Children>
+        <DefaultValue>
+          <uax:UInt16 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt16>
+        </DefaultValue>
+      </Variable>
+      <Property SymbolicName="Prefix7:DeviceMappingNumber" ModellingRule="Mandatory" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
+        <Description>Unique identifier/address/number for devices of the same DeviceType within a local network</Description>
+      </Property>
+      <Property SymbolicName="Prefix7:HighestActiveAlarmSeverity" ModellingRule="Mandatory" DataType="Prefix1:UInt16">
+        <Description>Indication of the severity of the highest active alarm</Description>
+      </Property>
+      <Method SymbolicName="Prefix7:IdentifyDevice" ModellingRule="Optional">
+        <Description>The peripheral device on which this method is called shows itself by e.g. activation of a LED.</Description>
+      </Method>
+      <Property SymbolicName="Prefix7:MaterialBalanceSystemType" ModellingRule="Mandatory" DataType="Prefix7:MaterialBalanceSystemTypeEnumeration">
+        <Description>Type of the material balance system</Description>
+        <DefaultValue>
+          <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Int32>
+        </DefaultValue>
+      </Property>
+      <Variable SymbolicName="Prefix7:MaxDeviationMixingRatio" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>Used to limit the maximum deviation in percent</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix7:MixingRatioTarget" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>Target of the mixing ratio (includes ratio change when MaterialBalanceSystem is active)</Description>
+      </Variable>
+      <Variable SymbolicName="Prefix7:PurgeMode" TypeDefinition="Prefix1:MultiStateValueDiscreteType" ModellingRule="Optional" DataType="Prefix1:UInt16" AccessLevel="ReadWrite">
+        <Description>Depending on this preselected PurgeMode, various purge function can be activated via the dosing signal of the IMM</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+        </Children>
+        <DefaultValue>
+          <uax:UInt16 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt16>
+        </DefaultValue>
+      </Variable>
+      <Property SymbolicName="Prefix7:PurgeStatus" ModellingRule="Optional" DataType="Prefix7:PurgeStatusEnumeration">
+        <Description>Actual status of the purge function</Description>
+      </Property>
+      <Variable SymbolicName="Prefix7:RemainingMaterialTime" ModellingRule="Optional" DataType="Prefix1:Duration">
+        <Description>Remaining time until first material is empty</Description>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix7:OperationType_RemainingMaterialTime</TargetId>
+          </Reference>
+        </References>
+        <DefaultValue>
+          <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:RemoteControlActivated" TypeDefinition="Prefix1:MultiStateValueDiscreteType" ModellingRule="Mandatory" DataType="Prefix1:UInt16">
+        <Description>With this signal, the LDS signalizes, if it is ready to be controlled via this or a separate interface</Description>
+        <DefaultValue>
+          <uax:UInt16 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt16>
+        </DefaultValue>
+      </Variable>
+      <Method SymbolicName="Prefix7:ResetAllErrors" ModellingRule="Optional">
+        <Description>Method to reset all errors of the device</Description>
+      </Method>
+      <Method SymbolicName="Prefix7:ResetErrorById" ModellingRule="Optional">
+        <Description>Method to reset one error of the device</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Id</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=12</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Method SymbolicName="Prefix7:SetCycleNumber" ModellingRule="Optional">
+        <Description>Method to set the cycle number of the LDS to synchronize it with the cycle number of the injection moulding machine</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>CycleNumber</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=9</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Variable SymbolicName="Prefix7:SetShotWeight" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>Reference value determined by the IMM or defined by the user on the IMM side</Description>
+        <DefaultValue>
+          <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:SetValueCompositeDensity" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>The composite set point of density</Description>
+        <DefaultValue>
+          <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Method SymbolicName="Prefix7:StartDosing" ModellingRule="Optional">
+        <Description>If RemoteControlActivated = 2, this Method (without arguments) is used to start the dosing</Description>
+      </Method>
+      <Method SymbolicName="Prefix7:StopDosing" ModellingRule="Optional" />
+      <Variable SymbolicName="Prefix7:TargetDeviationMixingRatio" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>This deviation (in percent) is set/used by the material balance system</Description>
+      </Variable>
+    </Children>
+    <References>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix7:OperationType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:ComponentType">
+    <Description>Information about the mixing components A and B</Description>
+    <Children>
+      <Variable SymbolicName="Prefix7:ActualPressure" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Actual pressure of the component</Description>
+        <DefaultValue>
+          <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Property SymbolicName="Prefix7:AllowsCycles" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Expected number of remaining cycles with the current drum</Description>
+        <DefaultValue>
+          <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
+        </DefaultValue>
+      </Property>
+      <Variable SymbolicName="Prefix7:RemainingMaterialTime" ModellingRule="Optional" DataType="Prefix1:Duration">
+        <Description>Time until the material of the component is empty</Description>
+        <DefaultValue>
+          <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:ResidualAmount" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Residual amount of the material</Description>
+        <DefaultValue>
+          <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Method SymbolicName="Prefix7:SetSetValueDensity" ModellingRule="Optional">
+        <Description>This optional method is used to modify SetValueDensity if allowed by the device.</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:ExtensionObject>
+          <uax:TypeId>
+            <uax:Identifier>i=297</uax:Identifier>
+          </uax:TypeId>
+          <uax:Body>
+            <uax:Argument>
+              <uax:Name>Density</uax:Name>
+              <uax:DataType>
+                <uax:Identifier>i=11</uax:Identifier>
+              </uax:DataType>
+              <uax:ValueRank>-1</uax:ValueRank>
+              <uax:ArrayDimensions />
+              <uax:Description />
+            </uax:Argument>
+          </uax:Body>
+        </uax:ExtensionObject>
+      </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Variable SymbolicName="Prefix7:SetValueDensity" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Set point material density</Description>
+        <DefaultValue>
+          <uax:Double xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Property SymbolicName="Prefix7:Status" ModellingRule="Mandatory" DataType="Prefix7:ComponentStatusEnumeration">
+        <Description>Actual status of the component provides a minimal error handling for devices without event support.</Description>
+        <DefaultValue>
+          <uax:Int32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:Int32>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:LDS_InterfaceType">
+    <Description>Root ObjectType representing a LSR dosing system with its subcomponents</Description>
+    <Children>
+      <Property SymbolicName="Prefix7:DeviceEnabled" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>This variable is used to release the drives of the dosing system. If the value is FALSE, the LDS shall not be able to start ist drives.</Description>
+      </Property>
+      <Property SymbolicName="Prefix7:DisplayLanguage" ModellingRule="Optional" DataType="Prefix1:LocaleId" AccessLevel="ReadWrite">
+        <Description>With this Property the client can set the desired language on the user interface at the LDS</Description>
+      </Property>
+      <Object SymbolicName="Prefix7:Identification" TypeDefinition="Prefix5:IdentificationType" ModellingRule="Mandatory">
+        <Description>Identification of the device</Description>
+      </Object>
+      <Object SymbolicName="Prefix7:MachineConfiguration" TypeDefinition="Prefix5:MachineConfigurationType" ModellingRule="Mandatory">
+        <Description>Infomration about the machine configuration</Description>
+      </Object>
+      <Object SymbolicName="Prefix7:Operation" TypeDefinition="Prefix7:OperationType" ModellingRule="Mandatory">
+        <Description>This Object contains components which are necessary to operate the LDS</Description>
+        <Children>
+          <Object SymbolicName="Prefix7:Additive__Y_" TypeDefinition="Prefix7:AdditiveType">
+            <BrowseName>Additive_&lt;Y&gt;</BrowseName>
+          </Object>
+        </Children>
+        <References>
+          <Reference IsInverse="true">
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix7:LDS_InterfaceType_Operation</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix5:HelpOffNormalAlarmType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+</ModelDesign>

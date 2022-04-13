@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:Prefix7="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix9="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Extruder/" xmlns:Prefix5="http://opcfoundation.org/UA/DI/" TargetNamespace="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" TargetVersion="" TargetPublicationDate="2022-04-12T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" XmlPrefix="Prefix3" FilePath="" Version="1.03" PublicationDate="10/05/2021">http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix5" FilePath="" Version="1.02.2" PublicationDate="02/06/2020">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name6" Prefix="Prefix6" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/" XmlPrefix="Prefix7" FilePath="" Version="1.01" PublicationDate="01/04/2021">http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/</Namespace>
+    <Namespace Name="Name8" Prefix="Prefix8" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Extruder/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Extruder/" XmlPrefix="Prefix9" FilePath="" Version="1.00" PublicationDate="01/06/2020">http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Extruder/</Namespace>
+  </Namespaces>
+  <DataType SymbolicName="Prefix9:FeedingModeEnumeration" BaseType="Prefix1:Enumeration">
+    <Children>
+      <Property SymbolicName="Prefix1:EnumStrings" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText" ValueRank="Array" ArrayDimensions="6">
+        <DefaultValue>
+          <uax:ListOfLocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>ONLY_CONVEYING</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>OTHER</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>GRAVIMETRIC</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>VOLUMETRIC</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>LIQUID</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>BATCH</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="ONLY_CONVEYING" Identifier="0" BitMask="" ArrayDimensions="" />
+      <Field Name="OTHER" Identifier="1" BitMask="" ArrayDimensions="" />
+      <Field Name="GRAVIMETRIC" Identifier="2" BitMask="" ArrayDimensions="" />
+      <Field Name="VOLUMETRIC" Identifier="3" BitMask="" ArrayDimensions="" />
+      <Field Name="LIQUID" Identifier="4" BitMask="" ArrayDimensions="" />
+      <Field Name="BATCH" Identifier="5" BitMask="" ArrayDimensions="" />
+    </Fields>
+  </DataType>
+  <ObjectType SymbolicName="Prefix9:FeederType" BaseType="Prefix3:DriveType">
+    <Children>
+      <Object SymbolicName="Prefix9:Hopper" TypeDefinition="Prefix9:HopperType" ModellingRule="Optional" />
+      <Property SymbolicName="Prefix9:Id" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Property SymbolicName="Prefix9:IsControlled" ModellingRule="Optional" DataType="Prefix1:Boolean" />
+      <Property SymbolicName="Prefix9:IsPresent" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
+        <DefaultValue>
+          <uax:Boolean>false</uax:Boolean>
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix9:Mode" ModellingRule="Mandatory" DataType="Prefix9:FeedingModeEnumeration" />
+      <Property SymbolicName="Prefix9:Name" ModellingRule="Mandatory" DataType="Prefix1:LocalizedText">
+        <DefaultValue>
+          <uax:LocalizedText />
+        </DefaultValue>
+      </Property>
+      <Property SymbolicName="Prefix9:Target" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Object SymbolicName="Prefix9:Throughput" TypeDefinition="Prefix3:MonitoredParameterType" ModellingRule="Optional">
+        <Children>
+          <Variable SymbolicName="Prefix3:ActualValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="None">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:AlarmSuppression" TypeDefinition="Prefix1:MultiStateValueDiscreteType" AccessLevel="ReadWrite">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+          <Property SymbolicName="Prefix3:AutomaticMonitoring" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Boolean>false</uax:Boolean>
+            </DefaultValue>
+          </Property>
+          <Variable SymbolicName="Prefix3:LowerTolerance" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:LowerTolerance2" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:MaxValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:MinValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:MonitoringSensitivity" TypeDefinition="Prefix1:MultiStateValueDiscreteType">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+          <Method SymbolicName="Prefix3:ResetMonitoring" />
+          <Variable SymbolicName="Prefix3:SetRampDown" TypeDefinition="Prefix1:AnalogItemType">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:SetRampUp" TypeDefinition="Prefix1:AnalogItemType">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:SetValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:UpperTolerance" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:UpperTolerance2" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+        </Children>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:HopperType">
+    <Children>
+      <Property SymbolicName="Prefix9:Id" ModellingRule="Mandatory" DataType="Prefix1:String" />
+      <Object SymbolicName="Prefix9:Material" TypeDefinition="Prefix3:MaterialType" ModellingRule="Mandatory" />
+      <Variable SymbolicName="Prefix9:MaterialLevel" ModellingRule="Optional" DataType="Prefix1:Double" />
+      <Property SymbolicName="Prefix9:MaterialLot" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Object SymbolicName="Prefix9:MaterialTemperature" TypeDefinition="Prefix3:MonitoredParameterType" ModellingRule="Optional">
+        <Children>
+          <Variable SymbolicName="Prefix3:MonitoringSensitivity" TypeDefinition="Prefix1:MultiStateValueDiscreteType">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+        </Children>
+      </Object>
+      <Variable SymbolicName="Prefix9:Weight" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:Extruder_InterfaceType" BaseType="Prefix7:ExtrusionDeviceType">
+    <Children>
+      <Object SymbolicName="Prefix9:AdditionalDrives" TypeDefinition="Prefix3:DrivesType" ModellingRule="Optional">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Property SymbolicName="Prefix9:BarrelId" ModellingRule="Optional" DataType="Prefix1:String">
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+      <Object SymbolicName="Prefix9:Feeders" TypeDefinition="Prefix9:FeedersType" ModellingRule="Optional">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix9:MainDrive" TypeDefinition="Prefix3:DriveType" ModellingRule="Optional" />
+      <Object SymbolicName="Prefix9:MeltPressureZones" TypeDefinition="Prefix3:MeasuringDevicesType" ModellingRule="Optional">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix9:MeltTemperatureZones" TypeDefinition="Prefix3:MeasuringDevicesType" ModellingRule="Optional">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Property SymbolicName="Prefix9:ScrewId" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Object SymbolicName="Prefix9:ScrewTemperatures" TypeDefinition="Prefix7:ExtrusionTemperatureZonesType" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:NodeVersion" DataType="Prefix1:Double">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Property>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Variable SymbolicName="Prefix9:SpecificOutput" TypeDefinition="Prefix1:AnalogUnitType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Object SymbolicName="Prefix9:TemperatureZones" TypeDefinition="Prefix7:ExtrusionTemperatureZonesType" ModellingRule="Mandatory">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix9:Throughput" TypeDefinition="Prefix3:MonitoredParameterType" ModellingRule="Optional">
+        <Children>
+          <Variable SymbolicName="Prefix3:ActualValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="None">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:AlarmSuppression" TypeDefinition="Prefix1:MultiStateValueDiscreteType" AccessLevel="ReadWrite">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+          <Property SymbolicName="Prefix3:AutomaticMonitoring" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Boolean>false</uax:Boolean>
+            </DefaultValue>
+          </Property>
+          <Variable SymbolicName="Prefix3:LowerTolerance" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:LowerTolerance2" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:MaxValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:MinValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:MonitoringSensitivity" TypeDefinition="Prefix1:MultiStateValueDiscreteType">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+          <Method SymbolicName="Prefix3:ResetMonitoring" />
+          <Variable SymbolicName="Prefix3:SetRampDown" TypeDefinition="Prefix1:AnalogItemType">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:SetRampUp" TypeDefinition="Prefix1:AnalogItemType">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:SetValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:UpperTolerance" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix3:UpperTolerance2" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix3:Users" TypeDefinition="Prefix3:UsersType" ModellingRule="Mandatory">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix9:VacuumZones" TypeDefinition="Prefix3:MeasuringDevicesType" ModellingRule="Optional">
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix9:FeedersType">
+    <Children>
+      <Object SymbolicName="Prefix9:Feeder__Nr_" TypeDefinition="Prefix9:FeederType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>Feeder_&lt;Nr&gt;</BrowseName>
+      </Object>
+      <Property SymbolicName="Prefix1:NodeVersion" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+</ModelDesign>

@@ -1,0 +1,1034 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:Prefix7="http://opcfoundation.org/UA/PlasticsRubber/TCD/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix5="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-04-12T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09/03/2021">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" XmlPrefix="Prefix5" FilePath="" Version="1.03" PublicationDate="10/05/2021">http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/</Namespace>
+    <Namespace Name="Name6" Prefix="Prefix6" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/TCD/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/TCD/" XmlPrefix="Prefix7" FilePath="" Version="1.01" PublicationDate="01/06/2020">http://opcfoundation.org/UA/PlasticsRubber/TCD/</Namespace>
+  </Namespaces>
+  <DataType SymbolicName="Prefix7:OperatingModeEnumeration" BaseType="Prefix1:Enumeration">
+    <Description>Actual operating mode of the TCD</Description>
+    <Children>
+      <Property SymbolicName="Prefix1:EnumValues" ModellingRule="Mandatory" DataType="Prefix1:EnumValueType" ValueRank="Array" ArrayDimensions="10">
+        <DefaultValue>
+          <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>0</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>OTHER</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>Operating mode of the TCD is unknown</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>1</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>READY_TO_OPERATE</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>TCD is ready to operate (heating, pump and cooling are switched off)</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>2</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>NORMAL_OPERATION</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>TCD is running in normal operating mode</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>3</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>LEAK_STOPPER</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>TCD is running in leak stopper operating mode</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>4</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>MOULD_EVACUATION</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>TCD is carrying out a mould evacuation process</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>5</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>PRESSURE_RELIEF</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>TCD is carrying out a pressure relief process</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>6</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>COOLING</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>TCD is cooling down to StandbyTemperature and switch off</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>7</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>SAFETY_COOLING</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>TCD is cooling down to SwitchingOffTemperature and switch off</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>8</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>ECO</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>TCD is running in Eco operating mode (energy is saved via the reduced pump speed)</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>9</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>BOOST</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description>
+                                <uax:Text>TCD is running in Boost operating mode (pump runs at maximum possible speed)</uax:Text>
+                            </uax:Description>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+    <Fields>
+      <Field Name="OTHER" Identifier="0" BitMask="" ArrayDimensions="">
+        <Description>Operating mode of the TCD is unknown</Description>
+      </Field>
+      <Field Name="READY_TO_OPERATE" Identifier="1" BitMask="" ArrayDimensions="">
+        <Description>TCD is ready to operate (heating, pump and cooling are switched off)</Description>
+      </Field>
+      <Field Name="NORMAL_OPERATION" Identifier="2" BitMask="" ArrayDimensions="">
+        <Description>TCD is running in normal operating mode</Description>
+      </Field>
+      <Field Name="LEAK_STOPPER" Identifier="3" BitMask="" ArrayDimensions="">
+        <Description>TCD is running in leak stopper operating mode</Description>
+      </Field>
+      <Field Name="MOULD_EVACUATION" Identifier="4" BitMask="" ArrayDimensions="">
+        <Description>TCD is carrying out a mould evacuation process</Description>
+      </Field>
+      <Field Name="PRESSURE_RELIEF" Identifier="5" BitMask="" ArrayDimensions="">
+        <Description>TCD is carrying out a pressure relief process</Description>
+      </Field>
+      <Field Name="COOLING" Identifier="6" BitMask="" ArrayDimensions="">
+        <Description>TCD is cooling down to StandbyTemperature and switch off</Description>
+      </Field>
+      <Field Name="SAFETY_COOLING" Identifier="7" BitMask="" ArrayDimensions="">
+        <Description>TCD is cooling down to SwitchingOffTemperature and switch off</Description>
+      </Field>
+      <Field Name="ECO" Identifier="8" BitMask="" ArrayDimensions="">
+        <Description>TCD is running in Eco operating mode (energy is saved via the reduced pump speed)</Description>
+      </Field>
+      <Field Name="BOOST" Identifier="9" BitMask="" ArrayDimensions="">
+        <Description>TCD is running in Boost operating mode (pump runs at maximum possible speed)</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <ObjectType SymbolicName="Prefix7:TCDHelpOffNormalAlarmType" BaseType="Prefix5:HelpOffNormalAlarmType">
+    <Description>HelpOffNormalAlarmType with additional DeviceMappingNumber for identification</Description>
+    <Children>
+      <Property SymbolicName="Prefix7:DeviceMappingNumber" ModellingRule="Mandatory" DataType="Prefix1:UInt32">
+        <Description>Unique identifier/address/number for devices of the same DeviceType within a local network</Description>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:TCD_InterfaceType">
+    <Description>Root ObjectType representing a temperature control device with its subcomponents</Description>
+    <Children>
+      <Object SymbolicName="Prefix7:DeviceZone" TypeDefinition="Prefix7:DeviceZoneType" ModellingRule="Mandatory" />
+      <Property SymbolicName="Prefix7:DisplayLanguage" ModellingRule="Optional" DataType="Prefix1:LocaleId" AccessLevel="ReadWrite">
+        <Description>With this Property the client can set the desired language on the user interface at the TCD</Description>
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+      <Object SymbolicName="Prefix7:Identification" TypeDefinition="Prefix5:IdentificationType" ModellingRule="Mandatory">
+        <Description>Identification of the device </Description>
+      </Object>
+      <Object SymbolicName="Prefix7:MachineConfiguration" TypeDefinition="Prefix5:MachineConfigurationType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix7:Operation" TypeDefinition="Prefix7:OperationType" ModellingRule="Mandatory" />
+      <Object SymbolicName="Prefix7:TCDSpecification" TypeDefinition="Prefix7:TCDSpecificationType" ModellingRule="Mandatory" />
+    </Children>
+    <References>
+      <Reference IsInverse="true">
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix7:TCD_InterfaceType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:DeviceZoneType">
+    <Description>Represents the functional main component of a TCD</Description>
+    <Children>
+      <Variable SymbolicName="Prefix7:ActualProcessPower" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Actual calculated process performance (from the view of the TCD: heating = positive value, cooling = negative value)</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:ActualPumpPower" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Actual power of the pump in kW</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:ActualPumpSpeedRPM" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Actual speed of the pump in revolutions per minute</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:ActualRegulationRatio" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Actual Regulation Ratio (heating = positive value, cooling = negative value)</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:DelayTimeAfterCooling" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>Delay Time after cooling before switching off the TCD</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Object SymbolicName="Prefix7:ExternalChannels" TypeDefinition="Prefix7:ExternalChannelsType" ModellingRule="Optional">
+        <Description>Container for the external channel(s)</Description>
+        <References>
+          <Reference>
+            <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+            <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="Prefix7:ExternalSensor" TypeDefinition="Prefix7:ExternalSensorType" ModellingRule="Optional">
+        <Description>Variables for the operation with an external temperature sensor</Description>
+      </Object>
+      <Object SymbolicName="Prefix7:FlowRate" TypeDefinition="Prefix5:MonitoredParameterType" ModellingRule="Optional">
+        <Description>Setting and/or monitoring of the flow rate</Description>
+        <Children>
+          <Variable SymbolicName="Prefix5:MonitoringSensitivity" TypeDefinition="Prefix1:MultiStateValueDiscreteType">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+        </Children>
+      </Object>
+      <Variable SymbolicName="Prefix7:InternalMeasuringPoint" TypeDefinition="Prefix1:MultiStateValueDiscreteType" ModellingRule="Optional" DataType="Prefix1:UInt16" AccessLevel="ReadWrite">
+        <Description>Determines whether the temperature of the main or the return is to be controlled</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+        </Children>
+      </Variable>
+      <Object SymbolicName="Prefix7:LeakStopper" TypeDefinition="Prefix7:LeakStopperType" ModellingRule="Optional">
+        <Description>Used for switching the leak stopper mode</Description>
+      </Object>
+      <Object SymbolicName="Prefix7:MaintenanceInformation" TypeDefinition="Prefix7:MaintenanceInformationType" ModellingRule="Optional">
+        <Description>Information on the maintenance status of heating, cooling, pump and fluid</Description>
+      </Object>
+      <Object SymbolicName="Prefix7:MouldEvacuation" TypeDefinition="Prefix7:MouldEvacuationType" ModellingRule="Optional">
+        <Description>Iincludes parameters and nodes for mould evacuation</Description>
+      </Object>
+      <Object SymbolicName="Prefix7:PressureDifference" TypeDefinition="Prefix5:MonitoredParameterType" ModellingRule="Optional">
+        <Description>Setting and/or monitoring of the pressure difference between main and return line</Description>
+        <Children>
+          <Variable SymbolicName="Prefix5:MonitoringSensitivity" TypeDefinition="Prefix1:MultiStateValueDiscreteType">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+        </Children>
+      </Object>
+      <Variable SymbolicName="Prefix7:PressureMainLine" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Actual pressure in the main line (Pressure return line + pump pressure)</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:PressureReturnLine" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Actual pressure in the return line</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:PumpControlMode" TypeDefinition="Prefix1:MultiStateValueDiscreteType" ModellingRule="Optional" DataType="Prefix1:UInt16" AccessLevel="ReadWrite">
+        <Description>Defines to which setpoint or function the pump is controlled</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+        </Children>
+      </Variable>
+      <Object SymbolicName="Prefix7:PumpSpeed" TypeDefinition="Prefix5:MonitoredParameterType" ModellingRule="Optional">
+        <Description>Setting and/or monitoring the speed of the pump in percent of maximum speed</Description>
+        <Children>
+          <Variable SymbolicName="Prefix5:MonitoringSensitivity" TypeDefinition="Prefix1:MultiStateValueDiscreteType">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+        </Children>
+      </Object>
+      <Variable SymbolicName="Prefix7:StandbyTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>The standby value temperature is approached with the Method ReduceToStandByOn. The TCD switches off.</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:SwitchingOffTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>Defines the temperature to which the TCD must be cooled down before it switches off</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Object SymbolicName="Prefix7:Temperature" TypeDefinition="Prefix5:ControlledParameterType" ModellingRule="Mandatory">
+        <Description>Setting and/or monitoring of the temperature in the main or return line (see InternalMeasuringPoint) or active external Sensor (ExternalSensorModeOn)</Description>
+        <Children>
+          <Variable SymbolicName="Prefix5:MonitoringSensitivity" TypeDefinition="Prefix1:MultiStateValueDiscreteType">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix7:TemperatureDifference" TypeDefinition="Prefix5:MonitoredParameterType" ModellingRule="Optional">
+        <Description>Setting and/or monitoring of the temperature difference between return and main line. Positive if temperature in return line is higher than in main line.</Description>
+        <Children>
+          <Variable SymbolicName="Prefix5:MonitoringSensitivity" TypeDefinition="Prefix1:MultiStateValueDiscreteType">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+        </Children>
+      </Object>
+      <Variable SymbolicName="Prefix7:TemperatureLimitation" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>This setpoint is for temperature limitation of the mould circuit e.g. to protect the connected tubes or the downstream water distribution system</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:TemperatureMainLine" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Actual temperature in the main line</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:TemperatureReturnLine" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Actual temperature in the return line</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:ExternalChannelsType">
+    <Description>Container for the external channel(s)</Description>
+    <Children>
+      <Object SymbolicName="Prefix7:ExternalChannel__Nr_" TypeDefinition="Prefix7:ExternalChannelType" ModellingRule="OptionalPlaceholder">
+        <BrowseName>ExternalChannel_&lt;Nr&gt;</BrowseName>
+        <Description>Includes information for monitoring or controlling of an external temperature, flow rate or pressure channel</Description>
+      </Object>
+      <Property SymbolicName="Prefix1:NodeVersion" ModellingRule="Mandatory" DataType="Prefix1:String">
+        <DefaultValue>
+          <uax:String></uax:String>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
+        <TargetId>Prefix1:GeneralModelChangeEventType</TargetId>
+      </Reference>
+    </References>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:ExternalSensorType">
+    <Description>Includes variables for the operation with an external temperature sensor</Description>
+    <Children>
+      <Variable SymbolicName="Prefix7:ActualValue" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>Actual value of external temperature sensor</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Property SymbolicName="Prefix7:AutomaticModeSwitch" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>Setting whether switching to external sensor is performed automatically (TRUE) or manually (FALSE)</Description>
+      </Property>
+      <Object SymbolicName="Prefix7:ClosedLoopControl" TypeDefinition="Prefix5:ClosedLoopControlType" ModellingRule="Optional">
+        <Description>Settings for the closed loop control for the sensor</Description>
+      </Object>
+      <Variable SymbolicName="Prefix7:CommunicationProtocolType" TypeDefinition="Prefix1:MultiStateValueDiscreteType" ModellingRule="Mandatory" DataType="Prefix1:UInt16" AccessLevel="ReadWrite">
+        <Children>
+          <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+        </Children>
+      </Variable>
+      <Method SymbolicName="Prefix7:ExternalSensorModeOff" ModellingRule="Mandatory">
+        <Description>Deactivate the mode where the external temperature sensor is used for temperature control</Description>
+      </Method>
+      <Method SymbolicName="Prefix7:ExternalSensorModeOn" ModellingRule="Mandatory">
+        <Description>Activate the mode where the external temperature sensor is used for temperature control</Description>
+      </Method>
+      <Variable SymbolicName="Prefix7:ThermocoupleType" TypeDefinition="Prefix1:MultiStateValueDiscreteType" ModellingRule="Mandatory" DataType="Prefix1:UInt16" AccessLevel="ReadWrite">
+        <Description>Type of connected external temperature sensor</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+        </Children>
+      </Variable>
+      <Property SymbolicName="Prefix7:Used" ModellingRule="Mandatory" DataType="Prefix1:Boolean">
+        <Description>Return whether an external temperature sensor is used for control</Description>
+        <DefaultValue>
+          <uax:Boolean>false</uax:Boolean>
+        </DefaultValue>
+      </Property>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:LeakStopperType">
+    <Description>Used for switching the leak stopper mode</Description>
+    <Children>
+      <Method SymbolicName="Prefix7:Off" ModellingRule="Mandatory">
+        <Description>Deactivate the leak stopper mode</Description>
+      </Method>
+      <Method SymbolicName="Prefix7:On" ModellingRule="Mandatory">
+        <Description>Activate the leak stopper mode (emergency operation in case of leaks in the system)</Description>
+      </Method>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:MaintenanceInformationType">
+    <Description>Information on the maintenance status of heating, cooling, pump and fluid</Description>
+    <Children>
+      <Object SymbolicName="Prefix7:Cooling" TypeDefinition="Prefix5:MaintenanceType" ModellingRule="Optional">
+        <Description>Information on the maintenance status of the cooling</Description>
+        <Children>
+          <Method SymbolicName="Prefix5:Reset">
+            <Description>This Method sets the CurrentInterval to 0 and Status to NOT_DUE_0</Description>
+          </Method>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix7:Fluid" TypeDefinition="Prefix5:MaintenanceType" ModellingRule="Optional">
+        <Description>Information on the maintenance status of the fluid</Description>
+        <Children>
+          <Method SymbolicName="Prefix5:Reset">
+            <Description>This Method sets the CurrentInterval to 0 and Status to NOT_DUE_0</Description>
+          </Method>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix7:Heating" TypeDefinition="Prefix5:MaintenanceType" ModellingRule="Optional">
+        <Description>Information on the maintenance status of the heating</Description>
+        <Children>
+          <Method SymbolicName="Prefix5:Reset">
+            <Description>This Method sets the CurrentInterval to 0 and Status to NOT_DUE_0</Description>
+          </Method>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix7:Pump" TypeDefinition="Prefix5:MaintenanceType" ModellingRule="Optional">
+        <Description>Information on the maintenance status of the pump</Description>
+        <Children>
+          <Method SymbolicName="Prefix5:Reset">
+            <Description>This Method sets the CurrentInterval to 0 and Status to NOT_DUE_0</Description>
+          </Method>
+        </Children>
+      </Object>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:MouldEvacuationType">
+    <Description>Includes parameters and nodes for mould evacuation</Description>
+    <Children>
+      <Variable SymbolicName="Prefix7:Mode" TypeDefinition="Prefix1:MultiStateValueDiscreteType" ModellingRule="Optional" DataType="Prefix1:UInt16" AccessLevel="ReadWrite">
+        <Description>Defines how the medium is to be emptied</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+        </Children>
+      </Variable>
+      <Method SymbolicName="Prefix7:Off" ModellingRule="Mandatory">
+        <Description>Deactivate evacuation mode</Description>
+      </Method>
+      <Method SymbolicName="Prefix7:On" ModellingRule="Mandatory">
+        <Description>Activate evacuation mode</Description>
+      </Method>
+      <Variable SymbolicName="Prefix7:Sink" TypeDefinition="Prefix1:MultiStateValueDiscreteType" ModellingRule="Optional" DataType="Prefix1:UInt16" AccessLevel="ReadWrite">
+        <Description>Defines where the medium is to be emptied</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+        </Children>
+      </Variable>
+      <Variable SymbolicName="Prefix7:TemperatureLimit" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>Temperature Limitation of the mould evacuation. TCD is cooled to this temperature first if necessary.</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:Time" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double" AccessLevel="ReadWrite">
+        <Description>Duration of the mould evacuation</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:ExternalChannelType">
+    <Description>Includes information for monitoring or controlling of external temperature, flow rate or pressure channels</Description>
+    <Children>
+      <Variable SymbolicName="Prefix7:ControlMode" TypeDefinition="Prefix1:MultiStateValueDiscreteType" ModellingRule="Optional" DataType="Prefix1:UInt16" AccessLevel="ReadWrite">
+        <Description>Defines to which setpoint the external channel is controlled</Description>
+        <Children>
+          <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+        </Children>
+        <DefaultValue>
+          <uax:UInt16>0</uax:UInt16>
+        </DefaultValue>
+      </Variable>
+      <Object SymbolicName="Prefix7:FlowRate" TypeDefinition="Prefix5:MonitoredParameterType" ModellingRule="Optional">
+        <Description>Setting and/or monitoring of the flow rate</Description>
+        <Children>
+          <Variable SymbolicName="Prefix5:ActualValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="None">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:AlarmSuppression" TypeDefinition="Prefix1:MultiStateValueDiscreteType" AccessLevel="ReadWrite">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+          <Property SymbolicName="Prefix5:AutomaticMonitoring" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Boolean>false</uax:Boolean>
+            </DefaultValue>
+          </Property>
+          <Variable SymbolicName="Prefix5:LowerTolerance" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:LowerTolerance2" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:MaxValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:MinValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:MonitoringSensitivity" TypeDefinition="Prefix1:MultiStateValueDiscreteType">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+          <Method SymbolicName="Prefix5:ResetMonitoring" />
+          <Variable SymbolicName="Prefix5:SetRampDown" TypeDefinition="Prefix1:AnalogItemType">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:SetRampUp" TypeDefinition="Prefix1:AnalogItemType">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:SetValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:UpperTolerance" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:UpperTolerance2" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix7:PressureDifference" TypeDefinition="Prefix5:MonitoredParameterType" ModellingRule="Optional">
+        <Description>Setting and/or monitoring of the pressure difference between main and return line</Description>
+        <Children>
+          <Variable SymbolicName="Prefix5:ActualValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="None">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:AlarmSuppression" TypeDefinition="Prefix1:MultiStateValueDiscreteType" AccessLevel="ReadWrite">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+          <Property SymbolicName="Prefix5:AutomaticMonitoring" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Boolean>false</uax:Boolean>
+            </DefaultValue>
+          </Property>
+          <Variable SymbolicName="Prefix5:LowerTolerance" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:LowerTolerance2" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:MaxValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:MinValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:MonitoringSensitivity" TypeDefinition="Prefix1:MultiStateValueDiscreteType">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+          <Method SymbolicName="Prefix5:ResetMonitoring" />
+          <Variable SymbolicName="Prefix5:SetRampDown" TypeDefinition="Prefix1:AnalogItemType">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:SetRampUp" TypeDefinition="Prefix1:AnalogItemType">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:SetValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:UpperTolerance" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:UpperTolerance2" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+        </Children>
+      </Object>
+      <Variable SymbolicName="Prefix7:PressureMainLine" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Actual value of the pressure in the main line</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:PressureReturnLine" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Actual value of the pressure in the return line</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Property SymbolicName="Prefix7:SwitchedOn" ModellingRule="Optional" DataType="Prefix1:Boolean" AccessLevel="ReadWrite">
+        <Description>Information if the external channel is switched on</Description>
+      </Property>
+      <Method SymbolicName="Prefix7:SwitchOff" ModellingRule="Optional">
+        <Description>Switch method of the external channel for switching off</Description>
+      </Method>
+      <Method SymbolicName="Prefix7:SwitchOn" ModellingRule="Optional">
+        <Description>Switch method of the external channel for switching on</Description>
+      </Method>
+      <Object SymbolicName="Prefix7:Temperature" TypeDefinition="Prefix5:MonitoredParameterType" ModellingRule="Optional">
+        <Description>Setting and/or monitoring of the temperature</Description>
+        <Children>
+          <Variable SymbolicName="Prefix5:ActualValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="None">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:AlarmSuppression" TypeDefinition="Prefix1:MultiStateValueDiscreteType" AccessLevel="ReadWrite">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+          <Property SymbolicName="Prefix5:AutomaticMonitoring" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Boolean>false</uax:Boolean>
+            </DefaultValue>
+          </Property>
+          <Variable SymbolicName="Prefix5:LowerTolerance" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:LowerTolerance2" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:MaxValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:MinValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:MonitoringSensitivity" TypeDefinition="Prefix1:MultiStateValueDiscreteType">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+          <Method SymbolicName="Prefix5:ResetMonitoring" />
+          <Variable SymbolicName="Prefix5:SetRampDown" TypeDefinition="Prefix1:AnalogItemType">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:SetRampUp" TypeDefinition="Prefix1:AnalogItemType">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:SetValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:UpperTolerance" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:UpperTolerance2" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+        </Children>
+      </Object>
+      <Object SymbolicName="Prefix7:TemperatureDifference" TypeDefinition="Prefix5:MonitoredParameterType" ModellingRule="Optional">
+        <Description>Setting and/or monitoring of the temperature difference between return and main line. Positive if temperature in return line is higher than in main line.</Description>
+        <Children>
+          <Variable SymbolicName="Prefix5:ActualValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="None">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:AlarmSuppression" TypeDefinition="Prefix1:MultiStateValueDiscreteType" AccessLevel="ReadWrite">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+          <Property SymbolicName="Prefix5:AutomaticMonitoring" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Boolean>false</uax:Boolean>
+            </DefaultValue>
+          </Property>
+          <Variable SymbolicName="Prefix5:LowerTolerance" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:LowerTolerance2" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:MaxValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:MinValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:MonitoringSensitivity" TypeDefinition="Prefix1:MultiStateValueDiscreteType">
+            <Children>
+              <Property SymbolicName="Prefix1:EnumValues" DataType="Prefix1:EnumValueType" ValueRank="Array" />
+            </Children>
+            <DefaultValue>
+              <uax:UInt16>0</uax:UInt16>
+            </DefaultValue>
+          </Variable>
+          <Method SymbolicName="Prefix5:ResetMonitoring" />
+          <Variable SymbolicName="Prefix5:SetRampDown" TypeDefinition="Prefix1:AnalogItemType">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:SetRampUp" TypeDefinition="Prefix1:AnalogItemType">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:SetValue" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:UpperTolerance" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+          <Variable SymbolicName="Prefix5:UpperTolerance2" TypeDefinition="Prefix1:AnalogItemType" AccessLevel="ReadWrite">
+            <DefaultValue>
+              <uax:Double>0</uax:Double>
+            </DefaultValue>
+          </Variable>
+        </Children>
+      </Object>
+      <Variable SymbolicName="Prefix7:TemperatureMainLine" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Actual temperature in the main line</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:TemperatureReturnLine" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Actual temperature in the return line</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:OperationType">
+    <Description>Contains components which are necessary to operate the TCD</Description>
+    <Children>
+      <Variable SymbolicName="Prefix7:ActiveErrors" ModellingRule="Mandatory" DataType="Prefix5:ActiveErrorDataType" ValueRank="Array" ArrayDimensions="0">
+        <Description>List of the active errors of the device</Description>
+      </Variable>
+      <Property SymbolicName="Prefix7:DeviceMappingNumber" ModellingRule="Mandatory" DataType="Prefix1:UInt32" AccessLevel="ReadWrite">
+        <Description>Unique identifier/address/number for devices of the same DeviceType within a local network</Description>
+      </Property>
+      <Property SymbolicName="Prefix7:HighestActiveAlarmSeverity" ModellingRule="Mandatory" DataType="Prefix1:UInt16">
+        <Description>Indication of the severity of the highest active alarm (0 = no active alarm – 1000 = possible error)</Description>
+      </Property>
+      <Variable SymbolicName="Prefix7:HoursOfOperation" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:Double">
+        <Description>Actual hours of operation</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Method SymbolicName="Prefix7:IdentifyDevice" ModellingRule="Optional">
+        <Description>The TCD on which this method is called shows itself by e.g. activation of a LED</Description>
+      </Method>
+      <Property SymbolicName="Prefix7:OperatingMode" ModellingRule="Mandatory" DataType="Prefix7:OperatingModeEnumeration">
+        <Description>Actual operating mode of the TCD</Description>
+      </Property>
+      <Method SymbolicName="Prefix7:ReduceToStandByOff" ModellingRule="Optional">
+        <Description>Deactivate the cooling down function on the TCD. If it is already in progress, it will be interrupted and the device changes back to the last selected operating mode.</Description>
+      </Method>
+      <Method SymbolicName="Prefix7:ReduceToStandByOn" ModellingRule="Optional">
+        <Description>Activate the cooling down function on the TCD followed by switching off</Description>
+      </Method>
+      <Method SymbolicName="Prefix7:ResetAllErrors" ModellingRule="Optional">
+        <Description>Method to reset all errors of the device</Description>
+      </Method>
+      <Method SymbolicName="Prefix7:ResetErrorById" ModellingRule="Optional">
+        <Children>
+          <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="1">
+            <DefaultValue>
+              <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Id</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description>
+                                <uax:Text>Id of the error, listed in ActiveErrors, that shall be reset</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+            </DefaultValue>
+          </Property>
+        </Children>
+      </Method>
+      <Method SymbolicName="Prefix7:SwitchOff" ModellingRule="Mandatory">
+        <Description>Main switch method of the TCD for switching off</Description>
+      </Method>
+      <Method SymbolicName="Prefix7:SwitchOn" ModellingRule="Mandatory">
+        <Description>Main switch method of the TCD for switching on</Description>
+      </Method>
+    </Children>
+    <ClassName />
+  </ObjectType>
+  <ObjectType SymbolicName="Prefix7:TCDSpecificationType">
+    <Children>
+      <Variable SymbolicName="Prefix7:ConnectedLoad" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double">
+        <Description>Connected load, defines the connections of the TCD (pump performance, heating capacity and performance of the remaining components)</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:CoolingCapacity" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Optional" DataType="Prefix1:UInt32">
+        <Description>Power value for cooling, defines the power value for cooling at temperature difference 60 K between cooling water and heat transfer medium</Description>
+        <DefaultValue>
+          <uax:UInt32>0</uax:UInt32>
+        </DefaultValue>
+      </Variable>
+      <Property SymbolicName="Prefix7:DeviceZoneId" ModellingRule="Optional" DataType="Prefix1:String" />
+      <Variable SymbolicName="Prefix7:MaxTemperature" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Int32">
+        <Description>Defines the maximum working temperature of the TCD</Description>
+        <DefaultValue>
+          <uax:Int32>0</uax:Int32>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:NominalFlowRate" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double">
+        <Description>Nominal flow rate, defines the maximum achievable flow rate of the TCD</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+      <Variable SymbolicName="Prefix7:PowerValue" TypeDefinition="Prefix1:AnalogItemType" ModellingRule="Mandatory" DataType="Prefix1:Double">
+        <Description>Power value, defines the heating capacity of the TCD with the rated voltage</Description>
+        <DefaultValue>
+          <uax:Double>0</uax:Double>
+        </DefaultValue>
+      </Variable>
+    </Children>
+    <ClassName />
+  </ObjectType>
+</ModelDesign>

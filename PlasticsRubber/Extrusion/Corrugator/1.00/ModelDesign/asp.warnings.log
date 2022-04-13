@@ -1,0 +1,14 @@
+"AddressSpacePrototyping";Information;1637887218;;"Address Space Prototyping (asp.exe) Version 6.5.0.40483";;;;"2022-04-12T19:57:19.7216810Z";;
+"AddressSpacePrototyping";Information;1637887219;;"Copyright(c) 2022 Mariusz Postol";;;;"2022-04-12T19:57:19.7226800Z";;
+"UANodeSetValidation";Information;190380256;;"Entering ImportNodeSet and starting model import form file Opc.Ua.Di.NodeSet2.xml";;;;"2022-04-12T19:57:44.6734176Z";;
+"UANodeSetValidation";Information;190380256;;"Entering ImportNodeSet and starting model import form file Opc.Ua.PlasticsRubber.GeneralTypes.NodeSet2.xml";;;;"2022-04-12T19:57:50.3612036Z";;
+"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import";;;;"2022-04-12T19:57:50.3761662Z";;
+"UANodeSetValidation";Information;190380256;;"Entering ImportNodeSet and starting model import form file Opc.Ua.PlasticsRubber.Extrusion.GeneralTypes.NodeSet2.xml";;;;"2022-04-12T19:58:08.1860523Z";;
+"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import";;;;"2022-04-12T19:58:08.2000156Z";;
+"UANodeSetValidation";Information;190380256;;"Entering ImportNodeSet and starting model import form file Opc.Ua.PlasticsRubber.Extrusion.HaulOff.NodeSet2.xml";;;;"2022-04-12T19:58:36.8394720Z";;
+"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import";;;;"2022-04-12T19:58:36.8404701Z";;
+"UANodeSetValidation";Information;190380256;;"Entering ImportNodeSet and starting model import form file Opc.Ua.PlasticsRubber.Extrusion.Corrugator.NodeSet2.xml";;;;"2022-04-12T19:58:38.8611039Z";;
+"UANodeSetValidation";Warning;43988162;;"Trace: Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import";;;;"2022-04-12T19:58:38.8621020Z";;
+"UANodeSetValidation";Information;856488909;;"Entering IAddressSpaceContext.ValidateAndExportModel - starting for the http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Corrugator/ namespace.";;;;"2022-04-12T19:58:39.1174187Z";;
+"UANodeSetValidation";Information;711552454;;"Finishing Validator.ValidateExportModel - the model contains 1 nodes and no errors/warnings reported";;;;"2022-04-12T19:58:39.1492957Z";;
+"UAModelDesignExport";Information;279330276;;"The ModelDesign XML has been saved to file Opc.Ua.PlasticsRubber.Extrusion.Corrugator.Model.xml and decorated with the stylesheet XMLstylesheet";;;;"2022-04-12T19:58:39.2570077Z";;
