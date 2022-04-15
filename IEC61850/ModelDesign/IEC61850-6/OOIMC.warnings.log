@@ -1,5 +1,5 @@
-"ModelCompilerUI";Information;716624168;;"Trace: Information, Error Focus:Diagnostic, ErrorID: P0-0003010000 Info: It is diagnostic information Starting UA-Compiler Version 2.1.1.30977";;;;"2022-04-15T15:18:51.4833078Z";;
-"ModelCompilerUI";Information;823547120;;"Trace: Information, Error Focus:NonCategorized, ErrorID: P0-0002010000 Info: General processing error see trace for details. The DataType reference for node ValueWithUnit is not valid: Unit.";;;;"2022-04-15T15:18:52.0847926Z";;
+"ModelCompilerUI";Information;716624168;;"Trace: Information, Error Focus:Diagnostic, ErrorID: P0-0003010000 Info: It is diagnostic information Starting UA-Compiler Version 2.1.1.30977";;;;;;
+"ModelCompilerUI";Information;823547120;;"Trace: Information, Error Focus:NonCategorized, ErrorID: P0-0002010000 Info: General processing error see trace for details. The DataType reference for node ValueWithUnit is not valid: Unit.";;;;;;
 "ModelCompilerUI";Information;823547121;;"Trace: Information, Error Focus:NonCategorized, ErrorID: P0-0002010000 Info: General processing error see trace for details. Stack Trace: 
    at OOI.ModelCompiler.ModelCompilerValidator.FindNode(XmlQualifiedName symbolicId, Type requiredType, String sourceName, String referenceName) in C:\VS.git\github.mpostol\UA-ModelCompiler\Opc.Ua.ModelCompiler\ModelDesignerValidator.cs:line 3551
    at OOI.ModelCompiler.ModelCompilerValidator.ValidateParameters(NodeDesign node, Parameter[] parameters) in C:\VS.git\github.mpostol\UA-ModelCompiler\Opc.Ua.ModelCompiler\ModelDesignerValidator.cs:line 3498
@@ -11,4 +11,4 @@
    at OOI.ModelCompilerUI.ModelCompilerAPI.Execute(IModelGeneratorGenerate generateParameters, IModelGeneratorValidate validateParameters) in C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\ModelCompilerAPI.cs:line 24
    at OOI.ModelCompilerUI.ModelCompilerAPIInternal.Execute(IModelGeneratorGenerate generateParameters, IModelGeneratorValidate validateParameters) in C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\ModelCompilerAPIInternal.cs:line 211
    at OOI.ModelCompilerUI.ModelCompilerAPIInternal.Build() in C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\ModelCompilerAPIInternal.cs:line 179
-   at OOI.ModelCompilerUI.EntryPoint.Main(String commandLine) in C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\EntryPoint.cs:line 42";;;;"2022-04-15T15:18:52.0990495Z";;
+   at OOI.ModelCompilerUI.EntryPoint.Main(String commandLine) in C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\EntryPoint.cs:line 42";;;;;;
