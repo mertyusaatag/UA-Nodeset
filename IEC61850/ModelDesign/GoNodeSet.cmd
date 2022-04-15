@@ -1,8 +1,20 @@
 set COMPILER=OOI.ModelCompilerUI
 
-:: -d22 "C:\VS.git\github.mpostol\UA-Nodeset\ADI\ModelDesign\Opc.Ua.Adi.Model.xml"  -cg "C:\VS.git\github.mpostol\UA-Nodeset\ADI\ModelDesign\Opc.Ua.Adi.Model.csv" -o "C:\VS.git\github.mpostol\UA-Nodeset\ADI\ModelDesign\Opc.Ua.Adi.Model" -console
+del %1\OOIMC.log  /q
+del %1\OOIMC.warnings.log /q
+"%1\%COMPILER%" -d2 "Opc.Ua.IEC61850-7-3.Model.xml" -cg "Opc.Ua.IEC61850-7-3.csv" -o "IEC61850-7-3"
+xcopy %1\OOIMC.log .\IEC61850-7-3\OOIMC.log /y /i
+xcopy %1\OOIMC.warnings.log .\IEC61850-7-3\OOIMC.warnings.log /y /i
 
-"%1\%COMPILER%" -d2 "Opc.Ua.IEC61850-7-3.Model.xml" -cg "IEC61850-7-3.csv" -o "IEC61850-7-3" -console
-:: "%1\%COMPILER%" -d2 "ObjectTypeTest.xml" -cg "ObjectTypeTest.csv" -o "ObjectTypeTest" -console
-:: "%1\%COMPILER%" -d2 "VariableTypeTest.xml" -cg "VariableTypeTest.csv" -o "VariableTypeTest" -console
-:: "%1\%COMPILER%" -d2 "DataTypeTest.xml" -cg "DataTypeTest.csv" -o "DataTypeTest" -console
+del %1\OOIMC.log  /q
+del %1\OOIMC.warnings.log /q
+"%1\%COMPILER%" -d2 "Opc.Ua.IEC61850-6.Model.xml" -cg "Opc.Ua.IEC61850-6.csv" -o "IEC61850-6"
+xcopy %1\OOIMC.log .\IEC61850-6\OOIMC.log /y /i
+xcopy %1\OOIMC.warnings.log .\IEC61850-6\OOIMC.warnings.log /y /i
+
+del %1\OOIMC.log  /q
+del %1\OOIMC.warnings.log /q
+"%1\%COMPILER%" -d2 "Opc.Ua.IEC61850-7-4.Model.xml" -cg "Opc.Ua.IEC61850-7-4.csv" -o "IEC61850-7-4"
+xcopy %1\OOIMC.log .\IEC61850-7-4\OOIMC.log /y /i
+xcopy %1\OOIMC.warnings.log .\IEC61850-7-4\OOIMC.warnings.log /y /i
+

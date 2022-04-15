@@ -1,0 +1,15 @@
+"ModelCompilerUI";Information;716624168;;"Trace: Information, Error Focus:Diagnostic, ErrorID: P0-0003010000 Info: It is diagnostic information Starting UA-Compiler Version 2.1.1.30977";;;;;;
+"ModelCompilerUI";Verbose;716624169;;"Trace: Verbose, Error Focus:Diagnostic, ErrorID: P0-0003010000 Info: It is diagnostic information Copyright(c) 2022 Mariusz Postol";;;;;;
+"ModelCompilerUI";Information;823547120;;"Trace: Information, Error Focus:NonCategorized, ErrorID: P0-0002010000 Info: General processing error see trace for details. The DataType reference for node ValueWithUnit is not valid: Unit.";;;;;;
+"ModelCompilerUI";Information;823547121;;"Trace: Information, Error Focus:NonCategorized, ErrorID: P0-0002010000 Info: General processing error see trace for details. Stack Trace: 
+   at OOI.ModelCompiler.ModelCompilerValidator.FindNode(XmlQualifiedName symbolicId, Type requiredType, String sourceName, String referenceName) in C:\VS.git\github.mpostol\UA-ModelCompiler\Opc.Ua.ModelCompiler\ModelDesignerValidator.cs:line 3551
+   at OOI.ModelCompiler.ModelCompilerValidator.ValidateParameters(NodeDesign node, Parameter[] parameters) in C:\VS.git\github.mpostol\UA-ModelCompiler\Opc.Ua.ModelCompiler\ModelDesignerValidator.cs:line 3498
+   at OOI.ModelCompiler.ModelCompilerValidator.ValidateType(TypeDesign type) in C:\VS.git\github.mpostol\UA-ModelCompiler\Opc.Ua.ModelCompiler\ModelDesignerValidator.cs:line 3271
+   at OOI.ModelCompiler.ModelCompilerValidator.Validate(NodeDesign node) in C:\VS.git\github.mpostol\UA-ModelCompiler\Opc.Ua.ModelCompiler\ModelDesignerValidator.cs:line 3107
+   at OOI.ModelCompiler.ModelCompilerValidator.ValidateDictionary(ModelDesign dictionary) in C:\VS.git\github.mpostol\UA-ModelCompiler\Opc.Ua.ModelCompiler\ModelDesignerValidator.cs:line 762
+   at OOI.ModelCompiler.ModelCompilerValidator.Validate2(IList`1 designFilePaths, String identifierFilePath, Boolean generateIds) in C:\VS.git\github.mpostol\UA-ModelCompiler\Opc.Ua.ModelCompiler\ModelDesignerValidator.cs:line 1186
+   at OOI.ModelCompiler.ModelGenerator2.ValidateAndUpdateIds(IModelGeneratorValidate model) in C:\VS.git\github.mpostol\UA-ModelCompiler\Opc.Ua.ModelCompiler\ModelGenerator2.cs:line 108
+   at OOI.ModelCompilerUI.ModelCompilerAPI.Execute(IModelGeneratorGenerate generateParameters, IModelGeneratorValidate validateParameters) in C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\ModelCompilerAPI.cs:line 24
+   at OOI.ModelCompilerUI.ModelCompilerAPIInternal.Execute(IModelGeneratorGenerate generateParameters, IModelGeneratorValidate validateParameters) in C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\ModelCompilerAPIInternal.cs:line 211
+   at OOI.ModelCompilerUI.ModelCompilerAPIInternal.Build() in C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\ModelCompilerAPIInternal.cs:line 179
+   at OOI.ModelCompilerUI.EntryPoint.Main(String commandLine) in C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\EntryPoint.cs:line 42";;;;;;
