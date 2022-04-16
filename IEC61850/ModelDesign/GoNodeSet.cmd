@@ -1,4 +1,4 @@
-set COMPILER=OOI.ModelCompilerUI
+set COMPILER=mdc
 
 del %1\OOIMC.log  /q
 del %1\OOIMC.warnings.log /q
