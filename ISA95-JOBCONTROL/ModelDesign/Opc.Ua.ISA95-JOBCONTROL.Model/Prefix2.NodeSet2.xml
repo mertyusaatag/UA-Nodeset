@@ -1,0 +1,1183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2022-03-10T22:00:00+01:00" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+  <NamespaceUris>
+    <Uri>http://opcfoundation.org/UA/ISA95-JOBCONTROL</Uri>
+  </NamespaceUris>
+  <Models>
+    <Model ModelUri="http://opcfoundation.org/UA/ISA95-JOBCONTROL" Version="" PublicationDate="2022-03-10T22:00:00+01:00">
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04" PublicationDate="2016-12-31T00:00:00Z" />
+    </Model>
+  </Models>
+  <Aliases>
+    <Alias Alias="Boolean">i=1</Alias>
+    <Alias Alias="SByte">i=2</Alias>
+    <Alias Alias="Byte">i=3</Alias>
+    <Alias Alias="Int16">i=4</Alias>
+    <Alias Alias="UInt16">i=5</Alias>
+    <Alias Alias="Int32">i=6</Alias>
+    <Alias Alias="UInt32">i=7</Alias>
+    <Alias Alias="Int64">i=8</Alias>
+    <Alias Alias="UInt64">i=9</Alias>
+    <Alias Alias="Float">i=10</Alias>
+    <Alias Alias="Double">i=11</Alias>
+    <Alias Alias="DateTime">i=13</Alias>
+    <Alias Alias="String">i=12</Alias>
+    <Alias Alias="ByteString">i=15</Alias>
+    <Alias Alias="Guid">i=14</Alias>
+    <Alias Alias="XmlElement">i=16</Alias>
+    <Alias Alias="NodeId">i=17</Alias>
+    <Alias Alias="ExpandedNodeId">i=18</Alias>
+    <Alias Alias="QualifiedName">i=20</Alias>
+    <Alias Alias="LocalizedText">i=21</Alias>
+    <Alias Alias="StatusCode">i=19</Alias>
+    <Alias Alias="Structure">i=22</Alias>
+    <Alias Alias="Number">i=26</Alias>
+    <Alias Alias="Integer">i=27</Alias>
+    <Alias Alias="UInteger">i=28</Alias>
+    <Alias Alias="HasComponent">i=47</Alias>
+    <Alias Alias="HasProperty">i=46</Alias>
+    <Alias Alias="Organizes">i=35</Alias>
+    <Alias Alias="HasEventSource">i=36</Alias>
+    <Alias Alias="HasNotifier">i=48</Alias>
+    <Alias Alias="HasSubtype">i=45</Alias>
+    <Alias Alias="HasTypeDefinition">i=40</Alias>
+    <Alias Alias="HasModellingRule">i=37</Alias>
+    <Alias Alias="HasEncoding">i=38</Alias>
+    <Alias Alias="HasDescription">i=39</Alias>
+  </Aliases>
+  <UADataType NodeId="ns=1;i=1" BrowseName="1:ISA95JobOrderCommandEnum">
+    <DisplayName>ISA95JobOrderCommandEnum</DisplayName>
+    <Description>Describes the possible job order commands.</Description>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=2</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=3</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+    </References>
+    <Definition Name="ISA95JobOrderCommandEnum">
+      <Field Name="Undefined" Value="0">
+        <Description>Undefined value, should never be seen.</Description>
+      </Field>
+      <Field Name="Store" Value="1">
+        <Description>Command to store the job order in local storage, but not to start the order.</Description>
+      </Field>
+      <Field Name="StoreAndStart" Value="2">
+        <Description>Command to store the job order and start it as soon as the Job Order receiver is ready to start.</Description>
+      </Field>
+      <Field Name="Start" Value="3">
+        <Description>Command to start a stored job order as soon as the receiver is ready to start. Only the Job Orders ID is used to identify the stored job order, all other information is not used.  No changes are made to the stored order. If multiple Job Orders have been commanded to Start, then the priority and timing values in the Job Orders shall be used to determine the order of execution of the orders.</Description>
+      </Field>
+      <Field Name="Update" Value="4">
+        <Description>Command to update a stored Job Order that has not yet been started, with the new order information.  All previously stored information is replaced.</Description>
+      </Field>
+      <Field Name="Stop" Value="5">
+        <Description>Command to stop a started job order, report on any work done on the order, and remove the stored information. Only the Job Orders ID is used to identify the job order, all other information is not used.</Description>
+      </Field>
+      <Field Name="Cancel" Value="6">
+        <Description>Cancel an un-started job order and remove the stored information. Only the Job Orders ID is used to identify the job order, all other information is not used.</Description>
+      </Field>
+      <Field Name="Clear" Value="7">
+        <Description>Command to allow the Information Receiver to clear any maintained information on the Job Order (usually sent after a receipt of a Job Response with a status of Finished.) Only the Job Orders ID is used to identify the job order, all other information is not used.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=2" BrowseName="EnumValues" ParentNodeId="ns=1;i=1" DataType="i=7594" ValueRank="1" ArrayDimensions="8">
+    <DisplayName>EnumValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=3" BrowseName="EnumStrings" ParentNodeId="ns=1;i=1" DataType="LocalizedText" ValueRank="1">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1</Reference>
+    </References>
+    <Value>
+      <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Undefined</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Store</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>StoreAndStart</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Start</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Update</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Stop</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Cancel</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Clear</Text>
+        </LocalizedText>
+      </ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=4" BrowseName="1:ISA95JobOrderStateEnum">
+    <DisplayName>ISA95JobOrderStateEnum</DisplayName>
+    <Description>Describes the defined job statuses.</Description>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=5</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+    </References>
+    <Definition Name="ISA95JobOrderStateEnum">
+      <Field Name="Undefined" Value="0">
+        <Description>Undefined value, should never be seen.</Description>
+      </Field>
+      <Field Name="Waiting" Value="1">
+        <Description>The necessary pre-conditions have not been met and the order is not ready to run.</Description>
+      </Field>
+      <Field Name="Ready" Value="2">
+        <Description>The necessary pre-conditions have been met and the order is ready to run, awaiting a Start command.</Description>
+      </Field>
+      <Field Name="Loaded" Value="3">
+        <Description>In situations where only one job may be in active memory and is able to be run, then the job is loaded in active memory, the necessary pre-conditions have been met, and the order is ready to run, awaiting a Start command.</Description>
+      </Field>
+      <Field Name="Running" Value="4">
+        <Description>The order is executing.</Description>
+      </Field>
+      <Field Name="Completed" Value="5">
+        <Description>The order has been completed and is no longer in execution.</Description>
+      </Field>
+      <Field Name="Aborted" Value="6">
+        <Description>The order was aborted.</Description>
+      </Field>
+      <Field Name="Held" Value="7">
+        <Description>The order has been temporarily stopped due to a constraint of some form.</Description>
+      </Field>
+      <Field Name="Suspended" Value="8">
+        <Description>The order has been temporarily stopped due to a deliberate decision within the execution system.</Description>
+      </Field>
+      <Field Name="Closed" Value="9">
+        <Description>The order has been completed and fully reconciled. No further changes, or restatement of actuals is expected.</Description>
+      </Field>
+      <Field Name="Error" Value="10">
+        <Description>The Job is in error and requires attention.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=5" BrowseName="EnumValues" ParentNodeId="ns=1;i=4" DataType="i=7594" ValueRank="1" ArrayDimensions="11">
+    <DisplayName>EnumValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=4</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6" BrowseName="EnumStrings" ParentNodeId="ns=1;i=4" DataType="LocalizedText" ValueRank="1">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=4</Reference>
+    </References>
+    <Value>
+      <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Undefined</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Waiting</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Ready</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Loaded</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Running</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Completed</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Aborted</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Held</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Suspended</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Closed</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Error</Text>
+        </LocalizedText>
+      </ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=7" BrowseName="1:ISA95ReturnEnum">
+    <DisplayName>ISA95ReturnEnum</DisplayName>
+    <Description>It describes the possible return status from a Method call</Description>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=8</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=9</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+    </References>
+    <Definition Name="ISA95ReturnEnum">
+      <Field Name="Undefined" Value="0">
+        <Description>Undefined value, should never be seen</Description>
+      </Field>
+      <Field Name="NoError" Value="1">
+        <Description>There were no errors in processing the method.</Description>
+      </Field>
+      <Field Name="InvalidJobOrderID" Value="2">
+        <Description>The referenced job order ID is invalid or not known to the receiver.</Description>
+      </Field>
+      <Field Name="UnableToAcceptJobOrder" Value="3">
+        <Description>The server is currently unable to accept job orders.</Description>
+      </Field>
+      <Field Name="UnableToAcceptJobOrderCommand" Value="4">
+        <Description>The server is currently unable to accept job order commands for the specified job order.</Description>
+      </Field>
+      <Field Name="UnableToReturnJobResponse" Value="5">
+        <Description>The server is unable to provide a Job Response for the specified Job Order.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAVariable NodeId="ns=1;i=8" BrowseName="EnumValues" ParentNodeId="ns=1;i=7" DataType="i=7594" ValueRank="1" ArrayDimensions="6">
+    <DisplayName>EnumValues</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=9" BrowseName="EnumStrings" ParentNodeId="ns=1;i=7" DataType="LocalizedText" ValueRank="1">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7</Reference>
+    </References>
+    <Value>
+      <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>Undefined</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>NoError</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>InvalidJobOrderID</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>UnableToAcceptJobOrder</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>UnableToAcceptJobOrderCommand</Text>
+        </LocalizedText>
+        <LocalizedText>
+          <Locale>
+          </Locale>
+          <Text>UnableToReturnJobResponse</Text>
+        </LocalizedText>
+      </ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UADataType NodeId="ns=1;i=10" BrowseName="1:ISA95EquipmentDataType">
+    <DisplayName>ISA95EquipmentDataType</DisplayName>
+    <Description>Defines an equipment resource or a piece of equipment, a quantity, an optional description, and an optional collection of properties.</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="ISA95EquipmentDataType">
+      <Field Name="ID" DataType="i=12">
+        <Description>An identification of an EquipmentClass or Equipment.</Description>
+      </Field>
+      <Field Name="Description" DataType="i=12">
+        <Description>Additional information and description about the resource.</Description>
+      </Field>
+      <Field Name="EquipmentUse" DataType="i=12">
+        <Description>Information about the expected use of the equipment, see the ISA 95 Part 2 standard for defined values. </Description>
+      </Field>
+      <Field Name="Quantity" DataType="i=12878">
+        <Description>The quantity of the resource</Description>
+      </Field>
+      <Field Name="UoM" DataType="i=12">
+        <Description>The Unit Of Measure of the quantity</Description>
+      </Field>
+      <Field Name="Properties" DataType="ns=1;i=17" ValueRank="1">
+        <Description>Any associated properties, or empty if there are no properties defined. </Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=11" BrowseName="1:ISA95JobOrderDataType">
+    <DisplayName>ISA95JobOrderDataType</DisplayName>
+    <Description>Defines the information needed to schedule and execute a job.</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="ISA95JobOrderDataType">
+      <Field Name="ID" DataType="i=12">
+        <Description>An identification of the Job Order.</Description>
+      </Field>
+      <Field Name="Description" DataType="i=12">
+        <Description>Addition information about the Job Order </Description>
+      </Field>
+      <Field Name="WorkMasterID" DataType="ns=1;i=18" ValueRank="1">
+        <Description>Work Master associated with the job order. If multiple work masters are defined, then the execution system can select the work master based on the availability of resources. </Description>
+      </Field>
+      <Field Name="StartTime" DataType="i=13">
+        <Description>The proposed start time for the order, may be empty if not specified</Description>
+      </Field>
+      <Field Name="EndTime" DataType="i=13">
+        <Description>The proposed end time for the order, may be empty if not specified</Description>
+      </Field>
+      <Field Name="Priority" DataType="i=4">
+        <Description>The priority of the job order, may be empty of not specified. Higher numbers have higher priority.  This type allows the Job Order clients to pick their own ranges, and the Job Order server only has to pick the highest number.</Description>
+      </Field>
+      <Field Name="JobOrderParameters" DataType="ns=1;i=14" ValueRank="1">
+        <Description>Key value pair with values, not associated with a resource that is provided as part of the job order, may be empty if not specified.</Description>
+      </Field>
+      <Field Name="PersonnelRequirements" DataType="ns=1;i=15" ValueRank="1">
+        <Description>A specification of any personnel requirements associated with the job order, may be empty if not specified</Description>
+      </Field>
+      <Field Name="EquipmentRequirements" DataType="ns=1;i=10" ValueRank="1">
+        <Description>A specification of any equipment requirements associated with the job order, may be empty if not specified.</Description>
+      </Field>
+      <Field Name="PhysicalAssetRequirements" DataType="ns=1;i=16" ValueRank="1">
+        <Description>A specification of any physical asset requirements associated with the job order, may be empty if not specified.</Description>
+      </Field>
+      <Field Name="MaterialRequirements" DataType="ns=1;i=13" ValueRank="1">
+        <Description>A specification of any material requirements associated with the job order, may be empty if not specified.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=12" BrowseName="1:ISA95JobResponseDataType">
+    <DisplayName>ISA95JobResponseDataType</DisplayName>
+    <Description>defines the information needed to schedule and execute a job.</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="ISA95JobResponseDataType">
+      <Field Name="ID" DataType="i=12">
+        <Description>An identification of the Job Response</Description>
+      </Field>
+      <Field Name="Description" DataType="i=12">
+        <Description>Additional information about the Job Response</Description>
+      </Field>
+      <Field Name="JobOrderID" DataType="i=12">
+        <Description>An identification of the job order associated with the job response. </Description>
+      </Field>
+      <Field Name="StartTime" DataType="i=13">
+        <Description>The actual start time for the order. </Description>
+      </Field>
+      <Field Name="EndTime" DataType="i=13">
+        <Description>The actual end time for the order. </Description>
+      </Field>
+      <Field Name="JobState" DataType="ns=1;i=4">
+        <Description>The current state of the job.</Description>
+      </Field>
+      <Field Name="JobResponseData" DataType="ns=1;i=14" ValueRank="1">
+        <Description>Key value pair with values, not associated with a resource that is provided as part of the job response, may be empty if not specified.</Description>
+      </Field>
+      <Field Name="PersonnelActuals" DataType="ns=1;i=15" ValueRank="1">
+        <Description>A specification of any personnel requirements associated with the job response, may be empty if not specified.</Description>
+      </Field>
+      <Field Name="EquipmentActuals" DataType="ns=1;i=10" ValueRank="1">
+        <Description>A specification of any equipment requirements associated with the job response, may be empty if not specified.</Description>
+      </Field>
+      <Field Name="PhysicalAssetActuals" DataType="ns=1;i=16" ValueRank="1">
+        <Description>A specification of any physical asset requirements associated with the job response, may be empty if not specified.</Description>
+      </Field>
+      <Field Name="MaterialActuals" DataType="ns=1;i=13" ValueRank="1">
+        <Description>A specification of any material requirements associated with the job response, may be empty if not specified.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=13" BrowseName="1:ISA95MaterialDataType">
+    <DisplayName>ISA95MaterialDataType</DisplayName>
+    <Description>defines a material resource, a quantity, an optional description, and an optional collection of properties.</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="ISA95MaterialDataType">
+      <Field Name="MaterialClassID" DataType="i=12">
+        <Description>An identification of the resource, or null if the Material Class is not used to identify the material. </Description>
+      </Field>
+      <Field Name="MaterialDefinitionID" DataType="i=12">
+        <Description>An identification of the resource, or null if the Material Definition is not used to identify the material. </Description>
+      </Field>
+      <Field Name="MaterialLotID" DataType="i=12">
+        <Description>An identification of the resource, or null if the Material Lot is not used to identify the material. </Description>
+      </Field>
+      <Field Name="MaterialSublotID" DataType="i=12">
+        <Description>An identification of the resource, or null if the Material Sublot is not used to identify the material. </Description>
+      </Field>
+      <Field Name="Description" DataType="i=12">
+        <Description>Additional information and description about the resource.</Description>
+      </Field>
+      <Field Name="MaterialUse" DataType="i=12">
+        <Description>Information about the expected use of the material, see the ISA 95 Part 2 standard for defined values. </Description>
+      </Field>
+      <Field Name="Quantity" DataType="i=12878">
+        <Description>The quantity of the resource</Description>
+      </Field>
+      <Field Name="UoM" DataType="i=12">
+        <Description>The Unit Of Measure of the quantity</Description>
+      </Field>
+      <Field Name="Properties" DataType="ns=1;i=17" ValueRank="1">
+        <Description>Any associated properties, or empty if there are no properties defined.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=14" BrowseName="1:ISA95ParameterDataType">
+    <DisplayName>ISA95ParameterDataType</DisplayName>
+    <Description>A subtype of OPC UA Structure that defines three linked data items: the ID, which is a unique identifier for a property, the value, which is the data that is identified, and an optional description of the parameter.</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="ISA95ParameterDataType">
+      <Field Name="ID" DataType="i=12">
+        <Description>A unique identifier for a parameter</Description>
+      </Field>
+      <Field Name="Value">
+        <Description>Value of the parameter.</Description>
+      </Field>
+      <Field Name="Description" DataType="i=12">
+        <Description>An optional description of the parameter.</Description>
+      </Field>
+      <Field Name="UoM" DataType="i=12">
+        <Description>The Unit Of Measure of the value</Description>
+      </Field>
+      <Field Name="Subparameters" DataType="ns=1;i=14" ValueRank="1" />
+    </Definition>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=15" BrowseName="1:ISA95PersonnelDataType">
+    <DisplayName>ISA95PersonnelDataType</DisplayName>
+    <Description>defines a personnel resource or a person, a quantity, an optional description, and an optional collection of properties.</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="ISA95PersonnelDataType">
+      <Field Name="ID" DataType="i=12">
+        <Description>An identification of a Personnel Class or Person. </Description>
+      </Field>
+      <Field Name="Description" DataType="i=12">
+        <Description>Additional information and description about the resource.</Description>
+      </Field>
+      <Field Name="PersonnelUse" DataType="i=12">
+        <Description>Information about the expected use of the personnel, see the ISA 95 Part 2 standard for defined values. </Description>
+      </Field>
+      <Field Name="Quantity" DataType="i=12878">
+        <Description>The quantity of the resource</Description>
+      </Field>
+      <Field Name="UoM" DataType="i=12">
+        <Description>The Unit Of Measure of the quantity</Description>
+      </Field>
+      <Field Name="Properties" DataType="ns=1;i=17" ValueRank="1">
+        <Description>Any associated properties, or empty if there are no properties defined. </Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=16" BrowseName="1:ISA95PhysicalAssetDataType">
+    <DisplayName>ISA95PhysicalAssetDataType</DisplayName>
+    <Description>defines a physical asset, a quantity, an optional description, and an optional collection of properties.</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="ISA95PhysicalAssetDataType">
+      <Field Name="ID" DataType="i=12">
+        <Description>An identification of a Physical Asset Class or Physical Asset. </Description>
+      </Field>
+      <Field Name="Description" DataType="i=12">
+        <Description>Additional information and description about the resource.</Description>
+      </Field>
+      <Field Name="PhysicalAssetUse" DataType="i=12">
+        <Description>Information about the expected use of the physical asset, see the ISA 95 Part 2 standard for defined values. </Description>
+      </Field>
+      <Field Name="Quantity" DataType="i=12878">
+        <Description>The quantity of the resource</Description>
+      </Field>
+      <Field Name="UoM" DataType="i=12">
+        <Description>The Unit Of Measure of the quantity</Description>
+      </Field>
+      <Field Name="Properties" DataType="ns=1;i=17" ValueRank="1">
+        <Description>Any associated properties, or empty if there are no properties defined. </Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=17" BrowseName="1:ISA95PropertyDataType">
+    <DisplayName>ISA95PropertyDataType</DisplayName>
+    <Description>A subtype of OPC UA Structure that defines two linked data items: an ID, which is a unique identifier for a property within the scope of the associated resource, and the value, which is the data for the property.</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="ISA95PropertyDataType">
+      <Field Name="ID" DataType="i=12">
+        <Description>Unique identifier for a property within the scope of the associated resource</Description>
+      </Field>
+      <Field Name="Value">
+        <Description>Value for the property</Description>
+      </Field>
+      <Field Name="Description" DataType="i=12">
+        <Description>An optional description of the parameter.</Description>
+      </Field>
+      <Field Name="UoM" DataType="i=12">
+        <Description>The Unit Of Measure of the value</Description>
+      </Field>
+      <Field Name="Subproperties" DataType="ns=1;i=17" ValueRank="1" />
+    </Definition>
+  </UADataType>
+  <UADataType NodeId="ns=1;i=18" BrowseName="1:ISA95WorkMasterDataType">
+    <DisplayName>ISA95WorkMasterDataType</DisplayName>
+    <Description>Defines a Work Master ID and the defined parameters for the Work Master.</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+    </References>
+    <Definition Name="ISA95WorkMasterDataType">
+      <Field Name="ID" DataType="i=12">
+        <Description>An identification of the Work Master. </Description>
+      </Field>
+      <Field Name="Description" DataType="i=12">
+        <Description>Additional information and description about the Work Master.</Description>
+      </Field>
+      <Field Name="Parameters" DataType="ns=1;i=14" ValueRank="1">
+        <Description>Defined parameters for the Work Master.</Description>
+      </Field>
+    </Definition>
+  </UADataType>
+  <UAObjectType NodeId="ns=1;i=19" BrowseName="1:ISA95JobOrderReceiverObjectType">
+    <DisplayName>ISA95JobOrderReceiverObjectType</DisplayName>
+    <Description>The OPENSCSJobOrderReciverObjectType contains a method to receive job order commands and optional definitions of allowable job order information</Description>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=20</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=21</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=22</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=23</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=24</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=25</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=26</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=29</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="ns=1;i=20" BrowseName="1:EquipmentID" ParentNodeId="ns=1;i=19" DataType="String" ValueRank="1" ArrayDimensions="0" AccessLevel="3">
+    <DisplayName>EquipmentID</DisplayName>
+    <Description>Defines a read-only set of Equipment Class IDs and Equipment IDs that may be specified in a job order.</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=19</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=21" BrowseName="1:JobOrderList" ParentNodeId="ns=1;i=19" DataType="ns=1;i=11" ValueRank="1" ArrayDimensions="0" AccessLevel="3">
+    <DisplayName>JobOrderList</DisplayName>
+    <Description>Defines a read-only list of job order information available from the server.</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=19</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=22" BrowseName="1:MaterialClassID" ParentNodeId="ns=1;i=19" DataType="String" ValueRank="1" ArrayDimensions="0" AccessLevel="3">
+    <DisplayName>MaterialClassID</DisplayName>
+    <Description>Defines a read-only set of Material Classes IDs that may be specified in a job order.</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=19</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=23" BrowseName="1:MaterialDefinitionID" ParentNodeId="ns=1;i=19" DataType="String" ValueRank="1" ArrayDimensions="0" AccessLevel="3">
+    <DisplayName>MaterialDefinitionID</DisplayName>
+    <Description>Defines a read-only set of Material Classes IDs that may be specified in a job order.</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=19</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=24" BrowseName="1:PersonnelID" ParentNodeId="ns=1;i=19" DataType="String" ValueRank="1" ArrayDimensions="0" AccessLevel="3">
+    <DisplayName>PersonnelID</DisplayName>
+    <Description>Defines a read-only set of Personnel IDs and Person IDs that may be specified in a job order.</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=19</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=25" BrowseName="1:PhysicalAssetID" ParentNodeId="ns=1;i=19" DataType="String" ValueRank="1" ArrayDimensions="0" AccessLevel="3">
+    <DisplayName>PhysicalAssetID</DisplayName>
+    <Description>Defines a read-only set of Physical Asset Class IDs and Physical Asset IDs that may be specified in a job order.</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=19</Reference>
+    </References>
+  </UAVariable>
+  <UAMethod NodeId="ns=1;i=26" BrowseName="1:ReceiveJobOrder" ParentNodeId="ns=1;i=19">
+    <DisplayName>ReceiveJobOrder</DisplayName>
+    <Description>Defines a method of type which receives job orders and job order commands</Description>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=27</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=28</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=19</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="ns=1;i=27" BrowseName="InputArguments" ParentNodeId="ns=1;i=26" DataType="i=296" ValueRank="1" ArrayDimensions="2">
+    <DisplayName>InputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=26</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=28" BrowseName="OutputArguments" ParentNodeId="ns=1;i=26" DataType="i=296" ValueRank="1" ArrayDimensions="1">
+    <DisplayName>OutputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=26</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=29" BrowseName="1:WorkMaster" ParentNodeId="ns=1;i=19" DataType="ns=1;i=18" ValueRank="1" ArrayDimensions="0" AccessLevel="3">
+    <DisplayName>WorkMaster</DisplayName>
+    <Description>Defines a read-only set of work master IDs that may be specified in a job order, and the read-only set of parameters that may be specified for a specific work master.</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=19</Reference>
+    </References>
+  </UAVariable>
+  <UAObjectType NodeId="ns=1;i=30" BrowseName="1:ISA95JobResponseProviderObjectType">
+    <DisplayName>ISA95JobResponseProviderObjectType</DisplayName>
+    <Description>The OPENSCSJobResponseProviderObjectType contains a method to receive unsolicited job response requests.</Description>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=31</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAMethod NodeId="ns=1;i=31" BrowseName="1:RequestJobResponse" ParentNodeId="ns=1;i=30">
+    <DisplayName>RequestJobResponse</DisplayName>
+    <Description>This method is used to return Job Responses from unsolicited requests for responses from a job order.</Description>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=32</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=33</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=30</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="ns=1;i=32" BrowseName="InputArguments" ParentNodeId="ns=1;i=31" DataType="i=296" ValueRank="1" ArrayDimensions="2">
+    <DisplayName>InputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=31</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=33" BrowseName="OutputArguments" ParentNodeId="ns=1;i=31" DataType="i=296" ValueRank="1" ArrayDimensions="2">
+    <DisplayName>OutputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=31</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+    </Value>
+  </UAVariable>
+  <UAObjectType NodeId="ns=1;i=34" BrowseName="1:ISA95JobResponseReceiverObjectType">
+    <DisplayName>ISA95JobResponseReceiverObjectType</DisplayName>
+    <Description>A Job Response Receiver receives unsolicited Job Responses, usually as the result of completion of a job, or at intermediate points within the job.</Description>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=35</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAMethod NodeId="ns=1;i=35" BrowseName="1:ReceiveJobResponse" ParentNodeId="ns=1;i=34">
+    <DisplayName>ReceiveJobResponse</DisplayName>
+    <Description>Defines a method of type ReceiveJobResponseMethodType which receives unsolicited Job Responses.</Description>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=36</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=37</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=34</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="ns=1;i=36" BrowseName="InputArguments" ParentNodeId="ns=1;i=35" DataType="i=296" ValueRank="1" ArrayDimensions="1">
+    <DisplayName>InputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=35</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=37" BrowseName="OutputArguments" ParentNodeId="ns=1;i=35" DataType="i=296" ValueRank="1" ArrayDimensions="1">
+    <DisplayName>OutputArguments</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=35</Reference>
+    </References>
+    <Value>
+      <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=38" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=10</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=50</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=39" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=11</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=53</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=40" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=12</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=56</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=41" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=13</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=59</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=42" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=14</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=62</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=43" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=15</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=65</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=44" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=16</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=68</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=45" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=17</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=71</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=46" BrowseName="Default XML" SymbolicName="DefaultXml">
+    <DisplayName>Default XML</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=18</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=74</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=47" BrowseName="1:Prefix2" SymbolicName="Name2_XmlSchema" DataType="ByteString">
+    <DisplayName>Prefix2</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=49</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=50</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=53</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=56</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=59</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=62</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=65</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=68</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=71</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=74</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=92</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=49" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=47" DataType="String">
+    <DisplayName>NamespaceUri</DisplayName>
+    <Description>A URI that uniquely identifies the dictionary.</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=47</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/ISA95-JOBCONTROL</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=50" BrowseName="1:ISA95EquipmentDataType" ParentNodeId="ns=1;i=47" DataType="String">
+    <DisplayName>ISA95EquipmentDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=47</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='ISA95EquipmentDataType']</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=53" BrowseName="1:ISA95JobOrderDataType" ParentNodeId="ns=1;i=47" DataType="String">
+    <DisplayName>ISA95JobOrderDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=47</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='ISA95JobOrderDataType']</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=56" BrowseName="1:ISA95JobResponseDataType" ParentNodeId="ns=1;i=47" DataType="String">
+    <DisplayName>ISA95JobResponseDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=47</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='ISA95JobResponseDataType']</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=59" BrowseName="1:ISA95MaterialDataType" ParentNodeId="ns=1;i=47" DataType="String">
+    <DisplayName>ISA95MaterialDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=47</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='ISA95MaterialDataType']</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=62" BrowseName="1:ISA95ParameterDataType" ParentNodeId="ns=1;i=47" DataType="String">
+    <DisplayName>ISA95ParameterDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=47</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='ISA95ParameterDataType']</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=65" BrowseName="1:ISA95PersonnelDataType" ParentNodeId="ns=1;i=47" DataType="String">
+    <DisplayName>ISA95PersonnelDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=47</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='ISA95PersonnelDataType']</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=68" BrowseName="1:ISA95PhysicalAssetDataType" ParentNodeId="ns=1;i=47" DataType="String">
+    <DisplayName>ISA95PhysicalAssetDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=47</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='ISA95PhysicalAssetDataType']</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=71" BrowseName="1:ISA95PropertyDataType" ParentNodeId="ns=1;i=47" DataType="String">
+    <DisplayName>ISA95PropertyDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=47</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='ISA95PropertyDataType']</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=74" BrowseName="1:ISA95WorkMasterDataType" ParentNodeId="ns=1;i=47" DataType="String">
+    <DisplayName>ISA95WorkMasterDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=47</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">//xs:element[@name='ISA95WorkMasterDataType']</String>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=77" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=10</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=89</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=78" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=11</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=92</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=79" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=12</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=95</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=80" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=13</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=98</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=81" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=14</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=101</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=82" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=15</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=104</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=83" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=16</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=107</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=84" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=17</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=110</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=85" BrowseName="Default Binary" SymbolicName="DefaultBinary">
+    <DisplayName>Default Binary</DisplayName>
+    <References>
+      <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=18</Reference>
+      <Reference ReferenceType="HasDescription">ns=1;i=113</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=86" BrowseName="1:Prefix2" SymbolicName="Name2_BinarySchema" DataType="ByteString">
+    <DisplayName>Prefix2</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=88</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=89</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=92</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=95</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=98</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=101</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=104</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=107</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=110</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=113</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=93</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=88" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=86" DataType="String">
+    <DisplayName>NamespaceUri</DisplayName>
+    <Description>A URI that uniquely identifies the dictionary.</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=86</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/ISA95-JOBCONTROL</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=89" BrowseName="1:ISA95EquipmentDataType" ParentNodeId="ns=1;i=86" DataType="String">
+    <DisplayName>ISA95EquipmentDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=86</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">ISA95EquipmentDataType</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=92" BrowseName="1:ISA95JobOrderDataType" ParentNodeId="ns=1;i=86" DataType="String">
+    <DisplayName>ISA95JobOrderDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=86</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">ISA95JobOrderDataType</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=95" BrowseName="1:ISA95JobResponseDataType" ParentNodeId="ns=1;i=86" DataType="String">
+    <DisplayName>ISA95JobResponseDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=86</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">ISA95JobResponseDataType</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=98" BrowseName="1:ISA95MaterialDataType" ParentNodeId="ns=1;i=86" DataType="String">
+    <DisplayName>ISA95MaterialDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=86</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">ISA95MaterialDataType</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=101" BrowseName="1:ISA95ParameterDataType" ParentNodeId="ns=1;i=86" DataType="String">
+    <DisplayName>ISA95ParameterDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=86</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">ISA95ParameterDataType</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=104" BrowseName="1:ISA95PersonnelDataType" ParentNodeId="ns=1;i=86" DataType="String">
+    <DisplayName>ISA95PersonnelDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=86</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">ISA95PersonnelDataType</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=107" BrowseName="1:ISA95PhysicalAssetDataType" ParentNodeId="ns=1;i=86" DataType="String">
+    <DisplayName>ISA95PhysicalAssetDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=86</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">ISA95PhysicalAssetDataType</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=110" BrowseName="1:ISA95PropertyDataType" ParentNodeId="ns=1;i=86" DataType="String">
+    <DisplayName>ISA95PropertyDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=86</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">ISA95PropertyDataType</String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=113" BrowseName="1:ISA95WorkMasterDataType" ParentNodeId="ns=1;i=86" DataType="String">
+    <DisplayName>ISA95WorkMasterDataType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=86</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">ISA95WorkMasterDataType</String>
+    </Value>
+  </UAVariable>
+</UANodeSet>
