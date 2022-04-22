@@ -1,0 +1,268 @@
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd"
+  xmlns:tns="http://opcfoundation.org/UA/OPENSCS-SER/"
+  targetNamespace="http://opcfoundation.org/UA/OPENSCS-SER/"
+  elementFormDefault="qualified"
+>
+  <xs:import namespace="http://opcfoundation.org/UA/" />
+
+  <xs:simpleType  name="JobOrderCommandEnum">
+    <xs:annotation>
+      <xs:documentation>Describes the possible job order commands.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Undefined_0" />
+      <xs:enumeration value="Store_1" />
+      <xs:enumeration value="StoreAndStart_2" />
+      <xs:enumeration value="Start_3" />
+      <xs:enumeration value="Update_4" />
+      <xs:enumeration value="Stop_5" />
+      <xs:enumeration value="Cancel_6" />
+      <xs:enumeration value="Clear_7" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="JobOrderCommandEnum" type="tns:JobOrderCommandEnum" />
+
+  <xs:complexType name="ListOfJobOrderCommandEnum">
+    <xs:sequence>
+      <xs:element name="JobOrderCommandEnum" type="tns:JobOrderCommandEnum" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfJobOrderCommandEnum" type="tns:ListOfJobOrderCommandEnum" nillable="true"></xs:element>
+
+  <xs:simpleType  name="JobOrderStateEnum">
+    <xs:annotation>
+      <xs:documentation>Describes the possible serial number statesjob order states.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Undefined_0" />
+      <xs:enumeration value="Waiting_1" />
+      <xs:enumeration value="Ready_2" />
+      <xs:enumeration value="Loaded_3" />
+      <xs:enumeration value="Running_4" />
+      <xs:enumeration value="Completed_5" />
+      <xs:enumeration value="Aborted_6" />
+      <xs:enumeration value="Held_7" />
+      <xs:enumeration value="Suspended_8" />
+      <xs:enumeration value="Closed_9" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="JobOrderStateEnum" type="tns:JobOrderStateEnum" />
+
+  <xs:complexType name="ListOfJobOrderStateEnum">
+    <xs:sequence>
+      <xs:element name="JobOrderStateEnum" type="tns:JobOrderStateEnum" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfJobOrderStateEnum" type="tns:ListOfJobOrderStateEnum" nillable="true"></xs:element>
+
+  <xs:simpleType  name="OPENSCSReturnEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Undefined0_0" />
+      <xs:enumeration value="NoError1_1" />
+      <xs:enumeration value="InvalidSerialNumberCollection2_2" />
+      <xs:enumeration value="InsufficientSerialNumbers3_3" />
+      <xs:enumeration value="InvalidSerialNumbersFormat4_4" />
+      <xs:enumeration value="InvalidRequestToken5_5" />
+      <xs:enumeration value="InvalidSelectionCriteria6_6" />
+      <xs:enumeration value="UnableToAcceptSerialNumberEvents7_7" />
+      <xs:enumeration value="UnableToAcceptLabelEvents8_8" />
+      <xs:enumeration value="UnableToAcceptSIDEvents9_9" />
+      <xs:enumeration value="UnknownAggregationSID10_10" />
+      <xs:enumeration value="InsufficientPrivilegeToExecute11_11" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OPENSCSReturnEnum" type="tns:OPENSCSReturnEnum" />
+
+  <xs:complexType name="ListOfOPENSCSReturnEnum">
+    <xs:sequence>
+      <xs:element name="OPENSCSReturnEnum" type="tns:OPENSCSReturnEnum" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfOPENSCSReturnEnum" type="tns:ListOfOPENSCSReturnEnum" nillable="true"></xs:element>
+
+  <xs:simpleType  name="OPENSCSSerialNumberStateEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unassigned0_0" />
+      <xs:enumeration value="Unallocated1_1" />
+      <xs:enumeration value="Allocated2_2" />
+      <xs:enumeration value="SNInvalid3_3" />
+      <xs:enumeration value="Encoded4_4" />
+      <xs:enumeration value="LabelSampled5_5" />
+      <xs:enumeration value="LabelScrapped6_6" />
+      <xs:enumeration value="Commissioned7_7" />
+      <xs:enumeration value="Sampled8_8" />
+      <xs:enumeration value="Inactive9_9" />
+      <xs:enumeration value="Destroyed10_10" />
+      <xs:enumeration value="Released11_11" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OPENSCSSerialNumberStateEnum" type="tns:OPENSCSSerialNumberStateEnum" />
+
+  <xs:complexType name="ListOfOPENSCSSerialNumberStateEnum">
+    <xs:sequence>
+      <xs:element name="OPENSCSSerialNumberStateEnum" type="tns:OPENSCSSerialNumberStateEnum" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfOPENSCSSerialNumberStateEnum" type="tns:ListOfOPENSCSSerialNumberStateEnum" nillable="true"></xs:element>
+
+  <xs:complexType name="OPENSCSAggregationDataType">
+    <xs:annotation>
+      <xs:documentation>Iidentifies a parent element and a collection of packed elements. This is used in the aggregation packing and unpacking methods.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="ParentElement" type="tns:OPENSCSLabelDataType" minOccurs="0" nillable="true" />
+      <xs:element name="ParentElementCollection" type="tns:OPENSCSLabelCollectionDataType" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OPENSCSAggregationDataType" type="tns:OPENSCSAggregationDataType" />
+
+  <xs:complexType name="ListOfOPENSCSAggregationDataType">
+    <xs:sequence>
+      <xs:element name="OPENSCSAggregationDataType" type="tns:OPENSCSAggregationDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfOPENSCSAggregationDataType" type="tns:ListOfOPENSCSAggregationDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="OPENSCSCollectionDataType">
+    <xs:sequence>
+      <xs:element name="ID" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="Description" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="State" type="tns:OPENSCSSerialNumberStateEnum" minOccurs="0" />
+      <xs:element name="AssociatedPoolID" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="SerialNumbers" type="ua:ListOfString" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OPENSCSCollectionDataType" type="tns:OPENSCSCollectionDataType" />
+
+  <xs:complexType name="ListOfOPENSCSCollectionDataType">
+    <xs:sequence>
+      <xs:element name="OPENSCSCollectionDataType" type="tns:OPENSCSCollectionDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfOPENSCSCollectionDataType" type="tns:ListOfOPENSCSCollectionDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="OPENSCSLabelCollectionDataType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:OPENSCSCollectionDataType">
+        <xs:sequence>
+          <xs:element name="LabelCollection" type="tns:ListOfOPENSCSLabelDataType" minOccurs="0" nillable="true" />
+          <xs:element name="LabelCollectionProperties" type="tns:ListOfOPENSCSKeyValueDataType" minOccurs="0" nillable="true" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OPENSCSLabelCollectionDataType" type="tns:OPENSCSLabelCollectionDataType" />
+
+  <xs:complexType name="ListOfOPENSCSLabelCollectionDataType">
+    <xs:sequence>
+      <xs:element name="OPENSCSLabelCollectionDataType" type="tns:OPENSCSLabelCollectionDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfOPENSCSLabelCollectionDataType" type="tns:ListOfOPENSCSLabelCollectionDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="OPENSCSSNCollectionDataType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:OPENSCSCollectionDataType">
+        <xs:sequence>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OPENSCSSNCollectionDataType" type="tns:OPENSCSSNCollectionDataType" />
+
+  <xs:complexType name="ListOfOPENSCSSNCollectionDataType">
+    <xs:sequence>
+      <xs:element name="OPENSCSSNCollectionDataType" type="tns:OPENSCSSNCollectionDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfOPENSCSSNCollectionDataType" type="tns:ListOfOPENSCSSNCollectionDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="OPENSCSEventStreamArgumentDataType">
+    <xs:annotation>
+      <xs:documentation>Defines the generateOptions argument for an EPCISStream GenerateFileForWrite method. It defines the serial number format information for object events and for aggregation events, and event context information.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="SNFormat" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="ParentSNFormat" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="PackedElementSNFormat" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="EventContext" type="tns:ListOfOPENSCSKeyValueDataType" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OPENSCSEventStreamArgumentDataType" type="tns:OPENSCSEventStreamArgumentDataType" />
+
+  <xs:complexType name="ListOfOPENSCSEventStreamArgumentDataType">
+    <xs:sequence>
+      <xs:element name="OPENSCSEventStreamArgumentDataType" type="tns:OPENSCSEventStreamArgumentDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfOPENSCSEventStreamArgumentDataType" type="tns:ListOfOPENSCSEventStreamArgumentDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="OPENSCSKeyValueDataType">
+    <xs:sequence>
+      <xs:element name="Key" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="Value" type="xs:string" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OPENSCSKeyValueDataType" type="tns:OPENSCSKeyValueDataType" />
+
+  <xs:complexType name="ListOfOPENSCSKeyValueDataType">
+    <xs:sequence>
+      <xs:element name="OPENSCSKeyValueDataType" type="tns:OPENSCSKeyValueDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfOPENSCSKeyValueDataType" type="tns:ListOfOPENSCSKeyValueDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="OPENSCSLabelDataType">
+    <xs:annotation>
+      <xs:documentation>Defines a single serial number and label, which may be associated with an SID, and collection of properties in the form of OPENSCSKeyValueDataType.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="ID" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="LabelProperties" type="tns:ListOfOPENSCSKeyValueDataType" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OPENSCSLabelDataType" type="tns:OPENSCSLabelDataType" />
+
+  <xs:complexType name="ListOfOPENSCSLabelDataType">
+    <xs:sequence>
+      <xs:element name="OPENSCSLabelDataType" type="tns:OPENSCSLabelDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfOPENSCSLabelDataType" type="tns:ListOfOPENSCSLabelDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="OPENSCSLabelPropertyDataType">
+    <xs:sequence>
+      <xs:element name="PropertyID" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="PropertyDescription" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="PropertyValue" type="xs:string" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OPENSCSLabelPropertyDataType" type="tns:OPENSCSLabelPropertyDataType" />
+
+  <xs:complexType name="ListOfOPENSCSLabelPropertyDataType">
+    <xs:sequence>
+      <xs:element name="OPENSCSLabelPropertyDataType" type="tns:OPENSCSLabelPropertyDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfOPENSCSLabelPropertyDataType" type="tns:ListOfOPENSCSLabelPropertyDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="OPENSCSSIDClassPropertyDataType">
+    <xs:sequence>
+      <xs:element name="PropertyID" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="PropertyDescription" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="PropertyValue" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="LabelProperty" type="tns:ListOfOPENSCSLabelPropertyDataType" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OPENSCSSIDClassPropertyDataType" type="tns:OPENSCSSIDClassPropertyDataType" />
+
+  <xs:complexType name="ListOfOPENSCSSIDClassPropertyDataType">
+    <xs:sequence>
+      <xs:element name="OPENSCSSIDClassPropertyDataType" type="tns:OPENSCSSIDClassPropertyDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfOPENSCSSIDClassPropertyDataType" type="tns:ListOfOPENSCSSIDClassPropertyDataType" nillable="true"></xs:element>
+
+</xs:schema>

@@ -1,0 +1,146 @@
+<opc:TypeDictionary
+  xmlns:opc="http://opcfoundation.org/BinarySchema/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:ua="http://opcfoundation.org/UA/"
+  xmlns:tns="http://opcfoundation.org/UA/MachineVision"
+  DefaultByteOrder="LittleEndian"
+  TargetNamespace="http://opcfoundation.org/UA/MachineVision"
+>
+  <!-- This File was generated on 2022-04-20 and supports the specifications supported by version 1.11.335.10 of the OPC UA deliverables. -->
+  <opc:Import Namespace="http://opcfoundation.org/UA/" Location="Prefix0.BinarySchema.bsd"/>
+
+  <opc:EnumeratedType Name="SystemStateDataType" LengthInBits="32">
+    <opc:EnumeratedValue Name="PRD_1" Value="1" />
+    <opc:EnumeratedValue Name="SBY_2" Value="2" />
+    <opc:EnumeratedValue Name="ENG_3" Value="3" />
+    <opc:EnumeratedValue Name="SDT_4" Value="4" />
+    <opc:EnumeratedValue Name="UDT_5" Value="5" />
+    <opc:EnumeratedValue Name="NST_6" Value="6" />
+  </opc:EnumeratedType>
+
+  <opc:EnumeratedType Name="TriStateBooleanDataType" LengthInBits="32">
+    <opc:EnumeratedValue Name="FALSE_0" Value="0" />
+    <opc:EnumeratedValue Name="TRUE_1" Value="1" />
+    <opc:EnumeratedValue Name="DONTCARE_2" Value="2" />
+  </opc:EnumeratedType>
+
+  <opc:OpaqueType Name="ResultStateDataType">
+  </opc:OpaqueType>
+
+  <opc:OpaqueType Name="Handle">
+  </opc:OpaqueType>
+
+  <opc:OpaqueType Name="TrimmedString">
+  </opc:OpaqueType>
+
+  <opc:StructuredType Name="BinaryIdBaseDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="Id" TypeName="opc:String" />
+    <opc:Field Name="Version" TypeName="opc:String" />
+    <opc:Field Name="Hash" TypeName="opc:ByteString" />
+    <opc:Field Name="HashAlgorithm" TypeName="opc:String" />
+    <opc:Field Name="Description" TypeName="ua:LocalizedText" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="ConfigurationIdDataType" BaseType="tns:BinaryIdBaseDataType">
+    <opc:Field Name="Id" TypeName="opc:String" SourceType="tns:BinaryIdBaseDataType" />
+    <opc:Field Name="Version" TypeName="opc:String" SourceType="tns:BinaryIdBaseDataType" />
+    <opc:Field Name="Hash" TypeName="opc:ByteString" SourceType="tns:BinaryIdBaseDataType" />
+    <opc:Field Name="HashAlgorithm" TypeName="opc:String" SourceType="tns:BinaryIdBaseDataType" />
+    <opc:Field Name="Description" TypeName="ua:LocalizedText" SourceType="tns:BinaryIdBaseDataType" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="RecipeIdExternalDataType" BaseType="tns:BinaryIdBaseDataType">
+    <opc:Field Name="Id" TypeName="opc:String" SourceType="tns:BinaryIdBaseDataType" />
+    <opc:Field Name="Version" TypeName="opc:String" SourceType="tns:BinaryIdBaseDataType" />
+    <opc:Field Name="Hash" TypeName="opc:ByteString" SourceType="tns:BinaryIdBaseDataType" />
+    <opc:Field Name="HashAlgorithm" TypeName="opc:String" SourceType="tns:BinaryIdBaseDataType" />
+    <opc:Field Name="Description" TypeName="ua:LocalizedText" SourceType="tns:BinaryIdBaseDataType" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="RecipeIdInternalDataType" BaseType="tns:BinaryIdBaseDataType">
+    <opc:Field Name="Id" TypeName="opc:String" SourceType="tns:BinaryIdBaseDataType" />
+    <opc:Field Name="Version" TypeName="opc:String" SourceType="tns:BinaryIdBaseDataType" />
+    <opc:Field Name="Hash" TypeName="opc:ByteString" SourceType="tns:BinaryIdBaseDataType" />
+    <opc:Field Name="HashAlgorithm" TypeName="opc:String" SourceType="tns:BinaryIdBaseDataType" />
+    <opc:Field Name="Description" TypeName="ua:LocalizedText" SourceType="tns:BinaryIdBaseDataType" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="ConfigurationDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="HasTransferableDataOnFile" TypeName="opc:Boolean" />
+    <opc:Field Name="ExternalId" TypeName="tns:ConfigurationIdDataType" />
+    <opc:Field Name="InternalId" TypeName="tns:ConfigurationIdDataType" />
+    <opc:Field Name="LastModified" TypeName="opc:DateTime" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="ConfigurationTransferOptions" BaseType="ua:ExtensionObject">
+    <opc:Field Name="InternalId" TypeName="tns:ConfigurationIdDataType" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="JobIdDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="Id" TypeName="opc:String" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="MeasIdDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="Id" TypeName="opc:String" />
+    <opc:Field Name="Description" TypeName="ua:LocalizedText" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="PartIdDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="Id" TypeName="opc:String" />
+    <opc:Field Name="Description" TypeName="ua:LocalizedText" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="ProcessingTimesDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="StartTime" TypeName="opc:DateTime" />
+    <opc:Field Name="EndTime" TypeName="opc:DateTime" />
+    <opc:Field Name="AcquisitionDuration" TypeName="opc:Double" />
+    <opc:Field Name="ProcessingDuration" TypeName="opc:Double" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="ProductDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="ExternalId" TypeName="tns:ProductIdDataType" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="ProductIdDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="Id" TypeName="opc:String" />
+    <opc:Field Name="Description" TypeName="ua:LocalizedText" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="RecipeTransferOptions" BaseType="ua:ExtensionObject">
+    <opc:Field Name="InternalId" TypeName="tns:RecipeIdInternalDataType" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="ResultDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="ResultId" TypeName="tns:ResultIdDataType" />
+    <opc:Field Name="HasTransferableDataOnFile" TypeName="opc:Boolean" />
+    <opc:Field Name="IsPartial" TypeName="opc:Boolean" />
+    <opc:Field Name="IsSimulated" TypeName="opc:Boolean" />
+    <opc:Field Name="ResultState" TypeName="opc:Int32" />
+    <opc:Field Name="MeasId" TypeName="tns:MeasIdDataType" />
+    <opc:Field Name="PartId" TypeName="tns:PartIdDataType" />
+    <opc:Field Name="ExternalRecipeId" TypeName="tns:RecipeIdExternalDataType" />
+    <opc:Field Name="InternalRecipeId" TypeName="tns:RecipeIdInternalDataType" />
+    <opc:Field Name="ProductId" TypeName="tns:ProductIdDataType" />
+    <opc:Field Name="ExternalConfigurationId" TypeName="tns:ConfigurationIdDataType" />
+    <opc:Field Name="InternalConfigurationId" TypeName="tns:ConfigurationIdDataType" />
+    <opc:Field Name="JobId" TypeName="tns:JobIdDataType" />
+    <opc:Field Name="CreationTime" TypeName="opc:DateTime" />
+    <opc:Field Name="ProcessingTimes" TypeName="tns:ProcessingTimesDataType" />
+    <opc:Field Name="NoOfResultContent" TypeName="opc:Int32" />
+    <opc:Field Name="ResultContent" TypeName="ua:Variant" LengthField="NoOfResultContent" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="ResultIdDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="Id" TypeName="opc:String" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="ResultTransferOptions" BaseType="ua:ExtensionObject">
+    <opc:Field Name="Id" TypeName="tns:ResultIdDataType" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="SystemStateDescriptionDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="State" TypeName="tns:SystemStateDataType" />
+    <opc:Field Name="StateDescription" TypeName="opc:String" />
+  </opc:StructuredType>
+
+</opc:TypeDictionary>

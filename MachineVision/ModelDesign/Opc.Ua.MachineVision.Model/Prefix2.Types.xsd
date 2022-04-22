@@ -1,0 +1,327 @@
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd"
+  xmlns:tns="http://opcfoundation.org/UA/MachineVision"
+  targetNamespace="http://opcfoundation.org/UA/MachineVision"
+  elementFormDefault="qualified"
+>
+  <xs:import namespace="http://opcfoundation.org/UA/" />
+
+  <xs:simpleType  name="SystemStateDataType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PRD_1" />
+      <xs:enumeration value="SBY_2" />
+      <xs:enumeration value="ENG_3" />
+      <xs:enumeration value="SDT_4" />
+      <xs:enumeration value="UDT_5" />
+      <xs:enumeration value="NST_6" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SystemStateDataType" type="tns:SystemStateDataType" />
+
+  <xs:complexType name="ListOfSystemStateDataType">
+    <xs:sequence>
+      <xs:element name="SystemStateDataType" type="tns:SystemStateDataType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfSystemStateDataType" type="tns:ListOfSystemStateDataType" nillable="true"></xs:element>
+
+  <xs:simpleType  name="TriStateBooleanDataType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="FALSE_0" />
+      <xs:enumeration value="TRUE_1" />
+      <xs:enumeration value="DONTCARE_2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TriStateBooleanDataType" type="tns:TriStateBooleanDataType" />
+
+  <xs:complexType name="ListOfTriStateBooleanDataType">
+    <xs:sequence>
+      <xs:element name="TriStateBooleanDataType" type="tns:TriStateBooleanDataType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfTriStateBooleanDataType" type="tns:ListOfTriStateBooleanDataType" nillable="true"></xs:element>
+
+  <xs:element name="ResultStateDataType" type="xs:int" />
+
+  <xs:element name="Handle" type="xs:unsignedInt" />
+
+  <xs:element name="TrimmedString" type="xs:string" />
+
+  <xs:complexType name="BinaryIdBaseDataType">
+    <xs:sequence>
+      <xs:element name="Id" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="Version" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="Hash" type="xs:base64Binary" minOccurs="0" nillable="true" />
+      <xs:element name="HashAlgorithm" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="Description" type="ua:LocalizedText" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BinaryIdBaseDataType" type="tns:BinaryIdBaseDataType" />
+
+  <xs:complexType name="ListOfBinaryIdBaseDataType">
+    <xs:sequence>
+      <xs:element name="BinaryIdBaseDataType" type="tns:BinaryIdBaseDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfBinaryIdBaseDataType" type="tns:ListOfBinaryIdBaseDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="ConfigurationIdDataType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BinaryIdBaseDataType">
+        <xs:sequence>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ConfigurationIdDataType" type="tns:ConfigurationIdDataType" />
+
+  <xs:complexType name="ListOfConfigurationIdDataType">
+    <xs:sequence>
+      <xs:element name="ConfigurationIdDataType" type="tns:ConfigurationIdDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfConfigurationIdDataType" type="tns:ListOfConfigurationIdDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="RecipeIdExternalDataType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BinaryIdBaseDataType">
+        <xs:sequence>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RecipeIdExternalDataType" type="tns:RecipeIdExternalDataType" />
+
+  <xs:complexType name="ListOfRecipeIdExternalDataType">
+    <xs:sequence>
+      <xs:element name="RecipeIdExternalDataType" type="tns:RecipeIdExternalDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfRecipeIdExternalDataType" type="tns:ListOfRecipeIdExternalDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="RecipeIdInternalDataType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BinaryIdBaseDataType">
+        <xs:sequence>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RecipeIdInternalDataType" type="tns:RecipeIdInternalDataType" />
+
+  <xs:complexType name="ListOfRecipeIdInternalDataType">
+    <xs:sequence>
+      <xs:element name="RecipeIdInternalDataType" type="tns:RecipeIdInternalDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfRecipeIdInternalDataType" type="tns:ListOfRecipeIdInternalDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="ConfigurationDataType">
+    <xs:sequence>
+      <xs:element name="HasTransferableDataOnFile" type="xs:boolean" minOccurs="0" />
+      <xs:element name="ExternalId" type="tns:ConfigurationIdDataType" minOccurs="0" nillable="true" />
+      <xs:element name="InternalId" type="tns:ConfigurationIdDataType" minOccurs="0" nillable="true" />
+      <xs:element name="LastModified" type="xs:dateTime" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConfigurationDataType" type="tns:ConfigurationDataType" />
+
+  <xs:complexType name="ListOfConfigurationDataType">
+    <xs:sequence>
+      <xs:element name="ConfigurationDataType" type="tns:ConfigurationDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfConfigurationDataType" type="tns:ListOfConfigurationDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="ConfigurationTransferOptions">
+    <xs:sequence>
+      <xs:element name="InternalId" type="tns:ConfigurationIdDataType" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConfigurationTransferOptions" type="tns:ConfigurationTransferOptions" />
+
+  <xs:complexType name="ListOfConfigurationTransferOptions">
+    <xs:sequence>
+      <xs:element name="ConfigurationTransferOptions" type="tns:ConfigurationTransferOptions" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfConfigurationTransferOptions" type="tns:ListOfConfigurationTransferOptions" nillable="true"></xs:element>
+
+  <xs:complexType name="JobIdDataType">
+    <xs:sequence>
+      <xs:element name="Id" type="xs:string" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="JobIdDataType" type="tns:JobIdDataType" />
+
+  <xs:complexType name="ListOfJobIdDataType">
+    <xs:sequence>
+      <xs:element name="JobIdDataType" type="tns:JobIdDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfJobIdDataType" type="tns:ListOfJobIdDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="MeasIdDataType">
+    <xs:sequence>
+      <xs:element name="Id" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="Description" type="ua:LocalizedText" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MeasIdDataType" type="tns:MeasIdDataType" />
+
+  <xs:complexType name="ListOfMeasIdDataType">
+    <xs:sequence>
+      <xs:element name="MeasIdDataType" type="tns:MeasIdDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfMeasIdDataType" type="tns:ListOfMeasIdDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="PartIdDataType">
+    <xs:sequence>
+      <xs:element name="Id" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="Description" type="ua:LocalizedText" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PartIdDataType" type="tns:PartIdDataType" />
+
+  <xs:complexType name="ListOfPartIdDataType">
+    <xs:sequence>
+      <xs:element name="PartIdDataType" type="tns:PartIdDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfPartIdDataType" type="tns:ListOfPartIdDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="ProcessingTimesDataType">
+    <xs:sequence>
+      <xs:element name="StartTime" type="xs:dateTime" minOccurs="0" />
+      <xs:element name="EndTime" type="xs:dateTime" minOccurs="0" />
+      <xs:element name="AcquisitionDuration" type="xs:double" minOccurs="0" />
+      <xs:element name="ProcessingDuration" type="xs:double" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProcessingTimesDataType" type="tns:ProcessingTimesDataType" />
+
+  <xs:complexType name="ListOfProcessingTimesDataType">
+    <xs:sequence>
+      <xs:element name="ProcessingTimesDataType" type="tns:ProcessingTimesDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfProcessingTimesDataType" type="tns:ListOfProcessingTimesDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="ProductDataType">
+    <xs:sequence>
+      <xs:element name="ExternalId" type="tns:ProductIdDataType" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProductDataType" type="tns:ProductDataType" />
+
+  <xs:complexType name="ListOfProductDataType">
+    <xs:sequence>
+      <xs:element name="ProductDataType" type="tns:ProductDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfProductDataType" type="tns:ListOfProductDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="ProductIdDataType">
+    <xs:sequence>
+      <xs:element name="Id" type="xs:string" minOccurs="0" nillable="true" />
+      <xs:element name="Description" type="ua:LocalizedText" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProductIdDataType" type="tns:ProductIdDataType" />
+
+  <xs:complexType name="ListOfProductIdDataType">
+    <xs:sequence>
+      <xs:element name="ProductIdDataType" type="tns:ProductIdDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfProductIdDataType" type="tns:ListOfProductIdDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="RecipeTransferOptions">
+    <xs:sequence>
+      <xs:element name="InternalId" type="tns:RecipeIdInternalDataType" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RecipeTransferOptions" type="tns:RecipeTransferOptions" />
+
+  <xs:complexType name="ListOfRecipeTransferOptions">
+    <xs:sequence>
+      <xs:element name="RecipeTransferOptions" type="tns:RecipeTransferOptions" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfRecipeTransferOptions" type="tns:ListOfRecipeTransferOptions" nillable="true"></xs:element>
+
+  <xs:complexType name="ResultDataType">
+    <xs:sequence>
+      <xs:element name="ResultId" type="tns:ResultIdDataType" minOccurs="0" nillable="true" />
+      <xs:element name="HasTransferableDataOnFile" type="xs:boolean" minOccurs="0" />
+      <xs:element name="IsPartial" type="xs:boolean" minOccurs="0" />
+      <xs:element name="IsSimulated" type="xs:boolean" minOccurs="0" />
+      <xs:element name="ResultState" type="xs:int" minOccurs="0" />
+      <xs:element name="MeasId" type="tns:MeasIdDataType" minOccurs="0" nillable="true" />
+      <xs:element name="PartId" type="tns:PartIdDataType" minOccurs="0" nillable="true" />
+      <xs:element name="ExternalRecipeId" type="tns:RecipeIdExternalDataType" minOccurs="0" nillable="true" />
+      <xs:element name="InternalRecipeId" type="tns:RecipeIdInternalDataType" minOccurs="0" nillable="true" />
+      <xs:element name="ProductId" type="tns:ProductIdDataType" minOccurs="0" nillable="true" />
+      <xs:element name="ExternalConfigurationId" type="tns:ConfigurationIdDataType" minOccurs="0" nillable="true" />
+      <xs:element name="InternalConfigurationId" type="tns:ConfigurationIdDataType" minOccurs="0" nillable="true" />
+      <xs:element name="JobId" type="tns:JobIdDataType" minOccurs="0" nillable="true" />
+      <xs:element name="CreationTime" type="xs:dateTime" minOccurs="0" />
+      <xs:element name="ProcessingTimes" type="tns:ProcessingTimesDataType" minOccurs="0" nillable="true" />
+      <xs:element name="ResultContent" type="ua:ListOfVariant" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDataType" type="tns:ResultDataType" />
+
+  <xs:complexType name="ListOfResultDataType">
+    <xs:sequence>
+      <xs:element name="ResultDataType" type="tns:ResultDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfResultDataType" type="tns:ListOfResultDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="ResultIdDataType">
+    <xs:sequence>
+      <xs:element name="Id" type="xs:string" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultIdDataType" type="tns:ResultIdDataType" />
+
+  <xs:complexType name="ListOfResultIdDataType">
+    <xs:sequence>
+      <xs:element name="ResultIdDataType" type="tns:ResultIdDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfResultIdDataType" type="tns:ListOfResultIdDataType" nillable="true"></xs:element>
+
+  <xs:complexType name="ResultTransferOptions">
+    <xs:sequence>
+      <xs:element name="Id" type="tns:ResultIdDataType" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultTransferOptions" type="tns:ResultTransferOptions" />
+
+  <xs:complexType name="ListOfResultTransferOptions">
+    <xs:sequence>
+      <xs:element name="ResultTransferOptions" type="tns:ResultTransferOptions" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfResultTransferOptions" type="tns:ListOfResultTransferOptions" nillable="true"></xs:element>
+
+  <xs:complexType name="SystemStateDescriptionDataType">
+    <xs:sequence>
+      <xs:element name="State" type="tns:SystemStateDataType" minOccurs="0" />
+      <xs:element name="StateDescription" type="xs:string" minOccurs="0" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SystemStateDescriptionDataType" type="tns:SystemStateDescriptionDataType" />
+
+  <xs:complexType name="ListOfSystemStateDescriptionDataType">
+    <xs:sequence>
+      <xs:element name="SystemStateDescriptionDataType" type="tns:SystemStateDescriptionDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListOfSystemStateDescriptionDataType" type="tns:ListOfSystemStateDescriptionDataType" nillable="true"></xs:element>
+
+</xs:schema>
