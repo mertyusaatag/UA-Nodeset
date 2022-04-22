@@ -1,0 +1,140 @@
+<opc:TypeDictionary
+  xmlns:opc="http://opcfoundation.org/BinarySchema/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:ua="http://opcfoundation.org/UA/"
+  xmlns:tns="http://opcfoundation.org/UA/OPENSCS-SER/"
+  DefaultByteOrder="LittleEndian"
+  TargetNamespace="http://opcfoundation.org/UA/OPENSCS-SER/"
+>
+  <!-- This File was generated on 2022-04-20 and supports the specifications supported by version 1.11.335.10 of the OPC UA deliverables. -->
+  <opc:Import Namespace="http://opcfoundation.org/UA/" Location="Prefix0.BinarySchema.bsd"/>
+
+  <opc:EnumeratedType Name="JobOrderCommandEnum" LengthInBits="32">
+    <opc:Documentation>Describes the possible job order commands.</opc:Documentation>
+    <opc:EnumeratedValue Name="Undefined_0" Value="0" />
+    <opc:EnumeratedValue Name="Store_1" Value="1" />
+    <opc:EnumeratedValue Name="StoreAndStart_2" Value="2" />
+    <opc:EnumeratedValue Name="Start_3" Value="3" />
+    <opc:EnumeratedValue Name="Update_4" Value="4" />
+    <opc:EnumeratedValue Name="Stop_5" Value="5" />
+    <opc:EnumeratedValue Name="Cancel_6" Value="6" />
+    <opc:EnumeratedValue Name="Clear_7" Value="7" />
+  </opc:EnumeratedType>
+
+  <opc:EnumeratedType Name="JobOrderStateEnum" LengthInBits="32">
+    <opc:Documentation>Describes the possible serial number statesjob order states.</opc:Documentation>
+    <opc:EnumeratedValue Name="Undefined_0" Value="0" />
+    <opc:EnumeratedValue Name="Waiting_1" Value="1" />
+    <opc:EnumeratedValue Name="Ready_2" Value="2" />
+    <opc:EnumeratedValue Name="Loaded_3" Value="3" />
+    <opc:EnumeratedValue Name="Running_4" Value="4" />
+    <opc:EnumeratedValue Name="Completed_5" Value="5" />
+    <opc:EnumeratedValue Name="Aborted_6" Value="6" />
+    <opc:EnumeratedValue Name="Held_7" Value="7" />
+    <opc:EnumeratedValue Name="Suspended_8" Value="8" />
+    <opc:EnumeratedValue Name="Closed_9" Value="9" />
+  </opc:EnumeratedType>
+
+  <opc:EnumeratedType Name="OPENSCSReturnEnum" LengthInBits="32">
+    <opc:EnumeratedValue Name="Undefined0" Value="0" />
+    <opc:EnumeratedValue Name="NoError1" Value="1" />
+    <opc:EnumeratedValue Name="InvalidSerialNumberCollection2" Value="2" />
+    <opc:EnumeratedValue Name="InsufficientSerialNumbers3" Value="3" />
+    <opc:EnumeratedValue Name="InvalidSerialNumbersFormat4" Value="4" />
+    <opc:EnumeratedValue Name="InvalidRequestToken5" Value="5" />
+    <opc:EnumeratedValue Name="InvalidSelectionCriteria6" Value="6" />
+    <opc:EnumeratedValue Name="UnableToAcceptSerialNumberEvents7" Value="7" />
+    <opc:EnumeratedValue Name="UnableToAcceptLabelEvents8" Value="8" />
+    <opc:EnumeratedValue Name="UnableToAcceptSIDEvents9" Value="9" />
+    <opc:EnumeratedValue Name="UnknownAggregationSID10" Value="10" />
+    <opc:EnumeratedValue Name="InsufficientPrivilegeToExecute11" Value="11" />
+  </opc:EnumeratedType>
+
+  <opc:EnumeratedType Name="OPENSCSSerialNumberStateEnum" LengthInBits="32">
+    <opc:EnumeratedValue Name="Unassigned0" Value="0" />
+    <opc:EnumeratedValue Name="Unallocated1" Value="1" />
+    <opc:EnumeratedValue Name="Allocated2" Value="2" />
+    <opc:EnumeratedValue Name="SNInvalid3" Value="3" />
+    <opc:EnumeratedValue Name="Encoded4" Value="4" />
+    <opc:EnumeratedValue Name="LabelSampled5" Value="5" />
+    <opc:EnumeratedValue Name="LabelScrapped6" Value="6" />
+    <opc:EnumeratedValue Name="Commissioned7" Value="7" />
+    <opc:EnumeratedValue Name="Sampled8" Value="8" />
+    <opc:EnumeratedValue Name="Inactive9" Value="9" />
+    <opc:EnumeratedValue Name="Destroyed10" Value="10" />
+    <opc:EnumeratedValue Name="Released11" Value="11" />
+  </opc:EnumeratedType>
+
+  <opc:StructuredType Name="OPENSCSAggregationDataType" BaseType="ua:ExtensionObject">
+    <opc:Documentation>Iidentifies a parent element and a collection of packed elements. This is used in the aggregation packing and unpacking methods.</opc:Documentation>
+    <opc:Field Name="ParentElement" TypeName="tns:OPENSCSLabelDataType" />
+    <opc:Field Name="ParentElementCollection" TypeName="tns:OPENSCSLabelCollectionDataType" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="OPENSCSCollectionDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="ID" TypeName="opc:String" />
+    <opc:Field Name="Description" TypeName="opc:String" />
+    <opc:Field Name="State" TypeName="tns:OPENSCSSerialNumberStateEnum" />
+    <opc:Field Name="AssociatedPoolID" TypeName="opc:String" />
+    <opc:Field Name="NoOfSerialNumbers" TypeName="opc:Int32" />
+    <opc:Field Name="SerialNumbers" TypeName="opc:String" LengthField="NoOfSerialNumbers" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="OPENSCSLabelCollectionDataType" BaseType="tns:OPENSCSCollectionDataType">
+    <opc:Field Name="ID" TypeName="opc:String" SourceType="tns:OPENSCSCollectionDataType" />
+    <opc:Field Name="Description" TypeName="opc:String" SourceType="tns:OPENSCSCollectionDataType" />
+    <opc:Field Name="State" TypeName="tns:OPENSCSSerialNumberStateEnum" SourceType="tns:OPENSCSCollectionDataType" />
+    <opc:Field Name="AssociatedPoolID" TypeName="opc:String" SourceType="tns:OPENSCSCollectionDataType" />
+    <opc:Field Name="NoOfSerialNumbers" TypeName="opc:Int32" />
+    <opc:Field Name="SerialNumbers" TypeName="opc:String" LengthField="NoOfSerialNumbers" />
+    <opc:Field Name="NoOfLabelCollection" TypeName="opc:Int32" />
+    <opc:Field Name="LabelCollection" TypeName="tns:OPENSCSLabelDataType" LengthField="NoOfLabelCollection" />
+    <opc:Field Name="NoOfLabelCollectionProperties" TypeName="opc:Int32" />
+    <opc:Field Name="LabelCollectionProperties" TypeName="tns:OPENSCSKeyValueDataType" LengthField="NoOfLabelCollectionProperties" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="OPENSCSSNCollectionDataType" BaseType="tns:OPENSCSCollectionDataType">
+    <opc:Field Name="ID" TypeName="opc:String" SourceType="tns:OPENSCSCollectionDataType" />
+    <opc:Field Name="Description" TypeName="opc:String" SourceType="tns:OPENSCSCollectionDataType" />
+    <opc:Field Name="State" TypeName="tns:OPENSCSSerialNumberStateEnum" SourceType="tns:OPENSCSCollectionDataType" />
+    <opc:Field Name="AssociatedPoolID" TypeName="opc:String" SourceType="tns:OPENSCSCollectionDataType" />
+    <opc:Field Name="NoOfSerialNumbers" TypeName="opc:Int32" />
+    <opc:Field Name="SerialNumbers" TypeName="opc:String" LengthField="NoOfSerialNumbers" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="OPENSCSEventStreamArgumentDataType" BaseType="ua:ExtensionObject">
+    <opc:Documentation>Defines the generateOptions argument for an EPCISStream GenerateFileForWrite method. It defines the serial number format information for object events and for aggregation events, and event context information.</opc:Documentation>
+    <opc:Field Name="SNFormat" TypeName="opc:String" />
+    <opc:Field Name="ParentSNFormat" TypeName="opc:String" />
+    <opc:Field Name="PackedElementSNFormat" TypeName="opc:String" />
+    <opc:Field Name="NoOfEventContext" TypeName="opc:Int32" />
+    <opc:Field Name="EventContext" TypeName="tns:OPENSCSKeyValueDataType" LengthField="NoOfEventContext" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="OPENSCSKeyValueDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="Key" TypeName="opc:String" />
+    <opc:Field Name="Value" TypeName="opc:String" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="OPENSCSLabelDataType" BaseType="ua:ExtensionObject">
+    <opc:Documentation>Defines a single serial number and label, which may be associated with an SID, and collection of properties in the form of OPENSCSKeyValueDataType.</opc:Documentation>
+    <opc:Field Name="ID" TypeName="opc:String" />
+    <opc:Field Name="NoOfLabelProperties" TypeName="opc:Int32" />
+    <opc:Field Name="LabelProperties" TypeName="tns:OPENSCSKeyValueDataType" LengthField="NoOfLabelProperties" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="OPENSCSLabelPropertyDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="PropertyID" TypeName="opc:String" />
+    <opc:Field Name="PropertyDescription" TypeName="opc:String" />
+    <opc:Field Name="PropertyValue" TypeName="opc:String" />
+  </opc:StructuredType>
+
+  <opc:StructuredType Name="OPENSCSSIDClassPropertyDataType" BaseType="ua:ExtensionObject">
+    <opc:Field Name="PropertyID" TypeName="opc:String" />
+    <opc:Field Name="PropertyDescription" TypeName="opc:String" />
+    <opc:Field Name="PropertyValue" TypeName="opc:String" />
+    <opc:Field Name="NoOfLabelProperty" TypeName="opc:Int32" />
+    <opc:Field Name="LabelProperty" TypeName="tns:OPENSCSLabelPropertyDataType" LengthField="NoOfLabelProperty" />
+  </opc:StructuredType>
+
+</opc:TypeDictionary>
