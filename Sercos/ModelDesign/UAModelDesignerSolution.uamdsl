@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="UAModelDesignerSolution.xslt"?>
 <UAModelDesignerSolution xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Name>ADI</Name>
+  <Name>Sercos</Name>
   <Projects>
-    <UAModelDesignerProject ProjectIdentifier="c980cb24-b8c6-466b-8369-9be4952ea685">
-      <Name>Opc.Ua.Adi.Model</Name>
+    <UAModelDesignerProject ProjectIdentifier="7d02e052-aed3-4406-a5fb-932265cc5292">
+      <Name>Opc.Ua.Sercos.Model</Name>
       <CSVFileName>$(ProjectFileName).csv</CSVFileName>
       <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
-      <FileName>Opc.Ua.Adi.Model.xml</FileName>
+      <FileName>Opc.Ua.Sercos.Model.xml</FileName>
     </UAModelDesignerProject>
-    <UAModelDesignerProject ProjectIdentifier="70cfd7c1-67a1-4e97-a409-e0254f55ab35">
+    <UAModelDesignerProject ProjectIdentifier="1dfbab65-7dc5-4d64-8d47-90755a758989">
       <Name>Opc.Ua.Di.Model</Name>
       <CSVFileName>$(ProjectFileName).csv</CSVFileName>
       <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>

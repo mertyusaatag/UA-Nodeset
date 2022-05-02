@@ -1,0 +1,11 @@
+"ModelCompilerUI";Verbose;716624168;;"Trace: Verbose, Error Focus:Diagnostic, ErrorID: P0-0003010000 Info: It is diagnostic information ModelDesign Compiler (mdc.exe) Version: 3.0.0.16457";;;;;;
+"ModelCompilerUI";Verbose;716624169;;"Trace: Verbose, Error Focus:Diagnostic, ErrorID: P0-0003010000 Info: It is diagnostic information Copyright(c) 2022 Mariusz Postol";;;;;;
+"ModelCompilerUI";Verbose;499457465;;"Trace: Verbose, Error Focus:Diagnostic, ErrorID: P0-0003010000 Info: It is diagnostic information Started Compile with parameters compile -c Opc.Ua.IRDI.Model.csv --d2 Opc.Ua.IRDI.Model.xml --o2 IRDI --spec v104";;;;;;
+"ModelCompilerUI";Information;552021345;;"Trace: Information, Error Focus:NonCategorized, ErrorID: P0-0002010000 Info: General processing error see trace for details. Compilation ended with error FormatException: '20/11/2020' dizesi geçerli bir AllXsd değeri değil. 
+   konum: System.Xml.Schema.XsdDateTime..ctor(String text, XsdDateTimeFlags kinds)
+   konum: System.Xml.XmlConvert.ToDateTime(String s, XmlDateTimeSerializationMode dateTimeOption)
+   konum: OOI.ModelCompiler.ModelCompilerValidator.Validate2(IList`1 designFilePaths, String identifierFilePath, Boolean generateIds) C:\VS.git\github.mpostol\UA-ModelCompiler\Opc.Ua.ModelCompiler\ModelDesignerValidator.cs içinde: satır 1172
+   konum: OOI.ModelCompiler.ModelGenerator2.ValidateAndUpdateIds(IList`1 designFilePaths, String identifierFilePath, UInt32 startId, String specificationVersion, Boolean useAllowSubtypes, IList`1 exclusions, String modelVersion, String modelPublicationDate, Boolean releaseCandidate) C:\VS.git\github.mpostol\UA-ModelCompiler\Opc.Ua.ModelCompiler\ModelGenerator2.cs içinde: satır 119
+   konum: OOI.ModelCompiler.ModelDesignCompiler.BuildModel(ICompilerOptions options) C:\VS.git\github.mpostol\UA-ModelCompiler\Opc.Ua.ModelCompiler\ModelCompiler.cs içinde: satır 25
+   konum: OOI.ModelCompilerUI.EntryPoint.Compile(CompilerOptions options) C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\EntryPoint.cs içinde: satır 98";;;;;;
+"ModelCompilerUI";Verbose;1560515041;;"Trace: Verbose, Error Focus:Diagnostic, ErrorID: P0-0003010000 Info: It is diagnostic information Execution time = 2s";;;;;;
