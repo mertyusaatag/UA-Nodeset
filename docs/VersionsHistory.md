@@ -31,16 +31,19 @@ The following tools has been used tp prototype with models
 - - Affected Models: AML,MachineVision,MTConnect,TMC
   
 
-- - Warning, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Id = D290E7B4-F77C-4EF0-883B-844F66471DB6; Reference HierarchicalReferences not supported. Removed the graph at http://opcfoundation.org/UA/:Organizes of nodes from the model"- 
-Affected Models: ADI,AML,AUTOID,CSPPlusForMachine,DI,MTConnect,POWERLINK
+- Warning, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Id = D290E7B4-F77C-4EF0-883B-844F66471DB6; Reference HierarchicalReferences not supported. Removed the graph at http://opcfoundation.org/UA/:Organizes of nodes from the model"- 
+- - Affected Models: ADI,AML,AUTOID,CSPPlusForMachine,DI,MTConnect,POWERLINK
 
-- - Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import" - Affected Models:CAS,CNC,CommercialKitchenEquipment,FDT,I4AAS,IA,IJT,IOLINK,ISA-95JOBCONTOL,Machinery,MachineTool,MachineVision,MTConnect,OpenSCS,PackML,PNEM,PROFINET,PUMPS,TMC,Weihenstephan
+- Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import" 
+- - Affected Models:CAS,CNC,CommercialKitchenEquipment,FDT,I4AAS,IA,IJT,IOLINK,ISA95JOBCONTOL,Machinery,MachineTool,MachineVision,MTConnect,OpenSCS,PackML,PNEM,PROFINET,PUMPS,TMC,Weihenstephan
 
-Warning;226242104;;"Finishing Validator.ValidateExportModel - the model contains 13 nodes and 1 errors reported. - Affected Models: MachineVision,MDIS,MTConnect,TMC
+- Warning;226242104;;"Finishing Validator.ValidateExportModel - the model contains 13 nodes and 1 errors reported.
+- - Affected Models: MachineVision,MDIS,MTConnect,TMC
 
 
 - Warning, Error Focus: Reference, Identifier: P3-0503030201 Description: Wrong Reference type targeting the Property component. Target node of the HasProperty reference cannot be 1:MajorVersion of a base type.
-Err code:43988162 - Affected Models:MDIS
+Err code:43988162 
+- - Affected Models:MDIS
 
 
 ## 2 - ASMD 4.5.3
@@ -60,10 +63,12 @@ Err code:43988162 - Affected Models:MDIS
    location: OOI.ModelCompiler.ModelCompilerValidator.Validate2(IList`1 designFilePaths, String identifierFilePath, Boolean generateIds) C:\VS.git\github.mpostol\UA-ModelCompiler\Opc.Ua.ModelCompiler\ModelDesignerValidator.cs : line 1172
    location: OOI.ModelCompiler.ModelGenerator2.ValidateAndUpdateIds(IList`1 designFilePaths, String identifierFilePath, UInt32 startId, String specificationVersion, Boolean useAllowSubtypes, IList`1 exclusions, String modelVersion, String modelPublicationDate, Boolean releaseCandidate) C:\VS.git\github.mpostol\UA-ModelCompiler\Opc.Ua.ModelCompiler\ModelGenerator2.cs içinde: satır 119
    location: OOI.ModelCompiler.ModelDesignCompiler.BuildModel(ICompilerOptions options) C:\VS.git\github.mpostol\UA-ModelCompiler\Opc.Ua.ModelCompiler\ModelCompiler.cs : line 25
-   location: OOI.ModelCompilerUI.EntryPoint.Compile(CompilerOptions options) C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\EntryPoint.cs içinde: line 98";;;;;; - Affected Models:ADI,AML,AUTOID,CAS,CNC,CommericialKitchenEquipment,CSPPlusForMachine,DEXPI,DI,FDI,FDT,I4AAS,IA,IJT,ISA-95,ISA95-JOBCONTROL,Machinery,MachineTool,MachineVision,MDIS,MTConnect,OpenSCS,PackML,PADIM,PNEM,Powerlink,Profinet,Pumps,Robotics,Safety
+   location: OOI.ModelCompilerUI.EntryPoint.Compile(CompilerOptions options) C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\EntryPoint.cs içinde: line 98";;;;;; 
+ - - Affected Models:ADI,AML,AUTOID,CAS,CNC,CommericialKitchenEquipment,CSPPlusForMachine,DEXPI,DI,FDI,FDT,I4AAS,IA,IJT,ISA-95,ISA95-JOBCONTROL,Machinery,MachineTool,MachineVision,MDIS,MTConnect,OpenSCS,PackML,PADIM,PNEM,Powerlink,Profinet,Pumps,Robotics,Safety
 
 
 - "ModelCompilerUI";Information;552021345;;"Trace: Information, Error Focus:NonCategorized, ErrorID: P0-0002010000 Info: General processing error see trace for details. Compilation ended with error ArgumentOutOfRangeException: The identifier file path is null or empty.
 Parameter name: IdentifierFile 
    location: OOI.ModelCompilerUI.CommandLineSyntax.CompilerOptions.ValidateOptionsConsistency() C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\CommandLineSyntax\CompilerOptions.cs : line 55
-   location: OOI.ModelCompilerUI.EntryPoint.Compile(CompilerOptions options) C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\EntryPoint.cs : line 98";;;;;; - Affected models : IOLINK, SERCOS ,Weihenstephan,TMC,Scales
+   location: OOI.ModelCompilerUI.EntryPoint.Compile(CompilerOptions options) C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\EntryPoint.cs : line 98";;;;;;
+   - - Affected models : IOLINK, SERCOS ,Weihenstephan,TMC,Scales
