@@ -27,13 +27,14 @@ The following tools has been used tp prototype with models
 
 ### Received errors for ASP.
 
-- Warning, Error Focus: NodeClass --Description: Unexpected value of the InverseName. If ReferenceType 1:HasAMLInternalLink is symmetric the InverseName :HasAMLInternalLink shall be omitted. - Affected Models: AML,MachineVision,MTConnect,TMC
+- Warning, Error Focus: NodeClass --Description: Unexpected value of the InverseName. If ReferenceType 1:HasAMLInternalLink is symmetric the InverseName :HasAMLInternalLink shall be omitted.
+- - Affected Models: AML,MachineVision,MTConnect,TMC
   
 
-- Warning, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Id = D290E7B4-F77C-4EF0-883B-844F66471DB6; Reference HierarchicalReferences not supported. Removed the graph at http://opcfoundation.org/UA/:Organizes of nodes from the model"- 
+- - Warning, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Id = D290E7B4-F77C-4EF0-883B-844F66471DB6; Reference HierarchicalReferences not supported. Removed the graph at http://opcfoundation.org/UA/:Organizes of nodes from the model"- 
 Affected Models: ADI,AML,AUTOID,CSPPlusForMachine,DI,MTConnect,POWERLINK
 
-- Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import" - Affected Models:CAS,CNC,CommercialKitchenEquipment,FDT,I4AAS,IA,IJT,IOLINK,ISA-95JOBCONTOL,Machinery,MachineTool,MachineVision,MTConnect,OpenSCS,PackML,PNEM,PROFINET,PUMPS,TMC,Weihenstephan
+- - Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import" - Affected Models:CAS,CNC,CommercialKitchenEquipment,FDT,I4AAS,IA,IJT,IOLINK,ISA-95JOBCONTOL,Machinery,MachineTool,MachineVision,MTConnect,OpenSCS,PackML,PNEM,PROFINET,PUMPS,TMC,Weihenstephan
 
 Warning;226242104;;"Finishing Validator.ValidateExportModel - the model contains 13 nodes and 1 errors reported. - Affected Models: MachineVision,MDIS,MTConnect,TMC
 
