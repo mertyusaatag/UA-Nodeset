@@ -72,3 +72,16 @@ Parameter name: IdentifierFile
    location: OOI.ModelCompilerUI.CommandLineSyntax.CompilerOptions.ValidateOptionsConsistency() C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\CommandLineSyntax\CompilerOptions.cs : line 55
    location: OOI.ModelCompilerUI.EntryPoint.Compile(CompilerOptions options) C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\EntryPoint.cs : line 98";;;;;;
    - - Affected models : IOLINK, SERCOS ,Weihenstephan,TMC,Scales
+
+## Addiontal Part
+
+### TEST OLD MODEL FOR ADI
+
+- I have executed the old model file found in the 'ADI' file with model compiler 3.0.0.
+
+#### Errors I received
+- "ModelCompilerUI";Information;552021345;;"Trace: Information, Error Focus:NonCategorized, ErrorID: P0-0002010000 Info: General processing error see trace for details. Compilation ended with error ArgumentOutOfRangeException: The required identifier file does not exist: OpcUaAdiModel.csv
+Parametre adı: IdentifierFile 
+   Location: OOI.ModelCompilerUI.CommandLineSyntax.CompilerOptions.ValidateOptionsConsistency() C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\CommandLineSyntax\CompilerOptions.cs içinde: line 59
+   Location: OOI.ModelCompilerUI.EntryPoint.Compile(CompilerOptions options) C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\EntryPoint.cs : line 98";;;;;;
+
