@@ -1,12 +1,25 @@
-# Versions History
+# Versions History <!-- omit in toc -->
+
+## Table of contents <!-- omit in toc -->
+
+- [2.1.0-Bravo](#210-bravo)
+  - [Preface](#preface)
+  - [Executive summary of the reported warnings](#executive-summary-of-the-reported-warnings)
+    - [OPC-UA-OOI.asp 6.5.0-Kilo](#opc-ua-ooiasp-650-kilo)
+    - [UA-ModelCompiler 3.0.0-Delta](#ua-modelcompiler-300-delta)
+      - [Errors reported by the tool](#errors-reported-by-the-tool)
+      - [Existing models test](#existing-models-test)
+    - [ASMD 4.5.3](#asmd-453)
 
 ## 2.1.0-Bravo
 
-Synchronized with `3f630745894e06d5a42329bc701e6ac36f365cb9`
+### Preface
 
-### Tools in Concern
+This version is an outcome of the Erasmus Internship First Report 02/05/2022 prepared with the contribution of [Mert Yuşa Atağ](https://github.com/mertyusaatag).
 
-The following tools has been used tp prototype with models
+This version is synchronized with the origin at `3f630745894e06d5a42329bc701e6ac36f365cb9`.
+
+The following tools have been applied to test and convert the domain-specific language of the model.
 
 | Tool                                                            | release                                                                     |
 | --------------------------------------------------------------- | --------------------------------------------------------------------------- |
@@ -14,74 +27,91 @@ The following tools has been used tp prototype with models
 | [OPC-UA-OOI.asp](https://github.com/mpostol/OPC-UA-OOI)         | [6.5.0-Kilo](https://github.com/mpostol/OPC-UA-OOI/tree/6.5.0-Kilo)         |
 | [ASMD](https://github.com/mpostol/ASMD/)                        | [4.5.3-Echo](https://github.com/mpostol/ASMD/tree/4.5.3--Echo)              |
 
-### Erasmus Intership First Report 02/05/2022 
+The scope of the work is described in the following table;
 
-#### Below is what has been done during this internship
+| Tool             | Work                                                                                                          |
+| ---------------- | ------------------------------------------------------------------------------------------------------------- |
+| UA-ModelCompiler | `GoNodeSet.cmd` scrip was prepared and executed for all models in the repository.                             |
+| OPC-UA-OOI.asp   | `DoRecoverModel.cmd` scrip was prepared and executed for all models in the repository.                        |
+| ASMD             | `UAModelDesignerSolution.uamdsl` - the solution configuration files are created for models in the repository. |
 
-## 1 - ASP.6.5.0
-- I prepared DoRecoverModel.cmd files.
+### Executive summary of the reported warnings 
 
-- These files were executed with asp 6.5.0 and the results were sent as pull requests.
+This section covers all reported warnings for existing and recovered  by `OPC-UA-OOI.asp 6.5.0-Kilo` models.
 
-- All files have been checked for the latest version. Prepared for every file except 'GDS' File. The GDS file was noticed while writing this report. It will be added after the next meeting.
+#### OPC-UA-OOI.asp 6.5.0-Kilo
 
-### Received errors for ASP.
+``` txt
 
-- Warning, Error Focus: NodeClass --Description: Unexpected value of the InverseName. If ReferenceType 1:HasAMLInternalLink is symmetric the InverseName :HasAMLInternalLink shall be omitted.
-- - Affected Models: AML,MachineVision,MTConnect,TMC
-  
+Warning, Error Focus: NodeClass --Description: Unexpected value of the InverseName. If ReferenceType 1:HasAMLInternalLink is symmetric the InverseName :HasAMLInternalLink shall be omitted.
 
-- Warning, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Id = D290E7B4-F77C-4EF0-883B-844F66471DB6; Reference HierarchicalReferences not supported. Removed the graph at http://opcfoundation.org/UA/:Organizes of nodes from the model"- 
-- - Affected Models: ADI,AML,AUTOID,CSPPlusForMachine,DI,MTConnect,POWERLINK
+```
 
-- Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import" 
-- - Affected Models:CAS,CNC,CommercialKitchenEquipment,FDT,I4AAS,IA,IJT,IOLINK,ISA95JOBCONTOL,Machinery,MachineTool,MachineVision,MTConnect,OpenSCS,PackML,PNEM,PROFINET,PUMPS,TMC,Weihenstephan
+**Affected Models**: AML,MachineVision,MTConnect,TMC
 
+``` txt
+
+Warning, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Id = D290E7B4-F77C-4EF0-883B-844F66471DB6; Reference HierarchicalReferences not supported. Removed the graph at http://opcfoundation.org/UA/:Organizes of nodes from the model"
+
+```
+
+**Affected Models**: `ADI`, `AML`, `AUTOID`, `CSPPlusForMachine`, `DI`, `MTConnect`, `POWERLINK`
+
+``` txt
+Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import" 
+```
+
+**Affected Models**: `CAS`, `CNC`, `CommercialKitchenEquipment`, `FDT`, `I4AAS`, `IA`, `IJT`, `IOLINK`, `ISA95JOBCONTOL`, `Machinery`, `MachineTool`, `MachineVision`, `MTConnect`, `OpenSCS`, `PackML`, `PNEM`, `PROFINET`, `PUMPS`, `TMC`, `Weihenstephan`
+
+``` txt
 - Warning;226242104;;"Finishing Validator.ValidateExportModel - the model contains 13 nodes and 1 errors reported.
-- - Affected Models: MachineVision,MDIS,MTConnect,TMC
+```
 
+**Affected Models**: `MachineVision`, `MDIS`, `MTConnect`, `TMC`
 
-- Warning, Error Focus: Reference, Identifier: P3-0503030201 Description: Wrong Reference type targeting the Property component. Target node of the HasProperty reference cannot be 1:MajorVersion of a base type.
-Err code:43988162 
-- - Affected Models:MDIS
+``` txt
+Warning, Error Focus: Reference, Identifier: P3-0503030201 Description: Wrong Reference type targeting the Property component. Target node of the HasProperty reference cannot be 1:MajorVersion of a base type.
+Err code:43988162
+```
 
+**Affected Models**: `MDIS`
 
-## 2 - ASMD 4.5.3
+#### UA-ModelCompiler 3.0.0-Delta
 
-### While adding solution recieved problems:
-- There is a only 1 error which is IOLink.
+##### Errors reported by the tool
 
-## 3 - Model Compiler 3.0.0-Delta
-
-- I wrote GoNodeSet.cmd file for each file. then I executed all of them with Model Compiler 3.0.0 (except IEC61850). Basically I got 2 main errors. I've included them below along with the affected models.
-
-### Errors for Model Compiler 3.0.0
-
-- "ModelCompilerUI";Information;552021345;;"Trace: Information, Error Focus:NonCategorized, ErrorID: P0-0002010000 Info: General processing error see trace for details. Compilation ended with error FormatException: '20/11/2020' not valid ALLXsd value. 
+``` txt
+"ModelCompilerUI";Information;552021345;;"Trace: Information, Error Focus:NonCategorized, ErrorID: P0-0002010000 Info: General processing error see trace for details. Compilation ended with error FormatException: '20/11/2020' not valid ALLXsd value. 
    location: System.Xml.Schema.XsdDateTime..ctor(String text, XsdDateTimeFlags kinds)
    location: System.Xml.XmlConvert.ToDateTime(String s, XmlDateTimeSerializationMode dateTimeOption)
    location: OOI.ModelCompiler.ModelCompilerValidator.Validate2(IList`1 designFilePaths, String identifierFilePath, Boolean generateIds) C:\VS.git\github.mpostol\UA-ModelCompiler\Opc.Ua.ModelCompiler\ModelDesignerValidator.cs : line 1172
    location: OOI.ModelCompiler.ModelGenerator2.ValidateAndUpdateIds(IList`1 designFilePaths, String identifierFilePath, UInt32 startId, String specificationVersion, Boolean useAllowSubtypes, IList`1 exclusions, String modelVersion, String modelPublicationDate, Boolean releaseCandidate) C:\VS.git\github.mpostol\UA-ModelCompiler\Opc.Ua.ModelCompiler\ModelGenerator2.cs içinde: satır 119
    location: OOI.ModelCompiler.ModelDesignCompiler.BuildModel(ICompilerOptions options) C:\VS.git\github.mpostol\UA-ModelCompiler\Opc.Ua.ModelCompiler\ModelCompiler.cs : line 25
    location: OOI.ModelCompilerUI.EntryPoint.Compile(CompilerOptions options) C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\EntryPoint.cs içinde: line 98";;;;;; 
- - - Affected Models:ADI,AML,AUTOID,CAS,CNC,CommericialKitchenEquipment,CSPPlusForMachine,DEXPI,DI,FDI,FDT,I4AAS,IA,IJT,ISA-95,ISA95-JOBCONTROL,Machinery,MachineTool,MachineVision,MDIS,MTConnect,OpenSCS,PackML,PADIM,PNEM,Powerlink,Profinet,Pumps,Robotics,Safety
+```
 
+**Affected Models**: `ADI`, `AML`, `AUTOID`, `CAS`, `CNC`, `CommericialKitchenEquipment`, `CSPPlusForMachine`, `DEXPI`, `DI`, `FDI`, `FDT`, `I4AAS`, `IA`, `IJT`, `ISA-95`, `ISA95-JOBCONTROL`, `Machinery`, `MachineTool`, `MachineVision`, `MDIS`, `MTConnect`, `OpenSCS`, `PackML`, `PADIM`,`PNEM`,`Powerlink`, `Profinet`, `Pumps`, `Robotics`, `Safety`
 
-- "ModelCompilerUI";Information;552021345;;"Trace: Information, Error Focus:NonCategorized, ErrorID: P0-0002010000 Info: General processing error see trace for details. Compilation ended with error ArgumentOutOfRangeException: The identifier file path is null or empty.
+``` txt
+"ModelCompilerUI";Information;552021345;;"Trace: Information, Error Focus:NonCategorized, ErrorID: P0-0002010000 Info: General processing error see trace for details. Compilation ended with error ArgumentOutOfRangeException: The identifier file path is null or empty.
 Parameter name: IdentifierFile 
    location: OOI.ModelCompilerUI.CommandLineSyntax.CompilerOptions.ValidateOptionsConsistency() C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\CommandLineSyntax\CompilerOptions.cs : line 55
    location: OOI.ModelCompilerUI.EntryPoint.Compile(CompilerOptions options) C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\EntryPoint.cs : line 98";;;;;;
-   - - Affected models : IOLINK, SERCOS ,Weihenstephan,TMC,Scales
+```
 
-## Addiontal Part
+**Affected models**: `IOLINK`, `SERCOS`, `Weihenstephan`, `TMC`, `Scales`
 
-### TEST OLD MODEL FOR ADI
+##### Existing models test
 
-- I have executed the old model file found in the 'ADI' file with model compiler 3.0.0.
-
-#### Errors I received
-- "ModelCompilerUI";Information;552021345;;"Trace: Information, Error Focus:NonCategorized, ErrorID: P0-0002010000 Info: General processing error see trace for details. Compilation ended with error ArgumentOutOfRangeException: The required identifier file does not exist: OpcUaAdiModel.csv
+``` txt
+"ModelCompilerUI";Information;552021345;;"Trace: Information, Error Focus:NonCategorized, ErrorID: P0-0002010000 Info: General processing error see trace for details. Compilation ended with error ArgumentOutOfRangeException: The required identifier file does not exist: OpcUaAdiModel.csv
 Parametre adı: IdentifierFile 
    Location: OOI.ModelCompilerUI.CommandLineSyntax.CompilerOptions.ValidateOptionsConsistency() C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\CommandLineSyntax\CompilerOptions.cs içinde: line 59
    Location: OOI.ModelCompilerUI.EntryPoint.Compile(CompilerOptions options) C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\EntryPoint.cs : line 98";;;;;;
+```
 
+**Affected Models**: `ADI`
+
+#### ASMD 4.5.3
+
+The tool throws an exception while adding project to the solution for model `IOLink`.
