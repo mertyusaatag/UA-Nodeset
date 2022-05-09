@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
-<ModelDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix3="http://opcfoundation.org/UA/GDS/" TargetNamespace="http://opcfoundation.org/UA/GDS/" TargetVersion="" TargetPublicationDate="2022-05-09T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<ModelDesign xmlns:Prefix3="http://opcfoundation.org/UA/GDS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:Prefix1="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/GDS/" TargetVersion="" TargetPublicationDate="2022-05-09T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
     <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/GDS/" XmlNamespace="http://opcfoundation.org/UA/GDS/" XmlPrefix="Prefix3" FilePath="" Version="1.04.4" PublicationDate="08/01/2020">http://opcfoundation.org/UA/GDS/</Namespace>
@@ -25,44 +24,44 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationUri</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplicationUri
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>Applications</Name>
-              <DataType>
-                <Identifier>ns=1;i=1</Identifier>
-              </DataType>
-              <ValueRank>1</ValueRank>
-              <ArrayDimensions>
-                <UInt32>0</UInt32>
-              </ArrayDimensions>
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              Applications
+              
+                ns=1;i=1
+              
+              1
+              
+                0
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -73,42 +72,42 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>Application</Name>
-              <DataType>
-                <Identifier>ns=1;i=1</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              Application
+              
+                ns=1;i=1
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplicationId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -119,21 +118,21 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>Application</Name>
-              <DataType>
-                <Identifier>ns=1;i=1</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              Application
+              
+                ns=1;i=1
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -144,21 +143,21 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplicationId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -169,42 +168,42 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplicationId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>Application</Name>
-              <DataType>
-                <Identifier>ns=1;i=1</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              Application
+              
+                ns=1;i=1
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -215,166 +214,166 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>StartingRecordId</Name>
-              <DataType>
-                <Identifier>i=7</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>MaxRecordsToReturn</Name>
-              <DataType>
-                <Identifier>i=7</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationName</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationUri</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationType</Name>
-              <DataType>
-                <Identifier>i=7</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ProductUri</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>Capabilities</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>1</ValueRank>
-              <ArrayDimensions>
-                <UInt32>0</UInt32>
-              </ArrayDimensions>
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              StartingRecordId
+              
+                i=7
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              MaxRecordsToReturn
+              
+                i=7
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ApplicationName
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ApplicationUri
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ApplicationType
+              
+                i=7
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ProductUri
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              Capabilities
+              
+                i=12
+              
+              1
+              
+                0
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>LastCounterResetTime</Name>
-              <DataType>
-                <Identifier>i=294</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>NextRecordId</Name>
-              <DataType>
-                <Identifier>i=7</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>Applications</Name>
-              <DataType>
-                <Identifier>i=308</Identifier>
-              </DataType>
-              <ValueRank>1</ValueRank>
-              <ArrayDimensions>
-                <UInt32>0</UInt32>
-              </ArrayDimensions>
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              LastCounterResetTime
+              
+                i=294
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              NextRecordId
+              
+                i=7
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              Applications
+              
+                i=308
+              
+              1
+              
+                0
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -385,136 +384,136 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>StartingRecordId</Name>
-              <DataType>
-                <Identifier>i=7</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>MaxRecordsToReturn</Name>
-              <DataType>
-                <Identifier>i=7</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationName</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationUri</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ProductUri</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ServerCapabilities</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>1</ValueRank>
-              <ArrayDimensions>
-                <UInt32>0</UInt32>
-              </ArrayDimensions>
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              StartingRecordId
+              
+                i=7
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              MaxRecordsToReturn
+              
+                i=7
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ApplicationName
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ApplicationUri
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ProductUri
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ServerCapabilities
+              
+                i=12
+              
+              1
+              
+                0
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>LastCounterResetTime</Name>
-              <DataType>
-                <Identifier>i=294</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>Servers</Name>
-              <DataType>
-                <Identifier>i=12189</Identifier>
-              </DataType>
-              <ValueRank>1</ValueRank>
-              <ArrayDimensions>
-                <UInt32>0</UInt32>
-              </ArrayDimensions>
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              LastCounterResetTime
+              
+                i=294
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              Servers
+              
+                i=12189
+              
+              1
+              
+                0
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -533,87 +532,87 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CertificateGroupId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CertificateTypeId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CertificateRequest</Name>
-              <DataType>
-                <Identifier>i=15</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplicationId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              CertificateGroupId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              CertificateTypeId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              CertificateRequest
+              
+                i=15
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>RequestId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              RequestId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -624,134 +623,134 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CertificateGroupId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CertificateTypeId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>SubjectName</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>DomainNames</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>1</ValueRank>
-              <ArrayDimensions>
-                <UInt32>0</UInt32>
-              </ArrayDimensions>
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>PrivateKeyFormat</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>PrivateKeyPassword</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplicationId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              CertificateGroupId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              CertificateTypeId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              SubjectName
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              DomainNames
+              
+                i=12
+              
+              1
+              
+                0
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              PrivateKeyFormat
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              PrivateKeyPassword
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>RequestId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              RequestId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -762,89 +761,89 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>RequestId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplicationId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              RequestId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>Certificate</Name>
-              <DataType>
-                <Identifier>i=15</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>PrivateKey</Name>
-              <DataType>
-                <Identifier>i=15</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>IssuerCertificates</Name>
-              <DataType>
-                <Identifier>i=15</Identifier>
-              </DataType>
-              <ValueRank>1</ValueRank>
-              <ArrayDimensions>
-                <UInt32>0</UInt32>
-              </ArrayDimensions>
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              Certificate
+              
+                i=15
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              PrivateKey
+              
+                i=15
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              IssuerCertificates
+              
+                i=15
+              
+              1
+              
+                0
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -855,36 +854,36 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>Certificate</Name>
-              <DataType>
-                <Identifier>i=15</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplicationId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              Certificate
+              
+                i=15
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -895,44 +894,44 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplicationId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CertificateGroupIds</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>1</ValueRank>
-              <ArrayDimensions>
-                <UInt32>0</UInt32>
-              </ArrayDimensions>
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              CertificateGroupIds
+              
+                i=17
+              
+              1
+              
+                0
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -943,57 +942,57 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CertificateGroupId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplicationId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              CertificateGroupId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>TrustListId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              TrustListId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1004,72 +1003,72 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CertificateGroupId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CertificateTypeId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplicationId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              CertificateGroupId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              CertificateTypeId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>UpdateRequired</Name>
-              <DataType>
-                <Identifier>i=1</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              UpdateRequired
+              
+                i=1
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1102,89 +1101,89 @@
               <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                 <DefaultValue>
                   <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationUri</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>PublicKey</Name>
-              <DataType>
-                <Identifier>i=15</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>SecurityPolicyUri</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>RequestedRoles</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>1</ValueRank>
-              <ArrayDimensions>
-                <UInt32>0</UInt32>
-              </ArrayDimensions>
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplicationUri
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              PublicKey
+              
+                i=15
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              SecurityPolicyUri
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              RequestedRoles
+              
+                i=17
+              
+              1
+              
+                0
+              
+            
+          
+        
       </ListOfExtensionObject>
                 </DefaultValue>
               </Property>
               <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
                 <DefaultValue>
                   <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>RequestId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              RequestId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
                 </DefaultValue>
               </Property>
@@ -1204,89 +1203,89 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationUri</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>PublicKey</Name>
-              <DataType>
-                <Identifier>i=15</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>SecurityPolicyUri</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>RequestedRoles</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>1</ValueRank>
-              <ArrayDimensions>
-                <UInt32>0</UInt32>
-              </ArrayDimensions>
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplicationUri
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              PublicKey
+              
+                i=15
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              SecurityPolicyUri
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              RequestedRoles
+              
+                i=17
+              
+              1
+              
+                0
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>RequestId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              RequestId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1297,119 +1296,119 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>RequestId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CancelRequest</Name>
-              <DataType>
-                <Identifier>i=1</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              RequestId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              CancelRequest
+              
+                i=1
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CredentialId</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CredentialSecret</Name>
-              <DataType>
-                <Identifier>i=15</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CertificateThumbprint</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>SecurityPolicyUri</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>GrantedRoles</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>1</ValueRank>
-              <ArrayDimensions>
-                <UInt32>0</UInt32>
-              </ArrayDimensions>
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              CredentialId
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              CredentialSecret
+              
+                i=15
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              CertificateThumbprint
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              SecurityPolicyUri
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              GrantedRoles
+              
+                i=17
+              
+              1
+              
+                0
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1420,21 +1419,21 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CredentialId</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              CredentialId
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1465,53 +1464,53 @@
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ServiceUri</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ServiceCertificate</Name>
-              <DataType>
-                <Identifier>i=15</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>UserTokenPolicies</Name>
-              <DataType>
-                <Identifier>i=304</Identifier>
-              </DataType>
-              <ValueRank>1</ValueRank>
-              <ArrayDimensions>
-                <UInt32>0</UInt32>
-              </ArrayDimensions>
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ServiceUri
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ServiceCertificate
+              
+                i=15
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              UserTokenPolicies
+              
+                i=304
+              
+              1
+              
+                0
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1522,57 +1521,57 @@
           <Property SymbolicName="Prefix1:InputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>IdentityToken</Name>
-              <DataType>
-                <Identifier>i=316</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ResourceId</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              IdentityToken
+              
+                i=316
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ResourceId
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" ModellingRule="Mandatory" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>AccessToken</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              AccessToken
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1593,44 +1592,44 @@
           <Property SymbolicName="Prefix1:InputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationUri</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplicationUri
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>Applications</Name>
-              <DataType>
-                <Identifier>ns=1;i=1</Identifier>
-              </DataType>
-              <ValueRank>1</ValueRank>
-              <ArrayDimensions>
-                <UInt32>0</UInt32>
-              </ArrayDimensions>
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              Applications
+              
+                ns=1;i=1
+              
+              1
+              
+                0
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1641,42 +1640,42 @@
           <Property SymbolicName="Prefix1:InputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>Application</Name>
-              <DataType>
-                <Identifier>ns=1;i=1</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              Application
+              
+                ns=1;i=1
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplicationId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1687,21 +1686,21 @@
           <Property SymbolicName="Prefix1:InputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>Application</Name>
-              <DataType>
-                <Identifier>ns=1;i=1</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              Application
+              
+                ns=1;i=1
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1712,21 +1711,21 @@
           <Property SymbolicName="Prefix1:InputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplicationId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1737,42 +1736,42 @@
           <Property SymbolicName="Prefix1:InputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplicationId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>Application</Name>
-              <DataType>
-                <Identifier>ns=1;i=1</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              Application
+              
+                ns=1;i=1
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1783,166 +1782,166 @@
           <Property SymbolicName="Prefix1:InputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>StartingRecordId</Name>
-              <DataType>
-                <Identifier>i=7</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>MaxRecordsToReturn</Name>
-              <DataType>
-                <Identifier>i=7</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationName</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationUri</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationType</Name>
-              <DataType>
-                <Identifier>i=7</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ProductUri</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>Capabilities</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>1</ValueRank>
-              <ArrayDimensions>
-                <UInt32>0</UInt32>
-              </ArrayDimensions>
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              StartingRecordId
+              
+                i=7
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              MaxRecordsToReturn
+              
+                i=7
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ApplicationName
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ApplicationUri
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ApplicationType
+              
+                i=7
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ProductUri
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              Capabilities
+              
+                i=12
+              
+              1
+              
+                0
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>LastCounterResetTime</Name>
-              <DataType>
-                <Identifier>i=294</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>NextRecordId</Name>
-              <DataType>
-                <Identifier>i=7</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>Applications</Name>
-              <DataType>
-                <Identifier>i=308</Identifier>
-              </DataType>
-              <ValueRank>1</ValueRank>
-              <ArrayDimensions>
-                <UInt32>0</UInt32>
-              </ArrayDimensions>
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              LastCounterResetTime
+              
+                i=294
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              NextRecordId
+              
+                i=7
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              Applications
+              
+                i=308
+              
+              1
+              
+                0
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -1953,136 +1952,136 @@
           <Property SymbolicName="Prefix1:InputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>StartingRecordId</Name>
-              <DataType>
-                <Identifier>i=7</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>MaxRecordsToReturn</Name>
-              <DataType>
-                <Identifier>i=7</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationName</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationUri</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ProductUri</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ServerCapabilities</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>1</ValueRank>
-              <ArrayDimensions>
-                <UInt32>0</UInt32>
-              </ArrayDimensions>
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              StartingRecordId
+              
+                i=7
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              MaxRecordsToReturn
+              
+                i=7
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ApplicationName
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ApplicationUri
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ProductUri
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              ServerCapabilities
+              
+                i=12
+              
+              1
+              
+                0
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>LastCounterResetTime</Name>
-              <DataType>
-                <Identifier>i=294</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>Servers</Name>
-              <DataType>
-                <Identifier>i=12189</Identifier>
-              </DataType>
-              <ValueRank>1</ValueRank>
-              <ArrayDimensions>
-                <UInt32>0</UInt32>
-              </ArrayDimensions>
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              LastCounterResetTime
+              
+                i=294
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              Servers
+              
+                i=12189
+              
+              1
+              
+                0
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -2100,87 +2099,87 @@
           <Property SymbolicName="Prefix1:InputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CertificateGroupId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CertificateTypeId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CertificateRequest</Name>
-              <DataType>
-                <Identifier>i=15</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplicationId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              CertificateGroupId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              CertificateTypeId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              CertificateRequest
+              
+                i=15
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>RequestId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              RequestId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -2191,134 +2190,134 @@
           <Property SymbolicName="Prefix1:InputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CertificateGroupId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CertificateTypeId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>SubjectName</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>DomainNames</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>1</ValueRank>
-              <ArrayDimensions>
-                <UInt32>0</UInt32>
-              </ArrayDimensions>
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>PrivateKeyFormat</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>PrivateKeyPassword</Name>
-              <DataType>
-                <Identifier>i=12</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplicationId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              CertificateGroupId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              CertificateTypeId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              SubjectName
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              DomainNames
+              
+                i=12
+              
+              1
+              
+                0
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              PrivateKeyFormat
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              PrivateKeyPassword
+              
+                i=12
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>RequestId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              RequestId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -2329,89 +2328,89 @@
           <Property SymbolicName="Prefix1:InputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>RequestId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplicationId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              RequestId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>Certificate</Name>
-              <DataType>
-                <Identifier>i=15</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>PrivateKey</Name>
-              <DataType>
-                <Identifier>i=15</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>IssuerCertificates</Name>
-              <DataType>
-                <Identifier>i=15</Identifier>
-              </DataType>
-              <ValueRank>1</ValueRank>
-              <ArrayDimensions>
-                <UInt32>0</UInt32>
-              </ArrayDimensions>
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              Certificate
+              
+                i=15
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              PrivateKey
+              
+                i=15
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              IssuerCertificates
+              
+                i=15
+              
+              1
+              
+                0
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -2422,44 +2421,44 @@
           <Property SymbolicName="Prefix1:InputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplicationId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CertificateGroupIds</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>1</ValueRank>
-              <ArrayDimensions>
-                <UInt32>0</UInt32>
-              </ArrayDimensions>
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              CertificateGroupIds
+              
+                i=17
+              
+              1
+              
+                0
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -2470,57 +2469,57 @@
           <Property SymbolicName="Prefix1:InputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CertificateGroupId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplicationId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              CertificateGroupId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>TrustListId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              TrustListId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
@@ -2531,72 +2530,72 @@
           <Property SymbolicName="Prefix1:InputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>ApplicationId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CertificateGroupId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>CertificateTypeId</Name>
-              <DataType>
-                <Identifier>i=17</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              ApplicationId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              CertificateGroupId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
+        
+          
+            i=297
+          
+          
+            
+              CertificateTypeId
+              
+                i=17
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
           <Property SymbolicName="Prefix1:OutputArguments" DataType="Prefix1:Argument" ValueRank="Array" ArrayDimensions="0">
             <DefaultValue>
               <ListOfExtensionObject xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-        <ExtensionObject>
-          <TypeId>
-            <Identifier>i=297</Identifier>
-          </TypeId>
-          <Body>
-            <Argument>
-              <Name>UpdateRequired</Name>
-              <DataType>
-                <Identifier>i=1</Identifier>
-              </DataType>
-              <ValueRank>-1</ValueRank>
-              <ArrayDimensions />
-            </Argument>
-          </Body>
-        </ExtensionObject>
+        
+          
+            i=297
+          
+          
+            
+              UpdateRequired
+              
+                i=1
+              
+              -1
+              
+            
+          
+        
       </ListOfExtensionObject>
             </DefaultValue>
           </Property>
