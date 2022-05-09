@@ -1,8 +1,11 @@
 "ModelCompilerUI";Verbose;716624168;;"Trace: Verbose, Error Focus:Diagnostic, ErrorID: P0-0003010000 Info: It is diagnostic information ModelDesign Compiler (mdc.exe) Version: 3.0.0.16457";;;;;;
 "ModelCompilerUI";Verbose;716624169;;"Trace: Verbose, Error Focus:Diagnostic, ErrorID: P0-0003010000 Info: It is diagnostic information Copyright(c) 2022 Mariusz Postol";;;;;;
-"ModelCompilerUI";Verbose;499457465;;"Trace: Verbose, Error Focus:Diagnostic, ErrorID: P0-0003010000 Info: It is diagnostic information Started Compile with parameters compile -c OpcUaAdiModel.csv --d2 ..\OpcUaAdiModel.xml --o2 ""ADI-OldModel "" --spec v104";;;;;;
-"ModelCompilerUI";Information;552021345;;"Trace: Information, Error Focus:NonCategorized, ErrorID: P0-0002010000 Info: General processing error see trace for details. Compilation ended with error ArgumentOutOfRangeException: The required identifier file does not exist: OpcUaAdiModel.csv
-Parametre adı: IdentifierFile 
-   konum: OOI.ModelCompilerUI.CommandLineSyntax.CompilerOptions.ValidateOptionsConsistency() C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\CommandLineSyntax\CompilerOptions.cs içinde: satır 59
-   konum: OOI.ModelCompilerUI.EntryPoint.Compile(CompilerOptions options) C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\EntryPoint.cs içinde: satır 98";;;;;;
-"ModelCompilerUI";Verbose;1560515041;;"Trace: Verbose, Error Focus:Diagnostic, ErrorID: P0-0003010000 Info: It is diagnostic information Execution time = 1s";;;;;;
+"ModelCompilerUI";Verbose;499457465;;"Trace: Verbose, Error Focus:Diagnostic, ErrorID: P0-0003010000 Info: It is diagnostic information Started Compile with parameters compile -c ..\OpcUaAdiModel.csv --d2 ..\OpcUaAdiModel.xml --o2 ""ADI-OldModel "" --spec v104";;;;;;
+"ModelCompilerUI";Information;552021345;;"Trace: Information, Error Focus:NonCategorized, ErrorID: P0-0002010000 Info: General processing error see trace for details. Compilation ended with error FileNotFoundException: Could not load resource 'OOI.ModelCompiler.Design.OpcUaDiModel.xml'. 
+   location: Opc.Ua.Schema.SchemaValidator.LoadResource(Type type, String path, Assembly assembly)
+   locatipn: OOI.ModelCompiler.ModelCompilerValidator.LoadIncludedDesignFile(ModelDesign parent, FileInfo targetFile, String designFileName, String version, String publicationDate) C:\VS.git\github.mpostol\UA-ModelCompiler\Opc.Ua.ModelCompiler\ModelDesignerValidator.cs : line 257
+   location: OOI.ModelCompiler.ModelCompilerValidator.Validate2(IList`1 designFilePaths, String identifierFilePath, Boolean generateIds) C:\VS.git\github.mpostol\UA-ModelCompiler\Opc.Ua.ModelCompiler\ModelDesignerValidator.cs : line 1154
+   location: OOI.ModelCompiler.ModelGenerator2.ValidateAndUpdateIds(IList`1 designFilePaths, String identifierFilePath, UInt32 startId, String specificationVersion, Boolean useAllowSubtypes, IList`1 exclusions, String modelVersion, String modelPublicationDate, Boolean releaseCandidate) C:\VS.git\github.mpostol\UA-ModelCompiler\Opc.Ua.ModelCompiler\ModelGenerator2.cs : line 119
+   location: OOI.ModelCompiler.ModelDesignCompiler.BuildModel(ICompilerOptions options) C:\VS.git\github.mpostol\UA-ModelCompiler\Opc.Ua.ModelCompiler\ModelCompiler.cs : line 25
+   location: OOI.ModelCompilerUI.EntryPoint.Compile(CompilerOptions options) C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\EntryPoint.cs : line 98";;;;;;
+"ModelCompilerUI";Verbose;1560515041;;"Trace: Verbose, Error Focus:Diagnostic, ErrorID: P0-0003010000 Info: It is diagnostic information Execution time = 4s";;;;;;
