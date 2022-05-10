@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="XMLstylesheet"?>
-<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:Prefix7="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix9="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Die/" xmlns:Prefix5="http://opcfoundation.org/UA/DI/" TargetNamespace="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" TargetVersion="" TargetPublicationDate="2022-04-12T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+<ModelDesign xmlns:Prefix1="http://opcfoundation.org/UA/" xmlns:Prefix7="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Prefix3="http://opcfoundation.org/UA/DI/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Prefix9="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Die/" xmlns:Prefix5="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" TargetNamespace="http://opcfoundation.org/UA/DI/" TargetVersion="" TargetPublicationDate="2022-05-10T00:00:00+03:00" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
   <Namespaces>
     <Namespace Name="Name0" Prefix="Prefix0" InternalPrefix="http://opcfoundation.org/UA/" XmlNamespace="http://opcfoundation.org/UA/" XmlPrefix="Prefix1" FilePath="" Version="1.04.8" PublicationDate="20/11/2020">http://opcfoundation.org/UA/</Namespace>
-    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" XmlPrefix="Prefix3" FilePath="" Version="1.03" PublicationDate="10/05/2021">http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/</Namespace>
-    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix5" FilePath="" Version="1.02.2" PublicationDate="02/06/2020">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name2" Prefix="Prefix2" InternalPrefix="http://opcfoundation.org/UA/DI/" XmlNamespace="http://opcfoundation.org/UA/DI/" XmlPrefix="Prefix3" FilePath="" Version="1.03.0" PublicationDate="09/03/2021">http://opcfoundation.org/UA/DI/</Namespace>
+    <Namespace Name="Name4" Prefix="Prefix4" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/" XmlPrefix="Prefix5" FilePath="" Version="1.03" PublicationDate="10/05/2021">http://opcfoundation.org/UA/PlasticsRubber/GeneralTypes/</Namespace>
     <Namespace Name="Name6" Prefix="Prefix6" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/" XmlPrefix="Prefix7" FilePath="" Version="1.01" PublicationDate="01/04/2021">http://opcfoundation.org/UA/PlasticsRubber/Extrusion/GeneralTypes/</Namespace>
     <Namespace Name="Name8" Prefix="Prefix8" InternalPrefix="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Die/" XmlNamespace="http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Die/" XmlPrefix="Prefix9" FilePath="" Version="1.00" PublicationDate="01/06/2020">http://opcfoundation.org/UA/PlasticsRubber/Extrusion/Die/</Namespace>
   </Namespaces>
   <ObjectType SymbolicName="Prefix9:Die_InterfaceType" BaseType="Prefix7:ExtrusionDeviceType">
     <Children>
-      <Object SymbolicName="Prefix9:DimensionAdjustment" TypeDefinition="Prefix3:MeasuringDevicesType" ModellingRule="Optional">
+      <Object SymbolicName="Prefix9:DimensionAdjustment" TypeDefinition="Prefix5:MeasuringDevicesType" ModellingRule="Optional">
         <References>
           <Reference>
             <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
@@ -18,7 +18,7 @@
           </Reference>
         </References>
       </Object>
-      <Object SymbolicName="Prefix9:MeltPressures" TypeDefinition="Prefix3:MeasuringDevicesType" ModellingRule="Optional">
+      <Object SymbolicName="Prefix9:MeltPressures" TypeDefinition="Prefix5:MeasuringDevicesType" ModellingRule="Optional">
         <References>
           <Reference>
             <ReferenceType>Prefix1:GeneratesEvent</ReferenceType>
