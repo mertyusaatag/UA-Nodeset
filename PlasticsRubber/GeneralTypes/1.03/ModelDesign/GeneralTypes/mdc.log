@@ -1,0 +1,8 @@
+"ModelCompilerUI";Verbose;716624168;;"Trace: Verbose, Error Focus:Diagnostic, ErrorID: P0-0003010000 Info: It is diagnostic information ModelDesign Compiler (mdc.exe) Version: 3.0.0.16457";;;;;;
+"ModelCompilerUI";Verbose;716624169;;"Trace: Verbose, Error Focus:Diagnostic, ErrorID: P0-0003010000 Info: It is diagnostic information Copyright(c) 2022 Mariusz Postol";;;;;;
+"ModelCompilerUI";Verbose;499457465;;"Trace: Verbose, Error Focus:Diagnostic, ErrorID: P0-0003010000 Info: It is diagnostic information Started Compile with parameters compile --d2 Opc.Ua.PlasticsRubber.GeneralTypes.Model.xml --cg --o2 GeneralTypes --spec v104";;;;;;
+"ModelCompilerUI";Information;552021345;;"Trace: Information, Error Focus:NonCategorized, ErrorID: P0-0002010000 Info: General processing error see trace for details. Compilation ended with error ArgumentOutOfRangeException: The identifier file path is null or empty.
+Parametre adı: IdentifierFile 
+   konum: OOI.ModelCompilerUI.CommandLineSyntax.CompilerOptions.ValidateOptionsConsistency() C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\CommandLineSyntax\CompilerOptions.cs içinde: satır 55
+   konum: OOI.ModelCompilerUI.EntryPoint.Compile(CompilerOptions options) C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\EntryPoint.cs içinde: satır 98";;;;;;
+"ModelCompilerUI";Verbose;1560515041;;"Trace: Verbose, Error Focus:Diagnostic, ErrorID: P0-0003010000 Info: It is diagnostic information Execution time = 1s";;;;;;
