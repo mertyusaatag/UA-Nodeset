@@ -8,6 +8,7 @@
     - [OPC-UA-OOI.asp 6.5.0-Kilo](#opc-ua-ooiasp-650-kilo)
     - [UA-ModelCompiler 3.0.0-Delta](#ua-modelcompiler-300-delta)
       - [Errors reported by the tool](#errors-reported-by-the-tool)
+      - [Model not tested](#model-not-tested)
       - [Existing models test](#existing-models-test)
     - [ASMD 4.5.3](#asmd-453)
 
@@ -35,7 +36,7 @@ The scope of the work is described in the following table;
 | OPC-UA-OOI.asp   | `DoRecoverModel.cmd` scrip was prepared and executed for all models in the repository.                        |
 | ASMD             | `UAModelDesignerSolution.uamdsl` - the solution configuration files are created for models in the repository. |
 
-### Executive summary of the reported warnings 
+### Executive summary of the reported warnings
 
 This section covers all reported warnings for existing and recovered  by `OPC-UA-OOI.asp 6.5.0-Kilo` models.
 
@@ -56,18 +57,21 @@ Warning, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is d
 ```
 
 **Affected Models**: `ADI`, `AML`, `AUTOID`, `CSPPlusForMachine`, `DI`, `MTConnect`, `POWERLINK`
+**Recommendations**: Must be confirmed (by MP) and reported as the model error in the `mpostol/UA-Nodeset` repository.
 
 ``` txt
 Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import" 
 ```
 
 **Affected Models**: `CAS`, `CNC`, `CommercialKitchenEquipment`, `FDT`, `I4AAS`, `IA`, `IJT`, `IOLINK`, `ISA95JOBCONTOL`, `Machinery`, `MachineTool`, `MachineVision`, `MTConnect`, `OpenSCS`, `PackML`, `PNEM`, `PROFINET`, `PUMPS`, `TMC`, `Weihenstephan`
+**Recommendations**: Add the name to the warning. Improvement of the asp.
 
 ``` txt
 - Warning;226242104;;"Finishing Validator.ValidateExportModel - the model contains 13 nodes and 1 errors reported.
 ```
 
 **Affected Models**: `MachineVision`, `MDIS`, `MTConnect`, `TMC`
+**Recommendations**: not relevant - wontfix
 
 ``` txt
 Warning, Error Focus: Reference, Identifier: P3-0503030201 Description: Wrong Reference type targeting the Property component. Target node of the HasProperty reference cannot be 1:MajorVersion of a base type.
@@ -75,6 +79,7 @@ Err code:43988162
 ```
 
 **Affected Models**: `MDIS`
+**Recommendations**: Must be confirmed (by MP) and reported as the model error in the `mpostol/UA-Nodeset` repository.
 
 #### UA-ModelCompiler 3.0.0-Delta
 
@@ -92,6 +97,8 @@ Err code:43988162
 
 **Affected Models**: `ADI`, `AML`, `AUTOID`, `CAS`, `CNC`, `CommericialKitchenEquipment`, `CSPPlusForMachine`, `DEXPI`, `DI`, `FDI`, `FDT`, `I4AAS`, `IA`, `IJT`, `ISA-95`, `ISA95-JOBCONTROL`, `Machinery`, `MachineTool`, `MachineVision`, `MDIS`, `MTConnect`, `OpenSCS`, `PackML`, `PADIM`,`PNEM`,`Powerlink`, `Profinet`, `Pumps`, `Robotics`, `Safety`
 
+**Recommendations**: Must be confirmed (by MP) and reported as the model error in the `mpostol/UA-Nodeset` repository.
+
 ``` txt
 "ModelCompilerUI";Information;552021345;;"Trace: Information, Error Focus:NonCategorized, ErrorID: P0-0002010000 Info: General processing error see trace for details. Compilation ended with error ArgumentOutOfRangeException: The identifier file path is null or empty.
 Parameter name: IdentifierFile 
@@ -99,7 +106,11 @@ Parameter name: IdentifierFile
    location: OOI.ModelCompilerUI.EntryPoint.Compile(CompilerOptions options) C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\EntryPoint.cs : line 98";;;;;;
 ```
 
-**Affected models**: `IOLINK`, `SERCOS`, `Weihenstephan`, `TMC`, `Scales`
+**Affected models**: `IOLINK`, `SERCOS`, `Weihenstephan`, `TMC`, `Scales`, `Opc.Ua.PlasticsRubber.LDS.NodeSet2.xml`
+
+##### Model not tested 
+
+`PlasticsRubber\GeneralTypes\1.02` because there is a newer one.
 
 ##### Existing models test
 
@@ -111,6 +122,7 @@ Parametre adı: IdentifierFile
 ```
 
 **Affected Models**: `ADI`
+**Recommendations**: Must be confirmed (by MP) and reported accordingly. Consider script bug.
 
 #### ASMD 4.5.3
 
