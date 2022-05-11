@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="UAModelDesignerSolution.xslt"?>
+<UAModelDesignerSolution xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Solution10</Name>
+  <Projects>
+    <UAModelDesignerProject ProjectIdentifier="506866e0-e925-4d88-8176-0ed3eb6cf45a">
+      <Name>Opc.Ua.PlasticsRubber.GeneralTypes.Model</Name>
+      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
+      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
+      <FileName>Opc.Ua.PlasticsRubber.GeneralTypes.Model.xml</FileName>
+    </UAModelDesignerProject>
+    <UAModelDesignerProject ProjectIdentifier="9bbb5781-9c60-4d35-97c0-f256568d9068">
+      <Name>Opc.Ua.Di.Model</Name>
+      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
+      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
+      <FileName>..\..\..\..\DI\ModelDesign\Opc.Ua.Di.Model.xml</FileName>
+    </UAModelDesignerProject>
+  </Projects>
+  <ServerDetails codebase="" configuration="" />
+</UAModelDesignerSolution>

@@ -1,0 +1,4 @@
+"ModelCompilerUI";Information;552021345;;"Trace: Information, Error Focus:NonCategorized, ErrorID: P0-0002010000 Info: General processing error see trace for details. Compilation ended with error ArgumentOutOfRangeException: The design file does not exist: Opc.Ua.PlasticsRubber.IMM2MES.NodeSet2.xml
+Parametre adı: DesignFiles 
+   konum: OOI.ModelCompilerUI.CommandLineSyntax.CompilerOptions.ValidateOptionsConsistency() C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\CommandLineSyntax\CompilerOptions.cs içinde: satır 50
+   konum: OOI.ModelCompilerUI.EntryPoint.Compile(CompilerOptions options) C:\VS.git\github.mpostol\UA-ModelCompiler\ModelCompilerUI\EntryPoint.cs içinde: satır 98";;;;;;

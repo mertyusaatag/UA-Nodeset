@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="UAModelDesignerSolution.xslt"?>
+<UAModelDesignerSolution xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Solution13</Name>
+  <Projects>
+    <UAModelDesignerProject ProjectIdentifier="b0c1bc2d-e2a7-4d7b-82c2-46a499d5e1b2">
+      <Name>Opc.Ua.PlasticsRubber.Extrusion.Corrugator.Model</Name>
+      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
+      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
+      <FileName>Opc.Ua.PlasticsRubber.Extrusion.Corrugator.Model.xml</FileName>
+    </UAModelDesignerProject>
+    <UAModelDesignerProject ProjectIdentifier="3f978ac0-81fc-414e-b72b-6a067c1a1199">
+      <Name>Opc.Ua.PlasticsRubber.Extrusion.HaulOff.Model</Name>
+      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
+      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
+      <FileName>..\..\..\HaulOff\1.00\ModelDesign\Opc.Ua.PlasticsRubber.Extrusion.HaulOff.Model.xml</FileName>
+    </UAModelDesignerProject>
+    <UAModelDesignerProject ProjectIdentifier="e02f666d-b41d-4cf4-9cbc-afa686e215c5">
+      <Name>Opc.Ua.PlasticsRubber.Extrusion.GeneralTypes.Model</Name>
+      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
+      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
+      <FileName>..\..\..\GeneralTypes\1.01\ModelDesign\Opc.Ua.PlasticsRubber.Extrusion.GeneralTypes.Model.xml</FileName>
+    </UAModelDesignerProject>
+    <UAModelDesignerProject ProjectIdentifier="3e8d75de-cfa5-4446-b2fa-ee52ff0dbd67">
+      <Name>Opc.Ua.PlasticsRubber.GeneralTypes.Model</Name>
+      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
+      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
+      <FileName>..\..\..\..\GeneralTypes\1.03\ModelDesign\Opc.Ua.PlasticsRubber.GeneralTypes.Model.xml</FileName>
+    </UAModelDesignerProject>
+    <UAModelDesignerProject ProjectIdentifier="2be37e53-8dd3-4cfc-be7a-5712d5d66e64">
+      <Name>Opc.Ua.Di.Model</Name>
+      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
+      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
+      <FileName>..\..\..\..\..\DI\ModelDesign\Opc.Ua.Di.Model.xml</FileName>
+    </UAModelDesignerProject>
+  </Projects>
+  <ServerDetails codebase="" configuration="" />
+</UAModelDesignerSolution>

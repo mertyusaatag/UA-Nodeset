@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="UAModelDesignerSolution.xslt"?>
+<UAModelDesignerSolution xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Solution19</Name>
+  <Projects>
+    <UAModelDesignerProject ProjectIdentifier="a50df458-d829-4644-9354-e387393ad692">
+      <Name>Opc.Ua.PlasticsRubber.Extrusion.ExtrusionLine.Model</Name>
+      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
+      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
+      <FileName>Opc.Ua.PlasticsRubber.Extrusion.ExtrusionLine.Model.xml</FileName>
+    </UAModelDesignerProject>
+    <UAModelDesignerProject ProjectIdentifier="cfc2d95e-13d7-431b-9079-d6d9ecd44158">
+      <Name>Opc.Ua.PlasticsRubber.GeneralTypes.Model</Name>
+      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
+      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
+      <FileName>..\..\..\..\GeneralTypes\1.03\ModelDesign\Opc.Ua.PlasticsRubber.GeneralTypes.Model.xml</FileName>
+    </UAModelDesignerProject>
+    <UAModelDesignerProject ProjectIdentifier="5635e1b2-4399-4d1a-bf4c-6c9dc80105ea">
+      <Name>Opc.Ua.Di.Model</Name>
+      <CSVFileName>$(ProjectFileName).csv</CSVFileName>
+      <BuildOutputDirectoryName>$(ProjectFileName)</BuildOutputDirectoryName>
+      <FileName>..\..\..\..\..\DI\ModelDesign\Opc.Ua.Di.Model.xml</FileName>
+    </UAModelDesignerProject>
+  </Projects>
+  <ServerDetails codebase="" configuration="" />
+</UAModelDesignerSolution>
