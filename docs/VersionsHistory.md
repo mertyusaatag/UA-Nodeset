@@ -83,6 +83,12 @@ Err code:43988162
 **Affected Models**: `MDIS`
 **Recommendations**: Must be confirmed (by MP) and reported as the model error in the `mpostol/UA-Nodeset` repository.
 
+``` txt
+"UAModelDesignExport";Warning;39445735;;"Trace: Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. The AccessLevel value 5 is not supported";;;;"2022-04-12T20:13:56.4494123Z";;
+```
+
+**Affected models**: `PlasticsRubber\Extrusion\HaulOff`, `PlasticsRubber\GeneralTypes\1.03`, `PlasticsRubber\Extrusion\Filter`, `PlasticsRubber\TCD`, `PlasticsRubber\Extrusion\Extruder`, `PlasticsRubber\Extrusion\GeneralTypes\1.01`
+
 #### UA-ModelCompiler 3.0.0-Delta
 
 ##### Errors reported by the tool
@@ -109,12 +115,6 @@ Parameter name: IdentifierFile
 ```
 
 **Affected models**: `IOLINK`, `SERCOS`, `Weihenstephan`, `TMC`, `Scales`, `Opc.Ua.PlasticsRubber.LDS.NodeSet2.xml`
-
-``` txt
-"UAModelDesignExport";Warning;39445735;;"Trace: Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. The AccessLevel value 5 is not supported";;;;"2022-04-12T20:13:56.4494123Z";;
-```
-
-**Affected models**: `PlasticsRubber\Extrusion\HaulOff`, `PlasticsRubber\GeneralTypes\1.03`, `PlasticsRubber\Extrusion\Filter`, `PlasticsRubber\TCD`, `PlasticsRubber\Extrusion\Extruder`, `PlasticsRubber\Extrusion\GeneralTypes\1.01`
 
 
 ##### Model not tested 
