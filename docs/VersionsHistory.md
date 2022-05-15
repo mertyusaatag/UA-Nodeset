@@ -63,14 +63,15 @@ Warning, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is d
 Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import" 
 ```
 
-**Affected Models**: `CAS`, `CNC`, `CommercialKitchenEquipment`, `FDT`, `I4AAS`, `IA`, `IJT`, `IOLINK`, `ISA95JOBCONTOL`, `Machinery`, `MachineTool`, `MachineVision`, `MTConnect`, `OpenSCS`, `PackML`, `PNEM`, `PROFINET`, `PUMPS`, `TMC`, `Weihenstephan`
+**Affected Models**: `CAS`, `CNC`, `CommercialKitchenEquipment`, `FDT`, `I4AAS`, `IA`, `IJT`, `IOLINK`, `ISA95JOBCONTOL`, `Machinery`, `MachineTool`, `MachineVision`, `MTConnect`, `OpenSCS`, `PackML`, `PNEM`, `PROFINET`, `PUMPS`, `TMC`, `Weihenstephan`, `PlasticRubber/Extrusion/Calendar`,`PlasticRubber/Extrusion/GeneralTypes`,`PlasticRubber/HotRunner`,`PlasticRubber/IMM2MES`,`PlasticRubber/LDS`,`PlasticRubber/TCD`,
+`PlasticRubber/Extrusion/Calibator`,`PlasticRubber/Extrusion/Corrugator`,`PlasticRubber/Extrusion/Cutter`,`PlasticRubber/Extrusion/Die`,`PlasticRubber/Extrusion/MeltPump`,`PlasticRubber/Extrusion/Pelletizer`,`PlasticRubber/Extrusion/Hauloff`,`PlasticRubber/Extrusion/Filter`,`PlasticRubber/Extrusion/ExtrusionLine`
 **Recommendations**: Add the name to the warning. Improvement of the asp.
 
 ``` txt
 - Warning;226242104;;"Finishing Validator.ValidateExportModel - the model contains 13 nodes and 1 errors reported.
 ```
 
-**Affected Models**: `MachineVision`, `MDIS`, `MTConnect`, `TMC`
+**Affected Models**: `MachineVision`, `MDIS`, `MTConnect`, `TMC`,`PlasticRubber/Extrusion/GeneralTypes`
 **Recommendations**: not relevant - wontfix
 
 ``` txt
@@ -107,6 +108,9 @@ Parameter name: IdentifierFile
 ```
 
 **Affected models**: `IOLINK`, `SERCOS`, `Weihenstephan`, `TMC`, `Scales`, `Opc.Ua.PlasticsRubber.LDS.NodeSet2.xml`
+
+
+
 
 ##### Model not tested 
 
