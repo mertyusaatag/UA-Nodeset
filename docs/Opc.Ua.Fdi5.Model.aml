@@ -1,0 +1,1034 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="id1">
+  <developerGlossaryDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+    <glossary>
+      <title>Model documentation</title>
+      <glossaryDiv>
+        <title>Documentation</title>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">UIPlugInType (VariableType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>MinCardinality</para>
+                  </entry>
+                  <entry>
+                    <para>MaxCardinality</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>UIPVariantVersion</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>FDITechnologyVersion</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>RuntimeId</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>CpuInformation</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>PlatformId</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>Style</para>
+                </entry>
+                <entry>
+                  <para>StyleType</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>StartElementName</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Object</para>
+                </entry>
+                <entry>
+                  <para>Documentation</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>FolderType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">ActionServiceType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>InvokeAction</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>RespondAction</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>AbortAction</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Object</para>
+                </entry>
+                <entry>
+                  <para>ActionIdentifier_PH</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>ActionType</para>
+                </entry>
+                <entry>
+                  <para>OptionalPlaceholder</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">WindowModeType (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>ModalWindow</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>NonModalWindow</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>UIP</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">StyleType (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Window</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Dialog</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">RegistrationParameters (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Path</para>
+                </entry>
+                <entry>
+                  <para>RelativePath</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>SelectionFlags</para>
+                </entry>
+                <entry>
+                  <para>UInt32</para>
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">RegisteredNode (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>NodeStatus</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>OnlineContextNodeId</para>
+                </entry>
+                <entry>
+                  <para>NodeId</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>OnlineDeviceNodeId</para>
+                </entry>
+                <entry>
+                  <para>NodeId</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>OfflineContextNodeId</para>
+                </entry>
+                <entry>
+                  <para>NodeId</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>OfflineDeviceNodeId</para>
+                </entry>
+                <entry>
+                  <para>NodeId</para>
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">RegisterNodesResult (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Status</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>RegisteredNodes</para>
+                </entry>
+                <entry>
+                  <para>RegisteredNode</para>
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">TransferIncident (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>ContextNodeId</para>
+                </entry>
+                <entry>
+                  <para>NodeId</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>StatusCode</para>
+                </entry>
+                <entry>
+                  <para>StatusCode</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Diagnostics</para>
+                </entry>
+                <entry>
+                  <para>DiagnosticInfo</para>
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">ApplyResult (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Status</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>TransferIncidents</para>
+                </entry>
+                <entry>
+                  <para>TransferIncident</para>
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">EditContextType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>GetEditContext</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>RegisterNodesById</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>RegisterNodesByRelativePath</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>Apply</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>Reset</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>Discard</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">DirectDeviceAccessType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>InitDirectAccess</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>Transfer</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>EndDirectAccess</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+      </glossaryDiv>
+    </glossary>
+  </developerGlossaryDocument>
+</topic>
