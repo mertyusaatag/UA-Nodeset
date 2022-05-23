@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="id1">
+  <developerGlossaryDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+    <glossary>
+      <title>Model documentation</title>
+      <glossaryDiv>
+        <title>Documentation</title>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">CsppMachineType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: True</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Object</para>
+                </entry>
+                <entry>
+                  <para>ParameterSet</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>BaseObjectType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Object</para>
+                </entry>
+                <entry>
+                  <para>CommIfSection</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>FunctionalGroupType</para>
+                </entry>
+                <entry>
+                  <para>MandatoryPlaceholder</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">CsppAnalogItemType (VariableType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>MinCardinality</para>
+                  </entry>
+                  <entry>
+                    <para>MaxCardinality</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>Duration</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+      </glossaryDiv>
+    </glossary>
+  </developerGlossaryDocument>
+</topic>
