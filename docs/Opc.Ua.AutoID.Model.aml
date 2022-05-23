@@ -1,0 +1,4212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="id1">
+  <developerGlossaryDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+    <glossary>
+      <title>Model documentation</title>
+      <glossaryDiv>
+        <title>Documentation</title>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">AutoIdOperationStatusEnumeration (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>SUCCESS</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Successful operation</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>MISC_ERROR_TOTAL</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The operation has not be executed in total.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>MISC_ERROR_PARTIAL</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The operation has been executed only partial.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>PERMISSON_ERROR</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Password required</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>PASSWORD_ERROR</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Password is wrong.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>REGION_NOT_FOUND_ERROR</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Memory region not available for the actual tag.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>OP_NOT_POSSIBLE_ERROR</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Operation not supported by the actual tag.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>OUT_OF_RANGE_ERROR</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Addressed memory not available for the actual tag.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>NO_IDENTIFIER</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The operation cannot be executed because no tag or code was inside the range of the AutoID Device or the tag or code has been moved out of the range during execution.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>MULTIPLE_IDENTIFIERS</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Multiple tags or codes have been selected, but the command can only be used with a single tag or code.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>READ_ERROR</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The tag or code exists and has a valid format, but there was a problem reading the data (e.g. still CRC error after maximum number of retries).</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>DECODING_ERROR</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The (optical) code or plain text has too many failures and cannot be detected.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>MATCH_ERROR</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The code doesn’t match the given target value.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>CODE_NOT_SUPPORTED</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The code format is not supported by the AutoID Device.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>WRITE_ERROR</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The tag exists, but there was a problem writing the data.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>NOT_SUPPORTED_BY_DEVICE</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The command or a parameter combination is not supported by the AutoID Device.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>NOT_SUPPORTED_BY_TAG</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The command or a parameter combination is not supported by the tag.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>DEVICE_NOT_READY</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The AutoID Device is in a state not ready to execute the command.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>INVALID_CONFIGURATION</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The AutoID Device configuration is not valid.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>RF_COMMUNICATION_ERROR</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>This error indicates that there is a general error in the communication between the transponder and the reader.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>DEVICE_FAULT</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The AutoID Device has a hardware fault.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>TAG_HAS_LOW_BATTERY</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The battery of the (active) tag is low.</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">DeviceStatusEnumeration (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Idle</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Error</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Scanning</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Busy</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">LocationTypeEnumeration (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>NMEA</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>LOCAL</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>WGS84</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>NAME</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">RfidLockOperationEnumeration (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Lock</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Unlock</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>PermanentLock</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>PermanentUnlock</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">RfidLockRegionEnumeration (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Kill</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Access</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>EPC</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>TID</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>User</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">RfidPasswordTypeEnumeration (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Access</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Kill</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Read</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Write</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">AccessResult (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>CodeType</para>
+                </entry>
+                <entry>
+                  <para>CodeTypeDataType</para>
+                </entry>
+                <entry>
+                  <para>Defines the format of Identifier as string.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Identifier</para>
+                </entry>
+                <entry>
+                  <para>ScanData</para>
+                </entry>
+                <entry>
+                  <para>The AutoID Identifier (e.g. a code or a transponder) which was accessed by a command.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Timestamp</para>
+                </entry>
+                <entry>
+                  <para>UtcTime</para>
+                </entry>
+                <entry>
+                  <para>The point of time the AutoID Identifier was accessed by the command.</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">RfidAccessResult (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>CodeTypeRWData</para>
+                </entry>
+                <entry>
+                  <para>CodeTypeDataType</para>
+                </entry>
+                <entry>
+                  <para>Defines the format of RWData as string.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>RWData</para>
+                </entry>
+                <entry>
+                  <para>ScanData</para>
+                </entry>
+                <entry>
+                  <para>The user data which was written to / was read from the Rfid Transponder by the command.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Antenna</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry>
+                  <para>The antenna by which the transponder was accessed by the command.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>CurrentPowerLevel</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry>
+                  <para>The power level with which the transponder was accessed by the command.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>PC</para>
+                </entry>
+                <entry>
+                  <para>UInt16</para>
+                </entry>
+                <entry>
+                  <para>The Protocol Control Word of the transponder accessed by the command.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Polarization</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>The polarization with which the last transponder was accessed by the command.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Strength</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry>
+                  <para>The Rssi value with which the transponder was accessed by the command.</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">AntennaNameIdPair (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>AntennaId</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>AntennaName</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">DhcpGeoConfCoordinate (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>LaRes</para>
+                </entry>
+                <entry>
+                  <para>Byte</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>LatitudeInteger</para>
+                </entry>
+                <entry>
+                  <para>Int16</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>LatitudeFraction</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>LoRes</para>
+                </entry>
+                <entry>
+                  <para>Byte</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>LongitudeInteger</para>
+                </entry>
+                <entry>
+                  <para>Int16</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>LongitudeFraction</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>AT</para>
+                </entry>
+                <entry>
+                  <para>Byte</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>AltRes</para>
+                </entry>
+                <entry>
+                  <para>Byte</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>AltitudeInteger</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>AltitudeFraction</para>
+                </entry>
+                <entry>
+                  <para>Int16</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Datum</para>
+                </entry>
+                <entry>
+                  <para>Byte</para>
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">LocalCoordinate (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>X</para>
+                </entry>
+                <entry>
+                  <para>Double</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Y</para>
+                </entry>
+                <entry>
+                  <para>Double</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Z</para>
+                </entry>
+                <entry>
+                  <para>Double</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Timestamp</para>
+                </entry>
+                <entry>
+                  <para>UtcTime</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>DilutionOfPrecision</para>
+                </entry>
+                <entry>
+                  <para>Double</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>UsefulPrecision</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">Position (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>PositionX</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>PositionY</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>SizeX</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>SizeY</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Rotation</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">RfidSighting (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Antenna</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry>
+                  <para>Returns the number of the antenna which detects the RFID tag first.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Strength</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry>
+                  <para>Returns the signal strength (RSSI) of the transponder. Higher values indicate a better strength.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Timestamp</para>
+                </entry>
+                <entry>
+                  <para>UtcTime</para>
+                </entry>
+                <entry>
+                  <para>Timestamp in UtcTime</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>CurrentPowerLevel</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry>
+                  <para>Returns the current power level (unit according to parameter settings).</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">Rotation (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Yaw</para>
+                </entry>
+                <entry>
+                  <para>Double</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Pitch</para>
+                </entry>
+                <entry>
+                  <para>Double</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Roll</para>
+                </entry>
+                <entry>
+                  <para>Double</para>
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">ScanDataEpc (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>PC</para>
+                </entry>
+                <entry>
+                  <para>UInt16</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>UId</para>
+                </entry>
+                <entry>
+                  <para>ByteString</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>XPC_W1</para>
+                </entry>
+                <entry>
+                  <para>UInt16</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>XPC_W2</para>
+                </entry>
+                <entry>
+                  <para>UInt16</para>
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">ScanResult (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: True</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>CodeType</para>
+                </entry>
+                <entry>
+                  <para>CodeTypeDataType</para>
+                </entry>
+                <entry>
+                  <para>Defines the format of the ScanData as string.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>ScanData</para>
+                </entry>
+                <entry>
+                  <para>ScanData</para>
+                </entry>
+                <entry>
+                  <para>Holds the information about the detected objects e.g. the detected transponders.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Timestamp</para>
+                </entry>
+                <entry>
+                  <para>UtcTime</para>
+                </entry>
+                <entry>
+                  <para>Timestamp of the ScanResult creation.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Location</para>
+                </entry>
+                <entry>
+                  <para>Location</para>
+                </entry>
+                <entry>
+                  <para>Returns the location of the object detection.</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">OcrScanResult (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>ImageId</para>
+                </entry>
+                <entry>
+                  <para>NodeId</para>
+                </entry>
+                <entry>
+                  <para>NodeId of the original scan image file object used for this scan result.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Quality</para>
+                </entry>
+                <entry>
+                  <para>Byte</para>
+                </entry>
+                <entry>
+                  <para>Returns the probability of correct decoding.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Position</para>
+                </entry>
+                <entry>
+                  <para>Position</para>
+                </entry>
+                <entry>
+                  <para>Returns the position of the text within the image.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Font</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>Returns the font name used for decoding.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>DecodingTime</para>
+                </entry>
+                <entry>
+                  <para>UtcTime</para>
+                </entry>
+                <entry>
+                  <para>Returns the required decoding time.</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">OpticalScanResult (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Grade</para>
+                </entry>
+                <entry>
+                  <para>Float</para>
+                </entry>
+                <entry>
+                  <para>Returns the quality of the 1D/2D code.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Position</para>
+                </entry>
+                <entry>
+                  <para>Position</para>
+                </entry>
+                <entry>
+                  <para>Returns the position of the text within the image.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Symbology</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>ImageId</para>
+                </entry>
+                <entry>
+                  <para>NodeId</para>
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">OpticalVerifierScanResult (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>IsoGrade</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>RMin</para>
+                </entry>
+                <entry>
+                  <para>Int16</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>SymbolContrast</para>
+                </entry>
+                <entry>
+                  <para>Int16</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>ECMin</para>
+                </entry>
+                <entry>
+                  <para>Int16</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Modulation</para>
+                </entry>
+                <entry>
+                  <para>Int16</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Defects</para>
+                </entry>
+                <entry>
+                  <para>Int16</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Decodability</para>
+                </entry>
+                <entry>
+                  <para>Int16</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Decode</para>
+                </entry>
+                <entry>
+                  <para>Int16</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>PrintGain</para>
+                </entry>
+                <entry>
+                  <para>Int16</para>
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">RfidScanResult (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Sighting</para>
+                </entry>
+                <entry>
+                  <para>RfidSighting</para>
+                </entry>
+                <entry>
+                  <para>Returns additional information on the RFID-related properties of the scan event.</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">RtlsLocationResult (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Speed</para>
+                </entry>
+                <entry>
+                  <para>Double</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Heading</para>
+                </entry>
+                <entry>
+                  <para>Double</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Rotation</para>
+                </entry>
+                <entry>
+                  <para>Rotation</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>ReceiveTime</para>
+                </entry>
+                <entry>
+                  <para>UtcTime</para>
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">ScanSettings (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Duration</para>
+                </entry>
+                <entry>
+                  <para>Duration</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Cycles</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>DataAvailable</para>
+                </entry>
+                <entry>
+                  <para>Boolean</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>LocationType</para>
+                </entry>
+                <entry>
+                  <para>LocationTypeEnumeration</para>
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">Location (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>NMEA</para>
+                </entry>
+                <entry>
+                  <para>NmeaCoordinateString</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Local</para>
+                </entry>
+                <entry>
+                  <para>LocalCoordinate</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>WGS84</para>
+                </entry>
+                <entry>
+                  <para>WGS84Coordinate</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Name</para>
+                </entry>
+                <entry>
+                  <para>LocationName</para>
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">ScanData (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>ByteString</para>
+                </entry>
+                <entry>
+                  <para>ByteString</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Epc</para>
+                </entry>
+                <entry>
+                  <para>ScanDataEpc</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Custom</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">WGS84Coordinate (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>N/S Hemisphere</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Latitude</para>
+                </entry>
+                <entry>
+                  <para>Double</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>E/W Hemisphere</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Longitude</para>
+                </entry>
+                <entry>
+                  <para>Double</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Altitude</para>
+                </entry>
+                <entry>
+                  <para>Double</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Timestamp</para>
+                </entry>
+                <entry>
+                  <para>UtcTime</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>DilutionOfPrecision</para>
+                </entry>
+                <entry>
+                  <para>Double</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>UsefulPrecisionLatLon</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>UsefulPrecisionAlt</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">LocationVariableType (VariableType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>MinCardinality</para>
+                  </entry>
+                  <entry>
+                    <para>MaxCardinality</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>GeographicalUnit</para>
+                </entry>
+                <entry>
+                  <para>EUInformation</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>LengthUnit</para>
+                </entry>
+                <entry>
+                  <para>EUInformation</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>RotationalUnit</para>
+                </entry>
+                <entry>
+                  <para>EUInformation</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>SpeedUnit</para>
+                </entry>
+                <entry>
+                  <para>EUInformation</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">AutoIdDiagnosticsEventType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: True</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>DeviceName</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">AutoIdAccessEventType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: True</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>AccessResult</para>
+                </entry>
+                <entry>
+                  <para>AccessResult</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>Client</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>Command</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">AutoIdDeviceType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: True</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>AutoIdModelVersion</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>DeviceInfo</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Variable</para>
+                </entry>
+                <entry>
+                  <para>DeviceLocation</para>
+                </entry>
+                <entry>
+                  <para>Location</para>
+                </entry>
+                <entry>
+                  <para>LocationVariableType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>DeviceLocationName</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>DeviceName</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Variable</para>
+                </entry>
+                <entry>
+                  <para>DeviceStatus</para>
+                </entry>
+                <entry>
+                  <para>DeviceStatusEnumeration</para>
+                </entry>
+                <entry>
+                  <para>BaseVariableType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Object</para>
+                </entry>
+                <entry>
+                  <para>Diagnostics</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>FunctionalGroupType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>GetDeviceLocation</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Object</para>
+                </entry>
+                <entry>
+                  <para>IOData</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>FunctionalGroupType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Variable</para>
+                </entry>
+                <entry>
+                  <para>LastScanData</para>
+                </entry>
+                <entry>
+                  <para>BaseDataType</para>
+                </entry>
+                <entry>
+                  <para>BaseVariableType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Variable</para>
+                </entry>
+                <entry>
+                  <para>LastScanTimestamp</para>
+                </entry>
+                <entry>
+                  <para>UtcTime</para>
+                </entry>
+                <entry>
+                  <para>BaseVariableType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Object</para>
+                </entry>
+                <entry>
+                  <para>RuntimeParameters</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>FunctionalGroupType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>Scan</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Variable</para>
+                </entry>
+                <entry>
+                  <para>ScanActive</para>
+                </entry>
+                <entry>
+                  <para>Boolean</para>
+                </entry>
+                <entry>
+                  <para>BaseVariableType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>ScanStart</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>ScanStop</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+            </table>
+            <para> - Reference</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>ReferenceType</para>
+                  </entry>
+                  <entry>
+                    <para>TargetId</para>
+                  </entry>
+                  <entry>
+                    <para>IsInverse</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>GeneratesEvent</para>
+                </entry>
+                <entry>
+                  <para>AutoIdDeviceType</para>
+                </entry>
+                <entry>
+                  <para>True</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>GeneratesEvent</para>
+                </entry>
+                <entry>
+                  <para>AutoIdDeviceType</para>
+                </entry>
+                <entry>
+                  <para>True</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>GeneratesEvent</para>
+                </entry>
+                <entry>
+                  <para>AutoIdDeviceType</para>
+                </entry>
+                <entry>
+                  <para>True</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>GeneratesEvent</para>
+                </entry>
+                <entry>
+                  <para>AutoIdDeviceType</para>
+                </entry>
+                <entry>
+                  <para>True</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">RfidAccessEventType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: True</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>AccessResult</para>
+                </entry>
+                <entry>
+                  <para>RfidAccessResult</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">RfidReaderDeviceType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>AntennaNames</para>
+                </entry>
+                <entry>
+                  <para>AntennaNameIdPair</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>KillTag</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Variable</para>
+                </entry>
+                <entry>
+                  <para>LastScanAntenna</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry>
+                  <para>BaseVariableType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Variable</para>
+                </entry>
+                <entry>
+                  <para>LastScanRSSI</para>
+                </entry>
+                <entry>
+                  <para>Int32</para>
+                </entry>
+                <entry>
+                  <para>BaseVariableType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>LockTag</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>ReadTag</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>SetTagPassword</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>WriteTag</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>WriteTagID</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+            </table>
+            <para> - Reference</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>ReferenceType</para>
+                  </entry>
+                  <entry>
+                    <para>TargetId</para>
+                  </entry>
+                  <entry>
+                    <para>IsInverse</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>GeneratesEvent</para>
+                </entry>
+                <entry>
+                  <para>RfidReaderDeviceType</para>
+                </entry>
+                <entry>
+                  <para>True</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>GeneratesEvent</para>
+                </entry>
+                <entry>
+                  <para>RfidReaderDeviceType</para>
+                </entry>
+                <entry>
+                  <para>True</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">AutoIdPresenceEventType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: True</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>Presence</para>
+                </entry>
+                <entry>
+                  <para>UInt16</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">AutoIdScanEventType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: True</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>DeviceName</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>ScanResult</para>
+                </entry>
+                <entry>
+                  <para>ScanResult</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">OcrScanEventType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: True</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>ScanResult</para>
+                </entry>
+                <entry>
+                  <para>OcrScanResult</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">OcrReaderDeviceType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Object</para>
+                </entry>
+                <entry>
+                  <para>Images</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>FolderType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+            </table>
+            <para> - Reference</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>ReferenceType</para>
+                  </entry>
+                  <entry>
+                    <para>TargetId</para>
+                  </entry>
+                  <entry>
+                    <para>IsInverse</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>GeneratesEvent</para>
+                </entry>
+                <entry>
+                  <para>OcrReaderDeviceType</para>
+                </entry>
+                <entry>
+                  <para>True</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">OpticalScanEventType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: True</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>ScanResult</para>
+                </entry>
+                <entry>
+                  <para>OpticalScanResult</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">OpticalReaderDeviceType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Object</para>
+                </entry>
+                <entry>
+                  <para>Images</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>FolderType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+            </table>
+            <para> - Reference</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>ReferenceType</para>
+                  </entry>
+                  <entry>
+                    <para>TargetId</para>
+                  </entry>
+                  <entry>
+                    <para>IsInverse</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>GeneratesEvent</para>
+                </entry>
+                <entry>
+                  <para>OpticalReaderDeviceType</para>
+                </entry>
+                <entry>
+                  <para>True</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">OpticalVerifierScanEventType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: True</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>ScanResult</para>
+                </entry>
+                <entry>
+                  <para>OpticalVerifierScanResult</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">OpticalVerifierDeviceType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Reference</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>ReferenceType</para>
+                  </entry>
+                  <entry>
+                    <para>TargetId</para>
+                  </entry>
+                  <entry>
+                    <para>IsInverse</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>GeneratesEvent</para>
+                </entry>
+                <entry>
+                  <para>OpticalVerifierDeviceType</para>
+                </entry>
+                <entry>
+                  <para>True</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">RfidScanEventType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: True</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>ScanResult</para>
+                </entry>
+                <entry>
+                  <para>RfidScanResult</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">RtlsLocationEventType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: True</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>ScanResult</para>
+                </entry>
+                <entry>
+                  <para>RtlsLocationResult</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">RtlsDeviceType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>GeographicalUnit</para>
+                </entry>
+                <entry>
+                  <para>EUInformation</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>GetLocation</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>GetSupportedLocationTypes</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>GetUnits</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>LengthUnit</para>
+                </entry>
+                <entry>
+                  <para>EUInformation</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>RotationalUnit</para>
+                </entry>
+                <entry>
+                  <para>EUInformation</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>SpeedUnit</para>
+                </entry>
+                <entry>
+                  <para>EUInformation</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+            </table>
+            <para> - Reference</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>ReferenceType</para>
+                  </entry>
+                  <entry>
+                    <para>TargetId</para>
+                  </entry>
+                  <entry>
+                    <para>IsInverse</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>GeneratesEvent</para>
+                </entry>
+                <entry>
+                  <para>RtlsDeviceType</para>
+                </entry>
+                <entry>
+                  <para>True</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+      </glossaryDiv>
+    </glossary>
+  </developerGlossaryDocument>
+</topic>
