@@ -54,7 +54,6 @@ Warning, Error Focus: NodeClass, Identifier: P3-0503020000 Description: Unexpect
 **Affected Models**: AML,MachineVision,MTConnect,TMC
 **Recommendations**: Must be confirmed (by MP) and reported as the model error in the `mpostol/UA-Nodeset` repository.
 
-
 ``` txt
 Warning, Error Focus: Reference, Identifier: P3-0503030201 Description: Wrong Reference type targeting the Property component. Target node of the HasProperty reference cannot be 1:MajorVersion of a base type.
 Warning, Error Focus: Reference, Identifier: P3-0503030201 Description: Wrong Reference type targeting the Property component. Target node of the HasProperty reference cannot be 1:MinorVersion of a base type.
@@ -119,7 +118,7 @@ Parameter name: IdentifierFile
 ```
 
 **Affected models**: `IOLINK`, `SERCOS`, `Weihenstephan`, `TMC`, `Scales`, `Opc.Ua.PlasticsRubber.LDS.NodeSet2.xml`
-**Recommendations**: It is script error. 
+**Recommendations**: It is script error.
 
 ##### Model not tested
 
@@ -135,8 +134,11 @@ Parametre adı: IdentifierFile
 ```
 
 **Affected Models**: `ADI`
-**Recommendations**: Must be confirmed (by MP) and reported accordingly. Consider script bug.
+**Recommendations**: It is script error.
 
 #### ASMD 4.5.3
 
 The tool throws an exception while adding project to the solution for model `IOLink`.
+
+**Affected Models**: `IOLink`
+**Recommendations**: Must be reviewed and followed up accordingly
