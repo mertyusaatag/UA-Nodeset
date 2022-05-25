@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics>
   <Topic id="0810fb1f-a503-428d-9df7-500cdc13dc00" visible="True" noFile="true" isExpanded="true" title="OPC UA Models" tocTitle="OPC UA Models">
-    <Topic id="OPCUA" visible="True" isDefault="true" isSelected="true" title="OPC UA Standard Types" tocTitle="OPC UA Model" linkText="OPCUA Model" />
+    <Topic id="OPCUA" visible="True" isDefault="true" title="OPC UA Standard Types" tocTitle="OPC UA Model" linkText="OPCUA Model" />
+    <Topic id="ADI" visible="True" isSelected="true" title="ADI" tocTitle="ADI Model" linkText="ADI Model" />
     <Topic id="DI" visible="True" title="DI " tocTitle="DI Model" linkText="DI Model" />
     <Topic id="FDT" visible="True" title="FDT" tocTitle="FDT Model" linkText="FDT Model" />
     <Topic id="Machinery" visible="True" title="Machinery" tocTitle="Machinery Model" linkText="Machinery Model" />

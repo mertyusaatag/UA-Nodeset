@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOC>
 
-  <HelpTOCNode Id="ae742e14-c33b-431d-8ec5-eb67ada92187" Title="OPC UA Models">
+  <HelpTOCNode Id="3a91424e-8c79-4bdb-9c13-8142d3453e40" Title="OPC UA Models">
     <HelpTOCNode Title="OPC UA Model" Url="html/OPCUA.htm" />
+    <HelpTOCNode Title="ADI Model" Url="html/ADI.htm" />
     <HelpTOCNode Title="DI Model" Url="html/DI.htm" />
     <HelpTOCNode Title="FDT Model" Url="html/FDT.htm" />
     <HelpTOCNode Title="Machinery Model" Url="html/Machinery.htm" />
