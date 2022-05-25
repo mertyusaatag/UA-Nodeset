@@ -13,7 +13,6 @@
     <Topic id="DI" visible="True" title="DI " tocTitle="DI Model" linkText="DI Model" />
     <Topic id="Fdi5" visible="True" title="Fdi5 " tocTitle="Fdi5 Model" linkText="Fdi5 Model" />
     <Topic id="FDI7" visible="True" title="FDI7 " tocTitle="FDI7 Model" linkText="FDI7 Model" />
-    <Topic id="FDI7" visible="True" title="FDI7 " tocTitle="FDI7 Model" linkText="FDI7 Model" />
     <Topic id="FDT" visible="True" title="FDT" tocTitle="FDT Model" linkText="FDT Model" />
     <Topic id="Gds" visible="True" title="Gds" tocTitle="Gds Model" linkText="Gds Model" />
     <Topic id="I4AAS" visible="True" title="I4AAS" tocTitle="I4AAS Model" linkText="I4AAS Model" />
