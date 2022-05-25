@@ -1,0 +1,1848 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="id1">
+  <developerGlossaryDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+    <glossary>
+      <title>Model documentation</title>
+      <glossaryDiv>
+        <title>Documentation</title>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">ISA95JobOrderCommandEnum (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Undefined</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Undefined value, should never be seen.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Store</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Command to store the job order in local storage, but not to start the order.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>StoreAndStart</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Command to store the job order and start it as soon as the Job Order receiver is ready to start.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Start</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Command to start a stored job order as soon as the receiver is ready to start. Only the Job Orders ID is used to identify the stored job order, all other information is not used.  No changes are made to the stored order. If multiple Job Orders have been commanded to Start, then the priority and timing values in the Job Orders shall be used to determine the order of execution of the orders.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Update</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Command to update a stored Job Order that has not yet been started, with the new order information.  All previously stored information is replaced.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Stop</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Command to stop a started job order, report on any work done on the order, and remove the stored information. Only the Job Orders ID is used to identify the job order, all other information is not used.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Cancel</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Cancel an un-started job order and remove the stored information. Only the Job Orders ID is used to identify the job order, all other information is not used.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Clear</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Command to allow the Information Receiver to clear any maintained information on the Job Order (usually sent after a receipt of a Job Response with a status of Finished.) Only the Job Orders ID is used to identify the job order, all other information is not used.</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">ISA95JobOrderStateEnum (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Undefined</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Undefined value, should never be seen.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Waiting</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The necessary pre-conditions have not been met and the order is not ready to run.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Ready</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The necessary pre-conditions have been met and the order is ready to run, awaiting a Start command.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Loaded</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>In situations where only one job may be in active memory and is able to be run, then the job is loaded in active memory, the necessary pre-conditions have been met, and the order is ready to run, awaiting a Start command.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Running</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The order is executing.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Completed</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The order has been completed and is no longer in execution.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Aborted</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The order was aborted.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Held</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The order has been temporarily stopped due to a constraint of some form.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Suspended</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The order has been temporarily stopped due to a deliberate decision within the execution system.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Closed</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The order has been completed and fully reconciled. No further changes, or restatement of actuals is expected.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Error</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The Job is in error and requires attention.</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">ISA95ReturnEnum (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Undefined</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Undefined value, should never be seen</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>NoError</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>There were no errors in processing the method.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>InvalidJobOrderID</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The referenced job order ID is invalid or not known to the receiver.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>UnableToAcceptJobOrder</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The server is currently unable to accept job orders.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>UnableToAcceptJobOrderCommand</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The server is currently unable to accept job order commands for the specified job order.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>UnableToReturnJobResponse</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>The server is unable to provide a Job Response for the specified Job Order.</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">ISA95EquipmentDataType (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>ID</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>An identification of an EquipmentClass or Equipment.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Description</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>Additional information and description about the resource.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>EquipmentUse</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>Information about the expected use of the equipment, see the ISA 95 Part 2 standard for defined values. </para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Quantity</para>
+                </entry>
+                <entry>
+                  <para>DecimalString</para>
+                </entry>
+                <entry>
+                  <para>The quantity of the resource</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>UoM</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>The Unit Of Measure of the quantity</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Properties</para>
+                </entry>
+                <entry>
+                  <para>ISA95PropertyDataType</para>
+                </entry>
+                <entry>
+                  <para>Any associated properties, or empty if there are no properties defined. </para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">ISA95JobOrderDataType (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>ID</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>An identification of the Job Order.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Description</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>Addition information about the Job Order </para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>WorkMasterID</para>
+                </entry>
+                <entry>
+                  <para>ISA95WorkMasterDataType</para>
+                </entry>
+                <entry>
+                  <para>Work Master associated with the job order. If multiple work masters are defined, then the execution system can select the work master based on the availability of resources. </para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>StartTime</para>
+                </entry>
+                <entry>
+                  <para>DateTime</para>
+                </entry>
+                <entry>
+                  <para>The proposed start time for the order, may be empty if not specified</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>EndTime</para>
+                </entry>
+                <entry>
+                  <para>DateTime</para>
+                </entry>
+                <entry>
+                  <para>The proposed end time for the order, may be empty if not specified</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Priority</para>
+                </entry>
+                <entry>
+                  <para>Int16</para>
+                </entry>
+                <entry>
+                  <para>The priority of the job order, may be empty of not specified. Higher numbers have higher priority.  This type allows the Job Order clients to pick their own ranges, and the Job Order server only has to pick the highest number.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>JobOrderParameters</para>
+                </entry>
+                <entry>
+                  <para>ISA95ParameterDataType</para>
+                </entry>
+                <entry>
+                  <para>Key value pair with values, not associated with a resource that is provided as part of the job order, may be empty if not specified.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>PersonnelRequirements</para>
+                </entry>
+                <entry>
+                  <para>ISA95PersonnelDataType</para>
+                </entry>
+                <entry>
+                  <para>A specification of any personnel requirements associated with the job order, may be empty if not specified</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>EquipmentRequirements</para>
+                </entry>
+                <entry>
+                  <para>ISA95EquipmentDataType</para>
+                </entry>
+                <entry>
+                  <para>A specification of any equipment requirements associated with the job order, may be empty if not specified.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>PhysicalAssetRequirements</para>
+                </entry>
+                <entry>
+                  <para>ISA95PhysicalAssetDataType</para>
+                </entry>
+                <entry>
+                  <para>A specification of any physical asset requirements associated with the job order, may be empty if not specified.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>MaterialRequirements</para>
+                </entry>
+                <entry>
+                  <para>ISA95MaterialDataType</para>
+                </entry>
+                <entry>
+                  <para>A specification of any material requirements associated with the job order, may be empty if not specified.</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">ISA95JobResponseDataType (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>ID</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>An identification of the Job Response</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Description</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>Additional information about the Job Response</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>JobOrderID</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>An identification of the job order associated with the job response. </para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>StartTime</para>
+                </entry>
+                <entry>
+                  <para>DateTime</para>
+                </entry>
+                <entry>
+                  <para>The actual start time for the order. </para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>EndTime</para>
+                </entry>
+                <entry>
+                  <para>DateTime</para>
+                </entry>
+                <entry>
+                  <para>The actual end time for the order. </para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>JobState</para>
+                </entry>
+                <entry>
+                  <para>ISA95JobOrderStateEnum</para>
+                </entry>
+                <entry>
+                  <para>The current state of the job.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>JobResponseData</para>
+                </entry>
+                <entry>
+                  <para>ISA95ParameterDataType</para>
+                </entry>
+                <entry>
+                  <para>Key value pair with values, not associated with a resource that is provided as part of the job response, may be empty if not specified.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>PersonnelActuals</para>
+                </entry>
+                <entry>
+                  <para>ISA95PersonnelDataType</para>
+                </entry>
+                <entry>
+                  <para>A specification of any personnel requirements associated with the job response, may be empty if not specified.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>EquipmentActuals</para>
+                </entry>
+                <entry>
+                  <para>ISA95EquipmentDataType</para>
+                </entry>
+                <entry>
+                  <para>A specification of any equipment requirements associated with the job response, may be empty if not specified.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>PhysicalAssetActuals</para>
+                </entry>
+                <entry>
+                  <para>ISA95PhysicalAssetDataType</para>
+                </entry>
+                <entry>
+                  <para>A specification of any physical asset requirements associated with the job response, may be empty if not specified.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>MaterialActuals</para>
+                </entry>
+                <entry>
+                  <para>ISA95MaterialDataType</para>
+                </entry>
+                <entry>
+                  <para>A specification of any material requirements associated with the job response, may be empty if not specified.</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">ISA95MaterialDataType (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>MaterialClassID</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>An identification of the resource, or null if the Material Class is not used to identify the material. </para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>MaterialDefinitionID</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>An identification of the resource, or null if the Material Definition is not used to identify the material. </para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>MaterialLotID</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>An identification of the resource, or null if the Material Lot is not used to identify the material. </para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>MaterialSublotID</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>An identification of the resource, or null if the Material Sublot is not used to identify the material. </para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Description</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>Additional information and description about the resource.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>MaterialUse</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>Information about the expected use of the material, see the ISA 95 Part 2 standard for defined values. </para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Quantity</para>
+                </entry>
+                <entry>
+                  <para>DecimalString</para>
+                </entry>
+                <entry>
+                  <para>The quantity of the resource</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>UoM</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>The Unit Of Measure of the quantity</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Properties</para>
+                </entry>
+                <entry>
+                  <para>ISA95PropertyDataType</para>
+                </entry>
+                <entry>
+                  <para>Any associated properties, or empty if there are no properties defined.</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">ISA95ParameterDataType (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>ID</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>A unique identifier for a parameter</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Value</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Value of the parameter.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Description</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>An optional description of the parameter.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>UoM</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>The Unit Of Measure of the value</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Subparameters</para>
+                </entry>
+                <entry>
+                  <para>ISA95ParameterDataType</para>
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">ISA95PersonnelDataType (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>ID</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>An identification of a Personnel Class or Person. </para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Description</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>Additional information and description about the resource.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>PersonnelUse</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>Information about the expected use of the personnel, see the ISA 95 Part 2 standard for defined values. </para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Quantity</para>
+                </entry>
+                <entry>
+                  <para>DecimalString</para>
+                </entry>
+                <entry>
+                  <para>The quantity of the resource</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>UoM</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>The Unit Of Measure of the quantity</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Properties</para>
+                </entry>
+                <entry>
+                  <para>ISA95PropertyDataType</para>
+                </entry>
+                <entry>
+                  <para>Any associated properties, or empty if there are no properties defined. </para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">ISA95PhysicalAssetDataType (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>ID</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>An identification of a Physical Asset Class or Physical Asset. </para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Description</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>Additional information and description about the resource.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>PhysicalAssetUse</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>Information about the expected use of the physical asset, see the ISA 95 Part 2 standard for defined values. </para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Quantity</para>
+                </entry>
+                <entry>
+                  <para>DecimalString</para>
+                </entry>
+                <entry>
+                  <para>The quantity of the resource</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>UoM</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>The Unit Of Measure of the quantity</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Properties</para>
+                </entry>
+                <entry>
+                  <para>ISA95PropertyDataType</para>
+                </entry>
+                <entry>
+                  <para>Any associated properties, or empty if there are no properties defined. </para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">ISA95PropertyDataType (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>ID</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>Unique identifier for a property within the scope of the associated resource</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Value</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Value for the property</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Description</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>An optional description of the parameter.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>UoM</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>The Unit Of Measure of the value</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Subproperties</para>
+                </entry>
+                <entry>
+                  <para>ISA95PropertyDataType</para>
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">ISA95WorkMasterDataType (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>ID</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>An identification of the Work Master. </para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Description</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>Additional information and description about the Work Master.</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Parameters</para>
+                </entry>
+                <entry>
+                  <para>ISA95ParameterDataType</para>
+                </entry>
+                <entry>
+                  <para>Defined parameters for the Work Master.</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">ISA95JobOrderReceiverObjectType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Variable</para>
+                </entry>
+                <entry>
+                  <para>EquipmentID</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>BaseVariableType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Variable</para>
+                </entry>
+                <entry>
+                  <para>JobOrderList</para>
+                </entry>
+                <entry>
+                  <para>ISA95JobOrderDataType</para>
+                </entry>
+                <entry>
+                  <para>BaseVariableType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Variable</para>
+                </entry>
+                <entry>
+                  <para>MaterialClassID</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>BaseVariableType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Variable</para>
+                </entry>
+                <entry>
+                  <para>MaterialDefinitionID</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>BaseVariableType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Variable</para>
+                </entry>
+                <entry>
+                  <para>PersonnelID</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>BaseVariableType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Variable</para>
+                </entry>
+                <entry>
+                  <para>PhysicalAssetID</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>BaseVariableType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>ReceiveJobOrder</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Variable</para>
+                </entry>
+                <entry>
+                  <para>WorkMaster</para>
+                </entry>
+                <entry>
+                  <para>ISA95WorkMasterDataType</para>
+                </entry>
+                <entry>
+                  <para>BaseVariableType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">ISA95JobResponseProviderObjectType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>RequestJobResponse</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">ISA95JobResponseReceiverObjectType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Method</para>
+                </entry>
+                <entry>
+                  <para>ReceiveJobResponse</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+      </glossaryDiv>
+    </glossary>
+  </developerGlossaryDocument>
+</topic>

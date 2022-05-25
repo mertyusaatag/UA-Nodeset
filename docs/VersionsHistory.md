@@ -69,7 +69,7 @@ Warning, Error Focus: Reference, Identifier: P3-0503030201 Description: Wrong Re
 Warning, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Id = D290E7B4-F77C-4EF0-883B-844F66471DB6; Reference HierarchicalReferences not supported. Removed the graph at http://opcfoundation.org/UA/:Organizes of nodes from the model"
 ```
 
-**Affected Models**: `ADI`, `AML`, `AUTOID`, `CSPPlusForMachine`, `DI`, `MTConnect`, `POWERLINK`
+**Affected Models**: `ADI`, `AML`, `AUTOID`, `CSPPlusForMachine`, `DI`, `MTConnect`, `POWERLINK`, `GDS`
 **Recommendations**: Must be confirmed (by MP) and reported as the model error in the `mpostol/UA-Nodeset` repository.
 
 ``` txt

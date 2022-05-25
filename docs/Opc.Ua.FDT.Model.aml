@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<topic id="FDT">
+<topic id="id1">
   <developerGlossaryDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
     <glossary>
-      <title>FDT Model Documentation</title>
+      <title>Model documentation</title>
       <glossaryDiv>
         <title>Documentation</title>
         <glossaryEntry>
@@ -40,7 +40,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>High High Alarm.</para>
+                  <para>Alarm if a process value exceeds ‘highhigh’ limit.</para>
                 </entry>
               </row>
               <row>
@@ -54,7 +54,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>High Alarm.</para>
+                  <para>Alarm if a process value exceeds ‘high’ limit.</para>
                 </entry>
               </row>
               <row>
@@ -68,7 +68,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>Low Low Alarm.</para>
+                  <para>Alarm if a process value falls below ‘lowlow’ limit.</para>
                 </entry>
               </row>
               <row>
@@ -82,7 +82,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>LowAlarm.</para>
+                  <para>Alarm if a process value falls below ‘low’ limit.</para>
                 </entry>
               </row>
             </table>
@@ -123,7 +123,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>ApplicationID is AdjustSetValue</para>
+                  <para>Functional group is used to adjust the set value.</para>
                 </entry>
               </row>
               <row>
@@ -137,7 +137,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>ApplicationID is AssetManagement</para>
+                  <para>Functional group is used for asset management.</para>
                 </entry>
               </row>
               <row>
@@ -151,7 +151,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>ApplicationID is AuditTrail</para>
+                  <para>Functional group is used for audit trail.</para>
                 </entry>
               </row>
               <row>
@@ -165,7 +165,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>ApplicationID is Configuration</para>
+                  <para>Functional group is used for configuration.</para>
                 </entry>
               </row>
               <row>
@@ -179,7 +179,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>ApplicationID is Diagnosis</para>
+                  <para>Functional group is used for diagnosis.</para>
                 </entry>
               </row>
               <row>
@@ -193,7 +193,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>ApplicationID is Force</para>
+                  <para>Functional group is used for forcing values.</para>
                 </entry>
               </row>
               <row>
@@ -207,7 +207,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>ApplicationID is Observe</para>
+                  <para>Functional group is used for observation of the device.</para>
                 </entry>
               </row>
               <row>
@@ -221,7 +221,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>ApplicationID is OfflineCompare</para>
+                  <para>Functional group is used for comparison of offline data from different devices.</para>
                 </entry>
               </row>
               <row>
@@ -235,7 +235,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>ApplicationID is OfflineParameterize</para>
+                  <para>Functional group is used for offline parameterization.</para>
                 </entry>
               </row>
               <row>
@@ -249,7 +249,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>ApplicationID is OnlineCompare</para>
+                  <para>Functional group is used for comparison of the device dataset and the instance dataset.</para>
                 </entry>
               </row>
               <row>
@@ -263,7 +263,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>ApplicationID is OnlineParameterize</para>
+                  <para>Functional group is used for online parameterization.</para>
                 </entry>
               </row>
               <row>
@@ -277,7 +277,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>ApplicationID is Identify</para>
+                  <para>Functional group is used for identification.</para>
                 </entry>
               </row>
               <row>
@@ -291,7 +291,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>ApplicationID is Calibration</para>
+                  <para>Functional group is used for calibration.</para>
                 </entry>
               </row>
               <row>
@@ -305,7 +305,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>ApplicationID is MainOperation</para>
+                  <para>Functional group is the aggregation of all functional groups.</para>
                 </entry>
               </row>
               <row>
@@ -319,7 +319,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>ApplicationID is NetworkManagement</para>
+                  <para>Functional group is used for network management.</para>
                 </entry>
               </row>
             </table>
@@ -360,7 +360,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>Classification domain is PowerDistribution.  </para>
+                  <para>Classification domain is PowerDistribution.</para>
                 </entry>
               </row>
               <row>
@@ -374,7 +374,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>Classification domain is MotionControl.  </para>
+                  <para>Classification domain is MotionControl.</para>
                 </entry>
               </row>
               <row>
@@ -388,7 +388,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>Classification domain is Measurement.  </para>
+                  <para>Classification domain is Measurement.</para>
                 </entry>
               </row>
               <row>
@@ -416,7 +416,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>Classification domain is ModulesAndControllers.  </para>
+                  <para>Classification domain is ModulesAndControllers.</para>
                 </entry>
               </row>
               <row>
@@ -430,7 +430,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>Classification domain is Communication</para>
+                  <para>Classification domain is Communication.</para>
                 </entry>
               </row>
             </table>
@@ -611,7 +611,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>Classification is Hmi.</para>
+                  <para>Classification is HMI.</para>
                 </entry>
               </row>
               <row>
@@ -849,7 +849,7 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>Classification is Motor. </para>
+                  <para>Classification is Motor.</para>
                 </entry>
               </row>
               <row>
@@ -1444,7 +1444,7 @@
         </glossaryEntry>
         <glossaryEntry>
           <terms>
-            <term termClass="term">DtmCategory (DataType)</term>
+            <term termClass="term">FunctionExecutionResultState (DataType)</term>
           </terms>
           <definition>
             <para>IsAbstract: False</para>
@@ -1471,13 +1471,13 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>DeviceDTM</para>
+                  <para>Cancel</para>
                 </entry>
                 <entry>
                   <para />
                 </entry>
                 <entry>
-                  <para>A Device DTM contains the application software for a 'normal' field device, e.g. a pressure transmitter or, a valve or a drive.</para>
+                  <para>The function was canceled.</para>
                 </entry>
               </row>
               <row>
@@ -1485,13 +1485,13 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>CommunicationDTM</para>
+                  <para>Success</para>
                 </entry>
                 <entry>
                   <para />
                 </entry>
                 <entry>
-                  <para>A Communication DTM is a special category of DTM containing the application software for specific communication hardware.</para>
+                  <para>The function finished execution successfully.</para>
                 </entry>
               </row>
               <row>
@@ -1499,13 +1499,54 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>GatewayDTM</para>
+                  <para>Fail</para>
                 </entry>
                 <entry>
                   <para />
                 </entry>
                 <entry>
-                  <para>A Gateway DTM is a special category of DTM representing a device that connects different fieldbus segments.</para>
+                  <para>The function execution failed.</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">IECDatatype (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>BOOL</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>1 bit -&gt; true or false</para>
                 </entry>
               </row>
               <row>
@@ -1513,13 +1554,13 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>CompositeDeviceDTM</para>
+                  <para>SINT</para>
                 </entry>
                 <entry>
                   <para />
                 </entry>
                 <entry>
-                  <para>A Composite DTM is a special category of DTM which is similar to a gateway DTM. A Composite DTM is the parent of a Module DTM and is intended to represent a header station of a modular device.</para>
+                  <para>Signed short integer (1byte)</para>
                 </entry>
               </row>
               <row>
@@ -1527,13 +1568,13 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>ModuleDTM</para>
+                  <para>INT</para>
                 </entry>
                 <entry>
                   <para />
                 </entry>
                 <entry>
-                  <para>A Module DTM is a special kind of DTM which is similar to a device DTM. A Module DTM is a child of a Composite DTM and is intended to represent a single module of a modular device.</para>
+                  <para>Signed integer (2 byte)</para>
                 </entry>
               </row>
               <row>
@@ -1541,13 +1582,251 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>BlockTypeManager</para>
+                  <para>DINT</para>
                 </entry>
                 <entry>
                   <para />
                 </entry>
                 <entry>
-                  <para>A Block Type Manager (BTM) is a special category of DTM containing the application software for accessible objects inside a device such as function blocks and resource blocks. It is a child of a Device DTM.</para>
+                  <para>Signed double integer (4 byte)</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>LINT</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Signed long integer (8 byte)</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>USINT</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Unsigned short integer (1 byte)</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>UINT</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Unsigned integer (2 byte)</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>UDINT</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Unsigned double integer (4 byte)</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>ULINT</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Unsigned long integer (8 byte)</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>REAL</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Floating point (4 byte)</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>LREAL</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Long floating point (8 byte)</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>TIME</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Time</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>DATE</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Calendar date</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>TimeOfDay</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Clock time</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>DateAndTime</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Date and time</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>STRING</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Variable-length single-byte character string</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>BYTE</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>8 bit</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>WORD</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>16 bit</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>DWORD</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>32 bit</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>LWORD</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>64 bit</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>WSTRING</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Variable-length double-byte character string</para>
                 </entry>
               </row>
             </table>
@@ -1602,7 +1881,62 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>Device data represents a upper range.</para>
+                  <para>Device data represents an upper range.</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">SignalTypeEnumeration (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Input</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Input signal</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Output</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Output signal</para>
                 </entry>
               </row>
             </table>
@@ -1725,7 +2059,9 @@
                 <entry>
                   <para />
                 </entry>
-                <entry />
+                <entry>
+                  <para>The DTM does not support upload / download at all.</para>
+                </entry>
               </row>
               <row>
                 <entry>
@@ -1737,7 +2073,9 @@
                 <entry>
                   <para />
                 </entry>
-                <entry />
+                <entry>
+                  <para>The DTM supports only writing data to the device. Reading data to the device is not supported.</para>
+                </entry>
               </row>
               <row>
                 <entry>
@@ -1749,7 +2087,9 @@
                 <entry>
                   <para />
                 </entry>
-                <entry />
+                <entry>
+                  <para>The DTM supports only reading data from the device. Writing data to the device is not supported.</para>
+                </entry>
               </row>
               <row>
                 <entry>
@@ -1760,6 +2100,59 @@
                 </entry>
                 <entry>
                   <para />
+                </entry>
+                <entry>
+                  <para>The DTM supports both reading values from the device and writing values to the device.</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">DataRefType (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>DataId</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>SemanticInfo</para>
+                </entry>
+                <entry>
+                  <para>SemanticInfoType</para>
                 </entry>
                 <entry />
               </row>
@@ -1807,10 +2200,61 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>Classification</para>
+                  <para>DeviceClassification</para>
                 </entry>
                 <entry>
                   <para>ClassificationId</para>
+                </entry>
+                <entry />
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">SemanticInfoType (DataType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Fields</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Identifier</para>
+                  </entry>
+                  <entry>
+                    <para>Name</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>Description</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>ApplicationDomain</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry />
+              </row>
+              <row>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>SemanticId</para>
+                </entry>
+                <entry>
+                  <para>String</para>
                 </entry>
                 <entry />
               </row>
@@ -1867,6 +2311,32 @@
                   <para>Property</para>
                 </entry>
                 <entry>
+                  <para>AlarmDataRef</para>
+                </entry>
+                <entry>
+                  <para>DataRefType</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
                   <para>AlarmType</para>
                 </entry>
                 <entry>
@@ -1907,7 +2377,7 @@
               </row>
               <row>
                 <entry>
-                  <para>HasComponent</para>
+                  <para>HasProperty</para>
                 </entry>
                 <entry>
                   <para />
@@ -1916,16 +2386,16 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>Variable</para>
+                  <para>Property</para>
                 </entry>
                 <entry>
                   <para>DataRef</para>
                 </entry>
                 <entry>
-                  <para>BaseDataType</para>
+                  <para>DataRefType</para>
                 </entry>
                 <entry>
-                  <para>BaseVariableType</para>
+                  <para>PropertyType</para>
                 </entry>
                 <entry>
                   <para>Optional</para>
@@ -2049,6 +2519,32 @@
                   <para>Property</para>
                 </entry>
                 <entry>
+                  <para>RangeDataRef</para>
+                </entry>
+                <entry>
+                  <para>DataRefType</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
                   <para>RangeType</para>
                 </entry>
                 <entry>
@@ -2063,7 +2559,7 @@
               </row>
               <row>
                 <entry>
-                  <para>HasComponent</para>
+                  <para>HasProperty</para>
                 </entry>
                 <entry>
                   <para />
@@ -2072,16 +2568,42 @@
                   <para />
                 </entry>
                 <entry>
-                  <para>Variable</para>
+                  <para>Property</para>
                 </entry>
                 <entry>
                   <para>SemanticInfo</para>
                 </entry>
                 <entry>
-                  <para>BaseDataType</para>
+                  <para>SemanticInfoType</para>
                 </entry>
                 <entry>
-                  <para>SemanticInfoType</para>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>SubstituteDataRef</para>
+                </entry>
+                <entry>
+                  <para>DataRefType</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
                 </entry>
                 <entry>
                   <para>Optional</para>
@@ -2114,11 +2636,38 @@
                 </entry>
               </row>
             </table>
+            <para> - Reference</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>ReferenceType</para>
+                  </entry>
+                  <entry>
+                    <para>TargetId</para>
+                  </entry>
+                  <entry>
+                    <para>IsInverse</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasIOSignalRef</para>
+                </entry>
+                <entry>
+                  <para>FdtIoSignalInfoType</para>
+                </entry>
+                <entry>
+                  <para>False</para>
+                </entry>
+              </row>
+            </table>
           </definition>
         </glossaryEntry>
         <glossaryEntry>
           <terms>
-            <term termClass="term">SemanticInfoType (VariableType)</term>
+            <term termClass="term">FdtIoSignalInfoType (ObjectType)</term>
           </terms>
           <definition>
             <para>IsAbstract: False</para>
@@ -2128,12 +2677,6 @@
                 <row>
                   <entry>
                     <para>Reference</para>
-                  </entry>
-                  <entry>
-                    <para>MinCardinality</para>
-                  </entry>
-                  <entry>
-                    <para>MaxCardinality</para>
                   </entry>
                   <entry>
                     <para>NodeClass</para>
@@ -2157,16 +2700,30 @@
                   <para>HasProperty</para>
                 </entry>
                 <entry>
-                  <para />
+                  <para>Property</para>
                 </entry>
                 <entry>
-                  <para />
+                  <para>Description</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
                 </entry>
                 <entry>
                   <para>Property</para>
                 </entry>
                 <entry>
-                  <para>ApplicationDomain</para>
+                  <para>FrameApplicationTag</para>
                 </entry>
                 <entry>
                   <para>String</para>
@@ -2183,19 +2740,213 @@
                   <para>HasProperty</para>
                 </entry>
                 <entry>
-                  <para />
+                  <para>Property</para>
                 </entry>
                 <entry>
-                  <para />
+                  <para>HasAlarmInfo</para>
+                </entry>
+                <entry>
+                  <para>DataRefType</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
                 </entry>
                 <entry>
                   <para>Property</para>
                 </entry>
                 <entry>
-                  <para>SemanticId</para>
+                  <para>HasDeviceData</para>
+                </entry>
+                <entry>
+                  <para>DataRefType</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>HasRange</para>
+                </entry>
+                <entry>
+                  <para>DataRefType</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>HasSubstituteValue</para>
+                </entry>
+                <entry>
+                  <para>DataRefType</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>HasUnit</para>
+                </entry>
+                <entry>
+                  <para>DataRefType</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>IECDatatype</para>
+                </entry>
+                <entry>
+                  <para>IECDatatype</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>IsLocked</para>
+                </entry>
+                <entry>
+                  <para>Boolean</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>IsSafety</para>
+                </entry>
+                <entry>
+                  <para>Boolean</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>RoutedIoSignalId</para>
                 </entry>
                 <entry>
                   <para>String</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>SemanticInfo</para>
+                </entry>
+                <entry>
+                  <para>SemanticInfoType</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>SignalType</para>
+                </entry>
+                <entry>
+                  <para>SignalTypeEnumeration</para>
                 </entry>
                 <entry>
                   <para>PropertyType</para>
@@ -2209,7 +2960,7 @@
         </glossaryEntry>
         <glossaryEntry>
           <terms>
-            <term termClass="term">DataRefType (VariableType)</term>
+            <term termClass="term">FdtAuditWriteUpdateEventType (ObjectType)</term>
           </terms>
           <definition>
             <para>IsAbstract: False</para>
@@ -2221,10 +2972,130 @@
                     <para>Reference</para>
                   </entry>
                   <entry>
-                    <para>MinCardinality</para>
+                    <para>NodeClass</para>
                   </entry>
                   <entry>
-                    <para>MaxCardinality</para>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>NewUnit</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>OldUnit</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">FdtEndMethodEventType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>Result</para>
+                </entry>
+                <entry>
+                  <para>FunctionExecutionResultState</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">FdtDeviceType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: True</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
                   </entry>
                   <entry>
                     <para>NodeClass</para>
@@ -2248,19 +3119,13 @@
                   <para>HasComponent</para>
                 </entry>
                 <entry>
-                  <para />
-                </entry>
-                <entry>
-                  <para />
-                </entry>
-                <entry>
                   <para>Variable</para>
                 </entry>
                 <entry>
-                  <para>DataId</para>
+                  <para>DeviceHealth</para>
                 </entry>
                 <entry>
-                  <para>String</para>
+                  <para>DeviceHealthEnumeration</para>
                 </entry>
                 <entry>
                   <para>BaseVariableType</para>
@@ -2269,15 +3134,193 @@
                   <para>Mandatory</para>
                 </entry>
               </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>DeviceTag</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>DeviceTypeId</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Object</para>
+                </entry>
+                <entry>
+                  <para>Documentation</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>FolderType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>ManufacturerId</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Object</para>
+                </entry>
+                <entry>
+                  <para>MethodSet</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>BaseObjectType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Object</para>
+                </entry>
+                <entry>
+                  <para>ParameterSet</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>BaseObjectType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Object</para>
+                </entry>
+                <entry>
+                  <para>ProtocolSupport</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>FolderType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+            </table>
+            <para> - Reference</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>ReferenceType</para>
+                  </entry>
+                  <entry>
+                    <para>TargetId</para>
+                  </entry>
+                  <entry>
+                    <para>IsInverse</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasInterface</para>
+                </entry>
+                <entry>
+                  <para>FdtDeviceType</para>
+                </entry>
+                <entry>
+                  <para>True</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasInterface</para>
+                </entry>
+                <entry>
+                  <para>FdtDeviceType</para>
+                </entry>
+                <entry>
+                  <para>True</para>
+                </entry>
+              </row>
             </table>
           </definition>
         </glossaryEntry>
         <glossaryEntry>
           <terms>
-            <term termClass="term">FdtDocument (VariableType)</term>
+            <term termClass="term">IFdtSupportInfoType (ObjectType)</term>
           </terms>
           <definition>
-            <para>IsAbstract: False</para>
+            <para>IsAbstract: True</para>
             <para> - Children</para>
             <table>
               <tableHeader>
@@ -2286,10 +3329,77 @@
                     <para>Reference</para>
                   </entry>
                   <entry>
-                    <para>MinCardinality</para>
+                    <para>NodeClass</para>
                   </entry>
                   <entry>
-                    <para>MaxCardinality</para>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Object</para>
+                </entry>
+                <entry>
+                  <para>Documentation</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>FolderType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Object</para>
+                </entry>
+                <entry>
+                  <para>ProtocolSupport</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>FolderType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">FdtDocumentType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: True</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
                   </entry>
                   <entry>
                     <para>NodeClass</para>
@@ -2311,12 +3421,6 @@
               <row>
                 <entry>
                   <para>HasProperty</para>
-                </entry>
-                <entry>
-                  <para />
-                </entry>
-                <entry>
-                  <para />
                 </entry>
                 <entry>
                   <para>Property</para>
@@ -2339,12 +3443,6 @@
                   <para>HasProperty</para>
                 </entry>
                 <entry>
-                  <para />
-                </entry>
-                <entry>
-                  <para />
-                </entry>
-                <entry>
                   <para>Property</para>
                 </entry>
                 <entry>
@@ -2363,12 +3461,6 @@
               <row>
                 <entry>
                   <para>HasProperty</para>
-                </entry>
-                <entry>
-                  <para />
-                </entry>
-                <entry>
-                  <para />
                 </entry>
                 <entry>
                   <para>Property</para>
@@ -2391,12 +3483,6 @@
                   <para>HasProperty</para>
                 </entry>
                 <entry>
-                  <para />
-                </entry>
-                <entry>
-                  <para />
-                </entry>
-                <entry>
                   <para>Property</para>
                 </entry>
                 <entry>
@@ -2417,51 +3503,19 @@
                   <para>HasProperty</para>
                 </entry>
                 <entry>
-                  <para />
-                </entry>
-                <entry>
-                  <para />
-                </entry>
-                <entry>
-                  <para>Property</para>
-                </entry>
-                <entry>
-                  <para>PathOrUrl</para>
-                </entry>
-                <entry>
-                  <para>String</para>
-                </entry>
-                <entry>
-                  <para>PropertyType</para>
-                </entry>
-                <entry>
-                  <para>Mandatory</para>
-                </entry>
-              </row>
-              <row>
-                <entry>
-                  <para>HasProperty</para>
-                </entry>
-                <entry>
-                  <para />
-                </entry>
-                <entry>
-                  <para />
-                </entry>
-                <entry>
                   <para>Property</para>
                 </entry>
                 <entry>
                   <para>SemanticInfo</para>
                 </entry>
                 <entry>
-                  <para>String</para>
+                  <para>SemanticInfoType</para>
                 </entry>
                 <entry>
                   <para>PropertyType</para>
                 </entry>
                 <entry>
-                  <para>Mandatory</para>
+                  <para>Optional</para>
                 </entry>
               </row>
             </table>
@@ -2595,6 +3649,185 @@
         </glossaryEntry>
         <glossaryEntry>
           <terms>
+            <term termClass="term">FdtDocumentFile (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasComponent</para>
+                </entry>
+                <entry>
+                  <para>Object</para>
+                </entry>
+                <entry>
+                  <para>File</para>
+                </entry>
+                <entry>
+                  <para />
+                </entry>
+                <entry>
+                  <para>FileType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">FdtDocumentUrl (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>URL</para>
+                </entry>
+                <entry>
+                  <para>String</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Mandatory</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="term">FdtFunctionalGroupType (ObjectType)</term>
+          </terms>
+          <definition>
+            <para>IsAbstract: False</para>
+            <para> - Children</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>
+                    <para>Reference</para>
+                  </entry>
+                  <entry>
+                    <para>NodeClass</para>
+                  </entry>
+                  <entry>
+                    <para>SymbolicName</para>
+                  </entry>
+                  <entry>
+                    <para>DataType</para>
+                  </entry>
+                  <entry>
+                    <para>TypeDefinition</para>
+                  </entry>
+                  <entry>
+                    <para>ModellingRule</para>
+                  </entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>ApplicationId</para>
+                </entry>
+                <entry>
+                  <para>ApplicationIdEnumeration</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>HasProperty</para>
+                </entry>
+                <entry>
+                  <para>Property</para>
+                </entry>
+                <entry>
+                  <para>SemanticInfo</para>
+                </entry>
+                <entry>
+                  <para>SemanticInfoType</para>
+                </entry>
+                <entry>
+                  <para>PropertyType</para>
+                </entry>
+                <entry>
+                  <para>Optional</para>
+                </entry>
+              </row>
+            </table>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
             <term termClass="term">FdtProtocolType (ObjectType)</term>
           </terms>
           <definition>
@@ -2648,10 +3881,10 @@
         </glossaryEntry>
         <glossaryEntry>
           <terms>
-            <term termClass="term">FdtDeviceType (ObjectType)</term>
+            <term termClass="term">FdtTransferServiceType (ObjectType)</term>
           </terms>
           <definition>
-            <para>IsAbstract: True</para>
+            <para>IsAbstract: False</para>
             <para> - Children</para>
             <table>
               <tableHeader>
@@ -2684,113 +3917,13 @@
                   <para>Property</para>
                 </entry>
                 <entry>
-                  <para>DeviceHealth</para>
+                  <para>SupportedTransfer</para>
                 </entry>
                 <entry>
-                  <para>DeviceHealthEnumeration</para>
-                </entry>
-                <entry>
-                  <para>PropertyType</para>
-                </entry>
-                <entry>
-                  <para>Mandatory</para>
-                </entry>
-              </row>
-              <row>
-                <entry>
-                  <para>HasProperty</para>
-                </entry>
-                <entry>
-                  <para>Property</para>
-                </entry>
-                <entry>
-                  <para>DeviceTag</para>
-                </entry>
-                <entry>
-                  <para>String</para>
+                  <para>SupportedTransfer</para>
                 </entry>
                 <entry>
                   <para>PropertyType</para>
-                </entry>
-                <entry>
-                  <para>Mandatory</para>
-                </entry>
-              </row>
-              <row>
-                <entry>
-                  <para>HasProperty</para>
-                </entry>
-                <entry>
-                  <para>Property</para>
-                </entry>
-                <entry>
-                  <para>DeviceTypeId</para>
-                </entry>
-                <entry>
-                  <para>String</para>
-                </entry>
-                <entry>
-                  <para>PropertyType</para>
-                </entry>
-                <entry>
-                  <para>Optional</para>
-                </entry>
-              </row>
-              <row>
-                <entry>
-                  <para>HasProperty</para>
-                </entry>
-                <entry>
-                  <para>Property</para>
-                </entry>
-                <entry>
-                  <para>ManufacturerId</para>
-                </entry>
-                <entry>
-                  <para>String</para>
-                </entry>
-                <entry>
-                  <para>PropertyType</para>
-                </entry>
-                <entry>
-                  <para>Optional</para>
-                </entry>
-              </row>
-              <row>
-                <entry>
-                  <para>HasComponent</para>
-                </entry>
-                <entry>
-                  <para>Object</para>
-                </entry>
-                <entry>
-                  <para>MethodSet</para>
-                </entry>
-                <entry>
-                  <para />
-                </entry>
-                <entry>
-                  <para>BaseObjectType</para>
-                </entry>
-                <entry>
-                  <para>Mandatory</para>
-                </entry>
-              </row>
-              <row>
-                <entry>
-                  <para>HasComponent</para>
-                </entry>
-                <entry>
-                  <para>Object</para>
-                </entry>
-                <entry>
-                  <para>ParameterSet</para>
-                </entry>
-                <entry>
-                  <para />
-                </entry>
-                <entry>
-                  <para>BaseObjectType</para>
                 </entry>
                 <entry>
                   <para>Mandatory</para>
