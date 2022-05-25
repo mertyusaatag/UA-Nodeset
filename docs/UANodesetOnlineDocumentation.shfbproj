@@ -136,6 +136,7 @@
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="Opc.Ua.Adi.Model.aml" />
     <None Include="Opc.Ua.OPENSCS.Model.aml" />
     <None Include="Opc.Ua.PLCopen.Model.aml" />
     <None Include="Opc.Ua.MTConnect.Model.aml" />
