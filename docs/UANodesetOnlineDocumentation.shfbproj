@@ -136,14 +136,44 @@
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="Opc.Ua.PLCopen.Model.aml" />
-    <None Include="Opc.Ua.MTConnect.Model.aml" />
-    <None Include="Opc.Ua.MachineVision.Model.aml" />
-    <None Include="Opc.Ua.Machinery.Model.aml" />
-    <None Include="Opc.Ua.FDT.Model.aml" />
-    <None Include="Opc.Ua.Model.aml" />
+    <None Include="Opc.Ua.Adi.Model.aml" />
+    <None Include="Opc.Ua.AMLLibraries.Model.aml" />
+    <None Include="Opc.Ua.AutoID.Model.aml" />
+    <None Include="Opc.Ua.CAS.Model.aml" />
+    <None Include="Opc.Ua.CNC.Model.aml" />
+    <None Include="Opc.Ua.CommercialKitchenEquipment.Model.aml" />
+    <None Include="Opc.Ua.CSPPlusForMachine.Model.aml" />
+    <None Include="Opc.Ua.DEXPI.Model.aml" />
     <None Include="Opc.Ua.Di.Model.aml" />
+    <None Include="Opc.Ua.Fdi5.Model.aml" />
+    <None Include="Opc.Ua.FDI7.Model.aml" />
+    <None Include="Opc.Ua.FDT.Model.aml" />
+    <None Include="Opc.Ua.Gds.Model.aml" />
+    <None Include="Opc.Ua.I4AAS.Model.aml" />
+    <None Include="Opc.Ua.IA.Model.aml" />
+    <None Include="Opc.Ua.Ijt.Tightening.Model.aml" />
+    <None Include="Opc.Ua.IRDI.Model.aml" />
+    <None Include="Opc.Ua.ISA95-JOBCONTROL.Model.aml" />
+    <None Include="Opc.Ua.ISA95.Model.aml" />
+    <None Include="Opc.Ua.Machinery.Model.aml" />
+    <None Include="Opc.Ua.MachineTool.Model.aml" />
+    <None Include="Opc.Ua.MachineVision.Model.aml" />
+    <None Include="Opc.Ua.MDIS.Model.aml" />
+    <None Include="Opc.Ua.Model.aml" />
+    <None Include="Opc.Ua.MTConnect.Model.aml" />
+    <None Include="Opc.Ua.OPENSCS.Model.aml" />
     <None Include="Opc.Ua.PackML.Model.aml" />
+    <None Include="Opc.Ua.PADIM.Model.aml" />
+    <None Include="Opc.Ua.PLCopen.Model.aml" />
+    <None Include="Opc.Ua.Powerlink.Model.aml" />
+    <None Include="Opc.Ua.PROFINET.Model.aml" />
+    <None Include="Opc.Ua.Pumps.Model.aml" />
+    <None Include="opc.Ua.Robotics.Model.aml" />
+    <None Include="Opc.Ua.Safety.Model.aml" />
+    <None Include="Opc.Ua.Scales.Model.aml" />
+    <None Include="Opc.Ua.Sercos.Model.aml" />
+    <None Include="Opc.Ua.TMC.Model.aml" />
+    <None Include="Opc.Ua.Weihenstephan.Model.aml" />
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="Content Layout.content">
