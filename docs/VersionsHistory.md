@@ -8,7 +8,7 @@
   - [Executive summary of the reported warnings](#executive-summary-of-the-reported-warnings)
     - [OPC-UA-OOI.asp 6.5.0-Kilo](#opc-ua-ooiasp-650-kilo)
       - [The model related warnings](#the-model-related-warnings)
-      - [Th tool related warnings](#th-tool-related-warnings)
+      - [The tool related warnings](#the-tool-related-warnings)
     - [UA-ModelCompiler 3.0.0-Delta](#ua-modelcompiler-300-delta)
       - [Errors reported by the tool](#errors-reported-by-the-tool)
       - [Model not tested](#model-not-tested)
@@ -63,14 +63,14 @@ Warning, Error Focus: Reference, Identifier: P3-0503030201 Description: Wrong Re
 **Affected Models**: `MDIS`
 **Recommendations**: Must be confirmed (by MP) and reported as the model error in the `mpostol/UA-Nodeset` repository.
 
-##### Th tool related warnings
+##### The tool related warnings
 
 ``` txt
 Warning, Error Focus: Diagnostic, Identifier: P0-0003010000 Description: It is diagnostic information Id = D290E7B4-F77C-4EF0-883B-844F66471DB6; Reference HierarchicalReferences not supported. Removed the graph at http://opcfoundation.org/UA/:Organizes of nodes from the model"
 ```
 
 **Affected Models**: `ADI`, `AML`, `AUTOID`, `CSPPlusForMachine`, `DI`, `MTConnect`, `POWERLINK`, `GDS`
-**Recommendations**: Must be confirmed (by MP) and reported as the model error in the `mpostol/UA-Nodeset` repository.
+**Recommendations**: Fixed.
 
 ``` txt
 Warning, Error Focus: Diagnostic, Identifier: P0-0001010000 Description: The XML attribute or element is not supported and neglected. Extensions are omitted during the import" 
